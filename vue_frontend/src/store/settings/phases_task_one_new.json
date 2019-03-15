@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Generate Problems",
+    "editable": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "steps": [
+      {
+        "name": "Dataset Description",
+        "components": ["DataDefinition", "RawTimeSeries", "GraphView", "TextRawData"]
+      },
+      {
+        "name": "Dataset Overview",
+        "components": ["TabularDataView", "RawDataTableView"]
+      },
+      {
+        "name": "Problem Discovery",
+        "components": ["ProblemSetView"]
+      },
+      {
+        "name": "Provide Readable Description",
+        "components": ["ProblemSetView"]
+      }
+    ],
+    "defaultLayout": "problemGeneration",
+    "workspace": 0
+  }
+]

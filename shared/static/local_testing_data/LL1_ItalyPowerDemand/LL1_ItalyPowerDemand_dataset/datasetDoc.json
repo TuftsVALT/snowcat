@@ -1,0 +1,64 @@
+{
+  "about": {
+    "datasetID": "LL1_ItalyPowerDemand_dataset",
+    "datasetName": "LL1_ItalyPowerDemand",
+    "description": "one of UCR datasets for timeseries classification",
+    "citation": "\n@misc{UCRArchive,\ntitle={The UCR Time Series Classification Archive},\nauthor={ Chen, Yanping and Keogh, Eamonn and Hu, Bing and Begum, Nurjahan and Bagnall, Anthony and Mueen, Abdullah and Batista, Gustavo},\nyear={2015},\nmonth={July},\nnote = {url{www.cs.ucr.edu/~eamonn/time_series_data/}}}",
+    "license": "Unknown public",
+    "source": "UCR",
+    "sourceURI": "http://www.cs.ucr.edu/~eamonn/time_series_data/",
+    "datasetSchemaVersion": "3.0",
+    "redacted": false,
+    "datasetVersion": "1.0"
+  },
+  "dataResources": [
+    {
+      "resID": "0",
+      "resPath": "timeseries/",
+      "resType": "timeseries",
+      "resFormat": [
+        "text/csv"
+      ],
+      "isCollection": true
+    },
+    {
+      "resID": "1",
+      "resPath": "tables/learningData.csv",
+      "resType": "table",
+      "resFormat": [
+        "text/csv"
+      ],
+      "isCollection": false,
+      "columns": [
+        {
+          "colIndex": 0,
+          "colName": "d3mIndex",
+          "colType": "integer",
+          "role": [
+            "index"
+          ]
+        },
+        {
+          "colIndex": 1,
+          "colName": "timeseries_file",
+          "colType": "string",
+          "role": [
+            "attribute"
+          ],
+          "refersTo": {
+            "resID": "0",
+            "resObject": "item"
+          }
+        },
+        {
+          "colIndex": 2,
+          "colName": "label",
+          "colType": "categorical",
+          "role": [
+            "suggestedTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

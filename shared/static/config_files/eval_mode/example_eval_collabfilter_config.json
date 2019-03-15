@@ -1,0 +1,12 @@
+{
+    "problem_schema": "static/local_testing_data/60_jester/60_jester_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/60_jester/60_jester_problem",
+    "dataset_schema": "static/local_testing_data/60_jester/60_jester_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/60_jester/60_jester_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "temp_storage_root": "/tmp",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi"
+}

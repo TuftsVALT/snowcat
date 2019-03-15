@@ -1,0 +1,13 @@
+{
+    "problem_schema": "static/local_testing_data/49_facebook/49_facebook_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/49_facebook/49_facebook_problem",
+    "dataset_schema": "static/local_testing_data/49_facebook/49_facebook_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/49_facebook/49_facebook_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+      "user_problem_root": "static/problem_desc",
+    "temp_storage_root": "/tmp",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi"
+}

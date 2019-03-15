@@ -1,0 +1,150 @@
+{
+  "ProblemDefinition": {
+    "component": "ProblemDefinition",
+    "phaseDependency": 2,
+    "defaultSize": 12,
+    "title": "Problem Summary",
+    "help":
+      "This is a general overview of the problem.\n [(video)](https://www.youtube.com/watch?v=y7cBKCuyjXc)"
+  },
+  "DataDefinition": {
+    "component": "DataDefinition",
+    "phaseDependency": 1,
+    "defaultSize": 6,
+    "title": "Dataset Description",
+    "help":
+      "This is an overview of the dataset. You can see what types of data are included in the dataset. **Table** datasets are expandable so you can see the types of data included in each table."
+  },
+  "ProblemSetView": {
+    "component": "ProblemSetView",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Problem Set",
+    "help":
+      "Use this tool to review and revise the full set of problems. This includes automatically generated ones by the system, as well as those one that are defined additionally by you. Each row in this view represents a problem specification to be used in a machine learning system. The Add New Problem button is used to generate a new user-defined problem specification. [(video)](https://youtu.be/WP1pFQpAsE8)"
+  },
+  "DiscoveredProblemRefinement": {
+    "component": "DiscoveredProblemRefinement",
+    "phaseDependency": 2,
+    "defaultSize": 12,
+    "title": "Problem Refinement",
+    "help":
+      "Write up more detailed descriptions of what you aim to explore via each problem. You can also delete problems."
+  },
+  "RawTimeSeries": {
+    "component": "RawTimeSeries",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Time Series",
+    "help":
+      "This view shows a visualization of the time series in the data set. Analyze classification and forecasting datasets here. [(Forecast - video)](https://youtu.be/NNslK-XLfNc) [(Classification - video)](https://youtu.be/GXe0FbbAUWg)",
+    "dataDeps": ["timeseries"]
+  },
+  "RawImageView": {
+    "component": "RawImageView",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Image Viewer",
+    "help":
+      "This view shows image visualization for a data set that also contains images. It categorizes images based on the associated value type. Mouse hovering a particular image brings that image in a zoomed form so that to see the details of the selected image more clearly. On the bottom right side, the number of current shown images are shown out of total number of images. A button at the bottom side is provided to load more images on demand. [(video)](https://youtu.be/3vn2yAcxl94)",
+    "dataDeps": ["image"]
+  },
+
+  "RawVideoView": {
+    "component": "RawVideoView",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Video Viewer",
+    "dataDeps": ["video", "speech"],
+    "help":
+      "This view shows videos for a data set that contains video files. Each video can be played while clicking the play button. In the play mode, the system shows other options useful for playing mode. Cross linking is also provided from this view to the data overview visualization through mouse hovering any video file.[(video)](https://youtu.be/UDmbTjKPxGs)"
+  },
+  "RawAudioView": {
+    "component": "RawAudioView",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Audio Viewer",
+    "dataDeps": ["audio", "speech"],
+    "help":
+      "This view shows audio and speech visualization for a data set that also contains audio and speech files. Each audio or speech is shown through frequency visualization metaphor. On the top of each audio or speech file, buttons are provided to play or pause or to move 5 seconds forward or backward. Clicking the play button starts the audio or speech file in the play mode. Cross linking is also provided from this view to the data overview visualization through mouse hovering any audio file [(video)](https://youtu.be/i4H97YyazCA)"
+  },
+  "MetricsSummary": {
+    "component": "MetricsSummary",
+    "phaseDependency": 2,
+    "defaultSize": 6,
+    "title": "Scores of the Models"
+  },
+  "RawDataTableView": {
+    "component": "RawDataTableView",
+    "phaseDependency": 2,
+    "defaultZise": 12,
+    "title": "Raw Data Table",
+    "help": "This view shows the raw data set in table form, as it is stored in the data set. At the bottom two options are provided: the option of moving to the next page and the option to show number of rows per page. Cross linking is provided between this view and the data overview visualization view though mouse hovering. [(video)](https://youtu.be/xfYTRW6dqnI)"
+  },
+  "GraphView": {
+    "component": "GraphView",
+    "phaseDependency": 2,
+    "defaultSize": 12,
+    "title": "Graph Data View",
+    "help":
+      "This view shows a visualization of some graph type in the data set. You can hover nodes and edges to get more information about them. In the case of link prediction graph, links in the base graph (purple) and links that models are expected to predict (green) can be shown and hidden using the checkboxes on top. In the case of graph matching data set, the view contains two graphs between which nodes are matched. Nodes that are unmatched in the training data are colored orange, while matched ones are colored blue. Hovering blue nodes highlights their matches across both graphs with a black outline. Two-way cross linking is also provided between any of the graph view and the data overview visualization through mouse hovering over any visual element in both views. Vertex Nomination:[(video)](https://youtu.be/WU3E_OaELFE), Graph Matching:[(video)](https://youtu.be/wXfYpe-HIEo), Link Prediction:[(video)](https://youtu.be/7UJRCxQ5EEc)",
+    "dataDeps": ["graph"]
+  },
+  "TabularDataView": {
+    "component": "TabularDataView",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Data Overview",
+    "dataDeps": ["table"],
+    "help":
+      "Each histogram represents a column/field in the input dataset, where x-axis represents the range of values the y-axis represents the number of items in each range of values in the underlying column/field. Mouse hovering over any particular bar in a histogram brings a darker color on the top of all other bars to show the relationships between the items in this bar with the items in all the other columns/fields. Two-way cross linking is provided between the histograms and other visualizations through mouse hovering over any visual element.[(video)](https://youtu.be/q-alkxaFCh4)"
+  },
+  "TextRawData": {
+    "component": "TextRawData",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Textual Data Viewer",
+    "dataDeps": ["text"],
+    "help":
+      "This visualization shows the raw text data. It has two panels- the left panel shows the list of text documents and the right panel shows the selected text document’s content. There’s a search bar on the left panel, where the user can search for raw text, keywords, phrases or comma separeted search strings. As the user types the list of documents gets updated based on positive matches with the search string. The user can press “Enter” to mark the searched text string on the opened text document on the right panel. Anytime, the user can select any document from the found matches by clicking on the document item on the side panel.[(video)](https://www.youtube.com/watch?v=y7cBKCuyjXc)"
+  },
+  "ConfusionMatrixContainer": {
+    "component": "ConfusionMatrixContainer",
+    "phaseDependency": 2,
+    "defaultSize": 12,
+    "title": "Classification Model Output: Confusion Matrix",
+    "problemDeps": [
+      "classification",
+      "linkPrediction",
+      "vertexNomination",
+      "graphMatching"
+    ],
+    "help": "This visualization shows model output for a classification task. The vertical axis represents the predicted class labels, while the horizontal axis represents the expected or true class labels. Each cell represents how many times a true class label has been predicted against the corresponding expected class from the vertical axis. The green color of cells is used to show the accurately predicted labels against the expected labels, while the red color is used to show the inaccurately predicted labels against the expected labels. The color of each cell encodes the number of times the true class is predicted in this class, as we can see the range of these value at the bottom. Two-way cross linking is provided between this view and data overview visualization through mouse hovering over any visual element.[(video)] (https://youtu.be/5CxPOt0WTdg)"
+  },
+  "RegressionModelOutput": {
+    "component": "RegressionModelOutput",
+    "phaseDependency": 2,
+    "defaultSize": 12,
+    "title": "Regression Model Output",
+    "problemDeps": ["regression"],
+    "help":
+      "This visualisation shows model output for a regression task. Each bar chart shows the residual error from a model. Hovering over a bar shows the residual error for this data instance. At the same time, it also highlights the other model’s residual error by showing the bar in the visualisation in red colour. For each model, it shows a small vertical line chart describing the average residual error of that model. Clicking the sort by data checkbox, the user can sort the data, by residual error. Linking the bar charts helps understand which data instances were predicted more precisely in which model, allowing the user to compare the model performance at an instance level.Cross linking is also provided from this view to the data overview visualization through mouse hovering any bar. [(video)](https://youtu.be/8b3RAwQmUu8)"
+  },
+  "CollaborativeFiltering": {
+    "component": "CollaborativeFiltering",
+    "phaseDependency": 2,
+    "defaultSize": 12,
+    "title": "Collaborative Filtering: Model Output",
+    "problemDeps": ["collaborativeFiltering"],
+    "help":
+      "Each division represents the results of a different model. For each model, we have two histograms. The left histogram represents the distribution of predicted ratings. This allows detecting any meaningful patterns in the predicted ratings. The right histogram represents the distribution of the difference between the predicted rating and the actual rating. This enables us to detect the accuracy of the predicted ratings. By placing the divisions side by side the system enables analysts to compare the results of the multiple models. Users can hover on each bar to see the number of items for each rating. It also shows the cross linking to the other models corresponding to the data item in this selected bar. Two-way cross linking is also provided between this view and data overview visualization through mouse hovering over any bar in both views.[(video)](https://youtu.be/qd0CZzO9nBo)"
+  },
+  "Datamart": {
+    "component": "Datamart",
+    "phaseDependency": 1,
+    "defaultSize": 12,
+    "title": "Datamart",
+    "help":
+      "Datamart is a search engine for datasets. Entering in keywords will find and list datasets based on its similarity to the search input."
+  }
+}

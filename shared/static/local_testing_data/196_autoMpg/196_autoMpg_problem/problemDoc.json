@@ -1,0 +1,42 @@
+{
+  "about": {
+    "problemID": "196_autoMpg_problem",
+    "problemName": "autoMpg_problem",
+    "problemDescription": "Use all available features to try to predict the class of the car.  Treat this as a regression problem, to determine the numerical relationship between other features and Class.",
+    "taskType": "regression",
+    "taskSubType": "univariate",
+    "problemVersion": "1.0",
+    "problemSchemaVersion": "3.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "196_autoMpg_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "0",
+            "colIndex": 8,
+            "colName": "class"
+          }
+        ]
+      }
+    ],
+    "dataSplits": {
+      "method": "holdOut",
+      "testSize": 0.2,
+      "stratified": true,
+      "numRepeats": 0,
+      "randomSeed": 42,
+      "splitsFile": "dataSplits.csv"
+    },
+    "performanceMetrics": [
+      {
+        "metric": "meanSquaredError"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

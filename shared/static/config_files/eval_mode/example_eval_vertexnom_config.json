@@ -1,0 +1,13 @@
+{
+    "problem_schema": "static/local_testing_data/LL1_net_nomination_seed/LL1_net_nomination_seed_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/LL1_net_nomination_seed/LL1_net_nomination_seed_problem",
+    "dataset_schema": "static/local_testing_data/LL1_net_nomination_seed/LL1_net_nomination_seed_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/LL1_net_nomination_seed/LL1_net_nomination_seed_dataset",
+    "pipeline_logs_root": "/outputs/logs",
+    "executables_root": "/outputs/executables",
+    "temp_storage_root": "/temp",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi"
+}
+

@@ -1,0 +1,90 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tufts-cmu
+  labels:
+    app: tufts-cmu
+spec:
+  loadBalancerIP: 10.108.5.96
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: tufts-cmu
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tufts-cmu
+  labels:
+    app: tufts-cmu
+spec:
+  restartPolicy: Always
+  containers:
+# MIT-FEATURELABS TA2
+  - name: cmu-ta2
+    imagePullPolicy: Always
+    image: registry.datadrivendiscovery.org/sheath/cmu-ta2:live
+    volumeMounts:
+      - name: input-vol
+        mountPath: /input
+        readOnly: true
+      - name: output-vol
+        mountPath: /output
+        readOnly: false
+    ports:
+    - containerPort: 45042
+      hostPort: 45042
+    resources:
+      requests:
+        memory: 10Gi
+        cpu: 1
+    env:
+    - name: D3MTIMEOUT
+      value: "5"
+    - name: D3MINPUTDIR
+      value: /input
+    - name: D3MOUTPUTDIR
+      value: /output
+    - name: D3MRUN
+      value: ta2ta3
+    - name: D3MCPU
+      value: "2"
+# TUFTS TA3
+  - name: tufts-ta3
+    imagePullPolicy: Always
+    image: registry.datadrivendiscovery.org/fheimerl/tuftsgtwiscta3:latest
+    command: [./ta3_search]
+    args:
+#          - static/config_files/eval_mode/baseball.json
+      - dataset:popularkids
+    volumeMounts:
+      - name: input-vol
+        mountPath: /input
+        readOnly: true
+      - name: output-vol
+        mountPath: /output
+        readOnly: false
+    ports:
+    - name:  http
+      containerPort: 8080
+    resources:
+      requests:
+        memory: 1Gi
+        cpu: 1
+    env:
+    - name: TA2_PORT
+      value: "45042"
+  imagePullSecrets:
+  - name: regcred3
+  volumes:
+  - name: input-vol
+    hostPath:
+      path: /opt/datasets/seed_datasets_current/
+      type: Directory
+  - name: output-vol
+    persistentVolumeClaim:
+      claimName: eval-output-pv-claim

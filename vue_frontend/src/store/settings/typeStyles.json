@@ -1,0 +1,291 @@
+{
+  "categorical": {
+    "name": "categorical",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "dashboard"
+  },
+  "integer": {
+    "name": "integer",
+    "color": "green",
+    "avatarOrIcon": "avatar",
+    "symbol": "Z"
+  },
+  "real": {
+    "name": "real",
+    "color": "green",
+    "avatarOrIcon": "avatar",
+    "symbol": "R"
+  },
+  "string": {
+    "name": "string",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "format_quote"
+  },
+  "table": {
+    "name": "table",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "view_list"
+  },
+  "image": {
+    "name": "image",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "image"
+  },
+  "video": {
+    "name": "video",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "videocam"
+  },
+  "speech": {
+    "name": "speech",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "chat"
+  },
+  "audio": {
+    "name": "audio",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "audiotrack"
+  },
+  "text": {
+    "name": "text",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "subject"
+  },
+  "graph": {
+    "name": "graph",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "device_hub"
+  },
+  "timeseries": {
+    "name": "timeseries",
+    "color": "green",
+    "avatarOrIcon": "icon",
+    "symbol": "date_range"
+  },
+  "classification": {
+    "name": "classification",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "call_split",
+    "description": "For a classification task, your goal is to find a model that predicts the class, or category, of the target column, listed below, using all other columns in the dataset."
+  },
+  "regression": {
+    "name": "regression",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "timeline",
+    "description": "For a regression task, your goal is to find a model that predicts a numerical value for the target column, listed below, using all other columns in the dataset."
+  },
+  "clustering": {
+    "name": "clustering",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "bubble_chart",
+    "description": "For a clustering task, your goal is to find a model that groups the data in some way into clusters.  This task is not supported by any visualizations in this system."
+  },
+  "linkPrediction": {
+    "name": "link prediction",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "settings_ethernet",
+    "description": "For a link prediction task, your goal is to find a model that predicts whether an unseen link, or edge, between two nodes in a graph exists or not."
+  },
+  "vertexNomination": {
+    "name": "vertex nomination",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "center_focus_strong",
+    "description": "For a vertex nomination task, your goal is to find a model that predicts a particular vertex within a graph that is deemed to be 'interesting' in the context of the dataset.  This task may not be supported by any visualizations in this system."
+  },
+  "communityDetection": {
+    "name": "community detection",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "leak_add",
+    "description": "For a community detection task, your goal is to find a model that detects communities within a network of entities.  This task may not be supported by any visualizations in this system."
+  },
+  "graphMatching": {
+    "name": "graph matching",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "compare_arrows",
+    "description": "For a graph matching task, your goal is to find a model that determines if two vertices in similar graphs refer to the same entity.  One use might be to determine if two accounts on different social media platforms refer to the same person."
+  },
+  "timeSeriesForecasting": {
+    "name": "time series forecasting",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "today",
+    "description": "For a time series forecasting task, your goal is to find a model that predicts future values for a variable that varies with time, such as temperature or a stock price."
+  },
+  "collaborativeFiltering": {
+    "name": "collaborative filtering",
+    "color": "pink",
+    "avatarOrIcon": "icon",
+    "symbol": "thumbs_up_down",
+    "description": "For a collaborative filtering task, your goal is to find a model that is able to predict ratings for particular items given other users' ratings of those items."
+  },
+  "multiClass": {
+    "name": "multi-class",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "pie_chart",
+    "description": "The target column has more than 2 possible classes."
+  },
+  "binary": {
+    "name": "binary",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "tonality",
+    "description": "The target column has exactly 2 possible values."
+  },
+  "multiLabel": {
+    "name": "multi-label",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "format_list_bulleted",
+    "description": "The target column can be assigned multiple values for a single row of the dataset, such as tags for a youtube video."
+  },
+  "univariate": {
+    "name": "univariate",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "show_chart",
+    "description": "There is one target variable for the regression to fit."
+  },
+  "multivariate": {
+    "name": "multivariate",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "multiline_chart",
+    "description": "There are multiple target variables for the regression to fit."
+  },
+  "overlapping": {
+    "name": "overlapping",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "content",
+    "description": "Items are allowed to belong to 2 or more clusters."
+  },
+  "nonOverlapping": {
+    "name": "non-overlapping",
+    "color": "purple",
+    "avatarOrIcon": "icon",
+    "symbol": "widgets",
+    "description": "Items are required to belong to exactly one cluster."
+  },
+  "accuracy": {
+    "name": "accuracy",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "Accuracy is a number between 0 and 1 that describes what portion of the given labeled training examples were predicted to be the correct value by the model."
+  },
+  "f1": {
+    "name": "f1",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "F1 is a measure of the accuracy of a model solving binary classification.  It weighs both the precision and recall of a model by balancing between false positives and false negatives."
+  },
+  "f1Micro": {
+    "name": "f1 micro",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "F1 is a measure of the accuracy of a model solving binary classification.  It weighs both the precision and recall of a model by balancing between false positives and false negatives.  F1 micro is an adaptation of f1 score to multiple classes, and weighs any misclassification as a false positive.  It values global performance of a model, but may sacrifice performance on classes with few examples."
+  },
+  "f1Macro": {
+    "name": "f1 macro",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "f1 is a measure of the accuracy of a model solving binary classification.  It weighs both the precision and recall of a model by balancing between false positives and false negatives.  f1Macro is an adaptation of f1 score to multiple classes, and averages the metrics for each individual class.  It attempts to measure accuracy in all classes, regardless of class imbalance."
+  },
+  "rocAuc": {
+    "name": "ROC AUC",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "ROC AUC, or Receiver Operating Characteristic Area Under the Curve, is a measure of the accuracy of a model solving binary classification.  It weights both the precision and recall of a model by balancing between false positives and false negatives, and attempts to measure performance at all possible values of false positives against false negatives."
+  },
+  "rocAucMicro": {
+    "name": "ROC AUC micro",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "ROC AUC, or Receiver Operating Characteristic Area Under the Curve, is a measure of the accuracy of a model solving binary classification.  It weights both the precision and recall of a model by balancing between false positives and false negatives, and attempts to measure performance at all possible values of false positives against false negatives.  ROC AUC micro is an adaptation of rocAuc to multiple classes, and weighs any misclassification as a false positive.  It values global performance of a model, but may sacrifice performance on classes with few examples."
+  },
+  "rocAucMacro": {
+    "name": "ROC AUC macro",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "ROC AUC, or Receiver Operating Characteristic Area Under the Curve, is a measure of the accuracy of a model solving binary classification.  It weights both the precision and recall of a model by balancing between false positives and false negatives, and attempts to measure performance at all possible values of false positives against false negatives.  ROC AUC macro is an adaptation of ROC AUC score to multiple classes, and averages the metrics for each individual class.  It attempts to measure accuracy in all classes, regardless of class imbalance."
+  },
+  "meanSquaredError": {
+    "name": "mean squared error",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "A frequently used measure of the differences between values predicted by a model and the values actually observed.  The average of the square of the difference between the true value and the value predicted by regression."
+  },
+  "rootMeanSquaredError": {
+    "name": "root mean squared error",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "A frequently used measure of the differences between values predicted by a model and the values actually observed.  The square root of the average of the square of the difference between the true value and the value predicted by regression."
+  },
+  "rootMeanSquaredErrorAvg": {
+    "name": "root-mean-squared error average",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "Root-mean-squared error (RMSE) is a frequently used measure of the differences between values predicted by a model and the values actually observed.  Root-mean-squared error average is the average of RMSE across multiple target variables."
+  },
+  "meanAbsoluteError": {
+    "name": "mean absolute error",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "A frequently used measure of the differences between values predicted by a model and the values actually observed.  An average of the differences across each data point in the training data set."
+  },
+  "rSquared": {
+    "name": "R-squared",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "A statistical measure of how close the data are to a fitted regression curve."
+  },
+  "normalizedMutualInformation": {
+    "name": "normalized mutual information",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "A frequently used measure of unsupervised learning models such as clustering or community detection.  Measures the similarity between the clustering found by the model and the true clustering."
+  },
+  "jaccardSimilarityScore": {
+    "name": "Jaccard similarity score",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "A statistical measure of the differences between sets predicted by a model and the actual sets observed in ground truth.  Measures intersection between predicted sets and ground truth sets."
+  },
+  "precisionAtTopK": {
+    "name": "precision at top-k",
+    "color": "orange",
+    "avatarOrIcon": null,
+    "symbol": "",
+    "description": "Precision at top-k is a measure of the performance of a multi-label classification model.  It examines the first K entries of the ground truth and the predicted labels and determines how many values are shared between them."
+  }
+}

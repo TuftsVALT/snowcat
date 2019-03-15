@@ -1,0 +1,40 @@
+{
+  "about": {
+    "problemID": "LL1_eco_florida_net_problem",
+    "problemName": "Clustering in Ecologial network: Food web cohesion network",
+    "problemDescription": "No description provided.",
+    "taskType": "communityDetection",
+    "taskSubType": "nonOverlapping",
+    "problemSchemaVersion": "3.1.1",
+    "problemVersion": "1.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "LL1_eco_florida_net_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "1",
+            "colIndex": 2,
+            "colName": "community"
+          }
+        ]
+      }
+    ],
+    "dataSplits": {
+      "method": "holdOut",
+      "testSize": 1,
+      "numRepeats": 0,
+      "splitsFile": "dataSplits.csv"
+    },
+    "performanceMetrics": [
+      {
+        "metric": "normalizedMutualInformation"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

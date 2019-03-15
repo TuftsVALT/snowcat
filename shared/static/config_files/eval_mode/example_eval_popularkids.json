@@ -1,0 +1,13 @@
+{
+  "problem_schema": "static/local_testing_data/LL0_1100_popularkids/LL0_1100_popularkids_problem/problemDoc.json",
+  "problem_root": "static/local_testing_data/LL0_1100_popularkids/LL0_1100_popularkids_problem",
+  "dataset_schema": "static/local_testing_data/LL0_1100_popularkids/LL0_1100_popularkids_dataset/datasetDoc.json",
+  "training_data_root": "static/local_testing_data/LL0_1100_popularkids/LL0_1100_popularkids_dataset",
+  "pipeline_logs_root": "/tmp/logs",
+  "executables_root": "/tmp/executables",
+  "temp_storage_root": "/tmp",
+  "user_problem_root": "./static/output/problems",
+  "timeout": 60,
+  "cpus"  : "32",
+  "ram"   : "16Gi"
+}

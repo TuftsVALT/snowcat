@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tufts-collabfilter-demo
+spec:
+  containers:
+  - name: tuftsgtwisc-ta3
+    image: registry.datadrivendiscovery.org/dcashman/tuftsgtwiscta3:latest
+    command: [./ta3_search]
+    args:
+    - static/config_files/dev_mode/example_dev_collabfilter_config.json
+    ports:
+    - containerPort: 8080
+      hostPort: 9764
+    resources:
+      requests:
+        memory: 1Gi
+        cpu: 1000m
+  imagePullSecrets:
+  - name: regcred

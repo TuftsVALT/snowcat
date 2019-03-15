@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Approve Problems",
+    "editable": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "steps": [
+      {
+        "name": "Edit/Examine the problem definition",
+        "components": ["ProblemDefinition"]
+      },
+      {
+        "name": "Sign off on problem",
+        "components": ["ProblemDefinition"]
+      },
+      {
+        "name": "Explore the data",
+        "components": ["DataDefinition", "TabularDataView", "RawTimeSeries", "GraphView", "TextRawData", "RawImageView"]
+      }
+    ],
+    "defaultLayout": "gettingStarted",
+    "workspace": 0
+  },
+  {
+    "name": "Wait for Results",
+    "editable": [
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "steps": [
+      {
+        "name": "Monitor back-end progress",
+        "components": []
+      },
+      {
+        "name": "Wait for models to be built",
+        "components": []
+      }
+    ],
+    "defaultLayout": "gettingStarted",
+    "workspace": 0
+  },
+  {
+    "name": "Select Model",
+    "editable": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "steps": [
+      {
+        "name": "View model metrics",
+        "components": ["MetricsSummary"]
+      },
+      {
+        "name": "Examine model results in detail",
+        "components": ["CollaborativeFiltering", "ConfusionMatrixContainer", "TabularDataView", "GraphView"]
+      },
+      {
+        "name": "Compare model predictions",
+        "components": []
+      },
+      {
+        "name": "Select models",
+        "components": []
+      },
+      {
+        "name": "Create Exectuable",
+        "components": []
+      }
+    ],
+    "defaultLayout": "modelSelection",
+    "workspace": 1
+  }
+]

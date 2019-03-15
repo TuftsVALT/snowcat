@@ -1,0 +1,18 @@
+{
+    "problem_schema": "static/local_testing_data/testing/26_radon_seed/26_radon_seed_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/testing/26_radon_seed/26_radon_seed_problem",
+    "dataset_schema": "static/local_testing_data/testing/26_radon_seed/26_radon_seed_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/testing/26_radon_seed/26_radon_seed_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "temp_storage_root": "/tmp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+	"running_mode": "development",
+
+    "model_output_prediction_files": [
+        "static/local_testing_data/testing/26_radon_seed/26_radon_seed_solution/predictions.csv"
+    ]
+}

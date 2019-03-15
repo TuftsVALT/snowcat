@@ -1,0 +1,14 @@
+{
+    "problem_schema": "static/local_testing_data/196_autoMpg/196_autoMpg_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/196_autoMpg/196_autoMpg_problem",
+    "dataset_schema": "static/local_testing_data/196_autoMpg/196_autoMpg_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/196_autoMpg/196_autoMpg_dataset",
+    "pipeline_logs_root": "/outputs/logs",
+    "executables_root": "/outputs/executables",
+    "executables_root": "/outputs/executables",
+    "temp_storage_root": "/tmp",
+      "user_problem_root": "static/problem_desc",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi"
+}

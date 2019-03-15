@@ -1,0 +1,18 @@
+{
+    "problem_schema": "static/local_testing_data/31_urbansound/31_urbansound_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/31_urbansound/31_urbansound_problem",
+    "dataset_schema": "static/local_testing_data/31_urbansound/31_urbansound_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/31_urbansound/31_urbansound_dataset",
+    "pipeline_logs_root": "/outputs/logs",
+    "executables_root": "/outputs/executables",
+    "temp_storage_root": "/temp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+	"running_mode": "development",
+	"raw_data_file": "/tables/learningData.csv",
+	"model_output_prediction_files": [
+		"static/local_testing_data/31_urbansound/31_urbansound_solution/predictions.csv"
+	]
+}

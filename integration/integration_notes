@@ -1,0 +1,30 @@
+run FL image:
+docker run -t --name fl_server -p50051:50051 -e D3MTIMEOUT=60 -e D3MINPUTDIR=/input -e D3MOUTPUTDIR=/output -e D3MRUN=ta2ta3 -v /Users/florian/tmp/ta2s/input/:/input -v `pwd`/shared/output:/output registry.datadrivendiscovery.org/jkanter/mit-fl-ta2:stable
+produce results:
+docker run -t --name fl_test -e D3MTIMEOUT=60 -e D3MINPUTDIR=/input -e D3MOUTPUTDIR=/output -e D3MRUN=test -e D3MTESTOPT="" -v /Users/florian/tmp/ta2s/input/:/input -v `pwd`/shared/output:/output registry.datadrivendiscovery.org/jkanter/mit-fl-ta2:stable
+
+run TAMU image:
+docker run -t --name tamu_server -p50052:45042 -e D3MTIMEOUT=60 -e D3MINPUTDIR=/input -e D3MOUTPUTDIR=/output -e D3MRUN=ta2ta3 -v /Users/florian/tmp/ta2s/input/:/input -v `pwd`/shared/output:/output dmartinez05/tamuta2:latest
+produce results:
+docker run -t --name tamu_test -e D3MTIMEOUT=60 -e D3MINPUTDIR=/input -e D3MOUTPUTDIR=/output -e D3MRUN=test -e D3MTESTOPT="" -v /Users/florian/tmp/ta2s/input/:/input -v `pwd`/shared/output:/output dmartinez05/tamuta2:latest
+
+run CMU image:
+docker run -it --name cmu_server -p 50053:45042 -e D3MINPUTDIR="/input" -v /Users/florian/tmp/ta2s/input:/input -e D3MOUTPUTDIR="/output" -v `pwd`/shared/output:/output -e D3MCPU=1 -e D3MTIMEOUT=5 -e D3MRUN="ta2ta3" registry.datadrivendiscovery.org/sheath/cmu-ta2:live
+
+run Stanford image:
+docker run -it --name stanford_server -p 50054:50051 -e D3MINPUTDIR="/input" -v /Users/florian/tmp/ta2s/input:/input -e D3MOUTPUTDIR="/output" -v `pwd`/shared/output:/output -e D3MCPU=1 -e D3MTIMEOUT=5 -e D3MRUN="ta2ta3" registry.datadrivendiscovery.org/jdunnmon/d3m-ta2-stanford:latest
+produce results:
+docker run -t --name stanford_test -e D3MTIMEOUT=60 -e D3MINPUTDIR=/input -e D3MOUTPUTDIR=/output -e D3MRUN=test -e D3MTESTOPT="" -v /Users/florian/tmp/ta2s/input/:/input -v `pwd`/shared/output:/output registry.datadrivendiscovery.org/jdunnmon/d3m-ta2-stanford:latest
+
+run ISI image:
+docker run -it --name isi_server -p 50055:45042 -e D3MINPUTDIR="/input" -v /Users/florian/tmp/ta2s/input:/input -e D3MOUTPUTDIR="/output" -v `pwd`/shared/output:/output -e D3MCPU=1 -e D3MTIMEOUT=5 -e D3MRUN="ta2ta3" registry.datadrivendiscovery.org/kyao/ta2-isi/ta3ta2-image:latest
+produce results:
+docker run -t --name isi_test -e D3MTIMEOUT=60 -e D3MINPUTDIR=/input -e D3MOUTPUTDIR=/output -e D3MRUN=test -e D3MTESTOPT="" -v /Users/florian/tmp/ta2s/input/:/input -v `pwd`/shared/output:/output registry.datadrivendiscovery.org/kyao/ta2-isi/ta3ta2-image:latest
+
+run NYU image:
+docker run -it --name nyu_server -p 50056:45042 -e D3MINPUTDIR="/input" -v /Users/florian/tmp/ta2s/input:/input -e D3MOUTPUTDIR="/output" -v `pwd`/shared/output:/output -e D3MCPU=1 -e D3MTIMEOUT=5 -e D3MRUN="ta2ta3" registry.datadrivendiscovery.org/ta2-submissions-summer/ta2-nyc:latest
+docker run -it --name nyu_server -p 50056:45042 -D3MCPU="1" -e D3MINPUTDIR="/input" -v /Users/florian/tmp/ta2s/input:/input -e D3MOUTPUTDIR="/output" -v `pwd`/shared/output:/output -e D3MCPU=1 -e D3MTIMEOUT=5 -e D3MRUN="ta2ta3" registry.datadrivendiscovery.org/nyu/ta2-nyc:latest
+
+
+clean up docker:
+docker system prune

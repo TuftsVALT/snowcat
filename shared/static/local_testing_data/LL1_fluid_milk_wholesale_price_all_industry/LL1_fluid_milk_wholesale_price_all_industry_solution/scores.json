@@ -1,0 +1,8 @@
+{
+  "test": {
+    "score": {
+      "metric": "rootMeanSquaredError",
+      "value": 138.943969746418
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "child-process": "^1.0.2",
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security"
+  },
+  "name": "d3mapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TuftsVALT/d3mapp.git",
+  "author": "Florian Heimerl <heimerl@cs.wisc.edu>",
+  "license": "MIT"
+}

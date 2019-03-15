@@ -1,0 +1,52 @@
+{
+  "about": {
+    "datasetID": "LL1_fluid_milk_wholesale_price_all_industry_dataset",
+    "datasetName": "Fluid_milk_wholesale_price_all_grades_us_average_Industry",
+    "description": "Fluid milk, wholesale price (all grades), U.S. average INDUSTRY ",
+    "citation": " Makridakis, Spyros; Hibon, Michele (October-December 2000), The M3-Competition: Results, Conclusions and Implications, http://www.forecastingprinciples.com/files/pdf/Makridakia-The%20M3%20Competition.pdf",
+    "license": "general public domain - the data for M3 are available to any researcher who wants to use them, but the results and conclusion paper should be cited",
+    "source": "International Institute of Forecasters",
+    "sourceURI": "http://forecasters.org/resources/time-series-data/m3-competition/",
+    "approximateSize": "",
+    "datasetSchemaVersion": "3.0",
+    "redacted": false
+  },
+  "dataResources": [
+    {
+      "resID": "0",
+      "resPath": "tables/learningData.csv",
+      "resType": "table",
+      "resFormat": [
+        "text/csv"
+      ],
+      "isCollection": false,
+      "columns": [
+        {
+          "colIndex": 0,
+          "colName": "d3mIndex",
+          "colType": "integer",
+          "role": [
+            "index"
+          ]
+        },
+        {
+          "colIndex": 1,
+          "colName": "time",
+          "colType": "real",
+          "role": [
+            "attribute",
+            "timeIndicator"
+          ]
+        },
+        {
+          "colIndex": 2,
+          "colName": "value",
+          "colType": "real",
+          "role": [
+            "suggestedTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

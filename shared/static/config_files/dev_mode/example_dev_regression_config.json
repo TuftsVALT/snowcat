@@ -1,0 +1,21 @@
+{
+    "problem_schema": "static/local_testing_data/196_autoMpg/196_autoMpg_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/196_autoMpg/196_autoMpg_problem",
+    "dataset_schema": "static/local_testing_data/196_autoMpg/196_autoMpg_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/196_autoMpg/196_autoMpg_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "temp_storage_root": "/tmp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+    "running_mode"  : "development",
+    "model_comparison_type": "regression",
+    "model_output_prediction_files": [
+        "static/local_testing_data/196_autoMpg/196_autoMpg_solution/model_A.csv",
+        "static/local_testing_data/196_autoMpg/196_autoMpg_solution/model_B.csv",
+        "static/local_testing_data/196_autoMpg/196_autoMpg_solution/model_C.csv"
+    ]
+
+}

@@ -1,0 +1,60 @@
+#! /usr/bin/env bash
+
+cleanup()
+# example cleanup function
+{
+  pkill -P $$
+}
+
+control_c()
+# run if user hits control-c
+{
+  echo -en "\n*** Ouch! Exiting ***\n"
+  cleanup
+  exit $?
+}
+
+# trap keyboard interrupt (control-c)
+trap control_c INT
+
+#trap "exit" SIGINT SIGTERM
+# Check if there is an argument, and if it exists, then we load config from there.
+if [ -n "$1" ]; then
+    if [[ $1 == dataset:* ]]; then
+      echo "using tinyconf"
+  	else
+      if [ -e "$1" ]; then
+        cat "$1" > node_middleware/tufts_gt_wisc_configuration.json
+        cat "$1" > vue_frontend/tufts_gt_wisc_configuration.json
+	    else
+        echo "No file found at $1, falling back to 'tufts_gt_wisc_configuration.json'"
+	    fi
+    fi
+else
+    # check if $CONFIG_JSON_PATH really exists, otherwise don't overwrite
+    # tufts_gt_wisc_configuration.json
+    if [ -e "$CONFIG_JSON_PATH" ]; then
+      echo "using config file: $CONFIG_JSON_PATH"
+      cat "$CONFIG_JSON_PATH" > node_middleware/tufts_gt_wisc_configuration.json
+      cat "$CONFIG_JSON_PATH" > vue_frontend/tufts_gt_wisc_configuration.json
+    else
+      echo "No config file specified, falling back to 'tufts_gt_wisc_configuration.json'"
+    fi
+fi
+
+
+# First, we copy CONFIG_JSON_PATH into tufts_gt_wisc_configuration.json
+
+# Then, we start the node server
+export INTEGRATION_TEST=TRUE
+echo server_starting
+if [[ $1 == dataset:* ]]; then
+  cd node_middleware && yarn run server $1
+else
+  cd node_middleware && yarn run server
+fi
+
+# When the node server dies, we kill this process.
+cleanup
+# echo starting
+# echo done

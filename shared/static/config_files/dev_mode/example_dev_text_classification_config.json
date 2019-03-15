@@ -1,0 +1,20 @@
+{
+    "problem_schema": "static/local_testing_data/30_personae/30_personae_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/30_personae/30_personae_problem",
+    "dataset_schema": "static/local_testing_data/30_personae/30_personae_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/30_personae/30_personae_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "temp_storage_root": "/tmp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+    "running_mode"  : "development",
+    "model_output_prediction_files": [
+        "static/local_testing_data/30_personae/30_personae_solution/model_A.csv",
+        "static/local_testing_data/30_personae/30_personae_solution/model_B.csv",
+        "static/local_testing_data/30_personae/30_personae_solution/model_C.csv"
+    ]
+
+}

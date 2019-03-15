@@ -1,0 +1,94 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tufts-userdemo
+  labels:
+    app: tufts-userdemo
+spec:
+  loadBalancerIP: 10.108.5.98
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: tufts-userdemo
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tufts-userdemo-deployment
+  labels:
+    app: tufts-userdemo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tufts-userdemo
+  template:
+    metadata:
+      name: tufts-userdemo
+      labels:
+        app: tufts-userdemo
+    spec:
+      restartPolicy: Always
+      containers:
+    # MIT-FEATURELABS TA2
+      - name: mitfl-ta2
+        imagePullPolicy: Always
+        image: registry.datadrivendiscovery.org/jkanter/mit-fl-ta2:stable
+        volumeMounts:
+          - name: input-vol
+            mountPath: /input
+            readOnly: true
+          - name: output-vol
+            mountPath: /output
+            readOnly: false
+        ports:
+        - containerPort: 50051
+          hostPort: 50051
+        resources:
+          requests:
+            memory: 1Gi
+            cpu: 1
+        env:
+        - name: D3MTIMEOUT
+          value: "60"
+        - name: D3MINPUTDIR
+          value: /input
+        - name: D3MOUTPUTDIR
+          value: /output
+        - name: D3MRUN
+          value: ta2ta3
+    # TUFTS TA3
+      - name: tufts-ta3
+        imagePullPolicy: Always
+        image: registry.datadrivendiscovery.org/fheimerl/tuftsgtwiscta3:latest
+        command: [./ta3_search]
+        args:
+          - static/config_files/eval_mode/autompg.json
+        volumeMounts:
+          - name: input-vol
+            mountPath: /input
+            readOnly: true
+          - name: output-vol
+            mountPath: /output
+            readOnly: false
+        ports:
+        - name:  http
+          containerPort: 8080
+        resources:
+          requests:
+            memory: 1Gi
+            cpu: 1
+      imagePullSecrets:
+      - name: regcred3
+      volumes:
+      - name: input-vol
+        hostPath:
+          path: /opt/datasets/seed_datasets_current/
+          type: Directory
+      - name: output-vol
+        persistentVolumeClaim:
+          claimName: eval-output-pv-claim
