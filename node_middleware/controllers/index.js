@@ -15,9 +15,9 @@ var path = require("path");
 var evaluationConfig = require(appRoot + "/tufts_gt_wisc_configuration");
 try {
   var problemSchema = require(handleUrl(evaluationConfig.problem_schema));
-} catch(err) {
+} catch (err) {
   console.log("warning: no problem schema file available");
-  var problemSchema = { };
+  var problemSchema = {};
 }
 var datasetSchema = require(handleUrl(evaluationConfig.dataset_schema));
 var jsonfile = require("jsonfile");
@@ -27,7 +27,6 @@ module.exports.set = function(app, server, grpcClientWrapper) {
   var io = require("socket.io")(server, { origins: "*:*" });
 
   io.on("connection", function(socket) {
-
     // send evaluation config to front end
     console.log("CONNECTION!!!!");
     socket.emit("evalConfig", evaluationConfig);
@@ -82,7 +81,7 @@ module.exports.set = function(app, server, grpcClientWrapper) {
           grpcClientWrapper.sessionVar,
           selectedModel
         );
-      } catch(err) {
+      } catch (err) {
         console.log("WARNING: solution export failed!", err);
       }
     });
@@ -150,6 +149,7 @@ module.exports.set = function(app, server, grpcClientWrapper) {
           .then(grpcClientWrapper.describeSolutions)
           .then(grpcClientWrapper.fitSolutions)
           .then(grpcClientWrapper.produceSolutions)
+          // .then(grpcClientWrapper.exportFittedSolutions)
           // .then(grpcClientWrapper.endSearchSolutions)
           // .then(console.log)
           .then(function(sessionVar) {
@@ -168,7 +168,9 @@ module.exports.set = function(app, server, grpcClientWrapper) {
               sendPredictions(outputPath, pipeline);
             });
             socket.emit("backendFinished");
+            return sessionVar;
           })
+          .then(grpcClientWrapper.exportFittedSolutions)
           .catch(err => {
             console.log("PIPELINE FAILED!", err);
             socket.emit("pipelineFailed");
