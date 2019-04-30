@@ -4,4 +4,5 @@ cd node_middleware
 yarn 
 pip install -r python-requirements.txt
 cd ..
-cd vue_frontend && yarn
+cd vue_frontend
+yarn
