@@ -149,28 +149,28 @@ module.exports.set = function(app, server, grpcClientWrapper) {
           .then(grpcClientWrapper.describeSolutions)
           .then(grpcClientWrapper.fitSolutions)
           .then(grpcClientWrapper.produceSolutions)
-          // .then(grpcClientWrapper.exportFittedSolutions)
           // .then(grpcClientWrapper.endSearchSolutions)
           // .then(console.log)
+          .then(grpcClientWrapper.exportFittedSolutions)
           .then(function(sessionVar) {
             sessionVar.solutions.forEach(function(solution) {
-              console.log("OUTPUTCSV", solution.fit.outputCsv);
-              let pipeline = {};
-              pipeline.id = solution.solutionID;
-              pipeline.scores = solution.scores;
-              pipeline.results = [];
-              let firstElement = "/" + solution.fit.outputCsv.split("/")[1];
-              let outputPath = fs.existsSync(firstElement)
-                ? solution.fit.outputCsv
-                : localPrefix + solution.fit.outputCsv;
-              pipeline.fileUri = outputPath;
-              // socket.emit("modelFinished", pipeline);
-              sendPredictions(outputPath, pipeline);
+              if (solution.fit) {
+                console.log("OUTPUTCSV", solution.fit.outputCsv);
+                let pipeline = {};
+                pipeline.id = solution.solution_id;
+                pipeline.scores = solution.scores;
+                pipeline.results = [];
+                let firstElement = "/" + solution.fit.outputCsv.split("/")[1];
+                let outputPath = fs.existsSync(firstElement)
+                  ? solution.fit.outputCsv
+                  : localPrefix + solution.fit.outputCsv;
+                pipeline.fileUri = outputPath;                
+                // socket.emit("modelFinished", pipeline);
+                sendPredictions(outputPath, pipeline);
+              }
             });
             socket.emit("backendFinished");
-            return sessionVar;
           })
-          .then(grpcClientWrapper.exportFittedSolutions)
           .catch(err => {
             console.log("PIPELINE FAILED!", err);
             socket.emit("pipelineFailed");

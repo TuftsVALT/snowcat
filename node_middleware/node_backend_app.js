@@ -56,8 +56,9 @@ evaluationConfig.user_problem_root =
 
 // Load the grpc client wrapper
 // var grpcConfig = require(appRoot + '/lib/js/grpc_client_wrapper.js');
-var grpcConfig = require(appRoot + "/lib/js/grpc_client_wrapper.js");
-var grpcClientWrapper = null;
+// var grpcConfig = require(appRoot + '/lib/js/grpc_client_wrapper.js');
+// var grpcClientWrapper = null;
+const grpcClientWrapper = require("./Wrapper/Wrapper.js");
 if (evaluationConfig.running_mode != "development") {
   console.log("connecting to ta2");
   let ta2ConnectionString = "localhost:50051"; // FL
@@ -65,26 +66,24 @@ if (evaluationConfig.running_mode != "development") {
   // let ta2ConnectionString = 'localhost:50052' // TAMU
   if ("TA2_PORT" in process.env) {
     // make port for ta2 configurable through env var
-    ta2ConnectionString = "localhost:" + process.env["TA2_PORT"];
+    ta2ConnectionString = "0.0.0.0:" + process.env["TA2_PORT"];
   }
   console.log("ta2 connection string: ", ta2ConnectionString);
-  console.log(grpcConfig);
-  grpcClientWrapper = grpcConfig.connect(ta2ConnectionString);
+  // console.log(grpcConfig);
+  // grpcClientWrapper = grpcConfig.connect(ta2ConnectionString);
+  grpcClientWrapper.connect(ta2ConnectionString);
   // for the old wrapper
   // grpcClientWrapper.runStartSession();
   // testing code for API
   function testApi(context) {
-    return (
-      grpcClientWrapper
-        .searchSolutions(context)
-        .then(grpcClientWrapper.scoreSolutions)
-        .then(grpcClientWrapper.describeSolutions)
-        .then(grpcClientWrapper.fitSolutions)
-        .then(grpcClientWrapper.produceSolutions)
-        // .then(grpcClientWrapper.exportFittedSolutions)
-        .then(grpcClientWrapper.endSearchSolutions)
-        .catch(err => console.log("ERROR!", err))
-    );
+    return grpcClientWrapper
+      .searchSolutions(context)
+      .then(grpcClientWrapper.scoreSolutions)
+      .then(grpcClientWrapper.describeSolutions)
+      .then(grpcClientWrapper.fitSolutions)
+      .then(grpcClientWrapper.produceSolutions)
+      .then(grpcClientWrapper.endSearchSolutions)
+      .catch(err => console.log("ERROR!", err));
   }
 
   function exit() {

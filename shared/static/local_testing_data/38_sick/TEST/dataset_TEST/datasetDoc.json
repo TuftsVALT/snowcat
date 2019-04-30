@@ -1,16 +1,17 @@
 {
   "about": {
-    "datasetID": "38_sk_dataset_TEST",
+    "datasetID": "38_sick_dataset_TEST",
     "datasetName": "NULL",
     "license": "CC-BY license",
     "approximateSize": "",
-    "datasetSchemaVersion": "3.0",
+    "datasetSchemaVersion": "3.2.0",
     "redacted": true,
-    "datasetVersion": "1.0"
+    "datasetVersion": "2.0",
+    "digest": "0372f3897985c67c65bfa5cbb248e37ce2ba99b1ab72647e18b65be80ec6d7d9"
   },
   "dataResources": [
     {
-      "resID": "0",
+      "resID": "learningData",
       "resPath": "tables/learningData.csv",
       "resType": "table",
       "resFormat": [

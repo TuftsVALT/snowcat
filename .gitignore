@@ -9,6 +9,8 @@ yarn-error.log*
 /test/e2e/reports/
 selenium-debug.log
 
+vue_frontend/node_modules
+
 tufts_gt_wisc_configuration.json
 
 # Editor directories and files

@@ -42,6 +42,9 @@ export default {
     modelMetrics () {
       return _.map(this.$store.state.socket.models, (mod) => {
         var val = Object.values(mod.modelMetrics)[0]
+        if (!val){
+          val=-1
+        }
         return {
           modelId: mod.modelId,
           modelName: mod.modelName,

@@ -310,6 +310,9 @@ export default {
         var htmlStr = "<div> Model  : " + myModel.modelName + " </div>";
         var key = Object.keys(modelMetric) && Object.keys(modelMetric)[0]
         var val = modelMetric[key]
+        if (!val){
+          val=-1
+        }
         htmlStr += "<div class = 'metrics' > " + key + " : " + val.toFixed(3) + " </div>"
         $('[data-id="modelMetrics_'+this.regressModelCard+"_"+vueThis.stringToDomId(id)+'"]').html(htmlStr);
 
