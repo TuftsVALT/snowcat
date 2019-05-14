@@ -154,19 +154,26 @@ module.exports.set = function(app, server, grpcClientWrapper) {
           .then(grpcClientWrapper.exportFittedSolutions)
           .then(function(sessionVar) {
             sessionVar.solutions.forEach(function(solution) {
+              console.log(solution);
+              console.log("==========");
+              // console.log(grpcClientWrapper.sessionVar.solutions.get(solution_id))
+
               if (solution.fit) {
-                console.log("OUTPUTCSV", solution.fit.outputCsv);
-                let pipeline = {};
-                pipeline.id = solution.solution_id;
-                pipeline.scores = solution.scores;
-                pipeline.results = [];
-                let firstElement = "/" + solution.fit.outputCsv.split("/")[1];
-                let outputPath = fs.existsSync(firstElement)
-                  ? solution.fit.outputCsv
-                  : localPrefix + solution.fit.outputCsv;
-                pipeline.fileUri = outputPath;                
-                // socket.emit("modelFinished", pipeline);
-                sendPredictions(outputPath, pipeline);
+                let outputCsv = solution.fit.outputCsv;
+                if (outputCsv) {
+                  // console.log("OUTPUTCSV", solution.fit.outputCsv);
+                  let pipeline = {};
+                  pipeline.id = solution.solution_id;
+                  pipeline.scores = solution.scores;
+                  pipeline.results = [];
+                  let firstElement = "/" + outputCsv.split("/")[1];
+                  let outputPath = fs.existsSync(firstElement)
+                    ? solution.fit.outputCsv
+                    : localPrefix + solution.fit.outputCsv;
+                  pipeline.fileUri = outputPath;
+                  // socket.emit("modelFinished", pipeline);
+                  sendPredictions(outputPath, pipeline);
+                }
               }
             });
             socket.emit("backendFinished");

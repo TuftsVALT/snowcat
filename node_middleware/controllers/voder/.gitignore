@@ -1,0 +1,4 @@
+dataFiles/*.json
+dataFiles/csvs/*.csv
+dataGenerator/dataTypeMaps/*.json
+dataGenerator/csvs/*.csv

@@ -1,3 +1,5 @@
 node_modules/
 responses/
 controllers/datamart/__pycache__/
+controllers/voder/dataGenerator/__pycache__/
+controllers/datamart/__pycache__/datamart.cpython-37.pyc

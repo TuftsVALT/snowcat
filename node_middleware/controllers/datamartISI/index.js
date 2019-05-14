@@ -10,7 +10,7 @@ var appRoot = require('app-root-path');
 var spawnChildProcess = require(appRoot + "/lib/js/spawnChildProcess");
 var evaluationConfig = require(appRoot + "/tufts_gt_wisc_configuration");
 var datasetSchema = require(handleUrl(evaluationConfig.dataset_schema));
-var datamartSearch = appRoot + "/controllers/datamart/search.py";
+var datamartSearchISI = appRoot + "/controllers/datamartISI/search.py";
 const sema = require("semaphore")(1);
 const path = require("path");
 
@@ -20,9 +20,9 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   let headers = [];
 
   // Parses through csv file 
-  function getData() {
+  function getDataISI() {
     return new Promise(function(resolve, reject) {
-      let filepath = appRoot + "/output/outputDatamart.csv";
+      let filepath = appRoot + "/output/outputDatamartISI.csv";
       // console.log("filepath is ", filepath)
       let stream = fs.createReadStream(filepath);
       papa.parse(stream, {
@@ -41,15 +41,15 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   }
 
   // Calls search python script, then passes output to getData function, and finally emits output of function to vue frontend
-  function datamart(search, augment, index, fn, sema) {
+  function datamartISI(search, fn, sema) {
     let results = "";
     spawnChildProcess(
         "python3",
-        [datamartSearch, search, augment, index],
+        [datamartSearchISI, search],
         data => results += data.toString(),
         function() {
-          getData().then( (headers) => {
-            socket.emit("datamartFrontend", headers);
+          getDataISI().then( (headers) => {
+            socket.emit("datamartFrontendISI", headers);
             fn(headers);
             temp = search;
             sema.leave();
@@ -59,10 +59,10 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   }
   
   // Receives search input and calls datamart function
-  socket.on('datamartEndpoint', function(pagination, search, augment, index, fn) {
+  socket.on('datamartEndpointISI', function(pagination, search, fn) {
     // take the semaphore when a new call comes in;
     sema.take(function() {
-        datamart(search, augment, index, fn, sema);
+        datamartISI(search, fn, sema);
     })
   });
 }

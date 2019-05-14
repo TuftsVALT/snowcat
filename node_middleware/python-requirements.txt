@@ -1,2 +1,5 @@
 networkx==2.0
 datamart
+correlation_pearson
+si_prefix
+numpy

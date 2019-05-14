@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: datamart
+Version: 0.1
+Summary: Client library for DataMart
+Home-page: https://gitlab.com/ViDA-NYU/datamart/datamart
+Author: Remi Rampin
+Author-email: remi.rampin@nyu.edu
+Maintainer: Remi Rampin
+Maintainer-email: remi.rampin@nyu.edu
+License: BSD-3-Clause
+Project-URL: Homepage, https://gitlab.com/ViDA-NYU/datamart/datamart
+Project-URL: Source, https://gitlab.com/ViDA-NYU/datamart/datamart
+Project-URL: Tracker, https://gitlab.com/ViDA-NYU/datamart/datamart/issues
+Description: Client library for DataMart
+Keywords: datamart
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis

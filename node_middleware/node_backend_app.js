@@ -66,7 +66,7 @@ if (evaluationConfig.running_mode != "development") {
   // let ta2ConnectionString = 'localhost:50052' // TAMU
   if ("TA2_PORT" in process.env) {
     // make port for ta2 configurable through env var
-    ta2ConnectionString = "0.0.0.0:" + process.env["TA2_PORT"];
+    ta2ConnectionString = "localhost:" + process.env["TA2_PORT"];
   }
   console.log("ta2 connection string: ", ta2ConnectionString);
   // console.log(grpcConfig);
