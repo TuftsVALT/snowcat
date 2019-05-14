@@ -11,7 +11,8 @@ function exportFittedSolution(solution) {
   let rank = sessionVar.rankVar;
   sessionVar.rankVar = sessionVar.rankVar - 0.00000001;
   let request = new proto.SolutionExportRequest();
-  request.setSolutionId(solution.fit.fit_id);
+  // request.setSolutionId(solution.fit.fit_id);
+  request.setSolutionId(solution_id);
   request.setRank(rank);
   let client = props.client;
   client.solutionExport(request, response => {

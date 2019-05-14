@@ -49,44 +49,48 @@ function getSearchSolutionsResults(sessionVar, fulfill, reject) {
       // if (getSearchSolutionsResultsResponse.progress.state === "COMPLETED") {
 
       // console.log("DATA CALL", getSearchSolutionsResultsResponse);
-      
+
       let state = response.progress.state;
-      let status = response.progress.status;
-      let solution_id = response.solution_id;
+      // console.log("state:",state);
 
-      console.log("state:",state);
-      console.log("status:",status)
-      console.log("solution_id:",solution_id)
-      // if ( (!sessionVar.ta2Ident.user_agent.startsWith("nyu_ta2")) ||
-      // ignore of internal_score is NaN or 0 for nyu
-      //      (getSearchSolutionsResultsResponse.internal_score)) {
-      if (solution_id) {
-        // let solution = { solution_id: solution_id, scores: {} };
-        let solution = { solution_id: solution_id, finalOutput: "outputs.0" };
-        sessionVar.solutions.set(solution_id, solution);
+      // let status = response.progress.status;
+      // console.log("status:",status)
 
-        // console.log(sessionVar.solutions)
+      if (state === "COMPLETED") {
+        let solution_id = response.solution_id;
+        // console.log("solution_id:",solution_id)
 
-        // Added by Alex, for the purpose of Pipeline Visulization
-        if (props.isResponse) {
-          let pathPrefix =
-            props.RESPONSES_PATH + "getSearchSolutionsResultsResponses/";
-          let pathMid = solution_id;
-          let pathAffix = ".json";
-          let path = pathPrefix + pathMid + pathAffix;
-          let responseStr = JSON.stringify(response);
-          fs.writeFileSync(path, responseStr);
+        // if ( (!sessionVar.ta2Ident.user_agent.startsWith("nyu_ta2")) ||
+        // ignore of internal_score is NaN or 0 for nyu
+        //      (getSearchSolutionsResultsResponse.internal_score)) {
+        if (solution_id) {
+          // let solution = { solution_id: solution_id, scores: {} };
+          let solution = { solution_id: solution_id, finalOutput: "outputs.0" };
+          sessionVar.solutions.set(solution_id, solution);
+
+          // console.log(sessionVar.solutions)
+
+          // Added by Alex, for the purpose of Pipeline Visulization
+          if (props.isResponse) {
+            let pathPrefix =
+              props.RESPONSES_PATH + "getSearchSolutionsResultsResponses/";
+            let pathMid = solution_id;
+            let pathAffix = ".json";
+            let path = pathPrefix + pathMid + pathAffix;
+            let responseStr = JSON.stringify(response);
+            fs.writeFileSync(path, responseStr);
+          }
+
+          // let index = Array.from(sessionVar.solutions.values()).length;
+          // console.log("new solution:", index, solution_id);
+          // );
+        } else {
+          console.log("ignoring empty solution id");
         }
-
-        // let index = Array.from(sessionVar.solutions.values()).length;
-        // console.log("new solution:", index, solution_id);
-        // );
-      } else {
-        console.log("ignoring empty solution id");
+        // } else {
+        //   console.log("ignoring solution (nyu / 0 or NaN)", solution_id);
+        // }
       }
-      // } else {
-      //   console.log("ignoring solution (nyu / 0 or NaN)", solution_id);
-      // }
     });
     call.on("error", err => {
       console.log("Error!getSearchSolutionsResults");

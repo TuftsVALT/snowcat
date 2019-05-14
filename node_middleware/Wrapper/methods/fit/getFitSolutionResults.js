@@ -15,28 +15,27 @@ function getFitSolutionResults(solution, request_id, fulfill, reject) {
     let client = props.client;
 
     if (props.isRequest) {
-      let pathPrefix =
-        props.REQUESTS_PATH + "getFitSolutionResultsRequests/";
+      let pathPrefix = props.REQUESTS_PATH + "getFitSolutionResultsRequests/";
       let pathMid = request_id;
       let pathAffix = ".json";
       let path = pathPrefix + pathMid + pathAffix;
       let responseStr = JSON.stringify(request);
       fs.writeFileSync(path, responseStr);
     }
-    
+
     let call = client.getFitSolutionResults(request);
-    call.on("data", (response)=> {
+    call.on("data", response => {
       // console.log("getfitSolutionResultsResponse", getFitSolutionResultsResponse);
       // console.log("solution_id:", solution.solution_id);
       // console.log("state:", response.progress.state);
       let state = response.progress.state;
       if (state === "COMPLETED") {
-        console.log("getFitSolutionResultsResponse", response);
+        // console.log("getFitSolutionResultsResponse", response);
         // fitting solution is finished
         let fit_id = response.fitted_solution_id;
         let exposedOutputs = response.exposed_outputs;
-        console.log("FITTED SOLUTION COMPLETED", fit_id);
-        console.log("EXPOSED OUTPUTS", exposedOutputs);
+        // console.log("FITTED SOLUTION COMPLETED", fit_id);
+        // console.log("EXPOSED OUTPUTS", exposedOutputs);
         solution.fit = {
           fit_id: fit_id,
           exposedOutputs: exposedOutputs
@@ -44,7 +43,9 @@ function getFitSolutionResults(solution, request_id, fulfill, reject) {
         // solution.fit[fit_id] = fit_id;
         // solution.fit[exposedOutputs] = exposedOutputs;
 
-        console.log("getFitSolutionResults cl", solution);
+        // console.log("getFitSolutionResults: ");
+        // console.log(solution);
+        // console.log("==========");
 
         // Added by Alex, for the purpose of Pipeline Visulization
         if (props.isResponse) {

@@ -23,7 +23,7 @@ function searchSolutions(sessionVar) {
   let allowed_val_types = props.allowed_val_types;
   // remove old solutions
   // sessionVar.solutions = new Map();
-  const problemSchema = getProblemSchema();
+  let problemSchema = getProblemSchema();
   console.log(problemSchema.about.problemID);
 
   let request = new proto.SearchSolutionsRequest();
@@ -65,20 +65,22 @@ function searchSolutions(sessionVar) {
     problem.setTaskSubtype(task_subtype_mappings["none"]);
   }
 
-  var metrics = [];
-
-  for (var i = 0; i < problemSchema.inputs.performanceMetrics.length; i++) {
-    metrics.push();
-    metrics[i] = new proto.ProblemPerformanceMetric();
-    metrics[i].setMetric(
-      getMappedType(
-        metric_mappings,
-        problemSchema.inputs.performanceMetrics[i].metric
-      )
-    );
+  // set problemPerformanceMetrics
+  let problemPerformanceMetrics = [];
+  let performanceMetrics = problemSchema.inputs.performanceMetrics
+  for (let i = 0; i < performanceMetrics.length; i++) {
+    problemPerformanceMetrics.push();
+    problemPerformanceMetrics[i] = new proto.ProblemPerformanceMetric();
+    problemPerformanceMetrics[i].setMetric(getMappedType(metric_mappings, performanceMetrics[i].metric));
+    if (performanceMetrics[i].posLabel) {
+      problemPerformanceMetrics[i].setPosLabel(performanceMetrics[i].posLabel);
+    }
+    // if (performanceMetrics[i].k) {
+    //   metrics[i].setK(performanceMetrics[i].k);
+    // }
+    // console.log(metrics[i]);
   }
-
-  problem.setPerformanceMetrics(metrics);
+  problem.setPerformanceMetrics(problemPerformanceMetrics);
 
   problem_desc.setProblem(problem);
   var inputs = [];

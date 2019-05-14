@@ -36,7 +36,8 @@ function fitSolution(solution) {
   //
   return new Promise((fulfill, reject) => {
     let client = props.client;
-    console.log(request);
+    // console.log("fitSolutionRequest:")
+    // console.log(request);
     client.fitSolution(request, (err, response) => {
       if (err) {
         reject(err);

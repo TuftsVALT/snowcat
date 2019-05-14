@@ -39,7 +39,7 @@ function produceSolution(solution) {
 
   let promise = new Promise((fulfill, reject) => {
     let client = props.client;
-    console.log("produceSolutionRequest", request);
+    // console.log("produceSolutionRequest", request);
     client.produceSolution(request, (err, response) => {
       if (err) {
         reject(err);

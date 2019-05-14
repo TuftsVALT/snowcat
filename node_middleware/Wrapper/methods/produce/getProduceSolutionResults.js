@@ -13,22 +13,22 @@ function getProduceSolutionResults(solution, request_id, fulfill, reject) {
   request.setRequestId(request_id);
 
   if (props.isRequest) {
-      let pathPrefix =
-        props.REQUESTS_PATH + "getProduceSolutionResultsRequests/";
-      let pathMid = request_id;
-      let pathAffix = ".json";
-      let path = pathPrefix + pathMid + pathAffix;
-      let responseStr = JSON.stringify(request);
-      fs.writeFileSync(path, responseStr);
-    }
+    let pathPrefix = props.REQUESTS_PATH + "getProduceSolutionResultsRequests/";
+    let pathMid = request_id;
+    let pathAffix = ".json";
+    let path = pathPrefix + pathMid + pathAffix;
+    let responseStr = JSON.stringify(request);
+    fs.writeFileSync(path, responseStr);
+  }
 
   let promise = new Promise((fulfill, reject) => {
     let client = props.client;
-    console.log("GetProduceSolutionResultsRequest", request);
+    // console.log("GetProduceSolutionResultsRequest", request);
     let call = client.GetProduceSolutionResults(request);
     call.on("data", response => {
       // console.log("getProduceSolutionResultsResponse", response);
-      if (response.progress.state === "COMPLETED") {
+      let state = response.progress.state;
+      if (state === "COMPLETED") {
         // fitting solution is finished
         let exposedOutputs = response.exposed_outputs;
         // console.log("PRODUCE SOLUTION COMPLETED", produceSolutionResponseID);
@@ -42,6 +42,10 @@ function getProduceSolutionResults(solution, request_id, fulfill, reject) {
           "file://",
           ""
         );
+        console.log("getProduceSolutionResults: ");
+        console.log(solution);
+        console.log("==========");
+
         if (!solution.fit.outputCsv.trim()) {
           console.log(
             "WARNING: solution " +
