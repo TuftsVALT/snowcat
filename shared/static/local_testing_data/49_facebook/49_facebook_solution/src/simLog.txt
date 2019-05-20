@@ -1,0 +1,40 @@
+0 --------------------------------------
+Average : 0.000410047
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[17]=1, deg[144]=211, similarity[17][144]=0.00473934
+1 --------------------------------------
+Average : 0.000247976
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[22]=1, deg[79]=33, similarity[22][79]=0.00104493
+2 --------------------------------------
+Average : 0.000171143
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[22]=1, deg[86]=31, similarity[22][86]=0.000145307
+3 --------------------------------------
+Average : 0.000123694
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[65]=36, deg[23]=1, similarity[65][23]=2.94256e-05
+4 --------------------------------------
+Average : 9.45038e-05
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[84]=31, deg[23]=1, similarity[84][23]=8.54292e-06
+5 --------------------------------------
+Average : 7.49201e-05
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[78]=40, deg[23]=1, similarity[78][23]=1.65519e-06
+6 --------------------------------------
+Average : 6.16421e-05
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[78]=40, deg[23]=1, similarity[78][23]=4.98883e-07
+7 --------------------------------------
+Average : 5.22718e-05
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[80]=47, deg[23]=1, similarity[80][23]=2.13107e-07
+8 --------------------------------------
+Average : 4.55766e-05
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[80]=47, deg[23]=1, similarity[80][23]=1.06553e-07
+9 --------------------------------------
+Average : 4.06979e-05
+Maximum :  deg[0]=3, deg[0]=3, similarity[0][0]=1
+Minimum :  deg[79]=43, deg[23]=1, similarity[79][23]=5.29388e-08
