@@ -15,6 +15,8 @@ var getData = function(uri, callback) {
 
 // initial state
 const state = {
+  runProblem: null,
+  debugMode: true,
   // Socket connections
   ta2Available: false,
   isConnected: false,
@@ -26,6 +28,13 @@ const state = {
   rawDataTypes: {}, // Types of the columns in rawData collection
   graphUris: [], // URIs for graphs for problems that include graphs
   networkData: {},
+  voderDataFactsStatus: 'not_started',
+  voderDataFactsMessage: null,
+  voderDataFactsPctProgress: 0.0,
+  voderDataFactsErrMessage: null,
+  voderMainDataMapFileUrl: null,
+  voderMetadataMapFileUrl: null,
+  voderSelectedVariable: "",
   imageFolders: [],
   audios: [], // list of links for audio files stored somewhere else
   videos: [], // list of links for video files stored somewhere else
@@ -136,6 +145,9 @@ const getters = {
 
 // actions
 const actions = {
+  setRunProblem(context, problemObject) {
+    context.commit("runProblem", problemObject);
+  },
   updateSelectedModel(context, id) {
     context.commit("setSelectedModel", id);
   },
@@ -176,6 +188,17 @@ const actions = {
 
     v.$socket.emit("handleGraphData", function(data) {
       context.commit("addGraphData", data);
+    });
+
+    // Generate data facts using Arjun's Voder.  Tries to generate, but if
+    // there is a failure, it will set failure state into store, with message
+    // to user.
+    // socket.io's callback to emit only fires once, so it is only good for synchronous communication.
+    // instead, we open up a listener on the client for progress updates.
+    v.$socket.emit("handleVoderDataFacts", function(data) {
+      if (context.state.debugMode) {
+        console.log(" in handleVoderDataFacts, ack function received data: ", data)
+      }
     });
 
     // to start sending signal to node server for tabular data
@@ -272,7 +295,7 @@ const actions = {
   },
   socket_modelFinished: (context, pipeline) => {
     // parsing predictions is hacky here, but we were seeing weird behavior near the evaluation
-    // deadline and wanted to retain ability to work in dev and eval mode.
+    // deadline and wanted to retain ability to work in dev and eval mode.    
     var model = {
       modelId: pipeline.id,
       modelName: "Model " + (state.models.length + 1),
@@ -281,7 +304,7 @@ const actions = {
         ? pipeline.results.data
         : pipeline.results,
       fileUri: pipeline.fileUri
-    };
+    };    
     context.commit("addModel", model);
   },
   socket_tabularDataProcessed: (context, data) => {
@@ -303,6 +326,24 @@ const actions = {
     console.log("TIMESERIESREADY");
     context.commit("addTimeseries", data);
   },
+  socket_updateVoderDataFactsStatus: (context, data) => {
+    if (context.state.debugMode) {
+      console.log(" in socket_updateVoderDataFactsStatus, received data: ", data)
+    }
+
+    if (data.status === 'processing') {
+      context.commit("updateVoderDataFactsStatus",
+                      { status: 'processing', message: 'Processing', pctProgress: data.pctProgress });
+    } else if (data.status === 'completed') {
+      context.commit("addVoderDataFacts", data.completedInfo);
+      context.commit("updateVoderDataFactsStatus",
+                      { status: 'completed', message: 'Completed', pctProgress: 1.0 });
+    } else if (data.status === 'failed') {
+      context.commit("updateVoderDataFactsStatus",
+                      { status: 'failed', message: 'Data Facts Generation Failed', readableError: data.errMessage });
+    }
+  },
+
   socket_backendConnected: context => {
     console.log("received: backendConnected");
     context.commit("ta2Available");
@@ -324,11 +365,28 @@ const mutations = {
   CLEAR_MODELS(state) {
     state.models = [];
   },
+  setUserVariable(state, variable) {
+    console.log("STORE: SET VODER USER VARIABLE", variable);
+    state.voderSelectedVariable = variable;
+  },
   ta2Available(state) {
     state.ta2Available = true;
   },
   addGraphData(state, data) {
     state.networkData = Object.freeze(data);
+  },
+  updateVoderDataFactsStatus(state, data) {
+    state.voderDataFactsStatus = data.status;
+    state.voderDataFactsMessage = data.message;
+    state.voderDataFactsPctProgress = data.pctProgress;
+    state.voderDataFactsErrMessage = data.readableError;
+  },
+  addVoderDataFacts(state, data) {
+    state.voderMainDataMapFileUrl = data.voderMainDataMapFileUrl;
+    state.voderMetadataMapFileUrl = data.voderMetadataMapFileUrl;
+  },
+  runProblem(state, problemObject) {
+    state.runProblem = problemObject;
   },
   loadData(state, data) {
     Object.keys(data).forEach(function(each) {
@@ -381,7 +439,6 @@ const mutations = {
     state.xLinkingSelect_Set.clear();
     state.xLinkingSelect = [];
   },
-
   updateXLinking(state, data) {
     // the data in this case would be an object of four things, i.e., an array 'xLinkIndexes' with the index data points
     // a boolean 'highlight' variable true or false, a 'visType' variable with the name of the visualizartion (e.g., tabular or image)

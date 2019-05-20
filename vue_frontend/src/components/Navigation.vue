@@ -70,13 +70,27 @@
         </v-stepper-content>
       </template>
     </v-stepper>
+    <v-dialog v-model="voderDialog" fullscreen hide-overlay transition="dialog-bottom-transition">
+      <v-card>
+        <v-toolbar dark color="primary" fixed>
+          <v-btn icon dark @click.native="close()" @click.stop="mini = !mini">
+            <v-icon>close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Voder Data Facts</v-toolbar-title>
+        </v-toolbar>
+        <voder v-if="voderDialog" />
+      </v-card>
+    </v-dialog>
   </v-navigation-drawer>
 </template>
 
 <script>
-
+import Voder from '@/components/Voder'
 export default {
   name: 'navigation',
+  components: {
+    Voder
+  },
   beforeDestroy () {
     // clearInterval(this.interval)
   },
@@ -86,6 +100,10 @@ export default {
     }
   },
   methods: {
+    close () {
+      this.voderDialog = false;
+      this.$store.commit("setUserVariable", "");
+    },
     reset () {
       this.highestPhase = 1;
       this.mini = false;
@@ -174,6 +192,12 @@ export default {
     }
   },
   computed: {
+    voderSelectedVariable() {
+      return this.$store.state.socket.voderSelectedVariable;
+    },
+    runProblem() {
+      return this.$store.state.socket.runProblem;
+    },
     ta2Available() {
       return this.$store.state.socket.ta2Available;
     },
@@ -241,6 +265,22 @@ export default {
     // console.log('update ',  this.$store.state.socket.selectedModel)
   },
   watch: {
+    voderDialog() {
+      if (!this.voderDialog) {
+        setTimeout(() => {
+          this.mini = !this.mini;
+        }, 500);
+      }
+    },
+    voderSelectedVariable() {
+      if(this.voderSelectedVariable !== "") {  
+        this.voderDialog = true;
+      }
+    },
+    runProblem() {
+      console.log("RUN PROBLEM CHANGED", this.runProblem);
+      this.$emit("finished");
+    },
     ta2Available() {
       console.log("BACKEND IS CONNECTED: ", this.ta2Available);
     },
@@ -262,6 +302,7 @@ export default {
       backendProgress: 0,
       metrics: ['accuracy', 'sensitivity', 'specificity', 'matthews'],
       selectedMetric: 'accuracy',
+      voderDialog: false,
     }
   }
 }

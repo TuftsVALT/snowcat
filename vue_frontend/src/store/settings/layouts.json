@@ -5,10 +5,9 @@
       { "component": "ProblemDefinition", "size": 6, "help": false },
       { "component": "RawDataTableView", "size": 12, "help": false },
       { "component": "TabularDataView", "size": 12, "help": false },
-      { "component": "RawTimeSeries", "size": 12, "help": false },
-      { "component": "RawImageView", "size": 12 },
-      { "component": "GraphView", "size": 12, "help": false },
-      { "component": "TextRawData", "size": 12, "help": false },
+      
+      
+            
       { "component": "RawAudioView", "size": 12, "help": false },
       { "component": "RawVideoView", "size": 12, "help": false }
     ]
@@ -20,8 +19,8 @@
       { "component": "ConfusionMatrixContainer", "size": 12, "help": false },
       { "component": "RegressionModelOutput", "size": 12, "help": false },
       { "component": "TabularDataView", "size": 12, "help": false },
-      { "component": "RawTimeSeries", "size": 12, "help": false },
-      { "component": "GraphView", "size": 12, "help": false },
+      
+      
       { "component": "RawAudioView", "size": 12, "help": false },
       { "component": "RawVideoView", "size": 12, "help": false }
     ]

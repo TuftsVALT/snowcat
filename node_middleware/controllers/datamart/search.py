@@ -29,7 +29,7 @@ query_results = datamart.search(
 )
 
 # Writes the dataset's name, number of rows, and variables into a csv file
-f = open("./output/outputDatamart.csv", 'w') 
+f = open("./outputDatamart.csv", 'w') 
 for result in query_results:
 	f.write(result.metadata['name'])
 	f.write(",")
@@ -62,8 +62,11 @@ if augmentSelect == "true":
 	    send_data=True
 	)
 
-	with open('dataset_doc.json', 'w') as jsonfile:
+	if not os.path.exists('output/augment_data'):
+		os.mkdir('output/augment_data')
+
+	with open('output/augment_data/datasetDoc.json', 'w') as jsonfile:
 		json.dump(dataset_doc, jsonfile, indent=4)
 
 	learning_data.head()
-	learning_data.to_csv('augmentData.csv')
+	learning_data.to_csv('output/augment_data/augmentData.csv', index=False)

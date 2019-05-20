@@ -32,7 +32,10 @@ function getScoreSolutionResults(solution, scoreRequest_id, fulfill, reject) {
       let values = value_keys.map((key, i) => response.scores[i].value[key]);
       values = values.map(thing => thing[thing.raw]);
       for (let i = 0; i < values.length; i++) {
-        if (!values[i]) {
+        if (isNaN(values[i])) {
+          console.log("----");
+          console.log("Set NaN value" + values[i] + " to -1");
+          console.log("----");
           values[i] = -1;
         }
       }
@@ -48,9 +51,8 @@ function getScoreSolutionResults(solution, scoreRequest_id, fulfill, reject) {
         //   console.log(values[i])
         //   values[i] = -1;
         // }
+        console.log("METRICS", metrics[i], values, "num values", values.length);
       }
-
-      console.log("METRICS", metrics[i], values, "num values", values.length);
     } else {
       console.log("scoreSolutionResultsResponse INTERMEDIATE", response);
     }

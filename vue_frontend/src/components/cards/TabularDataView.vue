@@ -18,6 +18,22 @@
     pointer-events: none;
 }
 
+.histogram-card {
+  padding: 6px !important;
+}
+
+.histogram-container {
+  overflow: hidden;
+}
+
+.hidden-chart {
+  height: 5px;
+}
+
+.shown-chart {
+  height: 100%;
+}
+
 </style>
 
 <template>
@@ -28,6 +44,50 @@
     </div>
     <div id="tabulartooltip" style="opacity: 0;">
     </div>
+  <draggable @start="drag=true" @end="drag=false" :options="{ 'handle': '.drag-handle' }" class="drag-container layout row wrap">
+         <v-flex
+          v-for="index in participatingFieldsMetaDataRange"
+          :key="'card-'+index"
+          class="histogram-card"
+        >
+            <v-toolbar height='40px' flat>
+              <v-toolbar-title dense center>{{tabular_data[participatingFieldsMetaData[index][0]][0]}}</v-toolbar-title>
+
+              <v-layout flex align-center>
+              </v-layout>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
+
+              <v-layout flex pr-0 justify-end>
+                <v-btn title="Hold to drag card" bottom class="drag-handle" icon>
+                  <v-icon class="drag-handle">reorder</v-icon>
+                </v-btn>
+                <template v-if="hiddenCharts[index]">
+                  <v-btn title="Show plot" bottom @click.native='revealChart(index)' class="show" icon>
+                    <v-icon class="minimizer">maximize</v-icon>
+                  </v-btn>
+                </template>
+                <template v-else>
+                  <v-btn title="Minimize plot" bottom @click.native='hideChart(index)' class="minimize" icon>
+                    <v-icon class="minimizer">minimize</v-icon>
+                  </v-btn>
+                </template>
+              </v-layout>
+
+
+            </v-toolbar>
+                <div :class="{'hidden-chart': hiddenCharts[index],  'shown-chart': !hiddenCharts[index], 'histogram-container': true}" :ref="'histogram' + index"></div>
+          </v-card>
+        </v-flex>
+    </draggable>
 </div>
 
 </template>
@@ -35,10 +95,13 @@
 <script>
 
 var d3 = require("d3v3");
+import draggable from 'vuedraggable';
 import store from '@/store';
+import _ from 'lodash';
 //var d3 = require("d3v4");
 export default {
     name: 'TabularDataView',
+    components: { draggable },
     mounted: function() {
         this.rawDataHistogramVisualization(this.$store.state.socket.tabularProcessedData.participatingFieldsMetaData, this.$store.state.socket.tabularProcessedData.histogramMetaDataArray, this.$store.state.socket.tabularProcessedData.histogramBarCountsArray, this.$store.state.socket.tabularProcessedData.histogramBarNamesArray, this.$store.state.socket.tabularProcessedData.histogramCountsArray, this.$store.state.socket.tabularProcessedData.barRelationsArray, this.$store.state.socket.tabularProcessedData.histogramD3MIndexArray);
     },
@@ -49,10 +112,21 @@ export default {
           top: 40,
           right: 30,
           bottom: 30,
-          left: 50
+          left: 50,
+          hiddenCharts: {}
         };
     },
     computed: {
+        participatingFieldsMetaData() {
+          return this.$store.state.socket.tabularProcessedData.participatingFieldsMetaData;
+        },
+        participatingFieldsMetaDataRange() {
+          if (this.participatingFieldsMetaData) {
+            return _.range(this.participatingFieldsMetaData.length);
+          } else {
+            []
+          }
+        },
         show_spinner() {
                 return _.isEmpty(this.tabular_data);
         },
@@ -89,7 +163,6 @@ export default {
         xlink_video_data(){
                 return this.$store.state.socket.xLinking.visType.video;
         }
-
     },
     watch: {
         tabular_data: function() {
@@ -141,6 +214,26 @@ export default {
 
     },
     methods: {
+        chartStyle(index) {
+          if (this.hiddenCharts[index]) {
+            return {
+              height: '5px'
+            }
+          } else {
+            return {
+              height: '100%'
+            }
+          }
+        },
+        isChartHidden(index){
+                return this.hiddenCharts[index];
+        },
+        hideChart: function(index) {
+          this.$set(this.hiddenCharts, index, true);
+        },
+        revealChart: function(index) {
+          this.$set(this.hiddenCharts, index, false);
+        },
         xlinkSingleBarHandling: function(xLinking, histogramD3MIndexArray){
             console.log("Single Bar Selection Handling");
 
@@ -319,6 +412,7 @@ export default {
 
         },
         createHistogram: function(histogramID, indexMetaData, currentData, participatingFieldsMetaData, histogramMetaDataArray, histogramBarCountsArray, histogramBarNamesArray, histogramCountsArray, barRelationsArray, histogramD3MIndexArray) {
+            let vueThis = this;
 
             var currentMainCountsArrayID = Number(indexMetaData);
             var yUpperBound = Number(participatingFieldsMetaData[histogramID][2]);
@@ -374,7 +468,8 @@ export default {
                 .ticks(5)
                 .orient("left");
 
-            var svg = d3.select(this.$el).append("svg")
+            // var svg = d3.select(this.$el).append("svg")
+            var svg = d3.select(this.$refs['histogram' + histogramID][0]).append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
                 .attr("id", "the_SVG_ID")
@@ -409,7 +504,6 @@ export default {
 
 
       // This is to add title to each histogram
-
       svg.append("text")
                 //.attr("class", "title")
                 .attr("id", "the_TEXT_ID")
@@ -444,18 +538,31 @@ export default {
                     var y_parent = svg.node().parentNode.parentNode.getBoundingClientRect().top;
 
                     var x = x1;
-                    var y = y1 - y_parent + 80;
+                    var y = y1 - y_parent + 130;
 
-                    var text = "Full Name:  " + histogramMetaDataArray[currentMainCountsArrayID][0];
+                    var text = "Click on  " + histogramMetaDataArray[currentMainCountsArrayID][0] + " for data exploration";
 
                     tooltip.html(text)
                     tooltip.style('left', x + "px")
                         .style('top', y + "px")
+
+                    d3.select(this).style("fill", "blue");
+                    d3.select(this).style("text-decoration", "underline");
+                    d3.select(this).style("cursor", "pointer");
                 })
                 .on("mouseout", function(d) {
                     tooltip.transition()
                         .duration(200)
-                        .style('opacity', 0)
+                        .style('opacity', 0);
+                    d3.select(this).style("fill", null);
+                    d3.select(this).style("text-decoration", null);
+                    d3.select(this).style("cursor", "default");
+                })
+                .on("click", function(d) {
+                  let varName = histogramMetaDataArray[currentMainCountsArrayID][0];
+                  console.log("run VODER for", varName);
+                  store.commit('setUserVariable', varName);
+                  // vueThis.$store.state.socket.voderSelectedVariable = varName;
                 });
 
             //Starting x-axis label

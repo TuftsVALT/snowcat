@@ -22,7 +22,7 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   // Parses through csv file 
   function getData() {
     return new Promise(function(resolve, reject) {
-      let filepath = appRoot + "/output/outputDatamart.csv";
+      let filepath = appRoot + "/outputDatamart.csv";
       // console.log("filepath is ", filepath)
       let stream = fs.createReadStream(filepath);
       papa.parse(stream, {

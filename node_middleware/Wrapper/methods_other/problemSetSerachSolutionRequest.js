@@ -77,6 +77,9 @@ problemSetSerachSolutionRequest = function(problemSet, dirPath) {
       next_target.setTargetIndex(thisTarget.targetIndex);
       next_target.setResourceId(thisTarget.resID);
       next_target.setColumnIndex(thisTarget.colIndex);
+      console.log("--==")
+      console.log(thisTarget.colName)
+      console.log("==--")
       next_target.setColumnName(thisTarget.colName);
       targets.push(next_target);
     }

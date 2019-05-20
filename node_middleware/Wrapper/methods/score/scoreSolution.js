@@ -19,7 +19,6 @@ const handleImageUrl = require("../../functions/handleImageUrl");
 const getScoreSolutionResults = require("./getScoreSolutionResults.js");
 
 function scoreSolution(solution) {
-
   let solution_id = solution.solution_id;
   console.log("scoring solution with id", solution_id);
   let request = new proto.ScoreSolutionRequest();
@@ -45,11 +44,13 @@ function scoreSolution(solution) {
   // request.setPerformanceMetrics(problemPerformanceMetrics);
 
   let problemPerformanceMetrics = [];
-  let performanceMetrics = problemSchema.inputs.performanceMetrics
+  let performanceMetrics = problemSchema.inputs.performanceMetrics;
   for (let i = 0; i < performanceMetrics.length; i++) {
     problemPerformanceMetrics.push();
     problemPerformanceMetrics[i] = new proto.ProblemPerformanceMetric();
-    problemPerformanceMetrics[i].setMetric(getMappedType(metric_mappings, performanceMetrics[i].metric));
+    problemPerformanceMetrics[i].setMetric(
+      getMappedType(metric_mappings, performanceMetrics[i].metric)
+    );
     if (performanceMetrics[i].posLabel) {
       problemPerformanceMetrics[i].setPosLabel(performanceMetrics[i].posLabel);
     }
@@ -77,24 +78,25 @@ function scoreSolution(solution) {
   // scoringConfiguration.setMethod(proto.EvaluationMethod.K_FOLD);
   // scoringConfiguration.setFolds(4);
 
-
   // TODO: use holdout for now, but let users specify in the future
   // scoringConfiguration.setFolds(2);
 
+  // default method and testSize
   let method = "holdOut";
-  let testSize = 0.8
+  let testSize = 0.8;
+
   try {
-    method = problemSchema.inputs.dataSplits.method;    
+    method = problemSchema.inputs.dataSplits.method;
   } catch (err) {
-    console.log(err)
+    console.log(err);
   }
   try {
-    testSize = problemSchema.inputs.dataSplits.testSize    
+    testSize = problemSchema.inputs.dataSplits.testSize;
   } catch (err) {
-    console.log(err)
+    console.log(err);
   }
-  scoringConfiguration.setMethod(getMappedType(method_mappings, method))
-  scoringConfiguration.setTrainTestRatio(testSize); 
+  scoringConfiguration.setMethod(getMappedType(method_mappings, method));
+  scoringConfiguration.setTrainTestRatio(testSize);
 
   // // never encounter "k_fold" method so for, thus ignore this for now
   // if (method.includes("fold")) {

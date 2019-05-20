@@ -155,7 +155,7 @@ module.exports.set = function(app, server, grpcClientWrapper) {
           .then(function(sessionVar) {
             sessionVar.solutions.forEach(function(solution) {
               console.log(solution);
-              console.log("==========");
+              console.log("--==========--");
               // console.log(grpcClientWrapper.sessionVar.solutions.get(solution_id))
 
               if (solution.fit) {
