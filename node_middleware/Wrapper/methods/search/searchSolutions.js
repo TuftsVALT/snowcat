@@ -57,6 +57,10 @@ function searchSolutions(sessionVar) {
   problem.setTaskType(
     getMappedType(task_type_mappings, problemSchema.about.taskType)
   );
+  // console.log("=-=-");
+  // console.log(problemSchema.about.taskType);
+  // console.log(getMappedType(task_type_mappings, problemSchema.about.taskType));
+  // console.log("-=-=");
   if (task_subtype_mappings[problemSchema.about.taskSubType]) {
     problem.setTaskSubtype(
       getMappedType(task_subtype_mappings, problemSchema.about.taskSubType)
@@ -67,11 +71,13 @@ function searchSolutions(sessionVar) {
 
   // set problemPerformanceMetrics
   let problemPerformanceMetrics = [];
-  let performanceMetrics = problemSchema.inputs.performanceMetrics
+  let performanceMetrics = problemSchema.inputs.performanceMetrics;
   for (let i = 0; i < performanceMetrics.length; i++) {
     problemPerformanceMetrics.push();
     problemPerformanceMetrics[i] = new proto.ProblemPerformanceMetric();
-    problemPerformanceMetrics[i].setMetric(getMappedType(metric_mappings, performanceMetrics[i].metric));
+    problemPerformanceMetrics[i].setMetric(
+      getMappedType(metric_mappings, performanceMetrics[i].metric)
+    );
     if (performanceMetrics[i].posLabel) {
       problemPerformanceMetrics[i].setPosLabel(performanceMetrics[i].posLabel);
     }

@@ -1,0 +1,38 @@
+{
+  "about": {
+    "problemID": "LL1_VTXC_1369_synthetic_problem_SCORE",
+    "problemName": "Synthetic Vertex Classification Problem",
+    "problemDescription": "Synthetic data Vertex Classification task",
+    "taskType": "vertexClassification",
+    "taskSubType": "multiClass",
+    "problemSchemaVersion": "3.3.1",
+    "problemVersion": "1.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "LL1_VTXC_1369_synthetic_dataset_SCORE",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 102,
+            "colName": "label"
+          }
+        ]
+      }
+    ],
+    "dataSplits": {
+      "splitsFile": "dataSplits.csv",
+      "splitScript": "splitScript.py"
+    },
+    "performanceMetrics": [
+      {
+        "metric": "f1Macro"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

@@ -11,12 +11,12 @@ d3mIndex,Class
 38,negative
 40,negative
 46,sick
-48,negative
+48,sick
 51,negative
 55,negative
 70,negative
 82,negative
-91,negative
+91,sick
 98,negative
 99,negative
 104,negative
@@ -65,7 +65,7 @@ d3mIndex,Class
 361,negative
 385,negative
 399,negative
-409,sick
+409,negative
 410,negative
 424,negative
 425,negative
@@ -75,7 +75,7 @@ d3mIndex,Class
 432,negative
 433,negative
 434,negative
-437,negative
+437,sick
 438,negative
 447,negative
 454,negative
@@ -87,7 +87,7 @@ d3mIndex,Class
 509,negative
 515,negative
 528,negative
-529,negative
+529,sick
 533,negative
 537,negative
 540,negative
@@ -96,7 +96,7 @@ d3mIndex,Class
 555,negative
 558,negative
 568,negative
-577,negative
+577,sick
 582,negative
 585,negative
 592,negative
@@ -172,7 +172,7 @@ d3mIndex,Class
 924,negative
 931,negative
 933,negative
-937,sick
+937,negative
 938,negative
 939,negative
 941,negative
@@ -209,7 +209,7 @@ d3mIndex,Class
 1113,negative
 1121,negative
 1130,negative
-1131,negative
+1131,sick
 1132,negative
 1135,negative
 1138,negative
@@ -217,7 +217,7 @@ d3mIndex,Class
 1143,negative
 1150,negative
 1151,negative
-1153,negative
+1153,sick
 1156,negative
 1157,negative
 1167,negative
@@ -309,7 +309,7 @@ d3mIndex,Class
 1616,negative
 1619,negative
 1621,sick
-1622,sick
+1622,negative
 1624,negative
 1629,negative
 1630,negative
@@ -383,9 +383,9 @@ d3mIndex,Class
 1940,negative
 1942,negative
 1944,negative
-1947,negative
+1947,sick
 1950,negative
-1959,negative
+1959,sick
 1965,negative
 1967,negative
 1978,negative
@@ -451,7 +451,7 @@ d3mIndex,Class
 2345,sick
 2349,negative
 2351,negative
-2358,negative
+2358,sick
 2359,negative
 2362,negative
 2369,negative
@@ -486,7 +486,7 @@ d3mIndex,Class
 2541,negative
 2544,negative
 2546,negative
-2577,negative
+2577,sick
 2585,negative
 2590,negative
 2591,negative
@@ -548,11 +548,11 @@ d3mIndex,Class
 2875,negative
 2877,negative
 2882,negative
-2901,negative
+2901,sick
 2902,negative
 2904,negative
 2906,negative
-2907,negative
+2907,sick
 2908,negative
 2909,negative
 2911,negative
@@ -630,8 +630,8 @@ d3mIndex,Class
 3231,negative
 3240,negative
 3241,negative
-3244,negative
-3245,sick
+3244,sick
+3245,negative
 3252,negative
 3254,negative
 3257,negative
@@ -675,7 +675,7 @@ d3mIndex,Class
 3444,sick
 3447,negative
 3453,sick
-3462,negative
+3462,sick
 3463,negative
 3469,negative
 3480,negative
@@ -690,7 +690,7 @@ d3mIndex,Class
 3515,negative
 3516,negative
 3518,negative
-3521,sick
+3521,negative
 3523,negative
 3525,negative
 3527,negative
@@ -749,7 +749,7 @@ d3mIndex,Class
 3739,negative
 3742,negative
 3754,negative
-3755,negative
+3755,sick
 3756,negative
 3761,negative
 3770,negative

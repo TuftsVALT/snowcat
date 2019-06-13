@@ -27,7 +27,7 @@ We also require node version >= 8.0.  __If you get an error during the server st
 
 All commands below are assuming you are in the application root.  Install the backend dependencies.  Assuming you have `pip` installed,
 
-    pip install -r python-requirements.txt
+    pip3 install -r python-requirements.txt
 
 Install the node dependencies.
 

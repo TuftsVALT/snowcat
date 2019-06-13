@@ -95,8 +95,16 @@ function scoreSolution(solution) {
   } catch (err) {
     console.log(err);
   }
-  scoringConfiguration.setMethod(getMappedType(method_mappings, method));
-  scoringConfiguration.setTrainTestRatio(testSize);
+  // console.log("===---");
+  // console.log(method);
+  // console.log(testSize);
+  // console.log("---===");
+  if (method) {
+    scoringConfiguration.setMethod(getMappedType(method_mappings, method));
+  }
+  if (testSize) {
+    scoringConfiguration.setTrainTestRatio(testSize);
+  }
 
   // // never encounter "k_fold" method so for, thus ignore this for now
   // if (method.includes("fold")) {

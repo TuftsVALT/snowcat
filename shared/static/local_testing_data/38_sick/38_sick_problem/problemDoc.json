@@ -32,7 +32,8 @@
     },
     "performanceMetrics": [
       {
-        "metric": "f1Macro"
+        "metric": "f1",
+        "posLabel": "sick"
       }
     ]
   },

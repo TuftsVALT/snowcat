@@ -41,3 +41,20 @@ shared/output/*
 !shared/output/README.txt
 
 shared/splitter.pkl
+
+# voder and python
+shared/static/local_testing_data/voder/*.json
+!shared/static/local_testing_data/voder/cars.json
+shared/static/local_testing_data/voder/*.csv
+!shared/static/local_testing_data/voder/cars.csv
+
+# layouts
+vue_frontend/src/store/settings/layouts.json
+vue_frontend/src/store/settings/layouts_task_one.json
+
+# augmentation dataset
+node_middleware/augmentData.csv
+node_middleware/dataset_doc.json
+
+shared/*.json
+shared/*.pkl

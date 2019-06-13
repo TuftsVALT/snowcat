@@ -36,12 +36,19 @@ function assigningMinMaxSum(array, col, data){
         var j = 0;
         for(var key in obj){
             if(array[j][colType.type] == "integer" || array[j][colType.type] == "float" || array[j][colType.type] == "real"){//isNumber(obj[key]) == true){
-                var value = Number(obj[key]);
-                histogramMin[j] = value;
-                histogramMax[j] = value;
-                array[j][colType.sum] = value;
-                array[j][colType.counts] = 1;
-
+                if(!(obj[key] == null || obj[key] == '' || obj[key] == "?")){
+                    var value = Number(obj[key]);
+                    histogramMin[j] = value;
+                    histogramMax[j] = value;
+                    array[j][colType.sum] = value;
+                    array[j][colType.counts] = 1;
+                }
+                else{
+                  histogramMin[j] = 0;
+                  histogramMax[j] = 0;
+                  array[j][colType.sum] = 0;
+                  array[j][colType.counts] = 1;
+                }
               }
             else{
                 histogramMin[j] = 0;
@@ -59,14 +66,16 @@ function assigningMinMaxSum(array, col, data){
         var j = 0;
         for(var key in obj){
             if(array[j][colType.type] == "integer" || array[j][colType.type] == "float" || array[j][colType.type] == "real"){//isNumber(obj[key]) == true){
-                var value = Number(obj[key]);
-                array[j][colType.sum] = array[j][colType.sum] + value;
-                array[j][colType.counts] = array[j][colType.counts] + 1;
-                if(histogramMin[j] > value){
-                    histogramMin[j] = value;
-                  }
-                if(histogramMax[j] < value){
-                    histogramMax[j] = value;
+                if(!(obj[key] == null || obj[key] == '' || obj[key] == "?")){
+                    var value = Number(obj[key]);
+                    array[j][colType.sum] = array[j][colType.sum] + value;
+                    array[j][colType.counts] = array[j][colType.counts] + 1;
+                    if(histogramMin[j] > value){
+                      histogramMin[j] = value;
+                    }
+                    if(histogramMax[j] < value){
+                      histogramMax[j] = value;
+                    }
                 }
                 j++;
             }
@@ -200,7 +209,7 @@ function assigningHistogramCounts(bars, fields, message, metaDataArray, countsAr
       }
 
       if(metaDataArray[j][colType.type] == "integer"){
-          if(!(obj[key] == null || obj[key] == '')){
+          if(!(obj[key] == null || obj[key] == '' || obj[key] == "?")){
             var value = Math.floor( (Number(obj[key])-Number(metaDataArray[j][colType.min])) / Number(metaDataArray[j][colType.intvl]));
             //the (value*2)+1 is used to locate the index of targetIndex,
             //where in the array the first index represents the bar number
@@ -220,7 +229,7 @@ function assigningHistogramCounts(bars, fields, message, metaDataArray, countsAr
           }
         }
         else if(metaDataArray[j][colType.type] == "real"){
-          if(!(obj[key] == null || obj[key] == '')){
+          if(!(obj[key] == null || obj[key] == '' || obj[key] == ' ?')){
             var value = Math.floor( (Number(obj[key])-Number(metaDataArray[j][colType.min])) / Number(metaDataArray[j][colType.intvl]));
             //Math.floor((Number(obj[key])/histogramBarInterval[j]) - histogramMin[j]/histogramBarInterval[j]);
             var targetIndex = (value*2)+1;
@@ -238,7 +247,7 @@ function assigningHistogramCounts(bars, fields, message, metaDataArray, countsAr
           }
         }
         else{ // for all other categorical or order forms
-          if(!(obj[key] == null || obj[key] == '')){
+          if(!(obj[key] == null || obj[key] == '' || obj[key] == ' ?')){
             var currentArray = countsArray[j];
             var currentLength = currentArray.length;
 
@@ -330,7 +339,7 @@ function assigningBarRelations(partFields, partFieldsMetaData, message, metaData
 
         //the case of integer
          if(metaDataArray[j][colType.type] == "integer"){
-              if(obj[key] == null || obj[key] == ''){
+              if(obj[key] == null || obj[key] == '' || obj[key] == ' ?'){
                   currentCountsArray[k] = 0;
                   flagArray[k] = 1;
               }
@@ -353,7 +362,7 @@ function assigningBarRelations(partFields, partFieldsMetaData, message, metaData
 
          //the case of float
          else if(metaDataArray[j][colType.type] == "real"){// || metaDataArray[j][colType.type] == "float"){
-              if(obj[key] == null || obj[key] == ''){
+              if(obj[key] == null || obj[key] == '' || obj[key] == ' ?'){
                 currentCountsArray[k] = 0;
                 flagArray[k] = 1;
               }
@@ -379,7 +388,7 @@ function assigningBarRelations(partFields, partFieldsMetaData, message, metaData
          }
          // all other than integer or float
          else{
-              if(obj[key] == null || obj[key] == ''){
+              if(obj[key] == null || obj[key] == '' || obj[key] == ' ?'){
                   currentCountsArray[k] = 0;
                   flagArray[k] = 1;
               }
@@ -605,7 +614,17 @@ function tabularRawDataPreprocessing(dataJSONFile, tabularMetaData){
         }
     }
 
+/*
+    console.log("abularProcessedArrays.histogramMetaDataArray:"+tabularProcessedArrays.histogramMetaDataArray);
+    console.log("abularProcessedArrays.participatingFieldsMetaData:"+tabularProcessedArrays.participatingFieldsMetaData);
+    console.log("abularProcessedArrays.participatingFieldsMetaData:"+tabularProcessedArrays.participatingFieldsMetaData);
+    console.log("abularProcessedArrays.histogramBarCountsArray:"+tabularProcessedArrays.histogramBarCountsArray);
+    console.log("abularProcessedArrays.histogramBarNamesArray:"+tabularProcessedArrays.histogramBarNamesArray);
+    console.log("abularProcessedArrays.histogramCountsArray:"+tabularProcessedArrays.histogramCountsArray);
+    console.log("abularProcessedArrays.barRelationsArray:"+tabularProcessedArrays.barRelationsArray);
+    console.log("abularProcessedArrays.histogramD3MIndexArray:"+tabularProcessedArrays.histogramD3MIndexArray);
 
+*/
     return tabularProcessedArrays;
 
 }

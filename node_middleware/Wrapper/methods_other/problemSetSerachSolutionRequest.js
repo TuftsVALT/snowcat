@@ -4,7 +4,6 @@ const appRoot = require("app-root-path");
 // import evaluationConfig
 const evaluationConfig = require(appRoot + "/tufts_gt_wisc_configuration.json");
 
-
 // import props
 const props = require("../props");
 
@@ -77,9 +76,9 @@ problemSetSerachSolutionRequest = function(problemSet, dirPath) {
       next_target.setTargetIndex(thisTarget.targetIndex);
       next_target.setResourceId(thisTarget.resID);
       next_target.setColumnIndex(thisTarget.colIndex);
-      console.log("--==")
-      console.log(thisTarget.colName)
-      console.log("==--")
+      // console.log("--==")
+      // console.log(thisTarget.colName)
+      // console.log("==--")
       next_target.setColumnName(thisTarget.colName);
       targets.push(next_target);
     }

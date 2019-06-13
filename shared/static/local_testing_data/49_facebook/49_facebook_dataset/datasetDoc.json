@@ -9,7 +9,7 @@
     "datasetVersion": "3.0",
     "datasetSchemaVersion": "3.3.1",
     "redacted": false,
-    "digest": "ce6d0eb6e52a46802f32beab047162a9fbd46499df831e3c45458bbcc21064ac"
+    "digest": "32dccfc4f4b1bc217218f82aa0107babaec5f75ec828b08d417ee5881866e503"
   },
   "dataResources": [
     {
@@ -62,7 +62,7 @@
         {
           "colIndex": 2,
           "colName": "G2.nodeID",
-          "colType": "integer",
+          "colType": "string",
           "role": [
             "attribute"
           ],

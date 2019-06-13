@@ -86,7 +86,7 @@ class SelectFromLinearSVC(AbstractFeatureSelector):
         'C': [float(x) for x in np.logspace(-2, 5, 100)]
     }
 
-    def __init__(self, threshold=None, penalty='l1', loss='squared_hinge', dual=False, tol=0.0001, C=1.0, fit_intercept=True, random_state=None, max_iter=1000):
+    def __init__(self, threshold=None, penalty='l1', loss='squared_hinge', dual=False, tol=0.0001, C=1.0, fit_intercept=True, random_state=42, max_iter=1000):
         self.threshold = threshold
         self.penalty = penalty
         self.loss = loss
@@ -132,7 +132,7 @@ class SelectFromLasso(AbstractFeatureSelector):
         'alpha': [float(x) for x in np.logspace(-5, 2, 100)]
     }
 
-    def __init__(self, threshold=None, alpha=1.0, fit_intercept=True, normalize=False, max_iter=1000, tol=0.0001, positive=False, selection='cyclic', random_state=None):
+    def __init__(self, threshold=None, alpha=1.0, fit_intercept=True, normalize=False, max_iter=1000, tol=0.0001, positive=False, selection='cyclic', random_state=42):
         self.threshold = threshold
         self.alpha = alpha
         self.fit_intercept = fit_intercept

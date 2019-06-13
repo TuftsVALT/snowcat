@@ -1,0 +1,63 @@
+{
+  "about": {
+    "datasetID": "LL1_bn_fly_drosophila_medulla_net_dataset_SCORE",
+    "datasetName": "Drosophila brain network",
+    "description": "No description provided",
+    "license": "Unknown Public",
+    "citation": "\n@inproceedings{nr,\ntitle={The Network Data Repository with Interactive Graph Analytics and Visualization},\nauthor={Ryan A. Rossi and Nesreen K. Ahmed},\nbooktitle={Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence},\nurl={http://networkrepository.com},\nyear={2015}\n}\n",
+    "datasetSchemaVersion": "3.2.0",
+    "redacted": false,
+    "digest": "6fe3b6505f00d5f26591ea8ffd97db3a9a3ff10924a78577e1dc440a5bbdb31c",
+    "datasetVersion": "2.0"
+  },
+  "dataResources": [
+    {
+      "resID": "0",
+      "resPath": "graphs/graph.gml",
+      "resType": "graph",
+      "resFormat": [
+        "text/gml"
+      ],
+      "isCollection": false
+    },
+    {
+      "resID": "learningData",
+      "resPath": "tables/learningData.csv",
+      "resType": "table",
+      "resFormat": [
+        "text/csv"
+      ],
+      "isCollection": false,
+      "columns": [
+        {
+          "colIndex": 0,
+          "colName": "d3mIndex",
+          "colType": "integer",
+          "role": [
+            "index"
+          ]
+        },
+        {
+          "colIndex": 1,
+          "colName": "nodeID",
+          "colType": "integer",
+          "role": [
+            "attribute"
+          ],
+          "refersTo": {
+            "resID": "0",
+            "resObject": "node"
+          }
+        },
+        {
+          "colIndex": 2,
+          "colName": "community",
+          "colType": "categorical",
+          "role": [
+            "suggestedTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

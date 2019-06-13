@@ -1,0 +1,17 @@
+{
+    "problem_schema": "static/local_testing_data/SEMI_155_pokerhand/SEMI_155_pokerhand_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/SEMI_155_pokerhand/SEMI_155_pokerhand_problem",
+    "dataset_schema": "static/local_testing_data/SEMI_155_pokerhand/SEMI_155_pokerhand_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/SEMI_155_pokerhand/SEMI_155_pokerhand_dataset",
+    "pipeline_logs_root": "/outputs/logs",
+    "executables_root": "/outputs/executables",
+    "temp_storage_root": "/temp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+	"running_mode": "development",
+	"model_output_prediction_files": [
+		"static/local_testing_data/SEMI_155_pokerhand/SEMI_155_pokerhand_solution/predictions.csv"
+	]
+}

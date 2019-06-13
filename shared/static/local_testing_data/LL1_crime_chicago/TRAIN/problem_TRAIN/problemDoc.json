@@ -1,0 +1,39 @@
+{
+  "about": {
+    "problemID": "LL1_crime_chicago_problem_TRAIN",
+    "problemName": "LL1_Chicago_Crime",
+    "taskType": "classification",
+    "taskSubType": "multiClass",
+    "problemSchemaVersion": "3.2.0",
+    "problemVersion": "2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "LL1_crime_chicago_dataset_TRAIN",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 2,
+            "colName": "location1"
+          }
+        ]
+      }
+    ],
+    "dataSplits": {
+      "method": "holdOut",
+      "testSize": 0.0410958,
+      "numRepeats": 0,
+      "splitsFile": "dataSplits.csv"
+    },
+    "performanceMetrics": [
+      {
+        "metric": "accuracy"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

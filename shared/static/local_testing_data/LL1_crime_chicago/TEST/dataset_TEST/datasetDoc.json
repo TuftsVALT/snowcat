@@ -1,0 +1,69 @@
+{
+  "about": {
+    "datasetID": "LL1_crime_chicago_dataset_TEST",
+    "datasetName": "LL1_Chicago_Crime",
+    "description": "Chicago Police Department",
+    "citation": "Chicago Police Department. “Crimes - 2001 to Present.”\n",
+    "license": "MIT license",
+    "source": "City of Chicago Data Portal",
+    "sourceURI": "https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2",
+    "approximateSize": "1 MB",
+    "datasetSchemaVersion": "3.2.0",
+    "datasetVersion": "2.0",
+    "digest": "3d22b2406a36bc2d9072a5bb53e40a93fb6ba225e806c6b566efdf4c6db2b1f3"
+  },
+  "dataResources": [
+    {
+      "resID": "learningData",
+      "resPath": "tables/learningData.csv",
+      "resType": "table",
+      "resFormat": [
+        "text/csv"
+      ],
+      "isCollection": false,
+      "columns": [
+        {
+          "colIndex": 0,
+          "colName": "d3mIndex",
+          "colType": "integer",
+          "role": [
+            "index"
+          ]
+        },
+        {
+          "colIndex": 1,
+          "colName": "time",
+          "colType": "integer",
+          "role": [
+            "attribute",
+            "timeIndicator"
+          ]
+        },
+        {
+          "colIndex": 2,
+          "colName": "location1",
+          "colType": "categorical",
+          "role": [
+            "suggestedTarget"
+          ]
+        },
+        {
+          "colIndex": 3,
+          "colName": "location2",
+          "colType": "categorical",
+          "role": [
+            "suggestedTarget"
+          ]
+        },
+        {
+          "colIndex": 4,
+          "colName": "location3",
+          "colType": "categorical",
+          "role": [
+            "suggestedTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -55,8 +55,8 @@ module.exports.set = function(app, server, grpcClientWrapper) {
     let text_data = require("./text_data");
     text_data.set(app, server, grpcClientWrapper, socket);
 
-    let image_data = require("./image_data");
-    image_data.set(app, server, grpcClientWrapper, socket);
+    // let image_data = require("./image_data");
+    // image_data.set(app, server, grpcClientWrapper, socket);
 
     let timeseries_data = require("./timeseries_data");
     timeseries_data.set(app, server, grpcClientWrapper, socket);

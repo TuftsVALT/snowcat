@@ -1,0 +1,37 @@
+{
+  "about": {
+    "problemID": "56_sunspots_problem_TRAIN",
+    "problemName": "Yearly sunspots prediction problem",
+    "problemDescription": "Predicting yearly numbers of sunspots from 1749 to present, as from the World Data Center, aka SIDC.",
+    "taskType": "timeSeriesForecasting",
+    "problemSchemaVersion": "3.2.0",
+    "problemVersion": "2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "56_sunspots_dataset_TRAIN",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 4,
+            "colName": "sunspots"
+          }
+        ]
+      }
+    ],
+    "dataSplits": {
+      "splitsFile": "dataSplits.csv",
+      "splitScript": "splitScript.py"
+    },
+    "performanceMetrics": [
+      {
+        "metric": "rootMeanSquaredError"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

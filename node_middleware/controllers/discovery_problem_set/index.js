@@ -12,8 +12,10 @@ var fse = require("fs-extra");
 var appRoot = require("app-root-path");
 var evaluationConfig = require(appRoot + "/tufts_gt_wisc_configuration");
 var datasetSchema = require(handleUrl(evaluationConfig.dataset_schema));
+
 // var serachSolutionRequest = require(appRoot + "/lib/js/grpc_client_wrapper.js");
-var serachSolutionRequest = require(appRoot + "/Wrapper/Wrapper.js");
+var serachSolutionRequest = require(appRoot + "/Wrapper/Wrapper.js"); // alex edit
+
 var path = require("path");
 var papa = require("papaparse");
 var jsonfile = require("jsonfile");
@@ -114,9 +116,11 @@ var tablularTaskMappings = {
     "collaborativeFiltering"
   ],
   real: [
+  //  "classification",
     "regression",
+    //"clustering",
     "collaborativeFiltering"
-  ] /*['classification', 'regression', 'clustering', 'collaborativeFiltering'],*/,
+  ],
   categorical: [
     "classification",
     "regression",
@@ -166,16 +170,16 @@ var graphTaskMappings = {
     "collaborativeFiltering"
   ],
   //graphMatching
-  //"real": ['classification', 'regression', 'clustering', 'linkPrediction', 'vertexNomination', 'communityDetection', 'graphClustering','collaborativeFiltering'],
   real: [
+    //"classification",
     "regression",
+    "clustering",
     "linkPrediction",
     "vertexNomination",
     "communityDetection",
     "graphClustering",
     "collaborativeFiltering"
   ],
-
   categorical: [
     "classification",
     "regression",
@@ -219,6 +223,7 @@ var preprocessProblemDesc = function() {
       id: [],
       name: [],
       type: [],
+      role: [],
       resObject: []
     }
   };
@@ -257,7 +262,8 @@ var preprocessProblemDesc = function() {
           dataDescMetadata.columnType.id.push(drc["colIndex"]);
           dataDescMetadata.columnType.name.push(drc["colName"]);
           dataDescMetadata.columnType.type.push(drc["colType"]);
-          //console.log("drc[colType]:"+drc["colType"]);
+          dataDescMetadata.columnType.role.push(drc["role"]);
+
           if (drc["refersTo"]) {
             dataDescMetadata.columnType.resObject.push(
               drc["refersTo"]["resObject"]
@@ -303,9 +309,45 @@ var preprocessProblemDesc = function() {
   console.log(dataDescMetadata.columnType.resObject);
 */
 
+var count = 0;
+
+// In the case if there is any time-series forecasting data.
+//This will first check whether the role has somehting timeIndicator
+//and if so then it will create on the top the time-series forecasting related problem specifications
+
+for(var i = 0; i < dataDescMetadata.columnType.role.length; i++){
+  if (_.includes(dataDescMetadata.columnType.role[i], "timeIndicator")){
+      for (var j = 0; j < dataDescMetadata.columnType.id.length; j++) {
+        if(j != i){
+          for (var l = 0;l < metricMappings.timeSeriesForecasting.length;l++){
+            singleProblem = {};
+            count++;
+            singleProblem.problemID = count;
+
+            singleProblem.targetFeature = dataDescMetadata.columnType.name[j];
+            var targets = [];
+            for (var k = 0; k < dataDescMetadata.columnType.id.length; k++) {
+              if (k != j) {
+                targets.push(dataDescMetadata.columnType.name[k]);
+              }
+            }
+            singleProblem.predictFeatures = targets;
+            singleProblem.taskType = "timeSeriesForecasting";
+            singleProblem.metric = metricMappings.timeSeriesForecasting[l];
+            singleProblem.priority = "default";
+            singleProblem.creationType = "auto";
+            singleProblem.meaningful = "undefined";
+            singleProblem.description =
+              "This is a time-series forcasting task where the time-series is one of the target field(s)";
+            problemSets.push(singleProblem);
+
+          }
+        }
+      }
+  } //end of for(var i = 0; i < dataDescMetadata.columnType.role.length; i++){
+
   if (_.includes(dataDescMetadata.resourceType.type, "graph")) {
     //console.log("Data has graph");
-    var count = 0;
 
     for (var i = 0; i < dataDescMetadata.columnType.id.length; i++) {
       if (
@@ -315,7 +357,6 @@ var preprocessProblemDesc = function() {
         dataDescMetadata.columnType.type[i] == "string" ||
         dataDescMetadata.columnType.type[i] == "boolean"
       ) {
-        console.log(dataDescMetadata.columnType.type[i]);
         if (dataDescMetadata.columnType.resObject[i] == "null") {
           for (var k = 0; k < graphTaskMappings.integer.length; k++) {
             if (graphTaskMappings.integer[k] == "classification") {
@@ -518,7 +559,7 @@ var preprocessProblemDesc = function() {
             } //end of if for communityDetection
             else if (graphTaskMappings.integer[k] == "graphClustering") {
               for (var l = 0; l < metricMappings.graphClustering.length; l++) {
-                singleProblem;
+                singleProblem = {};
                 count++;
                 singleProblem.problemID = count;
 
@@ -596,34 +637,43 @@ var preprocessProblemDesc = function() {
         totalGraphs++;
       }
     }
+
     //console.log('totalGraphs:'+totalGraphs);
     // if there are more than one graph, then we also need to do graph matching
     if (totalGraphs > 1) {
-      // console.log("There are more than one graph");
-      for (var i = 0; i < metricMappings.graphMatching.length; i++) {
-        singleProblem = {};
-        count++;
-        singleProblem.problemID = count;
+      console.log("There are more than one graph");
+      for (var i = 0; i < dataDescMetadata.columnType.id.length; i++) {
+        if (dataDescMetadata.columnType.resObject[i] != "node")
+        {
+          for (var j = 0; j < metricMappings.graphMatching.length; j++) {
+            singleProblem = {};
+            count++;
+            singleProblem.problemID = count;
 
-        singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
-        var targets = [];
-        for (var j = 0; j < dataDescMetadata.columnType.id.length; j++) {
-          if (j != i && dataDescMetadata.columnType.resObject[j] != "null") {
-            targets.push(dataDescMetadata.columnType.name[j]);
+            singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
+            var targets = [];
+            for (var k = 0; k < dataDescMetadata.columnType.id.length; k++) {
+              if (k != i && dataDescMetadata.columnType.resObject[k] != "null") {
+                targets.push(dataDescMetadata.columnType.name[k]);
+              }
+            }
+            singleProblem.predictFeatures = targets;
+            singleProblem.taskType = "graphMatching";
+            singleProblem.metric = metricMappings.graphMatching[j];
+            singleProblem.priority = "default";
+            singleProblem.creationType = "auto";
+            singleProblem.meaningful = "undefined";
+            singleProblem.description =
+              "This is a graph problem with more than one graphs and with graph-matching task";
+            problemSets.push(singleProblem);
           }
+
         }
-        singleProblem.predictFeatures = targets;
-        singleProblem.taskType = "graphMatching";
-        singleProblem.metric = metricMappings.graphMatching[i];
-        singleProblem.priority = "default";
-        singleProblem.creationType = "auto";
-        singleProblem.meaningful = "undefined";
-        singleProblem.description =
-          "This is a graph problem with more than one graphs and with graph-matching task";
-        problemSets.push(singleProblem);
+
       }
+
     } // end of totalGraphs > 1
-  } //end of main if statement for graph
+  } //end of main if statement for graph //if (_.includes(dataDescMetadata.resourceType.type, "graph"))
   else if (
     _.includes(dataDescMetadata.resourceType.type, "table") ||
     _.includes(dataDescMetadata.resourceType.type, "text") ||
@@ -670,84 +720,77 @@ var preprocessProblemDesc = function() {
         resObject = "timeseries";
       }
 
-      //////////new
-      if (dataDescMetadata.columnType.type[i] == "real") {
-        for (var k = 0; k < tablularTaskMappings.real.length; k++) {
-          if (tablularTaskMappings.real[k] == "regression") {
-            for (var l = 0; l < metricMappings.regression.length; l++) {
-              singleProblem = {};
-              count++;
-              singleProblem.problemID = count;
+      //THIS IS FOR THE REAL DATA TYPE
 
-              singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
-              var targets = [];
-              for (var j = 0; j < dataDescMetadata.columnType.id.length; j++) {
-                if (j != i) {
-                  targets.push(dataDescMetadata.columnType.name[j]);
-                }
-              }
-              singleProblem.predictFeatures = targets;
-              singleProblem.taskType = "regression";
-              singleProblem.metric = metricMappings.regression[l];
-              singleProblem.priority = "null";
-              singleProblem.creationType = "auto";
-              singleProblem.meaningful = "undefined";
-              //singleProblem.description = 'This is a tabular data set with regression task');
-              singleProblem.description =
-                "This is a regressions task with " +
-                resObject +
-                " field as prediction field";
-              problemSets.push(singleProblem);
-            }
-          } else if (tablularTaskMappings.real[k] == "collaborativeFiltering") {
-            for (
-              var l = 0;
-              l < metricMappings.collaborativeFiltering.length;
-              l++
-            ) {
-              singleProblem = {};
-              count++;
-              singleProblem.problemID = count;
+      if(dataDescMetadata.columnType.type[i] == 'real'){
+          for (var k = 0; k < tablularTaskMappings.real.length; k++){
+              if(tablularTaskMappings.real[k] == "regression"){
+                    for(var l = 0; l < metricMappings.regression.length; l++){
+                          singleProblem = {};
+                          count++;
+                          singleProblem.problemID = count;
 
-              singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
-              var targets = [];
-              for (var j = 0; j < dataDescMetadata.columnType.id.length; j++) {
-                if (j != i) {
-                  targets.push(dataDescMetadata.columnType.name[j]);
-                }
-              }
-              singleProblem.predictFeatures = targets;
-              singleProblem.taskType = "collaborativeFiltering";
-              singleProblem.metric = metricMappings.collaborativeFiltering[l];
-              if (
-                _.includes(dataDescMetadata.resourceType.type, "text") &&
-                dataDescMetadata.columnType.resObject[i] == "item"
-              ) {
-                singleProblem.priority = "default";
-              } else {
-                singleProblem.priority = "null";
-              }
-              singleProblem.creationType = "auto";
-              singleProblem.meaningful = "undefined";
-              //singleProblem.description = 'This is a tabular data set with collaborative-filtering task');
-              singleProblem.description =
-                "This is a collaborative-filtering task with " +
-                resObject +
-                " field as prediction field";
-              problemSets.push(singleProblem);
-            }
-          }
-        }
-      }
+                          singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
+                          var targets = [];
+                          for(var j = 0; j < dataDescMetadata.columnType.id.length; j++){
+                            if(j != i){
+                              targets.push(dataDescMetadata.columnType.name[j]);
+                            }
+                          }
+                          singleProblem.predictFeatures = targets;
+                          singleProblem.taskType = "regression";
+                          singleProblem.metric = metricMappings.regression[l];
+                          singleProblem.priority = 'null';
+                          singleProblem.creationType = 'auto';
+                          singleProblem.meaningful = 'undefined';
+                          //singleProblem.description = 'This is a tabular data set with regression task');
+                          singleProblem.description = 'This is a regressions task with ' + resObject + ' field as prediction field';
+                          problemSets.push(singleProblem);
+                    }//end of for(var l = 0; l < metricMappings.regression.length; l++){
+                }// end of if(tablularTaskMappings.real[k] == "regression"){
+                else if(tablularTaskMappings.real[k] == "collaborativeFiltering"){
+                    for(var l = 0; l < metricMappings.collaborativeFiltering.length; l++){
+                          singleProblem = {};
+                          count++;
+                          singleProblem.problemID = count;
 
-      /////////
+                          singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
+                          var targets = [];
+                          for(var j = 0; j < dataDescMetadata.columnType.id.length; j++){
+                            if(j != i){
+                              targets.push(dataDescMetadata.columnType.name[j]);
+                            }
+                          }
+                          singleProblem.predictFeatures = targets;
+                          singleProblem.taskType = "collaborativeFiltering";
+                          singleProblem.metric = metricMappings.collaborativeFiltering[l];
+                          if(_.includes(dataDescMetadata.resourceType.type, 'text') && dataDescMetadata.columnType.resObject[i] == 'item'){
+                              singleProblem.priority = 'default';
+                          }
+                          else{
+                              singleProblem.priority = 'null';
+                          }
+                          singleProblem.creationType = 'auto';
+                          singleProblem.meaningful = 'undefined';
+                          //singleProblem.description = 'This is a tabular data set with collaborative-filtering task');
+                          singleProblem.description = 'This is a collaborative-filtering task with ' + resObject + ' field as prediction field';
+                          problemSets.push(singleProblem);
+                    }//end of for(var l = 0; l < metricMappings.collaborativeFiltering.length; l++){
+              }//end of else if(tablularTaskMappings.real[k] == "collaborativeFiltering"){
+
+          }//end of for (var k = 0; k < tablularTaskMappings.real.length; k++){
+
+      } //end of if(dataDescMetadata.columnType.type[i] == 'real'){
+
+
+
+
       //if(_.includes(dataDescMetadata.columnType.type[i], 'categorical' || 'integer')){
       if (
         dataDescMetadata.columnType.type[i] == "categorical" ||
-        dataDescMetadata.columnType.type[i] == "integer"
+        dataDescMetadata.columnType.type[i] == "integer" //||
+      //  dataDescMetadata.columnType.type[i] == "real"
       ) {
-        //} || dataDescMetadata.columnType.type[i] == 'real'){
-
         // then we can do: classification, regression, clustering and collaborativeFiltering
         for (var k = 0; k < tablularTaskMappings.categorical.length; k++) {
           if (tablularTaskMappings.integer[k] == "classification") {
@@ -914,7 +957,11 @@ var preprocessProblemDesc = function() {
               problemSets.push(singleProblem);
             }
           }
+
+
         } //end of for (var k = 0; k < tablularTaskMappings.categorical.length; k++)
+
+
 
         //For image, audio, video, and speech data, we also need object detection
         if (
@@ -1309,8 +1356,46 @@ var preprocessProblemDesc = function() {
     }
   } // end of main if for "table"
 
+}
+
+/*
+  if (_.includes(dataDescMetadata.columnType.role, "timeIndicator") &&
+    !(_.includes(dataDescMetadata.columnType.role[i], "timeIndicator"))
+  ) {
+    console.log("TIMESERIESFORECASTING")
+    for (
+      var l = 0;
+      l < metricMappings.timeSeriesForecasting.length;
+      l++
+    ) {
+      singleProblem = {};
+      count++;
+      singleProblem.problemID = count;
+
+      singleProblem.targetFeature = dataDescMetadata.columnType.name[i];
+      var targets = [];
+      for (var j = 0; j < dataDescMetadata.columnType.id.length; j++) {
+        if (j != i) {
+          targets.push(dataDescMetadata.columnType.name[j]);
+        }
+      }
+      singleProblem.predictFeatures = targets;
+      singleProblem.taskType = "timeSeriesForecasting";
+      singleProblem.metric = metricMappings.timeSeriesForecasting[l];
+      singleProblem.priority = "default";
+      singleProblem.creationType = "auto";
+      singleProblem.meaningful = "undefined";
+      singleProblem.description =
+        "This is a time-series forcasting task where the time-series is one of the target field(s)";
+      problemSets.push(singleProblem);
+    }
+  }
+*/
+
   console.log("Initial problem sets have been created!");
-  /*
+
+/*
+  //for printing all the generated problem set in console
   for(var i = 0; i < problemSets.length; i++){
       console.log("Problem ID:" + problemSets[i].problemID + " || Target Feature:" + problemSets[i].targetFeature +"  ||  Predict Features:" + problemSets[i].predictFeatures + " || Task Type:" + problemSets[i].taskType + " || Metric:" + problemSets[i].metric + " || Priority:" + problemSets[i].priority + " || Creation Type:" + problemSets[i].creationType + " || Meaningful:" + problemSets[i].meaningful + " || Problem Desc:" + problemSets[i].description);
   }

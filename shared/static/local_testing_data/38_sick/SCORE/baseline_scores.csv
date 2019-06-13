@@ -1,2 +1,2 @@
-,metric,value
-0,f1Macro,0.8499658266067984
+metric,value,randomSeed,fold
+f1,0.9565217391304348,42,0

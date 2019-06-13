@@ -22,6 +22,8 @@ const metric_mappings = {
   precisionAtTopK: proto.PerformanceMetric.PRECISION_AT_TOP_K,
   objectDetectionAveragePrecision:
     proto.PerformanceMetric.OBJECT_DETECTION_AVERAGE_PRECISION,
+  hammingLoss: proto.PerformanceMetric.HAMMING_LOSS,
+  rank: proto.PerformanceMetric.RANK,
   loss: proto.PerformanceMetric.LOSS
 };
 
