@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+cd node_middleware
+yarn 
+pip3 install -r python-requirements.txt
+cd ..
+cd vue_frontend
+yarn
