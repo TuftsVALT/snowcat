@@ -25,7 +25,7 @@
     "@grpc/grpc-js": "^0.2.0",
     "@grpc/proto-loader": "^0.1.0",
     "app-root-path": "^2.0.1",
-    "axios": "^0.17.1",
+    "axios": "^0.19.2",
     "bluebird": "^3.7.2",
     "bootstrap": "^4.0.0-beta.2",
     "bottleneck": "^2.19.5",
