@@ -1,4 +1,4 @@
-# D3M App
+# D3M App (legacy)
 
 This repo holds contains work developed by research labs at Tufts University, Georgia Tech, and University of Wisconsin in relation to DARPA's Data Driven Discovery of Models program.
 
@@ -6,7 +6,7 @@ The goal of this application is to support Human in the Loop (HIL) data analysis
 
 This application contains a vueJS, nodeJS, and python project that represents our TA3 app.  It has a web server done in node.js.  It also contains some data processing scripts, in `lib/external`, that are called through node's `child_process` [library](https://nodejs.org/api/child_process.html).  This node project includes a frontend that communicates with the server.
 
-This is our Summer 2018 version, to be used for our upcoming evaluation.
+This is our Summer 2019 version, to be used for our upcoming evaluation.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Our application is split into two servers: The `node.js` middleware, found in `n
 
 Once installation is done, test it out.  Two servers need to be run, actually - the node server supporting GRPC and web socket communication, and a server for the vue assets.  They are coupled in a single command.  From the application root,
 
-	bash ta3_search shared/static/config_files/dev_mode/example_dev_regression_config.json
+	bash ta3_search input/185_baseball_MIN_METADATA (dev)
 
 
 ### Node Middleware
@@ -23,7 +23,7 @@ All instructions should be run from within `node_middleware`.
 
 We are running python3 on the backend.
 
-We also require node version >= 8.0.  __If you get an error during the server startup, double check that you have the right node version.__
+We also require node version >= 10.0.  __If you get an error during the server startup, double check that you have the right node version.__
 
 All commands below are assuming you are in the application root.  Install the backend dependencies.  Assuming you have `pip` installed,
 
@@ -32,6 +32,16 @@ All commands below are assuming you are in the application root.  Install the ba
 Install the node dependencies.
 
     yarn
+
+#### Problems with static
+
+You might find that the server reports issues with the 'static' folder.  This folder should be symlinked with the static folder in `shared/`, but sometimes this doesn't come through right in the git repo.  If so, delete the empty file `node_middleware/static`, and then create a new symlink from the `node_middleware/shared` directory
+
+        ln -nfs ../../shared/static staticd
+
+The same thing might occur with the `output/` directory as well.
+
+        ln -nfs ../../shared/output output
 
 ### Vue Frontend
 
@@ -51,39 +61,17 @@ In an effort to streamline our manual testing, the repository comes with some sa
 
 **Please do not check in full datasets if they are larger than 2-5 mb**.  Instead, just copy limited versions of the datasets by only copying a few of the media files in, and shortening the `learningData.csv` files to a few thousand lines.
 
-#### Development mode
-
-All of these configuration files provide their own predictions files - they do not connect to the TA2.
-
-	- `example_dev_classification_config.json`
-	- `example_dev_collabfilter_config.json`
-	- `example_dev_graphmatch_config.json`
-	- `example_dev_images_config.json`
-	- `example_dev_linkpred_config.json`
-	- `example_dev_regression_config.json`
-	- `example_dev_text_classification_config.json`
-	- `example_dev_time_series_classification_config.json`
-	- `example_dev_time_series_forecast_config.json`
-
-For any of these __they should only reference data that is kept within the repository__.  And again, we should only put small datasets into the repository.
-
 ### Using tinyconf for testing in development mode
 
 To test any of the data sets in `static/local_testing_data/` in evaluation mode, no explicit json file is needed.
 Instead, data sets can be selected by running the backend server with an additional `dataset:` parameter
 
-    yarn run server dataset:dro
+    yarn run server dro dev
 
 selects the first data set stored as a subfolder of `static/local_testing_data/` whose name contains the string `dro`. It then generates a configuration for it and starts the server with it in evaluation mode.
 To generate a development mode config file, add `dev:` after `dataset:`, for example:
 
     yarn run server dataset:dev:dro
-
-#### Demo mode
-
-We also have a demo mode (if you checkout the `demo` branch) that lets the user refresh the page to view a different data and problem type, rather than restarting the server.  To run this, just pass the `--demo` flag instead of passing in a configuration file.
-
-	bash ta3_search --demo
 
 #### Evaluation mode
 
@@ -105,7 +93,7 @@ The architecture for the vue app is a little different.  The most basic way to s
 
 Both servers are started up via the `ta3_search` command.  The config file you provide to that command, as its first argument, dictates the dataset and problem type that is being used.
 
-	bash ta3_search shared/static/config_files/dev_mode/example_dev_regression_config.json
+	bash ta3_search shared/static/local_testing_data/196_autoMpg dev
 
 We have to develop components that all work with a global store of data.  I'll give an example with Classification.
 

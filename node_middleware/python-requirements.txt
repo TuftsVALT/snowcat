@@ -3,3 +3,6 @@ datamart
 correlation_pearson
 si_prefix
 numpy
+langdetect
+datamart-rest
+d3m

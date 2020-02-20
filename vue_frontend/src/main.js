@@ -14,9 +14,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vuetify/dist/vuetify.min.css'
 import * as d3 from "d3";
 
-Vue.config.productionTip = false
-Vue.use(BootstrapVue)
-Vue.use(Vuetify)
+Vue.config.productionTip = false;
+Vue.use(BootstrapVue);
+Vue.use(Vuetify);
 Vue.use(VTooltip);
 
 let host = window.location.host;

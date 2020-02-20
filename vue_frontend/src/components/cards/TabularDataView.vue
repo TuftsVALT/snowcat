@@ -40,7 +40,8 @@
 
 <div>
     <div>
-        <v-progress-circular v-if="show_spinner" indeterminate v-bind:size="50" color="primary"></v-progress-circular>
+        <!-- <v-progress-circular v-if="show_spinner" indeterminate v-bind:size="50" color="primary"></v-progress-circular> -->
+        <p v-if="show_spinner">No data available</p>
     </div>
     <div id="tabulartooltip" style="opacity: 0;">
     </div>
@@ -103,7 +104,9 @@ export default {
     name: 'TabularDataView',
     components: { draggable },
     mounted: function() {
-        this.rawDataHistogramVisualization(this.$store.state.socket.tabularProcessedData.participatingFieldsMetaData, this.$store.state.socket.tabularProcessedData.histogramMetaDataArray, this.$store.state.socket.tabularProcessedData.histogramBarCountsArray, this.$store.state.socket.tabularProcessedData.histogramBarNamesArray, this.$store.state.socket.tabularProcessedData.histogramCountsArray, this.$store.state.socket.tabularProcessedData.barRelationsArray, this.$store.state.socket.tabularProcessedData.histogramD3MIndexArray);
+        if (!_.isEmpty(this.tabular_data)) {
+            this.rawDataHistogramVisualization(this.$store.state.socket.tabularProcessedData.participatingFieldsMetaData, this.$store.state.socket.tabularProcessedData.histogramMetaDataArray, this.$store.state.socket.tabularProcessedData.histogramBarCountsArray, this.$store.state.socket.tabularProcessedData.histogramBarNamesArray, this.$store.state.socket.tabularProcessedData.histogramCountsArray, this.$store.state.socket.tabularProcessedData.barRelationsArray, this.$store.state.socket.tabularProcessedData.histogramD3MIndexArray);
+        }
     },
     data: function() {
         return {
@@ -166,10 +169,17 @@ export default {
     },
     watch: {
         tabular_data: function() {
-            if (!_.isEmpty(this.tabular_data)) {
-                //console.log("OK");
-                this.rawDataHistogramVisualization(this.$store.state.socket.tabularProcessedData.participatingFieldsMetaData, this.$store.state.socket.tabularProcessedData.histogramMetaDataArray, this.$store.state.socket.tabularProcessedData.histogramBarCountsArray, this.$store.state.socket.tabularProcessedData.histogramBarNamesArray, this.$store.state.socket.tabularProcessedData.histogramCountsArray, this.$store.state.socket.tabularProcessedData.barRelationsArray, this.$store.state.socket.tabularProcessedData.histogramD3MIndexArray);
-            }
+            this.$nextTick(() => {
+              Object.keys(this.$refs).forEach((name) => {
+                if (name.startsWith("histogram")) {
+                  d3.select(this.$refs[name][0]).selectAll("*").remove();
+                }
+              });
+              if (!_.isEmpty(this.tabular_data)) {
+                  //console.log("OK");
+                  this.rawDataHistogramVisualization(this.$store.state.socket.tabularProcessedData.participatingFieldsMetaData, this.$store.state.socket.tabularProcessedData.histogramMetaDataArray, this.$store.state.socket.tabularProcessedData.histogramBarCountsArray, this.$store.state.socket.tabularProcessedData.histogramBarNamesArray, this.$store.state.socket.tabularProcessedData.histogramCountsArray, this.$store.state.socket.tabularProcessedData.barRelationsArray, this.$store.state.socket.tabularProcessedData.histogramD3MIndexArray);
+              }
+            });
         },
         xlink_data: function(){
 
@@ -526,44 +536,44 @@ export default {
                         }
                     }
                 })
-                .on("mousemove", function(d) {
+                // .on("mousemove", function(d) {
 
-                    tooltip.transition()
-                        .duration(200)
-                        .style('opacity', 1)
+                //     tooltip.transition()
+                //         .duration(200)
+                //         .style('opacity', 1)
 
-                    var x1 = svg.node().parentNode.getBoundingClientRect().left - width + 30;
-                    var y1 = svg.node().getBoundingClientRect().top;
+                //     var x1 = svg.node().parentNode.getBoundingClientRect().left - width + 30;
+                //     var y1 = svg.node().getBoundingClientRect().top;
 
-                    var y_parent = svg.node().parentNode.parentNode.getBoundingClientRect().top;
+                //     var y_parent = svg.node().parentNode.parentNode.getBoundingClientRect().top;
 
-                    var x = x1;
-                    var y = y1 - y_parent + 130;
+                //     var x = x1;
+                //     var y = y1 - y_parent + 130;
 
-                    var text = "Click on  " + histogramMetaDataArray[currentMainCountsArrayID][0] + " for data exploration";
+                //     var text = "Click on  " + histogramMetaDataArray[currentMainCountsArrayID][0] + " for data exploration";
 
-                    tooltip.html(text)
-                    tooltip.style('left', x + "px")
-                        .style('top', y + "px")
+                //     tooltip.html(text)
+                //     tooltip.style('left', x + "px")
+                //         .style('top', y + "px")
 
-                    d3.select(this).style("fill", "blue");
-                    d3.select(this).style("text-decoration", "underline");
-                    d3.select(this).style("cursor", "pointer");
-                })
-                .on("mouseout", function(d) {
-                    tooltip.transition()
-                        .duration(200)
-                        .style('opacity', 0);
-                    d3.select(this).style("fill", null);
-                    d3.select(this).style("text-decoration", null);
-                    d3.select(this).style("cursor", "default");
-                })
-                .on("click", function(d) {
-                  let varName = histogramMetaDataArray[currentMainCountsArrayID][0];
-                  console.log("run VODER for", varName);
-                  store.commit('setUserVariable', varName);
-                  // vueThis.$store.state.socket.voderSelectedVariable = varName;
-                });
+                //     d3.select(this).style("fill", "blue");
+                //     d3.select(this).style("text-decoration", "underline");
+                //     d3.select(this).style("cursor", "pointer");
+                // })
+                // .on("mouseout", function(d) {
+                //     tooltip.transition()
+                //         .duration(200)
+                //         .style('opacity', 0);
+                //     d3.select(this).style("fill", null);
+                //     d3.select(this).style("text-decoration", null);
+                //     d3.select(this).style("cursor", "default");
+                // })
+                // .on("click", function(d) {
+                //   let varName = histogramMetaDataArray[currentMainCountsArrayID][0];
+                //   console.log("run VODER for", varName);
+                //   store.commit('setUserVariable', varName);
+                //   // vueThis.$store.state.socket.voderSelectedVariable = varName;
+                // });
 
             //Starting x-axis label
             svg.append("text")

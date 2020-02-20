@@ -21,7 +21,7 @@
       // this.$store.dispatch('processConfig', evaluationConfig)
     },
     components: {}
-  }
+  };
 </script>
 
 <style>

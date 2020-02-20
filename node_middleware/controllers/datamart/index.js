@@ -22,7 +22,7 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   // Parses through csv file 
   function getData() {
     return new Promise(function(resolve, reject) {
-      let filepath = appRoot + "/outputDatamart.csv";
+      let filepath = appRoot + "/output/outputDatamart.csv";
       // console.log("filepath is ", filepath)
       let stream = fs.createReadStream(filepath);
       papa.parse(stream, {
@@ -41,11 +41,11 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   }
 
   // Calls search python script, then passes output to getData function, and finally emits output of function to vue frontend
-  function datamart(search, augment, index, fn, sema) {
+  function datamart(search, fn, sema) {
     let results = "";
     spawnChildProcess(
         "python3",
-        [datamartSearch, search, augment, index],
+        [datamartSearch, search],
         data => results += data.toString(),
         function() {
           getData().then( (headers) => {
@@ -59,10 +59,10 @@ module.exports.set = function(app, server, grpcClientWrapper, socket) {
   }
   
   // Receives search input and calls datamart function
-  socket.on('datamartEndpoint', function(pagination, search, augment, index, fn) {
+  socket.on('datamartEndpoint', function(pagination, search, fn) {
     // take the semaphore when a new call comes in;
     sema.take(function() {
-        datamart(search, augment, index, fn, sema);
+        datamart(search, fn, sema);
     })
   });
 }

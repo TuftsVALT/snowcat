@@ -1,0 +1,2963 @@
+{
+  "Q172241": {
+    "id": "Q172241",
+    "pageid": 172357,
+    "label": "The Shawshank Redemption",
+    "description": "1994 American drama film directed by Frank Darabont",
+    "aliases": ["Shawshank", "Shawshank Redemption"],
+    "claims": {
+      "P144": {
+        "id": "P144",
+        "values": [{ "datatype": "wikibase-item", "value": "Q968314" }]
+      },
+      "P31": {
+        "id": "P31",
+        "values": [{ "datatype": "wikibase-item", "value": "Q11424" }]
+      },
+      "P136": {
+        "id": "P136",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q130232" },
+          { "datatype": "wikibase-item", "value": "Q663106" },
+          { "datatype": "wikibase-item", "value": "Q586250" },
+          { "datatype": "wikibase-item", "value": "Q959790" },
+          { "datatype": "wikibase-item", "value": "Q52162262" }
+        ]
+      },
+      "P57": {
+        "id": "P57",
+        "values": [{ "datatype": "wikibase-item", "value": "Q295445" }]
+      },
+      "P161": {
+        "id": "P161",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q95048" },
+          { "datatype": "wikibase-item", "value": "Q48337" },
+          { "datatype": "wikibase-item", "value": "Q352203" },
+          { "datatype": "wikibase-item", "value": "Q152542" },
+          { "datatype": "wikibase-item", "value": "Q313040" },
+          { "datatype": "wikibase-item", "value": "Q4488" },
+          { "datatype": "wikibase-item", "value": "Q360313" },
+          { "datatype": "wikibase-item", "value": "Q693301" },
+          { "datatype": "wikibase-item", "value": "Q443343" },
+          { "datatype": "wikibase-item", "value": "Q733776" },
+          { "datatype": "wikibase-item", "value": "Q1176208" },
+          { "datatype": "wikibase-item", "value": "Q719256" },
+          { "datatype": "wikibase-item", "value": "Q687311" },
+          { "datatype": "wikibase-item", "value": "Q3827125" },
+          { "datatype": "wikibase-item", "value": "Q1139190" },
+          { "datatype": "wikibase-item", "value": "Q15665021" },
+          { "datatype": "wikibase-item", "value": "Q2690748" },
+          { "datatype": "wikibase-item", "value": "Q3181780" },
+          { "datatype": "wikibase-item", "value": "Q4722037" }
+        ]
+      },
+      "P345": {
+        "id": "P345",
+        "values": [{ "datatype": "external-id", "value": "tt0111161" }]
+      },
+      "P480": {
+        "id": "P480",
+        "values": [{ "datatype": "external-id", "value": "161026" }]
+      },
+      "P364": {
+        "id": "P364",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1860" }]
+      },
+      "P214": {
+        "id": "P214",
+        "values": [{ "datatype": "external-id", "value": "316751887" }]
+      },
+      "P58": {
+        "id": "P58",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q295445" },
+          { "datatype": "wikibase-item", "value": "Q39829" }
+        ]
+      },
+      "P272": {
+        "id": "P272",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q186941" },
+          { "datatype": "wikibase-item", "value": "Q622848" }
+        ]
+      },
+      "P344": {
+        "id": "P344",
+        "values": [{ "datatype": "wikibase-item", "value": "Q460277" }]
+      },
+      "P162": {
+        "id": "P162",
+        "values": [{ "datatype": "wikibase-item", "value": "Q7034951" }]
+      },
+      "P646": {
+        "id": "P646",
+        "values": [{ "datatype": "external-id", "value": "/m/07jnt" }]
+      },
+      "P1258": {
+        "id": "P1258",
+        "values": [
+          { "datatype": "external-id", "value": "m/shawshank_redemption" }
+        ]
+      },
+      "P1265": {
+        "id": "P1265",
+        "values": [{ "datatype": "external-id", "value": "11736" }]
+      },
+      "P577": {
+        "id": "P577",
+        "values": [
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1994-09-23T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1994-09-23"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1994-09-10T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1994-09-10"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1995-03-09T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1995-03-09"
+          }
+        ]
+      },
+      "P840": {
+        "id": "P840",
+        "values": [{ "datatype": "wikibase-item", "value": "Q724" }]
+      },
+      "P1562": {
+        "id": "P1562",
+        "values": [{ "datatype": "external-id", "value": "v133417" }]
+      },
+      "P495": {
+        "id": "P495",
+        "values": [{ "datatype": "wikibase-item", "value": "Q30" }]
+      },
+      "P1411": {
+        "id": "P1411",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q102427" },
+          { "datatype": "wikibase-item", "value": "Q103916" },
+          { "datatype": "wikibase-item", "value": "Q131520" },
+          { "datatype": "wikibase-item", "value": "Q281939" },
+          { "datatype": "wikibase-item", "value": "Q107258" },
+          { "datatype": "wikibase-item", "value": "Q488651" },
+          { "datatype": "wikibase-item", "value": "Q830079" }
+        ]
+      },
+      "P905": {
+        "id": "P905",
+        "values": [{ "datatype": "external-id", "value": "2087" }]
+      },
+      "P1476": {
+        "id": "P1476",
+        "values": [
+          { "datatype": "monolingualtext", "value": "The Shawshank Redemption" }
+        ]
+      },
+      "P1970": {
+        "id": "P1970",
+        "values": [{ "datatype": "external-id", "value": "273" }]
+      },
+      "P86": {
+        "id": "P86",
+        "values": [{ "datatype": "wikibase-item", "value": "Q319996" }]
+      },
+      "P406": {
+        "id": "P406",
+        "values": [{ "datatype": "wikibase-item", "value": "Q7763724" }]
+      },
+      "P1804": {
+        "id": "P1804",
+        "values": [{ "datatype": "external-id", "value": "9867" }]
+      },
+      "P1237": {
+        "id": "P1237",
+        "values": [
+          { "datatype": "external-id", "value": "shawshankredemption" }
+        ]
+      },
+      "P1712": {
+        "id": "P1712",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "movie/the-shawshank-redemption"
+          }
+        ]
+      },
+      "P227": {
+        "id": "P227",
+        "values": [{ "datatype": "external-id", "value": "4766983-4" }]
+      },
+      "P2334": {
+        "id": "P2334",
+        "values": [{ "datatype": "external-id", "value": "20075" }]
+      },
+      "P2346": {
+        "id": "P2346",
+        "values": [{ "datatype": "external-id", "value": "161330" }]
+      },
+      "P1040": {
+        "id": "P1040",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1969707" }]
+      },
+      "P462": {
+        "id": "P462",
+        "values": [{ "datatype": "wikibase-item", "value": "Q22006653" }]
+      },
+      "P2529": {
+        "id": "P2529",
+        "values": [{ "datatype": "external-id", "value": "2294" }]
+      },
+      "P2465": {
+        "id": "P2465",
+        "values": [{ "datatype": "external-id", "value": "10909" }]
+      },
+      "P2508": {
+        "id": "P2508",
+        "values": [{ "datatype": "external-id", "value": "10855" }]
+      },
+      "P1874": {
+        "id": "P1874",
+        "values": [{ "datatype": "external-id", "value": "70005379" }]
+      },
+      "P750": {
+        "id": "P750",
+        "values": [{ "datatype": "wikibase-item", "value": "Q186941" }]
+      },
+      "P2603": {
+        "id": "P2603",
+        "values": [{ "datatype": "external-id", "value": "326" }]
+      },
+      "P2631": {
+        "id": "P2631",
+        "values": [{ "datatype": "external-id", "value": "20338" }]
+      },
+      "P2047": {
+        "id": "P2047",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+142",
+              "unit": "http://www.wikidata.org/entity/Q7727"
+            },
+            "value_string": "142"
+          }
+        ]
+      },
+      "P2554": {
+        "id": "P2554",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1678535" }]
+      },
+      "P2515": {
+        "id": "P2515",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1331257" }]
+      },
+      "P1877": {
+        "id": "P1877",
+        "values": [{ "datatype": "wikibase-item", "value": "Q39829" }]
+      },
+      "P3138": {
+        "id": "P3138",
+        "values": [{ "datatype": "external-id", "value": "2239" }]
+      },
+      "P3107": {
+        "id": "P3107",
+        "values": [{ "datatype": "external-id", "value": "65115" }]
+      },
+      "P3129": {
+        "id": "P3129",
+        "values": [{ "datatype": "external-id", "value": "577" }]
+      },
+      "P3302": {
+        "id": "P3302",
+        "values": [{ "datatype": "external-id", "value": "278" }]
+      },
+      "P3141": {
+        "id": "P3141",
+        "values": [{ "datatype": "external-id", "value": "t0005795" }]
+      },
+      "P3145": {
+        "id": "P3145",
+        "values": [{ "datatype": "external-id", "value": "tt1517" }]
+      },
+      "P3143": {
+        "id": "P3143",
+        "values": [{ "datatype": "external-id", "value": "110688" }]
+      },
+      "P2518": {
+        "id": "P2518",
+        "values": [{ "datatype": "external-id", "value": "933" }]
+      },
+      "P3135": {
+        "id": "P3135",
+        "values": [{ "datatype": "external-id", "value": "2004262" }]
+      },
+      "P1981": {
+        "id": "P1981",
+        "values": [{ "datatype": "wikibase-item", "value": "Q20644796" }]
+      },
+      "P2061": {
+        "id": "P2061",
+        "values": [{ "datatype": "wikibase-item", "value": "Q752245" }]
+      },
+      "P3593": {
+        "id": "P3593",
+        "values": [{ "datatype": "external-id", "value": "55199" }]
+      },
+      "P1417": {
+        "id": "P1417",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "topic/The-Shawshank-Redemption"
+          }
+        ]
+      },
+      "P2130": {
+        "id": "P2130",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+25000000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "25000000"
+          }
+        ]
+      },
+      "P2142": {
+        "id": "P2142",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+59800000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "59800000"
+          }
+        ]
+      },
+      "P3417": {
+        "id": "P3417",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "The-Shawshank-Redemption-1994-movie"
+          }
+        ]
+      },
+      "P166": {
+        "id": "P166",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q4745055" },
+          { "datatype": "wikibase-item", "value": "Q823422" }
+        ]
+      },
+      "P915": {
+        "id": "P915",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q983698" },
+          { "datatype": "wikibase-item", "value": "Q725573" },
+          { "datatype": "wikibase-item", "value": "Q2551684" },
+          { "datatype": "wikibase-item", "value": "Q642481" }
+        ]
+      },
+      "P856": {
+        "id": "P856",
+        "values": [
+          { "datatype": "url", "value": "http://www.shawshankredemption.org/" }
+        ]
+      },
+      "P3844": {
+        "id": "P3844",
+        "values": [{ "datatype": "external-id", "value": "3497" }]
+      },
+      "P2638": {
+        "id": "P2638",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "movies/the-shawshank-redemption"
+          }
+        ]
+      },
+      "P2509": {
+        "id": "P2509",
+        "values": [{ "datatype": "external-id", "value": "mv10818" }]
+      },
+      "P3933": {
+        "id": "P3933",
+        "values": [{ "datatype": "external-id", "value": "1333117" }]
+      },
+      "P3808": {
+        "id": "P3808",
+        "values": [
+          { "datatype": "external-id", "value": "Shawshank-Redemption-The" }
+        ]
+      },
+      "P2704": {
+        "id": "P2704",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "10.5240/31CA-F962-3A40-18BD-BFA5-7"
+          }
+        ]
+      },
+      "P3995": {
+        "id": "P3995",
+        "values": [
+          { "datatype": "external-id", "value": "Skazani.Na.Shawshank" }
+        ]
+      },
+      "P3212": {
+        "id": "P3212",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "0000-0000-0AF5-0000-O-0000-0000-2"
+          }
+        ]
+      },
+      "P4276": {
+        "id": "P4276",
+        "values": [{ "datatype": "external-id", "value": "11605" }]
+      },
+      "P444": {
+        "id": "P444",
+        "values": [
+          { "datatype": "string", "value": "9.3/10" },
+          { "datatype": "string", "value": "80/100" }
+        ]
+      },
+      "P4529": {
+        "id": "P4529",
+        "values": [{ "datatype": "external-id", "value": "1292052" }]
+      },
+      "P1552": {
+        "id": "P1552",
+        "values": [{ "datatype": "wikibase-item", "value": "Q45172088" }]
+      },
+      "P4632": {
+        "id": "P4632",
+        "values": [{ "datatype": "external-id", "value": "339" }]
+      },
+      "P3077": {
+        "id": "P3077",
+        "values": [{ "datatype": "external-id", "value": "10752" }]
+      },
+      "P2747": {
+        "id": "P2747",
+        "values": [{ "datatype": "wikibase-item", "value": "Q23830577" }]
+      },
+      "P4947": {
+        "id": "P4947",
+        "values": [{ "datatype": "external-id", "value": "278" }]
+      },
+      "P5099": {
+        "id": "P5099",
+        "values": [
+          { "datatype": "external-id", "value": "film/lealidellaliberta" }
+        ]
+      },
+      "P5786": {
+        "id": "P5786",
+        "values": [{ "datatype": "external-id", "value": "die-verurteilten" }]
+      },
+      "P6145": {
+        "id": "P6145",
+        "values": [{ "datatype": "external-id", "value": "1889" }]
+      },
+      "P4277": {
+        "id": "P4277",
+        "values": [{ "datatype": "external-id", "value": "1368" }]
+      },
+      "P6562": {
+        "id": "P6562",
+        "values": [{ "datatype": "external-id", "value": "RLw6hBFJ8bk" }]
+      },
+      "P2408": {
+        "id": "P2408",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q18610" },
+          { "datatype": "wikibase-item", "value": "Q5263" },
+          { "datatype": "wikibase-item", "value": "Q18581" },
+          { "datatype": "wikibase-item", "value": "Q2649" }
+        ]
+      },
+      "P7003": {
+        "id": "P7003",
+        "values": [{ "datatype": "external-id", "value": "43755" }]
+      },
+      "P180": {
+        "id": "P180",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q42745" },
+          { "datatype": "wikibase-item", "value": "Q229545" },
+          { "datatype": "wikibase-item", "value": "Q4616" },
+          { "datatype": "wikibase-item", "value": "Q40357" },
+          { "datatype": "wikibase-item", "value": "Q853735" }
+        ]
+      }
+    }
+  },
+  "Q47703": {
+    "id": "Q47703",
+    "pageid": 49812,
+    "label": "The Godfather",
+    "description": "1972 US film directed by Francis Ford Coppola",
+    "aliases": ["Godfather", "The Godfather Part I"],
+    "claims": {
+      "P364": {
+        "id": "P364",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q1860" },
+          { "datatype": "wikibase-item", "value": "Q652" }
+        ]
+      },
+      "P345": {
+        "id": "P345",
+        "values": [{ "datatype": "external-id", "value": "tt0068646" }]
+      },
+      "P179": {
+        "id": "P179",
+        "values": [{ "datatype": "wikibase-item", "value": "Q3225260" }]
+      },
+      "P31": {
+        "id": "P31",
+        "values": [{ "datatype": "wikibase-item", "value": "Q11424" }]
+      },
+      "P57": {
+        "id": "P57",
+        "values": [{ "datatype": "wikibase-item", "value": "Q56094" }]
+      },
+      "P58": {
+        "id": "P58",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q182870" },
+          { "datatype": "wikibase-item", "value": "Q56094" }
+        ]
+      },
+      "P161": {
+        "id": "P161",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q34012" },
+          { "datatype": "wikibase-item", "value": "Q41163" },
+          { "datatype": "wikibase-item", "value": "Q95043" },
+          { "datatype": "wikibase-item", "value": "Q464714" },
+          { "datatype": "wikibase-item", "value": "Q171736" },
+          { "datatype": "wikibase-item", "value": "Q323166" },
+          { "datatype": "wikibase-item", "value": "Q296177" },
+          { "datatype": "wikibase-item", "value": "Q102642" },
+          { "datatype": "wikibase-item", "value": "Q108622" },
+          { "datatype": "wikibase-item", "value": "Q318220" },
+          { "datatype": "wikibase-item", "value": "Q558492" },
+          { "datatype": "wikibase-item", "value": "Q1622732" },
+          { "datatype": "wikibase-item", "value": "Q3694232" },
+          { "datatype": "wikibase-item", "value": "Q380872" },
+          { "datatype": "wikibase-item", "value": "Q946196" },
+          { "datatype": "wikibase-item", "value": "Q3809461" },
+          { "datatype": "wikibase-item", "value": "Q1352034" },
+          { "datatype": "wikibase-item", "value": "Q734043" },
+          { "datatype": "wikibase-item", "value": "Q975161" },
+          { "datatype": "wikibase-item", "value": "Q3811107" },
+          { "datatype": "wikibase-item", "value": "Q1147417" },
+          { "datatype": "wikibase-item", "value": "Q752652" },
+          { "datatype": "wikibase-item", "value": "Q376261" },
+          { "datatype": "wikibase-item", "value": "Q554430" },
+          { "datatype": "wikibase-item", "value": "Q960676" },
+          { "datatype": "wikibase-item", "value": "Q524930" },
+          { "datatype": "wikibase-item", "value": "Q786720" },
+          { "datatype": "wikibase-item", "value": "Q673482" },
+          { "datatype": "wikibase-item", "value": "Q2300160" },
+          { "datatype": "wikibase-item", "value": "Q658614" },
+          { "datatype": "wikibase-item", "value": "Q245808" },
+          { "datatype": "wikibase-item", "value": "Q193628" },
+          { "datatype": "wikibase-item", "value": "Q19956031" },
+          { "datatype": "wikibase-item", "value": "Q16575211" },
+          { "datatype": "wikibase-item", "value": "Q7298995" },
+          { "datatype": "wikibase-item", "value": "Q29585307" }
+        ]
+      },
+      "P144": {
+        "id": "P144",
+        "values": [{ "datatype": "wikibase-item", "value": "Q243556" }]
+      },
+      "P480": {
+        "id": "P480",
+        "values": [{ "datatype": "external-id", "value": "809297" }]
+      },
+      "P214": {
+        "id": "P214",
+        "values": [{ "datatype": "external-id", "value": "316753502" }]
+      },
+      "P162": {
+        "id": "P162",
+        "values": [{ "datatype": "wikibase-item", "value": "Q280490" }]
+      },
+      "P272": {
+        "id": "P272",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q159846" },
+          { "datatype": "wikibase-item", "value": "Q17305146" }
+        ]
+      },
+      "P344": {
+        "id": "P344",
+        "values": [{ "datatype": "wikibase-item", "value": "Q560108" }]
+      },
+      "P910": {
+        "id": "P910",
+        "values": [{ "datatype": "wikibase-item", "value": "Q6430943" }]
+      },
+      "P840": {
+        "id": "P840",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q60" },
+          { "datatype": "wikibase-item", "value": "Q65" }
+        ]
+      },
+      "P921": {
+        "id": "P921",
+        "values": [{ "datatype": "wikibase-item", "value": "Q46952" }]
+      },
+      "P856": {
+        "id": "P856",
+        "values": [
+          { "datatype": "url", "value": "http://www.thegodfather.com/" }
+        ]
+      },
+      "P646": {
+        "id": "P646",
+        "values": [{ "datatype": "external-id", "value": "/m/07g1sm" }]
+      },
+      "P166": {
+        "id": "P166",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q102427" },
+          { "datatype": "wikibase-item", "value": "Q823422" },
+          { "datatype": "wikibase-item", "value": "Q103916" },
+          { "datatype": "wikibase-item", "value": "Q107258" }
+        ]
+      },
+      "P227": {
+        "id": "P227",
+        "values": [{ "datatype": "external-id", "value": "4133657-4" }]
+      },
+      "P1265": {
+        "id": "P1265",
+        "values": [{ "datatype": "external-id", "value": "1628" }]
+      },
+      "P18": {
+        "id": "P18",
+        "values": [{ "datatype": "commonsMedia", "value": "The Godfather.png" }]
+      },
+      "P1258": {
+        "id": "P1258",
+        "values": [{ "datatype": "external-id", "value": "m/godfather" }]
+      },
+      "P577": {
+        "id": "P577",
+        "values": [
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1972-03-15T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1972-03-15"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1972-09-27T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1972-09-27"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1972-08-24T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1972-08-24"
+          }
+        ]
+      },
+      "P136": {
+        "id": "P136",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q130232" },
+          { "datatype": "wikibase-item", "value": "Q959790" },
+          { "datatype": "wikibase-item", "value": "Q7444356" },
+          { "datatype": "wikibase-item", "value": "Q52162262" }
+        ]
+      },
+      "P1562": {
+        "id": "P1562",
+        "values": [{ "datatype": "external-id", "value": "v20076" }]
+      },
+      "P495": {
+        "id": "P495",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q30" },
+          { "datatype": "wikibase-item", "value": "Q38" }
+        ]
+      },
+      "P915": {
+        "id": "P915",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q18438" },
+          { "datatype": "wikibase-item", "value": "Q60" },
+          { "datatype": "wikibase-item", "value": "Q1408" },
+          { "datatype": "wikibase-item", "value": "Q1460" }
+        ]
+      },
+      "P1804": {
+        "id": "P1804",
+        "values": [{ "datatype": "external-id", "value": "5155" }]
+      },
+      "P1970": {
+        "id": "P1970",
+        "values": [{ "datatype": "external-id", "value": "320" }]
+      },
+      "P373": {
+        "id": "P373",
+        "values": [{ "datatype": "string", "value": "The Godfather" }]
+      },
+      "P1237": {
+        "id": "P1237",
+        "values": [{ "datatype": "external-id", "value": "godfather" }]
+      },
+      "P135": {
+        "id": "P135",
+        "values": [{ "datatype": "wikibase-item", "value": "Q377616" }]
+      },
+      "P1040": {
+        "id": "P1040",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q920439" },
+          { "datatype": "wikibase-item", "value": "Q214066" }
+        ]
+      },
+      "P2334": {
+        "id": "P2334",
+        "values": [{ "datatype": "external-id", "value": "15789" }]
+      },
+      "P1712": {
+        "id": "P1712",
+        "values": [
+          { "datatype": "external-id", "value": "movie/the-godfather" }
+        ]
+      },
+      "P1476": {
+        "id": "P1476",
+        "values": [{ "datatype": "monolingualtext", "value": "The Godfather" }]
+      },
+      "P1411": {
+        "id": "P1411",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q106291" },
+          { "datatype": "wikibase-item", "value": "Q106291" },
+          { "datatype": "wikibase-item", "value": "Q106291" },
+          { "datatype": "wikibase-item", "value": "Q103916" },
+          { "datatype": "wikibase-item", "value": "Q103360" },
+          { "datatype": "wikibase-item", "value": "Q281939" },
+          { "datatype": "wikibase-item", "value": "Q107258" },
+          { "datatype": "wikibase-item", "value": "Q277536" },
+          { "datatype": "wikibase-item", "value": "Q102427" },
+          { "datatype": "wikibase-item", "value": "Q22235329" },
+          { "datatype": "wikibase-item", "value": "Q830079" }
+        ]
+      },
+      "P86": {
+        "id": "P86",
+        "values": [{ "datatype": "wikibase-item", "value": "Q214665" }]
+      },
+      "P905": {
+        "id": "P905",
+        "values": [{ "datatype": "external-id", "value": "5609" }]
+      },
+      "P2518": {
+        "id": "P2518",
+        "values": [{ "datatype": "external-id", "value": "1605" }]
+      },
+      "P2529": {
+        "id": "P2529",
+        "values": [{ "datatype": "external-id", "value": "1644" }]
+      },
+      "P1981": {
+        "id": "P1981",
+        "values": [{ "datatype": "wikibase-item", "value": "Q20644797" }]
+      },
+      "P2465": {
+        "id": "P2465",
+        "values": [{ "datatype": "external-id", "value": "7931" }]
+      },
+      "P2508": {
+        "id": "P2508",
+        "values": [{ "datatype": "external-id", "value": "3410" }]
+      },
+      "P1874": {
+        "id": "P1874",
+        "values": [{ "datatype": "external-id", "value": "60011152" }]
+      },
+      "P2047": {
+        "id": "P2047",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+175",
+              "unit": "http://www.wikidata.org/entity/Q7727"
+            },
+            "value_string": "175"
+          }
+        ]
+      },
+      "P2554": {
+        "id": "P2554",
+        "values": [{ "datatype": "wikibase-item", "value": "Q940271" }]
+      },
+      "P2515": {
+        "id": "P2515",
+        "values": [{ "datatype": "wikibase-item", "value": "Q560865" }]
+      },
+      "P750": {
+        "id": "P750",
+        "values": [{ "datatype": "wikibase-item", "value": "Q159846" }]
+      },
+      "P2603": {
+        "id": "P2603",
+        "values": [{ "datatype": "external-id", "value": "325" }]
+      },
+      "P1877": {
+        "id": "P1877",
+        "values": [{ "datatype": "wikibase-item", "value": "Q182870" }]
+      },
+      "P3107": {
+        "id": "P3107",
+        "values": [{ "datatype": "external-id", "value": "31555" }]
+      },
+      "P3138": {
+        "id": "P3138",
+        "values": [{ "datatype": "external-id", "value": "2242" }]
+      },
+      "P3129": {
+        "id": "P3129",
+        "values": [{ "datatype": "external-id", "value": "593" }]
+      },
+      "P3135": {
+        "id": "P3135",
+        "values": [{ "datatype": "external-id", "value": "1462364" }]
+      },
+      "P3143": {
+        "id": "P3143",
+        "values": [{ "datatype": "external-id", "value": "68509" }]
+      },
+      "P3203": {
+        "id": "P3203",
+        "values": [{ "datatype": "external-id", "value": "32001" }]
+      },
+      "P3145": {
+        "id": "P3145",
+        "values": [{ "datatype": "external-id", "value": "tt1314" }]
+      },
+      "P2631": {
+        "id": "P2631",
+        "values": [{ "datatype": "external-id", "value": "443184" }]
+      },
+      "P3141": {
+        "id": "P3141",
+        "values": [{ "datatype": "external-id", "value": "t0002619" }]
+      },
+      "P3302": {
+        "id": "P3302",
+        "values": [{ "datatype": "external-id", "value": "238" }]
+      },
+      "P1431": {
+        "id": "P1431",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1826885" }]
+      },
+      "P2346": {
+        "id": "P2346",
+        "values": [{ "datatype": "external-id", "value": "101513" }]
+      },
+      "P462": {
+        "id": "P462",
+        "values": [{ "datatype": "wikibase-item", "value": "Q22006653" }]
+      },
+      "P2061": {
+        "id": "P2061",
+        "values": [{ "datatype": "wikibase-item", "value": "Q752245" }]
+      },
+      "P2638": {
+        "id": "P2638",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "movies/the-godfather-the-coppola-restoration"
+          }
+        ]
+      },
+      "P3340": {
+        "id": "P3340",
+        "values": [{ "datatype": "external-id", "value": "319" }]
+      },
+      "P3593": {
+        "id": "P3593",
+        "values": [{ "datatype": "external-id", "value": "54023" }]
+      },
+      "P175": {
+        "id": "P175",
+        "values": [{ "datatype": "wikibase-item", "value": "Q214665" }]
+      },
+      "P2130": {
+        "id": "P2130",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+6000000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "6000000"
+          }
+        ]
+      },
+      "P3569": {
+        "id": "P3569",
+        "values": [
+          { "datatype": "external-id", "value": "film/the-godfather-1972" }
+        ]
+      },
+      "P3417": {
+        "id": "P3417",
+        "values": [
+          { "datatype": "external-id", "value": "The-Godfather-1972-movie" }
+        ]
+      },
+      "P2142": {
+        "id": "P2142",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+268500000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "268500000"
+          },
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+245066411",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "245066411"
+          }
+        ]
+      },
+      "P3077": {
+        "id": "P3077",
+        "values": [{ "datatype": "external-id", "value": "13454" }]
+      },
+      "P2704": {
+        "id": "P2704",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "10.5240/843E-C238-7F61-DDFC-F427-9"
+          }
+        ]
+      },
+      "P2509": {
+        "id": "P2509",
+        "values": [{ "datatype": "external-id", "value": "mv3404" }]
+      },
+      "P3844": {
+        "id": "P3844",
+        "values": [
+          { "datatype": "external-id", "value": "2473" },
+          { "datatype": "external-id", "value": "13040" }
+        ]
+      },
+      "P3804": {
+        "id": "P3804",
+        "values": [{ "datatype": "external-id", "value": "124688" }]
+      },
+      "P3933": {
+        "id": "P3933",
+        "values": [{ "datatype": "external-id", "value": "1340695" }]
+      },
+      "P3808": {
+        "id": "P3808",
+        "values": [{ "datatype": "external-id", "value": "Godfather-The" }]
+      },
+      "P3995": {
+        "id": "P3995",
+        "values": [{ "datatype": "external-id", "value": "Ojciec.Chrzestny" }]
+      },
+      "P2703": {
+        "id": "P2703",
+        "values": [{ "datatype": "external-id", "value": "150028636" }]
+      },
+      "P3212": {
+        "id": "P3212",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "0000-0001-4669-0000-Z-0000-0000-6"
+          }
+        ]
+      },
+      "P4276": {
+        "id": "P4276",
+        "values": [{ "datatype": "external-id", "value": "1417" }]
+      },
+      "P1417": {
+        "id": "P1417",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "topic/The-Godfather-film-by-Coppola"
+          }
+        ]
+      },
+      "P1552": {
+        "id": "P1552",
+        "values": [{ "datatype": "wikibase-item", "value": "Q45172088" }]
+      },
+      "P4632": {
+        "id": "P4632",
+        "values": [{ "datatype": "external-id", "value": "2224" }]
+      },
+      "P4947": {
+        "id": "P4947",
+        "values": [{ "datatype": "external-id", "value": "238" }]
+      },
+      "P5099": {
+        "id": "P5099",
+        "values": [{ "datatype": "external-id", "value": "film/ilpadrino1" }]
+      },
+      "P4529": {
+        "id": "P4529",
+        "values": [{ "datatype": "external-id", "value": "1291841" }]
+      },
+      "P5786": {
+        "id": "P5786",
+        "values": [{ "datatype": "external-id", "value": "der-pate" }]
+      },
+      "P269": {
+        "id": "P269",
+        "values": [{ "datatype": "external-id", "value": "098309358" }]
+      },
+      "P268": {
+        "id": "P268",
+        "values": [{ "datatype": "external-id", "value": "13751570m" }]
+      },
+      "P6145": {
+        "id": "P6145",
+        "values": [{ "datatype": "external-id", "value": "3355" }]
+      },
+      "P1889": {
+        "id": "P1889",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1196157" }]
+      },
+      "P6127": {
+        "id": "P6127",
+        "values": [{ "datatype": "external-id", "value": "the-godfather" }]
+      },
+      "P949": {
+        "id": "P949",
+        "values": [{ "datatype": "external-id", "value": "001886640" }]
+      },
+      "P6562": {
+        "id": "P6562",
+        "values": [{ "datatype": "external-id", "value": "vdQi6Ebjm8c" }]
+      },
+      "P3803": {
+        "id": "P3803",
+        "values": [{ "datatype": "wikibase-item", "value": "Q226528" }]
+      }
+    }
+  },
+  "Q202326": {
+    "id": "Q202326",
+    "pageid": 198910,
+    "label": "The Godfather Part III",
+    "description": "1990 film directed by Francis Ford Coppola",
+    "aliases": ["The Godfather: Part III", "Godfather Part III"],
+    "claims": {
+      "P345": {
+        "id": "P345",
+        "values": [{ "datatype": "external-id", "value": "tt0099674" }]
+      },
+      "P179": {
+        "id": "P179",
+        "values": [{ "datatype": "wikibase-item", "value": "Q3225260" }]
+      },
+      "P31": {
+        "id": "P31",
+        "values": [{ "datatype": "wikibase-item", "value": "Q11424" }]
+      },
+      "P57": {
+        "id": "P57",
+        "values": [{ "datatype": "wikibase-item", "value": "Q56094" }]
+      },
+      "P480": {
+        "id": "P480",
+        "values": [{ "datatype": "external-id", "value": "346540" }]
+      },
+      "P58": {
+        "id": "P58",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q56094" },
+          { "datatype": "wikibase-item", "value": "Q182870" }
+        ]
+      },
+      "P162": {
+        "id": "P162",
+        "values": [{ "datatype": "wikibase-item", "value": "Q56094" }]
+      },
+      "P272": {
+        "id": "P272",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q159846" },
+          { "datatype": "wikibase-item", "value": "Q467348" }
+        ]
+      },
+      "P344": {
+        "id": "P344",
+        "values": [{ "datatype": "wikibase-item", "value": "Q560108" }]
+      },
+      "P161": {
+        "id": "P161",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q41163" },
+          { "datatype": "wikibase-item", "value": "Q189415" },
+          { "datatype": "wikibase-item", "value": "Q102642" },
+          { "datatype": "wikibase-item", "value": "Q104067" },
+          { "datatype": "wikibase-item", "value": "Q108622" },
+          { "datatype": "wikibase-item", "value": "Q193628" },
+          { "datatype": "wikibase-item", "value": "Q276269" },
+          { "datatype": "wikibase-item", "value": "Q786720" },
+          { "datatype": "wikibase-item", "value": "Q359416" },
+          { "datatype": "wikibase-item", "value": "Q913872" },
+          { "datatype": "wikibase-item", "value": "Q3726628" },
+          { "datatype": "wikibase-item", "value": "Q727786" },
+          { "datatype": "wikibase-item", "value": "Q380872" },
+          { "datatype": "wikibase-item", "value": "Q78561" },
+          { "datatype": "wikibase-item", "value": "Q249865" },
+          { "datatype": "wikibase-item", "value": "Q554430" },
+          { "datatype": "wikibase-item", "value": "Q3848537" },
+          { "datatype": "wikibase-item", "value": "Q1044734" },
+          { "datatype": "wikibase-item", "value": "Q296177" },
+          { "datatype": "wikibase-item", "value": "Q3617193" },
+          { "datatype": "wikibase-item", "value": "Q4007810" },
+          { "datatype": "wikibase-item", "value": "Q178307" },
+          { "datatype": "wikibase-item", "value": "Q1343806" },
+          { "datatype": "wikibase-item", "value": "Q604762" },
+          { "datatype": "wikibase-item", "value": "Q722378" },
+          { "datatype": "wikibase-item", "value": "Q441713" },
+          { "datatype": "wikibase-item", "value": "Q734143" },
+          { "datatype": "wikibase-item", "value": "Q658614" },
+          { "datatype": "wikibase-item", "value": "Q2096412" },
+          { "datatype": "wikibase-item", "value": "Q503013" },
+          { "datatype": "wikibase-item", "value": "Q3945964" },
+          { "datatype": "wikibase-item", "value": "Q9267785" },
+          { "datatype": "wikibase-item", "value": "Q3848206" },
+          { "datatype": "wikibase-item", "value": "Q24705262" },
+          { "datatype": "wikibase-item", "value": "Q6838682" },
+          { "datatype": "wikibase-item", "value": "Q588674" },
+          { "datatype": "wikibase-item", "value": "Q1239645" },
+          { "datatype": "wikibase-item", "value": "Q3858204" },
+          { "datatype": "wikibase-item", "value": "Q17490315" }
+        ]
+      },
+      "P840": {
+        "id": "P840",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q1408" },
+          { "datatype": "wikibase-item", "value": "Q38" },
+          { "datatype": "wikibase-item", "value": "Q60" }
+        ]
+      },
+      "P921": {
+        "id": "P921",
+        "values": [{ "datatype": "wikibase-item", "value": "Q46952" }]
+      },
+      "P646": {
+        "id": "P646",
+        "values": [{ "datatype": "external-id", "value": "/m/0y_yw" }]
+      },
+      "P1265": {
+        "id": "P1265",
+        "values": [{ "datatype": "external-id", "value": "6608" }]
+      },
+      "P1258": {
+        "id": "P1258",
+        "values": [
+          { "datatype": "external-id", "value": "m/godfather_part_iii" }
+        ]
+      },
+      "P577": {
+        "id": "P577",
+        "values": [
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1990-12-25T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1990-12-25"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1991-03-15T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1991-03-15"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1991-02-21T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1991-02-21"
+          }
+        ]
+      },
+      "P136": {
+        "id": "P136",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q959790" },
+          { "datatype": "wikibase-item", "value": "Q130232" }
+        ]
+      },
+      "P1562": {
+        "id": "P1562",
+        "values": [{ "datatype": "external-id", "value": "v20079" }]
+      },
+      "P495": {
+        "id": "P495",
+        "values": [{ "datatype": "wikibase-item", "value": "Q30" }]
+      },
+      "P364": {
+        "id": "P364",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1860" }]
+      },
+      "P1411": {
+        "id": "P1411",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q102427" },
+          { "datatype": "wikibase-item", "value": "Q106291" },
+          { "datatype": "wikibase-item", "value": "Q103360" },
+          { "datatype": "wikibase-item", "value": "Q131520" },
+          { "datatype": "wikibase-item", "value": "Q281939" },
+          { "datatype": "wikibase-item", "value": "Q277751" }
+        ]
+      },
+      "P915": {
+        "id": "P915",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q60" },
+          { "datatype": "wikibase-item", "value": "Q2656" }
+        ]
+      },
+      "P1804": {
+        "id": "P1804",
+        "values": [{ "datatype": "external-id", "value": "7722" }]
+      },
+      "P1970": {
+        "id": "P1970",
+        "values": [{ "datatype": "external-id", "value": "322" }]
+      },
+      "P1237": {
+        "id": "P1237",
+        "values": [{ "datatype": "external-id", "value": "godfather3" }]
+      },
+      "P2334": {
+        "id": "P2334",
+        "values": [{ "datatype": "external-id", "value": "16946" }]
+      },
+      "P1040": {
+        "id": "P1040",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1827728" }]
+      },
+      "P1476": {
+        "id": "P1476",
+        "values": [
+          { "datatype": "monolingualtext", "value": "The Godfather Part III" }
+        ]
+      },
+      "P86": {
+        "id": "P86",
+        "values": [{ "datatype": "wikibase-item", "value": "Q658614" }]
+      },
+      "P462": {
+        "id": "P462",
+        "values": [{ "datatype": "wikibase-item", "value": "Q22006653" }]
+      },
+      "P2518": {
+        "id": "P2518",
+        "values": [{ "datatype": "external-id", "value": "1779" }]
+      },
+      "P750": {
+        "id": "P750",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1329615" }]
+      },
+      "P2529": {
+        "id": "P2529",
+        "values": [{ "datatype": "external-id", "value": "1646" }]
+      },
+      "P2465": {
+        "id": "P2465",
+        "values": [{ "datatype": "external-id", "value": "7935" }]
+      },
+      "P1874": {
+        "id": "P1874",
+        "values": [{ "datatype": "external-id", "value": "60011153" }]
+      },
+      "P2554": {
+        "id": "P2554",
+        "values": [{ "datatype": "wikibase-item", "value": "Q940271" }]
+      },
+      "P2631": {
+        "id": "P2631",
+        "values": [{ "datatype": "external-id", "value": "76549" }]
+      },
+      "P2047": {
+        "id": "P2047",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+162",
+              "unit": "http://www.wikidata.org/entity/Q7727"
+            },
+            "value_string": "162"
+          }
+        ]
+      },
+      "P2603": {
+        "id": "P2603",
+        "values": [{ "datatype": "external-id", "value": "4500" }]
+      },
+      "P3107": {
+        "id": "P3107",
+        "values": [{ "datatype": "external-id", "value": "16088" }]
+      },
+      "P3138": {
+        "id": "P3138",
+        "values": [{ "datatype": "external-id", "value": "2306" }]
+      },
+      "P1712": {
+        "id": "P1712",
+        "values": [
+          { "datatype": "external-id", "value": "movie/the-godfather-part-iii" }
+        ]
+      },
+      "P3302": {
+        "id": "P3302",
+        "values": [{ "datatype": "external-id", "value": "242" }]
+      },
+      "P3143": {
+        "id": "P3143",
+        "values": [{ "datatype": "external-id", "value": "99316" }]
+      },
+      "P3129": {
+        "id": "P3129",
+        "values": [{ "datatype": "external-id", "value": "595" }]
+      },
+      "P3203": {
+        "id": "P3203",
+        "values": [{ "datatype": "external-id", "value": "31991" }]
+      },
+      "P905": {
+        "id": "P905",
+        "values": [{ "datatype": "external-id", "value": "6082" }]
+      },
+      "P3135": {
+        "id": "P3135",
+        "values": [{ "datatype": "external-id", "value": "2004098" }]
+      },
+      "P3141": {
+        "id": "P3141",
+        "values": [{ "datatype": "external-id", "value": "t0004873" }]
+      },
+      "P2346": {
+        "id": "P2346",
+        "values": [{ "datatype": "external-id", "value": "132732" }]
+      },
+      "P2061": {
+        "id": "P2061",
+        "values": [{ "datatype": "wikibase-item", "value": "Q752245" }]
+      },
+      "P2130": {
+        "id": "P2130",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+54000000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "54000000"
+          }
+        ]
+      },
+      "P2142": {
+        "id": "P2142",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+136766062",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "136766062"
+          }
+        ]
+      },
+      "P3077": {
+        "id": "P3077",
+        "values": [{ "datatype": "external-id", "value": "19526" }]
+      },
+      "P373": {
+        "id": "P373",
+        "values": [{ "datatype": "string", "value": "The Godfather Part III" }]
+      },
+      "P2508": {
+        "id": "P2508",
+        "values": [{ "datatype": "external-id", "value": "3412" }]
+      },
+      "P2638": {
+        "id": "P2638",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "movies/the-godfather-part-iii-the-coppola-restoration"
+          }
+        ]
+      },
+      "P3804": {
+        "id": "P3804",
+        "values": [{ "datatype": "external-id", "value": "128198" }]
+      },
+      "P3933": {
+        "id": "P3933",
+        "values": [{ "datatype": "external-id", "value": "1310612" }]
+      },
+      "P2509": {
+        "id": "P2509",
+        "values": [{ "datatype": "external-id", "value": "mv3406" }]
+      },
+      "P2704": {
+        "id": "P2704",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "10.5240/1CE7-1BA3-1F83-1138-B7FC-7"
+          }
+        ]
+      },
+      "P3593": {
+        "id": "P3593",
+        "values": [{ "datatype": "external-id", "value": "58524" }]
+      },
+      "P3808": {
+        "id": "P3808",
+        "values": [
+          { "datatype": "external-id", "value": "Godfather-Part-III-The" }
+        ]
+      },
+      "P3212": {
+        "id": "P3212",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "0000-0000-74B5-0000-N-0000-0000-5"
+          }
+        ]
+      },
+      "P1417": {
+        "id": "P1417",
+        "values": [
+          { "datatype": "external-id", "value": "topic/The-Godfather-Part-III" }
+        ]
+      },
+      "P214": {
+        "id": "P214",
+        "values": [{ "datatype": "external-id", "value": "316753504" }]
+      },
+      "P244": {
+        "id": "P244",
+        "values": [{ "datatype": "external-id", "value": "n92093284" }]
+      },
+      "P4947": {
+        "id": "P4947",
+        "values": [{ "datatype": "external-id", "value": "242" }]
+      },
+      "P5032": {
+        "id": "P5032",
+        "values": [{ "datatype": "external-id", "value": "1091" }]
+      },
+      "P5099": {
+        "id": "P5099",
+        "values": [{ "datatype": "external-id", "value": "film/ilpadrino3" }]
+      },
+      "P3844": {
+        "id": "P3844",
+        "values": [{ "datatype": "external-id", "value": "2471" }]
+      },
+      "P5786": {
+        "id": "P5786",
+        "values": [{ "datatype": "external-id", "value": "der-pate-3" }]
+      },
+      "P6145": {
+        "id": "P6145",
+        "values": [{ "datatype": "external-id", "value": "2517" }]
+      },
+      "P2515": {
+        "id": "P2515",
+        "values": [{ "datatype": "wikibase-item", "value": "Q440313" }]
+      },
+      "P4632": {
+        "id": "P4632",
+        "values": [{ "datatype": "external-id", "value": "8061" }]
+      },
+      "P6127": {
+        "id": "P6127",
+        "values": [
+          { "datatype": "external-id", "value": "the-godfather-part-iii" }
+        ]
+      },
+      "P4665": {
+        "id": "P4665",
+        "values": [{ "datatype": "external-id", "value": "3748" }]
+      },
+      "P6584": {
+        "id": "P6584",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "the_godfather%3A_part_iii_9087"
+          }
+        ]
+      },
+      "P1552": {
+        "id": "P1552",
+        "values": [{ "datatype": "wikibase-item", "value": "Q45171911" }]
+      },
+      "P6562": {
+        "id": "P6562",
+        "values": [{ "datatype": "external-id", "value": "m5gUg-uDyRY" }]
+      }
+    }
+  },
+  "Q163872": {
+    "id": "Q163872",
+    "pageid": 164643,
+    "label": "The Dark Knight",
+    "description": "2008 British-American superhero film directed by Christopher Nolan",
+    "aliases": ["TDK", "Dark Knight"],
+    "claims": {
+      "P31": {
+        "id": "P31",
+        "values": [{ "datatype": "wikibase-item", "value": "Q11424" }]
+      },
+      "P57": {
+        "id": "P57",
+        "values": [{ "datatype": "wikibase-item", "value": "Q25191" }]
+      },
+      "P345": {
+        "id": "P345",
+        "values": [{ "datatype": "external-id", "value": "tt0468569" }]
+      },
+      "P406": {
+        "id": "P406",
+        "values": [{ "datatype": "wikibase-item", "value": "Q2393298" }]
+      },
+      "P162": {
+        "id": "P162",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q242951" },
+          { "datatype": "wikibase-item", "value": "Q2740357" },
+          { "datatype": "wikibase-item", "value": "Q25191" }
+        ]
+      },
+      "P344": {
+        "id": "P344",
+        "values": [{ "datatype": "wikibase-item", "value": "Q460144" }]
+      },
+      "P161": {
+        "id": "P161",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q45772" },
+          { "datatype": "wikibase-item", "value": "Q123351" },
+          { "datatype": "wikibase-item", "value": "Q40572" },
+          { "datatype": "wikibase-item", "value": "Q83492" },
+          { "datatype": "wikibase-item", "value": "Q192643" },
+          { "datatype": "wikibase-item", "value": "Q202381" },
+          { "datatype": "wikibase-item", "value": "Q48337" },
+          { "datatype": "wikibase-item", "value": "Q207969" },
+          { "datatype": "wikibase-item", "value": "Q1108562" },
+          { "datatype": "wikibase-item", "value": "Q938855" },
+          { "datatype": "wikibase-item", "value": "Q361215" },
+          { "datatype": "wikibase-item", "value": "Q2635096" },
+          { "datatype": "wikibase-item", "value": "Q934484" },
+          { "datatype": "wikibase-item", "value": "Q225933" },
+          { "datatype": "wikibase-item", "value": "Q202589" },
+          { "datatype": "wikibase-item", "value": "Q1388258" },
+          { "datatype": "wikibase-item", "value": "Q248915" },
+          { "datatype": "wikibase-item", "value": "Q266881" },
+          { "datatype": "wikibase-item", "value": "Q220335" },
+          { "datatype": "wikibase-item", "value": "Q2434354" },
+          { "datatype": "wikibase-item", "value": "Q379830" },
+          { "datatype": "wikibase-item", "value": "Q729618" },
+          { "datatype": "wikibase-item", "value": "Q456426" },
+          { "datatype": "wikibase-item", "value": "Q1366768" },
+          { "datatype": "wikibase-item", "value": "Q519949" },
+          { "datatype": "wikibase-item", "value": "Q957363" },
+          { "datatype": "wikibase-item", "value": "Q16203767" },
+          { "datatype": "wikibase-item", "value": "Q1591382" },
+          { "datatype": "wikibase-item", "value": "Q436828" }
+        ]
+      },
+      "P373": {
+        "id": "P373",
+        "values": [{ "datatype": "string", "value": "The Dark Knight" }]
+      },
+      "P58": {
+        "id": "P58",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q372788" },
+          { "datatype": "wikibase-item", "value": "Q25191" },
+          { "datatype": "wikibase-item", "value": "Q313048" },
+          { "datatype": "wikibase-item", "value": "Q352010" },
+          { "datatype": "wikibase-item", "value": "Q464282" }
+        ]
+      },
+      "P480": {
+        "id": "P480",
+        "values": [{ "datatype": "external-id", "value": "867354" }]
+      },
+      "P272": {
+        "id": "P272",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q126399" },
+          { "datatype": "wikibase-item", "value": "Q2924461" },
+          { "datatype": "wikibase-item", "value": "Q621364" },
+          { "datatype": "wikibase-item", "value": "Q984047" }
+        ]
+      },
+      "P840": {
+        "id": "P840",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q732858" },
+          { "datatype": "wikibase-item", "value": "Q8646" }
+        ]
+      },
+      "P136": {
+        "id": "P136",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q188473" },
+          { "datatype": "wikibase-item", "value": "Q2421031" },
+          { "datatype": "wikibase-item", "value": "Q19367312" },
+          { "datatype": "wikibase-item", "value": "Q959790" },
+          { "datatype": "wikibase-item", "value": "Q1535153" },
+          { "datatype": "wikibase-item", "value": "Q130232" },
+          { "datatype": "wikibase-item", "value": "Q182015" }
+        ]
+      },
+      "P856": {
+        "id": "P856",
+        "values": [
+          {
+            "datatype": "url",
+            "value": "https://www.warnerbros.com/dark-knight"
+          }
+        ]
+      },
+      "P646": {
+        "id": "P646",
+        "values": [{ "datatype": "external-id", "value": "/m/0btpm6" }]
+      },
+      "P227": {
+        "id": "P227",
+        "values": [{ "datatype": "external-id", "value": "7628419-0" }]
+      },
+      "P1265": {
+        "id": "P1265",
+        "values": [{ "datatype": "external-id", "value": "115362" }]
+      },
+      "P1258": {
+        "id": "P1258",
+        "values": [{ "datatype": "external-id", "value": "m/the_dark_knight" }]
+      },
+      "P86": {
+        "id": "P86",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q76364" },
+          { "datatype": "wikibase-item", "value": "Q213869" }
+        ]
+      },
+      "P750": {
+        "id": "P750",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q126399" },
+          { "datatype": "wikibase-item", "value": "Q1097348" }
+        ]
+      },
+      "P364": {
+        "id": "P364",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1860" }]
+      },
+      "P577": {
+        "id": "P577",
+        "values": [
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+2008-08-13T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "2008-08-13"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+2008-07-18T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "2008-07-18"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+2008-07-25T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "2008-07-25"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+2008-08-21T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "2008-08-21"
+          }
+        ]
+      },
+      "P214": {
+        "id": "P214",
+        "values": [{ "datatype": "external-id", "value": "214780478" }]
+      },
+      "P1040": {
+        "id": "P1040",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1811998" }]
+      },
+      "P921": {
+        "id": "P921",
+        "values": [{ "datatype": "wikibase-item", "value": "Q7283" }]
+      },
+      "P495": {
+        "id": "P495",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q30" },
+          { "datatype": "wikibase-item", "value": "Q145" }
+        ]
+      },
+      "P1562": {
+        "id": "P1562",
+        "values": [{ "datatype": "external-id", "value": "v357349" }]
+      },
+      "P915": {
+        "id": "P915",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q65" },
+          { "datatype": "wikibase-item", "value": "Q1297" },
+          { "datatype": "wikibase-item", "value": "Q8646" },
+          { "datatype": "wikibase-item", "value": "Q661896" }
+        ]
+      },
+      "P905": {
+        "id": "P905",
+        "values": [{ "datatype": "external-id", "value": "86370" }]
+      },
+      "P1804": {
+        "id": "P1804",
+        "values": [{ "datatype": "external-id", "value": "55901" }]
+      },
+      "P1970": {
+        "id": "P1970",
+        "values": [{ "datatype": "external-id", "value": "42666" }]
+      },
+      "P1712": {
+        "id": "P1712",
+        "values": [
+          { "datatype": "external-id", "value": "movie/the-dark-knight" }
+        ]
+      },
+      "P1237": {
+        "id": "P1237",
+        "values": [{ "datatype": "external-id", "value": "darkknight" }]
+      },
+      "P935": {
+        "id": "P935",
+        "values": [{ "datatype": "string", "value": "The Dark Knight" }]
+      },
+      "P1476": {
+        "id": "P1476",
+        "values": [
+          { "datatype": "monolingualtext", "value": "The Dark Knight" }
+        ]
+      },
+      "P166": {
+        "id": "P166",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q106291" },
+          { "datatype": "wikibase-item", "value": "Q488645" },
+          { "datatype": "wikibase-item", "value": "Q1062026" }
+        ]
+      },
+      "P1411": {
+        "id": "P1411",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q106291" },
+          { "datatype": "wikibase-item", "value": "Q131520" },
+          { "datatype": "wikibase-item", "value": "Q488645" },
+          { "datatype": "wikibase-item", "value": "Q281939" },
+          { "datatype": "wikibase-item", "value": "Q487136" },
+          { "datatype": "wikibase-item", "value": "Q277751" },
+          { "datatype": "wikibase-item", "value": "Q830079" },
+          { "datatype": "wikibase-item", "value": "Q393686" }
+        ]
+      },
+      "P462": {
+        "id": "P462",
+        "values": [{ "datatype": "wikibase-item", "value": "Q22006653" }]
+      },
+      "P2518": {
+        "id": "P2518",
+        "values": [{ "datatype": "external-id", "value": "5172" }]
+      },
+      "P2529": {
+        "id": "P2529",
+        "values": [{ "datatype": "external-id", "value": "223734" }]
+      },
+      "P2508": {
+        "id": "P2508",
+        "values": [{ "datatype": "external-id", "value": "39069" }]
+      },
+      "P2465": {
+        "id": "P2465",
+        "values": [{ "datatype": "external-id", "value": "329605" }]
+      },
+      "P1874": {
+        "id": "P1874",
+        "values": [{ "datatype": "external-id", "value": "70079583" }]
+      },
+      "P2554": {
+        "id": "P2554",
+        "values": [{ "datatype": "wikibase-item", "value": "Q3336708" }]
+      },
+      "P2603": {
+        "id": "P2603",
+        "values": [{ "datatype": "external-id", "value": "111543" }]
+      },
+      "P2631": {
+        "id": "P2631",
+        "values": [{ "datatype": "external-id", "value": "661470" }]
+      },
+      "P2047": {
+        "id": "P2047",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+153",
+              "unit": "http://www.wikidata.org/entity/Q7727"
+            },
+            "value_string": "153"
+          }
+        ]
+      },
+      "P2755": {
+        "id": "P2755",
+        "values": [{ "datatype": "external-id", "value": "121053" }]
+      },
+      "P2758": {
+        "id": "P2758",
+        "values": [{ "datatype": "wikibase-item", "value": "Q23817729" }]
+      },
+      "P2747": {
+        "id": "P2747",
+        "values": [{ "datatype": "wikibase-item", "value": "Q23830578" }]
+      },
+      "P2346": {
+        "id": "P2346",
+        "values": [{ "datatype": "external-id", "value": "1447503" }]
+      },
+      "P2334": {
+        "id": "P2334",
+        "values": [{ "datatype": "external-id", "value": "66679" }]
+      },
+      "P3129": {
+        "id": "P3129",
+        "values": [{ "datatype": "external-id", "value": "709431" }]
+      },
+      "P3107": {
+        "id": "P3107",
+        "values": [{ "datatype": "external-id", "value": "531631" }]
+      },
+      "P3302": {
+        "id": "P3302",
+        "values": [{ "datatype": "external-id", "value": "155" }]
+      },
+      "P3138": {
+        "id": "P3138",
+        "values": [{ "datatype": "external-id", "value": "149456" }]
+      },
+      "P3135": {
+        "id": "P3135",
+        "values": [{ "datatype": "external-id", "value": "1785890" }]
+      },
+      "P3143": {
+        "id": "P3143",
+        "values": [{ "datatype": "external-id", "value": "462032" }]
+      },
+      "P3145": {
+        "id": "P3145",
+        "values": [{ "datatype": "external-id", "value": "tt17575" }]
+      },
+      "P179": {
+        "id": "P179",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q12859908" },
+          { "datatype": "wikibase-item", "value": "Q2111133" }
+        ]
+      },
+      "P3141": {
+        "id": "P3141",
+        "values": [{ "datatype": "external-id", "value": "t0012829" }]
+      },
+      "P3203": {
+        "id": "P3203",
+        "values": [{ "datatype": "external-id", "value": "105149" }]
+      },
+      "P1981": {
+        "id": "P1981",
+        "values": [{ "datatype": "wikibase-item", "value": "Q20644797" }]
+      },
+      "P1431": {
+        "id": "P1431",
+        "values": [{ "datatype": "wikibase-item", "value": "Q2740528" }]
+      },
+      "P3265": {
+        "id": "P3265",
+        "values": [{ "datatype": "external-id", "value": "thedarkknight" }]
+      },
+      "P3650": {
+        "id": "P3650",
+        "values": [{ "datatype": "wikibase-item", "value": "Q28732986" }]
+      },
+      "P674": {
+        "id": "P674",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q116113" },
+          { "datatype": "wikibase-item", "value": "Q7743454" },
+          { "datatype": "wikibase-item", "value": "Q295375" },
+          { "datatype": "wikibase-item", "value": "Q295599" },
+          { "datatype": "wikibase-item", "value": "Q159051" },
+          { "datatype": "wikibase-item", "value": "Q159202" },
+          { "datatype": "wikibase-item", "value": "Q2567497" },
+          { "datatype": "wikibase-item", "value": "Q2695156" },
+          { "datatype": "wikibase-item", "value": "Q3000468" },
+          { "datatype": "wikibase-item", "value": "Q2706880" },
+          { "datatype": "wikibase-item", "value": "Q54808494" },
+          { "datatype": "wikibase-item", "value": "Q54808745" }
+        ]
+      },
+      "P3417": {
+        "id": "P3417",
+        "values": [
+          { "datatype": "external-id", "value": "The-Dark-Knight-2008-movie" }
+        ]
+      },
+      "P3818": {
+        "id": "P3818",
+        "values": [{ "datatype": "wikibase-item", "value": "Q28951021" }]
+      },
+      "P2509": {
+        "id": "P2509",
+        "values": [{ "datatype": "external-id", "value": "mv37203" }]
+      },
+      "P3933": {
+        "id": "P3933",
+        "values": [{ "datatype": "external-id", "value": "1363664" }]
+      },
+      "P2704": {
+        "id": "P2704",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "10.5240/1C28-8452-F625-76FC-3797-M"
+          }
+        ]
+      },
+      "P3844": {
+        "id": "P3844",
+        "values": [{ "datatype": "external-id", "value": "12232" }]
+      },
+      "P3808": {
+        "id": "P3808",
+        "values": [{ "datatype": "external-id", "value": "Dark-Knight-The" }]
+      },
+      "P3995": {
+        "id": "P3995",
+        "values": [{ "datatype": "external-id", "value": "Mroczny.Rycerz" }]
+      },
+      "P3077": {
+        "id": "P3077",
+        "values": [{ "datatype": "external-id", "value": "200264" }]
+      },
+      "P3593": {
+        "id": "P3593",
+        "values": [{ "datatype": "external-id", "value": "55498" }]
+      },
+      "P3212": {
+        "id": "P3212",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "0000-0001-EDDD-0000-4-0000-0000-P"
+          }
+        ]
+      },
+      "P2638": {
+        "id": "P2638",
+        "values": [
+          { "datatype": "external-id", "value": "movies/the-dark-knight" }
+        ]
+      },
+      "P3804": {
+        "id": "P3804",
+        "values": [{ "datatype": "external-id", "value": "290942" }]
+      },
+      "P2703": {
+        "id": "P2703",
+        "values": [{ "datatype": "external-id", "value": "150741533" }]
+      },
+      "P244": {
+        "id": "P244",
+        "values": [{ "datatype": "external-id", "value": "no2008149382" }]
+      },
+      "P950": {
+        "id": "P950",
+        "values": [{ "datatype": "external-id", "value": "XX5093851" }]
+      },
+      "P2014": {
+        "id": "P2014",
+        "values": [{ "datatype": "external-id", "value": "133447" }]
+      },
+      "P4276": {
+        "id": "P4276",
+        "values": [{ "datatype": "external-id", "value": "84579" }]
+      },
+      "P1417": {
+        "id": "P1417",
+        "values": [
+          { "datatype": "external-id", "value": "topic/The-Dark-Knight" }
+        ]
+      },
+      "P1552": {
+        "id": "P1552",
+        "values": [{ "datatype": "wikibase-item", "value": "Q45171911" }]
+      },
+      "P4632": {
+        "id": "P4632",
+        "values": [{ "datatype": "external-id", "value": "66" }]
+      },
+      "P144": {
+        "id": "P144",
+        "values": [{ "datatype": "wikibase-item", "value": "Q2695156" }]
+      },
+      "P4786": {
+        "id": "P4786",
+        "values": [{ "datatype": "external-id", "value": "48751" }]
+      },
+      "P4947": {
+        "id": "P4947",
+        "values": [{ "datatype": "external-id", "value": "155" }]
+      },
+      "P5099": {
+        "id": "P5099",
+        "values": [
+          { "datatype": "external-id", "value": "film1/ilcavaliereoscuro" }
+        ]
+      },
+      "P18": {
+        "id": "P18",
+        "values": [
+          {
+            "datatype": "commonsMedia",
+            "value": "The Dark Knight European Premier - Leicester square.jpg"
+          }
+        ]
+      },
+      "P4529": {
+        "id": "P4529",
+        "values": [{ "datatype": "external-id", "value": "1851857" }]
+      },
+      "P973": {
+        "id": "P973",
+        "values": [
+          {
+            "datatype": "url",
+            "value": "http://tw.movie.yahoo.com/movieinfo_main.html/id=2531"
+          }
+        ]
+      },
+      "P910": {
+        "id": "P910",
+        "values": [{ "datatype": "wikibase-item", "value": "Q55270570" }]
+      },
+      "P5357": {
+        "id": "P5357",
+        "values": [{ "datatype": "external-id", "value": "dark_knight_the" }]
+      },
+      "P195": {
+        "id": "P195",
+        "values": [{ "datatype": "wikibase-item", "value": "Q188740" }]
+      },
+      "P941": {
+        "id": "P941",
+        "values": [{ "datatype": "wikibase-item", "value": "Q512835" }]
+      },
+      "P5786": {
+        "id": "P5786",
+        "values": [{ "datatype": "external-id", "value": "the-dark-knight-2" }]
+      },
+      "P175": {
+        "id": "P175",
+        "values": [{ "datatype": "wikibase-item", "value": "Q76364" }]
+      },
+      "P5865": {
+        "id": "P5865",
+        "values": [{ "datatype": "external-id", "value": "the-dark-knight" }]
+      },
+      "P4665": {
+        "id": "P4665",
+        "values": [{ "datatype": "external-id", "value": "16015" }]
+      },
+      "P4282": {
+        "id": "P4282",
+        "values": [{ "datatype": "external-id", "value": "28480" }]
+      },
+      "P4438": {
+        "id": "P4438",
+        "values": [{ "datatype": "external-id", "value": "4ce2b8c51eb38" }]
+      },
+      "P4515": {
+        "id": "P4515",
+        "values": [{ "datatype": "external-id", "value": "19604984" }]
+      },
+      "P5905": {
+        "id": "P5905",
+        "values": [{ "datatype": "external-id", "value": "4025-15" }]
+      },
+      "P5990": {
+        "id": "P5990",
+        "values": [{ "datatype": "external-id", "value": "the-dark-knight" }]
+      },
+      "P269": {
+        "id": "P269",
+        "values": [{ "datatype": "external-id", "value": "172255775" }]
+      },
+      "P268": {
+        "id": "P268",
+        "values": [{ "datatype": "external-id", "value": "166270422" }]
+      },
+      "P6127": {
+        "id": "P6127",
+        "values": [{ "datatype": "external-id", "value": "the-dark-knight" }]
+      },
+      "P6133": {
+        "id": "P6133",
+        "values": [{ "datatype": "external-id", "value": "4731" }]
+      },
+      "P6145": {
+        "id": "P6145",
+        "values": [{ "datatype": "external-id", "value": "4209" }]
+      },
+      "P4969": {
+        "id": "P4969",
+        "values": [{ "datatype": "wikibase-item", "value": "Q18612842" }]
+      },
+      "P2130": {
+        "id": "P2130",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+185000000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "185000000"
+          }
+        ]
+      },
+      "P2142": {
+        "id": "P2142",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+1004558444",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "1004558444"
+          }
+        ]
+      },
+      "P155": {
+        "id": "P155",
+        "values": [{ "datatype": "wikibase-item", "value": "Q166262" }]
+      },
+      "P156": {
+        "id": "P156",
+        "values": [{ "datatype": "wikibase-item", "value": "Q189330" }]
+      },
+      "P6562": {
+        "id": "P6562",
+        "values": [{ "datatype": "external-id", "value": "qY3UkAHufLY" }]
+      },
+      "P1434": {
+        "id": "P1434",
+        "values": [{ "datatype": "wikibase-item", "value": "Q69920250" }]
+      },
+      "P5970": {
+        "id": "P5970",
+        "values": [{ "datatype": "wikibase-item", "value": "Q56887761" }]
+      },
+      "P170": {
+        "id": "P170",
+        "values": [{ "datatype": "wikibase-item", "value": "Q25191" }]
+      }
+    }
+  },
+  "Q104123": {
+    "id": "Q104123",
+    "pageid": 106780,
+    "label": "Pulp Fiction",
+    "description": "1994 American crime film directed by Quentin Tarantino",
+    "claims": {
+      "P57": {
+        "id": "P57",
+        "values": [{ "datatype": "wikibase-item", "value": "Q3772" }]
+      },
+      "P58": {
+        "id": "P58",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q3772" },
+          { "datatype": "wikibase-item", "value": "Q450720" }
+        ]
+      },
+      "P345": {
+        "id": "P345",
+        "values": [{ "datatype": "external-id", "value": "tt0110912" }]
+      },
+      "P162": {
+        "id": "P162",
+        "values": [{ "datatype": "wikibase-item", "value": "Q514913" }]
+      },
+      "P161": {
+        "id": "P161",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q2680" },
+          { "datatype": "wikibase-item", "value": "Q80938" },
+          { "datatype": "wikibase-item", "value": "Q109232" },
+          { "datatype": "wikibase-item", "value": "Q125017" },
+          { "datatype": "wikibase-item", "value": "Q172678" },
+          { "datatype": "wikibase-item", "value": "Q185051" },
+          { "datatype": "wikibase-item", "value": "Q191132" },
+          { "datatype": "wikibase-item", "value": "Q203804" },
+          { "datatype": "wikibase-item", "value": "Q235115" },
+          { "datatype": "wikibase-item", "value": "Q238483" },
+          { "datatype": "wikibase-item", "value": "Q310315" },
+          { "datatype": "wikibase-item", "value": "Q318267" },
+          { "datatype": "wikibase-item", "value": "Q3772" },
+          { "datatype": "wikibase-item", "value": "Q164534" },
+          { "datatype": "wikibase-item", "value": "Q2263306" },
+          { "datatype": "wikibase-item", "value": "Q453973" },
+          { "datatype": "wikibase-item", "value": "Q104061" },
+          { "datatype": "wikibase-item", "value": "Q2434817" },
+          { "datatype": "wikibase-item", "value": "Q240774" },
+          { "datatype": "wikibase-item", "value": "Q3973186" },
+          { "datatype": "wikibase-item", "value": "Q270774" },
+          { "datatype": "wikibase-item", "value": "Q254431" },
+          { "datatype": "wikibase-item", "value": "Q2926038" },
+          { "datatype": "wikibase-item", "value": "Q1016897" },
+          { "datatype": "wikibase-item", "value": "Q356541" },
+          { "datatype": "wikibase-item", "value": "Q1209753" },
+          { "datatype": "wikibase-item", "value": "Q1368224" },
+          { "datatype": "wikibase-item", "value": "Q1563838" },
+          { "datatype": "wikibase-item", "value": "Q3193117" },
+          { "datatype": "wikibase-item", "value": "Q3856171" },
+          { "datatype": "wikibase-item", "value": "Q432437" },
+          { "datatype": "wikibase-item", "value": "Q514913" },
+          { "datatype": "wikibase-item", "value": "Q7647898" },
+          { "datatype": "wikibase-item", "value": "Q2924399" },
+          { "datatype": "wikibase-item", "value": "Q3241353" }
+        ]
+      },
+      "P31": {
+        "id": "P31",
+        "values": [{ "datatype": "wikibase-item", "value": "Q11424" }]
+      },
+      "P364": {
+        "id": "P364",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1860" }]
+      },
+      "P480": {
+        "id": "P480",
+        "values": [{ "datatype": "external-id", "value": "160882" }]
+      },
+      "P272": {
+        "id": "P272",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q300323" },
+          { "datatype": "wikibase-item", "value": "Q3177524" },
+          { "datatype": "wikibase-item", "value": "Q465449" }
+        ]
+      },
+      "P344": {
+        "id": "P344",
+        "values": [{ "datatype": "wikibase-item", "value": "Q515568" }]
+      },
+      "P840": {
+        "id": "P840",
+        "values": [{ "datatype": "wikibase-item", "value": "Q65" }]
+      },
+      "P921": {
+        "id": "P921",
+        "values": [{ "datatype": "wikibase-item", "value": "Q46952" }]
+      },
+      "P856": {
+        "id": "P856",
+        "values": [
+          {
+            "datatype": "url",
+            "value": "http://www.miramax.com/movie/pulp-fiction"
+          }
+        ]
+      },
+      "P373": {
+        "id": "P373",
+        "values": [{ "datatype": "string", "value": "Pulp Fiction (1994)" }]
+      },
+      "P646": {
+        "id": "P646",
+        "values": [{ "datatype": "external-id", "value": "/m/0f4_l" }]
+      },
+      "P227": {
+        "id": "P227",
+        "values": [{ "datatype": "external-id", "value": "4392032-9" }]
+      },
+      "P18": {
+        "id": "P18",
+        "values": [
+          { "datatype": "commonsMedia", "value": "Pulp Fiction Logo.png" }
+        ]
+      },
+      "P1265": {
+        "id": "P1265",
+        "values": [{ "datatype": "external-id", "value": "10126" }]
+      },
+      "P1258": {
+        "id": "P1258",
+        "values": [{ "datatype": "external-id", "value": "m/pulp_fiction" }]
+      },
+      "P577": {
+        "id": "P577",
+        "values": [
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1994-05-21T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1994-05-21"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1994-11-03T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1994-11-03"
+          },
+          {
+            "datatype": "time",
+            "value": {
+              "time": "+1994-10-14T00:00:00Z",
+              "timezone": 0,
+              "before": 0,
+              "after": 0,
+              "precision": 11,
+              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+            },
+            "value_string": "1994-10-14"
+          }
+        ]
+      },
+      "P136": {
+        "id": "P136",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q7444356" },
+          { "datatype": "wikibase-item", "value": "Q2484376" },
+          { "datatype": "wikibase-item", "value": "Q459290" },
+          { "datatype": "wikibase-item", "value": "Q130232" }
+        ]
+      },
+      "P495": {
+        "id": "P495",
+        "values": [{ "datatype": "wikibase-item", "value": "Q30" }]
+      },
+      "P1562": {
+        "id": "P1562",
+        "values": [{ "datatype": "external-id", "value": "v131235" }]
+      },
+      "P166": {
+        "id": "P166",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q823422" },
+          { "datatype": "wikibase-item", "value": "Q1315008" },
+          { "datatype": "wikibase-item", "value": "Q1720784" },
+          { "datatype": "wikibase-item", "value": "Q1789102" },
+          { "datatype": "wikibase-item", "value": "Q179808" },
+          { "datatype": "wikibase-item", "value": "Q1868950" },
+          { "datatype": "wikibase-item", "value": "Q952914" },
+          { "datatype": "wikibase-item", "value": "Q41417" },
+          { "datatype": "wikibase-item", "value": "Q503034" },
+          { "datatype": "wikibase-item", "value": "Q505449" },
+          { "datatype": "wikibase-item", "value": "Q696972" },
+          { "datatype": "wikibase-item", "value": "Q696998" },
+          { "datatype": "wikibase-item", "value": "Q6978541" },
+          { "datatype": "wikibase-item", "value": "Q849124" },
+          { "datatype": "wikibase-item", "value": "Q1170507" },
+          { "datatype": "wikibase-item", "value": "Q2295041" },
+          { "datatype": "wikibase-item", "value": "Q2544859" },
+          { "datatype": "wikibase-item", "value": "Q3404523" },
+          { "datatype": "wikibase-item", "value": "Q41375" },
+          { "datatype": "wikibase-item", "value": "Q4220897" },
+          { "datatype": "wikibase-item", "value": "Q540977" },
+          { "datatype": "wikibase-item", "value": "Q548389" }
+        ]
+      },
+      "P915": {
+        "id": "P915",
+        "values": [{ "datatype": "wikibase-item", "value": "Q65" }]
+      },
+      "P905": {
+        "id": "P905",
+        "values": [{ "datatype": "external-id", "value": "2031" }]
+      },
+      "P1476": {
+        "id": "P1476",
+        "values": [{ "datatype": "monolingualtext", "value": "Pulp Fiction" }]
+      },
+      "P910": {
+        "id": "P910",
+        "values": [{ "datatype": "wikibase-item", "value": "Q9245418" }]
+      },
+      "P1874": {
+        "id": "P1874",
+        "values": [{ "datatype": "external-id", "value": "880640" }]
+      },
+      "P1804": {
+        "id": "P1804",
+        "values": [{ "datatype": "external-id", "value": "9807" }]
+      },
+      "P1970": {
+        "id": "P1970",
+        "values": [{ "datatype": "external-id", "value": "182" }]
+      },
+      "P1237": {
+        "id": "P1237",
+        "values": [{ "datatype": "external-id", "value": "pulpfiction" }]
+      },
+      "P1040": {
+        "id": "P1040",
+        "values": [{ "datatype": "wikibase-item", "value": "Q273379" }]
+      },
+      "P2334": {
+        "id": "P2334",
+        "values": [{ "datatype": "external-id", "value": "19877" }]
+      },
+      "P2346": {
+        "id": "P2346",
+        "values": [{ "datatype": "external-id", "value": "160125" }]
+      },
+      "P1431": {
+        "id": "P1431",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q13409484" },
+          { "datatype": "wikibase-item", "value": "Q2325642" },
+          { "datatype": "wikibase-item", "value": "Q26806" }
+        ]
+      },
+      "P1411": {
+        "id": "P1411",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q1011509" },
+          { "datatype": "wikibase-item", "value": "Q102427" },
+          { "datatype": "wikibase-item", "value": "Q103360" },
+          { "datatype": "wikibase-item", "value": "Q103916" },
+          { "datatype": "wikibase-item", "value": "Q165313" },
+          { "datatype": "wikibase-item", "value": "Q1720784" },
+          { "datatype": "wikibase-item", "value": "Q1315008" },
+          { "datatype": "wikibase-item", "value": "Q1967719" },
+          { "datatype": "wikibase-item", "value": "Q1967731" },
+          { "datatype": "wikibase-item", "value": "Q281939" },
+          { "datatype": "wikibase-item", "value": "Q723830" },
+          { "datatype": "wikibase-item", "value": "Q41417" },
+          { "datatype": "wikibase-item", "value": "Q5280675" },
+          { "datatype": "wikibase-item", "value": "Q586356" },
+          { "datatype": "wikibase-item", "value": "Q849124" },
+          { "datatype": "wikibase-item", "value": "Q593098" },
+          { "datatype": "wikibase-item", "value": "Q822907" },
+          { "datatype": "wikibase-item", "value": "Q4220898" },
+          { "datatype": "wikibase-item", "value": "Q41375" },
+          { "datatype": "wikibase-item", "value": "Q3404523" },
+          { "datatype": "wikibase-item", "value": "Q3404521" },
+          { "datatype": "wikibase-item", "value": "Q2544859" },
+          { "datatype": "wikibase-item", "value": "Q2295041" },
+          { "datatype": "wikibase-item", "value": "Q2294693" },
+          { "datatype": "wikibase-item", "value": "Q1320315" },
+          { "datatype": "wikibase-item", "value": "Q139184" },
+          { "datatype": "wikibase-item", "value": "Q1260789" },
+          { "datatype": "wikibase-item", "value": "Q4220897" },
+          { "datatype": "wikibase-item", "value": "Q400007" },
+          { "datatype": "wikibase-item", "value": "Q6978541" },
+          { "datatype": "wikibase-item", "value": "Q499789" },
+          { "datatype": "wikibase-item", "value": "Q4824149" },
+          { "datatype": "wikibase-item", "value": "Q4220901" },
+          { "datatype": "wikibase-item", "value": "Q548389" },
+          { "datatype": "wikibase-item", "value": "Q540977" },
+          { "datatype": "wikibase-item", "value": "Q4220900" },
+          { "datatype": "wikibase-item", "value": "Q1170507" },
+          { "datatype": "wikibase-item", "value": "Q687123" },
+          { "datatype": "wikibase-item", "value": "Q654620" },
+          { "datatype": "wikibase-item", "value": "Q739633" },
+          { "datatype": "wikibase-item", "value": "Q787131" },
+          { "datatype": "wikibase-item", "value": "Q787145" },
+          { "datatype": "wikibase-item", "value": "Q900414" },
+          { "datatype": "wikibase-item", "value": "Q106301" },
+          { "datatype": "wikibase-item", "value": "Q106291" }
+        ]
+      },
+      "P1712": {
+        "id": "P1712",
+        "values": [{ "datatype": "external-id", "value": "movie/pulp-fiction" }]
+      },
+      "P462": {
+        "id": "P462",
+        "values": [{ "datatype": "wikibase-item", "value": "Q22006653" }]
+      },
+      "P750": {
+        "id": "P750",
+        "values": [{ "datatype": "wikibase-item", "value": "Q17126013" }]
+      },
+      "P2529": {
+        "id": "P2529",
+        "values": [{ "datatype": "external-id", "value": "8852" }]
+      },
+      "P2465": {
+        "id": "P2465",
+        "values": [{ "datatype": "external-id", "value": "18665" }]
+      },
+      "P2508": {
+        "id": "P2508",
+        "values": [{ "datatype": "external-id", "value": "10735" }]
+      },
+      "P2047": {
+        "id": "P2047",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+154",
+              "unit": "http://www.wikidata.org/entity/Q7727"
+            },
+            "value_string": "154"
+          }
+        ]
+      },
+      "P2554": {
+        "id": "P2554",
+        "values": [{ "datatype": "wikibase-item", "value": "Q3018955" }]
+      },
+      "P2515": {
+        "id": "P2515",
+        "values": [{ "datatype": "wikibase-item", "value": "Q1627038" }]
+      },
+      "P2603": {
+        "id": "P2603",
+        "values": [{ "datatype": "external-id", "value": "342" }]
+      },
+      "P3106": {
+        "id": "P3106",
+        "values": [{ "datatype": "external-id", "value": "film/pulp-fiction" }]
+      },
+      "P3107": {
+        "id": "P3107",
+        "values": [{ "datatype": "external-id", "value": "62068" }]
+      },
+      "P3138": {
+        "id": "P3138",
+        "values": [{ "datatype": "external-id", "value": "1050" }]
+      },
+      "P3129": {
+        "id": "P3129",
+        "values": [{ "datatype": "external-id", "value": "584" }]
+      },
+      "P3302": {
+        "id": "P3302",
+        "values": [{ "datatype": "external-id", "value": "680" }]
+      },
+      "P2518": {
+        "id": "P2518",
+        "values": [{ "datatype": "external-id", "value": "924" }]
+      },
+      "P3143": {
+        "id": "P3143",
+        "values": [{ "datatype": "external-id", "value": "110439" }]
+      },
+      "P3145": {
+        "id": "P3145",
+        "values": [{ "datatype": "external-id", "value": "tt194" }]
+      },
+      "P3203": {
+        "id": "P3203",
+        "values": [{ "datatype": "external-id", "value": "37150" }]
+      },
+      "P2631": {
+        "id": "P2631",
+        "values": [{ "datatype": "external-id", "value": "87358" }]
+      },
+      "P1981": {
+        "id": "P1981",
+        "values": [{ "datatype": "wikibase-item", "value": "Q20644797" }]
+      },
+      "P2638": {
+        "id": "P2638",
+        "values": [
+          { "datatype": "external-id", "value": "movies/pulp-fiction" }
+        ]
+      },
+      "P2061": {
+        "id": "P2061",
+        "values": [{ "datatype": "wikibase-item", "value": "Q21062414" }]
+      },
+      "P3593": {
+        "id": "P3593",
+        "values": [{ "datatype": "external-id", "value": "55207" }]
+      },
+      "P2747": {
+        "id": "P2747",
+        "values": [{ "datatype": "wikibase-item", "value": "Q23830579" }]
+      },
+      "P3417": {
+        "id": "P3417",
+        "values": [
+          { "datatype": "external-id", "value": "Pulp-Fiction-1994-movie" }
+        ]
+      },
+      "P2130": {
+        "id": "P2130",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+8000000",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "8000000"
+          }
+        ]
+      },
+      "P2142": {
+        "id": "P2142",
+        "values": [
+          {
+            "datatype": "quantity",
+            "value": {
+              "amount": "+213928762",
+              "unit": "http://www.wikidata.org/entity/Q4917"
+            },
+            "value_string": "213928762"
+          }
+        ]
+      },
+      "P3077": {
+        "id": "P3077",
+        "values": [{ "datatype": "external-id", "value": "280124" }]
+      },
+      "P674": {
+        "id": "P674",
+        "values": [
+          { "datatype": "wikibase-item", "value": "Q15427568" },
+          { "datatype": "wikibase-item", "value": "Q16585660" },
+          { "datatype": "wikibase-item", "value": "Q19777775" },
+          { "datatype": "wikibase-item", "value": "Q3900376" }
+        ]
+      },
+      "P2509": {
+        "id": "P2509",
+        "values": [{ "datatype": "external-id", "value": "mv10698" }]
+      },
+      "P3141": {
+        "id": "P3141",
+        "values": [{ "datatype": "external-id", "value": "t0005791" }]
+      },
+      "P3808": {
+        "id": "P3808",
+        "values": [{ "datatype": "external-id", "value": "Pulp-Fiction" }]
+      },
+      "P3135": {
+        "id": "P3135",
+        "values": [{ "datatype": "external-id", "value": "1307275" }]
+      },
+      "P2636": {
+        "id": "P2636",
+        "values": [{ "datatype": "external-id", "value": "110117695" }]
+      },
+      "P3804": {
+        "id": "P3804",
+        "values": [{ "datatype": "external-id", "value": "130222" }]
+      },
+      "P3844": {
+        "id": "P3844",
+        "values": [{ "datatype": "external-id", "value": "2594" }]
+      },
+      "P2704": {
+        "id": "P2704",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "10.5240/4EB2-DFF8-6B78-660F-C61B-D"
+          }
+        ]
+      },
+      "P3995": {
+        "id": "P3995",
+        "values": [{ "datatype": "external-id", "value": "Pulp.Fiction" }]
+      },
+      "P3933": {
+        "id": "P3933",
+        "values": [{ "datatype": "external-id", "value": "1342722" }]
+      },
+      "P214": {
+        "id": "P214",
+        "values": [{ "datatype": "external-id", "value": "316752351" }]
+      },
+      "P2755": {
+        "id": "P2755",
+        "values": [{ "datatype": "external-id", "value": "86325" }]
+      },
+      "P3212": {
+        "id": "P3212",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "0000-0000-0E62-0000-Q-0000-0000-X"
+          }
+        ]
+      },
+      "P4276": {
+        "id": "P4276",
+        "values": [{ "datatype": "external-id", "value": "8546" }]
+      },
+      "P2014": {
+        "id": "P2014",
+        "values": [{ "datatype": "external-id", "value": "107766" }]
+      },
+      "P1417": {
+        "id": "P1417",
+        "values": [
+          {
+            "datatype": "external-id",
+            "value": "topic/Pulp-Fiction-film-by-Tarantino"
+          }
+        ]
+      },
+      "P1552": {
+        "id": "P1552",
+        "values": [{ "datatype": "wikibase-item", "value": "Q45171911" }]
+      },
+      "P4632": {
+        "id": "P4632",
+        "values": [{ "datatype": "external-id", "value": "91" }]
+      },
+      "P3219": {
+        "id": "P3219",
+        "values": [{ "datatype": "external-id", "value": "pulp-fiction" }]
+      },
+      "P4780": {
+        "id": "P4780",
+        "values": [{ "datatype": "external-id", "value": "19464" }]
+      },
+      "P4783": {
+        "id": "P4783",
+        "values": [{ "datatype": "external-id", "value": "161" }]
+      },
+      "P4786": {
+        "id": "P4786",
+        "values": [{ "datatype": "external-id", "value": "30283" }]
+      },
+      "P4665": {
+        "id": "P4665",
+        "values": [{ "datatype": "external-id", "value": "1118" }]
+      },
+      "P4947": {
+        "id": "P4947",
+        "values": [{ "datatype": "external-id", "value": "680" }]
+      },
+      "P5099": {
+        "id": "P5099",
+        "values": [{ "datatype": "external-id", "value": "film/pulpfiction" }]
+      },
+      "P2283": {
+        "id": "P2283",
+        "values": [{ "datatype": "wikibase-item", "value": "Q2894685" }]
+      },
+      "P195": {
+        "id": "P195",
+        "values": [{ "datatype": "wikibase-item", "value": "Q188740" }]
+      },
+      "P5786": {
+        "id": "P5786",
+        "values": [{ "datatype": "external-id", "value": "pulp-fiction" }]
+      },
+      "P6133": {
+        "id": "P6133",
+        "values": [{ "datatype": "external-id", "value": "6928" }]
+      },
+      "P6145": {
+        "id": "P6145",
+        "values": [{ "datatype": "external-id", "value": "1885" }]
+      },
+      "P4515": {
+        "id": "P4515",
+        "values": [{ "datatype": "external-id", "value": "343549" }]
+      },
+      "P4282": {
+        "id": "P4282",
+        "values": [{ "datatype": "external-id", "value": "459" }]
+      },
+      "P2703": {
+        "id": "P2703",
+        "values": [{ "datatype": "external-id", "value": "150404628" }]
+      },
+      "P4438": {
+        "id": "P4438",
+        "values": [{ "datatype": "external-id", "value": "4ce2b7c5c1618" }]
+      },
+      "P6562": {
+        "id": "P6562",
+        "values": [{ "datatype": "external-id", "value": "hhMtO1MVFSo" }]
+      },
+      "P827": {
+        "id": "P827",
+        "values": [
+          { "datatype": "external-id", "value": "b016vdx6" },
+          { "datatype": "external-id", "value": "b00749bl" }
+        ]
+      }
+    }
+  }
+}

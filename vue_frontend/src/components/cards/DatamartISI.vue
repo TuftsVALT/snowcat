@@ -14,20 +14,22 @@
       <v-spacer></v-spacer>
       <v-btn 
         @click="searchDatamartISI"
+        :loading="searching"
+        :disabled="searching"
         color="info"
       >Search</v-btn>
       <v-btn
+        @click="augmentDatamartISI"
+        :loading="loading"
+        :disabled="loading"
         color="info"
       >Augment</v-btn>
-      <v-btn
-        color="info"
-      >Edit</v-btn>
       <v-spacer></v-spacer>
     </v-card-title>
     <v-data-table
       :headers="headers"
       :items="items"
-      :rows-per-page-items="[5,10,25]"
+      :rows-per-page-items="[100]"
     >
       <template slot="headers" slot-scope="props">
         <tr>
@@ -38,42 +40,39 @@
             Dataset name
           </td>
           <td class = "text-xs-center">
-            Description
+            Variables
           </td>
           <td class = "text-xs-center">
-            Variables
+            Join Columns
           </td>
           <td class = "text-xs-center">
             Score
           </td>
-          <td class = "text-xs-center">
-            Datamart ID
-          </td>
         </tr>
       </template>
       <template slot="items" slot-scope="props">
-        <td>
-          <v-checkbox
-            :input-value="props.selected"
-            primary
-            hide-details
-          ></v-checkbox>
-        </td>
-        <td class = "text-xs-center">
-          {{props.item[0]}}
-        </td>
-        <td class = "text-xs-center">
-          {{props.item[1]}}
-        </td>
-        <td class = "text-xs-center">
-          {{props.item[2]}}
-        </td>
-        <td class = "text-xs-center">
-          {{props.item[3]}}
-        </td>
-        <td class = "text-xs-center">
-          {{props.item[4]}}
-        </td>
+        <tr @click="click(props.index)">
+          <td>
+            <v-radio-group
+            v-model="selected"
+            name="datasetSelector"
+            >
+            <v-radio :value="props.index"/>
+            </v-radio-group>
+          </td>
+          <td class = "text-xs-center">
+            {{props.item[0]}}
+          </td>
+          <td class = "text-xs-center">
+            {{props.item[1]}}
+          </td>
+          <td class = "text-xs-center">
+            {{props.item[2]}}
+          </td>
+          <td class = "text-xs-center">
+            {{props.item[3]}}
+          </td>
+        </tr>
       </template>
     </v-data-table>
   </v-card>
@@ -88,14 +87,19 @@ export default {
     return {
       config: this.$store.state.socket.evaluationConfig,
       searchTerms: '',
+      augmentSelect: false,
       loader: null,
       loading: false,
+      searching: false,
       headers: [],
       pagination: {},
-      items: []
+      items: [],
+      selectedIndex: 0,
+      augmentIteration: 0,
+      selected: []
     }
   },
-  sockets:{
+  sockets: {
     datamartFrontendISI(dataset){
       this.items = dataset;
       console.log(this.items);
@@ -103,17 +107,33 @@ export default {
   },
   methods: {
     searchDatamartISI () {
+      this.searching = true;
+      this.getDataISI()
+        .then(data => {
+          this.searching = false;
+      });
+    },
+    augmentDatamartISI () {
       this.loading = true;
+      this.augmentSelect = true;
       this.getDataISI()
         .then(data => {
           this.loading = false;
+          this.augmentSelect = false;
+          this.selectedIndex = 0;
+          this.augmentIteration += 1; 
       });
+    },
+    click(index) {
+      this.selectedIndex = index;
+      this.selected = index;
+      console.log("clicked", this.selectedIndex);
     },
     getDataISI () {
       return new Promise((resolve, reject) => {
         const { sortBy, descending, page, rowsPerPage } = this.pagination;
         let vueThis = this;
-        this.$socket.emit("datamartEndpointISI", this.pagination, this.searchTerms, function(data) {
+        this.$socket.emit("datamartEndpointISI", this.pagination, this.searchTerms, this.augmentSelect, this.selectedIndex, this.augmentIteration, function(data) {
           resolve(data);
         });
       });

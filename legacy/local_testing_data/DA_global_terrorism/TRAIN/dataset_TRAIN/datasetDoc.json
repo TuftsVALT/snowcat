@@ -1,0 +1,72 @@
+{
+  "about": {
+    "datasetID": "DA_global_terrorism_dataset_TRAIN",
+    "datasetName": "DA global terrorism dataset",
+    "description": "Tracking the activty levels of different terrorist groups across the globe from 1970 to 2017",
+    "license": "custom EULA",
+    "redacted": false,
+    "applicationDomain": "terrorism",
+    "datasetVersion": "4.0.0",
+    "datasetSchemaVersion": "4.0.0",
+    "digest": "a6a9ff1b35502db3fde3b0836d80f09310cf95ebdc0472874ef6935927b6d77b"
+  },
+  "dataResources": [
+    {
+      "resID": "learningData",
+      "resPath": "tables/learningData.csv",
+      "resType": "table",
+      "resFormat": {
+        "text/csv": [
+          "csv"
+        ]
+      },
+      "isCollection": false,
+      "columns": [
+        {
+          "colIndex": 0,
+          "colName": "d3mIndex",
+          "colType": "integer",
+          "role": [
+            "index"
+          ]
+        },
+        {
+          "colIndex": 1,
+          "colName": "year",
+          "colDescription": "Year of interest",
+          "colType": "dateTime",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 2,
+          "colName": "country",
+          "colDescription": "Country",
+          "colType": "categorical",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 3,
+          "colName": "group",
+          "colDescription": "Terrorist group",
+          "colType": "categorical",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 4,
+          "colName": "activity_level",
+          "colDescription": "The level of activity (on a scale of 1 to 5) of a terrorist group in that year in that country relative to other groups in the region",
+          "colType": "categorical",
+          "role": [
+            "suggestedTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

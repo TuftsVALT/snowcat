@@ -10,63 +10,72 @@ import sys
 import csv
 
 searchInput = str(sys.argv[1])
-augmentSelect = str(sys.argv[2])
-index = int(sys.argv[3])
-# url = 'https://dsbox02.isi.edu:9000/new/search_data'
-# url = 'https://datamart.d3m.vida-nyu.org/search'
+url = 'http://dsbox02.isi.edu:9000/new/search_data'
 dirname = os.path.dirname(__file__)
-config = os.path.join(dirname, '../../tufts_gt_wisc_configuration.json')
-with open(config) as configData:
-	json_data = json.loads(configData.read())
-	filepath = json_data['training_data_root']
+data = os.path.join(dirname, '../../static/learningData.csv')
+query={
+    "dataset": {
+        "about": searchInput
+    }
+}
 
-# Calls NYU's Datamart Python API to search for datasets using a passed in keyword
-query_results = datamart.search(
-    url='https://datamart.d3m.vida-nyu.org',
-    query={'dataset': {'about': searchInput}},
-    data=filepath + '/tables/learningData.csv',
-    send_data=True
-)
+# Calls ISI's Datamart REST API to search for datasets using a passed in keyword
+with open(data, 'rb') as data_p:
+    response = requests.post(
+        url,
+        verify=False,
+        files={
+            # 'data': data_p,
+            'query': ('query.json', json.dumps(query), 'application/json'),
+        }
+    )
+response.raise_for_status()
+query_results = response.json()['data']
 
 # Writes the dataset's name, number of rows, and variables into a csv file
-f = open("./outputDatamart.csv", 'w') 
+f = open("./output/outputDatamart.csv", 'w') 
 for result in query_results:
-	f.write(result.metadata['name'])
-	f.write(",")
-	f.write(str(result.metadata['nb_rows']))
+	f.write("\"")
+	f.write(result['metadata']['title'])
+	f.write("\"")
 	f.write(",")
 	f.write("\"")
-	for i in range(0, len(result.metadata['columns'])):
-		f.write(result.metadata['columns'][i]['name'])
-		if(i+1 != len(result.metadata['columns'])):
+	f.write(result['metadata']['description'])
+	f.write("\"")
+	f.write(",")
+	f.write("\"")
+	for i in range(0, len(result['metadata']['variables'])):
+		f.write(result['metadata']['variables'][i]['name'])
+		if(i + 1 != len(result['metadata']['variables'])):
 			f.write(", ")
 	f.write("\"")
 	f.write(",")
-	f.write(str(result.score))
-	f.write(",")
 	f.write("\"")
-	f.write(str(result.union_columns))
+	f.write(str(result['score']))
 	f.write("\"")
 	f.write(",")
 	f.write("\"")
-	f.write(str(result.join_columns))
+	f.write(str(result['datamart_id']))
 	f.write("\"")
 	f.write("\n")
 f.close()
 
-# Calls NYU's Datamart Python API to augment the dataset based on augment data variable
-if augmentSelect == "true":
-	learning_data, dataset_doc = datamart.augment(
-	    data=filepath + '/tables/learningData.csv',
-	    augment_data=query_results[index],
-	    send_data=True
-	)
+# aug = 'https://dsbox02.isi.edu:9000/new/join_data'
 
-	if not os.path.exists('output/augment_data'):
-		os.mkdir('output/augment_data')
-
-	with open('output/augment_data/datasetDoc.json', 'w') as jsonfile:
-		json.dump(dataset_doc, jsonfile, indent=4)
-
-	learning_data.head()
-	learning_data.to_csv('output/augment_data/augmentData.csv', index=False)
+# with open(data, 'rb') as data_p:
+#     response = requests.post(
+#         aug,
+#         verify=False,
+#         files={
+#             'left_data': data_p,
+#             'right_data': 126210000,
+#             'left_columns': [[8]],
+#             'right_columns': [[0]],
+#         },
+#         stream=True,
+#     )
+# response.raise_for_status()
+# zip_ = zipfile.ZipFile(BytesIO(response.content), 'r')
+# learning_data = pd.read_csv(zip_.open('tables/learningData.csv'))
+# dataset_doc = json.load(zip_.open('datasetDoc.json'))
+# zip_.close()

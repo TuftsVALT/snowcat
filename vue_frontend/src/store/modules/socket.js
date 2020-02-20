@@ -15,6 +15,12 @@ var getData = function(uri, callback) {
 
 // initial state
 const state = {
+  dataRoot: null,
+  heraldMap: new Map(),
+  heraldsChanged: true, // hacky Boolean that flips every time there is an update to herald map to keep things reactive
+  latestHeraldRead: -1,
+  selectedModels: [ ],
+  filteredModels: [ ],
   runProblem: null,
   debugMode: true,
   // Socket connections
@@ -24,11 +30,12 @@ const state = {
   models: [], // Holds TA2 model info, including metrics
   rawDataDesc: {}, // Holds the raw dataDesc.json
   rawProblemDesc: {}, // Holds the raw problemDesc.json
+  rawProblemDesc_orig: {},
   dataCollection: {}, // Lookup table for the raw data, indexed by d3mIndex
   rawDataTypes: {}, // Types of the columns in rawData collection
   graphUris: [], // URIs for graphs for problems that include graphs
   networkData: {},
-  voderDataFactsStatus: 'not_started',
+  voderDataFactsStatus: "not_started",
   voderDataFactsMessage: null,
   voderDataFactsPctProgress: 0.0,
   voderDataFactsErrMessage: null,
@@ -41,11 +48,11 @@ const state = {
   timeseriesFolders: [],
   folder: [],
   xLinking: {
-    //cross linking data structure
+    // cross linking data structure
     xLinkIndexes: [], // All the D3MIndexes would be in this array
     highlight: false, // The value would be 'true' when user mouse hover at element, and 'false' when mouse out from element
     visType: {
-      //each visualizartion make it true during highlighting and then make it false otherwise
+      // each visualizartion make it true during highlighting and then make it false otherwise
       tabular: false,
       graph: false,
       timeseries: false,
@@ -66,10 +73,6 @@ const state = {
   // because vue is not reactive on sets (to be added in version 2.6 though)
   problemType: "unknown",
   datasetTypes: [], // One of tabular, timeseries, graph, img, video, audio, speech, unknown
-  // This is largely used to conditionally render different components
-  evaluationConfig: {}, // We are mostly finished with this once the above is parsed, but
-  // we may need to reference this later.
-  rawDataReady: false, // measures if lookup table is ready for raw data visualization
   // we may not need this - this state change can be triggered by the web socket.
   message: "Loading application...",
   targetColumns: [],
@@ -89,7 +92,12 @@ const state = {
   selectedModel: -1,
   numModels: 5, // this should be what we send to the TA2s - how can we calculate this?
   errorMessage: "",
-  infoMessage: ""
+  infoMessage: "",
+  dataAugTable: {},
+  removeColName: "",
+  addColName: "",
+  attributesInCurrentDataTable: [],
+  materializeFinished: false
 };
 
 // getters
@@ -145,13 +153,21 @@ const getters = {
 
 // actions
 const actions = {
+  readHerald(context, heraldId) {
+    let v = new Vue();
+    v.$socket.emit("readHeraldRequest", heraldId);
+  },
+  createHerald(context) {
+    let v = new Vue();
+    v.$socket.emit("createHeraldRequest");
+  },
   setRunProblem(context, problemObject) {
     context.commit("runProblem", problemObject);
   },
   updateSelectedModel(context, id) {
     context.commit("setSelectedModel", id);
   },
-  processConfig(context, evaluationConfig) {
+  socket_newSession(context) {
     /*
      * processConfig reads the evaluation config, and is responsible for updating the store
      * - Telling node server to put the raw data and assets (images, graph files) in public folder
@@ -162,15 +178,11 @@ const actions = {
      * - For graphs, load the graph URI into the graphs store
      */
 
-    // First, we store the config in the state
-    context.commit("loadConfig", evaluationConfig);
-
     // Next, we tell node to get the assets ready to be loaded
     // this.$socket.emit("serveData")
     // TODO - if socketio fixes their bug, fix this code
     // NOTE - Bug with socketio requires this https://github.com/MetinSeylan/Vue-Socket.io/issues/85
     var v = new Vue();
-    v.$socket.emit("serveData");
 
     // These handleXData calls should probably be moved into beforeMount calls, so that
     // the message isn't sent to our server unless the server actually has to handle
@@ -178,6 +190,7 @@ const actions = {
 
     // Even though every dataset we've seen has tabular data, this should still be
     // processed in its own socket call, rather than being handled by the serveData call
+    /*
     v.$socket.emit("handleTabularData", function(data) {});
 
     v.$socket.emit("handleProblemSetCreation", function(data) {});
@@ -189,7 +202,7 @@ const actions = {
     v.$socket.emit("handleGraphData", function(data) {
       context.commit("addGraphData", data);
     });
-
+    */
     // Generate data facts using Arjun's Voder.  Tries to generate, but if
     // there is a failure, it will set failure state into store, with message
     // to user.
@@ -197,7 +210,10 @@ const actions = {
     // instead, we open up a listener on the client for progress updates.
     v.$socket.emit("handleVoderDataFacts", function(data) {
       if (context.state.debugMode) {
-        console.log(" in handleVoderDataFacts, ack function received data: ", data)
+        console.log(
+          " in handleVoderDataFacts, ack function received data: ",
+          data
+        );
       }
     });
 
@@ -231,7 +247,6 @@ const actions = {
     // if( context.state.classReg_modelId > context.state.models.length-1 ){
     //   context.state.classReg_modelId = 0;
     // }
-
     var data = {
       predicted: dataIn.predicted,
       index: dataIn.modelId,
@@ -241,15 +256,32 @@ const actions = {
     // console.log("trying to load classication data ", context.state.evaluationConfig);
     var v = new Vue();
     v.$socket.emit("load-classify-data", data);
-    v.$socket.emit( "confusionMatrixData", { modelId: dataIn.modelId, predictionFile: dataIn.fileUri } );
+    v.$socket.emit("confusionMatrixData", {
+      modelId: dataIn.modelId,
+      predictionFile: dataIn.fileUri
+    });
   },
-  socket_evalConfig: (context, evalConfig) => {
-    context.dispatch('processConfig', evalConfig);
+  socket_updateCurrentDatasetRootPath: (context, dataRoot) => {
+    console.log("updateCurrentDatasetRootPath", dataRoot);
+    context.commit("updateDataRoot", dataRoot);
+    // this.dataRoot = dataRoot;
+  },
+  socket_createHeraldResponse: (context, heraldId) => {
+    context.dispatch("readHerald", heraldId);
+  },
+  socket_readHeraldResponse: (context, herald) => {
+    if (
+      !context.state.heraldMap.has(herald.heraldIdSelected) ||
+      !context.state.heraldMap.get(herald.heraldIdSelected)
+    ) {
+      context.commit("ADD_HERALD", herald);
+    }
+    context.commit("LAST_HERALD_READ", herald.heraldIdSelected);
   },
   socket_dataDescFinished: (context, datasetSchema) => {
     // If this socket message has fired, then the training data is accessible
     context.commit("loadDataDesc", datasetSchema);
-    console.log(datasetSchema.dataResources);
+    console.log("data reasources", datasetSchema.dataResources);
     // also load the column types
     var datatypes = {};
     var columns = context.state.rawDataDesc.dataResources.filter(
@@ -268,43 +300,60 @@ const actions = {
     console.log("raw data loaded");
     context.commit("loadData", Object.freeze(data));
   },
-  socket_serveProblemFinished: (context, problemSchema) => {
+  socket_serveProblemFinished: ( context, { problemSchema, orig } ) => {
+    console.log("problem served", problemSchema);
+    context.commit("CLEAR_TARGET_COLS");
+    context.commit("CLEAR_PERFORMANCE_METS");
+    if (!problemSchema) {
+      context.commit("loadProblemDesc_orig", null);
+    }
     if (!_.isEmpty(problemSchema)) {
       context.commit("loadProblemDesc", problemSchema);
-      context.commit("SET_PROBLEM_TYPE", problemSchema.about.taskType);
+      if (orig) {
+        console.log("original problem description from dataset received");
+        context.commit("loadProblemDesc_orig", problemSchema);
+      }
+      if (problemSchema.about && problemSchema.about.taskType) {
+        // support for older version of problem schema
+        context.commit("SET_PROBLEM_TYPE", problemSchema.about.taskType);
+      } else {
+        context.commit("SET_PROBLEM_TYPE", problemSchema.taskType);
+      }
       // Now that we have received the problemDoc, we're also going to figure out the
       // target columns.
-      var data_section, target;
-      for (var i = 0; i < problemSchema.inputs.data.length; i++) {
-        data_section = problemSchema.inputs.data[i];
-        for (var j = 0; j < data_section.targets.length; j++) {
-          target = data_section.targets[j];
-          context.commit("addTargetColumn", target.colName);
-        }
-      }
-
-      var performanceMetric;
-      for (var i = 0; i < problemSchema.inputs.performanceMetrics.length; i++) {
-        performanceMetric = problemSchema.inputs.performanceMetrics[i];
-        context.commit("addPerformanceMetric", performanceMetric.metric);
-      }
+      // var data_section, target;
+      // for (var i = 0; i < problemSchema.inputs.data.length; i++) {
+      //   data_section = problemSchema.inputs.data[i];
+      //   for (var j = 0; j < data_section.targets.length; j++) {
+      //     target = data_section.targets[j];
+      //     context.commit("addTargetColumn", target.colName);
+      //   }
+      // }
+      // var performanceMetric;
+      // for (var i = 0; i < problemSchema.inputs.performanceMetrics.length; i++) {
+      //   performanceMetric = problemSchema.inputs.performanceMetrics[i];
+      //   context.commit("addPerformanceMetric", performanceMetric.metric);
+      // }
     } else {
-      console.log("warning: no problem schema available; setting to classification");
+      console.log(
+        "warning: no problem schema available; setting to classification"
+      );
       context.commit("SET_PROBLEM_TYPE", "classification");
     }
   },
   socket_modelFinished: (context, pipeline) => {
     // parsing predictions is hacky here, but we were seeing weird behavior near the evaluation
-    // deadline and wanted to retain ability to work in dev and eval mode.    
-    var model = {
-      modelId: pipeline.id,
+    // deadline and wanted to retain ability to work in dev and eval mode.
+    let model = {
+      modelId: pipeline.heraldId + "::" + pipeline.id,
       modelName: "Model " + (state.models.length + 1),
       modelMetrics: pipeline.scores,
       predictions: pipeline.results.data
         ? pipeline.results.data
         : pipeline.results,
-      fileUri: pipeline.fileUri
-    };    
+      fileUri: pipeline.fileUri,
+      heraldId: pipeline.heraldId
+    };
     context.commit("addModel", model);
   },
   socket_tabularDataProcessed: (context, data) => {
@@ -328,22 +377,32 @@ const actions = {
   },
   socket_updateVoderDataFactsStatus: (context, data) => {
     if (context.state.debugMode) {
-      console.log(" in socket_updateVoderDataFactsStatus, received data: ", data)
+      console.log(
+        " in socket_updateVoderDataFactsStatus, received data: ",
+        data
+      );
     }
-
-    if (data.status === 'processing') {
-      context.commit("updateVoderDataFactsStatus",
-                      { status: 'processing', message: 'Processing', pctProgress: data.pctProgress });
-    } else if (data.status === 'completed') {
+    if (data.status === "processing") {
+      context.commit("updateVoderDataFactsStatus", {
+        status: "processing",
+        message: "Processing",
+        pctProgress: data.pctProgress
+      });
+    } else if (data.status === "completed") {
       context.commit("addVoderDataFacts", data.completedInfo);
-      context.commit("updateVoderDataFactsStatus",
-                      { status: 'completed', message: 'Completed', pctProgress: 1.0 });
-    } else if (data.status === 'failed') {
-      context.commit("updateVoderDataFactsStatus",
-                      { status: 'failed', message: 'Data Facts Generation Failed', readableError: data.errMessage });
+      context.commit("updateVoderDataFactsStatus", {
+        status: "completed",
+        message: "Completed",
+        pctProgress: 1.0
+      });
+    } else if (data.status === "failed") {
+      context.commit("updateVoderDataFactsStatus", {
+        status: "failed",
+        message: "Data Facts Generation Failed",
+        readableError: data.errMessage
+      });
     }
   },
-
   socket_backendConnected: context => {
     console.log("received: backendConnected");
     context.commit("ta2Available");
@@ -352,6 +411,19 @@ const actions = {
 
 // mutations
 const mutations = {
+  SET_FILTERED_MODELS(state, modelArray) {
+    state.filteredModels = modelArray;
+  },
+  SET_SELECTED_MODELS(state, modelIdArray) {
+    state.selectedModels = modelIdArray;
+  },
+  ADD_HERALD(state, herald) {
+    state.heraldMap.set(herald.heraldIdSelected, herald);
+    state.heraldsChanged = !state.heraldsChanged;
+  },
+  LAST_HERALD_READ(state, heraldId) {
+    state.latestHeraldRead = heraldId;
+  },
   // Socket mutations
   SOCKET_CONNECT(state) {
     state.isConnected = true;
@@ -364,6 +436,9 @@ const mutations = {
   },
   CLEAR_MODELS(state) {
     state.models = [];
+  },
+  updateDataRoot(state, dataRoot) {
+    state.dataRoot = dataRoot;
   },
   setUserVariable(state, variable) {
     console.log("STORE: SET VODER USER VARIABLE", variable);
@@ -495,6 +570,9 @@ const mutations = {
   loadProblemDesc(state, problemDesc) {
     state.rawProblemDesc = problemDesc;
   },
+  loadProblemDesc_orig(state, problemDesc) {
+    state.rawProblemDesc_orig = problemDesc;
+  },
 
   loadDataTypes(state, dataTypes) {
     state.rawDataTypes = dataTypes;
@@ -507,11 +585,15 @@ const mutations = {
   SET_PROBLEM_TYPE(state, problemType) {
     state.problemType = problemType;
   },
-
+  CLEAR_TARGET_COLS(state) {
+    state.targetColumns = [];
+  },
   addTargetColumn(state, colName) {
     state.targetColumns.push(colName);
   },
-
+  CLEAR_PERFORMANCE_METS(state) {
+    state.performanceMetrics = [];
+  },
   addPerformanceMetric(state, metricName) {
     state.performanceMetrics.push(metricName);
   },
@@ -538,9 +620,6 @@ const mutations = {
     console.log("found id ", id);
     state.selectedModel = id;
   },
-  loadConfig(state, evaluationConfig) {
-    state.evaluationConfig = evaluationConfig;
-  },
 
   numModelClassifReg(state, numModelArr) {
     state.numModelClassifReg = numModelArr;
@@ -549,8 +628,42 @@ const mutations = {
   updateErrorMessage(state, message) {
     state.errorMessage = message;
   },
+
   updateInfoMessage(state, message) {
     state.infoMessage = message;
+  },
+
+  updateDataAugTable(state, message) {
+    state.dataAugTable = message;
+  },
+
+  updateRemoveColName(state, message) {
+    state.removeColName = message;
+    // reset it, so that if same colname comes again it triggers correctly
+    setTimeout(() => {
+      state.removeColName = ""
+    }, 500);
+  },
+
+  updateAddColName(state, message) {
+    state.addColName = message;
+    // reset it, so that if same colname comes again it triggers correctly
+    setTimeout(() => {
+      state.addColName = ""
+    }, 500);
+  },
+
+  setMaterializeFinishToken(state, message) {
+    state.materializeFinished = message;
+    if(message) {
+      setTimeout(() => {
+        state.materializeFinished = false;
+      }, 15000);
+    }
+  },
+
+  updateAttributesInCurrentDataTable(state, message) {
+    state.attributesInCurrentDataTable = message;
   }
 };
 

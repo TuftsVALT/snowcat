@@ -1,0 +1,20 @@
+By Cong Liu
+
+To run vue_frontend only:
+yarn run dev
+
+To run node_middleware only:
+yarn run server input/185_baseball_MIN_METADATA
+
+
+To test or run with ta2, use the following command
+bash ta3_search input/185_baseball_MIN_METADATA
+
+
+To run without ta2, use
+
+
+
+
+
+

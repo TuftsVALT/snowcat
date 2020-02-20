@@ -1,11 +1,14 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 ENV appDir /var/www/app/current
 
 RUN apt-get update && apt-get install -y -q --no-install-recommends \
     apt-utils apt-transport-https curl \
-    python3 python3-pip python3-setuptools \
+    python3 python3-pip python3-setuptools python3.6-dev \
     imagemagick psmisc \
+    libssl-dev gcc apt-utils \
+    libcurl4-openssl-dev \
+    git \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get -y autoclean
 
@@ -15,7 +18,7 @@ RUN apt-get install -y -q --no-install-recommends nodejs
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 RUN apt-get update
-RUN apt-get install -y -q --no-install-recommends yarn
+RUN apt-get install -y -q --no-install-recommends yarn 
 
 RUN mkdir -p /output
 RUN mkdir -p /input

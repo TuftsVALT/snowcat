@@ -41,11 +41,11 @@ function processVoderData(dataCSVfile, dataTypeMaps) {
 module.exports.set = function(app, server, grpcClientWrapper, socket) {
 
   socket.on('handleVoderDataFacts', function(fn) {
-    var dataCSVfile = evaluationConfig.training_data_root + "/tables/learningData.csv"
+    // var dataCSVfile = evaluationConfig.training_data_root + "/tables/learningData.csv"
     // var dataCSVfile = appRoot + "/static/local_testing_data/LL0_acled/LL0_acled_dataset/tables/learningData.csv"
     // initProcessVoderData(dataCSVfile)
-    // var processedDataCSVfile = dataOutputDir + "cars.csv"
-    var dataTypeMaps = dataOutputDir + "cars.json"
+    var dataCSVfile = dataOutputDir + "output.csv"
+    var dataTypeMaps = dataOutputDir + "output.json"
     processVoderData(dataCSVfile, dataTypeMaps);
   });
 }

@@ -1,7 +1,7 @@
 // The controllers folder is responsible for all business logic connecting with the frontend.
 var _ = require("lodash");
 var handleUrl = url => {
-  if (_.startsWith(url, "/") || _.startsWith(url, "./")) {
+  if (_.startsWith(url, "/") || _.startsWith(url, "./") || _.startsWith(url, "C:\\")) {
     return url;
   } else {
     return appRoot + "/" + url;
@@ -55,8 +55,8 @@ module.exports.set = function(app, server, grpcClientWrapper) {
     let text_data = require("./text_data");
     text_data.set(app, server, grpcClientWrapper, socket);
 
-    // let image_data = require("./image_data");
-    // image_data.set(app, server, grpcClientWrapper, socket);
+    let image_data = require("./image_data");
+    image_data.set(app, server, grpcClientWrapper, socket);
 
     let timeseries_data = require("./timeseries_data");
     timeseries_data.set(app, server, grpcClientWrapper, socket);
@@ -96,8 +96,8 @@ module.exports.set = function(app, server, grpcClientWrapper) {
       papa.parse(stream, {
         header: true,
         error: function(err) {
-          console.log("sendPredictions parsing error for file", file);
-          console.log("error is", file);
+          console.log("sendPredictions parsing error for file", file, " and handleUrl(file) is ", handleUrl(file));
+          console.log("error is", err);
         },
         complete: function(results) {
           response.results = results.data;

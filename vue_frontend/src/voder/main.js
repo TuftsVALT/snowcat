@@ -2,7 +2,7 @@ import * as d3 from 'd3v4';
 
 let main = {};
 (function(){
-    var dataFileToUse = "../../static/local_testing_data/voder/cars.csv";
+    var dataFileToUse = "../../static/local_testing_data/voder/output.csv";
 
     window._voder_globalVars.dataFactTierToShow = parseFloat($("#dataFactTierSelector").val());
 

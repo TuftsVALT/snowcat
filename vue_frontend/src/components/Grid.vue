@@ -1,5 +1,6 @@
 <template>
-  <v-container grid-list-xl class="the-grid" fluid v-if="problemType !== 'unknown' && datasetTypes.length !== 0">
+  <v-container grid-list-xl class="the-grid" fluid>
+    <!-- <draggable v-model="cards" @start="drag=true" @end="drag=false" :options="{ 'handle': '.drag-handle' }" class="drag-container layout row wrap"> -->
     <draggable v-model="cards" @start="drag=true" @end="drag=false" :options="{ 'handle': '.drag-handle' }" class="drag-container layout row wrap">
       <v-flex
         v-for="(card, index) in cards"
@@ -129,18 +130,18 @@ export default {
     },
     satisfiesDeps (component) {
       if (this.$store.state.meta.task_number == 1) {
-        return true
+        return true;
       } else if (this.cardMeta[component]) {
-        const meta = this.cardMeta[component]
+        const meta = this.cardMeta[component];
         if (meta.dataDeps && _.intersection(meta.dataDeps, this.datasetTypes).length === 0) {
-          return false
+          return false;
         }
         if (meta.problemDeps && !meta.problemDeps.includes(this.problemType)) {
-          return false
+          return false;
         }
-        return true
+        return true;
       }
-      return false
+      return false;
     }
   },
   computed: {
@@ -157,9 +158,10 @@ export default {
     },
     cardComponentList () {
       return _.filter(_.toArray(this.$store.state.meta.cardComponents), (d) => {
+        /*
         if (d.phaseDependency > this.$store.state.meta.currentPhase) {
           return false
-        }
+        }*/
         if (d.dataDeps && _.intersection(d.dataDeps, this.datasetTypes).length === 0) {
           return false
         }

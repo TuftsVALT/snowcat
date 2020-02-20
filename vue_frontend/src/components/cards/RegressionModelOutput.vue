@@ -1,11 +1,7 @@
 <template>
-          <div :id = 'regressModelCard'>
-          <h6>Regression : Residual Bar Chart</h6>
-            <v-progress-circular v-if="spinner" indeterminate v-bind:size="50" color="primary"></v-progress-circular>
-          <!-- <div class = "sort_div" :id = '"sortDiv_"+modelId'>
-            Sort By Data
-            <label   ><input class ="sortCheckBox" data-toggle="toggle" data-size="small" type="checkbox" :id = '"sortInput_"+modelId' >  </label>
-          </div> -->
+          <div :id = 'regressModelCard' ref="modelCard">
+            <h6>Regression: Residual Bar Chart. Please select models in the card "Scores of the Models".</h6>
+          <!-- <v-progress-circular v-if="spinner" indeterminate v-bind:size="50" color="primary"></v-progress-circular> -->
           </div>
 </template>
 
@@ -26,9 +22,8 @@ export default {
       modelOutputData : {},
       // allModels : [0,1,2],
       allModels : [],
-      calledModels : [], // Keeps track of models that we've already gotten predictions of, since we shouldn't request multiple times.
       id : 0,
-      models: this.$store.state.socket.models,
+      // models: this.$store.state.socket.models,
     }
   },
   sockets : {
@@ -53,7 +48,6 @@ export default {
   created: function () {
     //"templatedId:{{model-id}}"
   },
-
   updated:function(){
       // console.log("regression component just got updated ", this.modelOutputData)
       // this.drawD3BarCharts_residuals(this.modelOutputData, this.id);
@@ -61,29 +55,33 @@ export default {
   mounted : function(){
     // console.log("regress model output creates");
     // this.$store.dispatch('loadRegressData', {numModel : this.allModels.length, predicted : true});
-    this.handleModelPredictions(this.models)
+    this.handleModelPredictions(this.models);
   },
-
   computed: {
-  getSelectedModel : {
+    models() {
+      return this.$store.state.socket.selectedModels;
+    },
+    getSelectedModel : {
       get(){
         return this.$store.state.socket.selectedModel;
       },
       set(value){
           // this.$store.commit('setSelectedModel', value)
       }
-
     },
-
   },
 
   watch:{
+    // selectedModels() {
+    //   // d3.select(this.$refs.modelCard).selectAll("div").remove();
+    //   this.handleModelPredictions(this.selectedModels);
+    // },
     modelOutputData : function(params) {
       // console.log("model output data has changed");
       // this.drawD3BarCharts_residuals(this.modelOutputData, this.id);
     },
     models: function(mods) {
-      console.log("noticed a change in mods.  There are now ", mods.length, " of them")
+      d3.select(this.$refs.modelCard).selectAll("div").remove();
       this.handleModelPredictions(mods);
     },
 
@@ -102,17 +100,10 @@ export default {
       var mod;
       for ( var i=0; i<mods.length; i++) {
         mod = mods[i]
-        if ( _.includes(this.calledModels, mod.modelId) ) {
-          // WE SKIP IT
-          console.log("receiving request for model we've already seen, ", mod.modelId)
-        } else {
-          console.log("adding called Model ", mod.modelId)
-          this.calledModels.push(mod.modelId)
-          this.$store.dispatch('loadRegressData',
-            { fileUri : mod.fileUri,
-              predicted : true,
-              modelId : mod.modelId });
-        }
+        this.$store.dispatch('loadRegressData',
+          { fileUri : mod.fileUri,
+            predicted : true,
+            modelId : mod.modelId });
       }
     },
     arrAddition: function(arrGiven) {

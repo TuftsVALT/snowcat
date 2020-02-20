@@ -14,66 +14,26 @@
       <v-spacer></v-spacer>
       <v-btn 
         @click="searchDatamart"
+        :loading="searching"
+        :disabled="searching"     
         color="info"
       >Search</v-btn>
       <v-btn
         @click="augmentDatamart"
         :loading="loading"
         :disabled="loading"
-      	color="info"
+        color="info"
       >Augment</v-btn>
-<!--       <v-btn 
-        @click="editDialog=true"
-        color="info" 
-      >Edit</v-btn> -->
-      <v-dialog v-model="editDialog" fullscreen hide-overlay transition="dialog-bottom-transition">
-      <v-card>
-        <v-toolbar dark color="primary">
-          <v-btn icon dark @click="editDialog = false">
-            <v-icon>close</v-icon>
-          </v-btn>
-          <v-toolbar-title>Augmentation Edit</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-toolbar-items>
-            <v-btn dark flat @click="editDialog = false">Save</v-btn>
-          </v-toolbar-items>
-        </v-toolbar>
-        <v-list>
-          <v-list-tile-content>
-            <v-data-table
-              :headers="headers"
-              :items="items"
-              hide-actions
-            >
-              <template slot="headers" slot-scope="props">
-                <tr>
-                  <td class="text-xs-center">
-                    Union Augmentation
-                  </td>
-                  <td class="text-xs-center">
-                    Join Augmentation
-                  </td>
-                </tr>
-              </template>
-              <template slot="items" slot-scope="props">
-                <td class="text-xs-center">
-                  {{props.item[4]}}
-                </td>
-                <td class="text-xs-center">
-                  {{props.item[5]}}
-                </td>
-              </template>
-            </v-data-table>
-          </v-list-tile-content>
-        </v-list>
-      </v-card>
-    </v-dialog>
-    <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+        <v-btn
+          color="info"
+        >Edit</v-btn>
+      <v-spacer></v-spacer>
     </v-card-title>
     <v-data-table
       :headers="headers"
       :items="items"
-      :rows-per-page-items="[5,10,25]"
+      :rows-per-page-items="[100]"
     >
       <template slot="headers" slot-scope="props">
         <tr>
@@ -84,7 +44,7 @@
             Dataset name
           </td>
           <td class = "text-xs-center">
-            Rows
+            Description
           </td>
           <td class = "text-xs-center">
             Variables
@@ -93,42 +53,33 @@
             Score
           </td>
           <td class = "text-xs-center">
-            Union Augmentation
-          </td>
-          <td class = "text-xs-center">
-            Join Augmentation
+            Datamart ID
           </td>
         </tr>
       </template>
       <template slot="items" slot-scope="props">
-        <tr @click="click(props.index)">
-          <td>
-            <v-radio-group
-            v-model="selected"
-            name="datasetSelector"
-            >
-            <v-radio :value="props.index"/>
-            </v-radio-group>
-          </td>
-          <td class = "text-xs-center">
-            {{props.item[0]}}
-          </td>
-          <td class = "text-xs-center">
-            {{props.item[1]}}
-          </td>
-          <td class = "text-xs-center">
-            {{props.item[2]}}
-          </td>
-          <td class = "text-xs-center">
-            {{props.item[3]}}
-          </td>
-          <td class = "text-xs-center">
-            {{props.item[4]}}
-          </td>
-          <td class = "text-xs-center">
-            {{props.item[5]}}
-          </td>
-        </tr>
+        <td>
+          <v-checkbox
+            :input-value="props.selected"
+            primary
+            hide-details
+          ></v-checkbox>
+        </td>
+        <td class = "text-xs-center">
+          {{props.item[0]}}
+        </td>
+        <td class = "text-xs-center">
+          {{props.item[1]}}
+        </td>
+        <td class = "text-xs-center">
+          {{props.item[2]}}
+        </td>
+        <td class = "text-xs-center">
+          {{props.item[3]}}
+        </td>
+        <td class = "text-xs-center">
+          {{props.item[4]}}
+        </td>
       </template>
     </v-data-table>
   </v-card>
@@ -143,14 +94,15 @@ export default {
     return {
       config: this.$store.state.socket.evaluationConfig,
       searchTerms: '',
-      augmentSelect: false,
       loader: null,
       loading: false,
+      searching: false,
       headers: [],
       pagination: {},
       items: [],
-      editDialog: false,
       selectedIndex: 0,
+      augmentIteration: 0,
+      outputPath: '',
       selected: []
     }
   },
@@ -158,31 +110,40 @@ export default {
     datamartFrontend(dataset){
       this.items = dataset;
       console.log(this.items);
+    },
+    newDataset(dataset){
+      this.outputPath = dataset
+      this.$socket.emit("newdataset", this.outputPath);
     }
   },
   methods: {
     searchDatamart () {
+      this.searching = true;
       this.getData()
+        .then(data => {
+          this.searching = false;
+      });
     },
     augmentDatamart () {
       this.loading = true;
-      this.augmentSelect = true;
       this.getData()
         .then(data => {
           this.loading = false;
           this.augmentSelect = false;
           this.selectedIndex = 0;
+          this.augmentIteration += 1; 
       });
     },
     click(index) {
       this.selectedIndex = index;
       this.selected = index;
+      console.log("clicked", this.selectedIndex);
     },
     getData () {
       return new Promise((resolve, reject) => {
         const { sortBy, descending, page, rowsPerPage } = this.pagination;
         let vueThis = this;
-        this.$socket.emit("datamartEndpoint", this.pagination, this.searchTerms, this.augmentSelect, this.selectedIndex, function(data) {
+        this.$socket.emit("datamartEndpoint", this.pagination, this.searchTerms, this.augmentSelect, this.selectedIndex, this.augmentIteration, function(data) {
           resolve(data);
         });
       });

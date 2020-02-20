@@ -1,0 +1,3 @@
+// legacy
+
+// module.exports = getProblemSchema;
