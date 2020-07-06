@@ -1,0 +1,1001 @@
+world_rank,institution,country,national_rank,quality_of_education,alumni_employment,quality_of_faculty,publications,influence,citations,broad_impact,patents,score,year,d3mIndex
+1,Harvard University,USA,1,1,1,1,1,1,1,1,2,100,2014,1
+2,Stanford University,USA,2,11,2,4,5,3,3,4,6,99.09,2014,2
+3,Massachusetts Institute of Technology,USA,3,3,11,2,15,2,2,2,1,98.69,2014,3
+4,University of Cambridge,United Kingdom,1,2,10,5,10,9,12,13,48,97.64,2014,4
+5,University of Oxford,United Kingdom,2,7,12,10,11,12,11,12,16,97.51,2014,5
+6,Columbia University,USA,4,13,8,9,14,13,9,13,4,97.41,2014,6
+7,"University of California, Berkeley",USA,5,4,22,6,7,4,3,7,28,92.84,2014,7
+8,University of Chicago,USA,6,10,14,8,17,19,10,18,149,92.03,2014,8
+9,Princeton University,USA,7,5,16,3,70,25,19,41,204,88.56,2014,9
+10,Yale University,USA,8,9,25,11,18,7,32,19,45,88.11,2014,10
+11,Cornell University,USA,9,12,18,19,23,15,23,23,12,85.8,2014,11
+12,California Institute of Technology,USA,10,6,303,7,48,6,16,24,9,85.5,2014,12
+13,University of Tokyo,Japan,1,17,3,33,12,16,28,26,14,80.64,2014,13
+14,University of Pennsylvania,USA,11,21,4,26,8,17,13,10,28,79.3,2014,14
+15,"University of California, Los Angeles",USA,12,27,27,12,6,14,7,6,10,78.35,2014,15
+16,Kyoto University,Japan,2,30,23,15,27,41,61,51,18,73.21,2014,16
+17,New York University,USA,13,33,21,17,49,29,32,31,48,72.29,2014,17
+18,Swiss Federal Institute of Technology in Zurich,Switzerland,1,16,105,13,42,28,45,86,84,72.18,2014,18
+19,Johns Hopkins University,USA,14,24,75,18,4,10,6,3,3,71.17,2014,19
+20,"University of California, San Diego",USA,15,32,478,20,16,5,19,16,13,68.36,2014,20
+21,"University of Michigan, Ann Arbor",USA,16,29,19,131,3,20,5,10,19,68.27,2014,21
+22,Hebrew University of Jerusalem,Israel,1,15,255,16,114,94,493,151,40,66.76,2014,22
+23,Northwestern University,USA,17,151,13,105,28,32,25,27,61,66.18,2014,23
+24,Seoul National University,South Korea,1,355,9,210,38,165,87,107,5,66.06,2014,24
+25,University of Wisconsin–Madison,USA,18,31,28,34,21,24,23,28,28,65.77,2014,25
+26,Duke University,USA,19,65,30,49,22,23,13,15,42,63.56,2014,26
+27,"University of California, San Francisco",USA,20,355,478,23,24,8,17,9,57,63.36,2014,27
+28,University of Illinois at Urbana–Champaign,USA,21,34,80,21,36,45,38,68,64,62.89,2014,28
+29,University of Texas at Austin,USA,22,92,39,24,51,54,26,74,45,62.57,2014,29
+30,University College London,United Kingdom,3,20,406,52,13,22,18,21,121,61.05,2014,30
+31,University of Toronto,Canada,1,71,45,35,2,18,13,8,149,60.87,2014,31
+32,University of Washington - Seattle,USA,23,89,107,46,9,11,8,5,54,60.28,2014,32
+33,Rutgers University-New Brunswick,USA,24,91,33,31,52,47,38,51,54,60,2014,33
+34,Keio University,Japan,3,271,5,210,299,243,310,266,159,59.84,2014,34
+35,École normale supérieure - Paris,France,1,8,478,59,362,156,493,311,737,59.72,2014,35
+36,École Polytechnique,France,2,150,6,208,323,282,250,295,181,59.54,2014,36
+37,Rockefeller University,USA,25,72,478,14,347,26,107,62,227,59.49,2014,37
+38,Weizmann Institute of Science,Israel,2,18,478,22,233,63,250,137,51,59.17,2014,38
+39,Imperial College London,United Kingdom,4,121,98,38,20,27,31,17,34,58.85,2014,39
+40,Waseda University,Japan,4,355,7,210,391,384,283,380,204,58.69,2014,40
+41,University of Virginia,USA,26,194,17,117,93,71,55,89,94,58.6,2014,41
+42,McGill University,Canada,2,45,32,60,35,59,34,32,204,58.39,2014,42
+43,Osaka University,Japan,5,69,36,48,43,55,114,56,34,58.35,2014,43
+44,Dartmouth College,USA,27,46,15,210,246,164,125,132,74,58,2014,44
+45,University of North Carolina at Chapel Hill,USA,28,179,86,61,32,37,22,22,38,57.51,2014,45
+46,"Pennsylvania State University, University Park",USA,29,226,42,65,33,36,26,33,100,57.19,2014,46
+47,"Ohio State University, Columbus",USA,30,93,65,81,30,52,30,37,38,57.01,2014,47
+48,Lomonosov Moscow State University,Russia,1,14,210,50,264,247,310,361,737,56.42,2014,48
+49,"University of Minnesota, Twin Cities",USA,31,61,159,83,19,38,29,29,68,56.13,2014,49
+50,University of Paris-Sud,France,3,26,410,25,69,89,114,102,338,56.06,2014,50
+51,University of Southern California,USA,32,148,74,43,59,64,61,54,33,55.7,2014,51
+52,"Purdue University, West Lafayette",USA,33,81,52,54,72,87,73,121,20,55.67,2014,52
+53,University of Pittsburgh - Pittsburgh Campus,USA,34,76,195,210,25,58,21,24,64,55.67,2014,53
+54,Carnegie Mellon University,USA,35,25,219,27,207,234,52,144,170,55.3,2014,54
+55,Peking University,China,1,355,35,210,65,155,250,155,7,55.3,2014,55
+56,University of Edinburgh,United Kingdom,5,42,131,36,54,42,55,46,307,55.2,2014,56
+57,"University of California, Davis",USA,36,47,192,90,29,31,38,50,68,55.18,2014,57
+58,Washington University in St. Louis,USA,37,96,145,112,39,21,34,19,181,54.93,2014,58
+59,University of Florida,USA,38,212,299,95,34,70,52,63,8,54.76,2014,59
+60,"University of California, Santa Barbara",USA,39,124,252,28,105,53,48,56,68,54.76,2014,60
+61,University of British Columbia,Canada,3,85,298,92,26,34,36,41,78,54.75,2014,61
+62,University of Utah,USA,40,88,91,45,99,62,114,94,22,54.67,2014,62
+63,University of Colorado Boulder,USA,41,75,56,41,97,35,75,77,128,54.5,2014,63
+64,University of Notre Dame,USA,42,197,20,150,241,230,159,238,307,54.25,2014,64
+65,National Taiwan University,Taiwan,1,113,24,210,46,216,283,215,637,54.19,2014,65
+66,University of Texas Southwestern Medical Center,USA,43,50,478,29,127,30,81,34,181,54.07,2014,66
+67,Boston University,USA,44,291,47,84,60,46,43,37,227,53.96,2014,67
+68,Pierre-and-Marie-Curie University,France,4,36,431,86,31,39,99,66,100,53.91,2014,68
+69,University of Manchester,United Kingdom,6,98,73,74,41,68,43,59,94,53.9,2014,69
+70,University of Arizona,USA,45,99,62,87,67,33,37,46,307,53.77,2014,70
+71,Vanderbilt University,USA,46,108,90,113,58,57,52,40,51,53.69,2014,71
+72,Tohoku University,Japan,6,40,241,210,56,112,107,112,21,53.65,2014,72
+73,Karolinska Institute,Sweden,1,126,478,37,55,61,38,36,737,53.64,2014,73
+74,National University of Singapore,Singapore,1,355,99,210,37,136,114,102,23,53.52,2014,74
+75,University of Geneva,Switzerland,2,48,151,30,121,75,99,79,194,53.5,2014,75
+76,"University of Maryland, College Park",USA,47,63,198,51,57,49,38,73,338,53.46,2014,76
+77,University of Rochester,USA,48,60,50,116,112,104,69,70,76,53.06,2014,77
+78,Emory University,USA,49,355,97,210,66,65,73,37,45,53.01,2014,78
+79,University of Copenhagen,Denmark,1,111,143,63,44,44,61,34,481,52.94,2014,79
+80,"University of California, Irvine",USA,50,217,478,42,76,48,48,51,138,52.93,2014,80
+81,Brown University,USA,51,56,46,67,123,66,55,97,170,52.92,2014,81
+82,Ludwig Maximilian University of Munich,Germany,1,43,156,91,64,56,69,48,181,52.75,2014,82
+83,Georgia Institute of Technology,USA,52,123,77,210,104,154,79,101,24,52.74,2014,83
+84,Tufts University,USA,53,68,43,178,164,148,79,81,84,52.71,2014,84
+85,University of Zurich,Switzerland,3,110,404,82,47,43,55,56,94,52.69,2014,85
+86,Tel Aviv University,Israel,3,74,122,56,95,116,176,151,28,52.63,2014,86
+87,Tsinghua University,China,2,294,63,210,79,192,134,162,16,52.6,2014,87
+88,Utrecht University,Netherlands,1,102,181,101,40,51,55,49,338,52.42,2014,88
+89,Ruprecht Karl University of Heidelberg,Germany,2,57,426,58,68,67,61,54,159,52.4,2014,89
+90,King's College London,United Kingdom,7,28,173,114,84,132,87,77,181,52.31,2014,90
+91,Sapienza University of Rome,Italy,1,66,178,32,78,162,250,145,373,52.12,2014,91
+92,Kyushu University,Japan,7,355,41,210,135,170,283,207,27,51.96,2014,92
+93,Swiss Federal Institute of Technology in Lausanne,Switzerland,4,355,130,80,126,121,48,124,41,51.8,2014,93
+94,Katholieke Universiteit Leuven,Belgium,1,355,225,210,53,111,75,59,64,51.72,2014,94
+95,University of Sydney,Australia,1,127,158,162,50,117,61,94,100,51.58,2014,95
+96,Tokyo Institute of Technology,Japan,8,208,48,119,150,157,87,180,44,51.53,2014,96
+97,University of Melbourne,Australia,2,136,101,210,45,74,87,81,194,51.43,2014,97
+98,University of Bonn,Germany,3,23,275,70,156,125,187,145,227,51.37,2014,98
+99,Technical University of Munich,Germany,4,38,138,173,106,92,187,97,100,51.34,2014,99
+100,Royal Institute of Technology,Sweden,2,185,26,106,223,312,310,326,637,51.34,2014,100
+101,Erasmus University Rotterdam,Netherlands,2,355,66,184,88,142,75,45,227,51.29,2014,101
+102,Case Western Reserve University,USA,54,44,208,189,134,97,60,70,100,51.27,2014,102
+103,University of Alberta,Canada,4,163,144,148,61,105,81,99,84,51.23,2014,103
+104,University of Texas MD Anderson Cancer Center,USA,55,355,478,136,92,76,61,30,78,51.19,2014,104
+105,"Texas A&M University, College Station",USA,56,328,94,53,73,90,87,137,280,51.18,2014,105
+106,Arizona State University,USA,57,355,478,72,141,79,69,145,34,51.14,2014,106
+107,Yonsei University,South Korea,2,355,61,210,143,330,250,251,15,50.95,2014,107
+108,Rice University,USA,58,54,313,94,252,144,45,121,61,50.94,2014,108
+109,Technion – Israel Institute of Technology,Israel,4,41,221,39,180,226,187,207,100,50.89,2014,109
+110,University of Helsinki,Finland,1,53,478,77,80,88,99,74,481,50.76,2014,110
+111,University of Oslo,Norway,1,139,266,44,108,126,130,100,373,50.7,2014,111
+112,Michigan State University,USA,59,112,214,210,85,115,45,106,128,50.69,2014,112
+113,Indiana University - Bloomington,USA,60,211,38,175,166,769,176,195,204,50.53,2014,113
+114,University of the Witwatersrand,South Africa,1,79,29,169,456,241,310,472,259,50.4,2014,114
+115,University of Queensland,Australia,3,265,295,134,75,96,125,102,78,50.37,2014,115
+116,Lund University,Sweden,3,132,478,165,81,133,48,70,737,50.34,2014,116
+117,Leiden University,Netherlands,3,107,478,78,82,91,114,66,227,50.29,2014,117
+118,Georgetown University,USA,61,146,37,210,295,323,310,211,159,50.28,2014,118
+119,Aarhus University,Denmark,2,292,188,107,90,78,81,90,194,50.17,2014,119
+120,University of Barcelona,Spain,1,355,207,210,63,107,81,88,259,50.17,2014,120
+121,Baylor College of Medicine,USA,62,355,478,210,111,40,107,41,194,50.12,2014,121
+122,University of Amsterdam,Netherlands,4,182,438,204,74,86,87,68,338,49.97,2014,122
+123,University of Bristol,United Kingdom,8,177,242,76,87,69,99,110,338,49.97,2014,123
+124,Uppsala University,Sweden,4,62,336,111,94,77,99,102,737,49.96,2014,124
+125,University of Iowa,USA,63,223,184,163,103,81,87,110,115,49.95,2014,125
+126,Stony Brook University,USA,64,170,478,68,161,73,69,118,100,49.92,2014,126
+127,University of Groningen,Netherlands,5,293,265,190,71,103,107,79,338,49.89,2014,127
+128,Korea Advanced Institute of Science and Technology (KAIST),South Korea,3,355,85,210,186,262,363,306,11,49.88,2014,128
+129,Radboud University Nijmegen,Netherlands,6,118,155,210,91,120,114,81,552,49.85,2014,129
+130,Korea University,South Korea,4,355,58,210,182,428,220,293,34,49.84,2014,130
+131,University of São Paulo,Brazil,1,302,70,210,62,182,114,162,737,49.82,2014,131
+132,Nagoya University,Japan,9,67,356,69,119,141,134,192,68,49.82,2014,132
+133,University of Colorado Denver,USA,65,355,478,131,140,118,150,61,78,49.79,2014,133
+134,University of Montreal,Canada,5,309,460,210,77,110,87,64,426,49.79,2014,134
+135,Albert Ludwig University of Freiburg,Germany,5,137,113,187,155,106,159,137,64,49.78,2014,135
+136,Ghent University,Belgium,2,115,282,139,89,158,81,129,121,49.73,2014,136
+137,University of Glasgow,United Kingdom,9,219,112,210,118,131,87,92,280,49.64,2014,137
+138,University of Miami,USA,66,355,152,210,159,128,87,114,78,49.62,2014,138
+139,Université libre de Bruxelles,Belgium,3,165,167,57,221,196,81,158,115,49.6,2014,139
+140,Paris Diderot University - Paris 7,France,5,117,478,73,107,60,159,107,426,49.53,2014,140
+141,McMaster University,Canada,6,210,271,159,128,159,87,81,159,49.51,2014,141
+142,University of Birmingham,United Kingdom,10,58,119,198,116,160,150,135,204,49.48,2014,142
+143,University of Texas at Dallas,USA,67,355,244,210,219,100,61,44,307,49.47,2014,143
+144,VU University Amsterdam,Netherlands,7,355,398,210,83,123,87,86,737,49.47,2014,144
+145,Wake Forest University,USA,68,242,59,210,251,236,150,126,128,49.46,2014,145
+146,University of Southampton,United Kingdom,11,315,81,210,115,129,107,129,259,49.42,2014,146
+147,University of Nottingham,United Kingdom,12,128,148,85,113,174,150,135,159,49.41,2014,147
+148,Nanyang Technological University,Singapore,2,355,478,210,110,387,220,251,26,49.35,2014,148
+149,University of New South Wales,Australia,4,172,114,210,100,194,99,164,138,49.29,2014,149
+150,Osaka City University,Japan,10,19,320,210,460,520,283,437,373,49.25,2014,150
+151,University of Leeds,United Kingdom,13,84,93,210,132,134,134,151,280,49.23,2014,151
+152,Western University (The University of Western Ontario),Canada,7,355,49,210,154,198,250,176,426,49.18,2014,152
+153,Kobe University,Japan,11,22,362,96,349,259,283,318,307,49.18,2014,153
+154,University of Basel,Switzerland,5,77,222,66,168,113,134,141,426,49.17,2014,154
+155,University of Hong Kong,Hong Kong,1,272,116,210,98,195,176,118,481,49.1,2014,155
+156,Indiana University-Purdue University Indianapolis,USA,69,355,424,210,195,351,134,121,57,49.08,2014,156
+157,Humboldt University of Berlin,Germany,6,275,478,110,117,84,159,81,373,49.03,2014,157
+158,Free University of Berlin,Germany,7,94,478,119,122,82,250,90,481,49.02,2014,158
+159,University of Tübingen,Germany,8,64,478,102,158,143,159,117,227,48.99,2014,159
+160,Australian National University,Australia,5,186,377,47,137,95,187,196,426,48.96,2014,160
+161,Goethe University Frankfurt,Germany,9,105,291,62,175,151,200,124,280,48.93,2014,161
+162,University of Houston,USA,70,355,40,210,315,291,493,355,89,48.91,2014,162
+163,"University of California, Santa Cruz",USA,71,160,478,99,239,50,114,107,227,48.89,2014,163
+164,University of Alabama at Birmingham,USA,72,355,478,210,139,114,134,74,194,48.88,2014,164
+165,Icahn School of Medicine at Mount Sinai,USA,73,355,478,210,169,80,176,64,159,48.85,2014,165
+166,University of Calgary,Canada,8,355,89,210,147,171,114,132,737,48.84,2014,166
+167,Mines ParisTech,France,6,249,31,165,980,825,609,917,737,48.81,2014,167
+168,University of Gothenburg,Sweden,5,248,321,71,177,186,107,112,737,48.79,2014,168
+169,University of Göttingen,Germany,10,39,174,172,172,152,310,196,373,48.77,2014,169
+170,Monash University,Australia,6,277,134,210,96,146,250,173,159,48.71,2014,170
+171,Southern Methodist University,USA,74,157,34,210,632,677,406,628,737,48.69,2014,171
+172,Yeshiva University,USA,75,174,478,210,188,85,159,94,138,48.67,2014,172
+173,University of South Florida - Tampa,USA,76,355,284,210,242,263,159,164,51,48.65,2014,173
+174,Hanyang University,South Korea,5,355,69,210,292,481,406,415,28,48.63,2014,174
+175,Oregon Health & Science University,USA,77,355,478,119,191,124,107,92,227,48.61,2014,175
+176,University of Strasbourg,France,7,59,478,55,190,135,250,224,204,48.61,2014,176
+177,University of Cincinnati,USA,78,305,132,210,145,166,159,129,204,48.6,2014,177
+178,University of Sheffield,United Kingdom,14,131,257,190,124,127,114,145,227,48.55,2014,178
+179,University of Hamburg,Germany,11,304,146,126,152,138,134,132,637,48.54,2014,179
+180,George Washington University,USA,79,176,53,210,312,229,187,203,307,48.48,2014,180
+181,University of Milan,Italy,2,162,467,178,109,183,200,114,481,48.48,2014,181
+182,Iowa State University,USA,80,273,190,109,142,173,75,176,338,48.47,2014,182
+183,"University of Maryland, Baltimore",USA,81,355,478,210,125,102,134,114,280,48.4,2014,183
+184,University of Padua,Italy,3,278,478,210,101,99,176,126,737,48.4,2014,184
+185,University of New Mexico,USA,82,355,478,210,227,168,61,137,149,48.36,2014,185
+186,Pohang University of Science and Technology,South Korea,6,355,478,210,279,346,220,295,25,48.35,2014,186
+187,Stockholm University,Sweden,6,184,106,183,202,93,99,185,637,48.27,2014,187
+188,Hokkaido University,Japan,12,260,378,126,138,172,283,251,61,48.18,2014,188
+189,Fudan University,China,3,355,126,210,120,264,310,230,100,48.14,2014,189
+190,University of Sussex,United Kingdom,15,138,218,40,368,261,176,306,481,48.12,2014,190
+191,Université catholique de Louvain,Belgium,4,355,269,103,179,286,134,160,181,48.08,2014,191
+192,Wayne State University,USA,83,355,186,210,187,258,125,155,181,48.07,2014,192
+193,University of Massachusetts Medical School,USA,84,355,478,136,288,72,187,118,170,48.06,2014,193
+194,University of Lausanne,Switzerland,6,95,338,210,237,108,134,128,637,48.05,2014,194
+195,Shanghai Jiao Tong University,China,4,325,149,210,102,250,250,234,138,48.02,2014,195
+196,University of Missouri–Columbia,USA,85,243,96,97,220,213,220,234,149,48.02,2014,196
+197,Technical University of Denmark,Denmark,3,339,478,195,240,257,200,238,48,47.98,2014,197
+198,Complutense University of Madrid,Spain,2,86,55,206,213,309,406,339,204,47.97,2014,198
+199,University of Cologne,Germany,12,355,109,194,215,150,187,161,426,47.97,2014,199
+200,"Trinity College, Dublin",Ireland,1,319,68,193,301,249,150,201,227,47.96,2014,200
+201,University of Bern,Switzerland,7,166,478,205,167,119,99,155,426,47.93,2014,201
+202,Chinese University of Hong Kong,Hong Kong,2,90,478,88,171,386,159,203,204,47.83,2014,202
+203,University of Kansas,USA,86,216,83,210,209,161,159,234,194,47.82,2014,203
+204,Sungkyunkwan University,South Korea,7,355,191,210,206,331,187,295,54,47.79,2014,204
+205,University of Vienna,Austria,1,200,160,100,225,147,150,192,737,47.78,2014,205
+206,Zhejiang University,China,5,355,293,210,86,318,493,290,94,47.76,2014,206
+207,University of Georgia,USA,87,104,193,169,176,122,187,247,128,47.75,2014,207
+208,University of Massachusetts Amherst,USA,88,199,118,154,194,190,159,201,373,47.74,2014,208
+209,Cardiff University,United Kingdom,16,306,183,135,183,153,310,189,170,47.74,2014,209
+210,University of Münster,Germany,13,114,456,171,173,197,114,180,338,47.73,2014,210
+211,University of Liverpool,United Kingdom,17,159,248,200,149,163,134,189,373,47.69,2014,211
+212,University of Ottawa,Canada,9,355,287,210,185,191,159,141,481,47.69,2014,212
+213,University of Erlangen-Nuremberg,Germany,14,222,478,210,170,208,134,145,307,47.69,2014,213
+214,Queen Mary University of London,United Kingdom,18,133,348,210,231,181,220,141,227,47.67,2014,214
+215,Karlsruhe Institute of Technology,Germany,15,343,170,122,193,271,150,249,109,47.67,2014,215
+216,Louisiana State University - Baton Rouge,USA,89,256,179,210,162,179,159,176,481,47.67,2014,216
+217,Nanjing University,China,6,331,447,210,148,371,363,288,57,47.67,2014,217
+218,University of Illinois at Chicago,USA,90,355,416,210,131,189,220,185,170,47.63,2014,218
+219,University of Bologna,Italy,4,342,319,210,130,283,187,169,552,47.59,2014,219
+220,University of Manitoba,Canada,10,149,84,150,257,297,220,249,227,47.56,2014,220
+221,Joseph Fourier University,France,8,181,478,210,136,101,220,207,159,47.54,2014,221
+222,"University of California, Riverside",USA,91,228,478,210,199,98,134,169,259,47.53,2014,222
+223,Julius-Maximilian's University of Würzburg,Germany,16,100,407,164,216,178,200,173,481,47.5,2014,223
+224,Aix-Marseille University,France,9,220,472,210,129,83,176,215,227,47.48,2014,224
+225,University of Western Australia,Australia,7,145,397,140,165,214,283,176,373,47.47,2014,225
+226,Laval University,Canada,11,285,296,210,212,270,220,200,109,47.47,2014,226
+227,"University of Tennessee, Knoxville",USA,92,300,117,210,192,177,134,224,481,47.45,2014,227
+228,North Carolina State University,USA,93,245,194,210,151,202,159,238,181,47.43,2014,228
+229,Newcastle University,United Kingdom,19,355,250,210,200,149,200,164,481,47.42,2014,229
+230,Claude Bernard University Lyon 1,France,10,355,478,210,133,130,220,196,204,47.42,2014,230
+231,University of Turin,Italy,5,311,471,159,214,272,220,151,552,47.4,2014,231
+232,University of Kiel,Germany,17,180,396,192,236,185,220,158,280,47.39,2014,232
+233,University of Connecticut,USA,94,282,402,210,160,187,200,185,204,47.35,2014,233
+234,Tulane University,USA,95,298,92,210,363,298,283,215,194,47.34,2014,234
+235,University of Oklahoma - Norman Campus,USA,96,355,124,210,238,223,176,203,307,47.33,2014,235
+236,Brandeis University,USA,97,49,311,79,527,169,493,322,128,47.31,2014,236
+237,Dresden University of Technology,Germany,18,355,478,210,218,227,176,211,109,47.26,2014,237
+238,RWTH Aachen University,Germany,19,346,286,122,197,364,187,230,138,47.26,2014,238
+239,University of Texas Health Science Center at San Antonio,USA,98,355,478,210,314,224,130,145,373,47.26,2014,239
+240,Virginia Commonwealth University,USA,99,355,428,145,263,233,200,189,149,47.26,2014,240
+241,University of Montpellier 2,France,11,355,358,165,174,137,200,196,280,47.25,2014,241
+242,Dalian University of Technology,China,7,355,67,210,326,666,406,472,74,47.22,2014,242
+243,Rensselaer Polytechnic Institute,USA,100,120,121,210,375,344,159,272,138,47.2,2014,243
+244,Paul Sabatier University - Toulouse III,France,12,355,478,210,153,109,250,192,426,47.19,2014,244
+245,Paris Descartes University,France,13,202,478,210,189,139,363,173,426,47.18,2014,245
+246,National Cheng Kung University,Taiwan,2,355,60,210,157,545,800,395,307,47.16,2014,246
+247,University of Delaware,USA,101,297,386,126,265,305,250,277,76,47.16,2014,247
+248,Vrije Universiteit Brussel,Belgium,5,73,478,210,271,276,130,220,552,47.14,2014,248
+249,Johannes Gutenberg University of Mainz,Germany,20,355,478,188,204,167,250,164,637,47.14,2014,249
+250,Maastricht University,Netherlands,8,355,478,210,208,376,283,164,307,47.11,2014,250
+251,University of Düsseldorf,Germany,21,168,478,210,298,207,159,169,637,47.05,2014,251
+252,University of Dundee,United Kingdom,20,164,478,210,354,200,134,184,227,47.04,2014,252
+253,University of Tsukuba,Japan,13,183,478,108,226,239,176,220,259,47,2014,253
+254,Autonomous University of Barcelona,Spain,3,355,478,210,146,218,250,224,204,46.99,2014,254
+255,Florida State University,USA,102,355,288,210,201,180,134,220,338,46.98,2014,255
+256,University of Texas at San Antonio,USA,103,355,478,210,410,334,125,180,227,46.95,2014,256
+257,London School of Hygiene & Tropical Medicine,United Kingdom,21,355,478,154,302,306,250,169,737,46.93,2014,257
+258,Lehigh University,USA,104,355,44,210,594,512,609,523,481,46.91,2014,258
+259,University of Kentucky,USA,105,317,270,210,184,219,250,220,338,46.9,2014,259
+260,Thomas Jefferson University,USA,106,134,478,210,331,302,200,180,373,46.89,2014,260
+261,Drexel University,USA,107,355,262,210,366,322,220,266,89,46.89,2014,261
+262,Colorado State University - Fort Collins,USA,108,203,478,143,234,201,250,211,259,46.88,2014,262
+263,University of Leicester,United Kingdom,22,355,478,210,254,140,220,185,373,46.87,2014,263
+264,Durham University,United Kingdom,23,122,237,210,250,203,250,230,373,46.87,2014,264
+265,Oregon State University,USA,109,175,268,210,247,145,176,238,338,46.82,2014,265
+266,University of Florence,Italy,6,316,304,93,211,256,200,261,637,46.8,2014,266
+267,University of Cape Town,South Africa,2,97,169,142,333,244,220,274,552,46.78,2014,267
+268,"University at Buffalo, The State University of New York",USA,110,355,418,210,203,285,200,230,204,46.78,2014,268
+269,University College Dublin,Ireland,2,227,182,210,276,280,150,251,307,46.77,2014,269
+270,University of Science and Technology of China,China,8,355,238,210,144,275,363,266,481,46.75,2014,270
+271,Virginia Polytechnic Institute and State University,USA,111,270,185,210,196,267,200,281,227,46.72,2014,271
+272,University of Naples Federico II,Italy,7,324,475,210,163,333,200,238,737,46.67,2014,272
+273,University of Auckland,New Zealand,1,230,455,210,266,235,283,251,138,46.65,2014,273
+274,University of Texas Health Science Center at Houston,USA,112,355,478,150,267,175,220,215,373,46.64,2014,274
+275,Delft University of Technology,Netherlands,9,289,374,210,222,212,250,245,227,46.63,2014,275
+276,University of Aberdeen,United Kingdom,24,347,223,210,282,217,250,224,481,46.63,2014,276
+277,Queen's University,Canada,12,301,172,210,253,273,220,281,204,46.59,2014,277
+278,University of Lisbon,Portugal,1,327,478,147,178,321,220,256,426,46.59,2014,278
+279,Hiroshima University,Japan,14,355,478,210,294,274,283,266,109,46.59,2014,279
+280,University of Waterloo,Canada,13,355,125,210,205,352,283,306,637,46.58,2014,280
+281,Okayama University,Japan,15,355,226,210,332,335,250,322,94,46.57,2014,281
+282,University of Ulm,Germany,22,355,478,122,285,232,310,207,737,46.57,2014,282
+283,Chulalongkorn University,Thailand,1,355,51,210,580,752,406,585,737,46.55,2014,283
+284,Dalhousie University,Canada,14,355,153,210,289,251,250,272,338,46.52,2014,284
+285,Saint Petersburg State University,Russia,2,37,129,210,619,620,609,756,737,46.49,2014,285
+286,Norwegian University of Science and Technology,Norway,2,231,163,210,274,350,220,277,373,46.49,2014,286
+287,University of Reading,United Kingdom,25,241,78,210,393,319,220,355,481,46.49,2014,287
+288,Wageningen University and Research Centre,Netherlands,10,267,478,141,217,176,363,256,552,46.48,2014,288
+289,Umeå University,Sweden,7,355,478,210,277,199,220,215,737,46.44,2014,289
+290,University of Porto,Portugal,2,83,427,89,269,394,250,349,426,46.42,2014,290
+291,Hong Kong University of Science and Technology,Hong Kong,3,355,279,210,256,469,363,295,128,46.42,2014,291
+292,Sun Yat-sen University,China,9,355,328,210,198,424,310,313,138,46.42,2014,292
+293,Medical College of Wisconsin,USA,113,355,478,210,338,279,220,203,737,46.42,2014,293
+294,City College of New York,USA,114,35,236,210,677,444,406,569,373,46.41,2014,294
+295,Hannover Medical School,Germany,23,355,478,210,324,252,363,211,280,46.41,2014,295
+296,"Washington State University, Pullman",USA,115,355,267,122,293,221,310,295,170,46.4,2014,296
+297,Technical University of Berlin,Germany,24,80,276,210,353,432,406,372,115,46.39,2014,297
+298,University of South Carolina - Columbia,USA,116,355,440,182,262,353,130,266,737,46.37,2014,298
+299,Leipzig University,Germany,25,308,478,201,287,268,800,224,307,46.36,2014,299
+300,University of Stuttgart,Germany,26,78,175,210,379,367,363,346,280,46.34,2014,300
+301,University of Valencia,Spain,4,355,464,210,210,342,220,261,552,46.34,2014,301
+302,Linköping University,Sweden,8,355,177,210,290,345,310,274,737,46.32,2014,302
+303,University of Duisburg-Essen,Germany,27,355,453,210,284,288,406,234,426,46.31,2014,303
+304,Ruhr University Bochum,Germany,28,355,283,210,235,222,406,265,637,46.31,2014,304
+305,University of Bergen,Norway,3,355,478,210,249,206,283,245,737,46.31,2014,305
+306,London School of Economics,United Kingdom,26,70,139,75,520,742,310,596,737,46.3,2014,306
+307,Wesleyan University,USA,117,130,54,210,986,538,609,832,737,46.3,2014,307
+308,University of Pisa,Italy,8,268,465,210,229,368,200,266,426,46.3,2014,308
+309,Autonomous University of Madrid,Spain,5,355,449,210,228,245,310,261,426,46.29,2014,309
+310,Medical University of Vienna,Austria,2,355,478,210,275,242,283,238,426,46.29,2014,310
+311,Stellenbosch University,South Africa,3,355,64,210,545,494,310,504,259,46.26,2014,311
+312,Medical University of South Carolina,USA,118,355,478,210,322,357,310,224,552,46.25,2014,312
+313,Charles University in Prague,Czech Republic,1,337,478,210,243,231,220,256,637,46.23,2014,313
+314,Kyungpook National University,South Korea,8,355,446,210,358,661,283,420,68,46.23,2014,314
+315,"University of Science, Malaysia",Malaysia,1,355,478,210,700,877,609,819,42,46.23,2014,315
+316,University of Liège,Belgium,6,135,478,136,313,215,310,295,227,46.21,2014,316
+317,University of Hull,United Kingdom,27,287,253,158,612,554,493,256,552,46.21,2014,317
+318,Northeastern University,USA,119,295,171,210,383,307,250,375,115,46.2,2014,318
+319,Kansas State University,USA,120,116,165,210,348,313,220,346,259,46.2,2014,319
+320,University of Vermont,USA,121,178,215,210,364,300,406,277,373,46.2,2014,320
+321,Rush University,USA,122,355,478,210,424,412,150,247,737,46.18,2014,321
+322,University of Louisville,USA,123,355,389,210,335,383,406,295,138,46.15,2014,322
+323,University of St Andrews,United Kingdom,28,125,478,210,317,193,363,281,280,46.15,2014,323
+324,University of Warwick,United Kingdom,29,198,394,210,224,253,200,326,259,46.13,2014,324
+325,University of Rome Tor Vergata,Italy,9,355,478,210,260,260,283,261,737,46.13,2014,325
+326,University of Innsbruck,Austria,3,190,415,115,413,225,310,281,373,46.12,2014,326
+327,Darmstadt University of Technology,Germany,29,55,258,210,374,417,493,420,227,46.11,2014,327
+328,Indian Institute of Technology Delhi,India,1,355,57,210,644,928,800,756,426,46.1,2014,328
+329,Federal University of Rio de Janeiro,Brazil,2,261,120,210,304,326,493,402,181,46.08,2014,329
+330,University of Antwerp,Belgium,7,355,478,210,258,314,220,274,373,46.08,2014,330
+331,National and Kapodistrian University of Athens,Greece,1,355,246,210,248,433,310,306,737,46.06,2014,331
+332,Boston College,USA,124,355,95,210,548,380,200,386,338,46.06,2014,332
+333,Vita-Salute San Raffaele University,Italy,10,355,478,210,484,303,310,238,737,46.06,2014,333
+334,Gwangju Institute of Science and Technology,South Korea,9,355,478,210,528,565,406,543,57,46.02,2014,334
+335,University of Nebraska–Lincoln,USA,125,154,256,210,272,246,250,337,426,46.02,2014,335
+336,University of York,United Kingdom,30,355,478,210,272,209,159,295,481,45.99,2014,336
+337,National Autonomous University of Mexico,Mexico,1,299,478,210,181,204,406,326,481,45.99,2014,337
+338,University of Regensburg,Germany,30,355,382,210,303,248,310,277,737,45.98,2014,338
+339,Yokohama National University,Japan,16,52,135,126,841,812,609,749,338,45.97,2014,339
+340,University of Adelaide,Australia,8,201,400,210,244,254,283,313,737,45.97,2014,340
+341,University of Genoa,Italy,11,355,478,210,291,429,250,281,373,45.95,2014,341
+342,Queen's University Belfast,United Kingdom,31,169,399,210,308,284,283,295,737,45.95,2014,342
+343,University of Marburg,Germany,31,290,478,209,328,237,283,293,259,45.92,2014,343
+344,University of Pavia,Italy,12,276,385,206,329,359,283,288,637,45.92,2014,344
+345,"St George's, University of London",United Kingdom,32,355,478,210,525,459,310,256,552,45.91,2014,345
+346,University of Oregon,USA,126,334,478,210,370,205,200,281,637,45.89,2014,346
+347,University of Navarra,Spain,6,355,72,210,582,734,800,523,426,45.88,2014,347
+348,San Diego State University,USA,127,240,187,210,480,290,200,341,481,45.88,2014,348
+349,Nankai University,China,10,318,168,210,311,456,493,361,280,45.87,2014,349
+350,University of East Anglia,United Kingdom,33,187,478,174,356,210,187,318,637,45.87,2014,350
+351,University of Nebraska Medical Center,USA,128,355,478,210,469,395,363,339,128,45.83,2014,351
+352,University of Southern Denmark,Denmark,4,355,478,210,380,316,310,290,280,45.83,2014,352
+353,Eindhoven University of Technology,Netherlands,11,355,315,181,296,555,310,334,307,45.82,2014,353
+354,Xiamen University,China,11,355,100,210,371,507,609,472,307,45.8,2014,354
+355,University of Otago,New Zealand,2,355,372,210,318,338,220,313,637,45.8,2014,355
+356,University of Santiago de Compostela,Spain,7,355,478,210,373,634,406,386,100,45.79,2014,356
+357,University of Exeter,United Kingdom,34,250,371,210,309,188,406,322,481,45.79,2014,357
+358,University of Jena,Germany,32,355,478,210,278,255,363,311,426,45.79,2014,358
+359,University of Perugia,Italy,13,355,478,210,367,341,406,281,637,45.78,2014,359
+360,Justus Liebig University Giessen,Germany,33,355,478,210,336,349,363,318,204,45.78,2014,360
+361,College of William and Mary,USA,129,355,82,210,639,442,310,523,637,45.77,2014,361
+362,Ben-Gurion University of the Negev,Israel,5,355,478,165,280,382,406,386,138,45.76,2014,362
+363,Saint Louis University,USA,130,355,342,195,468,287,493,318,227,45.75,2014,363
+364,Colorado School of Mines,USA,131,355,76,210,653,577,310,596,637,45.74,2014,364
+365,Oklahoma State University–Stillwater,USA,132,221,111,210,427,623,310,472,307,45.74,2014,365
+366,University of Guelph,Canada,15,355,478,210,319,289,125,349,373,45.74,2014,366
+367,University of Trieste,Italy,14,355,478,210,378,295,283,295,426,45.73,2014,367
+368,University of Verona,Italy,15,355,478,210,509,489,220,290,737,45.71,2014,368
+369,"University at Albany, SUNY",USA,133,161,478,161,402,372,187,355,338,45.7,2014,369
+370,Tongji University,China,12,152,102,210,401,547,609,690,204,45.7,2014,370
+371,Eötvös Loránd University,Hungary,1,87,478,104,539,403,250,430,637,45.69,2014,371
+372,University of Alabama - Tuscaloosa,USA,134,312,137,210,513,499,283,409,338,45.69,2014,372
+373,University of Eastern Finland,Finland,2,355,478,210,377,410,310,295,737,45.69,2014,373
+374,Ewha Womans University,South Korea,10,355,478,210,474,505,609,452,89,45.67,2014,374
+375,City University of Hong Kong,Hong Kong,4,355,478,210,255,893,493,343,259,45.67,2014,375
+376,Tokyo Medical and Dental University,Japan,17,355,478,210,442,299,609,306,307,45.67,2014,376
+377,University of Victoria,Canada,16,355,478,210,320,337,363,313,737,45.66,2014,377
+378,University of Buenos Aires,Argentina,1,192,477,176,268,348,363,349,737,45.66,2014,378
+379,University of Texas Medical Branch at Galveston,USA,135,355,478,210,365,294,363,334,227,45.66,2014,379
+380,Kyung Hee University,South Korea,11,239,445,210,398,626,609,569,84,45.66,2014,380
+381,Hong Kong Polytechnic University,Hong Kong,5,355,189,210,261,764,406,395,481,45.65,2014,381
+382,Saarland University,Germany,34,355,370,210,390,402,493,326,307,45.65,2014,382
+383,Scuola Normale Superiore di Pisa,Italy,16,229,478,64,530,533,363,488,737,45.63,2014,383
+384,University of Seville,Spain,8,355,478,210,339,556,493,523,89,45.63,2014,384
+385,Beijing Normal University,China,13,51,478,210,408,490,406,504,737,45.61,2014,385
+386,Chiba University,Japan,18,355,478,210,342,315,406,343,204,45.6,2014,386
+387,University of Ferrara,Italy,17,355,478,210,399,393,310,313,552,45.6,2014,387
+388,University of Bari Aldo Moro,Italy,18,355,478,210,345,336,493,326,338,45.6,2014,388
+389,Polytechnic University of Milan,Italy,19,101,203,186,360,532,609,504,280,45.59,2014,389
+390,Temple University,USA,136,262,478,210,341,378,493,355,194,45.59,2014,390
+391,University of Turku,Finland,3,355,478,210,320,332,609,326,481,45.58,2014,391
+392,Aalto University,Finland,4,355,251,210,344,434,609,460,138,45.58,2014,392
+393,Simon Fraser University,Canada,17,355,478,210,286,281,406,341,373,45.58,2014,393
+394,Tianjin University,China,14,355,87,210,406,926,800,663,426,45.57,2014,394
+395,Chalmers University of Technology,Sweden,9,349,332,210,359,435,493,337,737,45.57,2014,395
+396,Middle East Technical University,Turkey,1,355,79,210,529,904,493,724,737,45.57,2014,396
+397,Cranfield University,United Kingdom,35,355,71,210,728,731,800,769,737,45.56,2014,397
+398,York University,Canada,18,355,164,210,397,396,250,409,737,45.55,2014,398
+399,Xi'an Jiaotong University,China,15,355,127,210,307,595,800,642,181,45.55,2014,399
+400,Chonnam National University,South Korea,12,355,478,210,411,652,363,430,115,45.55,2014,400
+401,University of Central Florida,USA,137,355,468,210,388,391,493,380,149,45.55,2014,401
+402,University of Lorraine,France,14,213,301,185,300,361,493,442,181,45.55,2014,402
+403,University of Bordeaux II,France,15,355,478,210,440,385,363,322,426,45.54,2014,403
+404,University of New Hampshire,USA,138,355,346,131,511,277,200,366,637,45.53,2014,404
+405,Versailles Saint-Quentin-en-Yvelines University,France,16,355,478,210,452,240,283,326,637,45.53,2014,405
+406,Chonbuk National University,South Korea,13,355,478,210,512,741,800,618,78,45.51,2014,406
+407,Kumamoto University,Japan,19,279,325,210,473,400,493,380,170,45.51,2014,407
+408,Huazhong University of Science and Technology,China,16,355,232,210,259,656,609,504,181,45.5,2014,408
+409,Brunel University,United Kingdom,36,355,147,210,486,612,609,420,481,45.5,2014,409
+410,Polytechnic University of Catalonia,Spain,9,355,451,210,386,583,406,514,109,45.49,2014,410
+411,National Chiao Tung University,Taiwan,3,355,220,210,232,638,609,442,737,45.49,2014,411
+412,Southeast University,China,17,158,409,210,412,695,609,514,121,45.49,2014,412
+413,Tokyo University of Science,Japan,20,355,478,210,504,516,406,402,128,45.48,2014,413
+414,Catholic University of the Sacred Heart,Italy,20,355,478,210,422,500,609,326,737,45.47,2014,414
+415,Brigham Young University,USA,139,288,444,210,495,423,283,415,149,45.47,2014,415
+416,Technical University of Madrid,Spain,10,206,200,210,478,672,609,749,109,45.47,2014,416
+417,Nagasaki University,Japan,21,274,128,210,567,579,493,514,307,45.46,2014,417
+418,National Tsing Hua University,Taiwan,4,244,478,210,230,406,493,386,552,45.46,2014,418
+419,University of Warsaw,Poland,1,119,478,145,400,488,363,402,637,45.45,2014,419
+420,King Saud University,Saudi Arabia,1,355,133,210,611,537,800,897,115,45.45,2014,420
+421,University of Bath,United Kingdom,37,355,352,210,387,379,310,355,552,45.44,2014,421
+422,Concordia University,Canada,19,355,110,210,540,687,493,543,552,45.44,2014,422
+423,Georgia Regents University,USA,140,355,478,210,579,471,310,334,737,45.43,2014,423
+424,Niigata University,Japan,22,355,217,210,503,506,363,420,204,45.43,2014,424
+425,University of Oulu,Finland,5,253,354,210,426,360,493,361,373,45.43,2014,425
+426,Pompeu Fabra University,Spain,11,355,478,210,409,184,609,343,481,45.43,2014,426
+427,Vienna University of Technology,Austria,4,351,413,210,381,365,406,420,159,45.43,2014,427
+428,Sogang University,South Korea,14,355,478,210,781,792,800,889,68,45.43,2014,428
+429,Gyeongsang National University,South Korea,15,355,478,210,626,663,800,618,84,45.43,2014,429
+430,University of Tampere,Finland,6,355,235,210,554,461,493,370,637,45.41,2014,430
+431,University of Milan - Bicocca,Italy,21,355,478,210,404,328,406,355,280,45.41,2014,431
+432,University of Bordeaux I,France,17,355,478,210,327,228,406,361,426,45.41,2014,432
+433,Swedish University of Agricultural Sciences,Sweden,10,355,478,210,376,266,363,346,737,45.4,2014,433
+434,George Mason University,USA,141,355,478,97,449,374,283,415,637,45.4,2014,434
+435,Jilin University,China,18,224,469,210,270,467,493,395,373,45.4,2014,435
+436,University of Delhi,India,2,263,88,210,701,732,800,769,637,45.4,2014,436
+437,University of Campinas,Brazil,3,355,478,210,297,534,406,386,227,45.39,2014,437
+438,Wuhan University,China,19,355,228,210,310,627,609,420,481,45.39,2014,438
+439,West Virginia University,USA,142,314,180,210,441,419,406,430,637,45.39,2014,439
+440,Pusan National University,South Korea,16,355,422,210,395,511,363,496,128,45.38,2014,440
+441,University of Mississippi - Oxford Campus,USA,143,355,478,210,384,478,220,361,552,45.38,2014,441
+442,University of Arkansas for Medical Sciences,USA,144,355,478,210,488,542,609,349,280,45.37,2014,442
+443,Miami University,USA,145,355,104,210,712,501,406,642,737,45.37,2014,443
+444,University of Tokushima,Japan,23,109,478,210,603,455,493,504,149,45.36,2014,444
+445,University of Twente,Netherlands,12,355,478,210,343,477,363,366,338,45.36,2014,445
+446,Loyola University Chicago,USA,146,355,350,210,538,414,609,349,737,45.36,2014,446
+447,Ajou University,South Korea,17,355,343,210,646,802,609,663,94,45.35,2014,447
+448,Syracuse University,USA,147,129,249,210,459,479,310,488,338,45.34,2014,448
+449,Lancaster University,United Kingdom,38,355,339,210,372,398,250,380,637,45.33,2014,449
+450,Pontifical Catholic University of Chile,Chile,1,330,263,210,450,310,493,395,426,45.33,2014,450
+451,University of Chile,Chile,2,232,278,210,416,375,493,409,552,45.29,2014,451
+452,Innsbruck Medical University,Austria,5,355,478,210,482,401,800,349,637,45.29,2014,452
+453,University of Granada,Spain,12,355,478,210,316,451,310,442,194,45.29,2014,453
+454,Kanazawa University,Japan,24,355,327,210,455,409,493,375,373,45.29,2014,454
+455,University of Parma,Italy,22,355,431,210,421,440,310,372,637,45.28,2014,455
+456,University of Siena,Italy,23,355,478,210,407,356,310,366,737,45.27,2014,456
+457,Shandong University,China,20,355,466,210,245,588,493,437,481,45.27,2014,457
+458,Technical University of Dortmund,Germany,35,355,478,210,454,539,406,430,170,45.26,2014,458
+459,University of KwaZulu-Natal,South Africa,4,355,142,210,584,436,310,554,737,45.26,2014,459
+460,"University of Nevada, Reno",USA,148,355,347,210,516,325,250,380,637,45.26,2014,460
+461,Yokohama City University,Japan,25,355,196,210,650,362,800,460,338,45.26,2014,461
+462,École normale supérieure de Lyon,France,18,355,478,126,489,220,493,395,737,45.25,2014,462
+463,University College Cork,Ireland,3,355,359,210,423,464,406,420,227,45.25,2014,463
+464,Ohio University,USA,149,196,176,210,568,474,493,554,280,45.25,2014,464
+465,Central South University,China,21,355,162,210,330,855,609,596,373,45.24,2014,465
+466,University of Modena and Reggio Emilia,Italy,24,355,478,210,435,485,310,370,637,45.23,2014,466
+467,New Mexico State University,USA,150,355,369,210,677,630,200,386,737,45.23,2014,467
+468,University of Konstanz,Germany,36,355,478,157,475,347,493,395,481,45.22,2014,468
+469,University of Hawaii at Manoa,USA,151,355,379,148,451,211,363,452,373,45.22,2014,469
+470,University of Nebraska Omaha,USA,152,355,349,210,643,521,406,372,737,45.22,2014,470
+471,Shinshu University,Japan,26,355,333,210,564,568,283,442,204,45.22,2014,471
+472,University of Strathclyde,United Kingdom,39,355,245,210,382,454,406,460,426,45.22,2014,472
+473,Baylor University,USA,153,355,351,210,578,566,220,395,637,45.21,2014,473
+474,Polytechnic University of Valencia,Spain,13,355,478,210,361,468,609,430,204,45.21,2014,474
+475,Harbin Institute of Technology,China,22,355,289,210,283,875,609,496,338,45.21,2014,475
+476,University of Rennes 1,France,19,355,478,210,351,355,609,402,307,45.2,2014,476
+477,University of Arkansas - Fayetteville,USA,154,189,260,210,506,513,310,482,373,45.2,2014,477
+478,Aristotle University of Thessaloniki,Greece,2,355,478,210,334,649,493,386,637,45.2,2014,478
+479,Jagiellonian University,Poland,2,355,478,210,396,466,609,375,552,45.19,2014,479
+480,Texas Tech University (TTU),USA,155,355,277,210,392,508,250,460,552,45.19,2014,480
+481,University of Rostock,Germany,37,352,478,210,433,615,800,380,338,45.19,2014,481
+482,University of Akron,USA,156,355,421,210,637,660,609,596,121,45.18,2014,482
+483,University of Saskatchewan,Canada,20,320,380,210,337,427,310,442,373,45.18,2014,483
+484,Juntendo University,Japan,27,355,478,210,645,482,406,366,737,45.18,2014,484
+485,University of Wyoming,USA,157,355,224,210,531,327,363,472,426,45.18,2014,485
+486,Macquarie University,Australia,9,355,452,210,416,292,283,409,552,45.18,2014,486
+487,University of Canterbury,New Zealand,3,173,154,210,561,426,493,628,737,45.17,2014,487
+488,University of Denver,USA,158,283,141,210,906,487,493,628,552,45.16,2014,488
+489,Illinois Institute of Technology,USA,159,251,123,210,767,718,800,716,737,45.15,2014,489
+490,Creighton University,USA,160,355,478,210,792,618,250,375,637,45.15,2014,490
+491,Bielefeld University,Germany,38,355,478,210,487,370,493,375,737,45.15,2014,491
+492,University of Malaya,Malaysia,2,355,115,210,670,910,493,769,426,45.15,2014,492
+493,University of Ulsan,South Korea,18,355,247,210,437,662,609,460,637,45.14,2014,493
+494,City University London,United Kingdom,40,355,103,210,808,868,800,874,637,45.14,2014,494
+495,Grenoble Institute of Technology,France,20,355,478,210,340,525,609,430,307,45.14,2014,495
+496,Federal University of Minas Gerais,Brazil,4,355,462,210,430,476,493,514,170,45.14,2014,496
+497,University of Hanover,Germany,39,355,392,210,431,527,406,452,259,45.14,2014,497
+498,South China University of Technology,China,23,355,292,210,403,650,493,514,227,45.12,2014,498
+499,University of Surrey,United Kingdom,41,195,234,210,414,548,406,569,338,45.12,2014,499
+500,Otto-von-Guericke University Magdeburg,Germany,40,355,478,210,483,619,493,420,259,45.11,2014,500
+501,Indian Institute of Science,India,3,355,478,210,305,495,609,472,280,45.11,2014,501
+502,Tokyo Metropolitan University,Japan,28,355,322,210,550,450,310,420,637,45.11,2014,502
+503,Bar-Ilan University,Israel,6,266,408,210,415,392,609,482,259,45.11,2014,503
+504,Mississippi State University,USA,161,141,157,210,580,617,609,739,481,45.11,2014,504
+505,"University of Maryland, Baltimore County",USA,162,355,478,210,554,377,363,402,373,45.1,2014,505
+506,University of Wollongong,Australia,10,355,274,210,445,460,609,488,338,45.1,2014,506
+507,Flinders University,Australia,11,82,478,210,551,573,609,605,637,45.1,2014,507
+508,Martin Luther University of Halle-Wittenberg,Germany,41,345,478,202,385,340,800,409,737,45.1,2014,508
+509,Graduate University for Advanced Studies,Japan,29,355,478,210,607,269,493,386,737,45.09,2014,509
+510,Clemson University,USA,163,355,478,210,424,470,493,402,737,45.09,2014,510
+511,University of Brescia,Italy,25,355,478,210,576,604,609,386,737,45.07,2014,511
+512,Georgia State University,USA,164,355,434,210,465,504,363,437,426,45.07,2014,512
+513,Dongguk University,South Korea,19,355,395,210,954,915,800,979,89,45.07,2014,513
+514,University of Fribourg,Switzerland,8,208,209,210,727,405,406,554,552,45.05,2014,514
+515,Sichuan University,China,24,355,478,210,306,530,800,472,373,45.05,2014,515
+516,University of Iceland,Iceland,1,355,478,210,629,311,310,409,737,45.05,2014,516
+517,University of Sherbrooke,Canada,21,355,478,210,446,437,406,415,637,45.05,2014,517
+518,University of Graz,Austria,6,338,429,197,526,524,406,437,481,45.04,2014,518
+519,University of Málaga,Spain,14,355,478,210,428,755,609,724,121,45.04,2014,519
+520,University of Zaragoza,Spain,15,354,441,210,350,684,493,488,338,45.04,2014,520
+521,New York Medical College,USA,165,355,478,210,726,594,493,402,481,45.04,2014,521
+522,SUNY Downstate Medical Center,USA,166,355,478,150,736,411,609,442,737,45.03,2014,522
+523,École Centrale Paris,France,21,355,108,210,995,837,800,923,637,45.03,2014,523
+524,Utah State University,USA,167,156,419,210,553,473,363,531,307,45.03,2014,524
+525,University of Ljubljana,Slovenia,1,355,478,210,346,449,310,460,737,45.02,2014,525
+526,University of Montpellier 1,France,22,355,478,210,429,324,493,430,737,45.02,2014,526
+527,Victoria University of Wellington,New Zealand,4,296,161,210,630,441,609,675,637,45.01,2014,527
+528,East China University of Science and Technology,China,25,355,478,210,444,808,609,496,204,45.01,2014,528
+529,Konkuk University,South Korea,20,355,403,210,564,730,800,724,128,45.01,2014,529
+530,University of Potsdam,Germany,42,355,478,210,491,329,609,420,637,45.01,2014,530
+531,University of the Basque Country,Spain,16,355,478,210,325,418,493,482,426,45.01,2014,531
+532,University of Nice Sophia Antipolis,France,23,252,478,210,467,265,609,460,373,45.01,2014,532
+533,University of Udine,Italy,26,355,478,210,583,397,609,415,552,45.01,2014,533
+534,National Yang-Ming University,Taiwan,5,355,478,210,355,502,406,452,737,45.01,2014,534
+535,Indian Institute of Technology Bombay,India,4,355,478,210,522,785,609,724,121,45,2014,535
+536,University of Bayreuth,Germany,43,355,478,210,442,293,310,452,552,44.99,2014,536
+537,University of Wisconsin–Milwaukee,USA,168,218,273,210,537,491,406,536,737,44.99,2014,537
+538,University of Dayton,USA,169,335,140,210,991,796,609,783,552,44.99,2014,538
+539,Nihon University,Japan,30,307,474,210,573,611,800,642,149,44.98,2014,539
+540,Montana State University - Bozeman,USA,170,355,344,210,557,354,363,472,637,44.98,2014,540
+541,"Royal Holloway, University of London",United Kingdom,42,355,478,210,560,317,406,442,373,44.98,2014,541
+542,Tokyo Women's Medical University,Japan,31,355,478,210,763,609,493,460,259,44.98,2014,542
+543,Panjab University,India,5,332,212,210,708,722,363,569,737,44.97,2014,543
+544,Tampere University of Technology,Finland,7,355,136,210,819,670,800,819,737,44.97,2014,544
+545,University of Coimbra,Portugal,3,348,478,210,420,415,609,452,481,44.97,2014,545
+546,University of Newcastle,Australia,12,355,478,210,434,475,609,442,637,44.97,2014,546
+547,Nara Institute of Science and Technology,Japan,32,355,478,210,715,304,493,437,426,44.96,2014,547
+548,Auburn University,USA,171,355,261,210,463,585,310,585,373,44.96,2014,548
+549,University of Bremen,Germany,44,355,478,210,439,296,363,460,552,44.96,2014,549
+550,Mahidol University,Thailand,2,355,478,210,479,366,406,442,737,44.96,2014,550
+551,University of Crete,Greece,3,355,478,210,481,497,406,442,737,44.96,2014,551
+552,Bangor University,United Kingdom,43,246,360,210,624,526,609,504,373,44.95,2014,552
+553,University of Aveiro,Portugal,4,355,478,210,419,659,609,605,170,44.95,2014,553
+554,University of Palermo,Italy,27,355,478,210,447,590,800,452,552,44.94,2014,554
+555,Nagoya City University,Japan,33,355,306,210,764,531,310,531,307,44.94,2014,555
+556,University of Tartu,Estonia,1,353,478,210,600,388,406,496,259,44.94,2014,556
+557,University of Savoy,France,24,355,478,210,505,453,406,452,552,44.94,2014,557
+558,University of Tromsø - The Arctic University of Norway,Norway,4,355,478,210,493,413,310,460,737,44.94,2014,558
+559,University of Missouri–Kansas City,USA,172,286,357,210,638,430,800,488,552,44.93,2014,559
+560,Beihang University,China,26,355,254,210,523,881,609,800,170,44.93,2014,560
+561,American University of Beirut,Lebanon,1,103,205,210,892,850,800,849,737,44.93,2014,561
+562,University of Nantes,France,25,355,478,210,492,404,310,482,426,44.93,2014,562
+563,University of Essex,United Kingdom,44,106,335,210,710,651,406,642,737,44.92,2014,563
+564,University of Zagreb,Croatia,1,355,478,210,572,528,406,460,426,44.92,2014,564
+565,National Central University,Taiwan,6,204,478,210,369,438,609,523,637,44.92,2014,565
+566,University Lille 1: Sciences and Technologies,France,26,355,478,210,394,408,363,496,481,44.92,2014,566
+567,University of Catania,Italy,28,355,478,210,436,750,493,472,737,44.91,2014,567
+568,National Polytechnic Institute of Toulouse,France,27,355,201,210,499,705,800,663,737,44.91,2014,568
+569,Indian Institute of Technology Kanpur,India,6,153,308,210,536,846,609,724,227,44.91,2014,569
+570,Kagoshima University,Japan,34,355,211,210,694,648,493,642,373,44.9,2014,570
+571,Lanzhou University,China,27,355,478,210,389,667,493,496,481,44.9,2014,571
+572,James Cook University,Australia,13,355,478,210,510,238,363,488,552,44.9,2014,572
+573,Shizuoka University,Japan,35,355,478,210,586,589,406,703,149,44.89,2014,573
+574,Indian Institute of Technology Kharagpur,India,7,355,201,210,501,966,800,703,426,44.89,2014,574
+575,Second University of Naples,Italy,29,355,478,210,544,598,609,460,737,44.89,2014,575
+576,Indian Institute of Technology Madras,India,8,355,206,210,532,928,406,756,280,44.89,2014,576
+577,Plymouth University,United Kingdom,45,355,437,210,534,425,493,514,426,44.88,2014,577
+578,International School for Advanced Studies,Italy,30,355,478,210,595,407,609,472,737,44.87,2014,578
+579,Polytechnic University of Turin,Italy,31,355,478,210,464,773,800,642,181,44.85,2014,579
+580,University of Oviedo,Spain,17,355,478,210,437,465,493,514,426,44.85,2014,580
+581,Ehime University,Japan,36,355,324,210,585,564,493,554,338,44.85,2014,581
+582,University of Ioannina,Greece,4,355,478,210,569,828,609,482,737,44.85,2014,582
+583,University of Cagliari,Italy,32,355,478,210,514,536,800,488,552,44.85,2014,583
+584,Tottori University,Japan,37,355,199,210,846,710,493,724,373,44.85,2014,584
+585,Federal University of Rio Grande do Sul,Brazil,5,355,478,210,418,632,406,514,552,44.85,2014,585
+586,Kent State University,USA,173,355,478,210,616,431,363,496,481,44.85,2014,586
+587,University of Los Andes (Colombia),Colombia,1,355,150,210,902,550,406,889,637,44.85,2014,587
+588,Hunan University,China,28,355,294,210,500,915,800,569,737,44.84,2014,588
+589,Tokai University,Japan,38,355,478,210,697,608,493,488,481,44.84,2014,589
+590,LSU Health Sciences Center New Orleans,USA,174,355,478,210,796,549,609,482,552,44.84,2014,590
+591,Southern Illinois University Carbondale,USA,175,191,478,210,571,518,800,531,552,44.83,2014,591
+592,Tata Institute of Fundamental Research,India,9,355,478,210,458,420,310,523,737,44.83,2014,592
+593,Aalborg University,Denmark,5,355,384,210,606,633,363,543,426,44.83,2014,593
+594,Osaka Prefecture University,Japan,39,355,316,210,646,682,609,675,204,44.83,2014,594
+595,Chang Gung University,Taiwan,7,355,478,210,357,582,800,536,737,44.82,2014,595
+596,Northern Illinois University,USA,176,355,259,210,671,602,363,642,481,44.82,2014,596
+597,University of Trento,Italy,33,355,478,210,490,569,609,504,737,44.82,2014,597
+598,Semmelweis University,Hungary,2,355,478,210,668,517,493,496,552,44.82,2014,598
+599,University of Science and Technology Beijing,China,29,355,166,210,592,928,493,897,373,44.82,2014,599
+600,"National University of Ireland, Galway",Ireland,4,355,478,210,593,597,609,531,307,44.82,2014,600
+601,Dankook University,South Korea,21,355,478,210,896,934,609,897,121,44.82,2014,601
+602,Istanbul University,Turkey,2,255,337,210,681,580,609,554,737,44.81,2014,602
+603,Tokyo University of Agriculture and Technology,Japan,40,355,478,210,574,707,609,585,227,44.81,2014,603
+604,University of Montana - Missoula,USA,177,341,478,210,699,320,493,504,552,44.81,2014,604
+605,Queensland University of Technology,Australia,14,355,478,210,457,733,493,523,552,44.81,2014,605
+606,Binghamton University,USA,178,355,229,210,731,610,800,675,737,44.8,2014,606
+607,Université de Namur,Belgium,8,143,312,210,830,713,609,675,637,44.8,2014,607
+608,University of Tasmania,Australia,15,355,478,210,461,278,609,531,737,44.8,2014,608
+609,University of Pretoria,South Africa,5,355,233,210,597,557,493,716,481,44.8,2014,609
+610,Central China Normal University,China,30,355,478,210,653,837,493,504,737,44.79,2014,610
+611,Indian Institute of Technology Roorkee,India,10,355,307,210,845,846,609,554,737,44.79,2014,611
+612,Curtin University,Australia,16,355,478,210,462,389,406,543,426,44.79,2014,612
+613,Deakin University,Australia,17,355,459,210,556,678,609,536,637,44.79,2014,613
+614,Tilburg University,Netherlands,13,355,227,210,605,861,609,716,737,44.78,2014,614
+615,Inha University,South Korea,22,355,387,210,543,770,609,569,481,44.78,2014,615
+616,University of New Orleans,USA,179,355,478,210,907,806,493,504,737,44.78,2014,616
+617,Paris-Est Créteil Val-de-Marne University,France,28,355,435,210,710,581,800,536,737,44.77,2014,617
+618,University of L'Aquila,Italy,34,355,478,210,617,643,800,514,737,44.77,2014,618
+619,Chungnam National University,South Korea,23,355,478,210,472,561,493,585,307,44.77,2014,619
+620,University of Salamanca,Spain,18,355,423,210,558,558,363,569,737,44.77,2014,620
+621,University of Alaska Fairbanks,USA,180,355,478,210,608,339,609,523,737,44.77,2014,621
+622,University of Poitiers,France,29,236,478,143,615,480,609,675,481,44.77,2014,622
+623,Albany Medical College,USA,181,142,478,210,993,753,609,605,737,44.76,2014,623
+624,"Birkbeck, University of London",United Kingdom,46,281,478,180,718,343,493,569,737,44.76,2014,624
+625,Griffith University,Australia,18,355,478,210,470,543,493,569,373,44.76,2014,625
+626,Federal University of São Paulo,Brazil,6,355,478,210,515,616,406,536,737,44.76,2014,626
+627,Carleton University,Canada,22,355,478,210,496,742,310,554,737,44.75,2014,627
+628,Massey University,New Zealand,5,355,448,210,552,575,609,569,637,44.75,2014,628
+629,Catholic University of Korea,South Korea,24,355,478,210,598,798,800,628,227,44.74,2014,629
+630,Open University (UK),United Kingdom,47,355,478,210,613,301,800,536,637,44.74,2014,630
+631,University of Patras,Greece,5,355,478,210,485,674,406,554,552,44.74,2014,631
+632,Universidade Nova de Lisboa,Portugal,5,355,478,210,506,515,609,543,552,44.74,2014,632
+633,Texas A&M Health Science Center,USA,182,355,478,210,664,445,493,543,426,44.74,2014,633
+634,Braunschweig University of Technology,Germany,45,207,478,210,541,369,609,605,481,44.74,2014,634
+635,National Chung Hsing University,Taiwan,8,355,364,210,405,692,609,642,737,44.74,2014,635
+636,La Trobe University,Australia,19,355,439,210,559,446,800,585,737,44.73,2014,636
+637,Missouri University of Science and Technology,USA,183,355,204,210,696,866,493,819,737,44.73,2014,637
+638,University of Idaho,USA,184,355,478,210,640,399,406,569,373,44.73,2014,638
+639,Louisiana Tech University,USA,185,355,213,210,931,864,406,769,737,44.73,2014,639
+640,University of Portsmouth,United Kingdom,48,355,478,210,759,697,310,543,637,44.73,2014,640
+641,University of La Laguna,Spain,19,355,478,210,521,358,800,554,552,44.73,2014,641
+642,Florida International University,USA,186,355,478,210,502,484,363,569,637,44.73,2014,642
+643,Medical University of Graz,Austria,7,355,478,210,622,673,800,543,481,44.72,2014,643
+644,Howard University,USA,187,269,478,210,943,599,406,703,204,44.72,2014,644
+645,University of Hertfordshire,United Kingdom,49,355,478,210,792,390,609,536,637,44.72,2014,645
+646,State University of New York Upstate Medical University,USA,188,355,478,210,748,593,406,543,552,44.72,2014,646
+647,Royal College of Surgeons in Ireland,Ireland,5,355,478,210,813,724,310,554,552,44.72,2014,647
+648,National Technical University of Athens,Greece,6,167,478,210,498,938,493,663,737,44.72,2014,648
+649,University of Windsor,Canada,23,355,239,210,758,910,800,756,481,44.72,2014,649
+650,Rovira i Virgili University,Spain,20,355,478,210,575,646,493,554,552,44.71,2014,650
+651,University of Burgundy,France,30,214,478,210,524,541,800,605,737,44.71,2014,651
+652,Gunma University,Japan,41,355,478,210,599,519,493,596,338,44.71,2014,652
+653,AGH University of Science and Technology,Poland,3,257,197,210,722,881,609,909,552,44.71,2014,653
+654,Gifu University,Japan,42,355,478,210,648,664,493,569,426,44.71,2014,654
+655,Hacettepe University,Turkey,3,355,478,210,636,636,406,554,737,44.71,2014,655
+656,Örebro University,Sweden,11,355,478,210,820,771,406,543,737,44.7,2014,656
+657,Memorial University of Newfoundland,Canada,24,355,478,210,563,596,800,554,737,44.7,2014,657
+658,Kindai University,Japan,43,355,478,210,655,721,493,585,373,44.7,2014,658
+659,University of Rhode Island,USA,189,355,353,210,649,373,406,628,737,44.7,2014,659
+660,University of Alicante,Spain,21,355,478,210,657,797,800,675,227,44.7,2014,660
+661,New Jersey Institute of Technology,USA,190,235,326,210,745,654,800,703,426,44.69,2014,661
+662,Lille 2 University of Health and Law,France,31,355,478,210,854,624,800,543,637,44.69,2014,662
+663,Keele University,United Kingdom,50,355,478,210,635,535,406,569,737,44.69,2014,663
+664,University of Jyväskylä,Finland,8,355,478,210,471,462,493,596,737,44.69,2014,664
+665,Rochester Institute of Technology,USA,191,355,366,210,936,613,310,675,373,44.69,2014,665
+666,Sapporo Medical University,Japan,44,355,478,210,929,823,609,618,280,44.69,2014,666
+667,Banaras Hindu University,India,11,237,285,210,746,927,363,756,737,44.69,2014,667
+668,King Abdullah University of Science and Technology,Saudi Arabia,2,355,478,117,799,640,800,989,159,44.69,2014,668
+669,Northeast Normal University,China,31,355,478,210,716,774,609,554,737,44.69,2014,669
+670,Portland State University,USA,192,355,272,210,784,540,800,739,481,44.68,2014,670
+671,University of Québec at Montreal,Canada,25,355,457,210,534,546,406,628,737,44.68,2014,671
+672,East China Normal University,China,32,355,431,210,477,614,800,663,481,44.68,2014,672
+673,University of Debrecen,Hungary,3,355,478,210,660,586,406,585,552,44.68,2014,673
+674,Loma Linda University,USA,193,355,478,210,820,759,609,554,737,44.68,2014,674
+675,Old Dominion University,USA,194,355,478,210,717,622,406,596,426,44.68,2014,675
+676,University of Insubria,Italy,35,355,478,210,685,600,609,569,737,44.67,2014,676
+677,"University of Nevada, Las Vegas",USA,195,355,412,210,619,457,800,628,737,44.67,2014,677
+678,Hong Kong Baptist University,Hong Kong,6,355,478,210,591,922,609,585,637,44.67,2014,678
+679,University of Minho,Portugal,6,355,478,210,590,641,363,642,338,44.67,2014,679
+680,University of Messina,Italy,36,355,478,210,577,763,800,585,737,44.67,2014,680
+681,University of Texas at Arlington,USA,196,355,478,210,494,514,493,605,637,44.67,2014,681
+682,"University François Rabelais, Tours",France,32,188,478,210,684,503,609,663,481,44.67,2014,682
+683,"UNESP, São Paulo State University",Brazil,7,355,478,210,352,655,493,690,552,44.67,2014,683
+684,Toho University,Japan,45,355,478,154,800,788,800,690,552,44.67,2014,684
+685,Beijing University of Chemical Technology,China,33,355,405,210,619,974,800,749,259,44.67,2014,685
+686,"Rutgers, The State University of New Jersey - Newark",USA,197,355,478,210,855,498,609,569,737,44.66,2014,686
+687,Johannes Kepler University of Linz,Austria,8,355,373,210,738,645,493,663,481,44.66,2014,687
+688,Warsaw University of Technology,Poland,4,333,478,210,695,748,310,605,737,44.66,2014,688
+689,University of Paris 13,France,33,355,478,210,672,783,609,585,737,44.66,2014,689
+690,University of Toyama,Japan,46,355,323,210,659,736,609,675,737,44.66,2014,690
+691,University of Toledo,USA,198,355,478,210,625,553,800,618,373,44.66,2014,691
+692,University of Vigo,Spain,22,355,478,210,570,786,406,618,481,44.66,2014,692
+693,University of Kent,United Kingdom,51,355,375,210,656,458,609,663,737,44.65,2014,693
+694,Jichi Medical University,Japan,47,355,478,210,894,621,609,585,552,44.65,2014,694
+695,Roma Tre University,Italy,37,355,478,210,632,607,406,605,637,44.65,2014,695
+696,Chung Yuan Christian University,Taiwan,9,225,230,210,754,952,800,897,737,44.65,2014,696
+697,University of Haifa,Israel,7,355,363,210,587,448,609,690,552,44.65,2014,697
+698,Åbo Akademi University,Finland,9,355,478,210,724,686,609,596,552,44.65,2014,698
+699,Swansea University,United Kingdom,52,355,355,210,533,544,609,703,552,44.65,2014,699
+700,China Agricultural University,China,34,355,478,210,432,381,609,663,552,44.64,2014,700
+701,Marche Polytechnic University,Italy,38,355,478,210,666,639,800,596,737,44.64,2014,701
+702,"University of Maine, Orono",USA,199,329,478,210,756,422,406,642,373,44.64,2014,702
+703,Heriot-Watt University,United Kingdom,53,355,381,210,602,601,609,690,552,44.64,2014,703
+704,Marquette University,USA,200,355,216,210,909,791,800,869,737,44.64,2014,704
+705,Loughborough University,United Kingdom,54,355,478,210,497,778,609,628,637,44.63,2014,705
+706,Kaiserslautern University of Technology,Germany,46,355,478,210,652,483,800,605,737,44.63,2014,706
+707,Aston University,United Kingdom,55,355,331,210,839,879,493,739,338,44.63,2014,707
+708,University of Girona,Spain,23,355,478,210,682,878,609,605,637,44.63,2014,708
+709,Hasselt University,Belgium,9,355,309,210,816,892,609,703,737,44.63,2014,709
+710,Nanjing University of Science and Technology,China,35,355,243,210,852,938,406,843,637,44.63,2014,710
+711,"University of Natural Resources and Life Sciences, Vienna",Austria,9,355,478,210,746,629,800,605,552,44.63,2014,711
+712,University of Szeged,Hungary,4,355,478,198,651,765,800,618,552,44.63,2014,712
+713,Soochow University (Suzhou),China,36,355,478,210,466,799,800,642,737,44.63,2014,713
+714,University of the Balearic Islands,Spain,24,355,478,210,634,529,406,628,552,44.63,2014,714
+715,Fuzhou University,China,37,355,420,210,786,974,609,769,259,44.63,2014,715
+716,University of Memphis,USA,201,355,390,210,782,592,609,724,338,44.62,2014,716
+717,San Francisco State University,USA,202,258,478,210,876,496,800,628,737,44.62,2014,717
+718,East Carolina University,USA,203,355,411,210,686,676,800,690,481,44.62,2014,718
+719,University of Augsburg,Germany,47,355,478,210,780,668,609,605,737,44.62,2014,719
+720,University of Missouri–St. Louis,USA,204,355,361,210,883,522,406,703,552,44.62,2014,720
+721,Kyoto Prefectural University of Medicine,Japan,48,355,478,210,823,712,609,605,737,44.62,2014,721
+722,Shanghai University,China,38,355,478,210,508,925,609,642,637,44.62,2014,722
+723,University of South Australia,Australia,20,355,280,210,663,795,800,819,426,44.62,2014,723
+724,Liverpool John Moores University,United Kingdom,56,355,478,210,744,421,609,618,737,44.61,2014,724
+725,Graz University of Technology,Austria,10,355,478,210,686,683,493,628,552,44.61,2014,725
+726,Kitasato University,Japan,49,355,478,210,706,510,800,618,737,44.61,2014,726
+727,University of North Carolina at Charlotte,USA,205,355,264,210,749,671,493,832,637,44.61,2014,727
+728,"G. d'Annunzio University, Chieti-Pescara",Italy,39,355,478,210,733,574,609,618,737,44.61,2014,728
+729,University of Cantabria,Spain,25,355,478,210,596,637,406,663,481,44.61,2014,729
+730,Miguel Hernández University of Elche,Spain,26,355,478,210,769,584,800,690,307,44.61,2014,730
+731,Donghua University,China,39,355,478,210,833,952,250,690,481,44.61,2014,731
+732,Comenius University in Bratislava,Slovak Republic,1,355,478,210,709,625,493,628,737,44.6,2014,732
+733,University of Alabama in Huntsville,USA,206,355,478,210,886,443,800,618,737,44.6,2014,733
+734,Mie University,Japan,50,355,478,210,805,834,609,675,338,44.6,2014,734
+735,University of Stirling,United Kingdom,57,355,334,210,804,717,609,716,737,44.6,2014,735
+736,Hunter College,USA,207,247,383,210,825,606,800,739,737,44.6,2014,736
+737,Swinburne University of Technology,Australia,21,355,478,210,658,447,493,642,737,44.6,2014,737
+738,University of Ulster,United Kingdom,58,355,478,210,940,895,493,739,259,44.6,2014,738
+739,University of Évry Val d'Essonne,France,34,355,478,210,998,363,609,628,737,44.59,2014,739
+740,University of Salerno,Italy,40,355,478,210,518,809,609,675,552,44.59,2014,740
+741,National University of La Plata,Argentina,2,355,476,210,546,523,406,703,737,44.59,2014,741
+742,Masaryk University,Czech Republic,2,355,478,210,667,567,800,642,737,44.59,2014,742
+743,Yamaguchi University,Japan,51,355,478,210,719,735,609,716,307,44.59,2014,743
+744,University of Yamanashi,Japan,52,355,478,210,858,895,406,663,481,44.59,2014,744
+745,Showa University,Japan,53,355,478,210,945,760,609,628,737,44.59,2014,745
+746,North Dakota State University - Main Campus,USA,208,155,478,210,692,772,800,769,737,44.59,2014,746
+747,"University of North Texas, Denton",USA,209,355,478,210,683,658,609,675,426,44.59,2014,747
+748,University of Mississippi Medical Center,USA,210,355,478,210,791,571,493,642,737,44.58,2014,748
+749,University of Tehran,Iran,1,171,478,210,519,974,800,769,737,44.58,2014,749
+750,"Paul Valéry University, Montpellier III",France,35,355,478,210,829,486,493,642,737,44.58,2014,750
+751,Wuhan University of Technology,China,40,355,478,210,794,920,493,642,737,44.58,2014,751
+752,University of Hyogo,Japan,54,355,478,210,765,463,493,663,552,44.58,2014,752
+753,The Catholic University of America,USA,211,355,314,210,949,560,406,756,552,44.58,2014,753
+754,University of Neuchâtel,Switzerland,9,340,478,210,831,631,800,642,637,44.58,2014,754
+755,National Polytechnic Institute,Mexico,2,322,478,210,549,572,406,756,307,44.58,2014,755
+756,Jikei University School of Medicine,Japan,55,355,478,210,975,711,609,642,637,44.58,2014,756
+757,University of Valladolid,Spain,27,355,430,210,675,966,800,819,280,44.57,2014,757
+758,University of Calabria,Italy,41,355,478,210,566,816,406,690,737,44.57,2014,758
+759,University of Lübeck,Germany,48,355,478,210,910,587,800,642,737,44.57,2014,759
+760,Kurume University,Japan,56,355,478,210,981,727,800,642,737,44.57,2014,760
+761,Peking Union Medical College,China,41,355,478,210,281,308,800,909,637,44.57,2014,761
+762,Yamagata University,Japan,57,355,478,210,760,719,609,675,481,44.57,2014,762
+763,University of Córdoba (Spain),Spain,28,355,478,210,623,726,609,675,737,44.57,2014,763
+764,University of Mons,Belgium,10,355,478,210,789,814,609,675,481,44.57,2014,764
+765,Saga University,Japan,58,355,478,210,773,757,800,675,481,44.57,2014,765
+766,Clarkson University,USA,212,355,305,210,943,966,800,769,552,44.57,2014,766
+767,University of South Alabama,USA,213,355,478,210,966,739,800,724,307,44.56,2014,767
+768,Inje University,South Korea,25,355,478,210,828,902,800,800,227,44.56,2014,768
+769,University of Caen Lower Normandy,France,36,193,478,210,626,801,609,756,552,44.56,2014,769
+770,University of Castilla–La Mancha,Spain,29,355,478,210,631,754,609,690,552,44.56,2014,770
+771,Czech Technical University in Prague,Czech Republic,3,336,478,210,698,793,406,690,737,44.56,2014,771
+772,Saitama Medical University,Japan,59,355,478,210,912,635,609,690,426,44.56,2014,772
+773,Istanbul Technical University,Turkey,4,355,388,210,641,858,363,769,637,44.56,2014,773
+774,Kaohsiung Medical University,Taiwan,10,355,478,210,562,854,800,703,552,44.56,2014,774
+775,University of Electro-Communications,Japan,60,140,478,210,846,866,609,874,373,44.56,2014,775
+776,Yeungnam University,South Korea,26,355,454,210,768,966,800,874,227,44.55,2014,776
+777,Jawaharlal Nehru Centre for Advanced Scientific Research,India,12,355,478,210,865,642,493,703,426,44.55,2014,777
+778,"Putra University, Malaysia",Malaysia,3,355,478,210,932,897,800,979,159,44.55,2014,778
+779,Institut national des sciences Appliquées de Lyon,France,37,355,478,210,517,681,609,724,481,44.55,2014,779
+780,University of Perpignan Via Domitia,France,38,144,478,210,957,563,609,832,737,44.55,2014,780
+781,University of Miyazaki,Japan,61,259,478,210,924,690,609,800,280,44.55,2014,781
+782,Second Military Medical University,China,42,355,478,210,641,725,609,756,307,44.55,2014,782
+783,Northern Arizona University,USA,214,355,478,210,934,416,609,690,552,44.55,2014,783
+784,École Polytechnique de Montréal,Canada,26,355,478,210,679,907,800,724,373,44.55,2014,784
+785,University of Salento,Italy,42,355,478,210,662,685,493,703,637,44.54,2014,785
+786,Fukuoka University,Japan,62,355,478,210,972,852,800,783,259,44.54,2014,786
+787,Nagoya Institute of Technology,Japan,63,355,310,210,775,948,609,897,280,44.54,2014,787
+788,Ankara University,Turkey,5,355,461,210,751,723,493,739,737,44.54,2014,788
+789,Blaise Pascal University,France,39,355,478,210,735,689,406,716,481,44.54,2014,789
+790,University of Electronic Science and Technology of China,China,43,355,400,210,589,910,800,897,259,44.54,2014,790
+791,National Sun Yat-sen University,Taiwan,11,355,478,210,453,897,800,739,737,44.54,2014,791
+792,University of Rouen,France,40,350,478,210,689,720,609,783,280,44.54,2014,792
+793,Bowling Green State University,USA,215,355,365,210,907,653,609,756,737,44.54,2014,793
+794,Norwegian University of Life Sciences,Norway,5,355,478,210,757,578,493,703,637,44.54,2014,794
+795,University of Picardie Jules Verne,France,41,355,478,210,803,767,363,724,481,44.54,2014,795
+796,Michigan Technological University,USA,216,323,478,210,779,768,406,724,481,44.53,2014,796
+797,University of Concepción,Chile,3,355,478,210,704,452,800,724,426,44.53,2014,797
+798,China Medical University (Taiwan),Taiwan,12,355,478,210,475,680,800,739,737,44.53,2014,798
+799,University of Hohenheim,Germany,49,355,478,210,753,665,609,703,637,44.53,2014,799
+800,Aberystwyth University,United Kingdom,59,355,478,210,818,562,493,716,481,44.53,2014,800
+801,Wilfrid Laurier University,Canada,27,355,240,210,987,920,800,948,737,44.53,2014,801
+802,Cairo University,Egypt,1,310,473,176,701,729,609,843,737,44.52,2014,802
+803,University of Murcia,Spain,30,355,478,210,547,745,493,756,426,44.52,2014,803
+804,"Palacký University, Olomouc",Czech Republic,4,355,478,210,771,559,609,724,481,44.52,2014,804
+805,Taipei Medical University,Taiwan,13,355,478,210,542,888,493,749,552,44.52,2014,805
+806,University of Bradford,United Kingdom,60,355,341,210,851,755,609,819,481,44.52,2014,806
+807,King Fahd University of Petroleum and Minerals,Saudi Arabia,3,355,230,210,954,938,800,970,737,44.52,2014,807
+808,Ege University,Turkey,6,355,478,210,734,822,406,724,737,44.52,2014,808
+809,University of Belgrade,Serbia,1,280,478,210,448,702,493,800,737,44.51,2014,809
+810,"University of Eastern Piedmont Amedeo Avogadro""""",Italy,43,355,478,210,835,675,609,716,637,44.51,2014,810
+811,Budapest University of Technology and Economics,Hungary,5,238,478,210,714,758,800,769,552,44.51,2014,811
+812,University of Salzburg,Austria,11,355,367,210,970,703,800,783,737,44.51,2014,812
+813,University of Massachusetts Lowell,USA,217,355,478,210,926,928,406,874,227,44.51,2014,813
+814,Jaume I University,Spain,31,355,478,210,806,948,609,739,481,44.5,2014,814
+815,Chongqing University,China,44,355,302,210,705,871,609,874,637,44.5,2014,815
+816,Beijing Institute of Technology,China,45,355,478,210,601,959,609,749,637,44.5,2014,816
+817,Manchester Metropolitan University,United Kingdom,61,355,442,210,919,679,800,800,481,44.5,2014,817
+818,Zhengzhou University,China,46,355,463,210,725,778,800,783,637,44.49,2014,818
+819,Dublin City University,Ireland,6,355,478,210,807,959,493,843,280,44.49,2014,819
+820,"National University of Ireland, Maynooth",Ireland,7,215,478,210,1000,716,800,800,552,44.49,2014,820
+821,Kangwon National University,South Korea,27,355,478,210,707,850,609,800,338,44.49,2014,821
+822,"Royal Veterinary College, University of London",United Kingdom,62,205,478,210,827,551,493,819,737,44.49,2014,822
+823,Wright State University - Dayton,USA,218,355,478,210,794,845,800,739,737,44.49,2014,823
+824,Capital Medical University,China,47,355,478,210,618,800,609,756,737,44.48,2014,824
+825,University of Brighton,United Kingdom,63,355,478,210,860,841,800,749,552,44.48,2014,825
+826,Sofia University,Bulgaria,1,234,478,210,798,874,406,819,737,44.48,2014,826
+827,University of Regina,Canada,28,355,478,210,889,740,609,800,338,44.48,2014,827
+828,Magna Græcia University of Catanzaro,Italy,44,355,478,210,939,781,800,749,552,44.48,2014,828
+829,Chungbuk National University,South Korea,28,355,478,210,751,863,800,819,338,44.47,2014,829
+830,Kōchi University,Japan,64,355,478,210,925,788,800,769,426,44.47,2014,830
+831,University of New Brunswick,Canada,29,355,329,210,719,784,800,874,552,44.47,2014,831
+832,Sejong University,South Korea,29,355,478,210,778,826,800,800,373,44.47,2014,832
+833,Sharif University of Technology,Iran,2,355,478,210,588,938,493,783,737,44.47,2014,833
+834,Chung-Ang University,South Korea,30,355,478,210,676,775,609,874,280,44.47,2014,834
+835,"Queens College, City University of New York",USA,219,303,368,210,992,669,800,869,637,44.46,2014,835
+836,Murdoch University,Australia,22,355,478,210,812,492,800,756,737,44.46,2014,836
+837,Chosun University,South Korea,31,355,478,210,918,974,800,970,194,44.46,2014,837
+838,Vilnius University,Lithuania,1,326,478,210,790,728,609,769,737,44.46,2014,838
+839,University of Maribor,Slovenia,2,355,478,210,866,810,609,769,552,44.46,2014,839
+840,Ritsumeikan University,Japan,65,355,281,210,870,884,493,973,426,44.46,2014,840
+841,University of Sassari,Italy,45,355,478,210,740,605,800,769,737,44.46,2014,841
+842,Nanjing Normal University,China,48,355,436,210,777,699,609,849,552,44.45,2014,842
+843,University of Franche-Comté,France,42,284,478,210,832,833,609,800,637,44.45,2014,843
+844,University of Texas at El Paso,USA,220,355,391,210,897,817,609,849,737,44.45,2014,844
+845,Rio de Janeiro State University,Brazil,8,355,478,210,754,856,493,783,637,44.45,2014,845
+846,Jinan University,China,49,355,290,210,855,880,800,956,481,44.45,2014,846
+847,University of Massachusetts Boston,USA,221,355,478,210,864,704,406,783,737,44.45,2014,847
+848,University of Alcalá,Spain,32,355,478,210,738,698,800,783,637,44.45,2014,848
+849,Tehran University of Medical Sciences,Iran,3,355,478,210,603,903,800,800,737,44.45,2014,849
+850,University of the Ryukyus,Japan,66,355,478,210,887,657,609,783,552,44.45,2014,850
+851,University of Angers,France,43,355,478,210,824,805,800,783,552,44.45,2014,851
+852,Fluminense Federal University,Brazil,9,355,300,210,783,922,609,937,737,44.45,2014,852
+853,Florida Institute of Technology,USA,222,355,478,210,959,699,363,800,737,44.44,2014,853
+854,Trent University,Canada,30,355,478,210,912,829,493,783,637,44.44,2014,854
+855,National Chung Cheng University,Taiwan,14,355,478,210,760,987,800,783,737,44.44,2014,855
+856,Bilkent University,Turkey,7,355,478,210,788,782,609,783,737,44.44,2014,856
+857,National Taiwan Normal University,Taiwan,15,355,345,210,721,890,493,897,737,44.44,2014,857
+858,Saitama University,Japan,67,355,318,210,912,603,493,909,637,44.44,2014,858
+859,RMIT University,Australia,23,355,478,210,690,959,800,800,637,44.44,2014,859
+860,Hamamatsu University School of Medicine,Japan,68,355,478,210,966,901,609,783,637,44.44,2014,860
+861,University of Greifswald,Germany,50,355,478,203,741,493,800,800,637,44.44,2014,861
+862,University of Pécs,Hungary,6,355,478,210,963,834,800,832,373,44.44,2014,862
+863,University of Fukui,Japan,69,355,478,210,879,761,800,783,737,44.44,2014,863
+864,Oakland University,USA,223,355,478,210,883,842,800,783,737,44.44,2014,864
+865,Nanjing University of Technology,China,50,355,478,210,810,987,800,948,227,44.44,2014,865
+866,"University of Technology, Sydney",Australia,24,355,478,210,613,696,493,849,426,44.43,2014,866
+867,University of North Carolina at Greensboro,USA,224,355,478,210,936,849,609,800,552,44.43,2014,867
+868,"All India Institute of Medical Sciences, New Delhi",India,13,355,478,210,879,853,609,800,637,44.43,2014,868
+869,Kyoto Institute of Technology,Japan,70,355,478,210,927,831,800,874,307,44.43,2014,869
+870,Ocean University of China,China,51,355,478,210,703,824,800,832,481,44.43,2014,870
+871,Chiang Mai University,Thailand,3,355,478,210,838,706,609,800,737,44.43,2014,871
+872,University of Camerino,Italy,46,355,478,210,844,804,800,800,637,44.43,2014,872
+873,Hirosaki University,Japan,71,355,478,210,952,819,609,832,426,44.43,2014,873
+874,University of North Dakota,USA,225,355,478,210,935,647,800,832,426,44.43,2014,874
+875,University of Extremadura,Spain,33,355,478,210,729,871,800,819,637,44.42,2014,875
+876,Teikyo University,Japan,72,355,478,210,965,738,800,800,737,44.42,2014,876
+877,Jiangnan University,China,52,355,478,210,873,922,800,819,552,44.42,2014,877
+878,Adam Mickiewicz University in Poznań,Poland,5,233,478,210,665,762,800,897,481,44.42,2014,878
+879,University of Waikato,New Zealand,6,355,340,210,973,860,493,923,481,44.42,2014,879
+880,University of Veterinary Medicine Vienna,Austria,12,355,478,210,853,691,609,819,637,44.42,2014,880
+881,University of Cádiz,Spain,34,355,478,210,863,793,800,849,373,44.42,2014,881
+882,Florida Atlantic University,USA,226,355,478,210,848,701,800,819,737,44.42,2014,882
+883,Huazhong Agricultural University,China,53,355,478,210,691,570,609,849,481,44.41,2014,883
+884,Brock University,Canada,31,355,478,210,899,746,609,832,552,44.41,2014,884
+885,University of Lleida,Spain,35,355,478,210,871,888,609,832,637,44.41,2014,885
+886,Shanghai Normal University,China,54,355,458,210,974,938,800,874,737,44.41,2014,886
+887,Jean Monnet University,France,44,355,478,210,661,472,800,849,552,44.41,2014,887
+888,Shimane University,Japan,73,355,478,210,922,693,609,832,637,44.41,2014,888
+889,University of Orléans,France,45,355,478,210,743,509,609,843,637,44.41,2014,889
+890,University of Siegen,Germany,51,355,478,210,877,714,406,843,737,44.41,2014,890
+891,Makerere University,Uganda,1,355,478,210,915,708,609,832,737,44.4,2014,891
+892,"University of Wales, Trinity Saint David",United Kingdom,64,355,478,210,966,859,406,843,737,44.4,2014,892
+893,National Taiwan University of Science and Technology,Taiwan,16,355,478,210,610,974,800,849,737,44.4,2014,893
+894,University of Brasília,Brazil,10,355,450,210,785,777,800,897,737,44.4,2014,894
+895,University of Western Brittany,France,46,355,478,210,834,644,800,849,481,44.4,2014,895
+896,Nanjing Agricultural University,China,55,355,478,210,674,766,800,849,637,44.4,2014,896
+897,National University of Córdoba,Argentina,3,355,478,210,713,818,609,849,737,44.39,2014,897
+898,Federal University of Santa Catarina,Brazil,11,355,478,210,608,959,800,869,737,44.39,2014,898
+899,National Taiwan Ocean University,Taiwan,17,355,317,210,774,934,800,956,737,44.39,2014,899
+900,Gazi University,Turkey,8,355,478,210,742,952,609,849,737,44.39,2014,900
+901,National University of Colombia,Colombia,2,355,297,210,882,748,609,979,737,44.39,2014,901
+902,University of Jaén,Spain,36,355,478,210,932,864,493,874,426,44.39,2014,902
+903,Boğaziçi University,Turkey,9,355,478,210,817,820,493,849,737,44.39,2014,903
+904,Jadavpur University,India,14,355,478,210,871,987,493,849,737,44.39,2014,904
+905,Pukyong National University,South Korea,32,355,478,210,904,952,800,889,373,44.39,2014,905
+906,University of Western Sydney,Australia,25,355,478,210,693,591,609,869,737,44.39,2014,906
+907,Northeastern University (China),China,56,355,425,210,797,966,800,917,737,44.39,2014,907
+908,University of Mannheim,Germany,52,355,478,210,949,885,493,849,737,44.39,2014,908
+909,University of Osnabrück,Germany,53,355,478,210,841,628,800,849,737,44.38,2014,909
+910,Charles Darwin University,Australia,26,355,478,210,911,694,609,849,737,44.38,2014,910
+911,University of Hyderabad,India,15,355,478,210,857,938,800,849,737,44.38,2014,911
+912,Northwest University (China),China,57,355,478,210,969,751,609,849,737,44.38,2014,912
+913,University of Southern Mississippi,USA,227,355,478,210,903,840,800,849,737,44.38,2014,913
+914,University of Wrocław,Poland,6,344,478,210,732,812,800,869,737,44.38,2014,914
+915,Carlos III University of Madrid,Spain,37,355,478,210,669,959,800,948,307,44.38,2014,915
+916,Novosibirsk State University,Russia,3,147,478,210,875,910,609,994,737,44.38,2014,916
+917,Nanjing Medical University,China,58,355,478,210,672,715,800,874,737,44.38,2014,917
+918,Nicolaus Copernicus University in Toruń,Poland,7,355,478,210,879,839,493,874,552,44.38,2014,918
+919,Federal University of Santa Maria,Brazil,12,355,414,210,985,974,800,923,737,44.37,2014,919
+920,Chemnitz University of Technology,Germany,54,355,330,210,988,952,800,985,373,44.37,2014,920
+921,Southwest University,China,59,264,478,210,760,875,609,909,737,44.37,2014,921
+922,Wrocław University of Technology,Poland,8,355,443,210,771,900,800,937,737,44.37,2014,922
+923,"University of California, Merced",USA,228,355,478,210,957,576,800,923,338,44.37,2014,923
+924,United Arab Emirates University,United Arab Emirates,1,355,478,210,983,821,800,897,426,44.36,2014,924
+925,Federal University of São Carlos,Brazil,13,355,478,210,688,934,800,889,737,44.36,2014,925
+926,University of Thessaly,Greece,7,355,478,210,867,974,609,874,737,44.36,2014,926
+927,University of Basilicata,Italy,47,355,478,210,938,886,609,874,737,44.36,2014,927
+928,Feng Chia University,Taiwan,18,355,376,210,869,987,800,956,737,44.36,2014,928
+929,Federal University of Paraná,Brazil,14,355,478,210,730,787,800,889,737,44.36,2014,929
+930,University of Almería,Spain,38,355,478,210,959,966,800,874,737,44.36,2014,930
+931,Hallym University,South Korea,33,355,478,210,942,950,800,889,552,44.36,2014,931
+932,Fourth Military Medical University,China,60,355,478,210,680,747,609,909,552,44.36,2014,932
+933,University of the Republic (Uruguay),Uruguay,1,355,478,210,940,744,800,889,737,44.35,2014,933
+934,Dokuz Eylül University,Turkey,10,355,478,210,948,914,800,889,737,44.35,2014,934
+935,Nanjing University of Aeronautics and Astronautics,China,61,355,478,210,775,974,800,897,737,44.35,2014,935
+936,Public University of Navarre,Spain,39,355,478,210,959,803,800,897,552,44.35,2014,936
+937,University of A Coruña,Spain,40,355,478,210,947,899,800,917,426,44.35,2014,937
+938,Isfahan University of Technology,Iran,4,355,478,210,722,904,609,909,737,44.34,2014,938
+939,University of New England (Australia),Australia,27,355,478,210,916,552,493,909,637,44.34,2014,939
+940,Federal University of Pernambuco,Brazil,15,355,478,210,765,883,800,948,373,44.34,2014,940
+941,Jiangsu University,China,62,355,478,210,836,959,800,985,280,44.34,2014,941
+942,Third Military Medical University,China,63,355,478,210,800,844,609,923,481,44.34,2014,942
+943,South China Normal University,China,64,355,478,210,737,932,800,917,637,44.33,2014,943
+944,University of Limerick,Ireland,8,355,478,210,897,868,800,948,373,44.33,2014,944
+945,Xiangtan University,China,65,355,393,210,893,918,800,973,737,44.33,2014,945
+946,Yangzhou University,China,66,355,478,210,928,907,800,909,737,44.33,2014,946
+947,Northwestern Polytechnical University,China,67,355,417,210,628,987,800,985,737,44.33,2014,947
+948,University of Reims Champagne-Ardenne,France,47,355,478,210,977,868,609,923,481,44.33,2014,948
+949,Ibaraki University,Japan,74,355,478,210,995,439,609,917,737,44.33,2014,949
+950,Chung Shan Medical University,Taiwan,19,355,478,210,750,987,609,923,737,44.32,2014,950
+951,Alexandria University,Egypt,2,254,478,210,963,950,800,956,737,44.32,2014,951
+952,Yuan Ze University,Taiwan,20,355,478,210,894,974,800,917,737,44.32,2014,952
+953,University of Cyprus,Cyprus,1,355,478,210,802,887,609,923,737,44.32,2014,953
+954,University of Silesia,Poland,9,355,478,210,815,843,609,923,737,44.32,2014,954
+955,Southern Medical University,China,68,355,478,210,873,737,800,923,637,44.32,2014,955
+956,Shiraz University,Iran,5,355,478,210,860,952,609,923,737,44.32,2014,956
+957,University of Bucharest,Romania,1,321,478,210,837,776,609,937,737,44.32,2014,957
+958,Mansoura University,Egypt,3,355,478,210,978,974,609,923,737,44.31,2014,958
+959,Amirkabir University of Technology,Iran,6,355,478,210,769,952,609,937,737,44.31,2014,959
+960,Beijing Jiaotong University,China,69,355,478,210,971,987,800,997,280,44.31,2014,960
+961,University of Valenciennes and Hainaut-Cambresis,France,48,355,478,210,840,938,493,937,737,44.31,2014,961
+962,University of the Algarve,Portugal,7,355,478,210,951,826,800,923,737,44.31,2014,962
+963,"University of Chemistry and Technology, Prague",Czech Republic,5,355,478,210,994,871,800,923,737,44.31,2014,963
+964,Federal University of Ceará,Brazil,16,355,478,210,826,806,800,937,737,44.31,2014,964
+965,Ain Shams University,Egypt,4,355,478,210,891,848,609,937,737,44.31,2014,965
+966,University of Oldenburg,Germany,55,355,478,210,849,831,800,937,737,44.31,2014,966
+967,Federal University of Bahia,Brazil,17,355,478,210,981,856,609,937,737,44.31,2014,967
+968,Hunan Normal University,China,70,355,478,210,923,915,800,937,737,44.3,2014,968
+969,Western Michigan University,USA,229,355,478,210,962,815,800,937,737,44.3,2014,969
+970,University of Seoul,South Korea,34,355,478,210,997,938,609,948,552,44.3,2014,970
+971,Federico Santa María Technical University,Chile,4,355,478,210,984,938,493,966,481,44.3,2014,971
+972,Ryerson University,Canada,32,355,478,210,813,966,609,956,637,44.3,2014,972
+973,South China Agricultural University,China,71,355,478,210,946,830,800,948,737,44.3,2014,973
+974,Fu Jen Catholic University,Taiwan,21,355,478,210,978,891,800,948,737,44.3,2014,974
+975,China Pharmaceutical University,China,72,355,478,210,919,987,800,956,552,44.3,2014,975
+976,Tarbiat Modares University,Iran,7,355,478,210,811,987,800,956,737,44.29,2014,976
+977,University of Puerto Rico at Mayagüez,Puerto Rico,1,355,478,210,999,778,609,956,737,44.29,2014,977
+978,National University of Rosario,Argentina,4,355,478,210,976,811,800,956,737,44.29,2014,978
+979,University of Pau and Pays de l'Adour,France,49,355,478,210,988,987,800,956,737,44.29,2014,979
+980,Xidian University,China,73,355,478,210,888,974,800,985,373,44.29,2014,980
+981,Zhejiang University of Technology,China,74,355,478,210,917,987,800,966,637,44.28,2014,981
+982,China Medical University (PRC),China,75,355,478,210,849,709,800,966,737,44.28,2014,982
+983,Federal University of ABC,Brazil,18,355,478,210,952,904,609,966,737,44.28,2014,983
+984,King Juan Carlos University,Spain,41,355,478,210,859,836,800,970,737,44.27,2014,984
+985,Beijing University of Technology,China,76,355,478,210,809,938,609,973,637,44.27,2014,985
+986,Guangxi University,China,77,313,478,210,919,974,800,979,637,44.27,2014,986
+987,Northwest A&F University,China,78,355,478,210,787,894,800,973,737,44.27,2014,987
+988,Shanxi University,China,79,355,478,210,885,907,800,973,737,44.26,2014,988
+989,Tamkang University,Taiwan,22,355,478,210,929,974,800,973,737,44.26,2014,989
+990,Harbin Medical University,China,80,355,478,210,900,862,800,979,737,44.26,2014,990
+991,Zhejiang Normal University,China,81,355,478,210,905,932,800,979,737,44.26,2014,991
+992,King Abdulaziz University,Saudi Arabia,4,355,470,210,843,688,609,998,637,44.26,2014,992
+993,Iran University of Science and Technology,Iran,8,355,478,210,822,987,493,989,737,44.25,2014,993
+994,I-Shou University,Taiwan,23,355,478,210,878,987,800,989,737,44.24,2014,994
+995,University of Maine (Le Mans),France,50,355,478,210,990,918,800,989,637,44.24,2014,995
+996,National Dong Hwa University,Taiwan,24,355,478,210,901,934,800,989,737,44.24,2014,996
+997,National Taipei University of Technology,Taiwan,25,355,478,210,867,987,800,994,737,44.24,2014,997
+998,Shaanxi Normal University,China,82,355,478,210,956,965,800,994,737,44.23,2014,998
+999,National University of Defense Technology,China,83,355,478,210,860,973,800,999,637,44.21,2014,999
+1000,Yanbian University,China,84,355,478,210,890,790,800,1000,737,44.18,2014,1000

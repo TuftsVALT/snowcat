@@ -1,0 +1,131 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q126829"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Richland County"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P571"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "inception"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "date or point in time when the subject came into existence as defined"
+    },
+    "count": 19,
+    "exampleLit": {
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "type": "literal",
+      "value": "1873-01-01T00:00:00Z"
+    },
+    "valType": {
+      "type": "uri",
+      "value": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "dataType": "datetime",
+    "valueType": "join-string",
+    "uri": "http://www.wikidata.org/prop/direct/P571",
+    "name": "inception",
+    "description": "date or point in time when the subject came into existence as defined",
+    "examples": [
+      "1873-01-01T00:00:00Z",
+      "1852-01-01T00:00:00Z",
+      "1851-01-01T00:00:00Z"
+    ],
+    "parentEntityExample": "Richland County",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q126829",
+    "percentJoinable": 1,
+    "summaryStats": {
+      "max": "1909-01-01T00:00:00.000Z",
+      "min": "1730-12-31T23:56:02.000Z",
+      "mean": "1848-03-20T01:12:26.948Z",
+      "mode": "1851-12-31T23:56:02.000Z",
+      "firstQuartileEnd": "1835-12-31T23:56:02.000Z",
+      "median": "1851-12-31T23:56:02.000Z",
+      "thirdQuartileEnd": "1872-12-31T23:56:02.000Z",
+      "variance": null
+    },
+    "histogramBins": [
+      {
+        "min": "1730-12-31T23:56:02.000Z",
+        "max": "1748-10-19T07:08:25.800Z",
+        "count": 1
+      },
+      {
+        "min": "1748-10-19T07:08:25.800Z",
+        "max": "1766-08-07T14:20:49.600Z",
+        "count": 0
+      },
+      {
+        "min": "1766-08-07T14:20:49.600Z",
+        "max": "1784-05-25T21:33:13.400Z",
+        "count": 0
+      },
+      {
+        "min": "1784-05-25T21:33:13.400Z",
+        "max": "1802-03-15T04:45:37.200Z",
+        "count": 1
+      },
+      {
+        "min": "1802-03-15T04:45:37.200Z",
+        "max": "1820-01-01T11:58:01.000Z",
+        "count": 1
+      },
+      {
+        "min": "1820-01-01T11:58:01.000Z",
+        "max": "1837-10-19T19:10:24.800Z",
+        "count": 3
+      },
+      {
+        "min": "1837-10-19T19:10:24.800Z",
+        "max": "1855-08-08T02:22:48.600Z",
+        "count": 6
+      },
+      {
+        "min": "1855-08-08T02:22:48.600Z",
+        "max": "1873-05-26T09:35:12.400Z",
+        "count": 3
+      },
+      {
+        "min": "1873-05-26T09:35:12.400Z",
+        "max": "1891-03-14T16:47:36.200Z",
+        "count": 1
+      },
+      {
+        "min": "1891-03-14T16:47:36.200Z",
+        "max": null,
+        "count": 3
+      }
+    ],
+    "sampleData": [
+      -3755289838000,
+      -3723753838000,
+      -3060979438000,
+      -2019686400000,
+      -3345062638000,
+      -3792528238000,
+      -4228675438000,
+      -3692995438000,
+      -3313440238000,
+      -4351968238000,
+      -2997907438000,
+      -7542115438000,
+      -2303596800000,
+      -5711731438000,
+      -1924992000000,
+      -4133981038000,
+      -5170262638000,
+      -4227206638000,
+      -3723753838000
+    ]
+  }

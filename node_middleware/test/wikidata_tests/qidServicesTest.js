@@ -18,7 +18,7 @@ describe ('#singleGetRelatedAttributes', async function() {
     });
     it('should return "P1082" as the uri for "population"', async function() {
         const results = await singleGetRelatedAttributes('Q183');
-        results.map((r) => r['p']['value']).should.include('http://www.wikidata.org/prop/direct/P1082'); // Germany: https://www.wikidata.org/wiki/Q183
+        results.map((r) => r['wdt']['value']).should.include('http://www.wikidata.org/prop/direct/P1082'); // Germany: https://www.wikidata.org/wiki/Q183
     });
     
     it('should return "director" as one of the related attributes for "Pulp Fiction"', async function() {
@@ -44,7 +44,7 @@ describe ('#convertColumnToQIDs', async function() {
             { 'Player': 'Hank Aaron' }
         ]
 
-        const results = await convertColumnToQIDs(rawData, 'Player', '');
+        const results = await convertColumnToQIDs(rawData, 'Player', 10, false);
         results.should.include('Q215777');
     })
 
@@ -54,7 +54,7 @@ describe ('#convertColumnToQIDs', async function() {
             { 'Player': 'asdkf2oi4h0vh9042h04ehf0ehgv0bn024hnvg24q0ehg04evg0e2q9vnheq0vnh4eq09gv9evhnqievg42gh084ehvf80wdrvhg240h029' }
         ]
 
-        const results = await convertColumnToQIDs(rawData, 'Player', '');
+        const results = await convertColumnToQIDs(rawData, 'Player', 10, false);
         results.length.should.eq(2);
     })
 })
@@ -84,6 +84,7 @@ describe ('#joinAttributes', async function() {
     it ('should include attribute URIs to the returned hash', async function() {
         const results = await singleGetRelatedAttributes('Q183');
         const joinedResults = await joinAttributes([results], -1);
+        // console.log("joinedResults.map((r) => r['uri']) is ", joinedResults.map((r) => r['uri']))
         joinedResults.map((r) => r['uri']).should.include('http://www.wikidata.org/prop/direct/P1082'); // Germany: https://www.wikidata.org/wiki/Q183
     })
 })

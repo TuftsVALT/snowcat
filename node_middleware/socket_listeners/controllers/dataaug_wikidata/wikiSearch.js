@@ -1,6 +1,7 @@
 // Author: Cong Liu
 
-const rp = require("request-promise-native");
+// const rp = require("request-promise-native");
+const rp = require("request-promise");
 const apiHost = "www.wikidata.org";
 const apiPath = "/w/api.php";
 const searchAction = "wbsearchentities";
@@ -19,8 +20,9 @@ function wikiSearch(keyWord) {
     method: "GET",
     json: true
   };
-
-  let res = rp(requestOptions)
+  // console.log("got to this point of wikisearch, before the request has gone out")
+  // let res = rp(requestOptions)
+  return rp(requestOptions)
     .then(function(response) {
       let results = response["search"];
       let id = "";
@@ -35,12 +37,15 @@ function wikiSearch(keyWord) {
     //       break;
     //     }
     //   }
-      // console.log("results are ", results)
+      // console.log("results[0] are ", results[0])
       // id = results[0] && results[0]['id']
       // return id
       return results;
+    })
+    .catch(function (err) {
+      console.log("wikisearch got an error, err was ", err)
     });
-    return res;
+    // return res;
 }
 
 module.exports = wikiSearch;

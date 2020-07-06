@@ -1,7 +1,12 @@
-import phases from '@/store/settings/phases'
-import layouts from '@/store/settings/layouts'
+// import phases from '@/store/settings/full_eval/phases'
+// import layouts from '@/store/settings/full_eval/layouts'
+// import style from '@/store/settings/full_eval/style'
+import phases from '@/store/settings/data_aug/phases'
+import layouts from '@/store/settings/data_aug/layouts'
+import style from '@/store/settings/data_aug/style'
 import cardComponents from '@/store/settings/cardComponents'
 import _ from 'lodash'
+import Vue from "vue";
 
 let defaultWorkspaces = {}
 
@@ -15,11 +20,13 @@ const state = {
   phases,
   layouts,
   cardComponents,
+  style,
   workspaces: _.cloneDeep(defaultWorkspaces),
   currentWorkspace: 0,
   currentPhase: 1,
   highlightedCards: [],
   task_number: 1,
+  experimentLoaded: true,
 }
 
 // getters
@@ -28,6 +35,9 @@ const getters = {
 
 // actions
 const actions = {
+  socket_experimentLoaded(context) {
+    context.commit("EXPERIMENT_LOADED");
+  }
 }
 
 // mutations
@@ -35,9 +45,19 @@ const mutations = {
   SET_TASK_NUMBER (state, number) {
     state.task_number = number;
   },
+  EXPERIMENT_LOADED (state) {
+    state.experimentLoaded = true;
+  },
   INCREMENT_CURRENT_PHASE (state) {
     state.currentPhase += 1
     state.currentWorkspace = state.phases[state.currentPhase - 1].workspace
+    state.experimentLoaded = false;
+    let v = new Vue();
+    v.$socket.emit("vast20ExpNextTask");
+    v.$socket.emit("dataaugIncrementTask");
+    // setTimeout(() => {
+    //   state.experimentLoaded = true;
+    // }, 500)
   },
   SET_CURRENT_PHASE (state, value) {
     state.currentPhase = value

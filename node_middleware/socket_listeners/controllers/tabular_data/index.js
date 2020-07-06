@@ -63,6 +63,7 @@ module.exports.set = function(session, socket) {
     let dataset = session.getCurrentDataset();
     let datasetSchema = dataset.getDatasetSchema();
     let dataFile = dataset.getLearningDataFile();
+    // console.log("datasetSchema is ", datasetSchema, " in tabulardata")
     // TODO: Handle if there are multiple tables.  Right now we assume one table
     for (var i = 0; i < datasetSchema.dataResources.length; i++) {
       var dataResource = datasetSchema.dataResources[i];

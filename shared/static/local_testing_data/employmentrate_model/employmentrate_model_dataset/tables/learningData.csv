@@ -1,0 +1,1201 @@
+d3mIndex,Month,State,County,Rate
+0,September,Missouri,Montgomery County,4.2
+1,February,New York,Ontario County,6
+2,November,Virginia,Winchester City,3.8
+3,June,Colorado,Washington County,2.8
+4,April,Kansas,Harper County,4.7
+5,May,Texas,Terry County,4.7
+6,May,Kansas,Russell County,3.8
+7,November,West Virginia,Tucker County,5.7
+8,January,California,Humboldt County,6.7
+9,September,Minnesota,Chisago County,3.4
+10,March,Indiana,Steuben County,4.5
+11,February,Missouri,Cape Girardeau County,4.8
+12,July,Michigan,Cass County,5.8
+13,September,Illinois,Clinton County,4.2
+14,December,New York,Greene County,5.4
+15,July,Ohio,Montgomery County,5.1
+16,December,Oklahoma,Grant County,2.8
+17,October,Missouri,Macon County,4
+18,November,Kansas,Mitchell County,2.5
+19,June,Montana,Carbon County,3.5
+20,March,North Carolina,Davie County,4.8
+21,February,Virginia,Franklin City,7.3
+22,September,Indiana,Martin County,3.6
+23,March,Tennessee,White County,6.7
+24,October,Minnesota,Stevens County,2
+25,September,Texas,Lampasas County,4.3
+26,February,Louisiana,Jefferson Parish,6
+27,December,South Dakota,Meade County,3.2
+28,November,California,Lassen County,6.9
+29,May,Missouri,Gentry County,4.4
+30,February,Mississippi,Webster County,7
+31,November,Ohio,Lucas County,4.9
+32,January,Missouri,Ralls County,5.1
+33,July,Louisiana,Caddo Parish,7.5
+34,August,Indiana,Carroll County,4.1
+35,March,Kansas,Ellis County,3.3
+36,May,Kentucky,Marion County,5.1
+37,October,New York,New York County,4.4
+38,November,Illinois,Jo Daviess County,6
+39,May,Iowa,Floyd County,3.4
+40,July,Arkansas,Randolph County,7.5
+41,October,Alabama,Randolph County,5.3
+42,November,Kansas,Sedgwick County,4.1
+43,April,Alabama,Pike County,5.7
+44,January,Minnesota,Isanti County,5.9
+45,June,West Virginia,Summers County,6.9
+46,February,Illinois,Whiteside County,6.6
+47,December,Minnesota,Kanabec County,8.1
+48,December,Arkansas,Sebastian County,4.6
+49,July,Texas,Kerr County,4
+50,December,Mississippi,Panola County,9
+51,January,North Carolina,Davidson County,5.7
+52,December,New York,Dutchess County,4
+53,October,Virginia,Fairfax County,3.3
+54,April,Colorado,Baca County,2.3
+55,January,Ohio,Greene County,5.4
+56,December,Maryland,Carroll County,3.6
+57,April,Kentucky,Russell County,10.5
+58,July,Oklahoma,Oklahoma County,3.9
+59,April,Missouri,Ripley County,8.1
+60,October,Virginia,Gloucester County,3.7
+61,May,Tennessee,Wilson County,4.8
+62,September,Texas,Val Verde County,6.1
+63,July,Colorado,El Paso County,4.7
+64,February,Texas,Knox County,3.3
+65,April,Illinois,Warren County,4.3
+66,May,Oklahoma,Logan County,3.9
+67,April,Nevada,Nye County,8.9
+68,May,Kentucky,Jessamine County,4.4
+69,May,Virginia,King George County,4.9
+70,February,Minnesota,Yellow Medicine County,5.2
+71,October,Tennessee,Cannon County,5.3
+72,February,Utah,Kane County,6.7
+73,February,North Dakota,Nelson County,5.4
+74,July,North Carolina,Clay County,6.7
+75,March,Utah,Uintah County,6.3
+76,April,Virginia,Halifax County,6.1
+77,March,New Mexico,Chaves County,6.2
+78,May,Kentucky,Bracken County,6.2
+79,February,Texas,Williamson County,3.6
+80,September,Iowa,Henry County,3.6
+81,February,Mississippi,Itawamba County,5.8
+82,April,Texas,Archer County,4.1
+83,March,Maryland,Frederick County,4.7
+84,October,Arizona,Apache County,12.4
+85,June,Indiana,Johnson County,4.1
+86,October,Minnesota,Red Lake County,3.6
+87,October,Missouri,McDonald County,3.6
+88,December,Vermont,Addison County,3.2
+89,November,Wisconsin,Florence County,6.8
+90,August,Arkansas,Yell County,5.2
+91,November,Nebraska,Logan County,3.5
+92,October,Kansas,Stanton County,2.5
+93,December,Minnesota,Lyon County,3.6
+94,October,Arkansas,Poinsett County,4.6
+95,October,Washington,Yakima County,6.2
+96,December,Ohio,Athens County,5.7
+97,April,Iowa,Pocahontas County,2.8
+98,November,Texas,Uvalde County,5.3
+99,June,Iowa,Bremer County,3.6
+100,February,Nebraska,Deuel County,2.7
+101,June,Texas,Polk County,6.4
+102,October,Tennessee,Wilson County,4.4
+103,August,Indiana,Porter County,5.1
+104,December,Virginia,Warren County,4.2
+105,July,Indiana,Boone County,3.6
+106,May,Missouri,Greene County,4.5
+107,January,Alabama,Elmore County,5.4
+108,May,North Dakota,Sargent County,1.5
+109,February,Nebraska,Box Butte County,2.9
+110,July,Pennsylvania,Lebanon County,5
+111,August,North Dakota,Griggs County,1.7
+112,November,Arkansas,Polk County,4.9
+113,October,Iowa,Clayton County,2.9
+114,August,North Carolina,Columbus County,7.8
+115,May,Illinois,Christian County,6
+116,March,Nebraska,Gosper County,2.7
+117,October,Texas,Clay County,4.6
+118,May,Ohio,Tuscarawas County,5.1
+119,May,Mississippi,Pike County,7.6
+120,February,Texas,Roberts County,4
+121,January,North Carolina,Nash County,7.5
+122,May,Idaho,Canyon County,4.5
+123,November,New York,Cattaraugus County,5.5
+124,June,California,Amador County,6.3
+125,September,Missouri,Worth County,2.6
+126,November,Iowa,Dubuque County,2.9
+127,March,Texas,Sterling County,3.4
+128,August,Tennessee,McNairy County,8.2
+129,October,Utah,Grand County,3.6
+130,July,Texas,Brooks County,11.5
+131,April,Illinois,Schuyler County,5
+132,January,Kentucky,Fayette County,4.3
+133,September,North Carolina,Randolph County,5.3
+134,February,Texas,Castro County,3.7
+135,February,Wyoming,Natrona County,4.2
+136,October,New York,Kings County,5.3
+137,January,Virginia,Covington City,8.3
+138,April,West Virginia,Lewis County,8.7
+139,April,Texas,Refugio County,5.2
+140,August,Missouri,Butler County,6.1
+141,April,Texas,Williamson County,3.1
+142,September,Kentucky,Jessamine County,4
+143,March,Wisconsin,La Crosse County,4.3
+144,May,Hawaii,Hawaii County,4.4
+145,December,North Carolina,Polk County,4.9
+146,December,New York,Cayuga County,5.2
+147,December,New Jersey,Sussex County,4
+148,April,Wisconsin,Richland County,4.2
+149,July,Kansas,Hodgeman County,3.6
+150,July,Louisiana,Saint Helena Parish,9.3
+151,June,South Dakota,Custer County,3.5
+152,May,Texas,Concho County,2.9
+153,April,South Dakota,Ziebach County,4.9
+154,October,Pennsylvania,Butler County,3.8
+155,March,Texas,Lynn County,4
+156,February,Virginia,Augusta County,4.7
+157,March,South Carolina,Saluda County,5.3
+158,December,Alabama,Dallas County,9
+159,June,Minnesota,Mahnomen County,5.8
+160,May,Kansas,Haskell County,2.8
+161,October,Pennsylvania,Franklin County,4.3
+162,February,Pennsylvania,Schuylkill County,6.9
+163,February,New Mexico,Hidalgo County,6.7
+164,February,Louisiana,Sabine Parish,7.2
+165,January,Virginia,Botetourt County,4.8
+166,November,Virginia,King William County,3.6
+167,February,Virginia,Hanover County,4.3
+168,November,Texas,Houston County,4.7
+169,February,Nevada,Humboldt County,6.1
+170,September,Tennessee,Bradley County,5.2
+171,April,Pennsylvania,Dauphin County,4.3
+172,October,Kentucky,Adair County,6.4
+173,October,Minnesota,Kittson County,3
+174,September,Kentucky,Butler County,5.2
+175,April,Kentucky,Oldham County,3.6
+176,April,West Virginia,Gilmer County,8.2
+177,September,Minnesota,Marshall County,4.2
+178,March,North Carolina,Hoke County,8.1
+179,April,Hawaii,Kauai County,4.2
+180,September,New Hampshire,Belknap County,2.8
+181,October,Missouri,Howard County,3.6
+182,December,Alabama,Hale County,7.8
+183,February,West Virginia,Hampshire County,7.5
+184,September,Idaho,Lemhi County,5.3
+185,February,Ohio,Delaware County,3.7
+186,April,Illinois,Edgar County,5.1
+187,October,North Carolina,Pamlico County,5.8
+188,August,Virginia,Isle of Wight County,4.5
+189,July,New York,Schuyler County,5.9
+190,February,Virginia,Middlesex County,5.4
+191,July,Arkansas,Independence County,6.9
+192,March,North Carolina,Richmond County,7.6
+193,December,Arizona,Yuma County,17.6
+194,July,North Carolina,Cabarrus County,5.7
+195,October,Indiana,Shelby County,3.9
+196,November,Texas,Presidio County,10.6
+197,December,Virginia,Bland County,4.8
+198,September,Texas,Ward County,4.7
+199,September,Nevada,Humboldt County,5.8
+200,February,Virginia,Northumberland County,8.9
+201,August,North Dakota,Dunn County,2.2
+202,June,Montana,Cascade County,3.9
+203,April,Maryland,Kent County,5.1
+204,April,Kentucky,Clinton County,7
+205,January,Texas,Fort Bend County,4.2
+206,August,Oklahoma,Carter County,4.4
+207,September,Missouri,Gentry County,3.6
+208,April,Montana,Sheridan County,2
+209,April,Mississippi,Holmes County,10.7
+210,February,Rhode Island,Bristol County,6.2
+211,June,Idaho,Clearwater County,6.9
+212,March,Kansas,Ness County,3.5
+213,April,Iowa,Washington County,3
+214,April,Nebraska,Thomas County,3.5
+215,September,Texas,Brooks County,11.5
+216,January,Wisconsin,Polk County,6.4
+217,May,New York,Onondaga County,5.1
+218,January,Washington,Chelan County,7.5
+219,April,Missouri,Lewis County,5.1
+220,January,Texas,Llano County,4.8
+221,June,Texas,Yoakum County,4.1
+222,August,Nebraska,Antelope County,2.3
+223,July,Ohio,Trumbull County,6.3
+224,October,Texas,King County,2.8
+225,October,North Carolina,Forsyth County,5.3
+226,January,Iowa,Wapello County,5.6
+227,February,Illinois,Marshall County,7.1
+228,May,Minnesota,Wadena County,5.2
+229,April,Alabama,Escambia County,6
+230,February,Pennsylvania,Greene County,5.5
+231,December,Nebraska,Richardson County,2.9
+232,January,Oklahoma,Tillman County,4.3
+233,April,Virginia,Lancaster County,7.2
+234,March,Louisiana,Assumption Parish,7.9
+235,December,Alabama,Elmore County,4.9
+236,March,Indiana,Clay County,5.9
+237,September,Minnesota,Lincoln County,2.2
+238,April,Missouri,Montgomery County,5.3
+239,November,New Jersey,Mercer County,3.8
+240,July,Missouri,Dade County,6
+241,March,Missouri,Barry County,5.7
+242,March,Tennessee,Cumberland County,7.7
+243,April,South Dakota,Jackson County,4.8
+244,March,Ohio,Trumbull County,6.9
+245,December,West Virginia,Wirt County,9.3
+246,September,Pennsylvania,Cambria County,5.4
+247,November,South Carolina,Pickens County,5.1
+248,September,Texas,McCulloch County,5.6
+249,June,Texas,Brewster County,4.4
+250,June,Iowa,Howard County,3
+251,September,Kentucky,Warren County,4
+252,August,Illinois,Kane County,5.6
+253,November,Kansas,Harper County,3.4
+254,March,South Carolina,Dillon County,8.6
+255,March,Tennessee,McNairy County,9.3
+256,June,Wyoming,Park County,3.6
+257,May,Pennsylvania,Union County,4.6
+258,April,Texas,McMullen County,1.8
+259,November,New York,Sullivan County,5
+260,May,Illinois,Massac County,6.9
+261,February,New York,Broome County,7.1
+262,September,Indiana,Hamilton County,2.9
+263,July,Oklahoma,Blaine County,3.7
+264,January,Missouri,Pemiscot County,8.8
+265,March,Nevada,Esmeralda County,4.1
+266,July,Pennsylvania,Philadelphia County,7.8
+267,December,Arkansas,Boone County,4.4
+268,March,Texas,Chambers County,4.9
+269,July,Kentucky,Lee County,8.7
+270,May,North Carolina,Gaston County,6.3
+271,June,Utah,Sanpete County,4.6
+272,January,Indiana,Clinton County,5.1
+273,December,Alabama,Jefferson County,5.6
+274,November,Missouri,Howell County,5.3
+275,June,Iowa,Marshall County,4.4
+276,July,Illinois,Jasper County,6.3
+277,April,California,Plumas County,10.9
+278,October,Utah,Utah County,2.9
+279,November,Montana,Mineral County,9.2
+280,September,North Carolina,Nash County,7
+281,June,Texas,Palo Pinto County,5.5
+282,July,North Dakota,Logan County,2.3
+283,May,Tennessee,Monroe County,6.3
+284,May,Missouri,Madison County,6.8
+285,May,Minnesota,Brown County,4.1
+286,March,Idaho,Minidoka County,4
+287,February,Kansas,Wallace County,2.8
+288,November,New Mexico,Lincoln County,5.9
+289,April,Texas,Nueces County,4.4
+290,May,Iowa,Mitchell County,2.7
+291,March,Texas,Montgomery County,3.9
+292,January,Tennessee,Marshall County,6.2
+293,September,Massachusetts,Plymouth County,5.1
+294,March,Minnesota,Wilkin County,4.1
+295,January,Wyoming,Sweetwater County,4.3
+296,September,Virginia,Prince William County,3.8
+297,September,Idaho,Camas County,3
+298,December,Indiana,Fountain County,6.3
+299,July,Ohio,Guernsey County,5.9
+300,December,Oklahoma,Jefferson County,6.3
+301,June,Texas,Freestone County,5.8
+302,August,Arizona,Graham County,7.7
+303,July,Mississippi,Yazoo County,9.4
+304,May,Virginia,James City County,4.4
+305,September,Arkansas,Carroll County,3.6
+306,July,Texas,Hunt County,5
+307,February,Iowa,Warren County,4.3
+308,May,Oregon,Benton County,4
+309,June,West Virginia,Upshur County,8.9
+310,September,Colorado,Prowers County,3.7
+311,October,Kentucky,Anderson County,3.7
+312,July,Missouri,Shannon County,8.1
+313,August,Washington,Thurston County,5.7
+314,February,Wisconsin,Racine County,6.6
+315,January,Virginia,York County,5
+316,June,Arkansas,Hempstead County,5.2
+317,April,Virginia,Washington County,4.5
+318,January,Pennsylvania,Schuylkill County,7.3
+319,November,Alabama,Lowndes County,10.8
+320,December,Kentucky,Powell County,7.9
+321,December,Texas,Matagorda County,7.2
+322,January,North Carolina,Robeson County,9
+323,November,North Carolina,Craven County,5.8
+324,March,Washington,Lewis County,8.8
+325,May,Ohio,Allen County,4.8
+326,January,Illinois,Pike County,6
+327,June,North Carolina,Cleveland County,6.9
+328,October,South Dakota,Mellette County,4.1
+329,August,Utah,Emery County,6.5
+330,September,Virginia,New Kent County,3.6
+331,November,Utah,Rich County,3.6
+332,June,Missouri,Bollinger County,5.7
+333,August,Alabama,Colbert County,8.2
+334,November,Colorado,Conejos County,4.8
+335,April,Texas,Coleman County,5
+336,September,Virginia,Giles County,4.6
+337,March,Nevada,Eureka County,5.4
+338,December,North Carolina,Haywood County,4.7
+339,September,Pennsylvania,Bucks County,4.1
+340,May,Kentucky,Lee County,7.6
+341,April,Indiana,Marion County,4.9
+342,September,Virginia,Highland County,3.3
+343,October,Alabama,Covington County,6.4
+344,January,Idaho,Twin Falls County,4.6
+345,September,Indiana,Randolph County,3.9
+346,November,North Carolina,Cleveland County,6.1
+347,August,Oklahoma,Mayes County,4.2
+348,November,Montana,Musselshell County,4.7
+349,January,Texas,Colorado County,4
+350,January,Louisiana,Allen Parish,8.5
+351,February,Arizona,Graham County,7.7
+352,August,Missouri,Chariton County,4.8
+353,March,Minnesota,Morrison County,7.3
+354,June,Illinois,Hamilton County,4.8
+355,August,Mississippi,Leflore County,10.3
+356,March,Oklahoma,McIntosh County,8.6
+357,June,Virginia,Martinsville City,9.1
+358,November,Ohio,Clark County,4.9
+359,February,Virginia,Bath County,5.6
+360,April,Louisiana,Plaquemines Parish,5.5
+361,November,Iowa,Winnebago County,3.3
+362,June,New York,Otsego County,5.1
+363,October,Texas,McLennan County,4
+364,April,Texas,Comal County,3.4
+365,February,Maryland,Saint Marys County,5.2
+366,March,Texas,Brazos County,3.1
+367,May,Virginia,Mecklenburg County,6.2
+368,June,West Virginia,Gilmer County,7.6
+369,October,South Carolina,Allendale County,10.1
+370,August,Iowa,Adams County,2.6
+371,October,Nebraska,Cherry County,2.3
+372,December,New Hampshire,Cheshire County,2.7
+373,July,Ohio,Fairfield County,4.4
+374,May,Texas,Hemphill County,3.4
+375,August,Virginia,Charlotte County,5.6
+376,February,Kentucky,Letcher County,10.9
+377,May,Indiana,Vanderburgh County,4.3
+378,February,Pennsylvania,Mifflin County,6.8
+379,March,Minnesota,Houston County,5
+380,July,South Carolina,McCormick County,6.8
+381,August,Arkansas,Pope County,5.5
+382,June,Iowa,Mitchell County,3
+383,April,South Carolina,Greenville County,4.9
+384,March,Virginia,Albemarle County,4
+385,September,Kentucky,Wayne County,6.7
+386,April,Louisiana,Vernon Parish,7.5
+387,September,Alabama,Macon County,7.7
+388,April,North Carolina,Currituck County,5.4
+389,October,Kentucky,Knott County,9.5
+390,February,Oklahoma,Grady County,4.1
+391,April,Colorado,Las Animas County,5.6
+392,August,Arkansas,Prairie County,4.4
+393,July,Texas,Coryell County,5.1
+394,August,North Carolina,Onslow County,6.2
+395,March,South Carolina,Laurens County,6.7
+396,November,Indiana,Hancock County,4
+397,March,Wisconsin,Bayfield County,10.7
+398,January,Oklahoma,Muskogee County,5.5
+399,July,Mississippi,Covington County,6.5
+400,August,Kansas,Kearny County,3.4
+401,October,North Dakota,McLean County,2.2
+402,March,Texas,Comanche County,4.5
+403,July,Arizona,Greenlee County,7.9
+404,February,Wisconsin,Richland County,5.4
+405,November,Arkansas,Clark County,4.4
+406,March,Montana,Jefferson County,4.6
+407,May,Virginia,Augusta County,4.2
+408,April,Minnesota,Wright County,3.6
+409,February,Colorado,Summit County,2.7
+410,November,Maryland,Garrett County,6
+411,February,Colorado,Garfield County,5.1
+412,April,Illinois,Lee County,4.7
+413,January,Iowa,Webster County,5.3
+414,November,Texas,Tyler County,7.4
+415,May,California,Alpine County,9.2
+416,June,Nebraska,Frontier County,2.5
+417,August,Washington,Lincoln County,5
+418,February,Pennsylvania,Clearfield County,7.7
+419,March,South Carolina,Sumter County,6.7
+420,August,Oklahoma,Woodward County,5
+421,July,Kansas,Pratt County,4.7
+422,June,Arkansas,Jefferson County,7.7
+423,April,Texas,Navarro County,3.9
+424,May,Kansas,Harvey County,4
+425,March,Montana,Teton County,4.4
+426,December,South Carolina,Chesterfield County,5.5
+427,January,Virginia,Greensville County,6.2
+428,May,Kentucky,Oldham County,4
+429,December,Mississippi,Oktibbeha County,6.7
+430,March,Nebraska,Holt County,2.6
+431,November,Ohio,Ross County,5
+432,July,Mississippi,Marion County,8
+433,August,Oklahoma,Harmon County,2.8
+434,April,Illinois,Union County,6.6
+435,May,New Mexico,Otero County,6.2
+436,January,Texas,Uvalde County,5.2
+437,September,Tennessee,Humphreys County,6.6
+438,June,Pennsylvania,Monroe County,6.5
+439,May,Tennessee,Gibson County,7.7
+440,October,Minnesota,Big Stone County,3
+441,September,Virginia,Wythe County,5
+442,October,Arkansas,Scott County,4.2
+443,November,North Dakota,Burke County,3.2
+444,August,Texas,Cooke County,4
+445,February,Illinois,Jersey County,6.8
+446,March,Mississippi,Clay County,9.4
+447,March,Texas,Gray County,4.6
+448,February,Minnesota,Lincoln County,5.8
+449,September,Kansas,Coffey County,5.7
+450,May,Montana,Lewis and Clark County,2.9
+451,June,Oklahoma,Delaware County,5.2
+452,April,Illinois,Saline County,6.5
+453,January,Iowa,Black Hawk County,5.5
+454,April,New York,Oneida County,5.5
+455,March,Mississippi,Clarke County,7.6
+456,April,Montana,Toole County,2.9
+457,September,South Dakota,Jackson County,3.3
+458,June,Virginia,Gloucester County,4.1
+459,December,Minnesota,Norman County,5.1
+460,December,Oregon,Morrow County,6.1
+461,June,Missouri,New Madrid County,6.6
+462,October,Montana,Richland County,3.1
+463,September,Indiana,Jasper County,4.9
+464,June,West Virginia,Wyoming County,10.4
+465,March,Arkansas,Miller County,5.5
+466,July,South Carolina,Orangeburg County,12.3
+467,March,Colorado,Arapahoe County,4.4
+468,October,Missouri,Daviess County,3.1
+469,August,Texas,Haskell County,3.5
+470,March,Oregon,Wasco County,6.7
+471,August,South Carolina,Barnwell County,9.1
+472,April,Wisconsin,Brown County,4
+473,February,Nebraska,Loup County,3.1
+474,May,Virginia,Culpeper County,4.5
+475,October,New Mexico,Debaca County,5.1
+476,June,Texas,Kerr County,4
+477,December,Virginia,Portsmouth City,5.8
+478,February,Minnesota,Meeker County,5.9
+479,April,Washington,Yakima County,7.7
+480,March,Washington,Wahkiakum County,9.6
+481,December,Kansas,Stevens County,4.2
+482,April,Arkansas,Baxter County,5.9
+483,August,Wisconsin,Oconto County,4.3
+484,May,Kansas,Cheyenne County,3.2
+485,October,New Hampshire,Merrimack County,2.6
+486,August,Minnesota,Nobles County,2.7
+487,May,Oklahoma,Harper County,3.1
+488,July,West Virginia,Monongalia County,5.4
+489,January,West Virginia,Raleigh County,7.9
+490,January,South Dakota,Ziebach County,4.7
+491,February,Indiana,Marshall County,5
+492,April,Mississippi,Simpson County,5.1
+493,August,Texas,Winkler County,6.2
+494,February,Kansas,Cloud County,4.1
+495,January,Arkansas,Searcy County,7.6
+496,February,Missouri,Sainte Genevieve County,6.4
+497,July,Tennessee,Hawkins County,7
+498,December,Louisiana,Jefferson Parish,4.5
+499,June,Texas,Armstrong County,2.9
+500,May,Illinois,Lake County,4.8
+501,June,Mississippi,Lauderdale County,7.4
+502,December,New York,Hamilton County,8.7
+503,January,Texas,Dawson County,4.5
+504,June,Missouri,Linn County,7.3
+505,September,Colorado,Lincoln County,2.7
+506,January,Missouri,Oregon County,6.9
+507,July,Virginia,Chesterfield County,4.5
+508,November,Minnesota,Todd County,4.1
+509,June,Connecticut,New London County,5.7
+510,February,Texas,Jasper County,7.3
+511,April,Nebraska,Scotts Bluff County,3.2
+512,September,Virginia,Surry County,4.9
+513,July,Illinois,White County,6.1
+514,March,Virginia,Loudoun County,3.8
+515,May,Montana,Petroleum County,3.9
+516,February,Mississippi,Jefferson Davis County,8.2
+517,June,Minnesota,McLeod County,4
+518,May,South Carolina,Cherokee County,7.5
+519,November,North Carolina,Buncombe County,4
+520,March,Kentucky,Powell County,7.9
+521,April,South Dakota,Deuel County,5.8
+522,February,Arkansas,Baxter County,6.6
+523,June,Washington,Wahkiakum County,8.8
+524,December,South Dakota,Jerauld County,2.6
+525,May,North Carolina,Jackson County,6.3
+526,March,Texas,Fort Bend County,3.9
+527,May,Washington,Skamania County,7.3
+528,September,New York,Cortland County,4.9
+529,February,Kentucky,Jefferson County,5.2
+530,October,Wyoming,Park County,3.7
+531,July,Connecticut,New Haven County,6.4
+532,December,New York,Westchester County,4
+533,October,West Virginia,Raleigh County,6.3
+534,August,Illinois,Will County,5.6
+535,March,Texas,Zavala County,10.2
+536,January,Kansas,Gove County,2.6
+537,August,Louisiana,West Feliciana Parish,5
+538,June,Ohio,Wood County,4.5
+539,June,Indiana,Washington County,5
+540,May,Indiana,Dearborn County,5
+541,September,Virginia,Montgomery County,3.9
+542,March,Montana,Silver Bow County,4.8
+543,January,Texas,Panola County,4.6
+544,July,Virginia,Russell County,6.5
+545,November,Texas,Dewitt County,4.3
+546,August,Montana,Wibaux County,3
+547,November,Texas,Starr County,13.6
+548,September,South Dakota,Tripp County,2.4
+549,October,South Carolina,Fairfield County,7.8
+550,October,Montana,Sheridan County,2.2
+551,January,Ohio,Delaware County,4.3
+552,December,Oklahoma,Coal County,6.5
+553,May,South Dakota,Haakon County,2.2
+554,June,South Carolina,Allendale County,11.6
+555,September,Illinois,Union County,6.9
+556,July,Oklahoma,Lincoln County,4.4
+557,March,Wyoming,Crook County,4.1
+558,May,Texas,Liberty County,6.6
+559,September,Montana,Lake County,4.3
+560,December,Indiana,Knox County,4.8
+561,June,Oregon,Curry County,8.1
+562,August,Ohio,Franklin County,3.8
+563,April,Tennessee,Morgan County,7.3
+564,July,Alabama,Chambers County,6.9
+565,June,New York,Dutchess County,4.7
+566,June,Ohio,Belmont County,6.5
+567,September,Minnesota,Mahnomen County,4.1
+568,January,Missouri,Washington County,8.3
+569,February,West Virginia,Doddridge County,6.7
+570,July,Oklahoma,Nowata County,5.8
+571,September,Alabama,Lawrence County,7.4
+572,November,Indiana,Randolph County,4.4
+573,August,Iowa,Union County,3.7
+574,June,Texas,Milam County,5.6
+575,August,Tennessee,Bedford County,6.6
+576,February,North Carolina,Pasquotank County,8.1
+577,October,Ohio,Lawrence County,5.3
+578,March,Nevada,Lyon County,9.7
+579,June,Virginia,Washington County,5
+580,November,Kansas,Lincoln County,3
+581,December,Texas,Kimble County,4.2
+582,May,Wisconsin,Washburn County,4.9
+583,April,Kentucky,Meade County,5.3
+584,June,Pennsylvania,Wyoming County,6.1
+585,May,Pennsylvania,Sullivan County,6.4
+586,March,Alabama,Crenshaw County,5.8
+587,February,Alabama,Marengo County,7.9
+588,July,Nebraska,Wayne County,3.5
+589,June,North Carolina,Person County,7.4
+590,June,Texas,Karnes County,4.7
+591,February,New Mexico,Los Alamos County,4.2
+592,June,Idaho,Jerome County,3.1
+593,March,South Dakota,Hughes County,3
+594,October,Utah,Wasatch County,3.3
+595,February,Iowa,Buchanan County,5.5
+596,June,Mississippi,Forrest County,7.1
+597,November,Illinois,La Salle County,7.5
+598,April,Texas,Collin County,3.4
+599,January,Illinois,Henry County,7.1
+600,October,California,Sonoma County,4.2
+601,February,Ohio,Montgomery County,5.6
+602,September,Arkansas,Lincoln County,5.7
+603,April,Maine,Sagadahoc County,3.7
+604,January,Wisconsin,Buffalo County,6.1
+605,March,California,Mariposa County,9.8
+606,October,Texas,Red River County,6.2
+607,April,Ohio,Lorain County,5.4
+608,May,Indiana,Hendricks County,3.9
+609,March,North Dakota,Lamoure County,3.6
+610,May,Iowa,Ida County,2.9
+611,August,Illinois,Pope County,7.7
+612,May,Virginia,Botetourt County,4.3
+613,May,North Carolina,Wayne County,6.4
+614,October,Illinois,Dekalb County,5.6
+615,April,Colorado,Adams County,4.4
+616,January,Alabama,Coosa County,7.8
+617,August,Utah,Tooele County,4.2
+618,August,Texas,Cameron County,7.1
+619,January,Texas,Ector County,3.4
+620,May,South Dakota,Buffalo County,7.5
+621,July,Ohio,Huron County,5.8
+622,May,California,Plumas County,9.4
+623,December,Oregon,Hood River County,4.9
+624,December,Mississippi,Newton County,7.1
+625,November,Utah,Wasatch County,3.2
+626,November,Minnesota,Rice County,2.7
+627,June,Washington,Garfield County,5.3
+628,April,Mississippi,Greene County,6.7
+629,June,Nebraska,Dixon County,3.6
+630,December,Iowa,Taylor County,2.9
+631,August,Iowa,Decatur County,3.1
+632,May,Iowa,Palo Alto County,2.9
+633,August,Tennessee,Morgan County,7.2
+634,February,Kansas,Cheyenne County,2.9
+635,January,Missouri,Jefferson County,6
+636,April,Texas,Starr County,13.1
+637,March,Iowa,Woodbury County,4.2
+638,September,South Dakota,Ziebach County,3.9
+639,August,Oklahoma,Custer County,3.9
+640,December,North Dakota,McLean County,3.8
+641,July,Arkansas,Benton County,4.1
+642,May,Missouri,Stoddard County,6.5
+643,December,Arizona,Mohave County,7.5
+644,February,North Dakota,Stutsman County,3.7
+645,January,Montana,Powell County,5.9
+646,December,Missouri,Adair County,4.3
+647,August,Nebraska,Furnas County,2.6
+648,June,Illinois,White County,5.6
+649,July,California,Sacramento County,6.3
+650,August,Virginia,Emporia City,7.6
+651,March,Mississippi,Yazoo County,7.6
+652,March,Missouri,Randolph County,6.7
+653,August,Indiana,Parke County,4.9
+654,November,Vermont,Orleans County,5.1
+655,May,Colorado,Mineral County,4
+656,October,North Carolina,Yadkin County,4.7
+657,December,Missouri,Cooper County,4.2
+658,December,North Dakota,Cavalier County,2.9
+659,April,Nebraska,Boone County,2.2
+660,October,Texas,Cameron County,6.7
+661,January,Kentucky,Laurel County,7
+662,December,Oregon,Harney County,7.4
+663,September,Kentucky,McLean County,4.5
+664,December,Texas,Hockley County,4.1
+665,January,Minnesota,Winona County,4
+666,April,Illinois,Jersey County,5.4
+667,May,Kansas,Leavenworth County,4.6
+668,December,South Dakota,Haakon County,2.4
+669,March,Virginia,Cumberland County,6
+670,August,North Carolina,Hoke County,8.4
+671,July,Mississippi,Jones County,6.2
+672,December,Alabama,Butler County,7.4
+673,March,New York,Oswego County,8
+674,November,Utah,Sevier County,3.8
+675,May,North Carolina,Columbus County,7.8
+676,March,Mississippi,Covington County,5.6
+677,November,Texas,Andrews County,3.9
+678,November,Montana,Sweet Grass County,2.8
+679,February,Missouri,Jackson County,7.1
+680,October,Mississippi,Attala County,7.4
+681,December,Kentucky,Clay County,10.7
+682,January,Tennessee,Lauderdale County,10
+683,June,Idaho,Payette County,4.9
+684,December,Virginia,Norfolk City,5.2
+685,November,California,San Bernardino County,6
+686,October,Arkansas,Polk County,5
+687,February,Iowa,Hancock County,3.2
+688,September,West Virginia,Wayne County,6.2
+689,September,California,Santa Cruz County,5.5
+690,November,West Virginia,McDowell County,10.8
+691,August,North Dakota,Barnes County,3.1
+692,February,Texas,Travis County,3.4
+693,November,Texas,Limestone County,5.4
+694,February,Texas,Dawson County,4.5
+695,August,Texas,Castro County,3.5
+696,September,West Virginia,Harrison County,5.7
+697,November,North Dakota,Bowman County,1.7
+698,April,South Dakota,Jerauld County,2.2
+699,November,Indiana,Perry County,4.5
+700,September,Virginia,Bedford County,4.1
+701,May,New York,Saint Lawrence County,6.9
+702,August,Ohio,Hamilton County,4.2
+703,November,West Virginia,Braxton County,7.8
+704,August,Texas,Loving County,5.7
+705,April,New York,Yates County,5.2
+706,July,Virginia,Montgomery County,4.7
+707,January,New York,Rockland County,5.3
+708,February,Alabama,Hale County,8
+709,December,Texas,Stephens County,4.7
+710,April,Iowa,Boone County,3
+711,January,Texas,Falls County,4.7
+712,February,Mississippi,Sharkey County,11.1
+713,April,Nevada,White Pine County,5.9
+714,July,Indiana,Carroll County,4.4
+715,June,Indiana,Henry County,5
+716,March,Iowa,Taylor County,3.3
+717,February,Nebraska,Holt County,2.7
+718,December,California,Alpine County,5.9
+719,January,Kansas,Douglas County,4.2
+720,July,Washington,King County,4.6
+721,December,Missouri,Cole County,2.9
+722,July,West Virginia,Calhoun County,10.4
+723,February,Iowa,Humboldt County,4.3
+724,January,North Carolina,Halifax County,9.3
+725,May,Iowa,Van Buren County,3.6
+726,April,Texas,Reeves County,4.2
+727,February,Nebraska,Hitchcock County,3.6
+728,February,Texas,Borden County,2.4
+729,October,Kansas,Morton County,3.4
+730,November,Virginia,Dinwiddie County,4.5
+731,June,Minnesota,Pope County,3.2
+732,September,Illinois,Fulton County,7.1
+733,July,Minnesota,Rock County,2.1
+734,July,Wisconsin,Green Lake County,4.7
+735,October,Ohio,Lucas County,4.7
+736,April,North Carolina,Richmond County,7.3
+737,February,Wyoming,Lincoln County,5.9
+738,April,Kansas,Leavenworth County,4.6
+739,August,Ohio,Champaign County,3.9
+740,December,North Carolina,Robeson County,7.5
+741,July,North Carolina,Washington County,8.8
+742,March,Texas,Gonzales County,3.3
+743,July,Minnesota,Becker County,4
+744,March,South Carolina,Chester County,8.5
+745,April,Wisconsin,Columbia County,4.4
+746,April,Virginia,Grayson County,5.7
+747,May,Texas,Milam County,5
+748,July,Nebraska,Adams County,3.6
+749,November,Kentucky,Laurel County,6.3
+750,September,Illinois,Jackson County,5.2
+751,May,Montana,Custer County,2.9
+752,August,Kansas,Chase County,3.3
+753,September,Utah,Wasatch County,3
+754,March,Washington,Pend Oreille County,10.5
+755,April,Illinois,Boone County,5.4
+756,December,Illinois,Piatt County,5.6
+757,October,Ohio,Erie County,4.7
+758,August,North Carolina,Nash County,7.7
+759,July,Pennsylvania,Monroe County,6.7
+760,March,Iowa,Louisa County,4.3
+761,July,Tennessee,Dekalb County,7.7
+762,February,South Dakota,Hyde County,2.9
+763,December,South Carolina,Lexington County,4.3
+764,June,West Virginia,Raleigh County,7.7
+765,October,Alabama,Lawrence County,7.4
+766,December,Tennessee,McNairy County,7.9
+767,June,Mississippi,Neshoba County,6.7
+768,August,California,Santa Clara County,4.1
+769,August,Ohio,Ashland County,4.4
+770,June,Minnesota,Swift County,7.9
+771,October,Iowa,Calhoun County,3.5
+772,September,North Carolina,Robeson County,8
+773,August,Kentucky,Knox County,7.7
+774,October,Nebraska,Nemaha County,3
+775,December,Colorado,Park County,2.9
+776,November,Oklahoma,Logan County,3.3
+777,May,Virginia,York County,4.5
+778,August,Nebraska,Buffalo County,2.5
+779,September,Colorado,La Plata County,2.7
+780,July,New York,Rensselaer County,4.9
+781,November,Maryland,Queen Annes County,4.3
+782,July,Virginia,Alexandria City,3.3
+783,August,Montana,Sheridan County,2.1
+784,January,Virginia,Newport News City,6.4
+785,December,Virginia,Washington County,4.2
+786,March,Illinois,Champaign County,4.8
+787,April,North Carolina,Dare County,6.6
+788,August,Montana,Phillips County,3.5
+789,June,Texas,Clay County,4.9
+790,June,Arizona,Maricopa County,5.4
+791,January,California,Madera County,12.3
+792,September,Minnesota,Murray County,2.7
+793,December,Texas,Harris County,4.6
+794,October,Virginia,Smyth County,5.9
+795,September,Illinois,Kankakee County,6.3
+796,December,Nebraska,Boone County,2.6
+797,April,New York,Monroe County,5.2
+798,December,Missouri,Wright County,5.3
+799,December,Missouri,Webster County,4.2
+800,July,Kentucky,Rockcastle County,7
+801,October,New York,Richmond County,5.1
+802,January,South Carolina,Pickens County,6.5
+803,April,Oklahoma,Okmulgee County,6
+804,March,Virginia,Sussex County,7.5
+805,July,Indiana,Rush County,4.1
+806,April,Virginia,Roanoke County,3.8
+807,March,Minnesota,Freeborn County,4.6
+808,September,North Carolina,Craven County,5.7
+809,May,Texas,Fort Bend County,4.1
+810,April,Texas,Lamar County,4.5
+811,June,Nebraska,Grant County,2.4
+812,July,New Mexico,McKinley County,11.1
+813,December,Louisiana,Caldwell Parish,6.3
+814,April,Louisiana,Saint Mary Parish,7
+815,August,Indiana,Shelby County,4
+816,June,Tennessee,Roane County,7.1
+817,September,Texas,San Jacinto County,6.1
+818,October,Kentucky,Daviess County,4.3
+819,February,Texas,Callahan County,4.2
+820,June,Mississippi,Greene County,8.4
+821,September,Arkansas,Grant County,4.3
+822,August,South Dakota,Pennington County,2.8
+823,March,Texas,Kent County,2.2
+824,January,Arizona,Mohave County,9
+825,May,Kentucky,Grayson County,6.7
+826,December,Iowa,Grundy County,3.7
+827,August,Virginia,Dickenson County,10
+828,April,Tennessee,Lake County,7.8
+829,December,Texas,Pecos County,5
+830,December,South Dakota,Lincoln County,2
+831,February,Kentucky,Elliott County,12.2
+832,August,Virginia,Orange County,4.3
+833,November,Nebraska,Dundy County,1.9
+834,June,North Carolina,Chatham County,5.2
+835,January,Missouri,Howell County,6.9
+836,June,Minnesota,Itasca County,6.2
+837,May,Tennessee,Dickson County,5.7
+838,August,Nebraska,Nuckolls County,2.3
+839,December,Kentucky,Mercer County,5.3
+840,October,Texas,Bee County,6.5
+841,April,South Dakota,Walworth County,5.4
+842,August,Ohio,Paulding County,4.3
+843,May,Minnesota,Hennepin County,3.3
+844,June,Colorado,Mesa County,6.1
+845,October,Virginia,Spotsylvania County,4.2
+846,April,Nevada,Douglas County,7.4
+847,September,Colorado,Clear Creek County,3.1
+848,July,Arkansas,Carroll County,4.5
+849,May,Montana,Valley County,2.6
+850,May,South Dakota,Hutchinson County,2.5
+851,September,Oklahoma,Cherokee County,4.6
+852,May,Missouri,Daviess County,5
+853,December,Massachusetts,Bristol County,5.7
+854,February,Connecticut,Windham County,7.5
+855,July,Kentucky,Estill County,6.4
+856,January,Alabama,Macon County,8.3
+857,March,Louisiana,Allen Parish,7.1
+858,December,Iowa,Mahaska County,3.6
+859,August,Texas,Lamb County,9.4
+860,April,Kentucky,Cumberland County,5.6
+861,August,Idaho,Bingham County,4.2
+862,May,Texas,Callahan County,4.1
+863,February,Texas,Hopkins County,4.4
+864,October,New Mexico,Bernalillo County,5.8
+865,October,Texas,Wilson County,3.9
+866,November,North Carolina,Cumberland County,7
+867,September,Tennessee,Wilson County,4.6
+868,February,Wisconsin,Langlade County,7.6
+869,April,Mississippi,Amite County,6.6
+870,September,North Carolina,Caswell County,5.9
+871,August,Iowa,Palo Alto County,2.9
+872,July,Kentucky,Hardin County,5.3
+873,September,Oklahoma,Murray County,4.2
+874,January,Oklahoma,Johnston County,7
+875,September,Illinois,Effingham County,4.4
+876,June,Washington,Island County,5.8
+877,February,Oklahoma,Texas County,3.3
+878,June,Texas,Bastrop County,4.4
+879,November,Texas,Yoakum County,3.8
+880,November,Connecticut,Litchfield County,4.4
+881,August,Texas,Dimmit County,5.6
+882,March,Kansas,Republic County,3.2
+883,March,Missouri,Henry County,6.2
+884,January,Montana,Gallatin County,3.6
+885,July,Mississippi,Adams County,9
+886,November,South Carolina,Edgefield County,6.2
+887,October,Kansas,Lyon County,3.5
+888,August,Iowa,Keokuk County,3.9
+889,April,California,Tuolumne County,7.2
+890,November,Maryland,Kent County,5.1
+891,December,Colorado,Washington County,2
+892,July,California,Kings County,9.7
+893,July,Tennessee,Lauderdale County,9.1
+894,July,Virginia,Caroline County,5
+895,September,Mississippi,Pontotoc County,5.3
+896,May,Arkansas,Polk County,6.4
+897,October,North Carolina,Lee County,6.9
+898,November,Alabama,Autauga County,4.9
+899,September,Iowa,Worth County,3.1
+900,February,Virginia,Norfolk City,6.1
+901,April,New Jersey,Sussex County,5.4
+902,September,New Mexico,Grant County,6.3
+903,November,Kansas,Chautauqua County,5.6
+904,June,North Dakota,Renville County,3.6
+905,August,Indiana,Clark County,4.2
+906,October,Utah,Piute County,5.7
+907,October,Iowa,Linn County,3.2
+908,October,Virginia,Westmoreland County,4.5
+909,August,Pennsylvania,Clearfield County,6
+910,April,Texas,Glasscock County,2.1
+911,January,Idaho,Elmore County,5.7
+912,August,Illinois,Cumberland County,5.3
+913,November,North Carolina,Cherokee County,6
+914,October,Washington,Garfield County,5.5
+915,June,Virginia,Franklin City,7
+916,July,Illinois,Warren County,5.7
+917,March,Kentucky,Mason County,6.2
+918,August,North Dakota,Ransom County,2
+919,October,Ohio,Washington County,5.7
+920,October,Iowa,Pocahontas County,2.4
+921,June,California,Butte County,7.3
+922,December,Texas,Cooke County,3.7
+923,October,Wisconsin,Dane County,2.8
+924,May,South Carolina,Beaufort County,5.6
+925,December,Missouri,Dunklin County,6.9
+926,October,Nebraska,Banner County,2.6
+927,January,New Mexico,Taos County,10
+928,July,Vermont,Addison County,3.7
+929,August,Mississippi,Clay County,8.7
+930,December,Montana,McCone County,1.9
+931,December,California,Inyo County,5.8
+932,October,South Dakota,Deuel County,3.2
+933,March,Louisiana,Jefferson Davis Parish,6.3
+934,May,North Carolina,Chatham County,5
+935,November,Minnesota,Becker County,3.9
+936,June,Indiana,Newton County,5.2
+937,September,Minnesota,Chippewa County,3.3
+938,March,Kentucky,Fayette County,4.1
+939,October,Ohio,Columbiana County,5.4
+940,December,Pennsylvania,Schuylkill County,4.8
+941,July,Kentucky,Livingston County,7.6
+942,June,Kentucky,Casey County,6
+943,April,Montana,Big Horn County,6.5
+944,August,Maryland,Allegany County,7
+945,December,Indiana,Grant County,5.1
+946,September,Nebraska,Cass County,2.9
+947,April,Alabama,Butler County,7.1
+948,November,California,San Luis Obispo County,4.5
+949,October,New York,Essex County,4.9
+950,May,Kentucky,Fayette County,4.1
+951,March,Virginia,Russell County,6.9
+952,January,Montana,Wheatland County,7
+953,April,Texas,Bastrop County,3.5
+954,December,Tennessee,Shelby County,6.1
+955,July,New Mexico,Harding County,9.7
+956,April,Utah,Wasatch County,3.5
+957,November,Iowa,Clarke County,3.4
+958,November,Wisconsin,Waushara County,5.7
+959,February,Mississippi,Winston County,8.3
+960,February,Missouri,Sullivan County,7.7
+961,November,Missouri,Dade County,4.2
+962,May,South Carolina,Chesterfield County,6.2
+963,December,Virginia,Appomattox County,4.4
+964,February,Texas,Panola County,4.5
+965,January,Illinois,Boone County,7.9
+966,September,Maryland,Anne Arundel County,4.4
+967,May,North Carolina,Jones County,6.1
+968,February,Kentucky,Fulton County,7.2
+969,December,Texas,Scurry County,4.3
+970,February,Alabama,Greene County,11.5
+971,March,Louisiana,Plaquemines Parish,5.9
+972,January,Alabama,Jefferson County,5.9
+973,September,Tennessee,Houston County,8.4
+974,September,North Carolina,Caldwell County,5.8
+975,October,Missouri,Webster County,4.1
+976,March,Indiana,Jennings County,6.1
+977,July,Texas,Wheeler County,4.5
+978,August,Pennsylvania,Lycoming County,5.7
+979,March,Washington,Lincoln County,6.3
+980,February,Louisiana,East Feliciana Parish,6.6
+981,October,Iowa,Howard County,2.9
+982,October,Washington,Pacific County,8.4
+983,September,Virginia,Mathews County,4
+984,July,North Carolina,Hyde County,6.8
+985,June,Kentucky,Metcalfe County,5.1
+986,February,Texas,Karnes County,3.5
+987,June,Pennsylvania,Chester County,4
+988,August,Mississippi,Perry County,7.6
+989,January,Colorado,Huerfano County,10.7
+990,September,North Carolina,Transylvania County,5
+991,February,Louisiana,Lincoln Parish,7.3
+992,December,Pennsylvania,Erie County,4.5
+993,December,Indiana,Wabash County,4.4
+994,September,Ohio,Champaign County,3.9
+995,June,Mississippi,Humphreys County,13.8
+996,August,West Virginia,Putnam County,5.5
+997,September,Kansas,Montgomery County,6.2
+998,February,Kansas,Rice County,3.6
+999,June,Missouri,Cass County,5.1
+1000,October,Iowa,Monona County,3.3
+1001,July,Washington,Skamania County,6.9
+1002,January,Illinois,Mercer County,8
+1003,January,Ohio,Morrow County,6.4
+1004,November,Wyoming,Weston County,3
+1005,April,Virginia,Prince Edward County,5.8
+1006,January,Nebraska,Fillmore County,2.8
+1007,December,Texas,Williamson County,3.1
+1008,December,Arkansas,Monroe County,6
+1009,August,Kentucky,Johnson County,8.2
+1010,November,Texas,Travis County,3.1
+1011,September,Illinois,Randolph County,5.3
+1012,May,Kansas,Franklin County,4.7
+1013,August,Texas,Hockley County,4.6
+1014,April,Mississippi,Hancock County,5.8
+1015,April,Minnesota,Mahnomen County,5.3
+1016,September,Oregon,Umatilla County,5.2
+1017,December,Oregon,Sherman County,5.9
+1018,September,Ohio,Morrow County,4.4
+1019,June,Minnesota,Becker County,4.1
+1020,December,Utah,Tooele County,3.5
+1021,August,Texas,Lampasas County,4.4
+1022,July,Massachusetts,Bristol County,6.4
+1023,November,Wyoming,Converse County,3.7
+1024,April,Louisiana,Tensas Parish,9.7
+1025,September,Wisconsin,Lafayette County,3.2
+1026,September,Vermont,Addison County,3.6
+1027,March,Texas,Hopkins County,4.3
+1028,April,New York,Chenango County,5.8
+1029,January,Texas,Bell County,5.3
+1030,March,Montana,Petroleum County,7.7
+1031,December,North Carolina,Transylvania County,5.3
+1032,May,Indiana,Warren County,5
+1033,November,Virginia,Smyth County,5.6
+1034,March,North Dakota,McIntosh County,4
+1035,May,Washington,Lincoln County,5.5
+1036,February,Oregon,Lake County,10.3
+1037,December,Ohio,Monroe County,10.9
+1038,June,Illinois,Cook County,6.4
+1039,November,West Virginia,Lewis County,7.9
+1040,November,Nebraska,Richardson County,2.6
+1041,July,Arkansas,Pike County,7.2
+1042,February,Missouri,Macon County,7
+1043,August,Louisiana,Union Parish,6.9
+1044,March,New York,Jefferson County,8.4
+1045,January,New Jersey,Hudson County,6.2
+1046,February,Virginia,Giles County,5.6
+1047,January,Colorado,Moffat County,6.1
+1048,March,Washington,Franklin County,8.4
+1049,July,Kentucky,Grant County,5.4
+1050,January,North Dakota,Benson County,7.2
+1051,November,Montana,Wheatland County,5.9
+1052,April,Texas,Upton County,3.4
+1053,November,North Carolina,Wilson County,9
+1054,October,Kentucky,Harrison County,4.2
+1055,November,New York,Hamilton County,8.7
+1056,September,Pennsylvania,Venango County,5.5
+1057,July,Minnesota,Wright County,3.4
+1058,May,Texas,Medina County,4.3
+1059,September,Utah,Uintah County,6.7
+1060,March,Mississippi,Lincoln County,5.6
+1061,March,North Carolina,Carteret County,6.3
+1062,December,Kansas,Butler County,3.7
+1063,August,Illinois,Champaign County,5.4
+1064,February,Texas,Franklin County,4.7
+1065,October,Utah,Sevier County,3.8
+1066,November,Minnesota,Pipestone County,2.4
+1067,March,Oklahoma,Haskell County,7.5
+1068,January,Nebraska,Morrill County,3.5
+1069,September,Indiana,Gibson County,3.3
+1070,May,Texas,Moore County,3.1
+1071,August,Virginia,Martinsville City,9.2
+1072,May,Indiana,Bartholomew County,3.6
+1073,December,North Carolina,Pasquotank County,7.1
+1074,July,Pennsylvania,Washington County,5.8
+1075,February,Mississippi,Walthall County,8.3
+1076,November,North Dakota,Eddy County,3.2
+1077,November,Missouri,Lafayette County,3.5
+1078,March,Wisconsin,Trempealeau County,4.9
+1079,August,South Carolina,Clarendon County,7.7
+1080,July,Connecticut,Hartford County,6.1
+1081,June,Colorado,Teller County,4.6
+1082,June,Kansas,Labette County,6.5
+1083,May,Indiana,Benton County,4.6
+1084,January,Pennsylvania,Warren County,5.8
+1085,December,Virginia,Brunswick County,6.1
+1086,October,Iowa,Jasper County,3.2
+1087,January,Idaho,Lemhi County,10.2
+1088,July,Arkansas,Howard County,4.9
+1089,October,Virginia,Alexandria City,3
+1090,August,Alabama,Etowah County,6.5
+1091,September,Wisconsin,Florence County,5.7
+1092,July,Virginia,Bristol City,5.7
+1093,February,Ohio,Noble County,7.7
+1094,October,Arkansas,Ouachita County,5.5
+1095,February,Minnesota,Mahnomen County,6.5
+1096,May,Washington,Grays Harbor County,9.2
+1097,March,Nebraska,Hooker County,5.7
+1098,February,Indiana,Putnam County,6.1
+1099,July,Nebraska,Banner County,3.3
+1100,June,Idaho,Custer County,5.1
+1101,March,Colorado,Ouray County,5.5
+1102,September,Montana,Fallon County,2.2
+1103,June,New York,Nassau County,4.4
+1104,October,Illinois,Jo Daviess County,5.2
+1105,July,Colorado,Delta County,5.5
+1106,February,Pennsylvania,Philadelphia County,7.3
+1107,March,New York,Lewis County,9.3
+1108,August,Kansas,Decatur County,3.6
+1109,May,Indiana,Decatur County,4
+1110,September,Oklahoma,Pushmataha County,6.7
+1111,September,Idaho,Cassia County,3
+1112,March,New York,Bronx County,8.3
+1113,December,New Mexico,Chaves County,6
+1114,December,Minnesota,Washington County,2.9
+1115,August,Texas,Morris County,9.6
+1116,June,Iowa,Sac County,3.3
+1117,December,Vermont,Orleans County,5.5
+1118,April,Indiana,Randolph County,4.7
+1119,September,Oklahoma,Dewey County,3.2
+1120,June,Alabama,Lauderdale County,7.7
+1121,November,Kansas,Scott County,2.5
+1122,December,Iowa,Montgomery County,3.4
+1123,March,New Mexico,Eddy County,4.8
+1124,November,Indiana,Greene County,6.2
+1125,November,West Virginia,Calhoun County,12.2
+1126,January,Iowa,Hardin County,5.3
+1127,May,Idaho,Bear Lake County,3.8
+1128,May,Pennsylvania,Beaver County,6.3
+1129,February,Virginia,Chesapeake City,5
+1130,February,Pennsylvania,Clinton County,7.5
+1131,July,North Dakota,Pierce County,3.2
+1132,October,Idaho,Bear Lake County,3.6
+1133,September,Arkansas,Montgomery County,6.4
+1134,October,Texas,Falls County,4.1
+1135,December,Texas,Franklin County,4.9
+1136,June,Virginia,Henry County,6.7
+1137,June,Tennessee,Dickson County,6
+1138,December,North Carolina,Chowan County,6.7
+1139,September,Colorado,Garfield County,3.3
+1140,February,Texas,Camp County,5.4
+1141,December,Minnesota,Stearns County,3.5
+1142,March,Mississippi,Sunflower County,10.9
+1143,May,Montana,Carter County,2.7
+1144,August,North Carolina,Forsyth County,5.8
+1145,October,Kansas,Coffey County,5.3
+1146,November,South Dakota,Walworth County,4.7
+1147,January,Kansas,Comanche County,2.7
+1148,June,North Carolina,Lincoln County,5.9
+1149,November,Virginia,Virginia Beach City,3.9
+1150,December,Missouri,Monroe County,4.4
+1151,January,Virginia,Manassas Park City,4.8
+1152,February,Virginia,Culpeper County,5.1
+1153,July,South Dakota,Dewey County,16.4
+1154,January,Kentucky,Bracken County,8.3
+1155,November,Maryland,Anne Arundel County,4.2
+1156,September,North Carolina,Yancey County,5.2
+1157,July,Tennessee,Jackson County,8.5
+1158,August,Missouri,Clinton County,4.9
+1159,December,South Carolina,Greenwood County,5.3
+1160,December,Kansas,Thomas County,2.5
+1161,March,North Carolina,Catawba County,5.4
+1162,February,New York,Suffolk County,5.7
+1163,October,Arkansas,Faulkner County,4.1
+1164,October,Ohio,Preble County,4.3
+1165,September,Mississippi,Jefferson Davis County,8
+1166,January,Texas,Real County,5.9
+1167,August,Pennsylvania,Warren County,4.8
+1168,January,Arizona,Yuma County,19.3
+1169,October,Oklahoma,Ellis County,3.9
+1170,November,Texas,Brazos County,3.2
+1171,June,Illinois,Union County,7.6
+1172,August,Illinois,Clay County,6.9
+1173,May,Nevada,Lincoln County,5.8
+1174,July,Oklahoma,Okmulgee County,6.4
+1175,December,Kansas,Sedgwick County,4.1
+1176,October,Nebraska,Thayer County,2.4
+1177,November,Montana,Fergus County,3.8
+1178,June,North Dakota,Dunn County,2.4
+1179,February,Texas,Austin County,4.1
+1180,May,New York,Cortland County,5.5
+1181,January,South Carolina,McCormick County,8.9
+1182,September,Virginia,Lynchburg City,5
+1183,May,Indiana,Switzerland County,4.9
+1184,June,Texas,El Paso County,5.6
+1185,March,North Carolina,Randolph County,5.6
+1186,May,Ohio,Ashland County,4.8
+1187,August,Michigan,Gladwin County,6
+1188,July,Missouri,Polk County,6.2
+1189,February,Ohio,Greene County,4.8
+1190,July,Louisiana,Caldwell Parish,8.4
+1191,August,Ohio,Madison County,3.5
+1192,July,Indiana,Dubois County,3.4
+1193,May,Texas,Van Zandt County,4.5
+1194,September,Montana,Sanders County,6.7
+1195,October,Pennsylvania,Somerset County,5.4
+1196,September,Indiana,Knox County,4.1
+1197,August,Pennsylvania,Mifflin County,5.5
+1198,March,Nebraska,Sherman County,3
+1199,January,Colorado,Baca County,2.5

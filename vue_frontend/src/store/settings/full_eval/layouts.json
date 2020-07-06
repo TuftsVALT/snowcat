@@ -1,0 +1,67 @@
+{
+  "dataset": {
+    "cards": [
+      {
+        "component": "DataAugmentation",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "RawDataTableView",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "TabularDataView",
+        "size": 12,
+        "help": false
+      }
+    ]
+  },
+  "problemDescription": {
+    "cards": [{
+        "component": "ProblemSetView",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "RawDataTableView",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "TabularDataView",
+        "size": 12,
+        "help": false
+      }
+    ]
+  },
+  "modelSelection": {
+    "cards": [{
+        "component": "MetricsSummary",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "CollaborativeFiltering",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "ConfusionMatrixContainer",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "RegressionModelOutput",
+        "size": 12,
+        "help": false
+      },
+      {
+        "component": "TabularDataView",
+        "size": 12,
+        "help": false
+      }
+    ]
+  }
+}

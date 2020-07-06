@@ -1,0 +1,59 @@
+{ 
+    "entity":{
+    "type":"uri",
+    "value":"http://www.wikidata.org/entity/Q40504"
+    },
+    "entityLabel":{
+    "xml:lang":"en",
+    "type":"literal",
+    "value":"Jim Carrey"
+    },
+    "wdt":{
+    "type":"uri",
+    "value":"http://www.wikidata.org/prop/direct/P166"
+    },
+    "wdLabel":{
+    "xml:lang":"en",
+    "type":"literal",
+    "value":"award received"
+    },
+    "wdDescription":{
+    "xml:lang":"en",
+    "type":"literal",
+    "value":"award or recognition received by a person, organisation or creative work"
+    },
+    "count":2,
+    "exampleLab":{
+    "xml:lang":"en",
+    "type":"literal",
+    "value":"Canada's Walk of Fame"
+    },
+    "exampleLit":{
+    "type":"uri",
+    "value":"http://www.wikidata.org/entity/Q857933"
+    },
+    "dataType":"string",
+    "valueType":"join-collection-string",
+    "uri":"http://www.wikidata.org/prop/direct/P166",
+    "name":"award received",
+    "description":"award or recognition received by a person, organisation or creative work",
+    "examples":[
+    "Canada's Walk of Fame",
+    "Crystal Award"
+    ],
+    "parentEntityExample":"Jim Carrey",
+    "parentEntityExampleUri":"http://www.wikidata.org/entity/Q40504",
+    "percentJoinable":0.5,
+    "frequencyCounts":{
+    "Chevalier des Arts et des Lettres":1,
+    "":2,
+    "Crystal Award":1
+    },
+    "sampleData":[
+    "Chevalier des Arts et des Lettres",
+    "",
+    "Crystal Award",
+    ""
+    ]
+}
+   

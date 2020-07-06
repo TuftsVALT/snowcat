@@ -1,5 +1,5 @@
 <template>
-  <div id="data-definition-card">
+  <div id="data-definition-card" v-if="readyToLoad">
     <v-card-title primary-title>
       <div class="headline">{{datasetName}}</div>
       <div class="dataset-description" v-html="datasetDescription"></div>
@@ -64,6 +64,9 @@ export default {
     }
   },
   computed: {
+    readyToLoad() {
+      return !!(this.$store.state.socket.rawDataDesc && this.$store.state.socket.rawDataDesc.about)
+    },
     dataResourcePanels () {
       return _.map(this.dataResources, (resource) => {
         if (resource.resType === 'table') {

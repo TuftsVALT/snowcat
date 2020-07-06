@@ -1,0 +1,77 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q55815650"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Charlie's Angels"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P161"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "cast member"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "actor in the subject production [use \"character role\" (P453) and/or \"name of the character role\" (P4633) as qualifiers] [use \"voice actor\" (P725) for voice-only role]"
+    },
+    "count": 4,
+    "exampleLab": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Patrick Stewart"
+    },
+    "exampleLit": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q16296"
+    },
+    "dataType": "string",
+    "valueType": "join-collection-string",
+    "uri": "http://www.wikidata.org/prop/direct/P161",
+    "name": "cast member",
+    "description": "actor in the subject production [use \"character role\" (P453) and/or \"name of the character role\" (P4633) as qualifiers] [use \"voice actor\" (P725) for voice-only role]",
+    "examples": [
+      "Patrick Stewart",
+      "Emmy Rossum",
+      "Bill Murray"
+    ],
+    "parentEntityExample": "Charlie's Angels",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q55815650",
+    "percentJoinable": 0.2,
+    "frequencyCounts": {
+      "": 16,
+      "Ella Balinska": 1,
+      "Richard Foronjy": 1,
+      "Arjay Smith": 1,
+      "William Fawcett": 1
+    },
+    "sampleData": [
+      "",
+      "",
+      "",
+      "",
+      "Ella Balinska",
+      "",
+      "",
+      "",
+      "Richard Foronjy",
+      "",
+      "",
+      "Arjay Smith",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "William Fawcett"
+    ]
+  }

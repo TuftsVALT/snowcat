@@ -42,6 +42,14 @@ module.exports.set = function(session, socket) {
   let dataaug_wikidata = require("./dataaug_wikidata");
   dataaug_wikidata.set(session, socket);
 
+  if (session.vast20expConfig) {
+    let logger = require("./logger");
+    logger.set(session, socket);  
+  }
+
+  let vast20exp = require("./vast20exp");
+  vast20exp.set(session, socket);
+
   // let datamartISI = require("./datamart_isi");
   // datamartISI.set(session, socket);
 

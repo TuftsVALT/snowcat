@@ -1,0 +1,76 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q1113146"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Alan Taylor"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P27"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "country of citizenship"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "the object is a country that recognizes the subject as its citizen"
+    },
+    "count": 20,
+    "exampleLab": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "United States of America"
+    },
+    "exampleLit": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q30"
+    },
+    "dataType": "string",
+    "valueType": "join-string",
+    "uri": "http://www.wikidata.org/prop/direct/P27",
+    "name": "country of citizenship",
+    "description": "the object is a country that recognizes the subject as its citizen",
+    "examples": [
+      "United States of America",
+      "United States of America",
+      "United States of America"
+    ],
+    "parentEntityExample": "Alan Taylor",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q1113146",
+    "percentJoinable": 1,
+    "frequencyCounts": {
+      "United Kingdom": 3,
+      "United States of America": 15,
+      "Canada": 1,
+      "Germany": 1
+    },
+    "sampleData": [
+      "United Kingdom",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United Kingdom",
+      "United States of America",
+      "Canada",
+      "Germany",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United States of America",
+      "United Kingdom"
+    ]
+  }

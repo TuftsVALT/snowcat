@@ -1,0 +1,103 @@
+{
+  "about": {
+    "datasetID": "196_autoMpg_dataset",
+    "datasetName": "autoMpg",
+    "description": "Auto-Mpg Data\n The data concerns city-cycle fuel consumption in miles per gallon,\n     to be predicted in terms of 3 multivalued discrete and 5 continuous\n     attributes.",
+    "citation": " @article{OpenML2013, author = {Vanschoren, Joaquin and van Rijn, Jan N. and Bischl, Bernd and Torgo, Luis}, title = {OpenML: Networked Science in Machine Learning}, journal = {SIGKDD Explorations}, volume = {15}, number = {2}, year = {2013}, pages = {49--60}, url = {http://doi.acm.org/10.1145/2641190.2641198}, doi = {10.1145/2641190.2641198}, publisher = {ACM}, address = {New York, NY, USA}, } ",
+    "license": " CC Public Domain Mark 1.0 ",
+    "source": "OpenML",
+    "sourceURI": "http://www.openml.org/d/196",
+    "approximateSize": "",
+    "datasetSchemaVersion": "4.0.0",
+    "redacted": false,
+    "datasetVersion": "4.0.0",
+    "digest": "b5cb50c3d062dceb753050fe2c86d1ea67e91705eef662eacb1bcca71ef63fb4"
+  },
+  "dataResources": [
+    {
+      "resID": "learningData",
+      "resPath": "tables/learningData.csv",
+      "resType": "table",
+      "resFormat": {
+        "text/csv": [
+          "csv"
+        ]
+      },
+      "isCollection": false,
+      "columns": [
+        {
+          "colIndex": 0,
+          "colName": "d3mIndex",
+          "colType": "integer",
+          "role": [
+            "index"
+          ]
+        },
+        {
+          "colIndex": 1,
+          "colName": "cylinders",
+          "colType": "categorical",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 2,
+          "colName": "displacement",
+          "colType": "real",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 3,
+          "colName": "horsepower",
+          "colType": "real",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 4,
+          "colName": "weight",
+          "colType": "real",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 5,
+          "colName": "acceleration",
+          "colType": "real",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 6,
+          "colName": "model",
+          "colType": "categorical",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 7,
+          "colName": "origin",
+          "colType": "categorical",
+          "role": [
+            "attribute"
+          ]
+        },
+        {
+          "colIndex": 8,
+          "colName": "class",
+          "colType": "real",
+          "role": [
+            "suggestedTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

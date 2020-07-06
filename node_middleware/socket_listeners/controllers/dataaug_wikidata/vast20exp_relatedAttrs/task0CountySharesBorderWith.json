@@ -1,0 +1,92 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q498336"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Turner County"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P47"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "shares border with"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "countries or administrative subdivisions, of equal level, that this item borders, either by land or water. A single common point is enough."
+    },
+    "count": 19,
+    "exampleLab": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Ben Hill County"
+    },
+    "exampleLit": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q111867"
+    },
+    "dataType": "string",
+    "valueType": "join-collection-string",
+    "uri": "http://www.wikidata.org/prop/direct/P47",
+    "name": "shares border with",
+    "description": "countries or administrative subdivisions, of equal level, that this item borders, either by land or water. A single common point is enough.",
+    "examples": [
+      "Ben Hill County",
+      "Richland County",
+      "Allegany County"
+    ],
+    "parentEntityExample": "Turner County",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q498336",
+    "percentJoinable": 0.95,
+    "frequencyCounts": {
+      "Grant County": 1,
+      "Tift County": 1,
+      "Mineral County": 1,
+      "": 1,
+      "Windham County": 1,
+      "Polk County": 1,
+      "Powder River County": 1,
+      "San Miguel County": 1,
+      "Jackson County": 1,
+      "Collier County": 1,
+      "Anderson County": 1,
+      "Douglas County": 1,
+      "White Pine County": 1,
+      "Carbon County": 1,
+      "Karnes County": 1,
+      "Harding County": 1,
+      "Pierce County": 1,
+      "Suwannee County": 1,
+      "Kitsap County": 1,
+      "Crawford County": 1
+    },
+    "sampleData": [
+      "Grant County",
+      "Tift County",
+      "Mineral County",
+      "",
+      "Windham County",
+      "Polk County",
+      "Powder River County",
+      "San Miguel County",
+      "Jackson County",
+      "Collier County",
+      "Anderson County",
+      "Douglas County",
+      "White Pine County",
+      "Carbon County",
+      "Karnes County",
+      "Harding County",
+      "Pierce County",
+      "Suwannee County",
+      "Kitsap County",
+      "Crawford County"
+    ]
+  }

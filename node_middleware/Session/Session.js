@@ -2,10 +2,14 @@
 // import Problem from "./Problem.js";
 
 class Session {
-  constructor(devMode = false) {
+  constructor(devMode = false, vast20expMode = false, vast20expConfig = null) {
     // are we running in development mode (without a ta2)
     this.devMode = devMode;
-    console.log("this is session constructor", this.devMode);
+    // are we running our vast2020 experiment (two tasks, two datasets)
+    this.vast20expMode = vast20expMode;
+    this.vast20expConfig = vast20expConfig;
+    this.currentTask = 1;
+    // console.log("this is session constructor", this.devMode);
     // * callbacks:
     this.datasetCallbacks = [];
     this.problemCallbacks = [];
@@ -18,6 +22,10 @@ class Session {
     // use getters and setters whenever possible
     // current dataset
     this.currentDataset = null;
+
+    // We keep track of the original dataset for the sake of data augmentation.
+    this.originalDataset = null;
+
     // current problem
     this.currentProblem = null;
     // current herald
@@ -27,6 +35,10 @@ class Session {
     this.heraldsMap = new Map(); // new Map()
 
     this.ta2_port = null;
+  }
+
+  incrementTask() {
+    this.currentTask += 1;
   }
   /**
   all the methods for registering and handling callbacks (observer pattern)
@@ -72,6 +84,7 @@ class Session {
     try {
       this.currentDataset = currentDataset;
       this.handleDatasetChange();
+      this.originalDataset = this.originalDataset || currentDataset;
     } catch (err) {
       console.log(err);
       console.log("WARNING: setting dataset to 'null'");
@@ -80,6 +93,13 @@ class Session {
         this.handleDatasetChange();
       }
     }
+  }
+
+  getOriginalDataset() {
+    return this.originalDataset;
+  }
+  setOriginalDataset(originalDataset) {
+    this.originalDataset = originalDataset;
   }
 
   getCurrentProblem() {

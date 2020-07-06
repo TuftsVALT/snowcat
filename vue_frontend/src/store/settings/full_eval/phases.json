@@ -1,0 +1,29 @@
+[{
+    "name": "Dataset",
+    "text": "In this step you can augment and select datasets.",
+    "defaultLayout": "dataset",
+    "editable": true,
+    "workspace": 0
+  },
+  {
+    "name": "Problem Description",
+    "text": "In this step you can define and select problems for modeling.",
+    "defaultLayout": "problemDescription",
+    "editable": true,
+    "workspace": 1
+  },
+  {
+    "name": "Waiting for Results",
+    "text": "Generating models.",
+    "defaultLayout": "problemDescription",
+    "editable": false,
+    "workspace": 2
+  },
+  {
+    "name": "Select Model",
+    "text": "Compare models and save good ones.",
+    "defaultLayout": "modelSelection",
+    "editable": false,
+    "workspace": 3
+  }
+]

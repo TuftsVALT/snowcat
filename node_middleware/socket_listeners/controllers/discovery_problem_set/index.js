@@ -635,7 +635,7 @@ var preprocessProblemDesc = function(dataset) {
     _.includes(dataDescMetadata.resourceType.type, "speech") ||
     _.includes(dataDescMetadata.resourceType.type, "timeseries")
   ) {
-    console.log("Data has table and text");
+    // console.log("Data has table and text");
     var count = 0;
 
     for (var i = 0; i < dataDescMetadata.columnType.id.length; i++) {
@@ -1311,7 +1311,7 @@ var preprocessProblemDesc = function(dataset) {
     }
   } // end of main if for "table"
 
-  console.log("Initial problem sets have been created!");
+  // console.log("Initial problem sets have been created!");
   /*
   for(var i = 0; i < problemSets.length; i++){
       console.log("Problem ID:" + problemSets[i].problemID + " || Target Feature:" + problemSets[i].targetFeature +"  ||  Predict Features:" + problemSets[i].predictFeatures + " || Task Type:" + problemSets[i].taskType + " || Metric:" + problemSets[i].metric + " || Priority:" + problemSets[i].priority + " || Creation Type:" + problemSets[i].creationType + " || Meaningful:" + problemSets[i].meaningful + " || Problem Desc:" + problemSets[i].description);
@@ -1582,7 +1582,7 @@ module.exports.set = function(session, socket) {
   session.registerDatasetUpdates(dataset => {
     if (dataset) {
       let returnSet = preprocessProblemDesc(session.getCurrentDataset());
-      console.log("HANDLE PROBLEM SET CREATION");
+      // console.log("HANDLE PROBLEM SET CREATION");
       socket.emit("problemSetProcessed", returnSet.problemSets);
     } else {
       console.log("NO DATASET, SENDING EMPTY PROBLEM SET");

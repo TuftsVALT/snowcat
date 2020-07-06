@@ -1,0 +1,43 @@
+{
+    "problem_schema": "static/local_testing_data/185_baseball/185_baseball_problem/problemDoc.json",
+    "problem_root": "static/local_testing_data/185_baseball/185_baseball_problem",
+    "dataset_schema": "static/local_testing_data/185_baseball/185_baseball_dataset/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/185_baseball/185_baseball_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "temp_storage_root": "/tmp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+	"running_mode": "development",
+	"model_output_predictions": [
+		{
+            "predictions": "static/local_testing_data/185_baseball/185_baseball_solution/model_A.csv",
+            "pipeline_file": "static/local_testing_data/185_baseball/185_baseball_solution/model_A_pipeline.json"
+        },
+        {
+            "predictions": "static/local_testing_data/185_baseball/185_baseball_solution/model_B.csv",
+            "pipeline_file": "static/local_testing_data/185_baseball/185_baseball_solution/model_B_pipeline.json"
+        },
+        {
+            "predictions": "static/local_testing_data/185_baseball/185_baseball_solution/model_C.csv",
+            "pipeline_file": "static/local_testing_data/185_baseball/185_baseball_solution/model_B_pipeline.json"
+        },
+        {
+            "predictions": "static/local_testing_data/185_baseball/185_baseball_solution/model_D.csv",
+            "pipeline_file": "static/local_testing_data/185_baseball/185_baseball_solution/model_B_pipeline.json"
+        },
+        {
+            "predictions": "static/local_testing_data/185_baseball/185_baseball_solution/model_E.csv",
+            "pipeline_file": "static/local_testing_data/185_baseball/185_baseball_solution/model_A_pipeline.json"
+        }
+	],
+    "model_output_prediction_files": [
+        "static/local_testing_data/185_baseball/185_baseball_solution/model_A.csv",
+        "static/local_testing_data/185_baseball/185_baseball_solution/model_B.csv",
+        "static/local_testing_data/185_baseball/185_baseball_solution/model_C.csv",
+        "static/local_testing_data/185_baseball/185_baseball_solution/model_D.csv",
+        "static/local_testing_data/185_baseball/185_baseball_solution/model_E.csv"
+    ]
+}

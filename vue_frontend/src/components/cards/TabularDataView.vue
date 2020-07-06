@@ -245,7 +245,7 @@ export default {
           this.$set(this.hiddenCharts, index, false);
         },
         xlinkSingleBarHandling: function(xLinking, histogramD3MIndexArray){
-            console.log("Single Bar Selection Handling");
+            // console.log("Single Bar Selection Handling");
 
             if(xLinking.visType.graph || xLinking.visType.text || xLinking.visType.rawTable || xLinking.visType.residualChartModel || xLinking.visType.audio || xLinking.visType.video){
 
@@ -305,7 +305,7 @@ export default {
         },
 
         xlinkMultiDataHandling: function(xLinking, histogramD3MIndexArray, participatingFieldsMetaData){
-            console.log("Any Multidata Handling:");
+            // console.log("Any Multidata Handling:");
 
             var totalWidth = this.totalWidth;
             var totalHeight = this.totalHeight;
@@ -831,7 +831,7 @@ export default {
                 })
                 .style("visibility", "hidden");
 
-            console.log("svg: " + svg);
+            // console.log("svg: " + svg);
             return svg; //the_SVG_ID;//svg;
 
         }

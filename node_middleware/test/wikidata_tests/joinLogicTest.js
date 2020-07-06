@@ -17,7 +17,7 @@ chai.use(require('chai-things'));
 // So by default, we're just loading the baseball dataset in, claiming the sourceCol is Player, 
 // but we're using whatever QIDs actually have the right type to test out each type of join.
 describe ('join functions ', async function() {
-    const datasetPath = path.resolve(appRootPath + "/input/185_baseball/");
+    const datasetPath = path.resolve(appRootPath + "/static/local_testing_data/185_baseball/");
     const dataset = new Dataset(datasetPath);
     const sourceColName = 'Player';
     const hankAaronQids = ['Q215777']; // Hank Aaron: https://www.wikidata.org/wiki/Q215777
@@ -110,6 +110,47 @@ describe ('join functions ', async function() {
                 const results = await materializeJoinCollectionString(rawData, sourceColName, awardsReceivedTargetRelUri, awardsReceivedTargetColumnName, hankAaronQids, 'count');
                 results[0][awardsReceivedTargetColumnName].should.eq('7');
             });        
+        })
+
+        describe('with a through join', async function() {
+            it('should return the average of a count', async function () {
+
+                const borderTargetRelUri = 'http://www.wikidata.org/prop/direct/P47';
+                const borderTargetColumnName = 'borderswith';
+
+                const throughJoinInstructions = {
+                    "dataset": "185",
+                    "operation": "join-collection-string",
+                    "aggregationOp": "count",
+                    "column": "State - shares border with (through)",
+                    "relationship": "shares border with",
+                    "name": "shares border with",
+                    "relationshipUri": "http://www.wikidata.org/prop/direct/P47",
+                    "examples": [
+                        "http://www.wikidata.org/entity/Q1522",
+                        "http://www.wikidata.org/entity/Q1509",
+                        "http://www.wikidata.org/entity/Q1509"
+                    ],
+                    "parentJoin": {
+                        "dataset": "185",
+                        "operation": "join-collection-string",
+                        "aggregationOp": "mean",
+                        "column": "State",
+                        "relationship": "shares border with",
+                        "relationshipUri": "http://www.wikidata.org/prop/direct/P47",
+                        "examples": [
+                        "http://www.wikidata.org/entity/Q46422",
+                        "http://www.wikidata.org/entity/Q1509",
+                        "http://www.wikidata.org/entity/Q1509"
+                        ]
+                    }
+                }
+
+                const rawData = await getRawData(dataset);
+                const results = await materializeJoinCollectionString(rawData, sourceColName, borderTargetRelUri, borderTargetColumnName, germanyQids, 'count', throughJoinInstructions);
+                // console.log("results is ", results)
+                parseFloat(results[0][borderTargetColumnName]).should.be.above(0.1);
+            })
         })
 
         // describe('aggregationOp === "mode"', async function() {

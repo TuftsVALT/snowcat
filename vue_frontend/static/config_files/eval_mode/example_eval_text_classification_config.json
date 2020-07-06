@@ -1,0 +1,13 @@
+{
+    "problem_schema": "/home/shahrukh/D3M-Feb/d3mapp/v2/static/local_testing_data/30_personae/30_personae_problem/problemDoc.json",
+    "problem_root": "/home/shahrukh/D3M-Feb/d3mapp/v2/static/local_testing_data/30_personae/30_personae_problem",
+    "dataset_schema": "/home/shahrukh/D3M-Feb/d3mapp/v2/static/local_testing_data/30_personae/30_personae_dataset/datasetDoc.json",
+    "training_data_root": "/home/shahrukh/D3M-Feb/d3mapp/v2/static/local_testing_data/30_personae/30_personae_dataset",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "temp_storage_root": "/tmp",
+    "user_problems_root": "static/problem_desc",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi"
+}

@@ -1,0 +1,33 @@
+{
+  "about": {
+    "problemID": "movie_model",
+    "problemName": "movie_model",
+    "problemDescription": "",
+    "taskType": "regression",
+    "problemVersion": "2.0",
+    "problemSchemaVersion": "3.2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "movie_model_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 24,
+            "colName": "imdb_score"
+          }
+        ]
+      }
+    ],
+    "performanceMetrics": [
+      {
+        "metric": "f1Macro"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

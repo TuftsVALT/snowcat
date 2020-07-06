@@ -1,0 +1,13 @@
+{
+    "problem_schema": "/input/196_autoMpg/196_autoMpg_problem/problemDoc.json",
+    "problem_root": "/input/196_autoMpg/196_autoMpg_problem",
+    "dataset_schema": "/input/196_autoMpg/196_autoMpg_dataset/datasetDoc.json",
+    "training_data_root": "/input/196_autoMpg/196_autoMpg_dataset",
+    "pipeline_logs_root": "/output/logs",
+    "executables_root": "/output/executables",
+    "temp_storage_root": "/output",
+    "user_problem_root": "/output/problem_desc",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi"
+}

@@ -1,0 +1,3137 @@
+d3mIndex,FIPS,State,Area,RUCCode,POVALL_2016,motto text,population
+0,35005,NM,Chaves County,5,13974,Crescit eundo,65823
+1,13297,GA,Walton County,1,11385,"Wisdom, Justice, Moderation",59807
+2,13137,GA,Habersham County,6,6500,"Wisdom, Justice, Moderation",43300
+3,54017,WV,Doddridge County,9,1460,Montani semper liberi,8344
+4,55055,WI,Jefferson County,4,7618,Forward,659479
+5,38065,ND,Oliver County,8,191,Serit ut alteri saeclo prosit,1874
+6,13059,GA,Clarke County,3,31950,"Wisdom, Justice, Moderation",25207
+7,36023,NY,Cortland County,4,7230,Excelsior,48976
+8,21109,KY,Jackson County,9,4213,Deo gratiam habeamus,208545
+9,54003,WV,Berkeley County,3,14461,Montani semper liberi,194020
+10,22079,LA,Rapides Parish,3,25575,,132723
+11,20037,KS,Crawford County,4,8318,Ad astra per aspera,24543
+12,5145,AR,White County,4,11843,Regnat populus,78483
+13,5057,AR,Hempstead County,6,4483,Regnat populus,22474
+14,20117,KS,Marshall County,7,995,Ad astra per aspera,94760
+15,37083,NC,Halifax County,4,13595,Esse quam videri,35401
+16,51037,VA,Charlotte County,8,2488,Sic semper tyrannis,164736
+17,41065,OR,Wasco County,6,3624,Alis volat propriis,25477
+18,29067,MO,Douglas County,6,2607,Salus populi suprema lex esto,106940
+19,16045,ID,Gem County,2,3042,Esto perpetua,16686
+20,38055,ND,McLean County,8,880,Serit ut alteri saeclo prosit,9517
+21,28075,MS,Lauderdale County,5,17531,Virtute et armis,92797
+22,4021,AZ,Pinal County,1,60679,Ditat Deus,389350
+23,45013,SC,Beaufort County,5,18326,Dum spiro spero,171838
+24,47043,TN,Dickson County,1,6973,Agriculture and Commerce,50266
+25,47079,TN,Henry County,7,6187,Agriculture and Commerce,49044
+26,6023,CA,Humboldt County,5,26632,Eureka,134493
+27,1035,AL,Conecuh County,9,3464,Audemus iura nostra defendere,12887
+28,51640,VA,Galax city,6,1327,Sic semper tyrannis,
+29,39175,OH,Wyandot County,7,1881,The Heart of It All,22447
+30,55073,WI,Marathon County,3,13941,Forward,135416
+31,42065,PA,Jefferson County,7,5743,"Virtue, liberty, and independence",659479
+32,12035,FL,Flagler County,4,11997,In God We Trust,99956
+33,12015,FL,Charlotte County,3,22087,In God We Trust,164736
+34,25019,MA,Nantucket County,7,697,Ense petit placidam sub libertate quietem,
+35,21231,KY,Wayne County,7,5390,Deo gratiam habeamus,1775273
+36,13055,GA,Chattooga County,6,4716,"Wisdom, Justice, Moderation",25138
+37,35047,NM,San Miguel County,6,6856,Crescit eundo,7678
+38,42095,PA,Northampton County,2,27078,"Virtue, liberty, and independence",299791
+39,39013,OH,Belmont County,3,10135,The Heart of It All,69571
+40,41055,OR,Sherman County,9,208,Alis volat propriis,1731
+41,21187,KY,Owen County,8,1923,Deo gratiam habeamus,21201
+42,27133,MN,Rock County,6,877,L’Étoile du Nord,160739
+43,31117,NE,McPherson County,9,60,Equality before the law,29569
+44,8117,CO,Summit County,7,2398,Nil sine numine,38486
+45,51005,VA,Alleghany County,6,2288,Sic semper tyrannis,16161
+46,13067,GA,Cobb County,1,73446,"Wisdom, Justice, Moderation",717190
+47,32003,NV,Clark County,1,311352,All For Our Country,2027868
+48,20031,KS,Coffey County,6,861,Ad astra per aspera,8412
+49,11001,DC,District of Columbia,1,119778,Justitia Omnibus,672228
+50,22105,LA,Tangipahoa Parish,4,27350,,125412
+51,31151,NE,Saline County,6,1526,Equality before the law,114404
+52,47063,TN,Hamblen County,3,11601,Agriculture and Commerce,63074
+53,49035,UT,Salt Lake County,2,104297,Industry,1079721
+54,22035,LA,East Carroll Parish,7,2686,,7529
+55,21183,KY,Ohio County,6,4865,Deo gratiam habeamus,43727
+56,13123,GA,Gilmer County,6,4490,"Wisdom, Justice, Moderation",28579
+57,46093,SD,Meade County,3,2666,,27202
+58,19159,IA,Ringgold County,9,696,Our liberties we prize and our rights we will maintain,5072
+59,42129,PA,Westmoreland County,1,34269,"Virtue, liberty, and independence",362437
+60,13105,GA,Elbert County,6,4197,"Wisdom, Justice, Moderation",23733
+61,51077,VA,Grayson County,9,2593,Sic semper tyrannis,122353
+62,55077,WI,Marquette County,8,1781,Forward,67700
+63,47017,TN,Carroll County,6,4894,Agriculture and Commerce,47499
+64,31039,NE,Cuming County,7,772,Equality before the law,8996
+65,19015,IA,Boone County,6,2389,Our liberties we prize and our rights we will maintain,24224
+66,37075,NC,Graham County,9,1675,Esse quam videri,37482
+67,1089,AL,Madison County,2,47081,Audemus iura nostra defendere,7712
+68,53073,WA,Whatcom County,3,32082,bye and bye,206353
+69,20167,KS,Russell County,7,1002,Ad astra per aspera,28264
+70,48395,TX,Robertson County,3,3097,Friendship,16486
+71,12081,FL,Manatee County,2,47042,In God We Trust,342106
+72,18171,IN,Warren County,8,731,The Crossroads of America,65337
+73,48123,TX,DeWitt County,6,3462,Friendship,20503
+74,48133,TX,Eastland County,6,3475,Friendship,18245
+75,26123,MI,Newaygo County,2,8101,Si quaeris peninsulam amoenam circumspice,48001
+76,21227,KY,Warren County,3,22037,Deo gratiam habeamus,65337
+77,5129,AR,Searcy County,9,1814,Regnat populus,8023
+78,12013,FL,Calhoun County,6,2742,In God We Trust,135012
+79,55035,WI,Eau Claire County,3,12783,Forward,101438
+80,22057,LA,Lafourche Parish,3,16447,,97141
+81,19053,IA,Decatur County,9,1469,Our liberties we prize and our rights we will maintain,11661
+82,13195,GA,Madison County,3,4255,"Wisdom, Justice, Moderation",7712
+83,51097,VA,King and Queen County,1,960,Sic semper tyrannis,7130
+84,28033,MS,DeSoto County,1,17819,Virtute et armis,168240
+85,21239,KY,Woodford County,2,3099,Deo gratiam habeamus,39273
+86,27141,MN,Sherburne County,1,5703,L’Étoile du Nord,90158
+87,5067,AR,Jackson County,6,3587,Regnat populus,208545
+88,45065,SC,McCormick County,8,1538,Dum spiro spero,9947
+89,31015,NE,Boyd County,9,283,Equality before the law,48886
+90,38071,ND,Ramsey County,7,1556,Serit ut alteri saeclo prosit,526714
+91,55049,WI,Iowa County,2,2063,Forward,23749
+92,13263,GA,Talbot County,8,1447,"Wisdom, Justice, Moderation",37931
+93,26013,MI,Baraga County,9,1235,Si quaeris peninsulam amoenam circumspice,8695
+94,12059,FL,Holmes County,6,4276,In God We Trust,19717
+95,21063,KY,Elliott County,9,1998,Deo gratiam habeamus,7637
+96,42099,PA,Perry County,2,4082,"Virtue, liberty, and independence",28010
+97,54103,WV,Wetzel County,6,3023,Montani semper liberi,16204
+98,26087,MI,Lapeer County,1,9324,Si quaeris peninsulam amoenam circumspice,88389
+99,6045,CA,Mendocino County,4,16366,Eureka,87192
+100,19113,IA,Linn County,3,21613,Our liberties we prize and our rights we will maintain,118765
+101,54091,WV,Taylor County,6,2678,Montani semper liberi,20610
+102,31045,NE,Dawes County,7,1366,Equality before the law,9088
+103,40065,OK,Jackson County,5,4756,Labor omnia vincit,208545
+104,13181,GA,Lincoln County,8,1479,"Wisdom, Justice, Moderation",5245
+105,48167,TX,Galveston County,1,41747,Friendship,306782
+106,38007,ND,Billings County,9,83,Serit ut alteri saeclo prosit,874
+107,36091,NY,Saratoga County,2,14094,Excelsior,223865
+108,1103,AL,Morgan County,3,18457,Audemus iura nostra defendere,119787
+109,46053,SD,Gregory County,9,655,,4242
+110,1127,AL,Walker County,1,13097,Audemus iura nostra defendere,65998
+111,27131,MN,Rice County,4,5673,L’Étoile du Nord,65049
+112,28035,MS,Forrest County,3,18514,Virtute et armis,77059
+113,33015,NH,Rockingham County,1,12681,Live Free or Die,299134
+114,25005,MA,Bristol County,1,58070,Ense petit placidam sub libertate quietem,552780
+115,48267,TX,Kimble County,7,848,Friendship,4481
+116,13211,GA,Morgan County,6,2358,"Wisdom, Justice, Moderation",119787
+117,1105,AL,Perry County,8,3066,Audemus iura nostra defendere,28010
+118,27053,MN,Hennepin County,1,132137,L’Étoile du Nord,1198778
+119,8035,CO,Douglas County,1,11114,Nil sine numine,106940
+120,42039,PA,Crawford County,4,11832,"Virtue, liberty, and independence",24543
+121,45069,SC,Marlboro County,6,6743,Dum spiro spero,28003
+122,48299,TX,Llano County,7,2701,Friendship,19444
+123,53051,WA,Pend Oreille County,8,2103,bye and bye,12896
+124,48487,TX,Wilbarger County,6,1981,Friendship,13131
+125,37191,NC,Wayne County,3,24889,Esse quam videri,1775273
+126,51199,VA,York County,1,3417,Sic semper tyrannis,199431
+127,27085,MN,McLeod County,6,2613,L’Étoile du Nord,35918
+128,48335,TX,Mitchell County,7,1473,Friendship,15328
+129,2050,AK,Bethel Census Area,7,4502,North to the Future,17758
+130,48291,TX,Liberty County,1,12164,Friendship,76907
+131,28125,MS,Sharkey County,9,1567,Virtute et armis,4708
+132,6067,CA,Sacramento County,1,243760,Eureka,1462131
+133,51031,VA,Campbell County,3,7220,Sic semper tyrannis,48176
+134,31053,NE,Dodge County,4,4131,Equality before the law,88344
+135,48389,TX,Reeves County,7,2943,Friendship,13965
+136,47103,TN,Lincoln County,6,5546,Agriculture and Commerce,5245
+137,40019,OK,Carter County,5,7799,Labor omnia vincit,1174
+138,39085,OH,Lake County,1,19364,The Heart of It All,63860
+139,51195,VA,Wise County,7,8525,Sic semper tyrannis,60939
+140,47077,TN,Henderson County,6,4777,Agriculture and Commerce,109540
+141,31141,NE,Platte County,5,2920,Equality before the law,8765
+142,6061,CA,Placer County,1,27340,Eureka,367309
+143,13165,GA,Jenkins County,6,2606,"Wisdom, Justice, Moderation",9269
+144,49049,UT,Utah County,2,66112,Industry,551891
+145,28161,MS,Yalobusha County,7,2812,Virtute et armis,12373
+146,34005,NJ,Burlington County,1,27083,Liberty and prosperity,450838
+147,17019,IL,Champaign County,3,36364,"State sovereignty, national union",204897
+148,13061,GA,Clay County,9,1040,"Wisdom, Justice, Moderation",10584
+149,37053,NC,Currituck County,1,2616,Esse quam videri,24396
+150,17011,IL,Bureau County,6,3775,"State sovereignty, national union",34056
+151,31109,NE,Lancaster County,2,35993,Equality before the law,529600
+152,39141,OH,Ross County,4,13224,The Heart of It All,77910
+153,37107,NC,Lenoir County,4,11637,Esse quam videri,58914
+154,30019,MT,Daniels County,9,176,Oro y Plata,1791
+155,2110,AK,Juneau Borough,5,2334,North to the Future,
+156,47091,TN,Johnson County,6,4038,Agriculture and Commerce,8628
+157,48143,TX,Erath County,7,7361,Friendship,39658
+158,20161,KS,Riley County,5,11709,Ad astra per aspera,75394
+159,5077,AR,Lee County,6,2701,Regnat populus,661115
+160,27103,MN,Nicollet County,5,2490,L’Étoile du Nord,33032
+161,1091,AL,Marengo County,7,5003,Audemus iura nostra defendere,20155
+162,30063,MT,Missoula County,3,17206,Oro y Plata,111807
+163,48185,TX,Grimes County,6,4124,Friendship,26859
+164,47167,TN,Tipton County,1,9698,Agriculture and Commerce,61586
+165,26093,MI,Livingston County,1,10912,Si quaeris peninsulam amoenam circumspice,184443
+166,48259,TX,Kendall County,1,3119,Friendship,37766
+167,56039,WY,Teton County,7,1680,Equal Rights,22268
+168,5093,AR,Mississippi County,4,10307,Regnat populus,44765
+169,22019,LA,Calcasieu Parish,3,39035,,195296
+170,48243,TX,Jeff Davis County,9,274,Friendship,2253
+171,6027,CA,Inyo County,7,2184,Eureka,18467
+172,48093,TX,Comanche County,7,2271,Friendship,124937
+173,1001,AL,Autauga County,2,7444,Audemus iura nostra defendere,54571
+174,19183,IA,Washington County,3,2161,Our liberties we prize and our rights we will maintain,32190
+175,8003,CO,Alamosa County,7,3816,Nil sine numine,16253
+176,31087,NE,Hitchcock County,9,360,Equality before the law,2872
+177,29061,MO,Daviess County,8,1357,Salus populi suprema lex esto,98218
+178,26025,MI,Calhoun County,3,21973,Si quaeris peninsulam amoenam circumspice,135012
+179,9013,CT,Tolland County,1,9786,Qui transtulit sustinet,151377
+180,29069,MO,Dunklin County,7,8089,Salus populi suprema lex esto,31712
+181,24041,MD,Talbot County,6,3827,"Fatti maschii, parole femine",37931
+182,13115,GA,Floyd County,3,14596,"Wisdom, Justice, Moderation",38728
+183,48401,TX,Rusk County,3,7461,Friendship,53622
+184,1065,AL,Hale County,3,3495,Audemus iura nostra defendere,15406
+185,54013,WV,Calhoun County,8,1586,Montani semper liberi,135012
+186,48043,TX,Brewster County,7,1365,Friendship,9286
+187,1029,AL,Cleburne County,8,2527,Audemus iura nostra defendere,25686
+188,4005,AZ,Coconino County,3,23116,Ditat Deus,136539
+189,8023,CO,Costilla County,9,1128,Nil sine numine,3518
+190,6075,CA,San Francisco County,1,87690,Eureka,805235
+191,48019,TX,Bandera County,1,3138,Friendship,20601
+192,17181,IL,Union County,7,2957,"State sovereignty, national union",25652
+193,5087,AR,Madison County,2,2910,Regnat populus,7712
+194,51133,VA,Northumberland County,9,1632,Sic semper tyrannis,94076
+195,8061,CO,Kiowa County,9,189,Nil sine numine,9341
+196,48165,TX,Gaines County,7,2982,Friendship,18921
+197,6007,CA,Butte County,3,43428,Eureka,222090
+198,13213,GA,Murray County,3,7055,"Wisdom, Justice, Moderation",13712
+199,28111,MS,Perry County,3,2599,Virtute et armis,28010
+200,51169,VA,Scott County,3,4103,Sic semper tyrannis,22015
+201,26003,MI,Alger County,9,1140,Si quaeris peninsulam amoenam circumspice,9522
+202,42063,PA,Indiana County,4,16198,"Virtue, liberty, and independence",87745
+203,37137,NC,Pamlico County,9,2230,Esse quam videri,12953
+204,37133,NC,Onslow County,3,23670,Esse quam videri,185220
+205,20091,KS,Johnson County,1,32380,Ad astra per aspera,8628
+206,39101,OH,Marion County,4,8673,The Heart of It All,323614
+207,12107,FL,Putnam County,4,15220,In God We Trust,72577
+208,28159,MS,Winston County,7,4070,Virtute et armis,24146
+209,8029,CO,Delta County,6,5300,Nil sine numine,30483
+210,55111,WI,Sauk County,4,6381,Forward,63162
+211,18111,IN,Newton County,1,1666,The Crossroads of America,8064
+212,12037,FL,Franklin County,6,2337,In God We Trust,71221
+213,27117,MN,Pipestone County,6,975,L’Étoile du Nord,9270
+214,19045,IA,Clinton County,4,6272,Our liberties we prize and our rights we will maintain,81591
+215,37055,NC,Dare County,5,3909,Esse quam videri,35019
+216,37099,NC,Jackson County,6,8051,Esse quam videri,208545
+217,36103,NY,Suffolk County,1,111341,Excelsior,1499738
+218,16039,ID,Elmore County,4,3531,Esto perpetua,26170
+219,30033,MT,Garfield County,9,181,Oro y Plata,5083
+220,5137,AR,Stone County,9,2697,Regnat populus,12581
+221,51009,VA,Amherst County,3,4340,Sic semper tyrannis,32178
+222,41069,OR,Wheeler County,9,258,Alis volat propriis,1381
+223,5029,AR,Conway County,6,3903,Regnat populus,21245
+224,17097,IL,Lake County,1,59478,"State sovereignty, national union",63860
+225,51125,VA,Nelson County,3,1865,Sic semper tyrannis,14789
+226,48477,TX,Washington County,6,4641,Friendship,32190
+227,53027,WA,Grays Harbor County,4,10437,bye and bye,71078
+228,35037,NM,Quay County,7,2044,Crescit eundo,8662
+229,48451,TX,Tom Green County,3,15144,Friendship,114954
+230,42061,PA,Huntingdon County,6,5522,"Virtue, liberty, and independence",45694
+231,47123,TN,Monroe County,6,8753,Agriculture and Commerce,76351
+232,27037,MN,Dakota County,1,23278,L’Étoile du Nord,408509
+233,36049,NY,Lewis County,6,4191,Excelsior,75081
+234,6015,CA,Del Norte County,7,5842,Eureka,27873
+235,8119,CO,Teller County,2,2278,Nil sine numine,23275
+236,29149,MO,Oregon County,9,2640,Salus populi suprema lex esto,10996
+237,29161,MO,Phelps County,5,8126,Salus populi suprema lex esto,44807
+238,31181,NE,Webster County,9,447,Equality before the law,8893
+239,8033,CO,Dolores County,9,271,Nil sine numine,2029
+240,13011,GA,Banks County,8,2845,"Wisdom, Justice, Moderation",18415
+241,55019,WI,Clark County,8,4676,Forward,2027868
+242,18005,IN,Bartholomew County,3,9336,The Crossroads of America,79587
+243,17033,IL,Crawford County,6,2571,"State sovereignty, national union",24543
+244,24037,MD,St. Mary's County,4,9977,"Fatti maschii, parole femine",109633
+245,31023,NE,Butler County,6,702,Equality before the law,371272
+246,16025,ID,Camas County,9,106,Esto perpetua,1042
+247,38063,ND,Nelson County,8,333,Serit ut alteri saeclo prosit,14789
+248,37015,NC,Bertie County,9,4438,Esse quam videri,20344
+249,8014,CO,Broomfield County,1,3518,Nil sine numine,
+250,56027,WY,Niobrara County,9,318,Equal Rights,2541
+251,17163,IL,St. Clair County,1,39745,"State sovereignty, national union",160469
+252,28121,MS,Rankin County,2,13745,Virtute et armis,146767
+253,36085,NY,Richmond County,1,62030,Excelsior,202003
+254,51185,VA,Tazewell County,7,7281,Sic semper tyrannis,44103
+255,37167,NC,Stanly County,6,7733,Esse quam videri,60635
+256,20165,KS,Rush County,9,360,Ad astra per aspera,17004
+257,20043,KS,Doniphan County,3,989,Ad astra per aspera,7851
+258,54071,WV,Pendleton County,8,1126,Montani semper liberi,7471
+259,55097,WI,Portage County,4,7684,Forward,70380
+260,19031,IA,Cedar County,6,1207,Our liberties we prize and our rights we will maintain,13913
+261,48251,TX,Johnson County,1,18049,Friendship,8628
+262,49009,UT,Daggett County,8,84,Industry,1127
+263,28007,MS,Attala County,6,4428,Virtute et armis,19317
+264,55027,WI,Dodge County,4,8012,Forward,88344
+265,28005,MS,Amite County,8,2951,Virtute et armis,12899
+266,47107,TN,McMinn County,4,8740,Agriculture and Commerce,52341
+267,19153,IA,Polk County,2,50628,Our liberties we prize and our rights we will maintain,31569
+268,31169,NE,Thayer County,9,551,Equality before the law,5189
+269,21215,KY,Spencer County,1,1601,Deo gratiam habeamus,20944
+270,5139,AR,Union County,5,7603,Regnat populus,25652
+271,54049,WV,Marion County,4,9690,Montani semper liberi,323614
+272,8099,CO,Prowers County,7,2421,Nil sine numine,12291
+273,13125,GA,Glascock County,9,539,"Wisdom, Justice, Moderation",3102
+274,21033,KY,Caldwell County,6,2523,Deo gratiam habeamus,81990
+275,31025,NE,Cass County,2,1920,Equality before the law,28555
+276,20111,KS,Lyon County,5,5212,Ad astra per aspera,51557
+277,29171,MO,Putnam County,9,837,Salus populi suprema lex esto,72577
+278,19069,IA,Franklin County,7,1157,Our liberties we prize and our rights we will maintain,71221
+279,8103,CO,Rio Blanco County,9,591,Nil sine numine,6807
+280,21195,KY,Pike County,7,18486,Deo gratiam habeamus,63380
+281,29071,MO,Franklin County,1,10901,Salus populi suprema lex esto,71221
+282,16067,ID,Minidoka County,7,3243,Esto perpetua,20292
+283,17065,IL,Hamilton County,7,1144,"State sovereignty, national union",4773
+284,20061,KS,Geary County,5,4031,Ad astra per aspera,37384
+285,31017,NE,Brown County,9,401,Equality before the law,37749
+286,39157,OH,Tuscarawas County,4,11525,The Heart of It All,92672
+287,39033,OH,Crawford County,4,5753,The Heart of It All,24543
+288,26141,MI,Presque Isle County,7,1852,Si quaeris peninsulam amoenam circumspice,13062
+289,54077,WV,Preston County,3,5455,Montani semper liberi,33859
+290,26033,MI,Chippewa County,5,5278,Si quaeris peninsulam amoenam circumspice,38696
+291,51680,VA,Lynchburg city,3,12336,Sic semper tyrannis,
+292,8053,CO,Hinsdale County,9,77,Nil sine numine,813
+293,6031,CA,Kings County,3,23247,Eureka,150960
+294,46129,SD,Walworth County,7,810,,102945
+295,2261,AK,Valdez-Cordova Census Area,9,852,North to the Future,9763
+296,39113,OH,Montgomery County,2,93949,The Heart of It All,1058810
+297,42029,PA,Chester County,1,35349,"Virtue, liberty, and independence",509468
+298,21115,KY,Johnson County,7,5814,Deo gratiam habeamus,8628
+299,39093,OH,Lorain County,1,36828,The Heart of It All,302827
+300,21207,KY,Russell County,9,4361,Deo gratiam habeamus,28264
+301,54001,WV,Barbour County,7,3514,Montani semper liberi,16770
+302,51019,VA,Bedford County,3,7445,Sic semper tyrannis,49055
+303,36123,NY,Yates County,6,3340,Excelsior,25156
+304,51027,VA,Buchanan County,9,5274,Sic semper tyrannis,23597
+305,39099,OH,Mahoning County,2,41625,The Heart of It All,233869
+306,1051,AL,Elmore County,2,10316,Audemus iura nostra defendere,26170
+307,28049,MS,Hinds County,2,48244,Virtute et armis,244899
+308,55125,WI,Vilas County,9,2676,Forward,21368
+309,46101,SD,Moody County,8,676,,6404
+310,13071,GA,Colquitt County,6,11252,"Wisdom, Justice, Moderation",46275
+311,19013,IA,Black Hawk County,3,20556,Our liberties we prize and our rights we will maintain,132546
+312,53001,WA,Adams County,6,3710,bye and bye,3828
+313,13117,GA,Forsyth County,1,12468,"Wisdom, Justice, Moderation",361220
+314,48137,TX,Edwards County,9,443,Friendship,1884
+315,53017,WA,Douglas County,3,5260,bye and bye,106940
+316,46083,SD,Lincoln County,3,2007,,5245
+317,48077,TX,Clay County,3,1345,Friendship,10584
+318,45083,SC,Spartanburg County,2,45637,Dum spiro spero,290969
+319,2013,AK,Aleutians East Borough,9,487,North to the Future,3341
+320,53009,WA,Clallam County,5,11110,bye and bye,72312
+321,17193,IL,White County,6,2246,"State sovereignty, national union",78483
+322,18009,IN,Blackford County,6,1530,The Crossroads of America,12481
+323,1063,AL,Greene County,3,2845,Audemus iura nostra defendere,68267
+324,48195,TX,Hansford County,7,730,Friendship,5555
+325,26009,MI,Antrim County,9,2686,Si quaeris peninsulam amoenam circumspice,23370
+326,48331,TX,Milam County,6,3959,Friendship,24167
+327,22053,LA,Jefferson Davis Parish,6,5933,,31301
+328,47187,TN,Williamson County,1,11292,Agriculture and Commerce,198901
+329,13197,GA,Marion County,2,1975,"Wisdom, Justice, Moderation",323614
+330,51159,VA,Richmond County,9,1399,Sic semper tyrannis,202003
+331,51193,VA,Westmoreland County,7,2581,Sic semper tyrannis,362437
+332,37105,NC,Lee County,4,9869,Esse quam videri,661115
+333,47133,TN,Overton County,7,4066,Agriculture and Commerce,22075
+334,5121,AR,Randolph County,7,3229,Regnat populus,29415
+335,5037,AR,Cross County,6,3252,Regnat populus,17548
+336,48131,TX,Duval County,7,2857,Friendship,885855
+337,38015,ND,Burleigh County,3,6505,Serit ut alteri saeclo prosit,88457
+338,12065,FL,Jefferson County,2,2398,In God We Trust,659479
+339,40105,OK,Nowata County,6,1776,Labor omnia vincit,10555
+340,13103,GA,Effingham County,2,5949,"Wisdom, Justice, Moderation",54456
+341,16047,ID,Gooding County,7,2083,Esto perpetua,15080
+342,27089,MN,Marshall County,8,903,L’Étoile du Nord,94760
+343,48371,TX,Pecos County,7,2376,Friendship,15697
+344,48411,TX,San Saba County,7,1062,Friendship,6012
+345,22043,LA,Grant Parish,3,4160,,22030
+346,36037,NY,Genesee County,4,6475,Excelsior,415376
+347,46123,SD,Tripp County,7,928,,5498
+348,18001,IN,Adams County,6,5271,The Crossroads of America,3828
+349,18163,IN,Vanderburgh County,2,30462,The Crossroads of America,181398
+350,49001,UT,Beaver County,9,572,Industry,6459
+351,48155,TX,Foard County,9,207,Friendship,1277
+352,5141,AR,Van Buren County,8,2737,Regnat populus,16932
+353,54057,WV,Mineral County,3,4156,Montani semper liberi,4614
+354,21149,KY,McLean County,3,1619,Deo gratiam habeamus,9517
+355,18029,IN,Dearborn County,1,3988,The Crossroads of America,49904
+356,26073,MI,Isabella County,5,15118,Si quaeris peninsulam amoenam circumspice,70436
+357,47111,TN,Macon County,1,4117,Agriculture and Commerce,33857
+358,24025,MD,Harford County,1,17769,"Fatti maschii, parole femine",249215
+359,26039,MI,Crawford County,7,2892,Si quaeris peninsulam amoenam circumspice,24543
+360,48467,TX,Van Zandt County,6,7921,Friendship,52481
+361,2158,AK,Kusilvak Census Area,9,3033,North to the Future,7977
+362,51063,VA,Floyd County,8,2129,Sic semper tyrannis,38728
+363,29229,MO,Wright County,6,4355,Salus populi suprema lex esto,128470
+364,39095,OH,Lucas County,2,83600,The Heart of It All,436393
+365,39035,OH,Cuyahoga County,1,223636,The Heart of It All,1263154
+366,17179,IL,Tazewell County,2,11526,"State sovereignty, national union",44103
+367,18131,IN,Pulaski County,6,1435,The Crossroads of America,391284
+368,40141,OK,Tillman County,6,1689,Labor omnia vincit,7711
+369,28135,MS,Tallahatchie County,7,4430,Virtute et armis,15081
+370,51115,VA,Mathews County,1,880,Sic semper tyrannis,8897
+371,12111,FL,St. Lucie County,2,51657,In God We Trust,286832
+372,30059,MT,Meagher County,9,322,Oro y Plata,1937
+373,41053,OR,Polk County,2,9681,Alis volat propriis,31569
+374,38053,ND,McKenzie County,9,981,Serit ut alteri saeclo prosit,9314
+375,34017,NJ,Hudson County,1,104660,Liberty and prosperity,660282
+376,48269,TX,King County,9,31,Friendship,2044449
+377,37065,NC,Edgecombe County,3,12514,Esse quam videri,55574
+378,18091,IN,La Porte County,3,16218,The Crossroads of America,111281
+379,28085,MS,Lincoln County,6,6763,Virtute et armis,5245
+380,26023,MI,Branch County,6,6969,Si quaeris peninsulam amoenam circumspice,43649
+381,17187,IL,Warren County,7,2213,"State sovereignty, national union",65337
+382,5071,AR,Johnson County,6,4699,Regnat populus,8628
+383,31139,NE,Pierce County,9,674,Equality before the law,819743
+384,50005,VT,Caledonia County,7,3929,Stella quarta decima fulgeat,31157
+385,28103,MS,Noxubee County,7,3434,Virtute et armis,11089
+386,37063,NC,Durham County,2,47269,Esse quam videri,288133
+387,13231,GA,Pike County,1,2074,"Wisdom, Justice, Moderation",63380
+388,26017,MI,Bay County,3,15716,Si quaeris peninsulam amoenam circumspice,106832
+389,51073,VA,Gloucester County,1,3449,Sic semper tyrannis,290265
+390,17131,IL,Mercer County,2,1581,"State sovereignty, national union",61984
+391,56023,WY,Lincoln County,7,1631,Equal Rights,5245
+392,18137,IN,Ripley County,6,3448,The Crossroads of America,14032
+393,48341,TX,Moore County,6,2596,Friendship,91587
+394,5143,AR,Washington County,2,34567,Regnat populus,32190
+395,27029,MN,Clearwater County,8,1432,L’Étoile du Nord,8577
+396,47113,TN,Madison County,3,17777,Agriculture and Commerce,7712
+397,29179,MO,Reynolds County,9,1397,Salus populi suprema lex esto,6599
+398,35033,NM,Mora County,8,1130,Crescit eundo,4704
+399,46085,SD,Lyman County,9,860,,3892
+400,13099,GA,Early County,6,3210,"Wisdom, Justice, Moderation",10542
+401,13253,GA,Seminole County,6,1948,"Wisdom, Justice, Moderation",436041
+402,6005,CA,Amador County,6,3846,Eureka,36519
+403,18147,IN,Spencer County,8,1847,The Crossroads of America,20944
+404,28063,MS,Jefferson County,7,2321,Virtute et armis,659479
+405,47131,TN,Obion County,7,5604,Agriculture and Commerce,31131
+406,17027,IL,Clinton County,1,3330,"State sovereignty, national union",81591
+407,13139,GA,Hall County,3,26561,"Wisdom, Justice, Moderation",187745
+408,46049,SD,Faulk County,9,298,,2386
+409,38095,ND,Towner County,9,238,Serit ut alteri saeclo prosit,2317
+410,13085,GA,Dawson County,1,2373,"Wisdom, Justice, Moderation",9445
+411,46127,SD,Union County,3,981,,25652
+412,48027,TX,Bell County,2,42739,Friendship,326843
+413,13305,GA,Wayne County,6,6217,"Wisdom, Justice, Moderation",1775273
+414,13023,GA,Bleckley County,6,2514,"Wisdom, Justice, Moderation",12771
+415,30049,MT,Lewis and Clark County,5,6858,Oro y Plata,65338
+416,50013,VT,Grand Isle County,3,609,Stella quarta decima fulgeat,6970
+417,13153,GA,Houston County,3,22347,"Wisdom, Justice, Moderation",22911
+418,5113,AR,Polk County,7,4660,Regnat populus,31569
+419,37147,NC,Pitt County,3,36594,Esse quam videri,174263
+420,29041,MO,Chariton County,9,966,Salus populi suprema lex esto,7628
+421,48275,TX,Knox County,9,781,Friendship,39550
+422,40087,OK,McClain County,1,4137,Labor omnia vincit,36511
+423,29007,MO,Audrain County,6,4019,Salus populi suprema lex esto,25661
+424,48391,TX,Refugio County,6,1128,Friendship,7305
+425,20089,KS,Jewell County,9,363,Ad astra per aspera,3046
+426,45045,SC,Greenville County,2,53113,Dum spiro spero,474266
+427,17045,IL,Edgar County,6,2350,"State sovereignty, national union",17960
+428,21091,KY,Hancock County,3,1100,Deo gratiam habeamus,54845
+429,31037,NE,Colfax County,7,1005,Equality before the law,13094
+430,48099,TX,Coryell County,2,8991,Friendship,76192
+431,1061,AL,Geneva County,3,5495,Audemus iura nostra defendere,26727
+432,17047,IL,Edwards County,9,715,"State sovereignty, national union",1884
+433,13295,GA,Walker County,2,12349,"Wisdom, Justice, Moderation",65998
+434,51089,VA,Henry County,4,9333,Sic semper tyrannis,49044
+435,32005,NV,Douglas County,4,4631,All For Our Country,106940
+436,5135,AR,Sharp County,7,3610,Regnat populus,17049
+437,39007,OH,Ashtabula County,4,17202,The Heart of It All,99811
+438,8113,CO,San Miguel County,9,811,Nil sine numine,7678
+439,12021,FL,Collier County,2,41076,In God We Trust,339642
+440,26117,MI,Montcalm County,6,9381,Si quaeris peninsulam amoenam circumspice,63105
+441,40121,OK,Pittsburg County,5,6007,Labor omnia vincit,44703
+442,8079,CO,Mineral County,9,68,Nil sine numine,4614
+443,16075,ID,Payette County,6,3639,Esto perpetua,22610
+444,42069,PA,Lackawanna County,2,28739,"Virtue, liberty, and independence",213931
+445,28123,MS,Scott County,6,6303,Virtute et armis,22015
+446,29223,MO,Wayne County,9,3370,Salus populi suprema lex esto,1775273
+447,24510,MD,Baltimore city,1,128752,"Fatti maschii, parole femine",622104
+448,31047,NE,Dawson County,7,2966,Equality before the law,9445
+449,42083,PA,Mc Kean County,7,6711,"Virtue, liberty, and independence",
+450,16021,ID,Boundary County,7,1973,Esto perpetua,10853
+451,29173,MO,Ralls County,9,1109,Salus populi suprema lex esto,10192
+452,16073,ID,Owyhee County,2,1942,Esto perpetua,11472
+453,39001,OH,Adams County,6,5543,The Heart of It All,3828
+454,2070,AK,Dillingham Census Area,9,965,North to the Future,5010
+455,15009,HI,Maui County,5,15578,Ua Mau ke Ea o ka ʻĀina i ka Pono,160202
+456,1097,AL,Mobile County,2,79364,Audemus iura nostra defendere,414079
+457,17021,IL,Christian County,6,4013,"State sovereignty, national union",80899
+458,30035,MT,Glacier County,7,3792,Oro y Plata,13739
+459,28099,MS,Neshoba County,7,6517,Virtute et armis,29507
+460,37011,NC,Avery County,8,2985,Esse quam videri,17713
+461,27087,MN,Mahnomen County,8,941,L’Étoile du Nord,5532
+462,18073,IN,Jasper County,1,3032,The Crossroads of America,35649
+463,27025,MN,Chisago County,1,3554,L’Étoile du Nord,53761
+464,29185,MO,St. Clair County,8,1868,Salus populi suprema lex esto,160469
+465,13043,GA,Candler County,7,2647,"Wisdom, Justice, Moderation",10937
+466,31175,NE,Valley County,9,479,Equality before the law,9606
+467,22007,LA,Assumption Parish,6,4761,,23187
+468,38061,ND,Mountrail County,9,964,Serit ut alteri saeclo prosit,9376
+469,18141,IN,St. Joseph County,2,41889,The Crossroads of America,266709
+470,26035,MI,Clare County,7,6496,Si quaeris peninsulam amoenam circumspice,30569
+471,13243,GA,Randolph County,6,2063,"Wisdom, Justice, Moderation",29415
+472,20095,KS,Kingman County,6,778,Ad astra per aspera,7844
+473,55099,WI,Price County,9,1482,Forward,13802
+474,20121,KS,Miami County,1,2644,Ad astra per aspera,103439
+475,55015,WI,Calumet County,3,2462,Forward,49617
+476,17025,IL,Clay County,7,2085,"State sovereignty, national union",10584
+477,21233,KY,Webster County,2,2311,Deo gratiam habeamus,8893
+478,36045,NY,Jefferson County,4,16468,Excelsior,659479
+479,17175,IL,Stark County,2,652,"State sovereignty, national union",375432
+480,39065,OH,Hardin County,6,3906,The Heart of It All,26034
+481,12019,FL,Clay County,1,19785,In God We Trust,10584
+482,22055,LA,Lafayette Parish,3,42781,,230845
+483,21213,KY,Simpson County,6,2663,Deo gratiam habeamus,27500
+484,35023,NM,Hidalgo County,7,1129,Crescit eundo,4654
+485,31099,NE,Kearney County,7,584,Equality before the law,6548
+486,51145,VA,Powhatan County,1,1779,Sic semper tyrannis,28259
+487,56037,WY,Sweetwater County,5,4264,Equal Rights,45237
+488,51085,VA,Hanover County,1,5900,Sic semper tyrannis,101330
+489,37059,NC,Davie County,2,4820,Esse quam videri,41554
+490,22033,LA,East Baton Rouge Parish,2,86888,,445227
+491,21155,KY,Marion County,6,3750,Deo gratiam habeamus,323614
+492,39153,OH,Summit County,2,72687,The Heart of It All,38486
+493,35049,NM,Santa Fe County,3,20463,Crescit eundo,147423
+494,8001,CO,Adams County,1,57811,Nil sine numine,3828
+495,42087,PA,Mifflin County,4,6711,"Virtue, liberty, and independence",46616
+496,19059,IA,Dickinson County,7,1332,Our liberties we prize and our rights we will maintain,16955
+497,25023,MA,Plymouth County,1,39977,Ense petit placidam sub libertate quietem,501915
+498,47159,TN,Smith County,1,2801,Agriculture and Commerce,216080
+499,31123,NE,Morrill County,9,775,Equality before the law,4908
+500,26061,MI,Houghton County,5,6762,Si quaeris peninsulam amoenam circumspice,36225
+501,42051,PA,Fayette County,1,22645,"Virtue, liberty, and independence",45599
+502,48029,TX,Bexar County,1,306859,Friendship,1958578
+503,35017,NM,Grant County,7,6308,Crescit eundo,7283
+504,28113,MS,Pike County,7,11649,Virtute et armis,63380
+505,13255,GA,Spalding County,1,14243,"Wisdom, Justice, Moderation",63829
+506,47041,TN,DeKalb County,6,3760,Agriculture and Commerce,713340
+507,27105,MN,Nobles County,7,2500,L’Étoile du Nord,21617
+508,19055,IA,Delaware County,6,1626,Our liberties we prize and our rights we will maintain,46722
+509,34025,NJ,Monmouth County,1,43866,Liberty and prosperity,629672
+510,41015,OR,Curry County,7,3171,Alis volat propriis,22339
+511,53041,WA,Lewis County,4,11155,bye and bye,75081
+512,42043,PA,Dauphin County,2,30247,"Virtue, liberty, and independence",270937
+513,29121,MO,Macon County,7,2416,Salus populi suprema lex esto,33857
+514,33013,NH,Merrimack County,4,10532,Live Free or Die,146849
+515,17107,IL,Logan County,6,3450,"State sovereignty, national union",35987
+516,17183,IL,Vermilion County,3,15183,"State sovereignty, national union",80329
+517,31127,NE,Nemaha County,7,868,Equality before the law,10161
+518,17015,IL,Carroll County,7,1798,"State sovereignty, national union",47499
+519,19163,IA,Scott County,2,22602,Our liberties we prize and our rights we will maintain,22015
+520,31049,NE,Deuel County,9,213,Equality before the law,4320
+521,48145,TX,Falls County,6,3915,Friendship,17493
+522,5005,AR,Baxter County,7,5144,Regnat populus,40957
+523,39131,OH,Pike County,7,5660,The Heart of It All,63380
+524,16019,ID,Bonneville County,3,13072,Esto perpetua,107517
+525,12007,FL,Bradford County,6,4392,In God We Trust,62316
+526,19115,IA,Louisa County,8,1253,Our liberties we prize and our rights we will maintain,33945
+527,21123,KY,Larue County,3,2312,Deo gratiam habeamus,14064
+528,21205,KY,Rowan County,7,5389,Deo gratiam habeamus,23527
+529,55033,WI,Dunn County,6,5164,Forward,44122
+530,16041,ID,Franklin County,3,1239,Esto perpetua,71221
+531,48465,TX,Val Verde County,5,9703,Friendship,48623
+532,27061,MN,Itasca County,6,5898,L’Étoile du Nord,45564
+533,53013,WA,Columbia County,6,543,bye and bye,49344
+534,38089,ND,Stark County,7,2433,Serit ut alteri saeclo prosit,375432
+535,21131,KY,Leslie County,9,3265,Deo gratiam habeamus,11019
+536,46009,SD,Bon Homme County,9,811,,7046
+537,50007,VT,Chittenden County,3,14667,Stella quarta decima fulgeat,159515
+538,30017,MT,Custer County,7,1318,Oro y Plata,4249
+539,37037,NC,Chatham County,2,8384,Esse quam videri,278434
+540,1113,AL,Russell County,2,11108,Audemus iura nostra defendere,28264
+541,34021,NJ,Mercer County,2,39066,Liberty and prosperity,61984
+542,48479,TX,Webb County,3,85150,Friendship,262495
+543,39167,OH,Washington County,3,8100,The Heart of It All,32190
+544,16055,ID,Kootenai County,3,22165,Esto perpetua,144265
+545,41061,OR,Union County,7,4058,Alis volat propriis,25652
+546,36113,NY,Warren County,3,7479,Excelsior,65337
+547,18107,IN,Montgomery County,6,4157,The Crossroads of America,1058810
+548,13311,GA,White County,8,4030,"Wisdom, Justice, Moderation",78483
+549,47001,TN,Anderson County,2,10753,Agriculture and Commerce,75542
+550,26095,MI,Luce County,7,1092,Si quaeris peninsulam amoenam circumspice,6502
+551,19173,IA,Taylor County,9,751,Our liberties we prize and our rights we will maintain,20610
+552,51127,VA,New Kent County,1,1202,Sic semper tyrannis,19507
+553,54093,WV,Tucker County,9,1067,Montani semper liberi,6968
+554,40045,OK,Ellis County,9,523,Labor omnia vincit,155976
+555,2020,AK,Anchorage Borough,2,21108,North to the Future,294356
+556,48469,TX,Victoria County,3,12900,Friendship,90028
+557,31163,NE,Sherman County,9,368,Equality before the law,1731
+558,13111,GA,Fannin County,8,3485,"Wisdom, Justice, Moderation",23760
+559,39151,OH,Stark County,2,48072,The Heart of It All,375432
+560,35059,NM,Union County,9,705,Crescit eundo,25652
+561,21025,KY,Breathitt County,7,4466,Deo gratiam habeamus,13545
+562,19149,IA,Plymouth County,6,2091,Our liberties we prize and our rights we will maintain,501915
+563,10005,DE,Sussex County,4,25212,Liberty and Independence,206649
+564,6105,CA,Trinity County,8,2668,Eureka,13448
+565,20125,KS,Montgomery County,5,5953,Ad astra per aspera,1058810
+566,26165,MI,Wexford County,7,5812,Si quaeris peninsulam amoenam circumspice,32645
+567,20101,KS,Lane County,9,164,Ad astra per aspera,356212
+568,5011,AR,Bradley County,6,2544,Regnat populus,101848
+569,26129,MI,Ogemaw County,9,3564,Si quaeris peninsulam amoenam circumspice,21234
+570,23017,ME,Oxford County,6,7565,Dirigo,57277
+571,28155,MS,Webster County,9,2002,Virtute et armis,8893
+572,39061,OH,Hamilton County,1,126002,The Heart of It All,4773
+573,42023,PA,Cameron County,7,655,"Virtue, liberty, and independence",417276
+574,13183,GA,Long County,3,3365,"Wisdom, Justice, Moderation",16624
+575,51775,VA,Salem city,2,2160,Sic semper tyrannis,
+576,41029,OR,Jackson County,3,31189,Alis volat propriis,208545
+577,18019,IN,Clark County,1,11983,The Crossroads of America,2027868
+578,36017,NY,Chenango County,6,7248,Excelsior,49503
+579,36093,NY,Schenectady County,2,17158,Excelsior,155333
+580,33011,NH,Hillsborough County,2,31972,Live Free or Die,403985
+581,21171,KY,Monroe County,9,2409,Deo gratiam habeamus,76351
+582,18077,IN,Jefferson County,6,4061,The Crossroads of America,659479
+583,21169,KY,Metcalfe County,9,2244,Deo gratiam habeamus,9983
+584,26135,MI,Oscoda County,9,1522,Si quaeris peninsulam amoenam circumspice,8379
+585,12093,FL,Okeechobee County,4,7547,In God We Trust,39330
+586,5059,AR,Hot Spring County,6,4541,Regnat populus,33500
+587,27107,MN,Norman County,8,777,L’Étoile du Nord,6631
+588,42071,PA,Lancaster County,2,56082,"Virtue, liberty, and independence",529600
+589,30071,MT,Phillips County,9,631,Oro y Plata,4179
+590,46025,SD,Clark County,9,398,,2027868
+591,12103,FL,Pinellas County,1,125923,In God We Trust,929048
+592,48365,TX,Panola County,6,3598,Friendship,34402
+593,1059,AL,Franklin County,6,6272,Audemus iura nostra defendere,71221
+594,48205,TX,Hartley County,9,452,Friendship,6100
+595,1045,AL,Dale County,4,9936,Audemus iura nostra defendere,49884
+596,22109,LA,Terrebonne Parish,3,23521,,112749
+597,32009,NV,Esmeralda County,9,117,All For Our Country,832
+598,35011,NM,DeBaca County,9,378,Crescit eundo,1907
+599,13079,GA,Crawford County,3,2355,"Wisdom, Justice, Moderation",24543
+600,42033,PA,Clearfield County,4,10543,"Virtue, liberty, and independence",81174
+601,13159,GA,Jasper County,1,2282,"Wisdom, Justice, Moderation",35649
+602,1087,AL,Macon County,6,5183,Audemus iura nostra defendere,33857
+603,2240,AK,Southeast Fairbanks Census Area,8,804,North to the Future,6985
+604,31159,NE,Seward County,2,1252,Equality before the law,17089
+605,17043,IL,DuPage County,1,64330,"State sovereignty, national union",932126
+606,28037,MS,Franklin County,9,1554,Virtute et armis,71221
+607,48359,TX,Oldham County,8,261,Friendship,2102
+608,8085,CO,Montrose County,7,6716,Nil sine numine,40713
+609,25011,MA,Franklin County,2,6926,Ense petit placidam sub libertate quietem,71221
+610,46021,SD,Campbell County,9,131,,48176
+611,18149,IN,Starke County,6,3694,The Crossroads of America,23197
+612,53059,WA,Skamania County,1,1543,bye and bye,11274
+613,20011,KS,Bourbon County,6,2465,Ad astra per aspera,14852
+614,13307,GA,Webster County,8,539,"Wisdom, Justice, Moderation",8893
+615,48449,TX,Titus County,7,4749,Friendship,32581
+616,54097,WV,Upshur County,7,4705,Montani semper liberi,24665
+617,19005,IA,Allamakee County,6,1786,Our liberties we prize and our rights we will maintain,14169
+618,47095,TN,Lake County,9,2151,Agriculture and Commerce,63860
+619,47163,TN,Sullivan County,3,25304,Agriculture and Commerce,76665
+620,41027,OR,Hood River County,6,2459,Alis volat propriis,22675
+621,31155,NE,Saunders County,2,1524,Equality before the law,20929
+622,38069,ND,Pierce County,7,522,Serit ut alteri saeclo prosit,819743
+623,21101,KY,Henderson County,2,7739,Deo gratiam habeamus,109540
+624,31111,NE,Lincoln County,5,3272,Equality before the law,5245
+625,20175,KS,Seward County,7,3017,Ad astra per aspera,17089
+626,26127,MI,Oceana County,8,4630,Si quaeris peninsulam amoenam circumspice,26245
+627,42121,PA,Venango County,4,7507,"Virtue, liberty, and independence",53907
+628,32011,NV,Eureka County,9,189,All For Our Country,2076
+629,54031,WV,Hardy County,8,2096,Montani semper liberi,13920
+630,21137,KY,Lincoln County,7,5499,Deo gratiam habeamus,5245
+631,6081,CA,San Mateo County,1,50438,Eureka,747373
+632,15007,HI,Kauai County,5,5716,Ua Mau ke Ea o ka ʻĀina i ka Pono,69512
+633,27057,MN,Hubbard County,7,2677,L’Étoile du Nord,20658
+634,42017,PA,Bucks County,1,40872,"Virtue, liberty, and independence",626976
+635,18129,IN,Posey County,2,2192,The Crossroads of America,25486
+636,51810,VA,Virginia Beach city,1,36494,Sic semper tyrannis,
+637,39119,OH,Muskingum County,4,12435,The Heart of It All,85231
+638,42103,PA,Pike County,1,5397,"Virtue, liberty, and independence",63380
+639,48505,TX,Zapata County,6,4162,Friendship,14390
+640,47039,TN,Decatur County,9,2164,Agriculture and Commerce,11661
+641,37193,NC,Wilkes County,6,11378,Esse quam videri,69023
+642,53067,WA,Thurston County,3,28354,bye and bye,262388
+643,34041,NJ,Warren County,2,8708,Liberty and prosperity,65337
+644,8065,CO,Lake County,7,1093,Nil sine numine,63860
+645,13283,GA,Treutlen County,7,1717,"Wisdom, Justice, Moderation",6712
+646,13285,GA,Troup County,4,13731,"Wisdom, Justice, Moderation",69053
+647,31055,NE,Douglas County,2,67359,Equality before the law,106940
+648,27125,MN,Red Lake County,8,390,L’Étoile du Nord,4057
+649,45009,SC,Bamberg County,7,3885,Dum spiro spero,15430
+650,12073,FL,Leon County,2,52124,In God We Trust,16742
+651,21061,KY,Edmonson County,3,2668,Deo gratiam habeamus,12062
+652,48053,TX,Burnet County,6,5181,Friendship,43823
+653,47009,TN,Blount County,2,14401,Agriculture and Commerce,125099
+654,17125,IL,Mason County,6,1996,"State sovereignty, national union",27126
+655,47105,TN,Loudon County,2,5414,Agriculture and Commerce,50448
+656,48393,TX,Roberts County,9,60,Friendship,10251
+657,19073,IA,Greene County,6,998,Our liberties we prize and our rights we will maintain,68267
+658,37177,NC,Tyrrell County,9,966,Esse quam videri,4109
+659,21173,KY,Montgomery County,6,4881,Deo gratiam habeamus,1058810
+660,48115,TX,Dawson County,7,2508,Friendship,9445
+661,5125,AR,Saline County,2,10160,Regnat populus,114404
+662,48213,TX,Henderson County,4,13151,Friendship,109540
+663,21121,KY,Knox County,7,12097,Deo gratiam habeamus,39550
+664,19097,IA,Jackson County,6,2497,Our liberties we prize and our rights we will maintain,208545
+665,41033,OR,Josephine County,4,15239,Alis volat propriis,83306
+666,35015,NM,Eddy County,5,8674,Crescit eundo,55471
+667,55065,WI,Lafayette County,8,1937,Forward,32943
+668,29151,MO,Osage County,3,1139,Salus populi suprema lex esto,47987
+669,29111,MO,Lewis County,9,1590,Salus populi suprema lex esto,75081
+670,29213,MO,Taney County,6,9006,Salus populi suprema lex esto,53575
+671,45063,SC,Lexington County,2,33254,Dum spiro spero,273752
+672,6077,CA,San Joaquin County,2,105268,Eureka,704379
+673,12105,FL,Polk County,2,106703,In God We Trust,31569
+674,47035,TN,Cumberland County,7,8841,Agriculture and Commerce,285456
+675,20127,KS,Morris County,9,646,Ad astra per aspera,499397
+676,48075,TX,Childress County,7,1203,Friendship,7095
+677,42005,PA,Armstrong County,1,9100,"Virtue, liberty, and independence",68107
+678,32033,NV,White Pine County,7,1220,All For Our Country,10057
+679,12075,FL,Levy County,8,8467,In God We Trust,39644
+680,37175,NC,Transylvania County,6,5415,Esse quam videri,32903
+681,51790,VA,Staunton city,4,2990,Sic semper tyrannis,
+682,21007,KY,Ballard County,9,1277,Deo gratiam habeamus,8332
+683,39017,OH,Butler County,1,45165,The Heart of It All,371272
+684,54023,WV,Grant County,6,1737,Montani semper liberi,7283
+685,47119,TN,Maury County,4,10204,Agriculture and Commerce,83761
+686,13237,GA,Putnam County,6,3914,"Wisdom, Justice, Moderation",72577
+687,55117,WI,Sheboygan County,3,7934,Forward,114922
+688,6059,CA,Orange County,1,348173,Eureka,3114363
+689,32029,NV,Storey County,2,316,All For Our Country,3942
+690,40085,OK,Love County,9,1376,Labor omnia vincit,9742
+691,17123,IL,Marshall County,2,1144,"State sovereignty, national union",94760
+692,6093,CA,Siskiyou County,7,8109,Eureka,43799
+693,12101,FL,Pasco County,1,66980,In God We Trust,475502
+694,33005,NH,Cheshire County,4,6078,Live Free or Die,76610
+695,8073,CO,Lincoln County,8,834,Nil sine numine,5245
+696,39105,OH,Meigs County,6,4815,The Heart of It All,11649
+697,48307,TX,McCulloch County,7,1479,Friendship,8330
+698,28083,MS,Leflore County,5,10146,Virtute et armis,49774
+699,48239,TX,Jackson County,6,1966,Friendship,208545
+700,19197,IA,Wright County,7,1578,Our liberties we prize and our rights we will maintain,128470
+701,13053,GA,Chattahoochee County,2,1639,"Wisdom, Justice, Moderation",12842
+702,46099,SD,Minnehaha County,3,18046,,179640
+703,21095,KY,Harlan County,7,9889,Deo gratiam habeamus,28499
+704,48113,TX,Dallas County,1,413956,Friendship,2480331
+705,40123,OK,Pontotoc County,7,5983,Labor omnia vincit,37992
+706,51570,VA,Colonial Heights city,1,1819,Sic semper tyrannis,17634
+707,48455,TX,Trinity County,8,2864,Friendship,13448
+708,18055,IN,Greene County,3,5120,The Crossroads of America,68267
+709,1015,AL,Calhoun County,3,19057,Audemus iura nostra defendere,135012
+710,19049,IA,Dallas County,2,4118,Our liberties we prize and our rights we will maintain,2480331
+711,27065,MN,Kanabec County,6,2064,L’Étoile du Nord,15996
+712,20097,KS,Kiowa County,9,302,Ad astra per aspera,9341
+713,13069,GA,Coffee County,7,9153,"Wisdom, Justice, Moderation",50938
+714,53057,WA,Skagit County,3,13787,bye and bye,118837
+715,51520,VA,Bristol city,3,3953,Sic semper tyrannis,
+716,29057,MO,Dade County,8,1312,Salus populi suprema lex esto,2617176
+717,56045,WY,Weston County,7,734,Equal Rights,7158
+718,6037,CA,Los Angeles County,1,1629450,Eureka,10017068
+719,38083,ND,Sheridan County,9,222,Serit ut alteri saeclo prosit,29824
+720,8087,CO,Morgan County,6,3221,Nil sine numine,119787
+721,6101,CA,Sutter County,3,16390,Eureka,95350
+722,30069,MT,Petroleum County,9,74,Oro y Plata,506
+723,21177,KY,Muhlenberg County,6,5732,Deo gratiam habeamus,31179
+724,4011,AZ,Greenlee County,7,1144,Ditat Deus,9049
+725,53071,WA,Walla Walla County,4,7906,bye and bye,59530
+726,48345,TX,Motley County,8,210,Friendship,1196
+727,55093,WI,Pierce County,1,3153,Forward,819743
+728,26149,MI,St. Joseph County,4,8948,Si quaeris peninsulam amoenam circumspice,266709
+729,24019,MD,Dorchester County,6,5531,"Fatti maschii, parole femine",32660
+730,21081,KY,Grant County,1,3787,Deo gratiam habeamus,7283
+731,54015,WV,Clay County,2,2541,Montani semper liberi,10584
+732,48381,TX,Randall County,3,11784,Friendship,126474
+733,29153,MO,Ozark County,9,2315,Salus populi suprema lex esto,9560
+734,54083,WV,Randolph County,7,4974,Montani semper liberi,29415
+735,4025,AZ,Yavapai County,3,29418,Ditat Deus,215133
+736,45055,SC,Kershaw County,2,9941,Dum spiro spero,63603
+737,41017,OR,Deschutes County,3,19113,Alis volat propriis,165954
+738,21237,KY,Wolfe County,9,2252,Deo gratiam habeamus,7248
+739,48087,TX,Collingsworth County,9,584,Friendship,3099
+740,21099,KY,Hart County,8,3998,Deo gratiam habeamus,18573
+741,19037,IA,Chickasaw County,6,1303,Our liberties we prize and our rights we will maintain,17311
+742,28145,MS,Union County,7,3655,Virtute et armis,25652
+743,48285,TX,Lavaca County,6,2418,Friendship,19581
+744,6091,CA,Sierra County,8,419,Eureka,11572
+745,24021,MD,Frederick County,1,16793,"Fatti maschii, parole femine",241409
+746,29043,MO,Christian County,2,8921,Salus populi suprema lex esto,80899
+747,46105,SD,Perkins County,9,374,,3037
+748,31147,NE,Richardson County,7,973,Equality before the law,8125
+749,32017,NV,Lincoln County,8,675,All For Our Country,5245
+750,21077,KY,Gallatin County,1,1238,Deo gratiam habeamus,94720
+751,29053,MO,Cooper County,6,2362,Salus populi suprema lex esto,17647
+752,37159,NC,Rowan County,4,22283,Esse quam videri,23527
+753,22041,LA,Franklin Parish,7,5728,,20571
+754,24029,MD,Kent County,6,2565,"Fatti maschii, parole femine",621700
+755,30037,MT,Golden Valley County,8,147,Oro y Plata,1823
+756,28053,MS,Humphreys County,7,3268,Virtute et armis,18243
+757,54011,WV,Cabell County,2,20129,Montani semper liberi,97133
+758,33017,NH,Strafford County,1,9094,Live Free or Die,124593
+759,13167,GA,Johnson County,9,2277,"Wisdom, Justice, Moderation",8628
+760,51051,VA,Dickenson County,9,3684,Sic semper tyrannis,15486
+761,28105,MS,Oktibbeha County,5,12741,Virtute et armis,49043
+762,20015,KS,Butler County,2,5745,Ad astra per aspera,371272
+763,42037,PA,Columbia County,4,8349,"Virtue, liberty, and independence",49344
+764,48339,TX,Montgomery County,1,59836,Friendship,1058810
+765,51167,VA,Russell County,6,4584,Sic semper tyrannis,28264
+766,38101,ND,Ward County,5,5903,Serit ut alteri saeclo prosit,67990
+767,49043,UT,Summit County,2,2412,Industry,38486
+768,6063,CA,Plumas County,7,2312,Eureka,18859
+769,1025,AL,Clarke County,7,6977,Audemus iura nostra defendere,25207
+770,54099,WV,Wayne County,2,8651,Montani semper liberi,1775273
+771,13083,GA,Dade County,2,2377,"Wisdom, Justice, Moderation",2617176
+772,48325,TX,Medina County,1,6746,Friendship,47399
+773,46117,SD,Stanley County,9,237,,2981
+774,37003,NC,Alexander County,2,5401,Esse quam videri,6780
+775,28107,MS,Panola County,6,7699,Virtute et armis,34402
+776,18101,IN,Martin County,6,1241,The Crossroads of America,20422
+777,48493,TX,Wilson County,1,4958,Friendship,121945
+778,51075,VA,Goochland County,1,1393,Sic semper tyrannis,21626
+779,38023,ND,Divide County,9,231,Serit ut alteri saeclo prosit,2314
+780,19023,IA,Butler County,8,1416,Our liberties we prize and our rights we will maintain,371272
+781,37085,NC,Harnett County,4,20400,Esse quam videri,124987
+782,34007,NJ,Camden County,1,60385,Liberty and prosperity,43862
+783,13259,GA,Stewart County,8,1634,"Wisdom, Justice, Moderation",13362
+784,17111,IL,McHenry County,1,22253,"State sovereignty, national union",307409
+785,17017,IL,Cass County,6,1708,"State sovereignty, national union",28555
+786,55121,WI,Trempealeau County,8,2391,Forward,29582
+787,48109,TX,Culberson County,9,516,Friendship,2277
+788,48263,TX,Kent County,9,83,Friendship,621700
+789,38019,ND,Cavalier County,9,364,Serit ut alteri saeclo prosit,3896
+790,55013,WI,Burnett County,8,2068,Forward,15333
+791,13277,GA,Tift County,4,8669,"Wisdom, Justice, Moderation",40286
+792,19169,IA,Story County,3,16340,Our liberties we prize and our rights we will maintain,92406
+793,31067,NE,Gage County,6,2430,Equality before the law,21864
+794,16057,ID,Latah County,4,6326,Esto perpetua,38078
+795,55041,WI,Forest County,9,1409,Forward,9126
+796,51079,VA,Greene County,3,1618,Sic semper tyrannis,68267
+797,25021,MA,Norfolk County,1,41497,Ense petit placidam sub libertate quietem,687802
+798,39121,OH,Noble County,6,1744,The Heart of It All,47570
+799,19093,IA,Ida County,8,696,Our liberties we prize and our rights we will maintain,7141
+800,36117,NY,Wayne County,1,9296,Excelsior,1775273
+801,29205,MO,Shelby County,9,977,Salus populi suprema lex esto,939465
+802,5035,AR,Crittenden County,1,12314,Regnat populus,49746
+803,40113,OK,Osage County,2,7139,Labor omnia vincit,47987
+804,6079,CA,San Luis Obispo County,3,29345,Eureka,276443
+805,54107,WV,Wood County,3,14510,Montani semper liberi,86569
+806,12087,FL,Monroe County,4,8801,In God We Trust,76351
+807,21209,KY,Scott County,2,5400,Deo gratiam habeamus,22015
+808,48495,TX,Winkler County,6,1164,Friendship,7606
+809,44007,RI,Providence County,1,96214,Hope,628600
+810,37005,NC,Alleghany County,9,2203,Esse quam videri,16161
+811,48183,TX,Gregg County,3,20929,Friendship,123024
+812,8039,CO,Elbert County,1,1516,Nil sine numine,23733
+813,51179,VA,Stafford County,1,7935,Sic semper tyrannis,136788
+814,46095,SD,Mellette County,9,676,,2081
+815,40073,OK,Kingfisher County,6,1605,Labor omnia vincit,15276
+816,48197,TX,Hardeman County,7,692,Friendship,26306
+817,21111,KY,Jefferson County,1,111467,Deo gratiam habeamus,659479
+818,54043,WV,Lincoln County,2,5101,Montani semper liberi,5245
+819,48005,TX,Angelina County,5,16085,Friendship,87441
+820,26019,MI,Benzie County,9,1876,Si quaeris peninsulam amoenam circumspice,17428
+821,40103,OK,Noble County,6,1499,Labor omnia vincit,47570
+822,30065,MT,Musselshell County,8,790,Oro y Plata,4629
+823,51061,VA,Fauquier County,1,3978,Sic semper tyrannis,67207
+824,47029,TN,Cocke County,6,8448,Agriculture and Commerce,35479
+825,13151,GA,Henry County,1,21101,"Wisdom, Justice, Moderation",49044
+826,13163,GA,Jefferson County,6,3867,"Wisdom, Justice, Moderation",659479
+827,50017,VT,Orange County,9,2986,Stella quarta decima fulgeat,3114363
+828,48253,TX,Jones County,3,3138,Friendship,1001
+829,31019,NE,Buffalo County,5,5287,Equality before the law,13357
+830,28023,MS,Clarke County,9,3296,Virtute et armis,25207
+831,12133,FL,Washington County,6,5026,In God We Trust,32190
+832,38057,ND,Mercer County,6,561,Serit ut alteri saeclo prosit,61984
+833,38009,ND,Bottineau County,9,701,Serit ut alteri saeclo prosit,6736
+834,35045,NM,San Juan County,3,19749,Crescit eundo,14973
+835,19111,IA,Lee County,5,4643,Our liberties we prize and our rights we will maintain,661115
+836,49027,UT,Millard County,7,1407,Industry,12662
+837,48255,TX,Karnes County,6,2677,Friendship,15081
+838,45011,SC,Barnwell County,6,4789,Dum spiro spero,22119
+839,37129,NC,New Hanover County,2,37472,Esse quam videri,213267
+840,1119,AL,Sumter County,8,3933,Audemus iura nostra defendere,13361
+841,37123,NC,Montgomery County,6,5655,Esse quam videri,1058810
+842,51067,VA,Franklin County,2,7192,Sic semper tyrannis,71221
+843,27155,MN,Traverse County,9,414,L’Étoile du Nord,3445
+844,29181,MO,Ripley County,9,3776,Salus populi suprema lex esto,14032
+845,47099,TN,Lawrence County,6,7076,Agriculture and Commerce,33587
+846,46087,SD,McCook County,3,545,,5654
+847,21073,KY,Franklin County,4,6708,Deo gratiam habeamus,71221
+848,17137,IL,Morgan County,4,4962,"State sovereignty, national union",119787
+849,53011,WA,Clark County,1,41909,bye and bye,2027868
+850,19125,IA,Marion County,6,2725,Our liberties we prize and our rights we will maintain,323614
+851,15003,HI,Honolulu County,2,81341,Ua Mau ke Ea o ka ʻĀina i ka Pono,983429
+852,26147,MI,St. Clair County,1,21781,Si quaeris peninsulam amoenam circumspice,160469
+853,47143,TN,Rhea County,6,5739,Agriculture and Commerce,32513
+854,26155,MI,Shiawassee County,4,8106,Si quaeris peninsulam amoenam circumspice,68900
+855,37145,NC,Person County,2,5962,Esse quam videri,39276
+856,20135,KS,Ness County,9,325,Ad astra per aspera,3073
+857,20189,KS,Stevens County,7,551,Ad astra per aspera,43430
+858,48035,TX,Bosque County,6,2797,Friendship,17855
+859,40005,OK,Atoka County,7,2596,Labor omnia vincit,13898
+860,51740,VA,Portsmouth city,1,16775,Sic semper tyrannis,
+861,35021,NM,Harding County,9,95,Crescit eundo,1262
+862,54079,WV,Putnam County,2,6090,Montani semper liberi,72577
+863,36105,NY,Sullivan County,4,12240,Excelsior,76665
+864,28061,MS,Jasper County,9,3748,Virtute et armis,35649
+865,48033,TX,Borden County,9,67,Friendship,637
+866,36075,NY,Oswego County,2,19549,Excelsior,121165
+867,21141,KY,Logan County,6,4581,Deo gratiam habeamus,35987
+868,13109,GA,Evans County,6,2500,"Wisdom, Justice, Moderation",10833
+869,23005,ME,Cumberland County,2,28431,Dirigo,285456
+870,6113,CA,Yolo County,1,39303,Eureka,204593
+871,19193,IA,Woodbury County,3,13318,Our liberties we prize and our rights we will maintain,102130
+872,22015,LA,Bossier Parish,2,20555,,123823
+873,5007,AR,Benton County,2,23131,Regnat populus,86591
+874,39041,OH,Delaware County,1,9083,The Heart of It All,46722
+875,18181,IN,White County,6,2571,The Crossroads of America,78483
+876,40059,OK,Harper County,9,388,Labor omnia vincit,3813
+877,5115,AR,Pope County,5,10433,Regnat populus,62547
+878,8097,CO,Pitkin County,7,1227,Nil sine numine,17379
+879,22101,LA,St. Mary Parish,4,11371,,53543
+880,8025,CO,Crowley County,8,1471,Nil sine numine,5322
+881,23013,ME,Knox County,7,4376,Dirigo,39550
+882,46097,SD,Miner County,8,272,,2333
+883,37061,NC,Duplin County,6,12418,Esse quam videri,60084
+884,18153,IN,Sullivan County,3,2640,The Crossroads of America,76665
+885,19009,IA,Audubon County,8,616,Our liberties we prize and our rights we will maintain,5873
+886,51141,VA,Patrick County,8,3151,Sic semper tyrannis,18368
+887,40091,OK,McIntosh County,6,4133,Labor omnia vincit,14007
+888,48349,TX,Navarro County,4,8491,Friendship,48038
+889,21163,KY,Meade County,1,3716,Deo gratiam habeamus,27202
+890,27171,MN,Wright County,1,6912,L’Étoile du Nord,128470
+891,29137,MO,Monroe County,9,1298,Salus populi suprema lex esto,76351
+892,48235,TX,Irion County,3,125,Friendship,1612
+893,22013,LA,Bienville Parish,6,3171,,13981
+894,21085,KY,Grayson County,6,5585,Deo gratiam habeamus,122353
+895,38037,ND,Grant County,8,367,Serit ut alteri saeclo prosit,7283
+896,51113,VA,Madison County,8,1444,Sic semper tyrannis,7712
+897,19129,IA,Mills County,2,1276,Our liberties we prize and our rights we will maintain,4907
+898,21049,KY,Clark County,2,5618,Deo gratiam habeamus,2027868
+899,51173,VA,Smyth County,6,5485,Sic semper tyrannis,31652
+900,13161,GA,Jeff Davis County,7,3508,"Wisdom, Justice, Moderation",2253
+901,20195,KS,Trego County,9,309,Ad astra per aspera,2980
+902,30003,MT,Big Horn County,6,3368,Oro y Plata,13042
+903,5103,AR,Ouachita County,7,5849,Regnat populus,25002
+904,56017,WY,Hot Springs County,7,624,Equal Rights,4847
+905,39083,OH,Knox County,4,7294,The Heart of It All,39550
+906,51171,VA,Shenandoah County,6,4592,Sic semper tyrannis,42684
+907,17177,IL,Stephenson County,4,6916,"State sovereignty, national union",46740
+908,36077,NY,Otsego County,6,8124,Excelsior,61683
+909,23015,ME,Lincoln County,8,3818,Dirigo,5245
+910,6115,CA,Yuba County,3,12288,Eureka,73340
+911,46125,SD,Turner County,3,752,,8134
+912,48001,TX,Anderson County,5,9044,Friendship,75542
+913,8009,CO,Baca County,9,702,Nil sine numine,3682
+914,4017,AZ,Navajo County,4,30379,Ditat Deus,107322
+915,12001,FL,Alachua County,3,55990,In God We Trust,253451
+916,21039,KY,Carlisle County,9,693,Deo gratiam habeamus,5001
+917,22089,LA,St. Charles Parish,1,6812,,52617
+918,20141,KS,Osborne County,9,501,Ad astra per aspera,3818
+919,53035,WA,Kitsap County,3,25729,bye and bye,253968
+920,8043,CO,Fremont County,4,6861,Nil sine numine,40998
+921,21175,KY,Morgan County,7,3109,Deo gratiam habeamus,119787
+922,36001,NY,Albany County,2,35585,Excelsior,37422
+923,6029,CA,Kern County,2,190993,Eureka,864124
+924,37165,NC,Scotland County,6,9033,Esse quam videri,36025
+925,22021,LA,Caldwell Parish,8,2144,,9989
+926,37077,NC,Granville County,6,8403,Esse quam videri,58275
+927,5147,AR,Woodruff County,9,1712,Regnat populus,7072
+928,19103,IA,Johnson County,3,23460,Our liberties we prize and our rights we will maintain,8628
+929,19119,IA,Lyon County,8,840,Our liberties we prize and our rights we will maintain,51557
+930,47013,TN,Campbell County,6,9398,Agriculture and Commerce,48176
+931,29189,MO,St. Louis County,1,90126,Salus populi suprema lex esto,200540
+932,21029,KY,Bullitt County,1,8144,Deo gratiam habeamus,76854
+933,12053,FL,Hernando County,1,27794,In God We Trust,174441
+934,23007,ME,Franklin County,6,4111,Dirigo,71221
+935,32007,NV,Elko County,5,5329,All For Our Country,52384
+936,18115,IN,Ohio County,1,590,The Crossroads of America,43727
+937,24001,MD,Allegany County,3,11090,"Fatti maschii, parole femine",73521
+938,17147,IL,Piatt County,3,1115,"State sovereignty, national union",16433
+939,13199,GA,Meriwether County,1,4417,"Wisdom, Justice, Moderation",21232
+940,19041,IA,Clay County,7,1457,Our liberties we prize and our rights we will maintain,10584
+941,42007,PA,Beaver County,1,15998,"Virtue, liberty, and independence",6459
+942,40129,OK,Roger Mills County,9,469,Labor omnia vincit,3743
+943,36121,NY,Wyoming County,6,3701,Excelsior,23019
+944,48065,TX,Carson County,3,519,Friendship,6010
+945,16009,ID,Benewah County,6,1624,Esto perpetua,9044
+946,29123,MO,Madison County,7,2193,Salus populi suprema lex esto,7712
+947,19001,IA,Adair County,8,740,Our liberties we prize and our rights we will maintain,22194
+948,51043,VA,Clarke County,1,1115,Sic semper tyrannis,25207
+949,39055,OH,Geauga County,1,5451,The Heart of It All,93972
+950,18103,IN,Miami County,6,5100,The Crossroads of America,103439
+951,48021,TX,Bastrop County,1,10632,Friendship,75825
+952,48305,TX,Lynn County,6,1010,Friendship,5723
+953,51117,VA,Mecklenburg County,7,4759,Sic semper tyrannis,990977
+954,40011,OK,Blaine County,6,1682,Labor omnia vincit,21329
+955,55061,WI,Kewaunee County,2,1526,Forward,20505
+956,20193,KS,Thomas County,7,787,Ad astra per aspera,44869
+957,41043,OR,Linn County,4,15975,Alis volat propriis,118765
+958,29021,MO,Buchanan County,3,14999,Salus populi suprema lex esto,23597
+959,8015,CO,Chaffee County,7,2009,Nil sine numine,18510
+960,19177,IA,Van Buren County,9,1047,Our liberties we prize and our rights we will maintain,16932
+961,53075,WA,Whitman County,4,11027,bye and bye,46570
+962,26053,MI,Gogebic County,7,2809,Si quaeris peninsulam amoenam circumspice,15916
+963,51069,VA,Frederick County,3,5677,Sic semper tyrannis,241409
+964,17075,IL,Iroquois County,6,3688,"State sovereignty, national union",28982
+965,12067,FL,Lafayette County,8,1609,In God We Trust,32943
+966,8077,CO,Mesa County,3,21922,Nil sine numine,147554
+967,45071,SC,Newberry County,6,6967,Dum spiro spero,37521
+968,56013,WY,Fremont County,7,6616,Equal Rights,40998
+969,17133,IL,Monroe County,1,1599,"State sovereignty, national union",76351
+970,29133,MO,Mississippi County,7,3384,Salus populi suprema lex esto,44765
+971,46011,SD,Brookings County,7,4307,,32968
+972,20051,KS,Ellis County,5,3453,Ad astra per aspera,155976
+973,48463,TX,Uvalde County,7,6761,Friendship,26926
+974,48383,TX,Reagan County,6,423,Friendship,3601
+975,26029,MI,Charlevoix County,7,2981,Si quaeris peninsulam amoenam circumspice,26129
+976,20059,KS,Franklin County,1,2987,Ad astra per aspera,71221
+977,37021,NC,Buncombe County,2,33631,Esse quam videri,247912
+978,17087,IL,Johnson County,7,1594,"State sovereignty, national union",8628
+979,21221,KY,Trigg County,3,2046,Deo gratiam habeamus,14293
+980,13129,GA,Gordon County,6,9020,"Wisdom, Justice, Moderation",55757
+981,17057,IL,Fulton County,6,4807,"State sovereignty, national union",984293
+982,30081,MT,Ravalli County,6,5773,Oro y Plata,40823
+983,24009,MD,Calvert County,1,5282,"Fatti maschii, parole femine",
+984,28133,MS,Sunflower County,5,7874,Virtute et armis,27997
+985,26057,MI,Gratiot County,6,6742,Si quaeris peninsulam amoenam circumspice,41968
+986,31179,NE,Wayne County,6,997,Equality before the law,1775273
+987,19123,IA,Mahaska County,7,2640,Our liberties we prize and our rights we will maintain,22417
+988,48311,TX,McMullen County,8,95,Friendship,764
+989,16005,ID,Bannock County,3,13780,Esto perpetua,83249
+990,37163,NC,Sampson County,6,12114,Esse quam videri,64150
+991,21047,KY,Christian County,3,13938,Deo gratiam habeamus,80899
+992,21133,KY,Letcher County,9,7113,Deo gratiam habeamus,23619
+993,8047,CO,Gilpin County,1,440,Nil sine numine,5601
+994,38017,ND,Cass County,3,18151,Serit ut alteri saeclo prosit,28555
+995,47085,TN,Humphreys County,6,3318,Agriculture and Commerce,18243
+996,38051,ND,McIntosh County,9,309,Serit ut alteri saeclo prosit,14007
+997,12079,FL,Madison County,6,5205,In God We Trust,7712
+998,19039,IA,Clarke County,6,1061,Our liberties we prize and our rights we will maintain,25207
+999,6055,CA,Napa County,3,10958,Eureka,140326
+1000,17049,IL,Effingham County,7,3709,"State sovereignty, national union",54456
+1001,26007,MI,Alpena County,7,4365,Si quaeris peninsulam amoenam circumspice,29091
+1002,47171,TN,Unicoi County,3,3006,Agriculture and Commerce,18082
+1003,31035,NE,Clay County,9,681,Equality before the law,10584
+1004,29097,MO,Jasper County,3,20301,Salus populi suprema lex esto,35649
+1005,26079,MI,Kalkaska County,7,2612,Si quaeris peninsulam amoenam circumspice,17196
+1006,37113,NC,Macon County,7,5585,Esse quam videri,33857
+1007,40109,OK,Oklahoma County,1,124834,Labor omnia vincit,755245
+1008,1115,AL,St. Clair County,1,10352,Audemus iura nostra defendere,160469
+1009,26091,MI,Lenawee County,4,11641,Si quaeris peninsulam amoenam circumspice,99188
+1010,19057,IA,Des Moines County,5,6300,Our liberties we prize and our rights we will maintain,40480
+1011,42123,PA,Warren County,6,6007,"Virtue, liberty, and independence",65337
+1012,16033,ID,Clark County,8,141,Esto perpetua,2027868
+1013,49047,UT,Uintah County,7,4094,Industry,35555
+1014,6097,CA,Sonoma County,2,46604,Eureka,
+1015,48221,TX,Hood County,4,5754,Friendship,52905
+1016,37047,NC,Columbus County,6,13110,Esse quam videri,57246
+1017,31007,NE,Banner County,9,100,Equality before the law,759
+1018,13317,GA,Wilkes County,6,2213,"Wisdom, Justice, Moderation",69023
+1019,27135,MN,Roseau County,7,1204,L’Étoile du Nord,15520
+1020,24013,MD,Carroll County,1,8990,"Fatti maschii, parole femine",47499
+1021,42101,PA,Philadelphia County,1,384148,"Virtue, liberty, and independence",1553165
+1022,51670,VA,Hopewell city,1,4630,Sic semper tyrannis,
+1023,22085,LA,Sabine Parish,6,4352,,24235
+1024,16031,ID,Cassia County,7,3282,Esto perpetua,23331
+1025,18033,IN,De Kalb County,4,3780,The Crossroads of America,104741
+1026,35043,NM,Sandoval County,2,20441,Crescit eundo,136575
+1027,13087,GA,Decatur County,6,7716,"Wisdom, Justice, Moderation",11661
+1028,17117,IL,Macoupin County,1,5962,"State sovereignty, national union",46880
+1029,36095,NY,Schoharie County,2,3802,Excelsior,31844
+1030,27017,MN,Carlton County,2,3469,L’Étoile du Nord,35460
+1031,48151,TX,Fisher County,8,597,Friendship,3856
+1032,29029,MO,Camden County,7,7385,Salus populi suprema lex esto,43862
+1033,21037,KY,Campbell County,1,11120,Deo gratiam habeamus,48176
+1034,17063,IL,Grundy County,1,3936,"State sovereignty, national union",50228
+1035,27045,MN,Fillmore County,8,2535,L’Étoile du Nord,20835
+1036,16017,ID,Bonner County,6,6476,Esto perpetua,40699
+1037,49037,UT,San Juan County,7,5138,Industry,14973
+1038,34031,NJ,Passaic County,1,85671,Liberty and prosperity,505672
+1039,21023,KY,Bracken County,1,1386,Deo gratiam habeamus,8416
+1040,27099,MN,Mower County,4,5104,L’Étoile du Nord,39327
+1041,30101,MT,Toole County,7,712,Oro y Plata,5138
+1042,51119,VA,Middlesex County,8,1469,Sic semper tyrannis,1552802
+1043,56015,WY,Goshen County,7,1776,Equal Rights,13612
+1044,51121,VA,Montgomery County,3,18030,Sic semper tyrannis,1058810
+1045,13119,GA,Franklin County,8,4614,"Wisdom, Justice, Moderation",71221
+1046,13257,GA,Stephens County,7,5212,"Wisdom, Justice, Moderation",44919
+1047,17001,IL,Adams County,5,8223,"State sovereignty, national union",3828
+1048,27019,MN,Carver County,1,4225,L’Étoile du Nord,95562
+1049,17121,IL,Marion County,4,5891,"State sovereignty, national union",323614
+1050,30091,MT,Sheridan County,9,379,Oro y Plata,29824
+1051,40077,OK,Latimer County,7,2062,Labor omnia vincit,10775
+1052,27003,MN,Anoka County,1,23240,L’Étoile du Nord,339534
+1053,51103,VA,Lancaster County,9,1514,Sic semper tyrannis,529600
+1054,36019,NY,Clinton County,5,10701,Excelsior,81591
+1055,17083,IL,Jersey County,1,2369,"State sovereignty, national union",22641
+1056,28001,MS,Adams County,5,9045,Virtute et armis,3828
+1057,13205,GA,Mitchell County,6,6032,"Wisdom, Justice, Moderation",15328
+1058,48107,TX,Crosby County,3,1425,Friendship,5991
+1059,48333,TX,Mills County,9,750,Friendship,4907
+1060,25001,MA,Barnstable County,3,15972,Ense petit placidam sub libertate quietem,214990
+1061,42015,PA,Bradford County,6,6904,"Virtue, liberty, and independence",62316
+1062,38081,ND,Sargent County,9,296,Serit ut alteri saeclo prosit,3890
+1063,31133,NE,Pawnee County,9,400,Equality before the law,2709
+1064,19147,IA,Palo Alto County,7,899,Our liberties we prize and our rights we will maintain,9185
+1065,13301,GA,Warren County,8,1511,"Wisdom, Justice, Moderation",65337
+1066,48199,TX,Hardin County,2,6001,Friendship,26034
+1067,1099,AL,Monroe County,7,5472,Audemus iura nostra defendere,76351
+1068,19151,IA,Pocahontas County,9,792,Our liberties we prize and our rights we will maintain,8669
+1069,18057,IN,Hamilton County,1,14927,The Crossroads of America,4773
+1070,48397,TX,Rockwall County,1,4845,Friendship,85245
+1071,28055,MS,Issaquena County,9,409,Virtute et armis,1395
+1072,46005,SD,Beadle County,7,2484,,18080
+1073,28093,MS,Marshall County,1,7772,Virtute et armis,94760
+1074,41051,OR,Multnomah County,1,111262,Alis volat propriis,766135
+1075,51139,VA,Page County,6,3833,Sic semper tyrannis,23821
+1076,28073,MS,Lamar County,3,7614,Virtute et armis,49426
+1077,45061,SC,Lee County,6,4443,Dum spiro spero,661115
+1078,46003,SD,Aurora County,9,275,,2720
+1079,27137,MN,St. Louis County,2,28177,L’Étoile du Nord,200540
+1080,31059,NE,Fillmore County,9,540,Equality before the law,20835
+1081,34019,NJ,Hunterdon County,1,5431,Liberty and prosperity,126250
+1082,42013,PA,Blair County,3,16430,"Virtue, liberty, and independence",126314
+1083,48473,TX,Waller County,1,7591,Friendship,45213
+1084,30099,MT,Teton County,8,824,Oro y Plata,22268
+1085,8115,CO,Sedgwick County,9,352,Nil sine numine,505415
+1086,53029,WA,Island County,4,7577,bye and bye,78801
+1087,31093,NE,Howard County,9,663,Equality before the law,304580
+1088,20153,KS,Rawlins County,9,310,Ad astra per aspera,2589
+1089,27011,MN,Big Stone County,9,584,L’Étoile du Nord,5122
+1090,30041,MT,Hill County,7,3140,Oro y Plata,16568
+1091,24043,MD,Washington County,3,18771,"Fatti maschii, parole femine",32190
+1092,12071,FL,Lee County,2,91333,In God We Trust,661115
+1093,27147,MN,Steele County,5,3315,L’Étoile du Nord,36465
+1094,17109,IL,McDonough County,5,5470,"State sovereignty, national union",32464
+1095,47145,TN,Roane County,4,7416,Agriculture and Commerce,14656
+1096,40083,OK,Logan County,1,6510,Labor omnia vincit,35987
+1097,17161,IL,Rock Island County,2,21769,"State sovereignty, national union",147258
+1098,27139,MN,Scott County,1,7784,L’Étoile du Nord,22015
+1099,47125,TN,Montgomery County,3,24640,Agriculture and Commerce,1058810
+1100,51057,VA,Essex County,8,1439,Sic semper tyrannis,38762
+1101,54085,WV,Ritchie County,8,1764,Montani semper liberi,10073
+1102,47129,TN,Morgan County,6,4368,Agriculture and Commerce,119787
+1103,51143,VA,Pittsylvania County,3,8211,Sic semper tyrannis,62426
+1104,51045,VA,Craig County,2,648,Sic semper tyrannis,5210
+1105,19007,IA,Appanoose County,7,2304,Our liberties we prize and our rights we will maintain,12692
+1106,51013,VA,Arlington County,1,17151,Sic semper tyrannis,224906
+1107,5069,AR,Jefferson County,3,15094,Regnat populus,659479
+1108,19011,IA,Benton County,3,1975,Our liberties we prize and our rights we will maintain,86591
+1109,45049,SC,Hampton County,6,4104,Dum spiro spero,20408
+1110,40013,OK,Bryan County,6,7519,Labor omnia vincit,44244
+1111,18047,IN,Franklin County,1,2414,The Crossroads of America,71221
+1112,41003,OR,Benton County,3,15546,Alis volat propriis,86591
+1113,51590,VA,Danville city,3,9003,Sic semper tyrannis,
+1114,31073,NE,Gosper County,9,189,Equality before the law,1972
+1115,55025,WI,Dane County,2,56594,Forward,509939
+1116,17059,IL,Gallatin County,8,1061,"State sovereignty, national union",94720
+1117,13051,GA,Chatham County,2,45636,"Wisdom, Justice, Moderation",278434
+1118,48067,TX,Cass County,6,5206,Friendship,28555
+1119,51036,VA,Charles City County,1,877,Sic semper tyrannis,7130
+1120,24003,MD,Anne Arundel County,1,38816,"Fatti maschii, parole femine",555743
+1121,31165,NE,Sioux County,9,192,Equality before the law,1313
+1122,34003,NJ,Bergen County,1,63789,Liberty and prosperity,925328
+1123,13235,GA,Pulaski County,6,2505,"Wisdom, Justice, Moderation",391284
+1124,12057,FL,Hillsborough County,1,203350,In God We Trust,403985
+1125,46047,SD,Fall River County,7,862,,6839
+1126,46045,SD,Edmunds County,9,377,,4041
+1127,18183,IN,Whitley County,2,2954,The Crossroads of America,35766
+1128,30057,MT,Madison County,9,877,Oro y Plata,7712
+1129,9001,CT,Fairfield County,2,79966,Qui transtulit sustinet,939904
+1130,36031,NY,Essex County,6,4532,Excelsior,38762
+1131,17151,IL,Pope County,9,720,"State sovereignty, national union",62547
+1132,35027,NM,Lincoln County,7,3500,Crescit eundo,5245
+1133,30045,MT,Judith Basin County,8,259,Oro y Plata,2016
+1134,29221,MO,Washington County,1,5186,Salus populi suprema lex esto,32190
+1135,30053,MT,Lincoln County,7,3550,Oro y Plata,5245
+1136,2185,AK,North Slope Borough,7,1132,North to the Future,9686
+1137,45021,SC,Cherokee County,4,10318,Dum spiro spero,27218
+1138,20119,KS,Meade County,9,444,Ad astra per aspera,27202
+1139,20159,KS,Rice County,7,1167,Ad astra per aspera,65049
+1140,19117,IA,Lucas County,6,1268,Our liberties we prize and our rights we will maintain,436393
+1141,29001,MO,Adair County,7,5343,Salus populi suprema lex esto,22194
+1142,48281,TX,Lampasas County,2,2793,Friendship,20222
+1143,48503,TX,Young County,6,2599,Friendship,18341
+1144,28025,MS,Clay County,7,4657,Virtute et armis,10584
+1145,8101,CO,Pueblo County,3,32053,Nil sine numine,161451
+1146,37199,NC,Yancey County,8,3350,Esse quam videri,17566
+1147,26021,MI,Berrien County,3,25215,Si quaeris peninsulam amoenam circumspice,155252
+1148,17031,IL,Cook County,1,770091,"State sovereignty, national union",5240700
+1149,55069,WI,Lincoln County,6,2712,Forward,5245
+1150,20069,KS,Gray County,9,487,Ad astra per aspera,23043
+1151,37139,NC,Pasquotank County,7,6395,Esse quam videri,39981
+1152,35041,NM,Roosevelt County,7,4006,Crescit eundo,11125
+1153,21225,KY,Union County,6,2723,Deo gratiam habeamus,25652
+1154,21203,KY,Rockcastle County,7,3991,Deo gratiam habeamus,16693
+1155,46137,SD,Ziebach County,9,1223,,2834
+1156,51820,VA,Waynesboro city,4,3167,Sic semper tyrannis,
+1157,19077,IA,Guthrie County,2,1036,Our liberties we prize and our rights we will maintain,10687
+1158,48135,TX,Ector County,3,21548,Friendship,149378
+1159,21027,KY,Breckinridge County,8,3386,Deo gratiam habeamus,20040
+1160,42049,PA,Erie County,2,41331,"Virtue, liberty, and independence",919866
+1161,1037,AL,Coosa County,8,1801,Audemus iura nostra defendere,10898
+1162,45087,SC,Union County,6,5756,Dum spiro spero,25652
+1163,22037,LA,East Feliciana Parish,2,3459,,19728
+1164,27073,MN,Lac qui Parle County,9,635,L’Étoile du Nord,7027
+1165,35053,NM,Socorro County,6,4181,Crescit eundo,17584
+1166,48071,TX,Chambers County,1,3646,Friendship,36812
+1167,37087,NC,Haywood County,2,9545,Esse quam videri,59183
+1168,55051,WI,Iron County,9,809,Forward,46780
+1169,36021,NY,Columbia County,6,7519,Excelsior,49344
+1170,54109,WV,Wyoming County,7,5155,Montani semper liberi,23019
+1171,39161,OH,Van Wert County,6,2489,The Heart of It All,28459
+1172,29065,MO,Dent County,7,2995,Salus populi suprema lex esto,15730
+1173,21045,KY,Casey County,9,4260,Deo gratiam habeamus,16067
+1174,12091,FL,Okaloosa County,3,21032,In God We Trust,193811
+1175,48321,TX,Matagorda County,4,6392,Friendship,36592
+1176,51760,VA,Richmond city,1,55062,Sic semper tyrannis,223170
+1177,40131,OK,Rogers County,2,8185,Labor omnia vincit,89044
+1178,26001,MI,Alcona County,9,1657,Si quaeris peninsulam amoenam circumspice,10578
+1179,28039,MS,George County,3,3714,Virtute et armis,23159
+1180,31185,NE,York County,7,1357,Equality before the law,199431
+1181,12061,FL,Indian River County,3,18518,In God We Trust,141994
+1182,20209,KS,Wyandotte County,1,31432,Ad astra per aspera,160384
+1183,28015,MS,Carroll County,9,1719,Virtute et armis,47499
+1184,37029,NC,Camden County,8,902,Esse quam videri,43862
+1185,28147,MS,Walthall County,9,3476,Virtute et armis,14931
+1186,26077,MI,Kalamazoo County,2,42141,Si quaeris peninsulam amoenam circumspice,256725
+1187,5015,AR,Carroll County,6,4684,Regnat populus,47499
+1188,39139,OH,Richland County,3,17904,The Heart of It All,399256
+1189,38049,ND,McHenry County,9,641,Serit ut alteri saeclo prosit,307409
+1190,32023,NV,Nye County,6,6724,All For Our Country,42297
+1191,2188,AK,Northwest Arctic Borough,7,2114,North to the Future,7685
+1192,40079,OK,Le Flore County,2,10398,Labor omnia vincit,49774
+1193,17159,IL,Richland County,7,2235,"State sovereignty, national union",399256
+1194,21055,KY,Crittenden County,6,1660,Deo gratiam habeamus,49746
+1195,5045,AR,Faulkner County,2,18782,Regnat populus,119580
+1196,50027,VT,Windsor County,7,5479,Stella quarta decima fulgeat,56067
+1197,45051,SC,Horry County,3,47767,Dum spiro spero,289650
+1198,20019,KS,Chautauqua County,9,574,Ad astra per aspera,133080
+1199,38059,ND,Morton County,3,2679,Serit ut alteri saeclo prosit,28990
+1200,9009,CT,New Haven County,2,94687,Qui transtulit sustinet,862287
+1201,13003,GA,Atkinson County,9,2176,"Wisdom, Justice, Moderation",8290
+1202,38091,ND,Steele County,8,162,Serit ut alteri saeclo prosit,36465
+1203,40093,OK,Major County,9,925,Labor omnia vincit,7683
+1204,39043,OH,Erie County,3,9171,The Heart of It All,919866
+1205,13091,GA,Dodge County,7,4730,"Wisdom, Justice, Moderation",88344
+1206,13229,GA,Pierce County,6,3282,"Wisdom, Justice, Moderation",819743
+1207,32001,NV,Churchill County,6,3371,All For Our Country,24063
+1208,24045,MD,Wicomico County,3,17634,"Fatti maschii, parole femine",100896
+1209,48229,TX,Hudspeth County,8,848,Friendship,3318
+1210,42133,PA,York County,2,42508,"Virtue, liberty, and independence",199431
+1211,27169,MN,Winona County,4,5416,L’Étoile du Nord,51232
+1212,28095,MS,Monroe County,7,6869,Virtute et armis,76351
+1213,8071,CO,Las Animas County,7,2869,Nil sine numine,14446
+1214,13219,GA,Oconee County,3,2480,"Wisdom, Justice, Moderation",75045
+1215,27109,MN,Olmsted County,3,13027,L’Étoile du Nord,149226
+1216,17203,IL,Woodford County,2,2515,"State sovereignty, national union",39273
+1217,28129,MS,Smith County,8,2990,Virtute et armis,216080
+1218,48225,TX,Houston County,7,4437,Friendship,22911
+1219,47097,TN,Lauderdale County,6,6025,Agriculture and Commerce,92797
+1220,27031,MN,Cook County,9,526,L’Étoile du Nord,5240700
+1221,45005,SC,Allendale County,6,3013,Dum spiro spero,9839
+1222,48301,TX,Loving County,9,15,Friendship,95
+1223,21143,KY,Lyon County,8,1152,Deo gratiam habeamus,51557
+1224,5025,AR,Cleveland County,3,1295,Regnat populus,97047
+1225,21075,KY,Fulton County,7,1712,Deo gratiam habeamus,984293
+1226,56025,WY,Natrona County,3,8244,Equal Rights,80973
+1227,8083,CO,Montezuma County,6,4031,Nil sine numine,25642
+1228,56021,WY,Laramie County,3,9697,Equal Rights,95809
+1229,47049,TN,Fentress County,9,3812,Agriculture and Commerce,17909
+1230,20173,KS,Sedgwick County,2,75334,Ad astra per aspera,505415
+1231,26107,MI,Mecosta County,6,8248,Si quaeris peninsulam amoenam circumspice,43108
+1232,48413,TX,Schleicher County,8,503,Friendship,3206
+1233,34023,NJ,Middlesex County,1,69642,Liberty and prosperity,1552802
+1234,5099,AR,Nevada County,7,1680,Regnat populus,98200
+1235,9003,CT,Hartford County,1,95010,Qui transtulit sustinet,898272
+1236,55078,WI,Menominee County,8,1214,Forward,23791
+1237,48309,TX,McLennan County,3,44099,Friendship,241481
+1238,42001,PA,Adams County,4,9218,"Virtue, liberty, and independence",3828
+1239,48091,TX,Comal County,1,11496,Friendship,118480
+1240,45075,SC,Orangeburg County,4,19239,Dum spiro spero,90942
+1241,29081,MO,Harrison County,7,1520,Salus populi suprema lex esto,196500
+1242,16061,ID,Lewis County,8,611,Esto perpetua,75081
+1243,51095,VA,James City County,1,4739,Sic semper tyrannis,70516
+1244,48351,TX,Newton County,8,3023,Friendship,8064
+1245,48459,TX,Upshur County,3,6235,Friendship,24665
+1246,29199,MO,Scotland County,9,778,Salus populi suprema lex esto,36025
+1247,41001,OR,Baker County,7,2762,Alis volat propriis,16018
+1248,19121,IA,Madison County,2,1218,Our liberties we prize and our rights we will maintain,7712
+1249,28009,MS,Benton County,8,2064,Virtute et armis,86591
+1250,8059,CO,Jefferson County,1,39397,Nil sine numine,659479
+1251,17081,IL,Jefferson County,7,5697,"State sovereignty, national union",659479
+1252,21093,KY,Hardin County,3,14306,Deo gratiam habeamus,26034
+1253,8093,CO,Park County,1,1572,Nil sine numine,29227
+1254,45017,SC,Calhoun County,2,2370,Dum spiro spero,135012
+1255,8121,CO,Washington County,9,674,Nil sine numine,32190
+1256,36057,NY,Montgomery County,4,9610,Excelsior,1058810
+1257,38043,ND,Kidder County,8,303,Serit ut alteri saeclo prosit,2428
+1258,48177,TX,Gonzales County,6,3519,Friendship,20312
+1259,29177,MO,Ray County,1,2453,Salus populi suprema lex esto,23039
+1260,1131,AL,Wilcox County,8,3466,Audemus iura nostra defendere,11307
+1261,49041,UT,Sevier County,7,2907,Industry,20852
+1262,20017,KS,Chase County,8,287,Ad astra per aspera,2700
+1263,45007,SC,Anderson County,3,29703,Dum spiro spero,75542
+1264,48023,TX,Baylor County,6,630,Friendship,3614
+1265,37069,NC,Franklin County,2,9624,Esse quam videri,71221
+1266,27097,MN,Morrison County,6,3871,L’Étoile du Nord,32872
+1267,6099,CA,Stanislaus County,2,77913,Eureka,525491
+1268,13247,GA,Rockdale County,1,12943,"Wisdom, Justice, Moderation",86919
+1269,27075,MN,Lake County,6,946,L’Étoile du Nord,63860
+1270,29051,MO,Cole County,3,7821,Salus populi suprema lex esto,76699
+1271,49023,UT,Juab County,2,1157,Industry,10348
+1272,28057,MS,Itawamba County,7,4062,Virtute et armis,23434
+1273,21035,KY,Calloway County,7,7430,Deo gratiam habeamus,37657
+1274,19107,IA,Keokuk County,8,1199,Our liberties we prize and our rights we will maintain,10329
+1275,31131,NE,Otoe County,6,1489,Equality before the law,15752
+1276,12119,FL,Sumter County,4,12115,In God We Trust,13361
+1277,27167,MN,Wilkin County,6,553,L’Étoile du Nord,6557
+1278,41023,OR,Grant County,9,1132,Alis volat propriis,7283
+1279,37189,NC,Watauga County,6,11717,Esse quam videri,52372
+1280,40119,OK,Payne County,4,18413,Labor omnia vincit,79066
+1281,40095,OK,Marshall County,6,2499,Labor omnia vincit,94760
+1282,18121,IN,Parke County,6,2497,The Crossroads of America,17202
+1283,4015,AZ,Mohave County,4,36665,Ditat Deus,203030
+1284,37051,NC,Cumberland County,2,59570,Esse quam videri,285456
+1285,19167,IA,Sioux County,6,2374,Our liberties we prize and our rights we will maintain,1313
+1286,20057,KS,Ford County,5,4453,Ad astra per aspera,13832
+1287,47015,TN,Cannon County,1,2149,Agriculture and Commerce,13775
+1288,13299,GA,Ware County,4,8501,"Wisdom, Justice, Moderation",35709
+1289,26071,MI,Iron County,7,1672,Si quaeris peninsulam amoenam circumspice,46780
+1290,17095,IL,Knox County,4,8036,"State sovereignty, national union",39550
+1291,26089,MI,Leelanau County,9,1739,Si quaeris peninsulam amoenam circumspice,21747
+1292,6009,CA,Calaveras County,6,5833,Eureka,44515
+1293,27027,MN,Clay County,3,7167,L’Étoile du Nord,10584
+1294,29165,MO,Platte County,1,5915,Salus populi suprema lex esto,8765
+1295,20099,KS,Labette County,7,4161,Ad astra per aspera,20916
+1296,29113,MO,Lincoln County,1,6132,Salus populi suprema lex esto,5245
+1297,46102,SD,Oglala Lakota County,7,5854,,14118
+1298,33019,NH,Sullivan County,7,4016,Live Free or Die,76665
+1299,47181,TN,Wayne County,8,3032,Agriculture and Commerce,1775273
+1300,26097,MI,Mackinac County,7,1465,Si quaeris peninsulam amoenam circumspice,11061
+1301,56033,WY,Sheridan County,7,2691,Equal Rights,29824
+1302,17037,IL,DeKalb County,1,15566,"State sovereignty, national union",713340
+1303,29035,MO,Carter County,9,1298,Salus populi suprema lex esto,1174
+1304,5091,AR,Miller County,3,9504,Regnat populus,25092
+1305,28069,MS,Kemper County,9,2532,Virtute et armis,10294
+1306,42019,PA,Butler County,1,13334,"Virtue, liberty, and independence",371272
+1307,18081,IN,Johnson County,1,11300,The Crossroads of America,8628
+1308,29023,MO,Butler County,7,9237,Salus populi suprema lex esto,371272
+1309,34015,NJ,Gloucester County,1,22402,Liberty and prosperity,290265
+1310,51087,VA,Henrico County,1,29583,Sic semper tyrannis,318611
+1311,1047,AL,Dallas County,4,13987,Audemus iura nostra defendere,2480331
+1312,36041,NY,Hamilton County,8,463,Excelsior,4773
+1313,5105,AR,Perry County,2,1689,Regnat populus,28010
+1314,19157,IA,Poweshiek County,7,1863,Our liberties we prize and our rights we will maintain,18601
+1315,20041,KS,Dickinson County,7,2084,Ad astra per aspera,16955
+1316,29225,MO,Webster County,2,6189,Salus populi suprema lex esto,8893
+1317,26011,MI,Arenac County,8,2456,Si quaeris peninsulam amoenam circumspice,15487
+1318,46019,SD,Butte County,6,1399,,222090
+1319,13127,GA,Glynn County,3,15916,"Wisdom, Justice, Moderation",81508
+1320,55057,WI,Juneau County,7,3561,Forward,26547
+1321,18127,IN,Porter County,1,12749,The Crossroads of America,166557
+1322,20083,KS,Hodgeman County,9,183,Ad astra per aspera,1950
+1323,55127,WI,Walworth County,4,11191,Forward,102945
+1324,49055,UT,Wayne County,9,400,Industry,1775273
+1325,10001,DE,Kent County,3,23060,Liberty and Independence,621700
+1326,16007,ID,Bear Lake County,7,823,Esto perpetua,5943
+1327,39117,OH,Morrow County,1,4214,The Heart of It All,11336
+1328,36027,NY,Dutchess County,2,25588,Excelsior,296916
+1329,9007,CT,Middlesex County,1,12513,Qui transtulit sustinet,1552802
+1330,8095,CO,Phillips County,9,484,Nil sine numine,4179
+1331,18007,IN,Benton County,3,980,The Crossroads of America,86591
+1332,9011,CT,New London County,2,23961,Qui transtulit sustinet,274150
+1333,47019,TN,Carter County,3,11903,Agriculture and Commerce,1174
+1334,18117,IN,Orange County,6,3103,The Crossroads of America,3114363
+1335,36035,NY,Fulton County,4,7878,Excelsior,984293
+1336,30105,MT,Valley County,7,928,Oro y Plata,9606
+1337,48063,TX,Camp County,6,2456,Friendship,12413
+1338,28141,MS,Tishomingo County,8,3362,Virtute et armis,19529
+1339,20053,KS,Ellsworth County,7,545,Ad astra per aspera,6398
+1340,2220,AK,Sitka Borough,7,690,North to the Future,
+1341,48419,TX,Shelby County,6,5345,Friendship,939465
+1342,28065,MS,Jefferson Davis County,8,3034,Virtute et armis,11948
+1343,48189,TX,Hale County,4,6809,Friendship,15406
+1344,20177,KS,Shawnee County,3,18931,Ad astra per aspera,178831
+1345,1027,AL,Clay County,9,2495,Audemus iura nostra defendere,10584
+1346,19181,IA,Warren County,2,3263,Our liberties we prize and our rights we will maintain,65337
+1347,19051,IA,Davis County,9,1125,Our liberties we prize and our rights we will maintain,322094
+1348,48363,TX,Palo Pinto County,6,4547,Friendship,27889
+1349,13269,GA,Taylor County,8,2004,"Wisdom, Justice, Moderation",20610
+1350,48017,TX,Bailey County,7,1165,Friendship,7114
+1351,13057,GA,Cherokee County,1,17948,"Wisdom, Justice, Moderation",27218
+1352,56011,WY,Crook County,9,613,Equal Rights,5240700
+1353,27059,MN,Isanti County,1,2955,L’Étoile du Nord,38204
+1354,46031,SD,Corson County,9,1614,,4215
+1355,28119,MS,Quitman County,6,2468,Virtute et armis,7803
+1356,53031,WA,Jefferson County,6,3679,bye and bye,659479
+1357,42109,PA,Snyder County,7,4775,"Virtue, liberty, and independence",39865
+1358,29201,MO,Scott County,5,7004,Salus populi suprema lex esto,22015
+1359,13001,GA,Appling County,7,3542,"Wisdom, Justice, Moderation",18440
+1360,32013,NV,Humboldt County,7,1982,All For Our Country,134493
+1361,42111,PA,Somerset County,4,9885,"Virtue, liberty, and independence",51706
+1362,27113,MN,Pennington County,6,1365,L’Étoile du Nord,105761
+1363,28163,MS,Yazoo County,6,8053,Virtute et armis,27883
+1364,45081,SC,Saluda County,2,3329,Dum spiro spero,20091
+1365,39027,OH,Clinton County,6,5426,The Heart of It All,81591
+1366,29059,MO,Dallas County,2,3025,Salus populi suprema lex esto,2480331
+1367,16015,ID,Boise County,2,965,Esto perpetua,6795
+1368,6083,CA,Santa Barbara County,2,59468,Eureka,435697
+1369,21219,KY,Todd County,8,2457,Deo gratiam habeamus,24382
+1370,48405,TX,San Augustine County,9,1933,Friendship,8769
+1371,1017,AL,Chambers County,6,6656,Audemus iura nostra defendere,36812
+1372,56035,WY,Sublette County,9,646,Equal Rights,10041
+1373,12003,FL,Baker County,1,4329,In God We Trust,16018
+1374,27041,MN,Douglas County,7,3172,L’Étoile du Nord,106940
+1375,13093,GA,Dooly County,6,3386,"Wisdom, Justice, Moderation",14304
+1376,29013,MO,Bates County,1,2204,Salus populi suprema lex esto,16550
+1377,4027,AZ,Yuma County,3,37850,Ditat Deus,201201
+1378,29119,MO,McDonald County,2,4776,Salus populi suprema lex esto,22558
+1379,5073,AR,Lafayette County,8,1838,Regnat populus,32943
+1380,5031,AR,Craighead County,3,16548,Regnat populus,101488
+1381,47121,TN,Meigs County,8,2164,Agriculture and Commerce,11649
+1382,54019,WV,Fayette County,6,8365,Montani semper liberi,45599
+1383,24005,MD,Baltimore County,1,72978,"Fatti maschii, parole femine",823015
+1384,51101,VA,King William County,1,1248,Sic semper tyrannis,16097
+1385,48409,TX,San Patricio County,2,10570,Friendship,66137
+1386,48073,TX,Cherokee County,6,9463,Friendship,27218
+1387,5019,AR,Clark County,7,4406,Regnat populus,2027868
+1388,49011,UT,Davis County,2,21271,Industry,322094
+1389,53015,WA,Cowlitz County,3,16863,bye and bye,101860
+1390,42021,PA,Cambria County,3,20033,"Virtue, liberty, and independence",140499
+1391,51678,VA,Lexington city,6,965,Sic semper tyrannis,
+1392,55079,WI,Milwaukee County,1,183511,Forward,956023
+1393,48315,TX,Marion County,8,2250,Friendship,323614
+1394,42093,PA,Montour County,6,1966,"Virtue, liberty, and independence",18541
+1395,17167,IL,Sangamon County,3,26767,"State sovereignty, national union",199145
+1396,51650,VA,Hampton city,1,21458,Sic semper tyrannis,
+1397,35035,NM,Otero County,4,12945,Crescit eundo,65616
+1398,47155,TN,Sevier County,4,14386,Agriculture and Commerce,20852
+1399,17005,IL,Bond County,1,2031,"State sovereignty, national union",17470
+1400,29159,MO,Pettis County,4,6263,Salus populi suprema lex esto,42205
+1401,20013,KS,Brown County,6,1272,Ad astra per aspera,37749
+1402,47089,TN,Jefferson County,3,8112,Agriculture and Commerce,659479
+1403,29083,MO,Henry County,6,4402,Salus populi suprema lex esto,49044
+1404,51105,VA,Lee County,8,6727,Sic semper tyrannis,661115
+1405,6065,CA,Riverside County,1,359774,Eureka,2292507
+1406,18175,IN,Washington County,1,3898,The Crossroads of America,32190
+1407,36055,NY,Monroe County,1,106742,Excelsior,76351
+1408,19035,IA,Cherokee County,6,1213,Our liberties we prize and our rights we will maintain,27218
+1409,48161,TX,Freestone County,7,3435,Friendship,19646
+1410,45091,SC,York County,1,27264,Dum spiro spero,199431
+1411,40101,OK,Muskogee County,4,14106,Labor omnia vincit,70303
+1412,46079,SD,Lake County,6,1049,,63860
+1413,49033,UT,Rich County,8,215,Industry,2311
+1414,48139,TX,Ellis County,1,16121,Friendship,155976
+1415,51049,VA,Cumberland County,1,1747,Sic semper tyrannis,285456
+1416,27071,MN,Koochiching County,7,1773,L’Étoile du Nord,13206
+1417,8067,CO,La Plata County,6,5861,Nil sine numine,53284
+1418,2060,AK,Bristol Bay Borough,9,100,North to the Future,960
+1419,48445,TX,Terry County,6,2532,Friendship,12743
+1420,21201,KY,Robertson County,8,514,Deo gratiam habeamus,16486
+1421,13025,GA,Brantley County,3,3795,"Wisdom, Justice, Moderation",18292
+1422,16077,ID,Power County,3,1188,Esto perpetua,7719
+1423,31137,NE,Phelps County,7,827,Equality before the law,44807
+1424,39155,OH,Trumbull County,2,34839,The Heart of It All,206442
+1425,39165,OH,Warren County,1,11823,The Heart of It All,65337
+1426,13241,GA,Rabun County,9,2794,"Wisdom, Justice, Moderation",16235
+1427,40015,OK,Caddo County,6,5877,Labor omnia vincit,29594
+1428,45041,SC,Florence County,3,24811,Dum spiro spero,138326
+1429,56003,WY,Big Horn County,9,1342,Equal Rights,13042
+1430,51109,VA,Louisa County,1,4261,Sic semper tyrannis,33945
+1431,53065,WA,Stevens County,6,6284,bye and bye,43430
+1432,26069,MI,Iosco County,7,4531,Si quaeris peninsulam amoenam circumspice,25429
+1433,34033,NJ,Salem County,1,7868,Liberty and prosperity,65166
+1434,37091,NC,Hertford County,7,5612,Esse quam videri,24431
+1435,6049,CA,Modoc County,6,1571,Eureka,9147
+1436,18085,IN,Kosciusko County,4,7985,The Crossroads of America,77963
+1437,31083,NE,Harlan County,9,414,Equality before the law,28499
+1438,13293,GA,Upson County,6,5124,"Wisdom, Justice, Moderation",26566
+1439,51033,VA,Caroline County,1,2937,Sic semper tyrannis,29298
+1440,20033,KS,Comanche County,9,208,Ad astra per aspera,124937
+1441,12125,FL,Union County,6,2512,In God We Trust,25652
+1442,37057,NC,Davidson County,4,25150,Esse quam videri,658602
+1443,50015,VT,Lamoille County,8,2986,Stella quarta decima fulgeat,25067
+1444,30021,MT,Dawson County,7,989,Oro y Plata,9445
+1445,13009,GA,Baldwin County,4,10273,"Wisdom, Justice, Moderation",182265
+1446,6035,CA,Lassen County,6,4085,Eureka,32163
+1447,21127,KY,Lawrence County,6,4251,Deo gratiam habeamus,33587
+1448,17003,IL,Alexander County,7,1857,"State sovereignty, national union",6780
+1449,13279,GA,Toombs County,7,6266,"Wisdom, Justice, Moderation",27273
+1450,39169,OH,Wayne County,4,13372,The Heart of It All,1775273
+1451,53007,WA,Chelan County,3,8665,bye and bye,73967
+1452,13097,GA,Douglas County,1,18191,"Wisdom, Justice, Moderation",106940
+1453,21193,KY,Perry County,7,8254,Deo gratiam habeamus,28010
+1454,6053,CA,Monterey County,2,53898,Eureka,428826
+1455,13223,GA,Paulding County,1,13373,"Wisdom, Justice, Moderation",19254
+1456,55039,WI,Fond du Lac County,3,7631,Forward,101798
+1457,55005,WI,Barron County,6,5041,Forward,45676
+1458,19019,IA,Buchanan County,6,2084,Our liberties we prize and our rights we will maintain,23597
+1459,48187,TX,Guadalupe County,1,15051,Friendship,4551
+1460,23031,ME,York County,2,16132,Dirigo,199431
+1461,23029,ME,Washington County,7,5615,Dirigo,32190
+1462,37135,NC,Orange County,2,17049,Esse quam videri,3114363
+1463,42119,PA,Union County,4,4284,"Virtue, liberty, and independence",25652
+1464,45059,SC,Laurens County,2,11753,Dum spiro spero,47999
+1465,28031,MS,Covington County,8,4531,Virtute et armis,37886
+1466,2180,AK,Nome Census Area,7,2337,North to the Future,9892
+1467,47117,TN,Marshall County,6,4148,Agriculture and Commerce,94760
+1468,45047,SC,Greenwood County,4,14687,Dum spiro spero,6424
+1469,1041,AL,Crenshaw County,8,2822,Audemus iura nostra defendere,13986
+1470,40057,OK,Harmon County,9,679,Labor omnia vincit,2869
+1471,38093,ND,Stutsman County,7,2184,Serit ut alteri saeclo prosit,21120
+1472,51153,VA,Prince William County,1,33308,Sic semper tyrannis,438580
+1473,28021,MS,Claiborne County,6,3060,Virtute et armis,31560
+1474,39111,OH,Monroe County,8,2130,The Heart of It All,76351
+1475,51011,VA,Appomattox County,3,2130,Sic semper tyrannis,15255
+1476,39109,OH,Miami County,2,9860,The Heart of It All,103439
+1477,20183,KS,Smith County,9,507,Ad astra per aspera,216080
+1478,51600,VA,Fairfax city,1,1611,Sic semper tyrannis,
+1479,20003,KS,Anderson County,6,992,Ad astra per aspera,75542
+1480,21223,KY,Trimble County,1,1263,Deo gratiam habeamus,8816
+1481,5101,AR,Newton County,9,1566,Regnat populus,8064
+1482,46065,SD,Hughes County,7,1430,,13823
+1483,20009,KS,Barton County,7,3621,Ad astra per aspera,27509
+1484,56043,WY,Washakie County,7,1060,Equal Rights,8463
+1485,49045,UT,Tooele County,2,5189,Industry,60762
+1486,48157,TX,Fort Bend County,1,60925,Friendship,652365
+1487,31029,NE,Chase County,9,359,Equality before the law,2700
+1488,48273,TX,Kleberg County,4,6871,Friendship,32101
+1489,38077,ND,Richland County,6,1558,Serit ut alteri saeclo prosit,399256
+1490,53033,WA,King County,1,196841,bye and bye,2044449
+1491,28117,MS,Prentiss County,7,5868,Virtute et armis,25388
+1492,55109,WI,St. Croix County,1,4917,Forward,85930
+1493,13155,GA,Irwin County,7,1997,"Wisdom, Justice, Moderation",9427
+1494,55095,WI,Polk County,6,4233,Forward,31569
+1495,2130,AK,Ketchikan Gateway Borough,7,1245,North to the Future,13729
+1496,55009,WI,Brown County,2,24903,Forward,37749
+1497,21139,KY,Livingston County,9,1329,Deo gratiam habeamus,184443
+1498,20049,KS,Elk County,8,447,Ad astra per aspera,31479
+1499,31183,NE,Wheeler County,9,88,Equality before the law,1381
+1500,45023,SC,Chester County,6,6328,Dum spiro spero,509468
+1501,51017,VA,Bath County,9,516,Sic semper tyrannis,4616
+1502,12131,FL,Walton County,6,8331,In God We Trust,59807
+1503,20131,KS,Nemaha County,8,928,Ad astra per aspera,10161
+1504,37115,NC,Madison County,2,3786,Esse quam videri,7712
+1505,39143,OH,Sandusky County,4,6750,The Heart of It All,60098
+1506,18049,IN,Fulton County,7,2471,The Crossroads of America,984293
+1507,39123,OH,Ottawa County,2,4160,The Heart of It All,272701
+1508,17195,IL,Whiteside County,4,6586,"State sovereignty, national union",57557
+1509,48337,TX,Montague County,6,3165,Friendship,19503
+1510,26137,MI,Otsego County,7,3369,Si quaeris peninsulam amoenam circumspice,61683
+1511,9005,CT,Litchfield County,4,12952,Qui transtulit sustinet,186924
+1512,6057,CA,Nevada County,4,10662,Eureka,98200
+1513,48209,TX,Hays County,1,24332,Friendship,176026
+1514,45037,SC,Edgefield County,2,4180,Dum spiro spero,26436
+1515,55137,WI,Waushara County,8,3263,Forward,24329
+1516,31125,NE,Nance County,9,432,Equality before the law,3623
+1517,20007,KS,Barber County,9,559,Ad astra per aspera,4947
+1518,42025,PA,Carbon County,2,8210,"Virtue, liberty, and independence",15748
+1519,20071,KS,Greeley County,9,149,Ad astra per aspera,2494
+1520,36051,NY,Livingston County,1,8072,Excelsior,184443
+1521,48483,TX,Wheeler County,9,736,Friendship,1381
+1522,6021,CA,Glenn County,6,4632,Eureka,27940
+1523,39015,OH,Brown County,1,7196,The Heart of It All,37749
+1524,42009,PA,Bedford County,6,6550,"Virtue, liberty, and independence",49055
+1525,26081,MI,Kent County,2,76343,Si quaeris peninsulam amoenam circumspice,621700
+1526,13207,GA,Monroe County,3,3197,"Wisdom, Justice, Moderation",76351
+1527,20067,KS,Grant County,7,909,Ad astra per aspera,7283
+1528,48407,TX,San Jacinto County,1,4876,Friendship,26856
+1529,8075,CO,Logan County,7,3056,Nil sine numine,35987
+1530,21003,KY,Allen County,6,3790,Deo gratiam habeamus,363014
+1531,30043,MT,Jefferson County,9,1032,Oro y Plata,659479
+1532,26041,MI,Delta County,5,5107,Si quaeris peninsulam amoenam circumspice,30483
+1533,35028,NM,Los Alamos County,6,720,Crescit eundo,17798
+1534,16053,ID,Jerome County,7,3644,Esto perpetua,22514
+1535,28081,MS,Lee County,5,14332,Virtute et armis,661115
+1536,21013,KY,Bell County,7,10096,Deo gratiam habeamus,326843
+1537,29163,MO,Pike County,6,2907,Salus populi suprema lex esto,63380
+1538,29155,MO,Pemiscot County,7,5198,Salus populi suprema lex esto,17823
+1539,16081,ID,Teton County,9,1057,Esto perpetua,22268
+1540,55063,WI,La Crosse County,3,14977,Forward,116713
+1541,32015,NV,Lander County,7,674,All For Our Country,6032
+1542,56031,WY,Platte County,7,1031,Equal Rights,8765
+1543,27083,MN,Lyon County,7,3167,L’Étoile du Nord,51557
+1544,21041,KY,Carroll County,6,2152,Deo gratiam habeamus,47499
+1545,17171,IL,Scott County,9,575,"State sovereignty, national union",22015
+1546,46057,SD,Hamlin County,9,557,,5961
+1547,19145,IA,Page County,7,2046,Our liberties we prize and our rights we will maintain,23821
+1548,13133,GA,Greene County,6,3067,"Wisdom, Justice, Moderation",68267
+1549,29203,MO,Shannon County,9,2133,Salus populi suprema lex esto,8297
+1550,37109,NC,Lincoln County,4,10179,Esse quam videri,5245
+1551,35007,NM,Colfax County,7,2525,Crescit eundo,13094
+1552,46029,SD,Codington County,7,3264,,27853
+1553,50001,VT,Addison County,6,3318,Stella quarta decima fulgeat,36821
+1554,47149,TN,Rutherford County,1,31097,Agriculture and Commerce,66956
+1555,55081,WI,Monroe County,6,5384,Forward,76351
+1556,53063,WA,Spokane County,2,64514,bye and bye,479398
+1557,48179,TX,Gray County,6,4001,Friendship,23043
+1558,26045,MI,Eaton County,2,12005,Si quaeris peninsulam amoenam circumspice,108348
+1559,8109,CO,Saguache County,9,1757,Nil sine numine,6208
+1560,29141,MO,Morgan County,8,3885,Salus populi suprema lex esto,119787
+1561,16087,ID,Washington County,6,1517,Esto perpetua,32190
+1562,26113,MI,Missaukee County,9,2198,Si quaeris peninsulam amoenam circumspice,15051
+1563,29209,MO,Stone County,8,3960,Salus populi suprema lex esto,12581
+1564,38073,ND,Ransom County,8,421,Serit ut alteri saeclo prosit,5516
+1565,42089,PA,Monroe County,4,19303,"Virtue, liberty, and independence",76351
+1566,29217,MO,Vernon County,7,3498,Salus populi suprema lex esto,30329
+1567,55083,WI,Oconto County,2,3364,Forward,37318
+1568,28045,MS,Hancock County,3,7976,Virtute et armis,54845
+1569,13089,GA,DeKalb County,1,127476,"Wisdom, Justice, Moderation",713340
+1570,13309,GA,Wheeler County,9,2111,"Wisdom, Justice, Moderation",1381
+1571,21135,KY,Lewis County,8,3545,Deo gratiam habeamus,75081
+1572,46039,SD,Deuel County,9,411,,4320
+1573,48211,TX,Hemphill County,9,406,Friendship,4158
+1574,29215,MO,Texas County,9,7130,Salus populi suprema lex esto,25636
+1575,5053,AR,Grant County,2,2062,Regnat populus,7283
+1576,38099,ND,Walsh County,6,1176,Serit ut alteri saeclo prosit,11104
+1577,45073,SC,Oconee County,6,11021,Dum spiro spero,75045
+1578,13081,GA,Crisp County,6,6751,"Wisdom, Justice, Moderation",23336
+1579,49025,UT,Kane County,6,745,Industry,7260
+1580,40027,OK,Cleveland County,1,33109,Labor omnia vincit,97047
+1581,36015,NY,Chemung County,3,12390,Excelsior,88506
+1582,27121,MN,Pope County,8,991,L’Étoile du Nord,62547
+1583,16023,ID,Butte County,8,451,Esto perpetua,222090
+1584,46037,SD,Day County,9,759,,5596
+1585,31005,NE,Arthur County,9,56,Equality before the law,458
+1586,50009,VT,Essex County,9,966,Stella quarta decima fulgeat,38762
+1587,16051,ID,Jefferson County,3,2875,Esto perpetua,659479
+1588,12077,FL,Liberty County,8,1468,In God We Trust,76907
+1589,4001,AZ,Apache County,6,23966,Ditat Deus,71934
+1590,41047,OR,Marion County,2,44581,Alis volat propriis,323614
+1591,48271,TX,Kinney County,9,652,Friendship,3586
+1592,22127,LA,Winn Parish,6,3080,,14813
+1593,31011,NE,Boone County,9,525,Equality before the law,24224
+1594,26121,MI,Muskegon County,3,31393,Si quaeris peninsulam amoenam circumspice,171008
+1595,46023,SD,Charles Mix County,9,1951,,9241
+1596,30073,MT,Pondera County,7,1083,Oro y Plata,6211
+1597,30029,MT,Flathead County,5,11897,Oro y Plata,93068
+1598,29510,MO,St. Louis city,1,73250,Salus populi suprema lex esto,318416
+1599,36079,NY,Putnam County,1,5844,Excelsior,72577
+1600,18013,IN,Brown County,1,1613,The Crossroads of America,37749
+1601,48215,TX,Hidalgo County,2,262028,Friendship,4654
+1602,12069,FL,Lake County,1,39212,In God We Trust,63860
+1603,31177,NE,Washington County,2,1405,Equality before the law,32190
+1604,47071,TN,Hardin County,6,5438,Agriculture and Commerce,26034
+1605,48057,TX,Calhoun County,3,3420,Friendship,135012
+1606,42073,PA,Lawrence County,4,11672,"Virtue, liberty, and independence",33587
+1607,22061,LA,Lincoln Parish,4,12959,,47414
+1608,39133,OH,Portage County,2,20743,The Heart of It All,70380
+1609,30039,MT,Granite County,8,438,Oro y Plata,3138
+1610,53037,WA,Kittitas County,6,7724,bye and bye,41765
+1611,53005,WA,Benton County,3,20153,bye and bye,86591
+1612,27063,MN,Jackson County,7,858,L’Étoile du Nord,208545
+1613,48181,TX,Grayson County,3,16550,Friendship,122353
+1614,13145,GA,Harris County,2,2883,"Wisdom, Justice, Moderation",4336853
+1615,20063,KS,Gove County,9,264,Ad astra per aspera,2769
+1616,24027,MD,Howard County,1,16536,"Fatti maschii, parole femine",304580
+1617,26099,MI,Macomb County,1,94224,Si quaeris peninsulam amoenam circumspice,854769
+1618,39029,OH,Columbiana County,4,17130,The Heart of It All,105893
+1619,1075,AL,Lamar County,9,2545,Audemus iura nostra defendere,49426
+1620,20185,KS,Stafford County,9,547,Ad astra per aspera,136788
+1621,51177,VA,Spotsylvania County,1,9648,Sic semper tyrannis,127348
+1622,20203,KS,Wichita County,9,244,Ad astra per aspera,132047
+1623,38031,ND,Foster County,9,287,Serit ut alteri saeclo prosit,3366
+1624,39147,OH,Seneca County,4,6782,The Heart of It All,55914
+1625,28047,MS,Harrison County,3,40472,Virtute et armis,196500
+1626,26119,MI,Montmorency County,9,1535,Si quaeris peninsulam amoenam circumspice,9350
+1627,39045,OH,Fairfield County,1,14445,The Heart of It All,939904
+1628,1079,AL,Lawrence County,3,5530,Audemus iura nostra defendere,33587
+1629,29019,MO,Boone County,3,27774,Salus populi suprema lex esto,24224
+1630,37187,NC,Washington County,7,3147,Esse quam videri,32190
+1631,5127,AR,Scott County,6,1991,Regnat populus,22015
+1632,27095,MN,Mille Lacs County,6,3047,L’Étoile du Nord,25833
+1633,18093,IN,Lawrence County,4,6139,The Crossroads of America,33587
+1634,31157,NE,Scotts Bluff County,5,5645,Equality before the law,36848
+1635,51025,VA,Brunswick County,6,3275,Sic semper tyrannis,115301
+1636,29175,MO,Randolph County,6,3616,Salus populi suprema lex esto,29415
+1637,39069,OH,Henry County,6,2258,The Heart of It All,49044
+1638,17091,IL,Kankakee County,3,14958,"State sovereignty, national union",112120
+1639,49003,UT,Box Elder County,4,5008,Industry,50794
+1640,39087,OH,Lawrence County,2,10771,The Heart of It All,33587
+1641,30097,MT,Sweet Grass County,9,351,Oro y Plata,3669
+1642,26131,MI,Ontonagon County,9,925,Si quaeris peninsulam amoenam circumspice,6322
+1643,47053,TN,Gibson County,4,8157,Agriculture and Commerce,33612
+1644,27145,MN,Stearns County,3,17429,L’Étoile du Nord,152092
+1645,16069,ID,Nez Perce County,3,5861,Esto perpetua,39915
+1646,12029,FL,Dixie County,6,3697,In God We Trust,15940
+1647,48171,TX,Gillespie County,7,2563,Friendship,25357
+1648,20021,KS,Cherokee County,6,3148,Ad astra per aspera,27218
+1649,55123,WI,Vernon County,6,5019,Forward,30329
+1650,18179,IN,Wells County,2,2663,The Crossroads of America,27814
+1651,5107,AR,Phillips County,7,6042,Regnat populus,4179
+1652,31145,NE,Red Willow County,7,1100,Equality before the law,11006
+1653,54063,WV,Monroe County,8,2295,Montani semper liberi,76351
+1654,55087,WI,Outagamie County,3,14548,Forward,180345
+1655,1123,AL,Tallapoosa County,6,8111,Audemus iura nostra defendere,41203
+1656,19133,IA,Monona County,6,1111,Our liberties we prize and our rights we will maintain,9121
+1657,41063,OR,Wallowa County,9,1000,Alis volat propriis,6814
+1658,54075,WV,Pocahontas County,9,1495,Montani semper liberi,8669
+1659,34037,NJ,Sussex County,1,8460,Liberty and prosperity,206649
+1660,30009,MT,Carbon County,3,1071,Oro y Plata,15748
+1661,21113,KY,Jessamine County,2,8014,Deo gratiam habeamus,50173
+1662,49007,UT,Carbon County,7,3013,Industry,15748
+1663,29135,MO,Moniteau County,3,1696,Salus populi suprema lex esto,15748
+1664,39107,OH,Mercer County,7,3308,The Heart of It All,61984
+1665,54069,WV,Ohio County,3,6361,Montani semper liberi,43727
+1666,21167,KY,Mercer County,6,3088,Deo gratiam habeamus,61984
+1667,1107,AL,Pickens County,8,4756,Audemus iura nostra defendere,119829
+1668,51065,VA,Fluvanna County,3,1867,Sic semper tyrannis,25977
+1669,8037,CO,Eagle County,5,4239,Nil sine numine,52460
+1670,13251,GA,Screven County,6,3744,"Wisdom, Justice, Moderation",14240
+1671,18123,IN,Perry County,6,2612,The Crossroads of America,28010
+1672,39163,OH,Vinton County,9,2661,The Heart of It All,13276
+1673,6073,CA,San Diego County,1,400028,Eureka,3211252
+1674,19083,IA,Hardin County,6,1807,Our liberties we prize and our rights we will maintain,26034
+1675,31085,NE,Hayes County,9,150,Equality before the law,976
+1676,56041,WY,Uinta County,7,2183,Equal Rights,21066
+1677,46059,SD,Hand County,9,295,,3391
+1678,27163,MN,Washington County,1,11304,L’Étoile du Nord,32190
+1679,48207,TX,Haskell County,6,1258,Friendship,13052
+1680,26083,MI,Keweenaw County,9,269,Si quaeris peninsulam amoenam circumspice,2191
+1681,48129,TX,Donley County,8,593,Friendship,3522
+1682,37025,NC,Cabarrus County,1,21980,Esse quam videri,187226
+1683,30013,MT,Cascade County,3,11333,Oro y Plata,82384
+1684,40049,OK,Garvin County,6,4791,Labor omnia vincit,27334
+1685,30031,MT,Gallatin County,5,11526,Oro y Plata,94720
+1686,35055,NM,Taos County,7,7354,Crescit eundo,33035
+1687,18161,IN,Union County,8,912,The Crossroads of America,25652
+1688,51700,VA,Newport News city,1,25395,Sic semper tyrannis,
+1689,37127,NC,Nash County,3,15151,Esse quam videri,95093
+1690,50021,VT,Rutland County,5,7591,Stella quarta decima fulgeat,60622
+1691,21197,KY,Powell County,6,3185,Deo gratiam habeamus,6993
+1692,37041,NC,Chowan County,7,2665,Esse quam videri,14726
+1693,48489,TX,Willacy County,6,7076,Friendship,21921
+1694,27035,MN,Crow Wing County,5,6975,L’Étoile du Nord,63208
+1695,41041,OR,Lincoln County,4,9289,Alis volat propriis,5245
+1696,31167,NE,Stanton County,9,449,Equality before the law,6133
+1697,55105,WI,Rock County,3,20393,Forward,160739
+1698,36007,NY,Broome County,2,30417,Excelsior,197534
+1699,28017,MS,Chickasaw County,7,3715,Virtute et armis,17311
+1700,36081,NY,Queens County,1,307866,Excelsior,
+1701,40139,OK,Texas County,7,2861,Labor omnia vincit,25636
+1702,42115,PA,Susquehanna County,6,5117,"Virtue, liberty, and independence",42286
+1703,22113,LA,Vermilion Parish,4,11669,,59253
+1704,20163,KS,Rooks County,9,592,Ad astra per aspera,5190
+1705,54095,WV,Tyler County,6,1431,Montani semper liberi,21464
+1706,51149,VA,Prince George County,1,3176,Sic semper tyrannis,37253
+1707,13033,GA,Burke County,2,5986,"Wisdom, Justice, Moderation",89842
+1708,16079,ID,Shoshone County,6,2319,Esto perpetua,12690
+1709,20133,KS,Neosho County,7,2552,Ad astra per aspera,16430
+1710,18027,IN,Daviess County,7,4609,The Crossroads of America,98218
+1711,13101,GA,Echols County,3,913,"Wisdom, Justice, Moderation",4057
+1712,31081,NE,Hamilton County,7,697,Equality before the law,4773
+1713,8105,CO,Rio Grande County,7,1972,Nil sine numine,11803
+1714,5079,AR,Lincoln County,3,2726,Regnat populus,5245
+1715,12017,FL,Citrus County,4,23472,In God We Trust,139271
+1716,48387,TX,Red River County,6,2057,Friendship,12470
+1717,41019,OR,Douglas County,4,16692,Alis volat propriis,106940
+1718,22117,LA,Washington Parish,6,12371,,46419
+1719,28115,MS,Pontotoc County,7,5725,Virtute et armis,37992
+1720,1005,AL,Barbour County,6,6787,Audemus iura nostra defendere,16770
+1721,31129,NE,Nuckolls County,9,525,Equality before the law,4413
+1722,16063,ID,Lincoln County,9,665,Esto perpetua,5245
+1723,46111,SD,Sanborn County,9,268,,2324
+1724,12051,FL,Hendry County,4,9712,In God We Trust,37471
+1725,37179,NC,Union County,1,20266,Esse quam videri,25652
+1726,48039,TX,Brazoria County,1,34053,Friendship,330242
+1727,20087,KS,Jefferson County,3,1765,Ad astra per aspera,659479
+1728,8051,CO,Gunnison County,7,2128,Nil sine numine,15507
+1729,12123,FL,Taylor County,6,4291,In God We Trust,20610
+1730,47069,TN,Hardeman County,6,5443,Agriculture and Commerce,26306
+1731,28137,MS,Tate County,1,4648,Virtute et armis,28373
+1732,8063,CO,Kit Carson County,7,1023,Nil sine numine,8037
+1733,18011,IN,Boone County,1,4481,The Crossroads of America,24224
+1734,55133,WI,Waukesha County,1,20315,Forward,393843
+1735,8011,CO,Bent County,7,1358,Nil sine numine,5688
+1736,51800,VA,Suffolk city,1,10303,Sic semper tyrannis,
+1737,13191,GA,McIntosh County,3,2847,"Wisdom, Justice, Moderation",14007
+1738,36111,NY,Ulster County,3,23815,Excelsior,180998
+1739,41021,OR,Gilliam County,9,223,Alis volat propriis,1947
+1740,39019,OH,Carroll County,2,3475,The Heart of It All,47499
+1741,45057,SC,Lancaster County,4,11381,Dum spiro spero,529600
+1742,48279,TX,Lamb County,6,2803,Friendship,13775
+1743,51540,VA,Charlottesville city,3,10235,Sic semper tyrannis,
+1744,55089,WI,Ozaukee County,1,4626,Forward,87054
+1745,22115,LA,Vernon Parish,4,7191,,52606
+1746,42077,PA,Lehigh County,2,48796,"Virtue, liberty, and independence",355092
+1747,8021,CO,Conejos County,9,1836,Nil sine numine,8277
+1748,13065,GA,Clinch County,6,1752,"Wisdom, Justice, Moderation",6795
+1749,16001,ID,Ada County,2,46600,Esto perpetua,416464
+1750,24015,MD,Cecil County,1,10099,"Fatti maschii, parole femine",101913
+1751,18095,IN,Madison County,3,21548,The Crossroads of America,7712
+1752,9015,CT,Windham County,4,13297,Qui transtulit sustinet,117604
+1753,36099,NY,Seneca County,6,4322,Excelsior,55914
+1754,20023,KS,Cheyenne County,9,292,Ad astra per aspera,10091
+1755,22049,LA,Jackson Parish,6,3122,,16112
+1756,28109,MS,Pearl River County,6,10031,Virtute et armis,55072
+1757,54105,WV,Wirt County,3,1049,Montani semper liberi,5901
+1758,1031,AL,Coffee County,6,7271,Audemus iura nostra defendere,50938
+1759,39125,OH,Paulding County,6,2004,The Heart of It All,19254
+1760,18061,IN,Harrison County,1,3997,The Crossroads of America,196500
+1761,28051,MS,Holmes County,6,7249,Virtute et armis,19717
+1762,48481,TX,Wharton County,4,7163,Friendship,41216
+1763,20199,KS,Wallace County,9,179,Ad astra per aspera,1569
+1764,41009,OR,Columbia County,1,5537,Alis volat propriis,49344
+1765,29125,MO,Maries County,8,1331,Salus populi suprema lex esto,9018
+1766,48265,TX,Kerr County,4,7348,Friendship,49953
+1767,29147,MO,Nodaway County,6,3251,Salus populi suprema lex esto,23261
+1768,48037,TX,Bowie County,3,16884,Friendship,93487
+1769,12097,FL,Osceola County,1,49326,In God We Trust,298504
+1770,20201,KS,Washington County,9,588,Ad astra per aspera,32190
+1771,6003,CA,Alpine County,8,199,Eureka,1159
+1772,20207,KS,Woodson County,9,571,Ad astra per aspera,3221
+1773,39173,OH,Wood County,2,14060,The Heart of It All,86569
+1774,24017,MD,Charles County,1,11536,"Fatti maschii, parole femine",152864
+1775,37153,NC,Richmond County,4,10900,Esse quam videri,202003
+1776,48069,TX,Castro County,6,1372,Friendship,8030
+1777,22029,LA,Concordia Parish,7,5239,,20442
+1778,6013,CA,Contra Costa County,1,97573,Eureka,1094205
+1779,17061,IL,Greene County,6,1928,"State sovereignty, national union",68267
+1780,35001,NM,Bernalillo County,2,107909,Crescit eundo,674221
+1781,23009,ME,Hancock County,6,5877,Dirigo,54845
+1782,23023,ME,Sagadahoc County,2,3245,Dirigo,35013
+1783,47147,TN,Robertson County,1,7061,Agriculture and Commerce,16486
+1784,44005,RI,Newport County,1,7120,Hope,145736
+1785,17051,IL,Fayette County,6,3013,"State sovereignty, national union",45599
+1786,29073,MO,Gasconade County,6,1758,Salus populi suprema lex esto,14901
+1787,28143,MS,Tunica County,1,3164,Virtute et armis,10560
+1788,13039,GA,Camden County,4,7573,"Wisdom, Justice, Moderation",43862
+1789,21015,KY,Boone County,1,9662,Deo gratiam habeamus,24224
+1790,20105,KS,Lincoln County,9,373,Ad astra per aspera,5245
+1791,12113,FL,Santa Rosa County,2,17308,In God We Trust,161096
+1792,42107,PA,Schuylkill County,4,17479,"Virtue, liberty, and independence",146920
+1793,42067,PA,Juniata County,6,2490,"Virtue, liberty, and independence",24768
+1794,17009,IL,Brown County,7,774,"State sovereignty, national union",37749
+1795,39081,OH,Jefferson County,3,10469,The Heart of It All,659479
+1796,18071,IN,Jackson County,4,5677,The Crossroads of America,208545
+1797,19087,IA,Henry County,7,2279,Our liberties we prize and our rights we will maintain,49044
+1798,48261,TX,Kenedy County,9,65,Friendship,412
+1799,17197,IL,Will County,1,48627,"State sovereignty, national union",682829
+1800,45025,SC,Chesterfield County,6,9310,Dum spiro spero,46197
+1801,5061,AR,Howard County,7,2455,Regnat populus,304580
+1802,48095,TX,Concho County,8,682,Friendship,4043
+1803,17079,IL,Jasper County,7,1009,"State sovereignty, national union",35649
+1804,12041,FL,Gilchrist County,3,2825,In God We Trust,16931
+1805,35029,NM,Luna County,6,6601,Crescit eundo,24659
+1806,13017,GA,Ben Hill County,7,4467,"Wisdom, Justice, Moderation",17515
+1807,46135,SD,Yankton County,7,2428,,22696
+1808,22005,LA,Ascension Parish,2,12864,,114393
+1809,37081,NC,Guilford County,2,92205,Esse quam videri,506610
+1810,51023,VA,Botetourt County,2,2560,Sic semper tyrannis,33002
+1811,18039,IN,Elkhart County,3,26390,The Crossroads of America,200563
+1812,21105,KY,Hickman County,9,884,Deo gratiam habeamus,24267
+1813,39053,OH,Gallia County,6,5995,The Heart of It All,30621
+1814,42011,PA,Berks County,2,52766,"Virtue, liberty, and independence",413521
+1815,48399,TX,Runnels County,6,1766,Friendship,10309
+1816,29169,MO,Pulaski County,5,6044,Salus populi suprema lex esto,391284
+1817,51147,VA,Prince Edward County,6,4274,Sic semper tyrannis,22802
+1818,30005,MT,Blaine County,9,1581,Oro y Plata,21329
+1819,54055,WV,Mercer County,5,11978,Montani semper liberi,61984
+1820,48245,TX,Jefferson County,2,47920,Friendship,659479
+1821,22011,LA,Beauregard Parish,6,5243,,36167
+1822,13169,GA,Jones County,3,3482,"Wisdom, Justice, Moderation",1001
+1823,29167,MO,Polk County,2,5004,Salus populi suprema lex esto,31569
+1824,25025,MA,Suffolk County,1,143799,Ense petit placidam sub libertate quietem,1499738
+1825,51083,VA,Halifax County,6,6380,Sic semper tyrannis,35401
+1826,55119,WI,Taylor County,6,2376,Forward,20610
+1827,47075,TN,Haywood County,6,3530,Agriculture and Commerce,59183
+1828,29063,MO,DeKalb County,3,1429,Salus populi suprema lex esto,713340
+1829,37155,NC,Robeson County,4,35835,Esse quam videri,134841
+1830,21235,KY,Whitley County,7,10026,Deo gratiam habeamus,35766
+1831,17143,IL,Peoria County,2,27254,"State sovereignty, national union",188429
+1832,50025,VT,Windham County,6,5318,Stella quarta decima fulgeat,117604
+1833,12049,FL,Hardee County,6,6081,In God We Trust,27519
+1834,6069,CA,San Benito County,1,6206,Eureka,57600
+1835,30047,MT,Lake County,6,5645,Oro y Plata,63860
+1836,27067,MN,Kandiyohi County,4,4815,L’Étoile du Nord,42410
+1837,48233,TX,Hutchinson County,6,2783,Friendship,21819
+1838,51720,VA,Norton city,7,875,Sic semper tyrannis,
+1839,30001,MT,Beaverhead County,7,1291,Oro y Plata,9341
+1840,38097,ND,Traill County,8,642,Serit ut alteri saeclo prosit,8245
+1841,36089,NY,St. Lawrence County,5,17225,Excelsior,111963
+1842,48249,TX,Jim Wells County,4,9459,Friendship,41680
+1843,19067,IA,Floyd County,7,2004,Our liberties we prize and our rights we will maintain,38728
+1844,21161,KY,Mason County,6,3256,Deo gratiam habeamus,27126
+1845,46069,SD,Hyde County,9,122,,5721
+1846,8069,CO,Larimer County,2,37023,Nil sine numine,315988
+1847,45089,SC,Williamsburg County,6,9141,Dum spiro spero,33067
+1848,19165,IA,Shelby County,6,1037,Our liberties we prize and our rights we will maintain,939465
+1849,4019,AZ,Pima County,2,180513,Ditat Deus,996554
+1850,29049,MO,Clinton County,1,2089,Salus populi suprema lex esto,81591
+1851,51091,VA,Highland County,9,293,Sic semper tyrannis,43299
+1852,5131,AR,Sebastian County,2,21232,Regnat populus,127342
+1853,5003,AR,Ashley County,7,3636,Regnat populus,21283
+1854,41005,OR,Clackamas County,1,35366,Alis volat propriis,388263
+1855,29089,MO,Howard County,3,1484,Salus populi suprema lex esto,304580
+1856,56019,WY,Johnson County,7,737,Equal Rights,8628
+1857,36009,NY,Cattaraugus County,4,11014,Excelsior,78892
+1858,44009,RI,Washington County,1,11789,Hope,32190
+1859,39135,OH,Preble County,2,4494,The Heart of It All,41732
+1860,37141,NC,Pender County,2,8683,Esse quam videri,55334
+1861,40031,OK,Comanche County,3,18024,Labor omnia vincit,124937
+1862,39149,OH,Shelby County,4,4490,The Heart of It All,939465
+1863,48507,TX,Zavala County,7,3991,Friendship,12156
+1864,47059,TN,Greene County,6,11398,Agriculture and Commerce,68267
+1865,54089,WV,Summers County,7,2921,Montani semper liberi,13563
+1866,37131,NC,Northampton County,9,4319,Esse quam videri,299791
+1867,8111,CO,San Juan County,9,107,Nil sine numine,14973
+1868,18043,IN,Floyd County,1,7759,The Crossroads of America,38728
+1869,2068,AK,Denali Borough,8,121,North to the Future,1867
+1870,29095,MO,Jackson County,1,105697,Salus populi suprema lex esto,208545
+1871,46051,SD,Grant County,7,705,,7283
+1872,48329,TX,Midland County,3,15599,Friendship,83919
+1873,54061,WV,Monongalia County,3,18202,Montani semper liberi,102274
+1874,13201,GA,Miller County,8,1340,"Wisdom, Justice, Moderation",25092
+1875,45031,SC,Darlington County,3,13878,Dum spiro spero,67935
+1876,29107,MO,Lafayette County,1,4057,Salus populi suprema lex esto,32943
+1877,48313,TX,Madison County,6,1993,Friendship,7712
+1878,36101,NY,Steuben County,4,12546,Excelsior,98650
+1879,29075,MO,Gentry County,8,952,Salus populi suprema lex esto,6775
+1880,55103,WI,Richland County,6,2296,Forward,399256
+1881,33009,NH,Grafton County,5,8463,Live Free or Die,89629
+1882,29027,MO,Callaway County,3,4754,Salus populi suprema lex esto,44359
+1883,23001,ME,Androscoggin County,3,13210,Dirigo,107604
+1884,48101,TX,Cottle County,9,300,Friendship,1452
+1885,38079,ND,Rolette County,9,3861,Serit ut alteri saeclo prosit,14582
+1886,48417,TX,Shackelford County,8,489,Friendship,3375
+1887,40099,OK,Murray County,7,1816,Labor omnia vincit,13712
+1888,45027,SC,Clarendon County,6,8045,Dum spiro spero,34355
+1889,46055,SD,Haakon County,8,209,,1894
+1890,13049,GA,Charlton County,6,2725,"Wisdom, Justice, Moderation",13255
+1891,18133,IN,Putnam County,1,4080,The Crossroads of America,72577
+1892,47177,TN,Warren County,6,7736,Agriculture and Commerce,65337
+1893,42105,PA,Potter County,9,2335,"Virtue, liberty, and independence",17497
+1894,41049,OR,Morrow County,6,1668,Alis volat propriis,11336
+1895,4012,AZ,La Paz County,6,4976,Ditat Deus,20324
+1896,27051,MN,Grant County,9,700,L’Étoile du Nord,7283
+1897,47157,TN,Shelby County,1,190199,Agriculture and Commerce,939465
+1898,18105,IN,Monroe County,3,30977,The Crossroads of America,76351
+1899,19047,IA,Crawford County,6,2345,Our liberties we prize and our rights we will maintain,24543
+1900,51175,VA,Southampton County,6,2544,Sic semper tyrannis,18128
+1901,46091,SD,Marshall County,9,508,,94760
+1902,48431,TX,Sterling County,8,169,Friendship,1219
+1903,29117,MO,Livingston County,6,2350,Salus populi suprema lex esto,184443
+1904,40047,OK,Garfield County,5,8920,Labor omnia vincit,5083
+1905,41013,OR,Crook County,6,3192,Alis volat propriis,5240700
+1906,54051,WV,Marshall County,3,5445,Montani semper liberi,94760
+1907,5085,AR,Lonoke County,2,8881,Regnat populus,70753
+1908,37161,NC,Rutherford County,4,12096,Esse quam videri,66956
+1909,47051,TN,Franklin County,6,6143,Agriculture and Commerce,71221
+1910,39073,OH,Hocking County,6,4054,The Heart of It All,28665
+1911,27015,MN,Brown County,7,1993,L’Étoile du Nord,37749
+1912,18003,IN,Allen County,2,54642,The Crossroads of America,363014
+1913,19071,IA,Fremont County,8,790,Our liberties we prize and our rights we will maintain,40998
+1914,31161,NE,Sheridan County,9,831,Equality before the law,29824
+1915,27157,MN,Wabasha County,3,1595,L’Étoile du Nord,21443
+1916,36047,NY,Kings County,1,535092,Excelsior,150960
+1917,46075,SD,Jones County,9,120,,1001
+1918,40061,OK,Haskell County,6,2673,Labor omnia vincit,13052
+1919,30015,MT,Chouteau County,8,895,Oro y Plata,5849
+1920,47101,TN,Lewis County,6,2163,Agriculture and Commerce,75081
+1921,53055,WA,San Juan County,9,1599,bye and bye,14973
+1922,18021,IN,Clay County,3,3666,The Crossroads of America,10584
+1923,29045,MO,Clark County,9,1020,Salus populi suprema lex esto,2027868
+1924,49021,UT,Iron County,4,9021,Industry,46780
+1925,20079,KS,Harvey County,2,3528,Ad astra per aspera,34741
+1926,28059,MS,Jackson County,3,24525,Virtute et armis,208545
+1927,31121,NE,Merrick County,7,797,Equality before the law,7802
+1928,20047,KS,Edwards County,9,325,Ad astra per aspera,1884
+1929,13147,GA,Hart County,6,4286,"Wisdom, Justice, Moderation",18573
+1930,40117,OK,Pawnee County,2,2696,Labor omnia vincit,2709
+1931,40143,OK,Tulsa County,2,99417,Labor omnia vincit,622409
+1932,46121,SD,Todd County,9,4928,,24382
+1933,37157,NC,Rockingham County,2,16352,Esse quam videri,299134
+1934,5123,AR,St. Francis County,6,6973,Regnat populus,27260
+1935,18079,IN,Jennings County,6,3478,The Crossroads of America,28241
+1936,53043,WA,Lincoln County,8,1279,bye and bye,5245
+1937,27005,MN,Becker County,6,4200,L’Étoile du Nord,33231
+1938,46107,SD,Potter County,9,219,,17497
+1939,1053,AL,Escambia County,6,8020,Audemus iura nostra defendere,305817
+1940,54065,WV,Morgan County,3,2079,Montani semper liberi,119787
+1941,37027,NC,Caldwell County,2,13697,Esse quam videri,81990
+1942,31009,NE,Blaine County,9,75,Equality before the law,21329
+1943,30061,MT,Mineral County,8,737,Oro y Plata,4614
+1944,16085,ID,Valley County,8,998,Esto perpetua,9606
+1945,28013,MS,Calhoun County,7,3146,Virtute et armis,135012
+1946,21021,KY,Boyle County,7,4562,Deo gratiam habeamus,29013
+1947,23011,ME,Kennebec County,4,16479,Dirigo,121164
+1948,31105,NE,Kimball County,6,468,Equality before the law,3702
+1949,21107,KY,Hopkins County,4,8154,Deo gratiam habeamus,35565
+1950,1067,AL,Henry County,3,3159,Audemus iura nostra defendere,49044
+1951,38039,ND,Griggs County,9,213,Serit ut alteri saeclo prosit,2296
+1952,48303,TX,Lubbock County,3,55089,Friendship,289324
+1953,27143,MN,Sibley County,8,1328,L’Étoile du Nord,15072
+1954,1083,AL,Limestone County,2,11511,Audemus iura nostra defendere,88845
+1955,36109,NY,Tompkins County,3,17022,Excelsior,103617
+1956,46119,SD,Sully County,9,102,,1437
+1957,45079,SC,Richland County,2,61910,Dum spiro spero,399256
+1958,48423,TX,Smith County,3,34487,Friendship,216080
+1959,51660,VA,Harrisonburg city,3,12919,Sic semper tyrannis,
+1960,38041,ND,Hettinger County,9,256,Serit ut alteri saeclo prosit,
+1961,38003,ND,Barnes County,6,1137,Serit ut alteri saeclo prosit,11190
+1962,17041,IL,Douglas County,6,1895,"State sovereignty, national union",106940
+1963,22051,LA,Jefferson Parish,1,69610,,434767
+1964,1057,AL,Fayette County,6,3307,Audemus iura nostra defendere,45599
+1965,13121,GA,Fulton County,1,159400,"Wisdom, Justice, Moderation",984293
+1966,17153,IL,Pulaski County,9,1183,"State sovereignty, national union",391284
+1967,42057,PA,Fulton County,8,1527,"Virtue, liberty, and independence",984293
+1968,13227,GA,Pickens County,1,3447,"Wisdom, Justice, Moderation",119829
+1969,26067,MI,Ionia County,2,8487,Si quaeris peninsulam amoenam circumspice,64073
+1970,26153,MI,Schoolcraft County,7,1162,Si quaeris peninsulam amoenam circumspice,8247
+1971,48283,TX,La Salle County,6,1561,Friendship,112183
+1972,47109,TN,McNairy County,6,5623,Agriculture and Commerce,26140
+1973,27149,MN,Stevens County,7,969,L’Étoile du Nord,43430
+1974,26159,MI,Van Buren County,2,12282,Si quaeris peninsulam amoenam circumspice,16932
+1975,6111,CA,Ventura County,2,81792,Eureka,839620
+1976,16013,ID,Blaine County,7,2128,Esto perpetua,21329
+1977,13281,GA,Towns County,9,1558,"Wisdom, Justice, Moderation",10771
+1978,56001,WY,Albany County,4,6229,Equal Rights,37422
+1979,26015,MI,Barry County,2,4932,Si quaeris peninsulam amoenam circumspice,35572
+1980,22063,LA,Livingston Parish,2,17396,,134053
+1981,37043,NC,Clay County,9,1647,Esse quam videri,10584
+1982,18059,IN,Hancock County,1,5327,The Crossroads of America,54845
+1983,18089,IN,Lake County,1,79529,The Crossroads of America,63860
+1984,49015,UT,Emery County,9,1263,Industry,10749
+1985,32019,NV,Lyon County,6,6289,All For Our Country,51557
+1986,1117,AL,Shelby County,1,16406,Audemus iura nostra defendere,939465
+1987,17085,IL,Jo Daviess County,6,2145,"State sovereignty, national union",22407
+1988,23021,ME,Piscataquis County,8,3136,Dirigo,17124
+1989,45001,SC,Abbeville County,6,3689,Dum spiro spero,25007
+1990,17007,IL,Boone County,2,5071,"State sovereignty, national union",24224
+1991,26157,MI,Tuscola County,6,7148,Si quaeris peninsulam amoenam circumspice,54263
+1992,27159,MN,Wadena County,7,1952,L’Étoile du Nord,13804
+1993,48443,TX,Terrell County,9,152,Friendship,903
+1994,48475,TX,Ward County,6,1464,Friendship,67990
+1995,39011,OH,Auglaize County,4,4165,The Heart of It All,45920
+1996,54073,WV,Pleasants County,3,987,Montani semper liberi,7577
+1997,20115,KS,Marion County,6,1271,Ad astra per aspera,323614
+1998,51595,VA,Emporia city,6,1172,Sic semper tyrannis,5588
+1999,26049,MI,Genesee County,2,81761,Si quaeris peninsulam amoenam circumspice,415376
+2000,20045,KS,Douglas County,3,17501,Ad astra per aspera,106940
+2001,48293,TX,Limestone County,6,4608,Friendship,88845
+2002,26109,MI,Menominee County,7,2965,Si quaeris peninsulam amoenam circumspice,23791
+2003,47183,TN,Weakley County,7,6591,Agriculture and Commerce,34450
+2004,54047,WV,McDowell County,7,6882,Montani semper liberi,20876
+2005,41057,OR,Tillamook County,6,3300,Alis volat propriis,25317
+2006,47153,TN,Sequatchie County,2,2598,Agriculture and Commerce,14681
+2007,48127,TX,Dimmit County,6,2940,Friendship,10897
+2008,22071,LA,Orleans Parish,1,91421,,389617
+2009,48049,TX,Brown County,5,6217,Friendship,37749
+2010,18031,IN,Decatur County,6,3021,The Crossroads of America,11661
+2011,48497,TX,Wise County,1,7591,Friendship,60939
+2012,21071,KY,Floyd County,7,11137,Deo gratiam habeamus,38728
+2013,18109,IN,Morgan County,1,7254,The Crossroads of America,119787
+2014,29139,MO,Montgomery County,8,1739,Salus populi suprema lex esto,1058810
+2015,37111,NC,McDowell County,6,8050,Esse quam videri,20876
+2016,47093,TN,Knox County,2,65480,Agriculture and Commerce,39550
+2017,40039,OK,Custer County,7,4984,Labor omnia vincit,4249
+2018,39059,OH,Guernsey County,6,7161,The Heart of It All,39636
+2019,13267,GA,Tattnall County,6,6108,"Wisdom, Justice, Moderation",25526
+2020,2164,AK,Lake and Peninsula Borough,9,325,North to the Future,1648
+2021,49031,UT,Piute County,9,253,Industry,1510
+2022,27001,MN,Aitkin County,8,2010,L’Étoile du Nord,15742
+2023,55075,WI,Marinette County,6,4916,Forward,41610
+2024,20065,KS,Graham County,9,311,Ad astra per aspera,37482
+2025,28019,MS,Choctaw County,9,1881,Virtute et armis,13426
+2026,30111,MT,Yellowstone County,3,13581,Oro y Plata,154162
+2027,51155,VA,Pulaski County,3,4758,Sic semper tyrannis,391284
+2028,22003,LA,Allen Parish,6,4588,,25537
+2029,5089,AR,Marion County,9,3342,Regnat populus,323614
+2030,56009,WY,Converse County,6,1272,Equal Rights,14313
+2031,18167,IN,Vigo County,3,17567,The Crossroads of America,108291
+2032,12031,FL,Duval County,1,131327,In God We Trust,885855
+2033,1013,AL,Butler County,6,4880,Audemus iura nostra defendere,371272
+2034,38035,ND,Grand Forks County,3,9318,Serit ut alteri saeclo prosit,69179
+2035,20123,KS,Mitchell County,7,712,Ad astra per aspera,15328
+2036,19079,IA,Hamilton County,6,1383,Our liberties we prize and our rights we will maintain,4773
+2037,18087,IN,Lagrange County,6,3851,The Crossroads of America,37996
+2038,20055,KS,Finney County,5,5155,Ad astra per aspera,37098
+2039,13175,GA,Laurens County,6,11931,"Wisdom, Justice, Moderation",47999
+2040,6001,CA,Alameda County,1,173386,Eureka,1578891
+2041,5117,AR,Prairie County,8,1441,Regnat populus,1179
+2042,29093,MO,Iron County,6,2184,Salus populi suprema lex esto,46780
+2043,13141,GA,Hancock County,7,2453,"Wisdom, Justice, Moderation",54845
+2044,46033,SD,Custer County,8,882,,4249
+2045,13221,GA,Oglethorpe County,3,2272,"Wisdom, Justice, Moderation",14548
+2046,19061,IA,Dubuque County,3,9738,Our liberties we prize and our rights we will maintain,95697
+2047,22073,LA,Ouachita Parish,3,37014,,156220
+2048,27007,MN,Beltrami County,7,8070,L’Étoile du Nord,45670
+2049,22009,LA,Avoyelles Parish,6,9758,,41299
+2050,26125,MI,Oakland County,1,106650,Si quaeris peninsulam amoenam circumspice,1231640
+2051,12027,FL,DeSoto County,6,9323,In God We Trust,168240
+2052,35003,NM,Catron County,9,810,Crescit eundo,3607
+2053,49019,UT,Grand County,7,1202,Industry,9360
+2054,38047,ND,Logan County,9,238,Serit ut alteri saeclo prosit,35987
+2055,36073,NY,Orleans County,1,5905,Excelsior,27169
+2056,10003,DE,New Castle County,1,61319,Liberty and Independence,549684
+2057,19099,IA,Jasper County,6,3542,Our liberties we prize and our rights we will maintain,35649
+2058,24031,MD,Montgomery County,1,71252,"Fatti maschii, parole femine",1058810
+2059,47007,TN,Bledsoe County,8,2889,Agriculture and Commerce,12841
+2060,48415,TX,Scurry County,7,2377,Friendship,17302
+2061,48011,TX,Armstrong County,3,197,Friendship,68107
+2062,29009,MO,Barry County,6,7560,Salus populi suprema lex esto,35572
+2063,18173,IN,Warrick County,2,4615,The Crossroads of America,61049
+2064,19033,IA,Cerro Gordo County,5,4907,Our liberties we prize and our rights we will maintain,43575
+2065,1109,AL,Pike County,6,7793,Audemus iura nostra defendere,63380
+2066,37073,NC,Gates County,8,1731,Esse quam videri,11650
+2067,48379,TX,Rains County,8,1657,Friendship,11065
+2068,42045,PA,Delaware County,1,58546,"Virtue, liberty, and independence",46722
+2069,31107,NE,Knox County,9,1076,Equality before the law,39550
+2070,51735,VA,Poquoson city,1,650,Sic semper tyrannis,
+2071,21001,KY,Adair County,7,4633,Deo gratiam habeamus,22194
+2072,42041,PA,Cumberland County,2,18620,"Virtue, liberty, and independence",285456
+2073,27173,MN,Yellow Medicine County,9,963,L’Étoile du Nord,10143
+2074,18155,IN,Switzerland County,8,1780,The Crossroads of America,10526
+2075,51580,VA,Covington city,6,862,Sic semper tyrannis,
+2076,8091,CO,Ouray County,9,426,Nil sine numine,4557
+2077,48491,TX,Williamson County,1,30201,Friendship,198901
+2078,13095,GA,Dougherty County,3,26389,"Wisdom, Justice, Moderation",92969
+2079,18063,IN,Hendricks County,1,9008,The Crossroads of America,153879
+2080,20139,KS,Osage County,3,1707,Ad astra per aspera,47987
+2081,21005,KY,Anderson County,6,2335,Deo gratiam habeamus,75542
+2082,51630,VA,Fredericksburg city,1,3755,Sic semper tyrannis,28360
+2083,40009,OK,Beckham County,7,3515,Labor omnia vincit,23637
+2084,12023,FL,Columbia County,6,11449,In God We Trust,49344
+2085,27151,MN,Swift County,7,942,L’Étoile du Nord,9546
+2086,31153,NE,Sarpy County,2,10294,Equality before the law,169331
+2087,21199,KY,Pulaski County,5,11876,Deo gratiam habeamus,391284
+2088,12055,FL,Highlands County,4,19035,In God We Trust,97616
+2089,5083,AR,Logan County,6,3867,Regnat populus,35987
+2090,51163,VA,Rockbridge County,6,2735,Sic semper tyrannis,22307
+2091,22001,LA,Acadia Parish,4,14228,,62204
+2092,19131,IA,Mitchell County,7,1064,Our liberties we prize and our rights we will maintain,15328
+2093,20169,KS,Saline County,5,6426,Ad astra per aspera,114404
+2094,48125,TX,Dickens County,8,406,Friendship,2291
+2095,17145,IL,Perry County,7,2953,"State sovereignty, national union",28010
+2096,21031,KY,Butler County,8,2234,Deo gratiam habeamus,371272
+2097,47061,TN,Grundy County,8,2969,Agriculture and Commerce,50228
+2098,48237,TX,Jack County,6,1315,Friendship,8957
+2099,49017,UT,Garfield County,9,524,Industry,5083
+2100,36115,NY,Washington County,3,6479,Excelsior,32190
+2101,51840,VA,Winchester city,3,3966,Sic semper tyrannis,
+2102,24035,MD,Queen Anne's County,1,3528,"Fatti maschii, parole femine",48517
+2103,38013,ND,Burke County,9,196,Serit ut alteri saeclo prosit,89842
+2104,1049,AL,DeKalb County,6,14362,Audemus iura nostra defendere,713340
+2105,54007,WV,Braxton County,8,2998,Montani semper liberi,14502
+2106,40003,OK,Alfalfa County,9,750,Labor omnia vincit,5847
+2107,40107,OK,Okfuskee County,6,2792,Labor omnia vincit,12377
+2108,46109,SD,Roberts County,9,1801,,10251
+2109,19185,IA,Wayne County,9,1134,Our liberties we prize and our rights we will maintain,1775273
+2110,51015,VA,Augusta County,4,6590,Sic semper tyrannis,73912
+2111,20113,KS,McPherson County,6,2704,Ad astra per aspera,29569
+2112,53047,WA,Okanogan County,6,8082,bye and bye,41193
+2113,55129,WI,Washburn County,6,1953,Forward,15686
+2114,13007,GA,Baker County,3,871,"Wisdom, Justice, Moderation",16018
+2115,48219,TX,Hockley County,6,3817,Friendship,23530
+2116,42131,PA,Wyoming County,2,3021,"Virtue, liberty, and independence",23019
+2117,40127,OK,Pushmataha County,9,2402,Labor omnia vincit,11233
+2118,20109,KS,Logan County,9,275,Ad astra per aspera,35987
+2119,48367,TX,Parker County,1,11838,Friendship,121418
+2120,55031,WI,Douglas County,2,5733,Forward,106940
+2121,27049,MN,Goodhue County,4,3513,L’Étoile du Nord,46464
+2122,37101,NC,Johnston County,2,25065,Esse quam videri,177967
+2123,20107,KS,Linn County,1,1569,Ad astra per aspera,118765
+2124,16043,ID,Fremont County,6,2062,Esto perpetua,40998
+2125,36065,NY,Oneida County,2,35553,Excelsior,233585
+2126,48047,TX,Brooks County,6,2299,Friendship,15516
+2127,30107,MT,Wheatland County,9,390,Oro y Plata,2134
+2128,41039,OR,Lane County,2,66339,Alis volat propriis,356212
+2129,35006,NM,Cibola County,6,6712,Crescit eundo,27335
+2130,28071,MS,Lafayette County,6,9851,Virtute et armis,32943
+2131,51620,VA,Franklin city,6,1491,Sic semper tyrannis,
+2132,21053,KY,Clinton County,9,2538,Deo gratiam habeamus,81591
+2133,37089,NC,Henderson County,2,13707,Esse quam videri,109540
+2134,46007,SD,Bennett County,9,1159,,3452
+2135,5041,AR,Desha County,6,3125,Regnat populus,12505
+2136,47073,TN,Hawkins County,3,10717,Agriculture and Commerce,56800
+2137,27079,MN,Le Sueur County,6,2289,L’Étoile du Nord,27810
+2138,12083,FL,Marion County,2,58992,In God We Trust,323614
+2139,19089,IA,Howard County,7,900,Our liberties we prize and our rights we will maintain,304580
+2140,30095,MT,Stillwater County,8,784,Oro y Plata,9318
+2141,20205,KS,Wilson County,7,1402,Ad astra per aspera,121945
+2142,12095,FL,Orange County,1,209800,In God We Trust,3114363
+2143,12063,FL,Jackson County,6,9045,In God We Trust,208545
+2144,40069,OK,Johnston County,7,2355,Labor omnia vincit,177967
+2145,48289,TX,Leon County,8,3090,Friendship,16742
+2146,18041,IN,Fayette County,7,4071,The Crossroads of America,45599
+2147,40075,OK,Kiowa County,6,1981,Labor omnia vincit,9341
+2148,1021,AL,Chilton County,1,7960,Audemus iura nostra defendere,43951
+2149,48025,TX,Bee County,4,6798,Friendship,32563
+2150,39159,OH,Union County,1,3194,The Heart of It All,25652
+2151,36025,NY,Delaware County,6,7613,Excelsior,46722
+2152,19021,IA,Buena Vista County,7,2338,Our liberties we prize and our rights we will maintain,20567
+2153,51165,VA,Rockingham County,3,7575,Sic semper tyrannis,299134
+2154,4007,AZ,Gila County,4,10678,Ditat Deus,53053
+2155,5047,AR,Franklin County,2,3103,Regnat populus,71221
+2156,45077,SC,Pickens County,2,17297,Dum spiro spero,119829
+2157,54101,WV,Webster County,9,2564,Montani semper liberi,8893
+2158,37033,NC,Caswell County,8,4265,Esse quam videri,23190
+2159,47169,TN,Trousdale County,1,1244,Agriculture and Commerce,7828
+2160,37097,NC,Iredell County,4,18166,Esse quam videri,164517
+2161,42027,PA,Centre County,3,24173,"Virtue, liberty, and independence",155403
+2162,36087,NY,Rockland County,1,46260,Excelsior,320903
+2163,31021,NE,Burt County,8,683,Equality before the law,6574
+2164,13273,GA,Terrell County,3,2695,"Wisdom, Justice, Moderation",903
+2165,36071,NY,Orange County,2,46624,Excelsior,3114363
+2166,26105,MI,Mason County,7,4355,Si quaeris peninsulam amoenam circumspice,27126
+2167,20137,KS,Norton County,7,640,Ad astra per aspera,5622
+2168,22027,LA,Claiborne Parish,7,4593,,16650
+2169,13077,GA,Coweta County,1,13867,"Wisdom, Justice, Moderation",133180
+2170,20081,KS,Haskell County,9,402,Ad astra per aspera,13052
+2171,44003,RI,Kent County,1,15726,Hope,621700
+2172,13193,GA,Macon County,6,3701,"Wisdom, Justice, Moderation",33857
+2173,38103,ND,Wells County,9,419,Serit ut alteri saeclo prosit,27814
+2174,42091,PA,Montgomery County,1,49697,"Virtue, liberty, and independence",1058810
+2175,31089,NE,Holt County,7,1063,Equality before the law,10449
+2176,45019,SC,Charleston County,2,57691,Dum spiro spero,372803
+2177,28153,MS,Wayne County,7,5145,Virtute et armis,1775273
+2178,24033,MD,Prince George's County,1,81629,"Fatti maschii, parole femine",890081
+2179,31043,NE,Dakota County,3,2405,Equality before the law,408509
+2180,51187,VA,Warren County,1,3922,Sic semper tyrannis,65337
+2181,37173,NC,Swain County,8,2357,Esse quam videri,14058
+2182,40053,OK,Grant County,9,581,Labor omnia vincit,7283
+2183,19075,IA,Grundy County,3,768,Our liberties we prize and our rights we will maintain,50228
+2184,38027,ND,Eddy County,9,229,Serit ut alteri saeclo prosit,55471
+2185,54025,WV,Greenbrier County,7,5520,Montani semper liberi,35644
+2186,26047,MI,Emmet County,7,3841,Si quaeris peninsulam amoenam circumspice,33140
+2187,49029,UT,Morgan County,2,493,Industry,119787
+2188,48439,TX,Tarrant County,1,270348,Friendship,1911541
+2189,21119,KY,Knott County,9,5659,Deo gratiam habeamus,15976
+2190,37009,NC,Ashe County,9,4307,Esse quam videri,27151
+2191,17053,IL,Ford County,3,1472,"State sovereignty, national union",13832
+2192,27021,MN,Cass County,9,4445,L’Étoile du Nord,28555
+2193,54059,WV,Mingo County,6,6902,Montani semper liberi,25900
+2194,40023,OK,Choctaw County,7,3922,Labor omnia vincit,13426
+2195,48117,TX,Deaf Smith County,6,3177,Friendship,19177
+2196,34009,NJ,Cape May County,3,10964,Liberty and prosperity,95897
+2197,55085,WI,Oneida County,7,3352,Forward,233585
+2198,5051,AR,Garland County,3,17037,Regnat populus,97173
+2199,2122,AK,Kenai Peninsula Borough,7,6835,North to the Future,57147
+2200,39031,OH,Coshocton County,6,4581,The Heart of It All,36760
+2201,18067,IN,Howard County,3,12011,The Crossroads of America,304580
+2202,27013,MN,Blue Earth County,5,9397,L’Étoile du Nord,65528
+2203,36059,NY,Nassau County,1,82192,Excelsior,1352146
+2204,46103,SD,Pennington County,3,15515,,105761
+2205,48173,TX,Glasscock County,8,114,Friendship,1251
+2206,27129,MN,Renville County,9,1412,L’Étoile du Nord,15166
+2207,36067,NY,Onondaga County,2,65822,Excelsior,468387
+2208,27023,MN,Chippewa County,7,1066,L’Étoile du Nord,38696
+2209,54037,WV,Jefferson County,1,5563,Montani semper liberi,659479
+2210,51003,VA,Albemarle County,3,8524,Sic semper tyrannis,103000
+2211,12121,FL,Suwannee County,6,8244,In God We Trust,43734
+2212,37049,NC,Craven County,5,15047,Esse quam videri,104489
+2213,12039,FL,Gadsden County,2,8906,In God We Trust,46194
+2214,46015,SD,Brule County,9,652,,5366
+2215,46115,SD,Spink County,7,676,,6610
+2216,30025,MT,Fallon County,9,262,Oro y Plata,3079
+2217,22023,LA,Cameron Parish,3,841,,6744
+2218,53021,WA,Franklin County,3,12972,bye and bye,71221
+2219,37119,NC,Mecklenburg County,1,127889,Esse quam videri,990977
+2220,46035,SD,Davison County,7,2069,,19823
+2221,54081,WV,Raleigh County,4,12684,Montani semper liberi,78833
+2222,27069,MN,Kittson County,9,466,L’Étoile du Nord,4503
+2223,12011,FL,Broward County,1,256027,In God We Trust,1838844
+2224,30055,MT,McCone County,9,261,Oro y Plata,1709
+2225,48089,TX,Colorado County,6,2985,Friendship,20752
+2226,39047,OH,Fayette County,6,4489,The Heart of It All,45599
+2227,41035,OR,Klamath County,5,12408,Alis volat propriis,65910
+2228,31051,NE,Dixon County,3,480,Equality before the law,5851
+2229,37117,NC,Martin County,6,5175,Esse quam videri,20422
+2230,8041,CO,El Paso County,2,76997,Nil sine numine,655044
+2231,47087,TN,Jackson County,8,2479,Agriculture and Commerce,208545
+2232,39005,OH,Ashland County,4,6235,The Heart of It All,16016
+2233,17201,IL,Winnebago County,2,43858,"State sovereignty, national union",290666
+2234,20039,KS,Decatur County,9,404,Ad astra per aspera,11661
+2235,38085,ND,Sioux County,8,1543,Serit ut alteri saeclo prosit,1313
+2236,5065,AR,Izard County,9,2492,Regnat populus,13368
+2237,37067,NC,Forsyth County,2,62994,Esse quam videri,361220
+2238,36013,NY,Chautauqua County,4,23921,Excelsior,133080
+2239,29195,MO,Saline County,6,3436,Salus populi suprema lex esto,114404
+2240,12009,FL,Brevard County,2,84028,In God We Trust,550823
+2241,17129,IL,Menard County,3,1191,"State sovereignty, national union",2148
+2242,40025,OK,Cimarron County,9,381,Labor omnia vincit,2335
+2243,56007,WY,Carbon County,7,1787,Equal Rights,15748
+2244,16027,ID,Canyon County,2,31525,Esto perpetua,198871
+2245,40125,OK,Pottawatomie County,4,12400,Labor omnia vincit,71158
+2246,5013,AR,Calhoun County,9,847,Regnat populus,135012
+2247,13303,GA,Washington County,7,5063,"Wisdom, Justice, Moderation",32190
+2248,6087,CA,Santa Cruz County,2,35339,Eureka,46768
+2249,18065,IN,Henry County,4,7244,The Crossroads of America,49044
+2250,48051,TX,Burleson County,3,2519,Friendship,17169
+2251,54029,WV,Hancock County,3,3876,Montani semper liberi,54845
+2252,28077,MS,Lawrence County,8,2502,Virtute et armis,33587
+2253,47037,TN,Davidson County,1,99415,Agriculture and Commerce,658602
+2254,47173,TN,Union County,2,4204,Agriculture and Commerce,25652
+2255,28127,MS,Simpson County,2,6095,Virtute et armis,27500
+2256,51029,VA,Buckingham County,8,2613,Sic semper tyrannis,17136
+2257,19127,IA,Marshall County,4,4755,Our liberties we prize and our rights we will maintain,94760
+2258,6025,CA,Imperial County,3,40601,Eureka,176584
+2259,28139,MS,Tippah County,7,5409,Virtute et armis,22084
+2260,20129,KS,Morton County,9,342,Ad astra per aspera,28990
+2261,38075,ND,Renville County,9,205,Serit ut alteri saeclo prosit,15166
+2262,30075,MT,Powder River County,9,183,Oro y Plata,1748
+2263,5023,AR,Cleburne County,6,4047,Regnat populus,25686
+2264,17113,IL,McLean County,3,20429,"State sovereignty, national union",9517
+2265,36097,NY,Schuyler County,6,2684,Excelsior,18460
+2266,1007,AL,Bibb County,1,4099,Audemus iura nostra defendere,22915
+2267,2090,AK,Fairbanks North Star Borough,3,8144,North to the Future,100436
+2268,32031,NV,Washoe County,2,56064,All For Our Country,433731
+2269,13173,GA,Lanier County,3,2316,"Wisdom, Justice, Moderation",10408
+2270,1011,AL,Bullock County,6,2841,Audemus iura nostra defendere,10639
+2271,26043,MI,Dickinson County,5,3195,Si quaeris peninsulam amoenam circumspice,16955
+2272,20075,KS,Hamilton County,9,341,Ad astra per aspera,4773
+2273,6095,CA,Solano County,2,48701,Eureka,424788
+2274,21153,KY,Magoffin County,9,3993,Deo gratiam habeamus,12950
+2275,8007,CO,Archuleta County,7,1523,Nil sine numine,12194
+2276,46071,SD,Jackson County,8,1011,,208545
+2277,22107,LA,Tensas Parish,9,1444,,4908
+2278,48231,TX,Hunt County,1,14584,Friendship,87048
+2279,29099,MO,Jefferson County,1,22484,Salus populi suprema lex esto,659479
+2280,30027,MT,Fergus County,7,1619,Oro y Plata,11501
+2281,51550,VA,Chesapeake city,1,20071,Sic semper tyrannis,673
+2282,47033,TN,Crockett County,8,2491,Agriculture and Commerce,3807
+2283,48295,TX,Lipscomb County,9,426,Friendship,3485
+2284,38011,ND,Bowman County,9,262,Serit ut alteri saeclo prosit,3214
+2285,47083,TN,Houston County,8,1413,Agriculture and Commerce,22911
+2286,37183,NC,Wake County,2,94001,Esse quam videri,974289
+2287,33007,NH,Coos County,7,4072,Live Free or Die,31997
+2288,26161,MI,Washtenaw County,2,49933,Si quaeris peninsulam amoenam circumspice,354240
+2289,29129,MO,Mercer County,9,498,Salus populi suprema lex esto,61984
+2290,17067,IL,Hancock County,7,2186,"State sovereignty, national union",54845
+2291,47005,TN,Benton County,7,2831,Agriculture and Commerce,86591
+2292,29033,MO,Carroll County,6,1462,Salus populi suprema lex esto,47499
+2293,5009,AR,Boone County,7,5670,Regnat populus,24224
+2294,42075,PA,Lebanon County,3,13361,"Virtue, liberty, and independence",135486
+2295,46041,SD,Dewey County,9,1571,,5586
+2296,22125,LA,West Feliciana Parish,2,2372,,15444
+2297,48119,TX,Delta County,1,953,Friendship,30483
+2298,6103,CA,Tehama County,4,13060,Eureka,63057
+2299,1133,AL,Winston County,6,4061,Audemus iura nostra defendere,24146
+2300,51041,VA,Chesterfield County,1,23468,Sic semper tyrannis,46197
+2301,39071,OH,Highland County,6,8410,The Heart of It All,43299
+2302,40135,OK,Sequoyah County,2,7978,Labor omnia vincit,41218
+2303,13313,GA,Whitfield County,3,16688,"Wisdom, Justice, Moderation",102945
+2304,5039,AR,Dallas County,6,1464,Regnat populus,2480331
+2305,40017,OK,Canadian County,1,11232,Labor omnia vincit,126123
+2306,26059,MI,Hillsdale County,6,6395,Si quaeris peninsulam amoenam circumspice,46101
+2307,48169,TX,Garza County,6,1290,Friendship,6317
+2308,37185,NC,Warren County,8,4999,Esse quam videri,65337
+2309,48121,TX,Denton County,1,65057,Friendship,728799
+2310,47031,TN,Coffee County,4,7705,Agriculture and Commerce,50938
+2311,39077,OH,Huron County,4,7043,The Heart of It All,32224
+2312,13209,GA,Montgomery County,9,1898,"Wisdom, Justice, Moderation",1058810
+2313,31013,NE,Box Butte County,7,1269,Equality before the law,11305
+2314,50003,VT,Bennington County,6,4815,Stella quarta decima fulgeat,36659
+2315,46043,SD,Douglas County,9,309,,106940
+2316,47189,TN,Wilson County,1,10632,Agriculture and Commerce,121945
+2317,34013,NJ,Essex County,1,126492,Liberty and prosperity,38762
+2318,20073,KS,Greenwood County,6,895,Ad astra per aspera,6424
+2319,30109,MT,Wibaux County,9,116,Oro y Plata,1121
+2320,21079,KY,Garrard County,6,2784,Deo gratiam habeamus,16915
+2321,21087,KY,Green County,8,2223,Deo gratiam habeamus,37090
+2322,20001,KS,Allen County,7,1907,Ad astra per aspera,363014
+2323,27055,MN,Houston County,3,1585,L’Étoile du Nord,22911
+2324,45039,SC,Fairfield County,2,4715,Dum spiro spero,939904
+2325,12099,FL,Palm Beach County,1,178918,In God We Trust,1372171
+2326,40001,OK,Adair County,6,6347,Labor omnia vincit,22194
+2327,1055,AL,Etowah County,3,17624,Audemus iura nostra defendere,103931
+2328,13185,GA,Lowndes County,3,23936,"Wisdom, Justice, Moderation",59922
+2329,13291,GA,Union County,9,3483,"Wisdom, Justice, Moderation",25652
+2330,18069,IN,Huntington County,6,3880,The Crossroads of America,36791
+2331,1111,AL,Randolph County,6,4839,Audemus iura nostra defendere,29415
+2332,17099,IL,La Salle County,4,14193,"State sovereignty, national union",112183
+2333,8125,CO,Yuma County,7,1207,Nil sine numine,201201
+2334,48427,TX,Starr County,4,25257,Friendship,61963
+2335,26103,MI,Marquette County,5,9419,Si quaeris peninsulam amoenam circumspice,67700
+2336,48485,TX,Wichita County,3,20099,Friendship,132047
+2337,17071,IL,Henderson County,9,794,"State sovereignty, national union",109540
+2338,39037,OH,Darke County,6,5438,The Heart of It All,52376
+2339,26111,MI,Midland County,4,7771,Si quaeris peninsulam amoenam circumspice,83919
+2340,21125,KY,Laurel County,7,13782,Deo gratiam habeamus,59563
+2341,12045,FL,Gulf County,6,2958,In God We Trust,15829
+2342,1095,AL,Marshall County,4,19703,Audemus iura nostra defendere,94760
+2343,5001,AR,Arkansas County,6,3237,Regnat populus,18777
+2344,21185,KY,Oldham County,1,3582,Deo gratiam habeamus,2102
+2345,42097,PA,Northumberland County,4,12924,"Virtue, liberty, and independence",94076
+2346,42047,PA,Elk County,7,3025,"Virtue, liberty, and independence",31479
+2347,22075,LA,Plaquemines Parish,1,3575,,23550
+2348,47151,TN,Scott County,6,4755,Agriculture and Commerce,22015
+2349,42117,PA,Tioga County,6,5289,"Virtue, liberty, and independence",42463
+2350,36029,NY,Erie County,1,126912,Excelsior,919866
+2351,32027,NV,Pershing County,8,847,All For Our Country,6877
+2352,21229,KY,Washington County,8,1851,Deo gratiam habeamus,32190
+2353,37169,NC,Stokes County,2,5664,Esse quam videri,46588
+2354,13287,GA,Turner County,6,2329,"Wisdom, Justice, Moderation",8134
+2355,42085,PA,Mercer County,2,17133,"Virtue, liberty, and independence",61984
+2356,28067,MS,Jones County,4,13630,Virtute et armis,1001
+2357,53045,WA,Mason County,6,8830,bye and bye,27126
+2358,17029,IL,Coles County,5,9348,"State sovereignty, national union",53697
+2359,29025,MO,Caldwell County,1,1121,Salus populi suprema lex esto,81990
+2360,47081,TN,Hickman County,1,4754,Agriculture and Commerce,24267
+2361,1121,AL,Talladega County,4,13864,Audemus iura nostra defendere,81096
+2362,51131,VA,Northampton County,9,2418,Sic semper tyrannis,299791
+2363,17165,IL,Saline County,7,4795,"State sovereignty, national union",114404
+2364,4003,AZ,Cochise County,4,25424,Ditat Deus,129473
+2365,17155,IL,Putnam County,8,448,"State sovereignty, national union",72577
+2366,37007,NC,Anson County,1,5716,Esse quam videri,26161
+2367,8081,CO,Moffat County,7,1676,Nil sine numine,13103
+2368,31143,NE,Polk County,9,408,Equality before the law,31569
+2369,12089,FL,Nassau County,1,8242,In God We Trust,1352146
+2370,20035,KS,Cowley County,4,4706,Ad astra per aspera,36204
+2371,37103,NC,Jones County,8,2088,Esse quam videri,1001
+2372,38021,ND,Dickey County,9,527,Serit ut alteri saeclo prosit,5248
+2373,47003,TN,Bedford County,6,6885,Agriculture and Commerce,49055
+2374,18139,IN,Rush County,6,2277,The Crossroads of America,17004
+2375,40067,OK,Jefferson County,8,1346,Labor omnia vincit,659479
+2376,48457,TX,Tyler County,6,3548,Friendship,21464
+2377,1085,AL,Lowndes County,2,3252,Audemus iura nostra defendere,59922
+2378,40097,OK,Mayes County,6,7066,Labor omnia vincit,40804
+2379,6047,CA,Merced County,3,53417,Eureka,263228
+2380,28157,MS,Wilkinson County,8,2798,Virtute et armis,9381
+2381,39127,OH,Perry County,6,6029,The Heart of It All,28010
+2382,2016,AK,Aleutians West Census Area,7,438,North to the Future,5511
+2383,36107,NY,Tioga County,2,6141,Excelsior,42463
+2384,47137,TN,Pickett County,9,856,Agriculture and Commerce,5090
+2385,41059,OR,Umatilla County,5,11369,Alis volat propriis,76720
+2386,5063,AR,Independence County,7,5727,Regnat populus,36997
+2387,19027,IA,Carroll County,7,1762,Our liberties we prize and our rights we will maintain,47499
+2388,40111,OK,Okmulgee County,2,7817,Labor omnia vincit,39438
+2389,40007,OK,Beaver County,9,614,Labor omnia vincit,6459
+2390,18135,IN,Randolph County,6,3801,The Crossroads of America,29415
+2391,15001,HI,Hawaii County,5,29962,Ua Mau ke Ea o ka ʻĀina i ka Pono,196428
+2392,21065,KY,Estill County,6,3852,Deo gratiam habeamus,14488
+2393,46089,SD,McPherson County,9,340,,29569
+2394,5119,AR,Pulaski County,2,66302,Regnat populus,391284
+2395,8017,CO,Cheyenne County,9,252,Nil sine numine,10091
+2396,27047,MN,Freeborn County,7,3267,L’Étoile du Nord,30948
+2397,38067,ND,Pembina County,9,629,Serit ut alteri saeclo prosit,7181
+2398,13131,GA,Grady County,6,5169,"Wisdom, Justice, Moderation",53685
+2399,27101,MN,Murray County,9,757,L’Étoile du Nord,13712
+2400,40041,OK,Delaware County,6,7294,Labor omnia vincit,46722
+2401,27043,MN,Faribault County,7,1584,L’Étoile du Nord,14191
+2402,55001,WI,Adams County,8,2624,Forward,3828
+2403,40051,OK,Grady County,1,7032,Labor omnia vincit,53685
+2404,13107,GA,Emanuel County,7,5911,"Wisdom, Justice, Moderation",22867
+2405,39171,OH,Williams County,7,3496,The Heart of It All,29595
+2406,16065,ID,Madison County,6,9274,Esto perpetua,7712
+2407,48141,TX,El Paso County,2,186707,Friendship,655044
+2408,51111,VA,Lunenburg County,9,2231,Sic semper tyrannis,12527
+2409,36053,NY,Madison County,2,7421,Excelsior,7712
+2410,18143,IN,Scott County,6,3690,The Crossroads of America,22015
+2411,13013,GA,Barrow County,1,9888,"Wisdom, Justice, Moderation",71453
+2412,6109,CA,Tuolumne County,4,7781,Eureka,53874
+2413,48421,TX,Sherman County,9,397,Friendship,1731
+2414,38001,ND,Adams County,9,216,Serit ut alteri saeclo prosit,3828
+2415,8055,CO,Huerfano County,6,1425,Nil sine numine,6519
+2416,18159,IN,Tipton County,3,1268,The Crossroads of America,61586
+2417,40081,OK,Lincoln County,1,5477,Labor omnia vincit,5245
+2418,13113,GA,Fayette County,1,6671,"Wisdom, Justice, Moderation",45599
+2419,17169,IL,Schuyler County,7,823,"State sovereignty, national union",18460
+2420,8019,CO,Clear Creek County,1,753,Nil sine numine,9031
+2421,40153,OK,Woodward County,7,2451,Labor omnia vincit,21221
+2422,29197,MO,Schuyler County,9,852,Salus populi suprema lex esto,18460
+2423,40035,OK,Craig County,6,2423,Labor omnia vincit,5210
+2424,39089,OH,Licking County,1,19680,The Heart of It All,168375
+2425,48447,TX,Throckmorton County,9,228,Friendship,1600
+2426,48343,TX,Morris County,6,2489,Friendship,499397
+2427,51107,VA,Loudoun County,1,13511,Sic semper tyrannis,349679
+2428,13135,GA,Gwinnett County,1,102033,"Wisdom, Justice, Moderation",859304
+2429,28149,MS,Warren County,4,11200,Virtute et armis,65337
+2430,18051,IN,Gibson County,2,3532,The Crossroads of America,33612
+2431,47175,TN,Van Buren County,9,1063,Agriculture and Commerce,16932
+2432,48441,TX,Taylor County,3,22228,Friendship,20610
+2433,39023,OH,Clark County,3,20643,The Heart of It All,2027868
+2434,37035,NC,Catawba County,2,19537,Esse quam videri,154810
+2435,22123,LA,West Carroll Parish,9,2535,,11465
+2436,2170,AK,Matanuska-Susitna Borough,2,9641,North to the Future,95192
+2437,48499,TX,Wood County,6,5559,Friendship,86569
+2438,28131,MS,Stone County,3,3367,Virtute et armis,12581
+2439,37019,NC,Brunswick County,2,17406,Esse quam videri,115301
+2440,31041,NE,Custer County,7,1236,Equality before the law,4249
+2441,38033,ND,Golden Valley County,9,173,Serit ut alteri saeclo prosit,1823
+2442,13189,GA,McDuffie County,2,4824,"Wisdom, Justice, Moderation",21565
+2443,13275,GA,Thomas County,4,9359,"Wisdom, Justice, Moderation",44869
+2444,13047,GA,Catoosa County,2,8505,"Wisdom, Justice, Moderation",65311
+2445,13005,GA,Bacon County,7,2524,"Wisdom, Justice, Moderation",11216
+2446,48061,TX,Cameron County,2,121665,Friendship,417276
+2447,40055,OK,Greer County,7,1295,Labor omnia vincit,6171
+2448,30083,MT,Richland County,7,859,Oro y Plata,399256
+2449,54005,WV,Boone County,2,5466,Montani semper liberi,24224
+2450,17199,IL,Williamson County,5,10423,"State sovereignty, national union",198901
+2451,26031,MI,Cheboygan County,7,4486,Si quaeris peninsulam amoenam circumspice,25726
+2452,1125,AL,Tuscaloosa County,3,34384,Audemus iura nostra defendere,200821
+2453,19139,IA,Muscatine County,4,4540,Our liberties we prize and our rights we will maintain,42836
+2454,51135,VA,Nottoway County,6,3042,Sic semper tyrannis,15773
+2455,48153,TX,Floyd County,6,1339,Friendship,38728
+2456,26075,MI,Jackson County,3,20352,Si quaeris peninsulam amoenam circumspice,208545
+2457,6085,CA,Santa Clara County,1,175627,Eureka,1862041
+2458,40137,OK,Stephens County,4,7254,Labor omnia vincit,44919
+2459,12117,FL,Seminole County,1,51750,In God We Trust,436041
+2460,36005,NY,Bronx County,1,405516,Excelsior,
+2461,48277,TX,Lamar County,4,9751,Friendship,49426
+2462,54027,WV,Hampshire County,3,3585,Montani semper liberi,159596
+2463,48403,TX,Sabine County,9,1779,Friendship,10361
+2464,50019,VT,Orleans County,7,4029,Stella quarta decima fulgeat,27169
+2465,1019,AL,Cherokee County,8,4273,Audemus iura nostra defendere,27218
+2466,37121,NC,Mitchell County,9,2444,Esse quam videri,15328
+2467,36033,NY,Franklin County,5,8235,Excelsior,71221
+2468,18035,IN,Delaware County,3,23202,The Crossroads of America,46722
+2469,8031,CO,Denver County,1,95232,Nil sine numine,
+2470,30051,MT,Liberty County,9,467,Oro y Plata,76907
+2471,13015,GA,Bartow County,1,15442,"Wisdom, Justice, Moderation",101273
+2472,29211,MO,Sullivan County,9,1049,Salus populi suprema lex esto,76665
+2473,20085,KS,Jackson County,3,1173,Ad astra per aspera,208545
+2474,38105,ND,Williams County,7,2292,Serit ut alteri saeclo prosit,29595
+2475,47185,TN,White County,7,4624,Agriculture and Commerce,78483
+2476,25027,MA,Worcester County,2,75902,Ense petit placidam sub libertate quietem,809106
+2477,37125,NC,Moore County,4,10766,Esse quam videri,91587
+2478,18097,IN,Marion County,1,173996,The Crossroads of America,323614
+2479,1081,AL,Lee County,3,28139,Audemus iura nostra defendere,661115
+2480,19171,IA,Tama County,6,2063,Our liberties we prize and our rights we will maintain,17576
+2481,13319,GA,Wilkinson County,8,1875,"Wisdom, Justice, Moderation",9381
+2482,48223,TX,Hopkins County,6,5492,Friendship,35565
+2483,27127,MN,Redwood County,7,1359,L’Étoile du Nord,15744
+2484,22077,LA,Pointe Coupee Parish,2,4332,,22499
+2485,21089,KY,Greenup County,2,6131,Deo gratiam habeamus,36519
+2486,12115,FL,Sarasota County,2,43904,In God We Trust,390429
+2487,17157,IL,Randolph County,6,3850,"State sovereignty, national union",29415
+2488,12086,FL,Miami-Dade County,1,487700,In God We Trust,2617176
+2489,20171,KS,Scott County,7,370,Ad astra per aspera,22015
+2490,27091,MN,Martin County,7,2363,L’Étoile du Nord,20422
+2491,21097,KY,Harrison County,6,2820,Deo gratiam habeamus,196500
+2492,13179,GA,Liberty County,3,9184,"Wisdom, Justice, Moderation",76907
+2493,28003,MS,Alcorn County,7,6175,Virtute et armis,37316
+2494,48453,TX,Travis County,1,143948,Friendship,1120954
+2495,29145,MO,Newton County,3,8251,Salus populi suprema lex esto,8064
+2496,26063,MI,Huron County,7,4409,Si quaeris peninsulam amoenam circumspice,32224
+2497,39115,OH,Morgan County,6,2714,The Heart of It All,119787
+2498,29157,MO,Perry County,7,1941,Salus populi suprema lex esto,28010
+2499,48385,TX,Real County,9,609,Friendship,3350
+2500,26051,MI,Gladwin County,6,4459,Si quaeris peninsulam amoenam circumspice,25493
+2501,31103,NE,Keya Paha County,9,127,Equality before the law,790
+2502,26055,MI,Grand Traverse County,5,8985,Si quaeris peninsulam amoenam circumspice,89987
+2503,51510,VA,Alexandria city,1,16096,Sic semper tyrannis,
+2504,2150,AK,Kodiak Island Borough,7,991,North to the Future,14135
+2505,23003,ME,Aroostook County,7,10804,Dirigo,70055
+2506,19063,IA,Emmet County,7,1002,Our liberties we prize and our rights we will maintain,33140
+2507,36061,NY,New York County,1,274651,Excelsior,
+2508,41037,OR,Lake County,7,1122,Alis volat propriis,63860
+2509,48471,TX,Walker County,4,12123,Friendship,65998
+2510,39137,OH,Putnam County,6,2796,The Heart of It All,72577
+2511,5055,AR,Greene County,6,6709,Regnat populus,68267
+2512,22067,LA,Morehouse Parish,6,7237,,27057
+2513,20103,KS,Leavenworth County,1,6464,Ad astra per aspera,78185
+2514,20093,KS,Kearny County,9,444,Ad astra per aspera,3923
+2515,19081,IA,Hancock County,7,947,Our liberties we prize and our rights we will maintain,54845
+2516,29109,MO,Lawrence County,6,5613,Salus populi suprema lex esto,33587
+2517,25007,MA,Dukes County,7,1302,Ense petit placidam sub libertate quietem,17256
+2518,13249,GA,Schley County,8,942,"Wisdom, Justice, Moderation",5089
+2519,55115,WI,Shawano County,6,4794,Forward,41643
+2520,46081,SD,Lawrence County,6,2907,,33587
+2521,38025,ND,Dunn County,9,420,Serit ut alteri saeclo prosit,44122
+2522,47025,TN,Claiborne County,6,7735,Agriculture and Commerce,31560
+2523,37149,NC,Polk County,8,2912,Esse quam videri,31569
+2524,27153,MN,Todd County,6,2978,L’Étoile du Nord,24382
+2525,20025,KS,Clark County,9,231,Ad astra per aspera,2027868
+2526,19091,IA,Humboldt County,7,928,Our liberties we prize and our rights we will maintain,134493
+2527,55021,WI,Columbia County,2,4561,Forward,49344
+2528,48013,TX,Atascosa County,1,7867,Friendship,47093
+2529,31071,NE,Garfield County,9,249,Equality before the law,5083
+2530,48355,TX,Nueces County,2,53441,Friendship,352107
+2531,48323,TX,Maverick County,5,13759,Friendship,55932
+2532,48227,TX,Howard County,5,5478,Friendship,304580
+2533,17127,IL,Massac County,7,2972,"State sovereignty, national union",15073
+2534,5133,AR,Sevier County,7,3465,Regnat populus,20852
+2535,1077,AL,Lauderdale County,3,13739,Audemus iura nostra defendere,92797
+2536,54009,WV,Brooke County,3,2955,Montani semper liberi,23737
+2537,18045,IN,Fountain County,6,2145,The Crossroads of America,16880
+2538,2290,AK,Yukon-Koyukuk Census Area,8,1266,North to the Future,5695
+2539,55091,WI,Pepin County,8,823,Forward,7360
+2540,24039,MD,Somerset County,3,4992,"Fatti maschii, parole femine",51706
+2541,48147,TX,Fannin County,6,5015,Friendship,23760
+2542,48377,TX,Presidio County,7,1677,Friendship,7201
+2543,36011,NY,Cayuga County,4,9236,Excelsior,79477
+2544,22097,LA,St. Landry Parish,4,21994,,83454
+2545,27033,MN,Cottonwood County,7,1346,L’Étoile du Nord,11616
+2546,6071,CA,San Bernardino County,1,369012,Eureka,2088371
+2547,13261,GA,Sumter County,6,8290,"Wisdom, Justice, Moderation",13361
+2548,31065,NE,Furnas County,9,656,Equality before the law,4865
+2549,13239,GA,Quitman County,9,632,"Wisdom, Justice, Moderation",7803
+2550,48159,TX,Franklin County,8,1659,Friendship,71221
+2551,36069,NY,Ontario County,1,10240,Excelsior,109103
+2552,27161,MN,Waseca County,7,1661,L’Étoile du Nord,19098
+2553,29085,MO,Hickory County,8,1767,Salus populi suprema lex esto,9305
+2554,46063,SD,Harding County,9,143,,1262
+2555,51071,VA,Giles County,3,2032,Sic semper tyrannis,28746
+2556,39079,OH,Jackson County,7,5780,The Heart of It All,208545
+2557,29127,MO,Marion County,5,4000,Salus populi suprema lex esto,323614
+2558,25013,MA,Hampden County,2,74898,Ense petit placidam sub libertate quietem,467319
+2559,28043,MS,Grenada County,7,4720,Virtute et armis,21612
+2560,41031,OR,Jefferson County,6,3838,Alis volat propriis,659479
+2561,48241,TX,Jasper County,6,6652,Friendship,35649
+2562,31057,NE,Dundy County,9,223,Equality before the law,1981
+2563,24023,MD,Garrett County,6,3692,"Fatti maschii, parole femine",29889
+2564,29131,MO,Miller County,6,4040,Salus populi suprema lex esto,25092
+2565,48045,TX,Briscoe County,9,226,Friendship,1537
+2566,20143,KS,Ottawa County,9,618,Ad astra per aspera,272701
+2567,18119,IN,Owen County,3,2827,The Crossroads of America,21201
+2568,6107,CA,Tulare County,2,112387,Eureka,454143
+2569,18083,IN,Knox County,4,5952,The Crossroads of America,39550
+2570,56029,WY,Park County,7,3173,Equal Rights,29227
+2571,22099,LA,St. Martin Parish,3,9830,,52936
+2572,53039,WA,Klickitat County,6,3269,bye and bye,20866
+2573,47047,TN,Fayette County,1,5655,Agriculture and Commerce,45599
+2574,24047,MD,Worcester County,4,5792,"Fatti maschii, parole femine",809106
+2575,21157,KY,Marshall County,7,3734,Deo gratiam habeamus,94760
+2576,40063,OK,Hughes County,7,2978,Labor omnia vincit,13823
+2577,21151,KY,Madison County,4,17680,Deo gratiam habeamus,7712
+2578,22121,LA,West Baton Rouge Parish,2,4231,,24573
+2579,29031,MO,Cape Girardeau County,5,11371,Salus populi suprema lex esto,77320
+2580,48149,TX,Fayette County,6,2750,Friendship,45599
+2581,20005,KS,Atchison County,6,2398,Ad astra per aspera,16749
+2582,5075,AR,Lawrence County,6,3207,Regnat populus,33587
+2583,55067,WI,Langlade County,6,2681,Forward,19575
+2584,19135,IA,Monroe County,7,968,Our liberties we prize and our rights we will maintain,76351
+2585,18053,IN,Grant County,4,12585,The Crossroads of America,7283
+2586,53049,WA,Pacific County,7,3578,bye and bye,20498
+2587,47161,TN,Stewart County,3,2144,Agriculture and Commerce,13362
+2588,8049,CO,Grand County,8,1220,Nil sine numine,9360
+2589,2100,AK,Haines Borough,9,257,North to the Future,2592
+2590,47141,TN,Putnam County,4,14046,Agriculture and Commerce,72577
+2591,13027,GA,Brooks County,3,3854,"Wisdom, Justice, Moderation",15516
+2592,48297,TX,Live Oak County,6,1874,Friendship,11867
+2593,41045,OR,Malheur County,6,6222,Alis volat propriis,30479
+2594,51683,VA,Manassas city,1,3980,Sic semper tyrannis,
+2595,13029,GA,Bryan County,2,3456,"Wisdom, Justice, Moderation",44244
+2596,27115,MN,Pine County,6,3306,L’Étoile du Nord,29104
+2597,48203,TX,Harrison County,4,11328,Friendship,196500
+2598,37039,NC,Cherokee County,9,5057,Esse quam videri,27218
+2599,17013,IL,Calhoun County,1,585,"State sovereignty, national union",135012
+2600,39145,OH,Scioto County,4,16051,The Heart of It All,78153
+2601,26143,MI,Roscommon County,7,4129,Si quaeris peninsulam amoenam circumspice,24014
+2602,35061,NM,Valencia County,2,13746,Crescit eundo,76284
+2603,19179,IA,Wapello County,5,5634,Our liberties we prize and our rights we will maintain,35391
+2604,55003,WI,Ashland County,7,2179,Forward,16016
+2605,45033,SC,Dillon County,6,7757,Dum spiro spero,31229
+2606,29143,MO,New Madrid County,7,4381,Salus populi suprema lex esto,18365
+2607,1073,AL,Jefferson County,1,98463,Audemus iura nostra defendere,659479
+2608,48257,TX,Kaufman County,1,13328,Friendship,108568
+2609,40037,OK,Creek County,2,10895,Labor omnia vincit,70470
+2610,48319,TX,Mason County,9,543,Friendship,27126
+2611,20191,KS,Sumner County,2,3091,Ad astra per aspera,168888
+2612,29187,MO,St. Francois County,4,9726,Salus populi suprema lex esto,66215
+2613,22031,LA,De Soto Parish,2,5669,,27083
+2614,42003,PA,Allegheny County,1,137017,"Virtue, liberty, and independence",1231527
+2615,47165,TN,Sumner County,1,17288,Agriculture and Commerce,168888
+2616,37017,NC,Bladen County,6,8794,Esse quam videri,34843
+2617,17173,IL,Shelby County,6,2521,"State sovereignty, national union",939465
+2618,18075,IN,Jay County,6,2878,The Crossroads of America,21330
+2619,13063,GA,Clayton County,1,57057,"Wisdom, Justice, Moderation",15402
+2620,29079,MO,Grundy County,7,1680,Salus populi suprema lex esto,50228
+2621,31003,NE,Antelope County,9,707,Equality before the law,6456
+2622,19085,IA,Harrison County,2,1518,Our liberties we prize and our rights we will maintain,196500
+2623,17055,IL,Franklin County,5,8276,"State sovereignty, national union",71221
+2624,5017,AR,Chicot County,7,3066,Regnat populus,11335
+2625,13073,GA,Columbia County,2,10512,"Wisdom, Justice, Moderation",49344
+2626,30067,MT,Park County,7,1877,Oro y Plata,29227
+2627,55059,WI,Kenosha County,1,21222,Forward,167757
+2628,2282,AK,Yakutat Borough,9,101,North to the Future,642
+2629,39091,OH,Logan County,4,5420,The Heart of It All,35987
+2630,18125,IN,Pike County,6,1392,The Crossroads of America,63380
+2631,48059,TX,Callahan County,3,2032,Friendship,13525
+2632,30077,MT,Powell County,7,929,Oro y Plata,6993
+2633,1023,AL,Choctaw County,9,2910,Audemus iura nostra defendere,13426
+2634,47045,TN,Dyer County,5,7402,Agriculture and Commerce,38213
+2635,8089,CO,Otero County,6,4209,Nil sine numine,65616
+2636,21159,KY,Martin County,8,4115,Deo gratiam habeamus,20422
+2637,24011,MD,Caroline County,6,4955,"Fatti maschii, parole femine",29298
+2638,28091,MS,Marion County,6,6614,Virtute et armis,323614
+2639,51690,VA,Martinsville city,4,3035,Sic semper tyrannis,13755
+2640,51685,VA,Manassas Park city,1,1231,Sic semper tyrannis,
+2641,51047,VA,Culpeper County,6,4766,Sic semper tyrannis,48506
+2642,29183,MO,St. Charles County,1,20198,Salus populi suprema lex esto,373495
+2643,47011,TN,Bradley County,3,14448,Agriculture and Commerce,101848
+2644,48361,TX,Orange County,2,11751,Friendship,3114363
+2645,31079,NE,Hall County,5,7652,Equality before the law,187745
+2646,19137,IA,Montgomery County,6,1287,Our liberties we prize and our rights we will maintain,1058810
+2647,41011,OR,Coos County,5,10946,Alis volat propriis,31997
+2648,20027,KS,Clay County,7,819,Ad astra per aspera,10584
+2649,13233,GA,Polk County,6,7609,"Wisdom, Justice, Moderation",31569
+2650,44001,RI,Bristol County,1,3833,Hope,552780
+2651,34029,NJ,Ocean County,1,64493,Liberty and prosperity,583414
+2652,12043,FL,Glades County,6,2672,In God We Trust,13345
+2653,13271,GA,Telfair County,7,3916,"Wisdom, Justice, Moderation",16591
+2654,27081,MN,Lincoln County,9,721,L’Étoile du Nord,5245
+2655,21057,KY,Cumberland County,9,1679,Deo gratiam habeamus,285456
+2656,51750,VA,Radford city,3,3931,Sic semper tyrannis,
+2657,51710,VA,Norfolk city,1,45219,Sic semper tyrannis,
+2658,34027,NJ,Morris County,1,26615,Liberty and prosperity,499397
+2659,48105,TX,Crockett County,7,612,Friendship,3807
+2660,34035,NJ,Somerset County,1,17318,Liberty and prosperity,51706
+2661,39067,OH,Harrison County,6,2521,The Heart of It All,196500
+2662,12085,FL,Martin County,2,17584,In God We Trust,20422
+2663,53069,WA,Wahkiakum County,8,523,bye and bye,4042
+2664,27009,MN,Benton County,3,3345,L’Étoile du Nord,86591
+2665,30087,MT,Rosebud County,9,1525,Oro y Plata,9329
+2666,16011,ID,Bingham County,6,6181,Esto perpetua,45290
+2667,46067,SD,Hutchinson County,8,872,,21819
+2668,47115,TN,Marion County,2,5157,Agriculture and Commerce,323614
+2669,48009,TX,Archer County,3,909,Friendship,8681
+2670,42055,PA,Franklin County,4,13779,"Virtue, liberty, and independence",71221
+2671,26005,MI,Allegan County,4,10303,Si quaeris peninsulam amoenam circumspice,112531
+2672,50011,VT,Franklin County,3,5053,Stella quarta decima fulgeat,71221
+2673,20151,KS,Pratt County,7,1048,Ad astra per aspera,9878
+2674,34011,NJ,Cumberland County,3,26321,Liberty and prosperity,285456
+2675,40033,OK,Cotton County,6,994,Labor omnia vincit,6152
+2676,21043,KY,Carter County,6,5932,Deo gratiam habeamus,1174
+2677,21211,KY,Shelby County,1,5178,Deo gratiam habeamus,939465
+2678,51183,VA,Sussex County,1,2070,Sic semper tyrannis,206649
+2679,21019,KY,Boyd County,2,8356,Deo gratiam habeamus,48886
+2680,31063,NE,Frontier County,9,312,Equality before the law,2709
+2681,5095,AR,Monroe County,7,1909,Regnat populus,76351
+2682,51530,VA,Buena Vista city,6,975,Sic semper tyrannis,6680
+2683,16071,ID,Oneida County,8,563,Esto perpetua,233585
+2684,28151,MS,Washington County,5,15883,Virtute et armis,32190
+2685,18025,IN,Crawford County,8,1797,The Crossroads of America,24543
+2686,25003,MA,Berkshire County,3,13182,Ense petit placidam sub libertate quietem,129585
+2687,20029,KS,Cloud County,7,1142,Ad astra per aspera,9292
+2688,13215,GA,Muscogee County,2,41006,"Wisdom, Justice, Moderation",202824
+2689,16029,ID,Caribou County,6,769,Esto perpetua,6808
+2690,22069,LA,Natchitoches Parish,6,11773,,39138
+2691,22025,LA,Catahoula Parish,9,2485,,10238
+2692,13265,GA,Taliaferro County,8,457,"Wisdom, Justice, Moderation",1703
+2693,17089,IL,Kane County,1,55134,"State sovereignty, national union",7260
+2694,48375,TX,Potter County,3,25040,Friendship,17497
+2695,31033,NE,Cheyenne County,7,935,Equality before the law,10091
+2696,21051,KY,Clay County,7,7945,Deo gratiam habeamus,10584
+2697,37095,NC,Hyde County,9,1067,Esse quam videri,5721
+2698,22087,LA,St. Bernard Parish,1,10604,,43482
+2699,51730,VA,Petersburg city,1,7884,Sic semper tyrannis,
+2700,5021,AR,Clay County,7,2807,Regnat populus,10584
+2701,18099,IN,Marshall County,6,5490,The Crossroads of America,94760
+2702,51161,VA,Roanoke County,2,6774,Sic semper tyrannis,93524
+2703,37181,NC,Vance County,4,10552,Esse quam videri,44808
+2704,21189,KY,Owsley County,9,1980,Deo gratiam habeamus,4654
+2705,35039,NM,Rio Arriba County,6,8953,Crescit eundo,40072
+2706,19095,IA,Iowa County,8,1156,Our liberties we prize and our rights we will maintain,23749
+2707,5027,AR,Columbia County,7,5330,Regnat populus,49344
+2708,17135,IL,Montgomery County,6,4220,"State sovereignty, national union",1058810
+2709,51093,VA,Isle of Wight County,1,3430,Sic semper tyrannis,35656
+2710,51007,VA,Amelia County,1,1328,Sic semper tyrannis,12745
+2711,55045,WI,Green County,6,3002,Forward,37090
+2712,17093,IL,Kendall County,1,5778,"State sovereignty, national union",37766
+2713,12109,FL,St. Johns County,1,17838,In God We Trust,209647
+2714,8057,CO,Jackson County,9,191,Nil sine numine,208545
+2715,48373,TX,Polk County,6,8845,Friendship,31569
+2716,1093,AL,Marion County,8,5386,Audemus iura nostra defendere,323614
+2717,21009,KY,Barren County,6,9397,Deo gratiam habeamus,43027
+2718,19187,IA,Webster County,5,4874,Our liberties we prize and our rights we will maintain,8893
+2719,18165,IN,Vermillion County,3,2039,The Crossroads of America,15878
+2720,25017,MA,Middlesex County,1,117964,Ense petit placidam sub libertate quietem,1552802
+2721,22039,LA,Evangeline Parish,6,9463,,33578
+2722,1009,AL,Blount County,1,8033,Audemus iura nostra defendere,125099
+2723,30007,MT,Broadwater County,9,604,Oro y Plata,5692
+2724,45003,SC,Aiken County,2,28039,Dum spiro spero,164176
+2725,54033,WV,Harrison County,5,9851,Montani semper liberi,196500
+2726,47139,TN,Polk County,3,2670,Agriculture and Commerce,31569
+2727,21181,KY,Nicholas County,8,1376,Deo gratiam habeamus,25965
+2728,19109,IA,Kossuth County,7,1696,Our liberties we prize and our rights we will maintain,15321
+2729,17185,IL,Wabash County,6,1529,"State sovereignty, national union",32358
+2730,31135,NE,Perkins County,9,301,Equality before the law,3037
+2731,45085,SC,Sumter County,3,21320,Dum spiro spero,13361
+2732,48201,TX,Harris County,1,752261,Friendship,4336853
+2733,46013,SD,Brown County,5,4025,,37749
+2734,40145,OK,Wagoner County,2,8725,Labor omnia vincit,75700
+2735,22083,LA,Richland Parish,6,5299,,20857
+2736,16059,ID,Lemhi County,7,1351,Esto perpetua,7712
+2737,1101,AL,Montgomery County,2,40760,Audemus iura nostra defendere,1058810
+2738,19141,IA,O'Brien County,7,1381,Our liberties we prize and our rights we will maintain,14044
+2739,37197,NC,Yadkin County,2,5202,Esse quam videri,38038
+2740,36003,NY,Allegany County,7,7836,Excelsior,73521
+2741,19101,IA,Jefferson County,7,2311,Our liberties we prize and our rights we will maintain,659479
+2742,22017,LA,Caddo Parish,2,63909,,254887
+2743,22119,LA,Webster Parish,6,9276,,40678
+2744,48003,TX,Andrews County,6,2073,Friendship,16799
+2745,37045,NC,Cleveland County,4,19594,Esse quam videri,97047
+2746,20179,KS,Sheridan County,9,284,Ad astra per aspera,29824
+2747,48369,TX,Parmer County,7,1500,Friendship,9965
+2748,13035,GA,Butts County,1,3586,"Wisdom, Justice, Moderation",23361
+2749,48085,TX,Collin County,1,58619,Friendship,854778
+2750,46027,SD,Clay County,6,2393,,10584
+2751,1039,AL,Covington County,7,7228,Audemus iura nostra defendere,37886
+2752,17191,IL,Wayne County,7,2272,"State sovereignty, national union",1775273
+2753,1071,AL,Jackson County,6,9007,Audemus iura nostra defendere,208545
+2754,53023,WA,Garfield County,8,308,bye and bye,5083
+2755,13289,GA,Twiggs County,3,1893,"Wisdom, Justice, Moderation",8481
+2756,47067,TN,Hancock County,8,1983,Agriculture and Commerce,54845
+2757,20077,KS,Harper County,8,809,Ad astra per aspera,3813
+2758,36039,NY,Greene County,6,7278,Excelsior,68267
+2759,37013,NC,Beaufort County,6,8925,Esse quam videri,171838
+2760,13315,GA,Wilcox County,9,2115,"Wisdom, Justice, Moderation",11307
+2761,31115,NE,Loup County,9,94,Equality before the law,576
+2762,55043,WI,Grant County,6,7919,Forward,7283
+2763,8013,CO,Boulder County,2,33749,Nil sine numine,310048
+2764,19003,IA,Adams County,9,452,Our liberties we prize and our rights we will maintain,3828
+2765,28029,MS,Copiah County,2,7517,Virtute et armis,28921
+2766,48041,TX,Brazos County,3,51022,Friendship,203164
+2767,5097,AR,Montgomery County,8,1956,Regnat populus,1058810
+2768,31077,NE,Greeley County,9,333,Equality before the law,2494
+2769,17073,IL,Henry County,2,5556,"State sovereignty, national union",49044
+2770,48433,TX,Stonewall County,8,217,Friendship,1432
+2771,54041,WV,Lewis County,7,2939,Montani semper liberi,75081
+2772,27077,MN,Lake of the Woods County,9,408,L’Étoile du Nord,3929
+2773,16049,ID,Idaho County,6,2531,Esto perpetua,16116
+2774,55047,WI,Green Lake County,6,2153,Forward,18959
+2775,33001,NH,Belknap County,4,5949,Live Free or Die,60179
+2776,35051,NM,Sierra County,6,2940,Crescit eundo,11572
+2777,39057,OH,Greene County,2,18975,The Heart of It All,68267
+2778,5043,AR,Drew County,7,3387,Regnat populus,18785
+2779,55141,WI,Wood County,4,7088,Forward,86569
+2780,38045,ND,LaMoure County,9,468,Serit ut alteri saeclo prosit,4166
+2781,20197,KS,Wabaunsee County,3,549,Ad astra per aspera,7051
+2782,55135,WI,Waupaca County,6,5318,Forward,52285
+2783,6019,CA,Fresno County,2,245131,Eureka,955272
+2784,22065,LA,Madison Parish,7,4103,,11927
+2785,21011,KY,Bath County,8,3034,Deo gratiam habeamus,4616
+2786,18017,IN,Cass County,4,4648,The Crossroads of America,28555
+2787,17035,IL,Cumberland County,9,1323,"State sovereignty, national union",285456
+2788,5149,AR,Yell County,6,3817,Regnat populus,21893
+2789,8123,CO,Weld County,3,33377,Nil sine numine,269785
+2790,48055,TX,Caldwell County,1,6552,Friendship,81990
+2791,55131,WI,Washington County,1,7496,Forward,32190
+2792,21147,KY,McCreary County,9,6168,Deo gratiam habeamus,17989
+2793,53003,WA,Asotin County,3,3225,bye and bye,22110
+2794,54045,WV,Logan County,6,8075,Montani semper liberi,35987
+2795,48097,TX,Cooke County,6,5330,Friendship,38467
+2796,21165,KY,Menifee County,9,1513,Deo gratiam habeamus,6288
+2797,48015,TX,Austin County,1,4213,Friendship,28847
+2798,41007,OR,Clatsop County,4,4919,Alis volat propriis,37244
+2799,26037,MI,Clinton County,2,6509,Si quaeris peninsulam amoenam circumspice,81591
+2800,1033,AL,Colbert County,3,8982,Audemus iura nostra defendere,54520
+2801,56005,WY,Campbell County,5,4067,Equal Rights,48176
+2802,16003,ID,Adams County,8,580,Esto perpetua,3828
+2803,17139,IL,Moultrie County,6,1444,"State sovereignty, national union",14876
+2804,51035,VA,Carroll County,6,4775,Sic semper tyrannis,47499
+2805,51099,VA,King George County,8,1728,Sic semper tyrannis,24926
+2806,29055,MO,Crawford County,6,4449,Salus populi suprema lex esto,24543
+2807,20155,KS,Reno County,4,8844,Ad astra per aspera,64190
+2808,45043,SC,Georgetown County,4,9222,Dum spiro spero,60440
+2809,19029,IA,Cass County,6,1654,Our liberties we prize and our rights we will maintain,28555
+2810,6089,CA,Shasta County,3,30359,Eureka,178980
+2811,39075,OH,Holmes County,7,5041,The Heart of It All,19717
+2812,35019,NM,Guadalupe County,7,955,Crescit eundo,4551
+2813,47127,TN,Moore County,9,678,Agriculture and Commerce,91587
+2814,55107,WI,Rusk County,6,1920,Forward,53622
+2815,42079,PA,Luzerne County,2,44618,"Virtue, liberty, and independence",320103
+2816,39097,OH,Madison County,1,4576,The Heart of It All,7712
+2817,31091,NE,Hooker County,9,56,Equality before the law,738
+2818,49053,UT,Washington County,3,19795,Industry,32190
+2819,21117,KY,Kenton County,1,20493,Deo gratiam habeamus,163145
+2820,13177,GA,Lee County,3,3190,"Wisdom, Justice, Moderation",661115
+2821,20145,KS,Pawnee County,7,840,Ad astra per aspera,2709
+2822,55139,WI,Winnebago County,3,18883,Forward,290666
+2823,48437,TX,Swisher County,6,1511,Friendship,7763
+2824,17101,IL,Lawrence County,7,2566,"State sovereignty, national union",33587
+2825,51197,VA,Wythe County,6,4135,Sic semper tyrannis,29344
+2826,25015,MA,Hampshire County,2,16535,Ense petit placidam sub libertate quietem,159596
+2827,22103,LA,St. Tammany Parish,1,24598,,242333
+2828,28041,MS,Greene County,8,2642,Virtute et armis,68267
+2829,51053,VA,Dinwiddie County,1,3565,Sic semper tyrannis,27904
+2830,29101,MO,Johnson County,4,7187,Salus populi suprema lex esto,8628
+2831,55023,WI,Crawford County,7,2212,Forward,24543
+2832,26151,MI,Sanilac County,6,6359,Si quaeris peninsulam amoenam circumspice,41823
+2833,54021,WV,Gilmer County,9,1706,Montani semper liberi,28579
+2834,30023,MT,Deer Lodge County,7,1574,Oro y Plata,9329
+2835,5109,AR,Pike County,9,1927,Regnat populus,63380
+2836,31113,NE,Logan County,9,79,Equality before the law,35987
+2837,20149,KS,Pottawatomie County,6,1917,Ad astra per aspera,71158
+2838,55011,WI,Buffalo County,8,1369,Forward,13357
+2839,19189,IA,Winnebago County,7,1072,Our liberties we prize and our rights we will maintain,290666
+2840,37071,NC,Gaston County,1,33562,Esse quam videri,209420
+2841,37001,NC,Alamance County,3,25014,Esse quam videri,154378
+2842,40151,OK,Woods County,7,1105,Labor omnia vincit,9041
+2843,4013,AZ,Maricopa County,1,624923,Ditat Deus,4009412
+2844,53019,WA,Ferry County,9,1602,bye and bye,7646
+2845,48081,TX,Coke County,8,501,Friendship,3210
+2846,8027,CO,Custer County,8,605,Nil sine numine,4249
+2847,4023,AZ,Santa Cruz County,4,9569,Ditat Deus,46768
+2848,28101,MS,Newton County,7,4563,Virtute et armis,8064
+2849,28097,MS,Montgomery County,7,2433,Virtute et armis,1058810
+2850,31001,NE,Adams County,5,3835,Equality before the law,3828
+2851,16083,ID,Twin Falls County,5,11954,Esto perpetua,79957
+2852,17077,IL,Jackson County,5,12930,"State sovereignty, national union",208545
+2853,31097,NE,Johnson County,8,520,Equality before the law,8628
+2854,39129,OH,Pickaway County,1,6905,The Heart of It All,56304
+2855,40149,OK,Washita County,7,1784,Labor omnia vincit,11678
+2856,13045,GA,Carroll County,1,16713,"Wisdom, Justice, Moderation",47499
+2857,22095,LA,St. John the Baptist Parish,1,7959,,43761
+2858,42035,PA,Clinton County,6,6543,"Virtue, liberty, and independence",81591
+2859,31069,NE,Garden County,9,308,Equality before the law,1902
+2860,39039,OH,Defiance County,4,3876,The Heart of It All,38532
+2861,53053,WA,Pierce County,1,102303,bye and bye,819743
+2862,13143,GA,Haralson County,1,5306,"Wisdom, Justice, Moderation",28495
+2863,42127,PA,Wayne County,6,6427,"Virtue, liberty, and independence",1775273
+2864,27039,MN,Dodge County,3,1560,L’Étoile du Nord,88344
+2865,39025,OH,Clermont County,1,21281,The Heart of It All,200218
+2866,19195,IA,Worth County,9,662,Our liberties we prize and our rights we will maintain,21291
+2867,55017,WI,Chippewa County,3,7042,Forward,38696
+2868,17069,IL,Hardin County,9,857,"State sovereignty, national union",26034
+2869,46077,SD,Kingsbury County,9,457,,5065
+2870,51181,VA,Surry County,1,876,Sic semper tyrannis,73050
+2871,34039,NJ,Union County,1,58425,Liberty and prosperity,25652
+2872,8045,CO,Garfield County,5,5276,Nil sine numine,5083
+2873,30085,MT,Roosevelt County,7,2659,Oro y Plata,11125
+2874,28087,MS,Lowndes County,5,12346,Virtute et armis,59922
+2875,40147,OK,Washington County,4,7333,Labor omnia vincit,32190
+2876,37171,NC,Surry County,4,12102,Esse quam videri,73050
+2877,48007,TX,Aransas County,2,4751,Friendship,24356
+2878,35025,NM,Lea County,5,12179,Crescit eundo,68062
+2879,17103,IL,Lee County,4,4148,"State sovereignty, national union",661115
+2880,46061,SD,Hanson County,8,282,,3405
+2881,48163,TX,Frio County,6,4005,Friendship,18065
+2882,53025,WA,Grant County,4,14842,bye and bye,7283
+2883,37151,NC,Randolph County,2,20481,Esse quam videri,29415
+2884,13217,GA,Newton County,1,18463,"Wisdom, Justice, Moderation",8064
+2885,36043,NY,Herkimer County,2,9968,Excelsior,64181
+2886,31173,NE,Thurston County,8,1777,Equality before the law,262388
+2887,5081,AR,Little River County,6,2148,Regnat populus,12730
+2888,29115,MO,Linn County,7,1927,Salus populi suprema lex esto,118765
+2889,38005,ND,Benson County,9,1961,Serit ut alteri saeclo prosit,6877
+2890,27123,MN,Ramsey County,1,73203,L’Étoile du Nord,526714
+2891,47057,TN,Grainger County,3,4563,Agriculture and Commerce,22702
+2892,55053,WI,Jackson County,6,2132,Forward,208545
+2893,50023,VT,Washington County,4,6080,Stella quarta decima fulgeat,32190
+2894,17141,IL,Ogle County,4,5167,"State sovereignty, national union",52385
+2895,35009,NM,Curry County,5,9216,Crescit eundo,22339
+2896,47179,TN,Washington County,3,18319,Agriculture and Commerce,32190
+2897,6011,CA,Colusa County,6,2375,Eureka,21358
+2898,22081,LA,Red River Parish,6,2194,,8894
+2899,17039,IL,De Witt County,6,1686,"State sovereignty, national union",16420
+2900,40133,OK,Seminole County,7,5562,Labor omnia vincit,436041
+2901,49057,UT,Weber County,2,26535,Industry,238519
+2902,37093,NC,Hoke County,2,10177,Esse quam videri,51322
+2903,6033,CA,Lake County,4,13065,Eureka,63860
+2904,45035,SC,Dorchester County,2,14329,Dum spiro spero,32660
+2905,8107,CO,Routt County,7,1766,Nil sine numine,23513
+2906,18151,IN,Steuben County,7,3493,The Crossroads of America,98650
+2907,13037,GA,Calhoun County,8,1541,"Wisdom, Justice, Moderation",135012
+2908,5033,AR,Crawford County,2,10322,Regnat populus,24543
+2909,6043,CA,Mariposa County,8,3077,Eureka,17755
+2910,19105,IA,Jones County,3,2012,Our liberties we prize and our rights we will maintain,1001
+2911,42113,PA,Sullivan County,8,768,"Virtue, liberty, and independence",76665
+2912,28089,MS,Madison County,2,12426,Virtute et armis,7712
+2913,31171,NE,Thomas County,9,99,Equality before the law,44869
+2914,31095,NE,Jefferson County,7,757,Equality before the law,659479
+2915,55037,WI,Florence County,9,540,Forward,138326
+2916,31119,NE,Madison County,5,4867,Equality before the law,7712
+2917,55007,WI,Bayfield County,8,1821,Forward,15156
+2918,22093,LA,St. James Parish,6,4038,,21752
+2919,31027,NE,Cedar County,9,803,Equality before the law,13913
+2920,47021,TN,Cheatham County,1,4375,Agriculture and Commerce,39492
+2921,33003,NH,Carroll County,8,4896,Live Free or Die,47499
+2922,19143,IA,Osceola County,7,625,Our liberties we prize and our rights we will maintain,298504
+2923,29227,MO,Worth County,9,279,Salus populi suprema lex esto,21291
+2924,42059,PA,Greene County,6,5362,"Virtue, liberty, and independence",68267
+2925,17105,IL,Livingston County,4,4823,"State sovereignty, national union",184443
+2926,1003,AL,Baldwin County,4,24005,Audemus iura nostra defendere,182265
+2927,40071,OK,Kay County,5,7252,Labor omnia vincit,45633
+2928,18015,IN,Carroll County,3,2033,The Crossroads of America,47499
+2929,30089,MT,Sanders County,8,2005,Oro y Plata,11363
+2930,26133,MI,Osceola County,7,4325,Si quaeris peninsulam amoenam circumspice,298504
+2931,53077,WA,Yakima County,3,44819,bye and bye,247044
+2932,47135,TN,Perry County,8,1728,Agriculture and Commerce,28010
+2933,29087,MO,Holt County,8,612,Salus populi suprema lex esto,10449
+2934,36063,NY,Niagara County,1,26152,Excelsior,214249
+2935,22059,LA,La Salle Parish,6,2653,,14777
+2936,54087,WV,Roane County,6,3100,Montani semper liberi,14656
+2937,30079,MT,Prairie County,9,140,Oro y Plata,1179
+2938,38029,ND,Emmons County,8,455,Serit ut alteri saeclo prosit,3486
+2939,17149,IL,Pike County,7,2506,"State sovereignty, national union",63380
+2940,17189,IL,Washington County,6,1290,"State sovereignty, national union",32190
+2941,26065,MI,Ingham County,2,54343,Si quaeris peninsulam amoenam circumspice,282234
+2942,12005,FL,Bay County,3,26845,In God We Trust,106832
+2943,17119,IL,Madison County,1,34772,"State sovereignty, national union",7712
+2944,28079,MS,Leake County,6,5218,Virtute et armis,23389
+2945,29005,MO,Atchison County,9,665,Salus populi suprema lex esto,16749
+2946,18037,IN,Dubois County,7,2730,The Crossroads of America,42361
+2947,26115,MI,Monroe County,3,14819,Si quaeris peninsulam amoenam circumspice,76351
+2948,34001,NJ,Atlantic County,2,37734,Liberty and prosperity,275862
+2949,20181,KS,Sherman County,7,841,Ad astra per aspera,1731
+2950,48317,TX,Martin County,6,738,Friendship,20422
+2951,48327,TX,Menard County,8,446,Friendship,2148
+2952,26163,MI,Wayne County,1,395250,Si quaeris peninsulam amoenam circumspice,1775273
+2953,28011,MS,Bolivar County,5,10927,Virtute et armis,34049
+2954,28027,MS,Coahoma County,5,9567,Virtute et armis,25182
+2955,41071,OR,Yamhill County,1,11607,Alis volat propriis,100725
+2956,29039,MO,Cedar County,6,2739,Salus populi suprema lex esto,13913
+2957,39003,OH,Allen County,3,15101,The Heart of It All,363014
+2958,29105,MO,Laclede County,6,5480,Salus populi suprema lex esto,35667
+2959,31031,NE,Cherry County,7,685,Equality before the law,5788
+2960,27093,MN,Meeker County,6,1604,L’Étoile du Nord,
+2961,55029,WI,Door County,6,2250,Forward,27896
+2962,55071,WI,Manitowoc County,4,7229,Forward,80654
+2963,30103,MT,Treasure County,8,71,Oro y Plata,700
+2964,21129,KY,Lee County,9,2487,Deo gratiam habeamus,661115
+2965,19025,IA,Calhoun County,9,1138,Our liberties we prize and our rights we will maintain,135012
+2966,48353,TX,Nolan County,6,2697,Friendship,15037
+2967,30011,MT,Carter County,9,164,Oro y Plata,1174
+2968,48175,TX,Goliad County,3,1059,Friendship,7465
+2969,48425,TX,Somervell County,8,931,Friendship,8658
+2970,48217,TX,Hill County,6,5542,Friendship,16568
+2971,35057,NM,Torrance County,2,4001,Crescit eundo,15717
+2972,31149,NE,Rock County,9,186,Equality before the law,160739
+2973,23025,ME,Somerset County,6,9749,Dirigo,51706
+2974,48111,TX,Dallam County,7,793,Friendship,7057
+2975,21145,KY,McCracken County,5,11962,Deo gratiam habeamus,65373
+2976,13321,GA,Worth County,3,4334,"Wisdom, Justice, Moderation",21291
+2977,31061,NE,Franklin County,9,393,Equality before the law,71221
+2978,49051,UT,Wasatch County,6,1668,Industry,26437
+2979,54067,WV,Nicholas County,6,5359,Montani semper liberi,25965
+2980,48031,TX,Blanco County,8,1207,Friendship,10723
+2981,32510,NV,Carson City,3,6727,All For Our Country,54080
+2982,37079,NC,Greene County,3,4422,Esse quam videri,68267
+2983,4009,AZ,Graham County,6,7854,Ditat Deus,37482
+2984,21067,KY,Fayette County,2,54406,Deo gratiam habeamus,45599
+2985,16037,ID,Custer County,9,639,Esto perpetua,4249
+2986,49039,UT,Sanpete County,6,4520,Industry,28237
+2987,19161,IA,Sac County,9,1124,Our liberties we prize and our rights we will maintain,10071
+2988,29015,MO,Benton County,9,3330,Salus populi suprema lex esto,86591
+2989,51770,VA,Roanoke city,2,21886,Sic semper tyrannis,
+2990,36119,NY,Westchester County,1,95327,Excelsior,968802
+2991,21103,KY,Henry County,1,2886,Deo gratiam habeamus,49044
+2992,6051,CA,Mono County,7,1583,Eureka,14074
+2993,13021,GA,Bibb County,3,38547,"Wisdom, Justice, Moderation",22915
+2994,51059,VA,Fairfax County,1,67736,Sic semper tyrannis,1130924
+2995,19175,IA,Union County,6,1586,Our liberties we prize and our rights we will maintain,25652
+2996,13031,GA,Bulloch County,4,16650,"Wisdom, Justice, Moderation",71214
+2997,51001,VA,Accomack County,7,6493,Sic semper tyrannis,33148
+2998,54053,WV,Mason County,6,4671,Montani semper liberi,27126
+2999,21083,KY,Graves County,7,7571,Deo gratiam habeamus,37451
+3000,48347,TX,Nacogdoches County,5,15402,Friendship,65330
+3001,29017,MO,Bollinger County,9,2076,Salus populi suprema lex esto,12490
+3002,48287,TX,Lee County,6,2105,Friendship,661115
+3003,20157,KS,Republic County,9,524,Ad astra per aspera,4820
+3004,29186,MO,Ste. Genevieve County,6,2069,Salus populi suprema lex esto,17778
+3005,49005,UT,Cache County,3,15209,Industry,116909
+3006,37023,NC,Burke County,2,15310,Esse quam videri,89842
+3007,48429,TX,Stephens County,7,1876,Friendship,44919
+3008,40043,OK,Dewey County,9,623,Labor omnia vincit,5586
+3009,19043,IA,Clayton County,8,1709,Our liberties we prize and our rights we will maintain,15402
+3010,32021,NV,Mineral County,7,801,All For Our Country,4614
+3011,47065,TN,Hamilton County,2,47050,Agriculture and Commerce,4773
+3012,13245,GA,Richmond County,2,48929,"Wisdom, Justice, Moderation",202003
+3013,53061,WA,Snohomish County,1,62396,bye and bye,745913
+3014,18177,IN,Wayne County,5,10859,The Crossroads of America,1775273
+3015,36083,NY,Rensselaer County,2,17978,Excelsior,159918
+3016,6039,CA,Madera County,3,30029,Eureka,152389
+3017,40115,OK,Ottawa County,6,5858,Labor omnia vincit,272701
+3018,39103,OH,Medina County,1,11394,The Heart of It All,47399
+3019,42081,PA,Lycoming County,3,16033,"Virtue, liberty, and independence",116754
+3020,35013,NM,Dona Ana County,3,53719,Crescit eundo,213460
+3021,12127,FL,Volusia County,2,73420,In God We Trust,500800
+3022,45053,SC,Jasper County,6,5570,Dum spiro spero,35649
+3023,13075,GA,Cook County,6,4268,"Wisdom, Justice, Moderation",5240700
+3024,31101,NE,Keith County,7,1019,Equality before the law,8130
+3025,13019,GA,Berrien County,6,4179,"Wisdom, Justice, Moderation",155252
+3026,48247,TX,Jim Hogg County,6,1431,Friendship,5245
+3027,29091,MO,Howell County,7,8110,Salus populi suprema lex esto,40393
+3028,22111,LA,Union Parish,3,4422,,22344
+3029,29037,MO,Cass County,1,8792,Salus populi suprema lex esto,28555
+3030,48357,TX,Ochiltree County,7,1170,Friendship,10806
+3031,38087,ND,Slope County,9,86,Serit ut alteri saeclo prosit,761
+3032,22091,LA,St. Helena Parish,2,2558,,10875
+3033,27119,MN,Polk County,3,4410,L’Étoile du Nord,31569
+3034,48103,TX,Crane County,6,488,Friendship,4773
+3035,1129,AL,Washington County,8,3018,Audemus iura nostra defendere,32190
+3036,39051,OH,Fulton County,2,3719,The Heart of It All,984293
+3037,23019,ME,Penobscot County,3,21460,Dirigo,153364
+3038,13225,GA,Peach County,6,5522,"Wisdom, Justice, Moderation",27014
+3039,12129,FL,Wakulla County,2,3728,In God We Trust,31022
+3040,41067,OR,Washington County,1,51702,Alis volat propriis,32190
+3041,18145,IN,Shelby County,1,5340,The Crossroads of America,939465
+3042,42053,PA,Forest County,9,1172,"Virtue, liberty, and independence",9126
+3043,19017,IA,Bremer County,3,1557,Our liberties we prize and our rights we will maintain,24624
+3044,21179,KY,Nelson County,1,5236,Deo gratiam habeamus,14789
+3045,19191,IA,Winneshiek County,7,1709,Our liberties we prize and our rights we will maintain,20994
+3046,12047,FL,Hamilton County,6,3363,In God We Trust,4773
+3047,48501,TX,Yoakum County,7,1025,Friendship,8184
+3048,45067,SC,Marion County,6,7915,Dum spiro spero,323614
+3049,21059,KY,Daviess County,3,15895,Deo gratiam habeamus,98218
+3050,26101,MI,Manistee County,7,3255,Si quaeris peninsulam amoenam circumspice,24450
+3051,13149,GA,Heard County,1,2227,"Wisdom, Justice, Moderation",11558
+3052,19065,IA,Fayette County,6,2449,Our liberties we prize and our rights we will maintain,45599
+3053,45015,SC,Berkeley County,2,25313,Dum spiro spero,194020
+3054,21017,KY,Bourbon County,2,3466,Deo gratiam habeamus,14852
+3055,37195,NC,Wilson County,4,17798,Esse quam videri,121945
+3056,6041,CA,Marin County,1,19932,Eureka,258365
+3057,5111,AR,Poinsett County,3,5352,Regnat populus,24145
+3058,29207,MO,Stoddard County,7,5545,Salus populi suprema lex esto,29780
+3059,49013,UT,Duchesne County,6,2765,Industry,20308
+3060,47055,TN,Giles County,6,4751,Agriculture and Commerce,28746
+3061,18023,IN,Clinton County,6,4317,The Crossroads of America,81591
+3062,29047,MO,Clay County,1,19868,Salus populi suprema lex esto,10584
+3063,22045,LA,Iberia Parish,4,16885,,73878
+3064,48193,TX,Hamilton County,6,1229,Friendship,4773
+3065,21069,KY,Fleming County,7,3066,Deo gratiam habeamus,14508
+3066,29219,MO,Warren County,1,3935,Salus populi suprema lex esto,65337
+3067,37143,NC,Perquimans County,9,2239,Esse quam videri,13601
+3068,42031,PA,Clarion County,6,5628,"Virtue, liberty, and independence",39155
+3069,1069,AL,Houston County,3,19878,Audemus iura nostra defendere,22911
+3070,18169,IN,Wabash County,6,3428,The Crossroads of America,32358
+3071,48079,TX,Cochran County,9,665,Friendship,3016
+3072,29003,MO,Andrew County,3,1657,Salus populi suprema lex esto,17445
+3073,54035,WV,Jackson County,6,4546,Montani semper liberi,208545
+3074,27165,MN,Watonwan County,7,1216,L’Étoile du Nord,11137
+3075,40029,OK,Coal County,9,1222,Labor omnia vincit,5867
+3076,27111,MN,Otter Tail County,6,5976,L’Étoile du Nord,57581
+3077,51830,VA,Williamsburg city,1,2275,Sic semper tyrannis,15206
+3078,48191,TX,Hall County,9,795,Friendship,187745
+3079,51021,VA,Bland County,8,800,Sic semper tyrannis,6735
+3080,39009,OH,Athens County,4,16044,The Heart of It All,64681
+3081,8005,CO,Arapahoe County,1,56898,Nil sine numine,607070
+3082,39049,OH,Franklin County,1,205476,The Heart of It All,71221
+3083,46017,SD,Buffalo County,9,804,,13357
+3084,17023,IL,Clark County,6,1884,"State sovereignty, national union",2027868
+3085,47027,TN,Clay County,8,1681,Agriculture and Commerce,10584
+3086,26145,MI,Saginaw County,3,33068,Si quaeris peninsulam amoenam circumspice,196542
+3087,41025,OR,Harney County,7,1171,Alis volat propriis,7146
+3088,51157,VA,Rappahannock County,8,729,Sic semper tyrannis,7478
+3089,39063,OH,Hancock County,4,7385,The Heart of It All,54845
+3090,17115,IL,Macon County,3,17760,"State sovereignty, national union",33857
+3091,29103,MO,Knox County,9,728,Salus populi suprema lex esto,39550
+3092,51137,VA,Orange County,6,3212,Sic semper tyrannis,3114363
+3093,26085,MI,Lake County,8,2430,Si quaeris peninsulam amoenam circumspice,63860
+3094,37031,NC,Carteret County,4,8321,Esse quam videri,68434
+3095,16035,ID,Clearwater County,6,1241,Esto perpetua,8577
+3096,55113,WI,Sawyer County,9,2434,Forward,16513
+3097,48435,TX,Sutton County,7,542,Friendship,4006
+3098,54039,WV,Kanawha County,2,30852,Montani semper liberi,191275
+3099,6017,CA,El Dorado County,1,16073,Eureka,181737
+3100,35031,NM,McKinley County,4,25540,Crescit eundo,
+3101,20187,KS,Stanton County,9,220,Ad astra per aspera,6133
+3102,48461,TX,Upton County,8,491,Friendship,3372
+3103,39021,OH,Champaign County,6,4194,The Heart of It All,204897
+3104,48083,TX,Coleman County,6,1681,Friendship,8543
+3105,21191,KY,Pendleton County,1,2069,Deo gratiam habeamus,7471
+3106,13187,GA,Lumpkin County,6,4711,"Wisdom, Justice, Moderation",30918
+3107,51191,VA,Washington County,3,7744,Sic semper tyrannis,32190
+3108,18113,IN,Noble County,6,5308,The Crossroads of America,47570
+3109,42125,PA,Washington County,1,19752,"Virtue, liberty, and independence",32190
+3110,1043,AL,Cullman County,6,12133,Audemus iura nostra defendere,80811
+3111,13157,GA,Jackson County,6,8097,"Wisdom, Justice, Moderation",208545
+3112,23027,ME,Waldo County,6,5514,Dirigo,38940
+3113,45029,SC,Colleton County,6,8774,Dum spiro spero,37788
+3114,20147,KS,Phillips County,7,673,Ad astra per aspera,4179
+3115,25009,MA,Essex County,1,81646,Ense petit placidam sub libertate quietem,38762
+3116,47023,TN,Chester County,3,2573,Agriculture and Commerce,509468
+3117,51081,VA,Greensville County,6,2119,Sic semper tyrannis,11886
+3118,29077,MO,Greene County,2,45710,Salus populi suprema lex esto,68267
+3119,46073,SD,Jerauld County,9,240,,2066
+3120,18157,IN,Tippecanoe County,3,30478,The Crossroads of America,180174
+3121,31075,NE,Grant County,9,64,Equality before the law,7283
+3122,5049,AR,Fulton County,9,2767,Regnat populus,984293
+3123,51610,VA,Falls Church city,1,509,Sic semper tyrannis,
+3124,40021,OK,Cherokee County,6,10863,Labor omnia vincit,27218
+3125,29011,MO,Barton County,6,1899,Salus populi suprema lex esto,27509
+3126,12033,FL,Escambia County,2,45044,In God We Trust,305817
+3127,26027,MI,Cass County,2,6579,Si quaeris peninsulam amoenam circumspice,28555
+3128,13171,GA,Lamar County,1,3142,"Wisdom, Justice, Moderation",49426
+3129,40089,OK,McCurtain County,7,8299,Labor omnia vincit,33065
+3130,30093,MT,Silver Bow County,5,5193,Oro y Plata,34523
+3131,55101,WI,Racine County,3,25798,Forward,195041
+3132,21217,KY,Taylor County,7,5098,Deo gratiam habeamus,20610
+3133,22047,LA,Iberville Parish,2,6615,,33367
+3134,26139,MI,Ottawa County,3,24520,Si quaeris peninsulam amoenam circumspice,272701
+3135,19155,IA,Pottawattamie County,2,9395,Our liberties we prize and our rights we will maintain,92728

@@ -10,7 +10,7 @@ export default {
   props: {
     item: String
   }
-}
+};
 </script>
 
 <style lang="scss">

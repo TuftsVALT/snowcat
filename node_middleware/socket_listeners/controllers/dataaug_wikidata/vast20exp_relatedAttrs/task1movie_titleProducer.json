@@ -1,0 +1,80 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q10298666"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "How to Train Your Dragon 2"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P162"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "producer"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "person(s) who produced the film, musical work, theatrical production, etc. (for film, this does not include executive producers, associate producers, etc.) [for production company, use P272, video games - use P178]"
+    },
+    "count": 7,
+    "exampleLab": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Chris Sanders"
+    },
+    "exampleLit": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q5107976"
+    },
+    "dataType": "string",
+    "valueType": "join-collection-string",
+    "uri": "http://www.wikidata.org/prop/direct/P162",
+    "name": "producer",
+    "description": "person(s) who produced the film, musical work, theatrical production, etc. (for film, this does not include executive producers, associate producers, etc.) [for production company, use P272, video games - use P178]",
+    "examples": [
+      "Chris Sanders",
+      "Elizabeth Banks",
+      "Roland Emmerich"
+    ],
+    "parentEntityExample": "Lilo & Stitch",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q36092",
+    "percentJoinable": 0.35,
+    "frequencyCounts": {
+      "": 13,
+      "Chris Sanders": 1,
+      "Doug Belgrad": 1,
+      "Michael C. Gross": 1,
+      "Mark Gordon": 1,
+      "Lorde": 1,
+      "Lindsey Collins": 1,
+      "Sam Katzman": 1
+    },
+    "sampleData": [
+      "",
+      "",
+      "Chris Sanders",
+      "",
+      "Doug Belgrad",
+      "",
+      "",
+      "",
+      "Michael C. Gross",
+      "",
+      "",
+      "Mark Gordon",
+      "",
+      "",
+      "",
+      "",
+      "Lorde",
+      "",
+      "Lindsey Collins",
+      "Sam Katzman"
+    ]
+  }

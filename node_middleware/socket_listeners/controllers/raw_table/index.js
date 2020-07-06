@@ -19,7 +19,7 @@ module.exports.set = function(session, socket) {
   session.registerDatasetUpdates(function(dataset) {
     rawData = null;
     headers = [];
-    console.log("new dataset!!!");
+    // console.log("new dataset!!!");
     getData(dataset);
     socket.emit("tableUpdate");
   });
@@ -28,6 +28,7 @@ module.exports.set = function(session, socket) {
     return new Promise(function(resolve, reject) {
       if (rawData) {
         resolve(rawData);
+
       } else if (dataset) {
         let filepath = dataset.getLearningDataFile();
         //console.log("filepath is ", filepath)
@@ -50,7 +51,7 @@ module.exports.set = function(session, socket) {
                 sortable: true
               });
             });
-            console.log("reading raw data: done");
+            // console.log("reading raw data: done ", results.data[0]);
             resolve((rawData = results.data));
           }
         });

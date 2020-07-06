@@ -1,0 +1,33 @@
+{
+  "about": {
+    "problemID": "employmentrate_model",
+    "problemName": "employmentrate_model",
+    "problemDescription": "",
+    "taskType": "regression",
+    "problemVersion": "2.0",
+    "problemSchemaVersion": "3.2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "employmentrate_model_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 4,
+            "colName": "Rate"
+          }
+        ]
+      }
+    ],
+    "performanceMetrics": [
+      {
+        "metric": "r2_score"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

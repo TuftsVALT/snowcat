@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Task 0",
+    "text": "This first task is practice. This dataset contains information about poverty in counties of the United States.  Working with your experimenter, try to add on the area of the county, the population of the state, and the earliest inception date of any county that each county shares a border with.",
+    "markdownText": "This first task is practice.  \nThis dataset contains information about poverty in counties of the United States.  \nWorking with your experimenter, try to add the following columns.\n\n- the area of the county \n- the population of the state \n- the earliest inception date of any county that each county shares borders with.",
+    "defaultLayout": "task1",
+    "editable": true,
+    "workspace": 0
+  },
+  {
+    "name": "Task 1",
+    "text": "In your second task, you'll be joining data onto a list of movies.  Add the following data to your dataset: the director's country of citizenship, the number of awards received by the director, the highest box office amount recorded for the movie, and the maximum number of notable works for the producers of each movie. ",
+    "markdownText": "In your second task, you'll be joining data onto a list of movies.  Add the following data to your dataset: \n\n- the director's country of citizenship\n- the number of awards received by the director\n- the number of cast members in each movie\n- the sum of the number of awards received by all the producers of each movie (*Hint: The producers are not initially included in the table*)  ",
+    "defaultLayout": "task1",
+    "editable": true,
+    "workspace": 0
+  },
+  {
+    "name": "Task 2",
+    "text": "Here is the unemployment rate dataset from the year 2015 containing 1200 data items. Every item (row) in the data is a county. It has four columns: ‘State’, ‘County’, ‘Month’, and ‘Rate’. Your task is to build a regression model to predict the ‘Rate’ column (the unemployment rate per county). Using our system, augment the data by adding columns to improve the R2 score from the baseline data in 10 minutes.",
+    "defaultLayout": "task2",
+    "editable": true,
+    "workspace": 0
+  }
+
+]

@@ -1,0 +1,18 @@
+{
+  "problem_schema": "static/local_testing_data/185_baseball/185_baseball_problem/problemDoc.json",
+  "problem_root": "static/local_testing_data/185_baseball/185_baseball_problem",
+    "dataset_schema": "static/local_testing_data/LL0_USER_EVAL_TASK1_1100_popularkids/TRAIN/dataset_TRAIN/datasetDoc.json",
+    "training_data_root": "static/local_testing_data/LL0_USER_EVAL_TASK1_1100_popularkids/TRAIN/dataset_TRAIN",
+    "pipeline_logs_root": "/tmp/logs",
+    "executables_root": "/tmp/executables",
+    "user_problems_root": "./static/output/problems",
+    "temp_storage_root": "/tmp",
+    "user_problem_root": "./static/output/problems",
+    "timeout": 60,
+    "cpus"  : "32",
+    "ram"   : "16Gi",
+	"running_mode": "development",
+	"model_output_prediction_files": [
+		"static/local_testing_data/185_baseball/185_baseball_solution/model_A.csv"
+	]
+}

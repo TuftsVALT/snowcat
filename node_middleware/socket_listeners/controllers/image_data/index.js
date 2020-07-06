@@ -29,7 +29,7 @@ function handleImageData(session, socket) {
 
   let tmpdir = appRootPath + "/output/tmp";
   if (fs.existsSync(path.resolve(tmpdir))) {
-    console.log("remove",tmpdir)
+    // console.log("remove",tmpdir)
     rimraf.sync(path.resolve(tmpdir));
   }
   fs.mkdirSync(path.resolve(tmpdir));

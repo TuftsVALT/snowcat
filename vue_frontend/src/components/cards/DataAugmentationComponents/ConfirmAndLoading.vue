@@ -2,7 +2,8 @@
   <v-dialog v-model="dialog" persistent max-width="400px">
     <v-card v-if="dialog">
       <v-card-text v-if="!loading">
-        Do you want to continue the materializaion of the current dataset? The materializing process may take few minutes.
+        <!-- Do you want to continue the materialization of the current dataset? The materializing process may take few minutes. -->
+        Do you want to construct a new model with the current dataset? The modeling process may take few minutes.
       </v-card-text>
       <v-card-text v-if="loading">
         Please stand by
@@ -86,16 +87,27 @@ export default {
       this.loading = true;
       //Should send attributesInCurrentDataTable to the backend
       console.log("attributes in the current data table are ", this.$store.state.socket.attributesInCurrentDataTable);
+      let colArr = this.$store.state.socket.attributesInCurrentDataTable, newArr = []
+      let removecollist = this.$store.state.socket.removeColList;
+      console.log('col arr seen  in materialize', colArr, removecollist, this.$store.state.socket)
+      for(let i = 0; i<colArr.length;i++){
+        let ind = removecollist.indexOf(colArr[i]['key'])
+        if(ind == -1) {
+          newArr.push(colArr[i])
+        }
+      }              
+      console.log('col arr seen after splicing in materialize view', newArr)
       this.$socket.emit(
         "dataaugMaterializeD3MDataset",
-        this.$store.state.socket.attributesInCurrentDataTable,
+        newArr,
+        // this.$store.state.socket.attributesInCurrentDataTable,
         // this.$store.state.socket.dataAugTable, //Replace with "this.$store.state.socket.attributesInCurrentDataTable"
         function() {
           console.log("RETURN FUNCTION HAS BEEN CALLED")
           vueThis.dialog = false;
           vueThis.loading = false;
           vueThis.$emit("hide-confirm-and-loading-dialog");
-          store.commit('setMaterializeFinishToken', true);
+          // store.commit('setMaterializeFinishToken', true); // commented to not reset column view
         }
       );
     }

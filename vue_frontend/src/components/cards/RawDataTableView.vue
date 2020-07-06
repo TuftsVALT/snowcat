@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card v-if="experimentLoaded" :key="experimentKey">
     <v-card-title>
       <v-spacer></v-spacer>
       <!-- <div class="bottom_header" v-bind:style="styleHeader">
@@ -57,9 +57,10 @@
           tag="div"
           class='table_transition'
         >
-          <td v-bind:key="'selected_item'">
+          <!-- <commented selectable check box below . -->
+          <!-- <td v-bind:key="'selected_item'">
             <v-checkbox v-model="props.selected" primary hide-details></v-checkbox>
-          </td>
+          </td> -->
           <td
             v-bind:key="props.item.d3mIndex+'_'+header.value"
             v-for="header in headers"
@@ -88,23 +89,13 @@ export default {
   name: "RawDataTableView",
   mounted() {
     // console.log('on mounted store is ', this.dataAugTable, this.$store.state.socket, this.$store.state.socket.dataAugTable)
-    this.getData()
-      .then(data => {
-        if (!data) return;
-        this.fullcol_data = data.items.slice(0);
-        this.colLen = Object.keys(this.fullcol_data[0]).length;
-
-        this.raw_items = this.calcColsToShow(data.items);
-        this.totalItems = data.total;
-        console.log("checking data ", this.raw_items, data, this.headers);
-        // console.log('checking total items ', data.total)
-        // console.log('checking headers ', data.headers)
-      })
-      .catch(console.log);
+    this.updateTable();
   },
   data() {
     return {
       search: "",
+      awaitReload: false,
+      experimentKey: 0,
       selected: [],
       totalItems: 0,
       raw_items: [],
@@ -124,10 +115,15 @@ export default {
         display: "flex",
         "flex-direction": "row",
         padding: "5px"
-      }
-    };
+      },      
+      dataAugColDict: {},
+      dataParentAugColDict:{}
+    }
   },
   computed: {
+    experimentLoaded(){
+      return this.$store.state.meta.experimentLoaded;
+    },
     items() {
       this.itemCalled += 1;
       // if(this.itemCalled<1) return ;
@@ -147,7 +143,7 @@ export default {
         }
         new_items.push(new_object);
       }
-      // console.log('items returned ', new_items)
+      console.log('items returned ', new_items)
       return new_items;
     },
     xLinkingHilite() {
@@ -178,31 +174,59 @@ export default {
     materializeFinish() {
       return this.$store.state.socket.materializeFinished;
     },
-    dataAugColDict() {
-      return {};
-    },
-    dataParentAugColDict() {
-      return {};
-    },
     removeColName() {
       return this.$store.state.socket.removeColName;
     },
     addColName() {
       return this.$store.state.socket.addColName;
+    },
+    phase(){
+      return this.$store.state.meta.currentPhase;
     }
   },
   watch: {
+    phase(){
+      this.resetTableData();
+      this.$store.commit('resetRawTableData', {});
+      console.log('SEEN PHASE CHANGE IN RAW TABLE , RESETTING RAW TABLE DATA', this.phase, this.augColumns, this.dataParentAugColDict, this.$store.state)
+    },
+    experimentLoaded(value) {
+      if (!value) {
+        this.experimentKey += 1;
+        this.awaitReload = true;
+      }
+      if (value) {
+        this.firstColumnData = {
+          children: []
+        };
+        if (this.$store.state.socket.vast20expMode) {
+          this.$store.commit('updateDataAugTable', {});
+          this.augColumns = [];
+          this.dataAugColDict = {};
+          this.dataParentAugColDict = {};
+          setTimeout(() => {
+            console.log("this.headers is ", this.headers)
+            this.updateTable();
+            console.log("after update, this.headers is ", this.headers)
+            this.awaitReload = false;
+          },
+          0);
+        }
+      }
+    },
     addColName() {
       const vueThis = this;
-      console.log('col name added ', this.addColName)
-      // this.removeColName = ""
       let index = this.removeColList.indexOf(this.addColName)
       if(index!= -1){
         this.removeColList.splice(index,1)
+        store.commit('updateRemoveColList', this.removeColList);
       }
       console.log("in raw table view added col ", this.removeColName, this.removeColList);
+      console.log("there, raw_items is initially ", this.raw_items);
       this.raw_items = this.checkRemovedCols(this.raw_items);
+      console.log("after checkRemovedCols, raw_items is initially ", this.raw_items);
       this.raw_items = this.sortColumns(this.raw_items);
+      console.log("after sortColumns, raw_items is initially ", this.raw_items);
       let headers = Object.keys(this.raw_items[0]);
       let headersArr = [];
       headers.forEach(function(d, i) {
@@ -219,7 +243,7 @@ export default {
     removeColName() {
       const vueThis = this;
       this.removeColList.push(this.removeColName)
-      console.log("in raw table view  removing col ", this.removeColName, this.removeColList);
+      // console.log("in raw table view  removing col ", this.removeColName, this.removeColList);
       let headers = this.headers.slice(0);
       let headersArr = [];
       headers.forEach(function(d, i) {
@@ -227,20 +251,30 @@ export default {
           headersArr.push(d);
         }
       });
+      store.commit('updateRemoveColList', this.removeColList);
       this.headers = headersArr;
     },
     materializeFinish(value){
+      console.log("materializeFinish changed, it is ", value)
       if(value) {
         this.augColumns = [];
       }
       // console.log('in raw table materialize finishes ', this.materializeFinish, this.augColumns, this.raw_items)
     },
     dataAugTable() {
-      // console.log('data aug updated ... ', this.dataAugTable, this.$store.state.socket)
+      console.log('data aug updated ... ', this.dataAugTable, this.fullcol_data, this.dataAugColDict, this.dataParentAugColDict, this.$store.state.socket)
+      if(this.dataAugTable.hasOwnProperty('data') == false) return
       var vueThis = this;
+      // console.log("this.dataAugTable is ", this.dataAugTable);
       let colNames = Object.keys(this.dataAugTable["data"][0]);
       let existColNames = Object.keys(this.raw_items[0]);
       let newAttrOrig = this.dataAugTable["augCol"]
+      // console.log('through checking ', newAttrOrig)
+      if(newAttrOrig.includes('through') == true) {
+        // console.log('through found ',this.$store.state.socket )
+        store.commit('updateDataAugTable', {}); // newDataset
+        return
+      }
       let newAttr = this.dataAugTable["augCol"].split(' - ')[1]
       // let newAttrSplit = newAttrOrig.split(' (')[0]; //newAttr
       let newAttrSplit = newAttrOrig
@@ -300,15 +334,15 @@ export default {
       });
       this.fullcol_data = this.sortColumns(this.fullcol_data);
       this.colLen = Object.keys(this.fullcol_data[0]).length;
-      console.log("datarep ", datarep, this.headers, this.$store.state.socket);
-      console.log("data aug parent col dict  ", this.dataParentAugColDict);
+      // console.log("datarep ", datarep, this.headers, this.$store.state.socket);
+      // console.log("data aug parent col dict  ", this.dataParentAugColDict);
     },
 
     totalItems() {
-      console.log("TOTAL ITEMS", this.totalItems);
+      // console.log("TOTAL ITEMS", this.totalItems);
     },
     raw_items() {
-      console.log("raw items updated ", this.raw_items);
+      // console.log("raw items updated ", this.raw_items);
     },
     headers() {
       this.calcHeaders();
@@ -344,8 +378,20 @@ export default {
       handler() {
         this.getData().then(data => {
           if (!data) return;
-          console.log("pagination callled ", data, this.pagination);
-          this.raw_items = data.items;
+          // console.log("pagination callled ", data, this.pagination);
+          let dataInjest = data.items.map(d => {
+            let obj = {}
+            for (let item in d){
+              if (item.includes('through') == false){
+                obj[item] = d[item]
+              }
+            }
+            return obj
+          });
+
+          dataInjest = this.sortColumns(dataInjest)
+
+          this.raw_items = dataInjest //data.items;
           // update raw items with new keys from dataaug
           let indexKey = "d3mIndex";
           let datadict = this.dataAugColDict;
@@ -371,6 +417,34 @@ export default {
     }
   },
   methods: {
+    resetTableData(){
+          this.search = ""
+          this.awaitReload= false
+          this.experimentKey= 0
+          this.selected = []
+          this.totalItems= 0
+          this.raw_items= []
+          this.fullcol_data= []
+          this.loading = true
+          this.headers = []
+          this.modHeaders = []
+          this.pagination = {}
+          this.d3mIndexHovered= null
+          this.currentPage = 0
+          this.showColumns = 11
+          this.colLen = -1
+          this.itemCalled = 0
+          this.augColumns = []
+          this.removeColList =[]
+          this.styleHeader = {
+            display: "flex",
+            "flex-direction": "row",
+            padding: "5px"
+          }  
+
+          this.dataAugColDict = {}
+          this.dataParentAugColDict = {}
+    },
     checkRemovedCols(dataGiven){
       let vueThis = this
       let keys = Object.keys(dataGiven[0]);
@@ -389,7 +463,23 @@ export default {
       // console.log(' new data in check remove ', newData)
       return newData;
     },
-    updateTable() {},
+    updateTable() {
+      console.log("updateTable() called")
+      this.getData()
+        .then(data => {
+          if (!data) return;
+          this.fullcol_data = data.items.slice(0);
+          this.colLen = Object.keys(this.fullcol_data[0]).length;
+
+          this.raw_items = this.calcColsToShow(data.items);
+          this.totalItems = data.total;
+          console.log("checking data ", this.raw_items, data, this.headers);
+          // console.log('checking total items ', data.total)
+          // console.log('checking headers ', data.headers)
+        })
+        .catch(console.log);
+
+    },
     sortColumns(data) {
       let parAugObj = this.dataParentAugColDict;
       let keys = Object.keys(parAugObj);
@@ -411,7 +501,6 @@ export default {
           augCols.push(el);
         }
       }
-      // console.log('sorting aug cols ', augCols, this.dataParentAugColDict)
       let newData = [];
       data.forEach(function(d, m) {
         let obj = {};
@@ -420,29 +509,38 @@ export default {
         }
         newData.push(obj);
       });
+      // console.log('sorting aug cols ', augCols, this.dataParentAugColDict, newData)
       return newData;
     },
     calcHeaders() {
-      console.log("calc headers called ", this.headers);
+      // console.log("calc headers called ", this.headers);
       var headernew = [];
       let newHeaders = this.headers.map(d => d);
 
       newHeaders.forEach(function(d, i) {
+        // added if loop to not included d3mIndex
+        // if(d.text !== 'd3mIndex'){
+        //   headernew.push(d)
+        // }
+        if(d['text'].includes('through') == false) {
+          headernew.push(d)        
+        }
+
         // if(keysAllowed.indexOf(d.text)!=-1){
         // headernew[i] = d
         // }
-        headernew[i] = d;
       });
-      headernew.unshift({
-        align: "center",
-        // it would be much cooler if rows could be sorted by selection
-        // but because the backend does sorting and has no selection model
-        // this is not possible at the moment
-        sortable: false,
-        text: "selected",
-        value: "selected"
-      });
-      console.log("new headers looks like ", headernew);
+      // commenting out header name selected 
+      // headernew.unshift({
+      //   align: "center",
+      //   // it would be much cooler if rows could be sorted by selection
+      //   // but because the backend does sorting and has no selection model
+      //   // this is not possible at the moment
+      //   sortable: false,
+      //   text: "selected",
+      //   value: "selected"
+      // });
+      // console.log("new headers looks like ", headernew);
       this.modHeaders = headernew;
     },
 
@@ -452,18 +550,18 @@ export default {
         vm.currentPage += 1;
       }
       vm.raw_items = vm.calcColsToShow(vm.fullcol_data.slice(0));
-      console.log("requesting next page .... ", vm.currentPage, vm.raw_items);
+      // console.log("requesting next page .... ", vm.currentPage, vm.raw_items);
     },
 
     tablePrevPage(e) {
       let vm = this;
       if (vm.currentPage > 0) vm.currentPage -= 1;
       vm.raw_items = vm.calcColsToShow(vm.fullcol_data.slice(0));
-      console.log(
-        "requesting prev page .... ",
-        vm.currentPage,
-        vm.fullcol_data
-      );
+      // console.log(
+      //   "requesting prev page .... ",
+      //   vm.currentPage,
+      //   vm.fullcol_data
+      // );
     },
     calcColsToShow(dataIn) {
       dataIn = this.checkRemovedCols(dataIn);
@@ -480,8 +578,11 @@ export default {
         let obj = {};
         let itemlist = Object.keys(d);
         for (let j = 0; j < Object.keys(d).length; j++) {
-          if (j < sp) continue;
-          if (j > ep) continue;
+          // if (j < sp) continue;
+          // if (j > ep) continue;
+          // We are just going to attach all the data to each row, and only show the columns that
+          // are on the page, so that we don't run into issues augmenting columns that might be
+          // on the second page
           obj[itemlist[j]] = d[itemlist[j]];
         }
         newData.push(obj);
@@ -493,6 +594,7 @@ export default {
           newData[i][indexKey] = d[indexKey];
         });
       }
+      // console.log(' before sorting in calc cols ', newData)
       // newData = this.sortColumns(newData);
       let headers = Object.keys(newData[0]);
       let headersArr = [];
@@ -506,6 +608,7 @@ export default {
         headersArr.push(obj);
       });
       this.headers = headersArr;
+
       return newData;
     },
 
@@ -524,7 +627,7 @@ export default {
       }
     },
     rowMouseLeave(data) {
-      console.log("ROW MOUSE LEAVE", data.d3mIndex);
+      // console.log("ROW MOUSE LEAVE", data.d3mIndex);
       this.d3mIndexHovered = null;
       // console.log("NotOK");
       store.commit("updateXLinking", {
@@ -535,7 +638,7 @@ export default {
       });
     },
     rowMouseEnter(data) {
-      console.log("ROW MOUSE ENTER", data.d3mIndex);
+      // console.log("ROW MOUSE ENTER", data.d3mIndex);
       this.d3mIndexHovered = "" + data.d3mIndex;
       store.commit("updateXLinking", {
         xLinkIndexes: ["" + data.d3mIndex],
@@ -546,7 +649,7 @@ export default {
     },
     click(item) {
       let d3mIndex = "" + item.d3mIndex;
-      console.log('clicked row ', item)
+      // console.log('clicked row ', item)
       if (this.xLinkingSelect.set.has(d3mIndex)) {
         //deselect node
         store.commit("xLinkUnSelect", d3mIndex);
@@ -554,7 +657,7 @@ export default {
         //select node
         store.commit("xLinkSelect", d3mIndex);
       }
-      console.log("click", d3mIndex);
+      // console.log("click", d3mIndex);
       //this.selected.push({d3mIndex: 99});
     },
     getData() {
@@ -578,17 +681,45 @@ export default {
     }
   },
   sockets: {
+    resetRawDataTable(){
+      this.resetTableData();
+      console.log('RESET THE RAW DATA TABLE DATA .... ')
+    },
     tableUpdate() {
       console.log("table update");
       this.getData()
         .then(data => {
-          console.log("RAW TABLE NEW DATA", data);
+          let dataInjest = data.items.map(d => {
+            let obj = {}
+            for (let item in d){
+              if (item.includes('through') == false){
+                obj[item] = d[item]
+              }
+            }
+            return obj
+          });
+          console.log("RAW TABLE NEW DATA INJEST", data, dataInjest);
           if (data) {
-            this.fullcol_data = data.items;
-            this.raw_items = this.sortColumns(data.items);
+            dataInjest = this.sortColumns(dataInjest)
+            this.fullcol_data = dataInjest
             this.raw_items = this.calcColsToShow(this.raw_items);
             this.totalItems = data.total;
-            console.log("BUT NOW, RAW ITEMS ARE", this.raw_items);
+            // following is added to remove d3mindex to be shown in the table ==========
+            // let newRawItems = []
+            // this.raw_items.forEach(function(d){
+            //   let obj = {}
+            //   for (let item in d){
+            //     if(item !== 'd3mIndex'){
+            //       obj[item] = d[item]
+            //     }
+            //   }
+            //   newRawItems.push(obj);
+            // })
+            // this.raw_items = newRawItems
+            // above is added to remove d3mindex to be shown in the table ==========
+
+            // console.log("BUT NOW, RAW ITEMS ARE", this.raw_items);
+
             // this.headers = data.headers;
           } else {
             this.raw_items = [];

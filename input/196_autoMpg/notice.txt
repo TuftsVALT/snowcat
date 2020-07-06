@@ -1,0 +1,17 @@
+-----------------NOTICE------------------
+This dataset was collected for use within the DARPA Data Driven Discovery of Models (D3M) program.
+
+ID: 196_autoMpg
+Name: 196_autoMpg_dataset
+Description: Auto-Mpg Data
+ The data concerns city-cycle fuel consumption in miles per gallon,
+     to be predicted in terms of 3 multivalued discrete and 5 continuous
+     attributes.
+
+License: CC Public Domain Mark 1.0
+License Link: https://creativecommons.org/publicdomain/mark/1.0/
+
+Source: OpenML
+Source Link: https://www.openml.org/d/196
+Citation: @article{OpenML2013, author = {Vanschoren, Joaquin and van Rijn, Jan N. and Bischl, Bernd and Torgo, Luis}, title = {OpenML: Networked Science in Machine Learning}, journal = {SIGKDD Explorations}, volume = {15}, number = {2}, year = {2013}, pages = {49--60}, url = {http://doi.acm.org/10.1145/2641190.2641198}, doi = {10.1145/2641190.2641198}, publisher = {ACM}, address = {New York, NY, USA}, }
+-----------------END------------------

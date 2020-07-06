@@ -8,23 +8,42 @@ const http = require("http");
 const express = require("express");
 const socketIO = require("socket.io");
 const path = require("path");
+const appRoot = require('app-root-path');
+const spawnChildProcess = require(appRoot + "/lib/js/spawnChildProcess");
+const spawn = require("child_process").spawn; 
 
 const app = express();
 const server = http.createServer(app);
 const serverSocket = socketIO(server, { origins: "*:*" });
+const Vast20expConfig = require(appRoot + "/vast20exp/config");
 
 let datasetPath = process.argv[2];
-if (datasetPath !== "dev") {
+
+console.log(' datasetPath is ', datasetPath)
+
+let vast20expMode = datasetPath === "vast20exp";
+let vast20expConfig = null;
+if (vast20expMode) {
+  const participantId = process.argv[process.argv.length - 1]
+  vast20expConfig = new Vast20expConfig(participantId);
+}
+
+if (datasetPath === "vast20exp") {
+  datasetPath = vast20expConfig.task1.datasetPath;
+  const relay = require("./relay");
+  datasetPath = path.resolve(relay.handleUrl(datasetPath));
+} else if (datasetPath === "dev") {
+  datasetPath = null;
+  console.log("No path to dataset; starting with empty dataset!");
+} else {
   if (process.env["D3MINPUTDIR"]) {
     datasetPath = process.env["D3MINPUTDIR"];
   } else {
     const relay = require("./relay");
     datasetPath = path.resolve(relay.handleUrl(datasetPath));
   }
-} else {
-  datasetPath = null;
-  console.log("No path to dataset; starting with empty dataset!");
 }
+
 let devMode = process.argv[process.argv.length - 1] === "dev";
 
 const initializers = require("./initializers");
@@ -46,10 +65,10 @@ if ("TA2_PORT" in process.env) {
 
 serverSocket.on("connection", socket => {
   console.log("Server: connected!");
-  const session = new Session(devMode);
+  const session = new Session(devMode, vast20expMode, vast20expConfig);
   session.ta2_port = ta2_port;
   console.log("ta2_port", ta2_port);
-  socket.emit("newSession");
+  socket.emit("newSession", { 'devMode': devMode, 'vast20expMode': vast20expMode});
   controllers.set(session, socket);
   crudHerald.set(session, socket);
 
@@ -58,16 +77,45 @@ serverSocket.on("connection", socket => {
   if (datasetPath) {
     let Dataset = require("./Session/Dataset.js");
     let Problem = require("./Session/Problem.js");
+    console.log("datasetPath is ", datasetPath);
     let newDataset = new Dataset(datasetPath);
     session.setCurrentDataset(newDataset);
     let problemPath = newDataset.getProblemPath();
     let isProblemPath = true;
     let problem = new Problem(problemPath, isProblemPath);
     session.setCurrentProblem(problem);
+    //COMMENTED THE FOLLOWING HERE, AS FOR EXPERIMENTS RUNNING IN vast20exp/index.js
+    if(datasetPath != "vast20exp") runBaseModel(socket);
   }
 });
 
 console.log("Server listening 9090");
 server.listen(9090);
+
+function runBaseModel(socket){
+  // run base model
+  let results = []
+  let modelpyfile = appRoot + "/models/m_modeller.py"
+  let obj = {}
+  let baseMod = 1
+  console.log(' CHECKING APPROOT ', appRoot, modelpyfile)
+  var process = spawn("python3", [modelpyfile, "-", baseMod])
+    process.stdout.on('data', (data) => { 
+      console.log('python results came back ', data.toString())
+      results.push(data.toString()); 
+    })
+    process.stderr.on('data', (data) => {
+      console.log(`python results error:${data}`);
+  });
+    process.stderr.on('close', () => {
+      obj = JSON.parse(results[0])
+      obj['col_names'] = obj['col_names'].split(",")
+      obj['id'] = 'modelid_' + Math.random()*10000
+      socket.emit("modelmetricsMultiIter", obj)
+      console.log('emitted model metrics ', obj)
+      console.log("python call done !!!! ");
+
+    });
+}
 
 module.exports = app;

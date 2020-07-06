@@ -43,7 +43,7 @@
 
             <v-layout flex mr-0 pr-0 pl-0 justify-end>
 
-              <v-btn title="Close" bottom icon @click.stop="removeCard(index)">
+              <v-btn title="Close" bottom icon @click.stop="removeCard(index)" v-if="hasCardClose(card.skipCloseButton)">
                 <v-icon>clear</v-icon>
               </v-btn>
 
@@ -142,6 +142,9 @@ export default {
         return true;
       }
       return false;
+    },
+    hasCardClose (skipCloseButton) {
+      return !skipCloseButton;
     }
   },
   computed: {
@@ -185,8 +188,8 @@ export default {
     }
   },
   mounted: function () {
-    console.log('data in it ', this.cardComponents)
-    console.log('help text', this.getCardHelpText('ProblemDefinition'))
+    // console.log('data in it ', this.cardComponents)
+    // console.log('help text', this.getCardHelpText('ProblemDefinition'))
   },
   data () {
     return {

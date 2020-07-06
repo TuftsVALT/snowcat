@@ -129,17 +129,23 @@ function assigningDifferences(bars, col, array){
 }
 
 function assigningMetaData(bars, fields, metaDataArray, histogramData, colNames, colTypes){
-
+    // console.log("metaDataArray is ", metaDataArray, " and colNames is ", colNames, " and colTypes is ", colTypes)
     // Assigining names and types of each data column field
       for(var i = 0; i < colNames.length; i++){
+        try{
       metaDataArray[i][colType.name] = colNames[i];
       metaDataArray[i][colType.type] = colTypes[i];
+        }catch(e){
+          console.log(' errored in table preprocessing ', e)
+          continue
+        }
 
     }
     metaDataArray =
     assigningMinMaxSum(metaDataArray, fields, histogramData);
 
     metaDataArray = assigningDifferences(bars, fields, metaDataArray);
+    // console.log(' final meta data array is ', metaDataArray)
     return metaDataArray;
 }
 
@@ -453,8 +459,7 @@ function tabularRawDataPreprocessing(dataJSONFile, tabularMetaData){
       var totalBars = 10;
       var totalFields = Object.keys(dataJSONFile[0]);
       //3dInx
-      var d3mIndexArray = [totalFields.length];;
-
+      var d3mIndexArray = [totalFields.length];
       // initialzing a 2D array for sotring meta-data of message in form of {name, type, min, max, difference}
       var tabularProcessedArrays = {
         histogramMetaDataArray: [totalFields.length],

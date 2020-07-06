@@ -17,7 +17,6 @@ class Dataset {
     //   let len = tempStrArr.length;
     //   this.datasetName = tempStrArr[len - 1];
     // }
-
     fs.readdirSync(path.resolve(datasetRootPath)).forEach(dirName => {
       // console.log(file);
       if (dirName.includes("_dataset")) {
@@ -63,11 +62,10 @@ class Dataset {
     }
   }
 
-  updateDatasetAfterJoin(updatedTable, headerTypes = {}) {
+  updateDatasetAfterJoin(updatedTable, headerTypes = []) {
     let schema = this.getDatasetSchema();
     let cont = true;
     let existingHeaders = [];
-    let newHeaders = [];
     (() => {
       let table = null;
       schema.dataResources.forEach(res => {
@@ -80,13 +78,30 @@ class Dataset {
         }
       });
       table.columns.forEach(col => existingHeaders.push(col.colName));
-      // console.log(updatedTable[0], Object.keys(updatedTable[0]));
-      Object.keys(updatedTable[0]).forEach(header => {
-        if (!(existingHeaders.indexOf(header) >= 0)) {
-          newHeaders.push(header);
-        }
-      });
     })();
+    // take only cols that are presente in headertypes
+    let cols = [];
+    for(let i=0;i<headerTypes.length;i++){
+      cols.push(headerTypes[i]['key'])
+    }
+    let newTable = []
+    if(cols.length > 0){
+      for(let i=0;i<updatedTable.length;i++){
+        let obj = updatedTable[i]
+        let nobj = {}
+        for(let d in obj){
+          if(cols.indexOf(d) != -1){
+            nobj[d] = obj[d]
+          }
+        }
+      newTable.push(nobj)
+    }
+    }else{
+      newTable = updatedTable
+    }
+    const headerList = Object.keys(newTable[0]);
+    // console.log('checking header list ', headerList)
+    // console.log('checking header types ', headerTypes)
 
     if (!cont) {
       console.log(
@@ -96,7 +111,8 @@ class Dataset {
     }
 
     try {
-      let newDatasetName = "ds" + (Math.random() + "").substr(2, 4); // 4 digits, could be more. - By Cong
+      let newDatasetName = "ds" + (Math.random() + "").substr(2, 8); // 8 digits, could be more. - By Cong
+      let tempname = newDatasetName;
       let tmpDatasetDir = path.resolve("input/dataset");
       if (!fs.existsSync(tmpDatasetDir)) {
         fs.mkdirSync(tmpDatasetDir);
@@ -113,9 +129,12 @@ class Dataset {
       fs.mkdirSync(datasetDir);
       fs.mkdirSync(datasetDir + "/tables");
       let csvPath = datasetDir + "/tables/learningData.csv";
+      this.csvPath = csvPath;
+      this.datasetDir = tempname + "/" + newDatasetName + "_dataset" + "/tables/learningData.csv";
+
       fs.writeFileSync(
         csvPath,
-        papa.unparse(updatedTable, {
+        papa.unparse(newTable, {
           quotes: false, //or array of booleans
           quoteChar: '"',
           escapeChar: '"',
@@ -123,25 +142,47 @@ class Dataset {
           header: true,
           newline: "\r\n",
           skipEmptyLines: false, //or 'greedy',
-          columns: existingHeaders.concat(newHeaders)
+          columns: headerList
         })
       );
       // now update dataset description
       let schema = JSON.parse(JSON.stringify(this.getDatasetSchema()));
       schema.about.datasetID = newDatasetName;
       schema.about.datasetName = newDatasetName;
-      let lengthResources = schema.dataResources[0].columns.length;
-      for (let i = 0; i < newHeaders.length; i++) {
-        let header = newHeaders[i];
-        const colType = headerTypes[header] || "categorical";
-        //console.log(updatedTable);
+
+      // We have to filter out any columns that are not actually in the data.  They shouldn't be here in the first place but
+      // we have a crappy, immutable data structure for this schema.
+      // So we basically just rewrite the columns.
+      schema.dataResources[0].columns = [];
+      // for (let i = 0; i < headerList.length; i++) {
+      //   let header = headerList[i];
+      //   const colType = headerTypes[header] || "categorical";
+      //   //console.log(updatedTable);
+      //   schema.dataResources[0].columns.push({
+      //     colIndex: i,
+      //     colName: header,
+      //     colType: colType,
+      //     role: ["attribute"]
+      //   });
+      // }
+      for (let i = 0; i < headerList.length; i++) {
+        let header = headerList[i];
+        let colType = "categorical", val = ""
+        for (let j =0;j<headerTypes.length;j++){
+            if(header == headerTypes[j]['key']){
+              val = headerTypes[j]['dataType']
+              break
+            }
+        }
+        if(val == 'number') colType = "integer"
         schema.dataResources[0].columns.push({
-          colIndex: lengthResources + i,
+          colIndex: i,
           colName: header,
           colType: colType,
           role: ["attribute"]
         });
       }
+      console.log(' new schema written ',  schema.dataResources[0].columns)
       fs.writeFileSync(datasetDir + "/datasetDoc.json", JSON.stringify(schema));
       console.log("new dataset written", dir);
       return new Dataset(dir);

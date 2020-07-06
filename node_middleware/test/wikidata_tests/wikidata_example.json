@@ -1,0 +1,79 @@
+{ 
+    count: 10,
+    dataType: 'datetime',
+    valueType: 'join-string',
+    uri: undefined,
+    name: 'date of birth',
+    description: 'date on which the subject was born',
+    units: undefined,
+    examples:
+     [ '1934-02-05T00:00:00Z',
+       '1936-12-17T00:00:00Z',
+       '1894-08-26T00:00:00Z' ],
+    percentJoinable: 0.85, // This is an estimation of the portion of rows that will be able to be joined to (between 0 and 1)
+    summaryStatistics: {
+        min: 0.5,
+        max: 1235.12,
+        mean: 99.59,
+        firstQuartileEnd: 55,
+        median: 85,
+        thirdQuartileEnd: 155
+    },
+    histogramBins: [ // We only get this if it is a numeric feature (integer or real or datetime)
+        {
+            min: 0,
+            max: 50,
+            count: 3
+        },
+        {
+            min: 50,
+            max: 100,
+            count:10
+        },
+        {
+            min: 100,
+            max: 150,
+            count:20
+        },    
+        {
+            min: 150,
+            max: 200,
+            count:50
+        },    
+        {
+            min: 200,
+            max: 250,
+            count:100
+        },    
+        {
+            min: 250,
+            max: 300,
+            count:50
+        },    
+        {
+            min: 300,
+            max: 350,
+            count:20
+        },    
+        {
+            min: 350,
+            max: 400,
+            count:3
+        }
+    ],
+    pearsonCorrelations: {
+        homeruns: 0.45,
+        rbis: 0.85,
+        walk: 0.3,
+        fielding_percentage: 0.1
+    },
+    frequencyCounts: { // We only get this if it is a string attribute.  It could be that they're all unique strings, with a frequency of 1.
+        'New York': 12,
+        'Georgia': 30,
+        'Massachusetts': 5,
+        'Nevada': 18,
+        'Iowa': 1,
+        'New Hampshire': 1,
+        'Vermont': 1
+    }
+  } 

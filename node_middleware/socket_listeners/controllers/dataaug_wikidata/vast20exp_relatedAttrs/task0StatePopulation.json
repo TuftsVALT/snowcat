@@ -1,0 +1,138 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q1214"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Wyoming"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P1082"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "population"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "number of people inhabiting the place; number of people of subject"
+    },
+    "count": 19,
+    "exampleLit": {
+      "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+      "type": "literal",
+      "value": "586107"
+    },
+    "valType": {
+      "type": "uri",
+      "value": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "unitLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "1"
+    },
+    "dataType": "number",
+    "valueType": "join-collection-number",
+    "uri": "http://www.wikidata.org/prop/direct/P1082",
+    "name": "population",
+    "description": "number of people inhabiting the place; number of people of subject",
+    "units": "1",
+    "examples": [
+      "586107",
+      "1844128",
+      "4425092"
+    ],
+    "parentEntityExample": "Wyoming",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q1214",
+    "percentJoinable": 1,
+    "summaryStats": {
+      "max": 39144818,
+      "min": 586107,
+      "mean": 6937984.35,
+      "mode": 10214860,
+      "firstQuartileEnd": 2411166,
+      "median": 4425092,
+      "thirdQuartileEnd": 10042802,
+      "variance": 65661757498590.92
+    },
+    "histogramBins": [
+      {
+        "min": 586107,
+        "max": 4441978.1,
+        "count": 11
+      },
+      {
+        "min": 4441978.1,
+        "max": 8297849.2,
+        "count": 3
+      },
+      {
+        "min": 8297849.2,
+        "max": 12153720.3,
+        "count": 5
+      },
+      {
+        "min": 12153720.3,
+        "max": 16009591.4,
+        "count": 0
+      },
+      {
+        "min": 16009591.4,
+        "max": 19865462.5,
+        "count": 0
+      },
+      {
+        "min": 19865462.5,
+        "max": 23721333.6,
+        "count": 0
+      },
+      {
+        "min": 23721333.6,
+        "max": 27577204.7,
+        "count": 0
+      },
+      {
+        "min": 27577204.7,
+        "max": 31433075.8,
+        "count": 0
+      },
+      {
+        "min": 31433075.8,
+        "max": 35288946.9,
+        "count": 0
+      },
+      {
+        "min": 35288946.9,
+        "max": 39144818,
+        "count": 1
+      }
+    ],
+    "sampleData": [
+      4425092,
+      4425092,
+      586107,
+      1844128,
+      756927,
+      10214860,
+      2978204,
+      39144818,
+      3976322,
+      10214860,
+      10042802,
+      10042802,
+      1394928,
+      6619680,
+      6600299,
+      3976322,
+      6600299,
+      10214860,
+      3046355,
+      1654930
+    ]
+  }

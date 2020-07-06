@@ -1,0 +1,57 @@
+{
+  "entity": {
+    "type": "uri",
+    "value": "http://www.wikidata.org/entity/Q5127380"
+  },
+  "entityLabel": {
+    "xml:lang": "en",
+    "type": "literal",
+    "value": "Clark Spencer"
+  },
+  "wdt": {
+    "type": "uri",
+    "value": "http://www.wikidata.org/prop/direct/P166"
+  },
+  "wdLabel": {
+    "xml:lang": "en",
+    "type": "literal",
+    "value": "award received"
+  },
+  "wdDescription": {
+    "xml:lang": "en",
+    "type": "literal",
+    "value": "award or recognition received by a person, organisation or creative work"
+  },
+  "count": 1,
+  "exampleLab": {
+    "xml:lang": "en",
+    "type": "literal",
+    "value": "Academy Award for Best Animated Feature"
+  },
+  "exampleLit": {
+    "type": "uri",
+    "value": "http://www.wikidata.org/entity/Q106800"
+  },
+  "dataType": "string",
+  "valueType": "join-collection-string",
+  "uri": "http://www.wikidata.org/prop/direct/P166",
+  "name": "award received",
+  "description": "award or recognition received by a person, organisation or creative work",
+  "examples": [
+    "Academy Award for Best Animated Feature"
+  ],
+  "parentEntityExample": "Clark Spencer",
+  "parentEntityExampleUri": "http://www.wikidata.org/entity/Q5127380",
+  "percentJoinable": 0.2,
+  "frequencyCounts": {
+    "Academy Award for Best Animated Feature": 1,
+    "": 4
+  },
+  "sampleData": [
+    "Academy Award for Best Animated Feature",
+    "",
+    "",
+    "",
+    ""
+  ]
+}

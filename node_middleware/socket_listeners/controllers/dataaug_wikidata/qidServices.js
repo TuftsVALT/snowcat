@@ -18,6 +18,8 @@ const Promise = require("bluebird");
 const debounce = require("debounce-promise");
 const Bottleneck = require("bottleneck");
 let qidCache = {};
+let wikiSearchCache = {};
+const CONCAT_DELIMITER = "|||||||||"
 
 //https://www.w3.org/TR/rdf-sparql-query/#operandDataTypes
 const INTEGER_LITERALS = [
@@ -106,25 +108,36 @@ function parseValType(data) {
       valTypeValue
     );
 
+    // Add in dataType
     const isNumber = isInt || isReal;
     if (isCollection) {
       if (isNumber) {
+        d['dataType'] = 'number';
         d["valueType"] = "join-collection-number";
+      } else if (isDateTime) {
+        d['dataType'] = 'datetime';
+        d["valueType"] = "join-collection-number";        
       } else {
+        d['dataType'] = 'string';
         d["valueType"] = "join-collection-string";
       }
     } else {
+      d['dataType'] = 'string';
       if (isInt) {
         headerTypes[d["wdLabel"]["value"]] = "integer";
+        d['dataType'] = 'integer';
       }
       if (isReal) {
         headerTypes[d["wdLabel"]["value"]] = "real";
+        d['dataType'] = 'number';
       }
       if (isDateTime) {
         headerTypes[d["wdLabel"]["value"]] = "datetime";
+        d['dataType'] = 'datetime';
       }
 
       if (isNumber) {
+        d['dataType'] = 'number';
         d["valueType"] = "join-number";
       } else {
         d["valueType"] = "join-string";
@@ -150,24 +163,46 @@ function parseValType(data) {
     # ORDER BY DESC(?pcount)
  */
 
-function singleGetRelatedAttributes(entityId) {
-  let query = `SELECT (COUNT(?wdLabel) AS ?count) ?wdLabel ?p (datatype(sample(?statement)) as ?valType)  WHERE {
-        VALUES (?entity) {(wd:${entityId})}
+function singleGetRelatedAttributes(entityIds) {
+  // VALUES (?entity) {(wd:${entityId})}
+  // GROUP BY ?wdt ?wd ?wdLabel ?wdDescription ?unitLabel
+  // console.log("gettingRelatedAttributes for entity ", entityIds)
+  let query = `SELECT (COUNT(?wd) AS ?count) ?entity ?entityLabel ?wdt 
+        ?wdLabel ?wdDescription ?unitLabel 
+        (sample(?statement_EN) as ?exampleLab) (sample(?statement) as ?exampleLit) (datatype(sample(?statement)) as ?valType)  
+        (GROUP_CONCAT(?temporalVal; SEPARATOR="${CONCAT_DELIMITER}") as ?valsInTime) (GROUP_CONCAT(?pointInTime; SEPARATOR="${CONCAT_DELIMITER}") as ?pointsInTime)
+        WHERE {
+        VALUES (?entity) { ${_.uniq(entityIds).map((qid) => "(wd:" + qid + ')').join(' ')} }
 
-        ?entity ?p ?statement .
+        ?entity ?wdt ?statement .
 
-        ?wd wikibase:directClaim ?p.
+        ?wd wikibase:directClaim ?wdt .
+        ?wd wikibase:claim ?p .
+        ?wd wdt:P1629 ?propertyCategory .
 
         OPTIONAL {
-        ?statement ?pq ?pq_ .
-        ?wdpq wikibase:qualifier ?pq .
+          ?wd wikibase:statementValue ?psv .
+          ?entity ?p ?stmnode .
+          ?stmnode ?psv ?valueNode .
+          ?valueNode wikibase:quantityUnit ?unit .
+          ?wd wikibase:statementProperty ?ps .
+          ?stmnode ?ps ?temporalVal .
+          ?stmnode pq:P585 ?pointInTime .
         }
-        ?wd wikibase:propertyType ?externalId .
-        FILTER( ?externalId != wikibase:ExternalId ) 
+
+        OPTIONAL {
+          ?statement rdfs:label ?statement_EN .
+          FILTER (LANG(?statement_EN) = "en")
+        }
+
+        ?wd wikibase:propertyType ?propType .
+        FILTER( ?propType != wikibase:ExternalId ) 
+        FILTER( ?propertyCategory != wd:Q4167836 )
         SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
     }
-GROUP BY ?wdLabel ?p 
+GROUP BY ?entity ?entityLabel ?wdt ?wd ?wdLabel ?wdDescription ?unitLabel
 `;
+  // console.log("getRelatedAttributes query is ", query)
   // Some cleaning
   const regex = /\n/gi;
   query = query.replace(regex, "");
@@ -183,6 +218,8 @@ GROUP BY ?wdLabel ?p
       query: query
     }
   }).then(response => {
+    // console.log("done for entity ", entityIds)
+
     if (response && response["results"] && response["results"]["bindings"]) {
       let returnedData = removeBlacklist(response["results"]["bindings"]);
       returnedData = parseValType(returnedData);
@@ -190,6 +227,9 @@ GROUP BY ?wdLabel ?p
     } else {
       return [];
     }
+  })
+  .catch(err => {
+    console.log(" getting related attributes caught error", err);
   });
 }
 
@@ -258,37 +298,65 @@ function convertColumnToQIDs(
     numSampled
   );
   // Randomly sample cells if numSampled is > 0 (rows)
+  
   if (numSampled < 0 || numSampled > rawData.length) {
     numSampled = rawData.length;
   }
 
   console.log("numSampled in convert column is ", numSampled);
 
-  let sampledValues = [];
-  for (let i = 0; i < numSampled; i++) {
-    sampledValues.push(rawData[i][columnName]);
+  // Taking a random sample of the column's values to look up
+  // Throw away nil values, so that we keep reselecting the same rows for through joins
+  let selectedColumn = rawData.map((r) => r[columnName]);
+  // console.log("selectedColumn is ", selectedColumn);
+  // console.log("rawData[0] is ", rawData[0])
+  // let sampledValues = _.sampleSize(_.filter(selectedColumn), numSampled)
+  let sampledValues = _.filter(selectedColumn).slice(0, numSampled);
+
+  // If this is from a through join, we actually don't have to use wikisearch at all,
+  // and then don't have to worry about this rate limiting business.  So we can skip
+  // all this.
+  if (testForThroughJoin(sampledValues[0])) {
+    // console.log("tested positive for through join")
+    const mappedQIDs = sampledValues.map(extractQIDFromThroughJoin);
+    // console.log("mapped qids are ", mappedQIDs)
+    return Promise.resolve(mappedQIDs);
   }
+
+  // The next thing we do is we reduce the number of entities that we look to be unique values
+  // that we haven't already asked wikisearch about.  
+  const uniqueValues = _.uniq(sampledValues).filter((u) => !wikiSearchCache[u])
+
   // Convert them to potential QID
   // NOTE - we need to make sure we aren't violating the rate limit, which I believe is 200 per second.
   // So let's do just 150 per second, using the debounce function, which delays function invocation until a certain amount of time has passed.
   // Basically, we batch them into groups of 150, then kick off each group every second.  Wrap it in a promise, return the promise.
   // call once every 1000ms
 
-  let valueGroups = reshape(sampledValues, WIKIMEDIA_RATE_LIMIT);
+  // let valueGroups = reshape(sampledValues, WIKIMEDIA_RATE_LIMIT);
+  let valueGroups = reshape(uniqueValues, WIKIMEDIA_RATE_LIMIT);
   // console.log("How many valueGroups are there?  ", valueGroups.length, " and how many in first group? ", valueGroups[0].length, " and last group? ", valueGroups[valueGroups.length - 1].length)
   let mapToQids = function(vals) {
-    console.log("RUNNING MAP TO QIDS, time is ", Date.now());
-    return Promise.map(vals, v => convertToPotentialQID(v)).catch(e => {
+    // console.log("RUNNING MAP TO QIDS, time is ", Date.now());
+    let returnedPromise =  Promise.map(vals, v => {
+      // console.log("is returnedPromise resolved inside the Promise.map? ", returnedPromise.isFulfilled())
+      let potentialQIDPromise = convertToPotentialQID(v);
+      // console.log("for v ", v, " is potentialQIDPromise fullfilled? ", potentialQIDPromise.isFulfilled())
+      return potentialQIDPromise.then((potentialQID) => {
+
+        // console.log("for value ", v, " we found qid ", potentialQID[0] && potentialQID[0]['id'])
+        return {
+          'qidObjList': potentialQID,
+          'value': v
+        };
+      });
+    }).catch(e => {
       console.log("bluebird error, ", e);
-    });
+      });
+
+    // console.log("is mapToQIDS resolved? ", returnedPromise.isFulfilled());
+    return returnedPromise;
   };
-
-  // let potentialQIDs = Promise.map(sampledValues, (v) => convertToPotentialQID(v, columnId), { concurrency: RATE_LIMIT } );
-  // let potentialQIDs = Promise.all(sampledValues.map((v) => convertToPotentialQID(v, columnId)));
-
-  // console.log("sampledValues are ", sampledValues)
-
-  // var debouncedMapToQids = debounce(mapToQids, 1000, {leading: true});
 
   // Using bottleneck library
   const limiter = new Bottleneck({
@@ -297,27 +365,52 @@ function convertColumnToQIDs(
   var rateLimitedMapToQids = limiter.wrap(mapToQids);
 
   // Try to pick a single QID for each one.
-  return Promise.all(
-    valueGroups.map(vg => {
-      // console.log("running a debounced map to QIDs")
-      // return debouncedMapToQids(vg);
-      return rateLimitedMapToQids(vg);
-    })
-  ).then(
+  // return Promise.all(
+  //   valueGroups.map(vg => {
+  //     return rateLimitedMapToQids(vg);
+  //   })
+  // return Promise.map(valueGroups, vg => {
+    // return rateLimitedMapToQids(vg);
+  // return Promise.map(valueGroups, rateLimitedMapToQids).then(
+  // let debugPromise = mapToQids(valueGroups[0]);
+  // console.log("mapToQids(valueGroups[0]) is fulfilled? ", debugPromise.isFulfilled());
+  let mappedDebugPromise = Promise.map(valueGroups, rateLimitedMapToQids);
+  // let mappedDebugPromise = Promise.map(valueGroups, mapToQids);
+  // console.log("before, mappedDebugPromise .isFulfilled() ", mappedDebugPromise.isFulfilled());
+  return mappedDebugPromise.then(
     qidGroups => {
+      // console.log("debugPromise .isFulfilled() ", debugPromise.isFulfilled());
+      // console.log("mappedDebugPromise .isFulfilled() ", mappedDebugPromise.isFulfilled());
+      // console.log("qidGroups is ", qidGroups);
       let qidLists = _.flatten(qidGroups);
-      // console.log("qidLists are ", qidLists)
-      console.log("qidLists[0] is ", qidLists[0]);
-      console.log("qidLists length is ", qidLists.length);
-      let chosenQIDs = qidLists.map(qidObjList => {
-        let matchedDescriptions = _.filter(qidObjList, qidObj => {
-          const description = qidObj["description"];
-          return _.includes(_.lowerCase(description), _.lowerCase(columnName));
-        });
-        let returnedQIDObj = matchedDescriptions[0] || qidObjList[0];
+      // let chosenQIDs = qidLists.map(qidObjData => {
+      //   let qidObjList = qidObjData['qidObjList'];
+      //   let originalValue = qidObjData['value']
+      //   // let matchedDescriptions = _.filter(qidObjList, qidObj => {
+      //   //   const description = qidObj["description"];
+      //   //   return _.includes(_.lowerCase(description), _.lowerCase(columnName));
+      //   // });
+      //   // let returnedQIDObj = (matchedDescriptions && matchedDescriptions[0]) || (qidObjList && qidObjList[0]);
+      //   let returnedQIDObj = qidObjList && qidObjList[0];
 
-        return returnedQIDObj && returnedQIDObj["id"];
+
+      //   return returnedQIDObj && returnedQIDObj["id"];
+      // });
+      qidLists.forEach(qidObjData => {
+        let qidObjList = qidObjData['qidObjList'];
+        let originalValue = qidObjData['value']
+        // let matchedDescriptions = _.filter(qidObjList, qidObj => {
+        //   const description = qidObj["description"];
+        //   return _.includes(_.lowerCase(description), _.lowerCase(columnName));
+        // });
+        // let returnedQIDObj = (matchedDescriptions && matchedDescriptions[0]) || (qidObjList && qidObjList[0]);
+        let returnedQIDObj = qidObjList && qidObjList[0];
+        let returnedQID = returnedQIDObj && returnedQIDObj["id"];
+        wikiSearchCache[originalValue] = returnedQID;
       });
+
+      let chosenQIDs = sampledValues.map((v) => wikiSearchCache[v]);
+      // console.log("wikiSearchCache is ", wikiSearchCache, " and sampledValues is ", sampledValues, " and chosenQIDs is ", chosenQIDs)
 
       // Then, pick 5 of the chosen QIDs, look up their properties, and take the most common one.
       qidCache[columnName] = qidCache[columnName] || {};
@@ -341,18 +434,42 @@ function reshape(array, n) {
   );
 }
 
+function testForThroughJoin(entityName) {
+  // If it's a through join, we expect the value of the entries to be something like
+  //  http://www.wikidata.org/entity/Q58696, http://www.wikidata.org/entity/Q108053, http://www.wikidata.org/entity/Q109670
+  // So we can pattern match on this
+  let potentialUris = entityName.split(", ");
+  let firstPotentialUri = potentialUris[0];
+  return firstPotentialUri && (firstPotentialUri.indexOf('wikidata.org/entity/Q') !== -1);
+}
+
+function extractQIDFromThroughJoin(entityName) {
+  // assuming this passed testForThroughJoin
+  let potentialUris = entityName.split(", ");
+  let firstPotentialUri = potentialUris[0];
+  let firstPotentialUriComponents = firstPotentialUri.split('/');
+  // console.log(" extracting QID from through join ", entityName, " and potentialUris is ", potentialUris, " and firstPotentialUri is ", firstPotentialUri, " and firstPotentialUriComponents is ", firstPotentialUriComponents)
+  return firstPotentialUriComponents[firstPotentialUriComponents.length - 1].replace("...", "");
+}
+
 // Huh, for now we don't even use ColumnID.  So maybe we're pretty good here...
 function convertToPotentialQID(entityName, maxRetries = 1, columnId = null) {
   // Maybe we can do this with wikiSearch.js, or we can do this via SPARQL...  Should benchmark to see what is faster
   // That would mean breaking out into different files, so that we can run tests on them...  We'll see.
   // For now, we'll use wikiSearch.js, and we'll just try the regular format before some variants.
   // Note, this doesn't solve the issue with multiple versions of The Godfather.
-  // console.log("wikisearching entity name ", entityName, " and time is ", Date.now())
 
-  return wikiSearch(entityName).then(
+
+  // NOTE - if this is a through join, then the rawData will already have the QIDs in it, so we can
+  // skip the call to wikisearch very easily.  But this is brittle code, FYI.
+  // console.log("wikisearching entity name ", entityName, " and time is ", Date.now())
+  let entitySearch = wikiSearch(entityName);
+  // console.log("entitySearch .isFulfilled() ", entitySearch.isFulfilled());
+  return entitySearch.then(
     qid => {
+      // console.log("wikisearch completed")
       if (qid) {
-        return qid;
+        return Promise.resolve(qid);
       } else {
         const sepRegex = /[-_]/gi;
         // qid = wikiSearch(entityName.replace(sepRegex, ' ').toLowerCase().split(' ').forEach((s) => )
@@ -365,6 +482,7 @@ function convertToPotentialQID(entityName, maxRetries = 1, columnId = null) {
       if (maxRetries > 0) {
         return convertToPotentialQID(entityName, maxRetries - 1);
       } else {
+        console.log("running out of retries, giving up on the entity ", entityName)
         return Promise.resolve("");
       }
     }

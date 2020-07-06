@@ -1,0 +1,33 @@
+{
+  "about": {
+    "problemID": "autos_model",
+    "problemName": "autos_model",
+    "problemDescription": "",
+    "taskType": "regression",
+    "problemVersion": "2.0",
+    "problemSchemaVersion": "3.2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "crime_bm_model_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 3,
+            "colName": "price"
+          }
+        ]
+      }
+    ],
+    "performanceMetrics": [
+      {
+        "metric": "r2_score"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

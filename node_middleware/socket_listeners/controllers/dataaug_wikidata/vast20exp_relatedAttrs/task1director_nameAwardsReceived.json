@@ -1,0 +1,82 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q187364"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Robert Zemeckis"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P166"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "award received"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "award or recognition received by a person, organisation or creative work"
+    },
+    "count": 11,
+    "exampleLab": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Academy Award for Best Director"
+    },
+    "exampleLit": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q103360"
+    },
+    "dataType": "string",
+    "valueType": "join-collection-string",
+    "uri": "http://www.wikidata.org/prop/direct/P166",
+    "name": "award received",
+    "description": "award or recognition received by a person, organisation or creative work",
+    "examples": [
+      "Academy Award for Best Director",
+      "Emmy Award",
+      "AFI Life Achievement Award"
+    ],
+    "parentEntityExample": "Robert Zemeckis",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q187364",
+    "percentJoinable": 0.55,
+    "frequencyCounts": {
+      "Fellow of the American Academy of Arts and Sciences": 2,
+      "": 9,
+      "MTV Movie Award for Best Villain": 1,
+      "Directors Guild of America Award": 1,
+      "Indiana Film Journalists Association Award for Best Director": 2,
+      "Writers Guild of America Award": 1,
+      "Academy Award for Best Animated Feature": 1,
+      "Writers Guild of America Award for Television: Dramatic Series": 1,
+      "Academy Award for Best Writing, Adapted Screenplay": 1,
+      "Knight Companion of the New Zealand Order of Merit": 1
+    },
+    "sampleData": [
+      "Fellow of the American Academy of Arts and Sciences",
+      "",
+      "MTV Movie Award for Best Villain",
+      "Directors Guild of America Award",
+      "Indiana Film Journalists Association Award for Best Director",
+      "",
+      "Writers Guild of America Award",
+      "Academy Award for Best Animated Feature",
+      "Fellow of the American Academy of Arts and Sciences",
+      "Indiana Film Journalists Association Award for Best Director",
+      "",
+      "",
+      "",
+      "Writers Guild of America Award for Television: Dramatic Series",
+      "Academy Award for Best Writing, Adapted Screenplay",
+      "",
+      "",
+      "Knight Companion of the New Zealand Order of Merit",
+      "",
+      ""
+    ]
+  }

@@ -1,0 +1,33 @@
+{
+  "about": {
+    "problemID": "crime_bm_model",
+    "problemName": "crime_bm_model",
+    "problemDescription": "",
+    "taskType": "classification",
+    "problemVersion": "2.0",
+    "problemSchemaVersion": "3.2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "crime_bm_model_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 5,
+            "colName": "Inside/Outside"
+          }
+        ]
+      }
+    ],
+    "performanceMetrics": [
+      {
+        "metric": "accuracy"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}

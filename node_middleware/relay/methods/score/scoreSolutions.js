@@ -8,19 +8,19 @@ function scoreSolutions(herald) {
   let solutions_array = Array.from(solutions.values());
 
   // must be commented if want to test all searched solutions
-  // let truncated_solutions = new Map();
-  // let number_of_solutions = 2;
-  // for (let i = 0; i < number_of_solutions; i++) {
-  //   let solution = solutions_array[i];
-  //   let solution_id = solution.solution_id;
-  //   truncated_solutions.set(solution_id, solution);
-  // }
-  // herald.setSolutions(truncated_solutions);
-  // solutions = herald.getSolutions();
-  // solutions_array = Array.from(solutions.values());
-  // console.log("number of truncated_solutions", solutions_array.length);
-  // solutions_array = Array.from(solutions.values());
-  // console.log("number of solutions found:", solutions_array.length);
+  let truncated_solutions = new Map();
+  let number_of_solutions = 2;
+  for (let i = 0; i < number_of_solutions; i++) {
+    let solution = solutions_array[i];
+    let solution_id = solution.solution_id;
+    truncated_solutions.set(solution_id, solution);
+  }
+  herald.setSolutions(truncated_solutions);
+  solutions = herald.getSolutions();
+  solutions_array = Array.from(solutions.values());
+  console.log("number of truncated_solutions", solutions_array.length);
+  solutions_array = Array.from(solutions.values());
+  console.log("number of solutions found:", solutions_array.length);
   //
 
   let chain = Promise.resolve();

@@ -2,7 +2,7 @@ import axios from "axios";
 import Vue from "vue";
 import _ from "lodash";
 
-var getData = function(uri, callback) {
+var getData = function (uri, callback) {
   axios
     .get(uri)
     .then(response => {
@@ -19,8 +19,8 @@ const state = {
   heraldMap: new Map(),
   heraldsChanged: true, // hacky Boolean that flips every time there is an update to herald map to keep things reactive
   latestHeraldRead: -1,
-  selectedModels: [ ],
-  filteredModels: [ ],
+  selectedModels: [],
+  filteredModels: [],
   runProblem: null,
   debugMode: true,
   // Socket connections
@@ -95,9 +95,15 @@ const state = {
   infoMessage: "",
   dataAugTable: {},
   removeColName: "",
+  removeColList: [],
   addColName: "",
   attributesInCurrentDataTable: [],
-  materializeFinished: false
+  materializeFinished: false,
+  modelMetricsMultiIter: {},
+  modelIteration: 0,
+  mouseOverModelCols: [],
+  devMode: false,
+  vast20expMode: false,
 };
 
 // getters
@@ -167,7 +173,7 @@ const actions = {
   updateSelectedModel(context, id) {
     context.commit("setSelectedModel", id);
   },
-  socket_newSession(context) {
+  socket_newSession(context, config) {
     /*
      * processConfig reads the evaluation config, and is responsible for updating the store
      * - Telling node server to put the raw data and assets (images, graph files) in public folder
@@ -177,6 +183,12 @@ const actions = {
      * - replacing img, video, etc. references with file URIs
      * - For graphs, load the graph URI into the graphs store
      */
+
+    const devMode = config.devMode;
+    const vast20expMode = config.vast20expMode;
+
+    context.commit("setDevMode", devMode);
+    context.commit("setVast20expMode", vast20expMode);
 
     // Next, we tell node to get the assets ready to be loaded
     // this.$socket.emit("serveData")
@@ -208,7 +220,7 @@ const actions = {
     // to user.
     // socket.io's callback to emit only fires once, so it is only good for synchronous communication.
     // instead, we open up a listener on the client for progress updates.
-    v.$socket.emit("handleVoderDataFacts", function(data) {
+    v.$socket.emit("handleVoderDataFacts", function (data) {
       if (context.state.debugMode) {
         console.log(
           " in handleVoderDataFacts, ack function received data: ",
@@ -225,7 +237,7 @@ const actions = {
   modelClassifRegress(context, numModelArr) {
     context.commit("numModelClassifReg", numModelArr);
   },
-  loadRegressData: function(context, dataIn) {
+  loadRegressData: function (context, dataIn) {
     // context.state.classReg_modelId += 1;
     // if (context.state.classReg_modelId > context.state.models.length - 1) {
     //   context.state.classReg_modelId = 0;
@@ -236,13 +248,13 @@ const actions = {
       index: dataIn.modelId,
       fileUri: dataIn.fileUri
     };
-    console.log("trying to load regression data ", data);
+    // console.log("trying to load regression data ", data);
     // console.log("trying to load classication data ", context.state.evaluationConfig);
     var v = new Vue();
     v.$socket.emit("load-regress-data", data);
   },
   //load classification prob data
-  loadClassifData: function(context, dataIn) {
+  loadClassifData: function (context, dataIn) {
     // context.state.classReg_modelId += 1;
     // if( context.state.classReg_modelId > context.state.models.length-1 ){
     //   context.state.classReg_modelId = 0;
@@ -252,7 +264,7 @@ const actions = {
       index: dataIn.modelId,
       fileUri: dataIn.fileUri
     };
-    console.log("trying to load classication data ", data);
+    // console.log("trying to load classication data ", data);
     // console.log("trying to load classication data ", context.state.evaluationConfig);
     var v = new Vue();
     v.$socket.emit("load-classify-data", data);
@@ -262,7 +274,7 @@ const actions = {
     });
   },
   socket_updateCurrentDatasetRootPath: (context, dataRoot) => {
-    console.log("updateCurrentDatasetRootPath", dataRoot);
+    // console.log("updateCurrentDatasetRootPath", dataRoot);
     context.commit("updateDataRoot", dataRoot);
     // this.dataRoot = dataRoot;
   },
@@ -281,7 +293,7 @@ const actions = {
   socket_dataDescFinished: (context, datasetSchema) => {
     // If this socket message has fired, then the training data is accessible
     context.commit("loadDataDesc", datasetSchema);
-    console.log("data reasources", datasetSchema.dataResources);
+    // console.log("data reasources", datasetSchema.dataResources);
     // also load the column types
     var datatypes = {};
     var columns = context.state.rawDataDesc.dataResources.filter(
@@ -297,11 +309,14 @@ const actions = {
     );
   },
   socket_rawDataFinished: (context, data) => {
-    console.log("raw data loaded");
+    // console.log("raw data loaded");
     context.commit("loadData", Object.freeze(data));
   },
-  socket_serveProblemFinished: ( context, { problemSchema, orig } ) => {
-    console.log("problem served", problemSchema);
+  socket_serveProblemFinished: (context, {
+    problemSchema,
+    orig
+  }) => {
+    // console.log("problem served", problemSchema);
     context.commit("CLEAR_TARGET_COLS");
     context.commit("CLEAR_PERFORMANCE_METS");
     if (!problemSchema) {
@@ -310,7 +325,7 @@ const actions = {
     if (!_.isEmpty(problemSchema)) {
       context.commit("loadProblemDesc", problemSchema);
       if (orig) {
-        console.log("original problem description from dataset received");
+        // console.log("original problem description from dataset received");
         context.commit("loadProblemDesc_orig", problemSchema);
       }
       if (problemSchema.about && problemSchema.about.taskType) {
@@ -321,19 +336,19 @@ const actions = {
       }
       // Now that we have received the problemDoc, we're also going to figure out the
       // target columns.
-      // var data_section, target;
-      // for (var i = 0; i < problemSchema.inputs.data.length; i++) {
-      //   data_section = problemSchema.inputs.data[i];
-      //   for (var j = 0; j < data_section.targets.length; j++) {
-      //     target = data_section.targets[j];
-      //     context.commit("addTargetColumn", target.colName);
-      //   }
-      // }
-      // var performanceMetric;
-      // for (var i = 0; i < problemSchema.inputs.performanceMetrics.length; i++) {
-      //   performanceMetric = problemSchema.inputs.performanceMetrics[i];
-      //   context.commit("addPerformanceMetric", performanceMetric.metric);
-      // }
+      var data_section, target;
+      for (var i = 0; i < problemSchema.inputs.data.length; i++) {
+        data_section = problemSchema.inputs.data[i];
+        for (var j = 0; j < data_section.targets.length; j++) {
+          target = data_section.targets[j];
+          context.commit("addTargetColumn", target.colName);
+        }
+      }
+      var performanceMetric;
+      for (var i = 0; i < problemSchema.inputs.performanceMetrics.length; i++) {
+        performanceMetric = problemSchema.inputs.performanceMetrics[i];
+        context.commit("addPerformanceMetric", performanceMetric.metric);
+      }
     } else {
       console.log(
         "warning: no problem schema available; setting to classification"
@@ -348,16 +363,16 @@ const actions = {
       modelId: pipeline.heraldId + "::" + pipeline.id,
       modelName: "Model " + (state.models.length + 1),
       modelMetrics: pipeline.scores,
-      predictions: pipeline.results.data
-        ? pipeline.results.data
-        : pipeline.results,
+      predictions: pipeline.results.data ?
+        pipeline.results.data :
+        pipeline.results,
       fileUri: pipeline.fileUri,
       heraldId: pipeline.heraldId
     };
     context.commit("addModel", model);
   },
   socket_tabularDataProcessed: (context, data) => {
-    console.log("Tabular data has been allocated to Store!");
+    // console.log("Tabular data has been allocated to Store!");
     context.commit("addTabularProcessedData", data);
   },
   socket_pipelineFailed: context => {
@@ -368,11 +383,11 @@ const actions = {
   },
   "socket_write-pipeline-failed": context => {},
   socket_imagesthumbnailsready: (context, data) => {
-    console.log("IMAGESTHUMBNAILSREADY");
+    // console.log("IMAGESTHUMBNAILSREADY");
     context.commit("addImages", data);
   },
   socket_timeseriesready: (context, data) => {
-    console.log("TIMESERIESREADY");
+    // console.log("TIMESERIESREADY");
     context.commit("addTimeseries", data);
   },
   socket_updateVoderDataFactsStatus: (context, data) => {
@@ -464,7 +479,7 @@ const mutations = {
     state.runProblem = problemObject;
   },
   loadData(state, data) {
-    Object.keys(data).forEach(function(each) {
+    Object.keys(data).forEach(function (each) {
       // data[each].state = {'selected': false, 'hovered': false}
       // data[each].modelPredictions = { }
     });
@@ -621,6 +636,14 @@ const mutations = {
     state.selectedModel = id;
   },
 
+  setDevMode(state, mode) {
+    state.devMode = mode;
+  },
+
+  setVast20expMode(state, mode) {
+    state.vast20expMode = mode;
+  },
+
   numModelClassifReg(state, numModelArr) {
     state.numModelClassifReg = numModelArr;
   },
@@ -635,6 +658,10 @@ const mutations = {
 
   updateDataAugTable(state, message) {
     state.dataAugTable = message;
+  },
+
+  updateRemoveColList(state, message) {
+    state.removeColList = message;
   },
 
   updateRemoveColName(state, message) {
@@ -655,15 +682,35 @@ const mutations = {
 
   setMaterializeFinishToken(state, message) {
     state.materializeFinished = message;
-    if(message) {
+    if (message) {
       setTimeout(() => {
         state.materializeFinished = false;
       }, 15000);
     }
   },
+  setModelIter(state, message) {
+    state.modelIteration += message;
+  },
 
+  setModelMultiIter(state, message) {
+    state.modelMetricsMultiIter[state.modelIteration] = message;
+  },
   updateAttributesInCurrentDataTable(state, message) {
     state.attributesInCurrentDataTable = message;
+  },
+  updateMouseOverModelCols(state, message){
+    state.mouseOverModelCols = message
+  },
+  resetRawTableData(state,message){
+    state.augColumns = []
+    state.dataAugTable = {}
+    state.removeColName = ""
+    state.removeColList = []
+    state.addColName = ""
+    state.attributesInCurrentDataTable = []
+    state.modelMetricsMultiIter = {}
+    state.modelIteration = 0
+    state.mouseOverModelCols = []
   }
 };
 

@@ -17,6 +17,9 @@
       </v-btn>
     </v-toolbar>
     <v-spacer></v-spacer>
+    <v-container class="tasks-prompt" v-if="hasTasksPrompt">
+      {{tasksPrompt}}
+    </v-container>
     <v-stepper
       flat
       v-model="currentPhase"
@@ -36,23 +39,28 @@
           :editable="editable(phase)"
         >
           <span v-show="!mini">{{phase.name}}</span>
-          <small
+          <!-- <small
             v-if="index + 1 === 3"
             v-show="!mini"
           >{{highestPhase <= 3 ? 'Default' : 'Selected' }}: {{selectedMetric}}</small>
           <small
             v-if="index + 1 === 4"
             v-show="!mini"
-          >{{highestPhase <= 4 ? 'Default' : 'Selected' }}: {{ models[selectedModel] ? models[selectedModel].name : 'none' }}</small>
+          >{{highestPhase <= 4 ? 'Default' : 'Selected' }}: {{ models[selectedModel] ? models[selectedModel].name : 'none' }}</small> -->
         </v-stepper-step>
         <v-stepper-content :key="'step-content-' + index" :step="index + 1" v-show="!mini">
-          <p>{{phase.text}}</p>
-          <v-tooltip bottom v-if="index === 1">
+          <template v-if="phase.markdownText">
+            <p class="tasks_markdowntext" v-html="translateMarkdown(phase.markdownText)"></p>
+          </template>
+          <template v-else>
+            <p>{{phase.text}}</p>
+          </template>
+          <!-- <v-tooltip bottom v-if="index === 1">
             <template v-slot:activator="{ on }">
               <p v-on="on">selected problem: {{ problemText }}</p>
             </template>
             <span>Select a problem to run with the switch in the "Build Model" column of the Problem Set View.</span>
-          </v-tooltip>
+          </v-tooltip> -->
           <!-- <v-btn
             v-if="!problemDiscoveryTask && index + 1 === 1 && backendProgress === 0"
             color="primary"
@@ -74,7 +82,7 @@
             v-model="backendProgress"
           ></v-progress-linear>
           <div v-if="index + 1 === 4">
-            <v-select
+            <!-- <v-select
               v-bind:items="models"
               v-model="getSelectedModel"
               item-text="name"
@@ -88,14 +96,14 @@
               color="primary"
               @click.stop="nextPhase"
               :disabled="getSelectedModel<0"
-            >Select Model</v-btn>
+            >Select Model</v-btn> -->
           </div>
-          <v-btn
+          <!-- <v-btn
             v-if="index + 1 === 5"
             color="primary"
             @click.stop="createExecutable"
-          >Create Executable</v-btn>
-          <v-btn
+          >Create Executable</v-btn> -->
+          <!-- <v-btn
             color="primary"
             @click.stop="nextPhase()"
             v-if="index <= 2"
@@ -107,7 +115,15 @@
             v-if="problemDiscoveryTask && index + 1 === 2"
             color="primary"
             @click.stop="submitDiscoveredProblems"
-          >Submit Discovered Problems</v-btn>
+          >Submit Discovered Problems</v-btn> -->
+          <v-btn
+            color="primary"
+            @click.stop="nextPhase()"
+            v-if="index <= 2"
+            :disabled="buttonLogic"
+          >
+            complete task
+          </v-btn>
         </v-stepper-content>
       </template>
     </v-stepper>
@@ -184,6 +200,7 @@ import columnChip from '@/components/ColumnChip';
 import typeChip from '@/components/TypeChip';
 // import Voder from "@/components/Voder";
 import _ from "lodash";
+import marked from 'marked'
 
 export default {
   name: "navigation",
@@ -194,12 +211,23 @@ export default {
   beforeDestroy() {
     // clearInterval(this.interval)
   },
+  mounted(){
+    d3.selectAll(".tasks_markdowntext li").insert("div",":first-child") 
+    let seldiv = d3.selectAll(".tasks_markdowntext li div")
+    seldiv.html("<input type='checkbox' />")
+    // seldiv.attr('class', 'ui checkbox')
+    // let selcheck = d3.selectAll(".tasks_markdowntext li div input")
+    // selcheck.attr('class', 'form-check-input')
+  },
   sockets: {
     backendFinished: function() {
       this.backendProgress = 100;
     }
   },
   methods: {
+    translateMarkdown(s) {
+      return marked(s);
+    },
     problemName(b) {
       if (typeof(b) === "number") {
         return "auto_" + b;
@@ -260,21 +288,30 @@ export default {
     createExecutable() {
       // send signal to write out pipelines and exit
       let modelID = this.$store.state.socket.selectedModel.toString();
-      console.log("create executable", modelID);
+      // console.log("create executable", modelID);
       this.$socket.emit("exportSolution", modelID);
-      this.$store.commit(
-        "updateInfoMessage",
-        "You you have successfully exported model '" +
-          this.modelIdToName[modelID] +
-          ". You can select another model if you are not satisfied with previous decision OR close the browser!'"
-      );
+      if (this.$store.state.socket.vast20expMode) {
+        this.$store.commit(
+          "updateInfoMessage",
+          "You have successfully completed the experiment.  Thank you for your participation!"
+        );
+
+      } else {
+        this.$store.commit(
+          "updateInfoMessage",
+          "You you have successfully exported model '" +
+            this.modelIdToName[modelID] +
+            ". You can select another model if you are not satisfied with previous decision OR close the browser!'"
+        );
+
+      }
     },
     widenDrawer() {
-      console.log("hey");
+      // console.log("hey");
       this.mini = false;
     },
     nextPhase() {
-      console.log("NEXT PHASE");
+      // console.log("NEXT PHASE");
       if (this.currentPhase === this.phases.length) {
         this.createExecutable();
       } else {
@@ -301,7 +338,7 @@ export default {
         "sendDiscoveredProblems",
         this.$store.state.socket.rawDataDesc
       );
-      console.log("navigation: task 1 finished");
+      // console.log("navigation: task 1 finished");
       this.$emit("finished");
       this.reset();
       //this.$store.commit("updateInfoMessage", "Thank you. You have successfully completed the problem discovery task.");
@@ -332,20 +369,40 @@ export default {
       return this.runProblem.creationType === "auto" ? "auto_" + this.runProblem.problemID : this.runProblem.problemID;
     },
     buttonLogic() {
-      if (this.currentPhase === 1) {
-        // during dataset selection step
-        return _.isEmpty(this.$store.state.socket.rawDataDesc);
+      if (this.$store.state.socket.vast20expMode) {
+        if (this.currentPhase === 1) {
+          // during add attributes
+          // If they've added any attributes
+          return false;
+        }
+        if (this.currentPhase === 2) {
+          // during add attributes
+          // If they've added any attributes
+          return false;
+        }
+        if (this.currentPhase === 3) {
+          // during build model
+          // If they've built a model
+          return false;
+        }
+        return false;
+
+      } else {
+        if (this.currentPhase === 1) {
+          // during dataset selection step
+          return _.isEmpty(this.$store.state.socket.rawDataDesc);
+        }
+        if (this.currentPhase === 2) {
+          if (this.problemDiscoveryTask) return true;
+          // during problem selection step
+          return _.isEmpty(this.runProblem);
+        }
+        if (this.currentPhase === 3) {
+          // during problem selection step
+          return _.isEmpty(this.$store.state.socket.models);
+        }
+        return false;
       }
-      if (this.currentPhase === 2) {
-        if (this.problemDiscoveryTask) return true;
-        // during problem selection step
-        return _.isEmpty(this.runProblem);
-      }
-      if (this.currentPhase === 3) {
-        // during problem selection step
-        return _.isEmpty(this.$store.state.socket.models);
-      }
-      return false;
     },
     voderSelectedVariable() {
       return this.$store.state.socket.voderSelectedVariable;
@@ -361,7 +418,7 @@ export default {
     },
     getSelectedModel: {
       get() {
-        console.log("updated return ", this.$store.state.socket.selectedModel);
+        // console.log("updated return ", this.$store.state.socket.selectedModel);
         try {
           if (this.$store.state.socket.selectedModel) {
             return this.$store.state.socket.selectedModel;
@@ -379,12 +436,12 @@ export default {
     },
     models() {
       // return [{name: 'Model 1', value: 0}, {name: 'Model 2', value: 2}]
-      console.log(
-        "there are ",
-        this.$store.state.socket.models.length,
-        this.$store.state.socket.models,
-        " models"
-      );
+      // console.log(
+      //   "there are ",
+      //   this.$store.state.socket.models.length,
+      //   this.$store.state.socket.models,
+      //   " models"
+      // );
       var modelOptions = _.map(this.$store.state.socket.filteredModels, function(mod) {
         return { name: mod.modelName, value: mod.modelId };
       });
@@ -403,6 +460,12 @@ export default {
     phases() {
       return this.$store.state.meta.phases;
     },
+    tasksPrompt() {
+      return this.$store.state.meta.style.tasksPrompt;
+    },
+    hasTasksPrompt() {
+      return !this.mini && !!(this.$store.state.meta.style.tasksPrompt);
+    },
     selectedModel: {
       get() {
         this.$store.state.socket.selectedModel;
@@ -416,7 +479,7 @@ export default {
         return this.$store.state.meta.currentPhase;
       },
       set(value) {
-        console.log("SET CURRENT PHASE -- -- -- OLD, NEW -- -- --", this.$store.state.meta.currentPhase, value);
+        // console.log("SET CURRENT PHASE -- -- -- OLD, NEW -- -- --", this.$store.state.meta.currentPhase, value);
         this.$store.commit("SET_CURRENT_PHASE", value);
       }
     }
@@ -490,6 +553,7 @@ export default {
   }
   .nav-content {
     // margin-top: 48px;
+    text-align: left;
   }
   .phase-visited > span {
     background-color: #1976d2 !important;
@@ -540,6 +604,9 @@ export default {
   }
   .metric-select {
     padding-top: 0;
+  }
+  .tasks-prompt {
+    text-align: left;
   }
 }
 </style>

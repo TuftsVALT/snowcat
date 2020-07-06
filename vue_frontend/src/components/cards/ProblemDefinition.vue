@@ -1,5 +1,5 @@
 <template>
-  <div id="problem-defintion-card">
+  <div id="problem-defintion-card" v-if="readyToLoad">
     <v-card-title primary-title>
       <div class="headline">{{problemName}}</div>
       <div class="problem-subtitle" v-html="problemSubtitle"></div>
@@ -67,6 +67,9 @@ export default {
     }
   },
   computed: {
+    readyToLoad() {
+      return !!(this.$store.state.socket.rawProblemDesc && this.$store.state.socket.rawProblemDesc.about)
+    },
     problemName () {
       return this.$store.state.socket.rawProblemDesc.about.problemName
     },
@@ -78,10 +81,10 @@ export default {
       }
     },
     taskType () {
-      return this.$store.state.socket.rawProblemDesc.about.taskType
+      return this.$store.state.socket.rawProblemDesc.about.taskKeywords && this.$store.state.socket.rawProblemDesc.about.taskKeywords[0]
     },
     taskSubtype () {
-      return this.$store.state.socket.rawProblemDesc.about.taskSubType
+      return this.$store.state.socket.rawProblemDesc.about.taskKeywords && this.$store.state.socket.rawProblemDesc.about.taskKeywords[1]
     },
     targetColumns () {
       return this.$store.state.socket.targetColumns

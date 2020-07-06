@@ -1,0 +1,104 @@
+{
+  "task1": {
+    "cards": [
+      {
+        "component": "DataAugmentation",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "RawDataTableView",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "DataDefinition",
+        "size": 6,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "ProblemDefinition",
+        "size": 6,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "TabularDataView",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      }
+    ]
+  },
+  "task2": {
+    "cards": [
+      {
+        "component": "DataAugmentation",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "RawDataTableView",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "DataDefinition",
+        "size": 6,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "ProblemDefinition",
+        "size": 6,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "TabularDataView",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      }
+    ]
+  },
+  "task3": {
+    "cards": [
+      {
+        "component": "DataAugmentation",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "RawDataTableView",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "DataDefinition",
+        "size": 6,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "ProblemDefinition",
+        "size": 6,
+        "help": false,
+        "skipCloseButton": true
+      },
+      {
+        "component": "TabularDataView",
+        "size": 12,
+        "help": false,
+        "skipCloseButton": true
+      }
+    ]
+  }
+}

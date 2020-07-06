@@ -1,0 +1,137 @@
+{
+    "entity": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/entity/Q498336"
+    },
+    "entityLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "Turner County"
+    },
+    "wdt": {
+      "type": "uri",
+      "value": "http://www.wikidata.org/prop/direct/P2046"
+    },
+    "wdLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "area"
+    },
+    "wdDescription": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "area occupied by an object"
+    },
+    "count": 19,
+    "exampleLit": {
+      "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+      "type": "literal",
+      "value": "751"
+    },
+    "valType": {
+      "type": "uri",
+      "value": "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "unitLabel": {
+      "xml:lang": "en",
+      "type": "literal",
+      "value": "square kilometre"
+    },
+    "dataType": "number",
+    "valueType": "join-number",
+    "uri": "http://www.wikidata.org/prop/direct/P2046",
+    "name": "area",
+    "description": "area occupied by an object",
+    "units": "square kilometre",
+    "examples": [
+      "751",
+      "1699",
+      "2941"
+    ],
+    "parentEntityExample": "Turner County",
+    "parentEntityExampleUri": "http://www.wikidata.org/entity/Q498336",
+    "percentJoinable": 0.95,
+    "summaryStats": {
+      "max": 20547,
+      "min": 751,
+      "mean": 4795.894736842105,
+      "mode": 751,
+      "firstQuartileEnd": 1309,
+      "median": 2941,
+      "thirdQuartileEnd": 7257,
+      "variance": 22468393.357340723
+    },
+    "histogramBins": [
+      {
+        "min": 751,
+        "max": 2730.6,
+        "count": 9
+      },
+      {
+        "min": 2730.6,
+        "max": 4710.2,
+        "count": 3
+      },
+      {
+        "min": 4710.2,
+        "max": 6689.8,
+        "count": 2
+      },
+      {
+        "min": 6689.8,
+        "max": 8669.4,
+        "count": 1
+      },
+      {
+        "min": 8669.4,
+        "max": 10649,
+        "count": 3
+      },
+      {
+        "min": 10649,
+        "max": 12628.6,
+        "count": 0
+      },
+      {
+        "min": 12628.6,
+        "max": 14608.2,
+        "count": 0
+      },
+      {
+        "min": 14608.2,
+        "max": 16587.8,
+        "count": 0
+      },
+      {
+        "min": 16587.8,
+        "max": 18567.4,
+        "count": 0
+      },
+      {
+        "min": 18567.4,
+        "max": 20547,
+        "count": 1
+      }
+    ],
+    "sampleData": [
+      2941,
+      751,
+      1699,
+      1877,
+      1014,
+      6545,
+      20547,
+      987,
+      9679,
+      1309,
+      7257,
+      8822,
+      6133,
+      2226,
+      8672,
+      1519,
+      921,
+      4679,
+      3544
+    ]
+  }

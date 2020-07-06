@@ -49,7 +49,7 @@ export default {
       typeStyles
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
