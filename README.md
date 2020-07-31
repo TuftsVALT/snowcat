@@ -1,6 +1,6 @@
 # D3M App
 
-This repo holds contains source code for **Auger**, a visual analytics tool for column-wise data augmentation using knowledge graphs.  This work was developed by visual analytics research labs at Tufts University, Georgia Tech, and University of Wisconsin in relation to DARPA's Data Driven Discovery of Models program.
+This repo holds contains source code for **CAVA**, or Columnar data Augmentation through Visual Analytics, a visual analytics tool for column-wise data augmentation using knowledge graphs.  This work was developed by visual analytics research labs at Tufts University, Georgia Tech, and University of Wisconsin in relation to DARPA's Data Driven Discovery of Models program.
 
 The goal of this application is to make it easy to add on additional columns to a tabular dataset by mining knowledge graphs.  Currently, this application only supports connecting to wikidata.
 
