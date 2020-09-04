@@ -57,7 +57,7 @@
     "nearest-date": "^1.0.1",
     "node-sass": "^4.13.1",
     "numpy": "^0.0.1",
-    "papaparse": "^4.3.6",
+    "papaparse": "^5.2.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "request-promise-native": "^1.0.8",
