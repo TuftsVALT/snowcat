@@ -4,9 +4,9 @@ This repo holds contains source code for **CAVA**, or Columnar data Augmentation
 
 The goal of this application is to make it easy to add on additional columns to a tabular dataset by mining knowledge graphs.  Currently, this application only supports connecting to wikidata.
 
-Auger lets users upload a dataset and then search through wikidata for related attributes of different columns.  For example, if a dataset has a column consisting of U.S. cities, Auger will return a list of attributes shared by U.S. cities in wikidata, and let the user join them to their CSV and download the augmented dataset.  It also supports more complex augmented attributes, like joining a country's average neighbor GDP.
+CAVA lets users upload a dataset and then search through wikidata for related attributes of different columns.  For example, if a dataset has a column consisting of U.S. cities, CAVA will return a list of attributes shared by U.S. cities in wikidata, and let the user join them to their CSV and download the augmented dataset.  It also supports more complex augmented attributes, like joining a country's average neighbor GDP.
 
-Auger consists of a front end user interface that lives in the browser, and a backend server that preprocesses data and calls out to the knowledge graph.  Both front and backend need to be served in order to use Auger.
+CAVA consists of a front end user interface that lives in the browser, and a backend server that preprocesses data and calls out to the knowledge graph.  Both front and backend need to be served in order to use CAVA.
 
 This application contains a vueJS, nodeJS, and python project.  In includes some legacy code from a larger application that included more data exploration and connection to a machine learning backend, but it has been pared down to only focus on column data augmentation.  It has a web server done in node.js.  It also contains some data processing scripts, in `lib/external`, that are called through node's `child_process` [library](https://nodejs.org/api/child_process.html).  This node project includes a frontend in vueJS that communicates with the server.
 
