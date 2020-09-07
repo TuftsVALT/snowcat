@@ -1,4 +1,4 @@
-# D3M App
+# Columnar data Augmentation through Visual Analytics (CAVA)
 
 This repo holds contains source code for **CAVA**, or Columnar data Augmentation through Visual Analytics, a visual analytics tool for column-wise data augmentation using knowledge graphs.  This work was developed by visual analytics research labs at Tufts University, Georgia Tech, and University of Wisconsin in relation to DARPA's Data Driven Discovery of Models program.
 
@@ -10,7 +10,7 @@ CAVA consists of a front end user interface that lives in the browser, and a bac
 
 This application contains a vueJS, nodeJS, and python project.  In includes some legacy code from a larger application that included more data exploration and connection to a machine learning backend, but it has been pared down to only focus on column data augmentation.  It has a web server done in node.js.  It also contains some data processing scripts, in `lib/external`, that are called through node's `child_process` [library](https://nodejs.org/api/child_process.html).  This node project includes a frontend in vueJS that communicates with the server.
 
-This is our Summer 2020 version, to be used for our upcoming evaluation in the data driven discovery of models program.
+This is the Summer 2020 version, and is not currently being developed or supported.  Feel free to fork this and usethis in your own research.  
 
 ## Installation
 
@@ -22,11 +22,13 @@ Once installation is done, test it out.  Two servers need to be run, actually - 
 
 If you run the `ta3_search` bash script without a dataset, the user is able to upload a CSV dataset themselves.
 
+    bash ta3_search
+
 ### Node Middleware
 
 All instructions should be run from within the `node_middleware` directory.
 
-We are running python3 on the backend.
+We use python3 on the backend to run python scripts in child processes.  You should be able to run CAVA without having python installed, but you may see that some features don't work.
 
 We also require node version >= 8.0.  __If you get an error during the server startup, double check that you have the right node version.__
 
@@ -60,22 +62,10 @@ Install the node dependencies.
 
 The middleware communicates with the frontend over two ports - 3000 for the web front end, and 8080 for the web socket.  Those will need to be opened if this is run in a docker container.  A compatible Dockerfile is included in this repository.
 
-###  Running different config files for testing.
-
-In an effort to streamline our manual testing, the repository comes with some sample datasets and sample configuration files.  The sample datasets are smaller versions of the raw datasets, so that they don't bloat the repository.
-
-**Please do not check in full datasets if they are larger than 2-5 mb**.  Instead, just copy limited versions of the datasets by only copying a few of the media files in, and shortening the `learningData.csv` files to a few thousand lines.
-
 ### Contributing
 
-All contributions should done by making a feature branch, pushing that feature branch to github, and creating a pull request.  It's best to make the pull request while you're still working, by making the title start with "WIP: ", so that others can discuss the changes you are proposing.
+If you'd like to contribute to this repository, please create an issue for discussion, and fork the repository and make a pull request.
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### License
 
-## Architecture
-
-The architecture for the vue app is a little different.  The most basic way to set up the vue scaffolding was actually to run two servers.  One server compiles and serves the javascript, CSS, and other assets (through webpack).  The other server is our old node server, independent from vue.  The vue front end communicates with the node backend through web sockets.
-
-Both servers are started up via the `ta3_search` command.  The config file you provide to that command, as its first argument, dictates the dataset and problem type that is being used.
-
-	bash ta3_search shared/static/local_testing_data/196_autoMpg dev
+This is released under the MIT License.
