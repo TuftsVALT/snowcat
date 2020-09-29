@@ -1,12 +1,14 @@
 # Columnar data Augmentation through Visual Analytics (CAVA)
 
+![Illustration of queries over knowledge graph using CAVA](./cava_splash.png)
+
 This repo holds contains source code for **CAVA**, or Columnar data Augmentation through Visual Analytics, a visual analytics tool for column-wise data augmentation using knowledge graphs.  This work was developed by visual analytics research labs at Tufts University, Georgia Tech, and University of Wisconsin in relation to DARPA's Data Driven Discovery of Models program.
 
 ## Read the Paper
 
 A preprint of the paper can be found on arXiv.
 
-https://arxiv.org/abs/2009.02865
+[https://arxiv.org/abs/2009.02865](https://arxiv.org/abs/2009.02865)
 
 The paper will be presented at the IEEE Visualization Conference virtually in October 2020.  It will be published in IEEE Transactions on Visualization and Computer Graphics at some point after that.  Thank you to the full list of authors: Dylan Cashman (Tufts), Shenyu Xu (Georgia Tech), Subhajit Das (Georgia Tech), Florian Heimerl (Wisconsin), Cong Liu (Tufts), Shah Rukh Humayoun (San Francisco State), Michael Gleicher (Wisconsin), Alex Endert (Georgia Tech), Remco Chang (Tufts).  Thank you also to all of our collaborators in [DARPA's Data Driven Discovery of Models program](https://gitlab.com/datadrivendiscovery/d3m).
 
