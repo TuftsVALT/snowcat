@@ -2,6 +2,16 @@
 
 This repo holds contains source code for **CAVA**, or Columnar data Augmentation through Visual Analytics, a visual analytics tool for column-wise data augmentation using knowledge graphs.  This work was developed by visual analytics research labs at Tufts University, Georgia Tech, and University of Wisconsin in relation to DARPA's Data Driven Discovery of Models program.
 
+## Read the Paper
+
+A preprint of the paper can be found on arXiv.
+
+https://arxiv.org/abs/2009.02865
+
+The paper will be presented at the IEEE Visualization Conference virtually in October 2020.  It will be published in IEEE Transactions on Visualization and Computer Graphics at some point after that.  Thank you to the full list of authors: Dylan Cashman (Tufts), Shenyu Xu (Georgia Tech), Subhajit Das (Georgia Tech), Florian Heimerl (Wisconsin), Cong Liu (Tufts), Shah Rukh Humayoun (San Francisco State), Michael Gleicher (Wisconsin), Alex Endert (Georgia Tech), Remco Chang (Tufts).  Thank you also to all of our collaborators in [DARPA's Data Driven Discovery of Models program](https://gitlab.com/datadrivendiscovery/d3m).
+
+## Repo Summary
+
 The goal of this application is to make it easy to add on additional columns to a tabular dataset by mining knowledge graphs.  Currently, this application only supports connecting to wikidata.
 
 CAVA lets users upload a dataset and then search through wikidata for related attributes of different columns.  For example, if a dataset has a column consisting of U.S. cities, CAVA will return a list of attributes shared by U.S. cities in wikidata, and let the user join them to their CSV and download the augmented dataset.  It also supports more complex augmented attributes, like joining a country's average neighbor GDP.
